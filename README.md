@@ -1,5 +1,5 @@
 # Online disk direct link download assistant
-可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改（改自5.9.0版本），原作者：https://www.baiduyun.wiki/，自用，去推广。
+可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：https://www.baiduyun.wiki/，自用，去推广。
 
 <hr><h1>说明</h1>
 基于<a href="https://www.baiduyun.wiki/" rel="nofollow">【网盘直链下载助手】</a>修改（改自最新5.9.0版本），原作者：https://www.baiduyun.wiki/，原脚本：https://greasyfork.org/zh-CN/scripts/436446。
@@ -11,8 +11,8 @@
 <h4>卑微的小标题</h4>
 如果喜欢的话还请留个好评哦~
 <br><hr>
-<h3>版本号</h3>
-V. 1.0.1
+<h3>最新版本号</h3>
+V. 1.0.1（改自5.9.0版本）
 <br><hr>
 <h1>本次修改</h1>
 1、增加“<b>注入</b>”功能（bushi）
