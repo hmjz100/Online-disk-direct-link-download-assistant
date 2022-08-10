@@ -2,7 +2,8 @@
 可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：https://www.baiduyun.wiki/，自用，去推广。
 
 <hr><h1>说明</h1>
-基于<a href="https://www.baiduyun.wiki/" rel="nofollow">【网盘直链下载助手】</a>修改（改自最新5.9.0版本），原作者：https://www.baiduyun.wiki/ ， 原脚本：https://greasyfork.org/zh-CN/scripts/436446 。
+基于<a href="https://www.baiduyun.wiki/" rel="nofollow">【网盘直链下载助手】</a>修改（改自最新5.9.0版本），原作者：https://www.baiduyun.wiki/ ，
+原脚本：https://greasyfork.org/zh-CN/scripts/436446 。
 自用，去广告，无需输入“暗号”即可使用。因<a href="https://greasyfork.org/zh-CN/scripts/422818" rel="nofollow">上一个修改作者</a>已经弃坑，所以由我来代其更新。
 <br><hr>
 <h1>*简介</h1>
