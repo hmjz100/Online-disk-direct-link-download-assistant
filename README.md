@@ -1,6 +1,5 @@
-<hr>
 # （改）网盘直链下载助手 | Online disk direct link download assistant
-可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：https://www.baiduyun.wiki/，自用，去推广。
+可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：https://www.baiduyun.wiki/ ，自用，去推广。
 
 <hr><h1>说明</h1>
 基于<a href="https://www.baiduyun.wiki/" rel="nofollow">【网盘直链下载助手】</a>修改（改自最新5.9.0版本），原作者：https://www.baiduyun.wiki/ ，<br>
