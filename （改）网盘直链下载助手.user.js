@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.3
+// @version           1.0.4
 // @author            Hmjz100、油小猴
 // @icon              https://www.youxiaohou.com/48x48.png
 // @icon64            https://www.youxiaohou.com/64x64.png
-// @description       可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改自5.9.0版本，加彩蛋(提示:homo)，自用，去推广，加宽界面。
+// @description       可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改自5.9.0版本,加彩蛋(提示:homo),自用,去推广,修原有BUG,修改界面。
 // @license           AGPL-3.0-or-later
-// @homepage          https://www.youxiaohou.com/install.html
-// @supportURL        https://github.com/syhyz1990/baiduyun
+// @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
+// @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
 // @match             *://pan.baidu.com/disk/home*
 // @match             *://yun.baidu.com/disk/home*
 // @match             *://pan.baidu.com/disk/main*
@@ -76,7 +76,7 @@
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 4000,
+        timer: 3500,
         timerProgressBar: true,
         didOpen: (toast) => {
             toast.addEventListener('mouseenter', Swal.stopTimer);
@@ -354,7 +354,7 @@
             dom = '<div>' + dom + '</div>';
 
             Swal.fire({
-                title: '助手配置',
+                title: '助手设置',
                 html: dom,
                 icon: 'info',
                 showCloseButton: true,
@@ -393,12 +393,19 @@
         showUpdateLog() {
             Swal.fire({
                 icon: 'info',
-                title: '更新日志',
-                html: '<span>V1.0.3<br>1、增加一个小彩蛋 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近。<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示<br>2、更新Sweetalert2至11版本<br>3、部分CDN节点更换为jsdelivr<br><br>V1.0.0<br>1、增加“注入”功能（bushi）<br>2、去除广告</span>',
+                title: '更新日志(关闭按钮在下面哦)',
+                html: '<span>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
                 allowOutsideClick: false,
-                showCloseButton: true,
+                showCloseButton: false,
                 confirmButtonText: '我已阅',
             });
+        },
+
+        registerSetting() {
+            console.log("正在注入取消点亮按钮设置项目...");
+            message.warning("正在注入取消点亮按钮设置项目...(您可以再次点亮按钮)");
+            base.setValue('setting_init_code', 111111);
+            history.go(0)
         },
 
         registerMenuCommand() {
@@ -407,6 +414,9 @@
             });
             GM_registerMenuCommand('更新日志', () => {
                 this.showUpdateLog();
+            });
+            GM_registerMenuCommand('取消点亮按钮', () => {
+                this.registerSetting();
             });
         },
 
@@ -495,16 +505,18 @@
             .pl-btn-warning { background: #da9328; }
             .pl-btn-warning { background: #da9328; }
             .pl-btn-danger { background: #cc3235; }
-            .ali-button {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: rgb(99 125 255);margin-left: 20px;padding: 1px 12px;position: relative; cursor:pointer; height: 32px;}
+            .ali-button {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;font-size: 14px;margin-left: 20px;padding: 1px 12px;position: relative;}
+            .ali-button-big {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: rgb(99 125 255);margin-left: 20px;padding: 1px 12px;position: relative; cursor:pointer; height: 32px;}
             .ali-button:hover {background: rgb(122, 144, 255)}
             .tianyi-button {margin-right: 20px; padding: 4px 12px; border-radius: 4px; color: #fff; font-size: 12px; border: 1px solid #0073e3; background: #2b89ea; cursor: pointer; position: relative;}
             .tianyi-button:hover {border-color: #1874d3; background: #3699ff;}
             .xunlei-button {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: #3f85ff;margin-left: 12px;padding: 0px 12px;position: relative; cursor:pointer; height: 36px;}
             .xunlei-button:hover {background: #619bff}
-            .quark-button {display: inline-flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 8px; white-space: nowrap; flex-shrink: 0; font-size: 14px; line-height: 1.5; outline: 0; color: #333; background: #fff; margin-right: 10px; padding: 0px 14px; position: relative; cursor: pointer; height: 36px;}
-            .quark-button:hover { background:#f6f6f6 }
-            .pl-dropdown-menu {position: absolute;right: 0;top: 30px;padding: 5px 0;color: rgb(37, 38, 43);background: #fff;z-index: 999;width: 102px;border: 1px solid #ddd;border-radius: 10px; box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%);}
-            .pl-dropdown-menu-item { height: 30px;display: flex;align-items: center;justify-content: center; }
+            .quark-button {display: inline-flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 8px; white-space: nowrap; flex-shrink: 0; font-size: 14px; line-height: 1.5; outline: 0; color: #333; margin-right: 10px; padding: 0px 14px; position: relative; cursor: pointer; height: 36px;}
+            .quark-button:hover { background: ${color};}
+            .pl-dropdown-menu {position: absolute;right: 0;top: 32px;padding: 5px 0;color: rgb(37, 38, 43);background: #fff;z-index: 999;width: 102px;border-radius: 10px;box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%);}
+            .pl-dropdown-menu-old {position: absolute;right: 0;top: 30px;padding: 5px 0;color: rgb(37, 38, 43);background: #fff;z-index: 999;width: 102px;border: 1px solid #ddd;border-radius: 10px; box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%);}
+            .pl-dropdown-menu-item { height: 30px;display: flex;align-items: center;justify-content: center;color: ${color};}
             .pl-dropdown-menu-item:hover { background-color: rgba(132,133,141,0.08);}
             .pl-button .pl-dropdown-menu { display: none; }
             .pl-button:hover .pl-dropdown-menu { display: block!important; }
@@ -910,6 +922,9 @@
             doc.on('click', '.listener-open-setting', () => {
                 base.showSetting();
             });
+            doc.on('click', '.listener-open-updatelog', () => {
+                base.showUpdateLog();
+            });
             doc.on('click', '.listener-rpc-task', () => {
                 let rpc = JSON.stringify({
                     domain: base.getValue('setting_rpc_domain'),
@@ -927,11 +942,11 @@
         addButton() {
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="g-dropdown-button pointer pl-button"><div style="color:#fff;background: ${color};border-color:${color}" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="width:auto;z-index:41;border-color:${color}"><div style="color:${color}" class="g-button-menu pl-button-mode" data-mode="api">API下载</div><div style="color:${color}" class="g-button-menu pl-button-mode" data-mode="aria">Aria下载</div><div style="color:${color}" class="g-button-menu pl-button-mode" data-mode="rpc">RPC下载</div><div style="color:${color}" class="g-button-menu pl-button-mode" data-mode="curl">cURL下载</div><div style="color:${color}" class="g-button-menu pl-button-mode" data-mode="bc">BC下载</div></div></div>`);
+            let $button = $(`<div class="g-dropdown-button pointer pl-button"><div style="color:#fff;background: ${color};border-color:${color}" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="width:auto;z-index:41;border-color:${color}"><div class="g-button-menu pl-button-mode" data-mode="api" style="color:${color};">API下载</div><div class="g-button-menu pl-button-mode" data-mode="aria" style="color:${color};">Aria下载</div><div class="g-button-menu pl-button-mode" data-mode="rpc" style="color:${color};">RPC下载</div><div class="g-button-menu pl-button-mode" data-mode="curl" style="color:${color};">cURL下载</div><div class="g-button-menu pl-button-mode" data-mode="bc" style="color:${color};">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="color:${color};">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="color:${color};">更新日志</div></div></div>`);
             if (pt === 'home') $toolWrap = $(pan.btn.home);
             if (pt === 'main') {
                 $toolWrap = $(pan.btn.main);
-                $button = $(`<div class="pl-button" style="position: relative; display: inline-block; margin-right: 8px;"><button class="u-button u-button--primary u-button--small is-round is-has-icon" style="background: ${color};border-color: ${color};font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="sub cursor-p pl-button-mode" data-mode="api">API下载</li><li class="sub cursor-p pl-button-mode" data-mode="aria">Aria下载</li><li class="sub cursor-p pl-button-mode" data-mode="rpc">RPC下载</li><li class="sub cursor-p pl-button-mode" data-mode="curl">cURL下载</li><li class="sub cursor-p pl-button-mode" data-mode="bc" >BC下载</li></ul></div>`);
+                $button = $(`<div class="pl-button" style="position: relative; display: inline-block; margin-right: 8px;"><button class="u-button u-button--primary u-button--small is-round is-has-icon" style="background: ${color};border-color: ${color};font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul style="color:${color}" class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="sub cursor-p pl-button-mode" data-mode="api">API下载</li><li class="sub cursor-p pl-button-mode" data-mode="aria">Aria下载</li><li class="sub cursor-p pl-button-mode" data-mode="rpc">RPC下载</li><li class="sub cursor-p pl-button-mode" data-mode="curl">cURL下载</li><li class="sub cursor-p pl-button-mode" data-mode="bc">BC下载</li><li class="sub cursor-p pl-button-mode listener-open-setting"">助手设置</li><li class="sub cursor-p pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
             }
             if (pt === 'share') $toolWrap = $(pan.btn.share);
             $toolWrap.prepend($button);
@@ -942,11 +957,11 @@
         addInitButton() {
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="g-dropdown-button pointer pl-button-init" style="opacity:.5"><div style="color:#fff;background: ${color};border-color:${color}" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download"></em><span class="text" style="width: 60px;">下载助手</span></span></div></div>`);
+            let $button = $(`<div class="g-dropdown-button pointer pl-button-init" style="opacity:.5"><div style="color:#fff;background: ${color};border-color:${color}" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download"></em><span class="text" style="width: 60px;">下载助手(未点亮)</span></span></div></div>`);
             if (pt === 'home') $toolWrap = $(pan.btn.home);
             if (pt === 'main') {
                 $toolWrap = $(pan.btn.main);
-                $button = $(`<div class="pl-button-init" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="u-button u-button--primary u-button--small is-round is-has-icon" style="background: ${color};border-color: ${color};font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button></div>`);
+                $button = $(`<div class="pl-button-init" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="u-button u-button--primary u-button--small is-round is-has-icon" style="background: ${color};border-color: ${color};font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手(未点亮)</span></button></div>`);
             }
             if (pt === 'share') $toolWrap = $(pan.btn.share);
             $toolWrap.prepend($button);
@@ -1184,7 +1199,7 @@
                 footer,
                 allowOutsideClick: false,
                 showCloseButton: true,
-                showConfirmButton: false,
+                confirmButtonText: '关闭',
                 position: 'top',
                 width: '1000px',
                 padding: '15px 20px 5px',
@@ -1269,6 +1284,9 @@
             doc.on('click', '.listener-open-setting', () => {
                 base.showSetting();
             });
+            doc.on('click', '.listener-open-updatelog', () => {
+                base.showUpdateLog();
+            });
             doc.on('click', '.listener-rpc-task', () => {
                 let rpc = JSON.stringify({
                     domain: base.getValue('setting_rpc_domain'),
@@ -1296,7 +1314,7 @@
         addButton() {
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="ali-button pl-button"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#fff"/><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FF9C00"/></svg><ul class="pl-dropdown-menu"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li></ul></div>`);
+            let $button = $(`<div class="ali-button-big">下载助手<div class="button--3S7z9 ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg></span><ul class="pl-dropdown-menu"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div></div>`);
             if (pt === 'home') {
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.home);
@@ -1323,7 +1341,7 @@
         addInitButton() {
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="ali-button pl-button-init"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#fff"/><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FF9C00"/></svg></div>`);
+            let $button = $(`<div class="ali-button-big">下载助手(未点亮)<div class="button--3S7z9 ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg></span></div>`);
             if (pt === 'home') {
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.home);
@@ -1609,6 +1627,9 @@
             doc.on('click', '.listener-open-setting', () => {
                 base.showSetting();
             });
+            doc.on('click', '.listener-open-updatelog', () => {
+                base.showUpdateLog();
+            });
             doc.on('click', '.listener-rpc-task', () => {
                 let rpc = JSON.stringify({
                     domain: base.getValue('setting_rpc_domain'),
@@ -1621,7 +1642,7 @@
         addButton() {
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="tianyi-button pl-button">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li></ul></div>`);
+            let $button = $(`<div class="tianyi-button pl-button">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
             if (pt === 'home') {
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.home);
@@ -1647,7 +1668,7 @@
         addInitButton() {
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="tianyi-button pl-button-init">下载助手</div>`);
+            let $button = $(`<div class="tianyi-button pl-button-init">下载助手(未点亮)</div>`);
             if (pt === 'home') {
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.home);
@@ -1774,35 +1795,35 @@
                         content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}</a> </div>`;
-                } else {
-                    content += `<div class="pl-item">
+                    } else {
+                        content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+                    }
                 }
-            }
                 if (mode === 'rpc') {
                     content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">推送到 RPC 下载器</span></button></div>`;
-            }
+                }
                 if (mode === 'curl') {
                     let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
                     if (typeof (alink) === 'object') {
                         content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}</a> </div>`;
-                } else {
-                    content += `<div class="pl-item">
+                    } else {
+                        content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+                    }
                 }
-            }
                 if (mode === 'bc') {
                     let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
                     content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
-            }
+                }
             });
             content += '</div>';
             if (mode === 'aria')
@@ -1959,6 +1980,9 @@
             doc.on('click', '.listener-open-setting', () => {
                 base.showSetting();
             });
+            doc.on('click', '.listener-open-updatelog', () => {
+                base.showUpdateLog();
+            });
             doc.on('click', '.listener-rpc-task', () => {
                 let rpc = JSON.stringify({
                     domain: base.getValue('setting_rpc_domain'),
@@ -1971,7 +1995,7 @@
         addButton() {
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="xunlei-button pl-button"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span><ul class="pl-dropdown-menu" style="top: 34px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li></ul></div>`);
+            let $button = $(`<div class="xunlei-button pl-button"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span><ul class="pl-dropdown-menu" style="top: 34px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
             if (pt === 'home') {
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.home);
@@ -1998,7 +2022,7 @@
         addInitButton() {
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="xunlei-button pl-button-init"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span></div>`);
+            let $button = $(`<div class="xunlei-button pl-button-init"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手(未点亮)</span></div>`);
             if (pt === 'home') {
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.home);
@@ -2116,31 +2140,31 @@
                         content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}</a> </div>`;
-                } else {
-                    alinkAllText += alink + '\r\n';
-                    content += `<div class="pl-item">
+                    } else {
+                        alinkAllText += alink + '\r\n';
+                        content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+                    }
                 }
-            }
                 if (mode === 'rpc') {
                     content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">推送到 RPC 下载器</span></button></div>`;
-            }
+                }
                 if (mode === 'curl') {
                     let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
                     if (typeof (alink) === 'object') {
                         content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}</a> </div>`;
-                } else {
-                    alinkAllText += alink + '\r\n';
-                    content += `<div class="pl-item">
+                    } else {
+                        alinkAllText += alink + '\r\n';
+                        content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+                    }
                 }
-            }
                 if (mode === 'bc') {
                     let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
                     content += `<div class="pl-item">
@@ -2148,7 +2172,7 @@
                                 <a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> 
                                 <div class="pl-item-btn listener-link-bc-btn" data-dlink="${dlink}">复制镜像地址</div>
                                 </div>`;
-            }
+                }
             });
             content += '</div>';
             if (mode === 'aria')
@@ -2307,6 +2331,9 @@
             doc.on('click', '.listener-open-setting', () => {
                 base.showSetting();
             });
+            doc.on('click', '.listener-open-updatelog', () => {
+                base.showUpdateLog();
+            });
             doc.on('click', '.listener-rpc-task', () => {
                 let rpc = JSON.stringify({
                     domain: base.getValue('setting_rpc_domain'),
@@ -2317,9 +2344,11 @@
         },
 
         addButton() {
+            $("#quark-button").remove();
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="quark-button pl-button"><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#555" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 2-2z"/><path d="M14 8h1.553c.85 0 1.16.093 1.47.267.311.174.556.43.722.756.166.326.255.65.255 1.54v4.873c0 .892-.089 1.215-.255 1.54-.166.327-.41.583-.722.757-.31.174-.62.267-1.47.267H6.447c-.85 0-1.16-.093-1.47-.267a1.778 1.778 0 01-.722-.756c-.166-.326-.255-.65-.255-1.54v-4.873c0-.892.089-1.215.255-1.54.166-.327.41-.583.722-.757.31-.174.62-.267 1.47-.267H11"/><path stroke-linecap="round" stroke-linejoin="round" d="M11 3v10"/></g></svg> 下载助手<ul class="pl-dropdown-menu"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li></ul></div>`);
+            let $button = $(`<div id="quark-button" class="file-info_r quark-button pl-button"><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 2-2z"/><path d="M14 8h1.553c.85 0 1.16.093 1.47.267.311.174.556.43.722.756.166.326.255.65.255 1.54v4.873c0 .892-.089 1.215-.255 1.54-.166.327-.41.583-.722.757-.31.174-.62.267-1.47.267H6.447c-.85 0-1.16-.093-1.47-.267a1.778 1.778 0 01-.722-.756c-.166-.326-.255-.65-.255-1.54v-4.873c0-.892.089-1.215.255-1.54.166-.327.41-.583.722-.757.31-.174.62-.267 1.47-.267H11"/><path stroke-linecap="round" stroke-linejoin="round" d="M11 3v10"/></g></svg>下载助手<ul class="pl-dropdown-menu"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+            $button.css({"margin-right":"10px","background-color":color});
             if (pt === 'home') {
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.home);
@@ -2330,7 +2359,7 @@
                 }, 50);
             }
             if (pt === 'share') {
-                $button.css({'margin-right': '10px'});
+                $button.css({"margin-right":"10px","background-color":color});
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.share);
                     if ($toolWrap.length > 0) {
@@ -2342,9 +2371,11 @@
         },
 
         addInitButton() {
+            $("#pl-button-init").remove();
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="quark-button pl-button-init"><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#555" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 2-2z"/><path d="M14 8h1.553c.85 0 1.16.093 1.47.267.311.174.556.43.722.756.166.326.255.65.255 1.54v4.873c0 .892-.089 1.215-.255 1.54-.166.327-.41.583-.722.757-.31.174-.62.267-1.47.267H6.447c-.85 0-1.16-.093-1.47-.267a1.778 1.778 0 01-.722-.756c-.166-.326-.255-.65-.255-1.54v-4.873c0-.892.089-1.215.255-1.54.166-.327.41-.583.722-.757.31-.174.62-.267 1.47-.267H11"/><path stroke-linecap="round" stroke-linejoin="round" d="M11 3v10"/></g></svg> 下载助手</div>`);
+            let $button = $(`<div id="quark-button" class="file-info_r quark-button pl-button-init"><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 2-2z"/><path d="M14 8h1.553c.85 0 1.16.093 1.47.267.311.174.556.43.722.756.166.326.255.65.255 1.54v4.873c0 .892-.089 1.215-.255 1.54-.166.327-.41.583-.722.757-.31.174-.62.267-1.47.267H6.447c-.85 0-1.16-.093-1.47-.267a1.778 1.778 0 01-.722-.756c-.166-.326-.255-.65-.255-1.54v-4.873c0-.892.089-1.215.255-1.54.166-.327.41-.583.722-.757.31-.174.62-.267 1.47-.267H11"/><path stroke-linecap="round" stroke-linejoin="round" d="M11 3v10"/></g></svg>下载助手(未点亮)</div>`);
+            $button.css({"margin-right":"10px","background-color":color});
             if (pt === 'home') {
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.home);
@@ -2355,7 +2386,7 @@
                 }, 50);
             }
             if (pt === 'share') {
-                $button.css({'margin-right': '10px'});
+                $button.css({'margin-right': '10px','width': '160px',"background-color":color});
                 let ins = setInterval(() => {
                     $toolWrap = $(pan.btn.share);
                     if ($toolWrap.length > 0) {
@@ -2410,151 +2441,151 @@
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link listener-link-api" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}</a>
                                 </div>`;
-            }
-            if (mode === 'aria') {
-                let alink = this.convertLinkToAria(dlink, filename, navigator.userAgent);
-                if (typeof (alink) === 'object') {
-                    content += `<div class="pl-item">
+                }
+                if (mode === 'aria') {
+                    let alink = this.convertLinkToAria(dlink, filename, navigator.userAgent);
+                    if (typeof (alink) === 'object') {
+                        content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}</a> </div>`;
-                } else {
-                    alinkAllText += alink + '\r\n';
-                    content += `<div class="pl-item">
+                    } else {
+                        alinkAllText += alink + '\r\n';
+                        content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
                 }
-            }
-            if (mode === 'rpc') {
-                content += `<div class="pl-item">
+                }
+                if (mode === 'rpc') {
+                    content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">推送到 RPC 下载器</span></button></div>`;
-            }
-            if (mode === 'curl') {
-                let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
-                if (typeof (alink) === 'object') {
-                    content += `<div class="pl-item">
+                }
+                if (mode === 'curl') {
+                    let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
+                    if (typeof (alink) === 'object') {
+                        content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}</a> </div>`;
-                } else {
-                    alinkAllText += alink + '\r\n';
-                    content += `<div class="pl-item">
+                    } else {
+                        alinkAllText += alink + '\r\n';
+                        content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
                 }
-            }
-            if (mode === 'bc') {
-                let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
-                content += `<div class="pl-item">
+                }
+                if (mode === 'bc') {
+                    let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
+                    content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+                }
+            });
+            content += '</div>';
+            if (mode === 'aria')
+                content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+            if (mode === 'rpc') {
+                let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
+                content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
             }
-        });
-        content += '</div>';
-        if (mode === 'aria')
-            content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
-        if (mode === 'rpc') {
-            let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-            content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
-        }
-        if (mode === 'curl')
-            content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
-        return content;
-    },
+            if (mode === 'curl')
+                content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+            return content;
+        },
 
-    async sendLinkToRPC(filename, link) {
-        let rpc = {
-            domain: base.getValue('setting_rpc_domain'),
-            port: base.getValue('setting_rpc_port'),
-            path: base.getValue('setting_rpc_path'),
-            token: base.getValue('setting_rpc_token'),
-            dir: base.getValue('setting_rpc_dir'),
-        };
+        async sendLinkToRPC(filename, link) {
+            let rpc = {
+                domain: base.getValue('setting_rpc_domain'),
+                port: base.getValue('setting_rpc_port'),
+                path: base.getValue('setting_rpc_path'),
+                token: base.getValue('setting_rpc_token'),
+                dir: base.getValue('setting_rpc_dir'),
+            };
 
-        let url = `${rpc.domain}:${rpc.port}${rpc.path}`;
-        let rpcData = {
-            id: new Date().getTime(),
-            jsonrpc: '2.0',
-            method: 'aria2.addUri',
-            params: [`token:${rpc.token}`, [link], {
-                dir: rpc.dir,
-                out: filename,
-                header: [`Cookie: ${document.cookie}`]
-            }]
-        };
-        try {
-            let res = await base.post(url, rpcData, {"Cookie": document.cookie}, '');
-            if (res.result) return 'success';
-            return 'fail';
-        } catch (e) {
-            return 'fail';
-        }
-    },
-
-    getSelectedList() {
-        try {
-            let selectedList = [];
-            let reactDom = document.getElementsByClassName('file-list')[0];
-            let reactObj = base.findReact(reactDom);
-            let props = reactObj.props
-            if (props) {
-                let fileList = props.list || [];
-                let selectedKeys = props.selectedRowKeys || [];
-                fileList.forEach((val) => {
-                    if (selectedKeys.includes(val.fid)) {
-                        selectedList.push(val);
-                    }
-                });
+            let url = `${rpc.domain}:${rpc.port}${rpc.path}`;
+            let rpcData = {
+                id: new Date().getTime(),
+                jsonrpc: '2.0',
+                method: 'aria2.addUri',
+                params: [`token:${rpc.token}`, [link], {
+                    dir: rpc.dir,
+                    out: filename,
+                    header: [`Cookie: ${document.cookie}`]
+                }]
+            };
+            try {
+                let res = await base.post(url, rpcData, {"Cookie": document.cookie}, '');
+                if (res.result) return 'success';
+                return 'fail';
+            } catch (e) {
+                return 'fail';
             }
-            return selectedList;
-        } catch (e) {
-            return [];
+        },
+
+        getSelectedList() {
+            try {
+                let selectedList = [];
+                let reactDom = document.getElementsByClassName('file-list')[0];
+                let reactObj = base.findReact(reactDom);
+                let props = reactObj.props
+                if (props) {
+                    let fileList = props.list || [];
+                    let selectedKeys = props.selectedRowKeys || [];
+                    fileList.forEach((val) => {
+                        if (selectedKeys.includes(val.fid)) {
+                            selectedList.push(val);
+                        }
+                    });
+                }
+                return selectedList;
+            } catch (e) {
+                return [];
+            }
+        },
+
+        detectPage() {
+            let path = location.pathname;
+            if (/^\/(list)/.test(path)) return 'home';
+            if (/^\/(s|share)\//.test(path)) return 'share';
+            return '';
+        },
+
+        isOnlyFolder() {
+            for (let i = 0; i < selectList.length; i++) {
+                if (selectList[i].file) return false;
+            }
+            return true;
+        },
+
+        showMainDialog(title, html, footer) {
+            Swal.fire({
+                title,
+                html,
+                footer,
+                allowOutsideClick: false,
+                showCloseButton: true,
+                showConfirmButton: false,
+                position: 'top',
+                width,
+                padding: '15px 20px 5px',
+                customClass,
+            });
+        },
+
+        async initPanLinker() {
+            base.initDefaultConfig();
+            base.addPanLinkerStyle();
+            pt = this.detectPage();
+            let res = await base.post
+            (`https://api.youxiaohou.com/config/quark?ver=${version}&a=${author}`, {}, {}, 'text');
+            pan = JSON.parse(base.d(res));
+            Object.freeze && Object.freeze(pan);
+            pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
+            this.addPageListener();
+            base.createTip();
+            base.createDownloadIframe();
+            base.registerMenuCommand();
         }
-    },
-
-    detectPage() {
-        let path = location.pathname;
-        if (/^\/(list)/.test(path)) return 'home';
-        if (/^\/(s|share)\//.test(path)) return 'share';
-        return '';
-    },
-
-    isOnlyFolder() {
-        for (let i = 0; i < selectList.length; i++) {
-            if (selectList[i].file) return false;
-        }
-        return true;
-    },
-
-    showMainDialog(title, html, footer) {
-        Swal.fire({
-            title,
-            html,
-            footer,
-            allowOutsideClick: false,
-            showCloseButton: true,
-            showConfirmButton: false,
-            position: 'top',
-            width,
-            padding: '15px 20px 5px',
-            customClass,
-        });
-    },
-
-    async initPanLinker() {
-        base.initDefaultConfig();
-        base.addPanLinkerStyle();
-        pt = this.detectPage();
-        let res = await base.post
-        (`https://api.youxiaohou.com/config/quark?ver=${version}&a=${author}`, {}, {}, 'text');
-        pan = JSON.parse(base.d(res));
-        Object.freeze && Object.freeze(pan);
-        pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
-        this.addPageListener();
-        base.createTip();
-        base.createDownloadIframe();
-        base.registerMenuCommand();
-    }
-};
+    };
 
     let main = {
         init() {
