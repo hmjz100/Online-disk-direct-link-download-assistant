@@ -31,5 +31,5 @@ V. 1.0.4（改自5.9.0版本）
 <br>13、修改部分css，使其与选择的主题更贴切。
 <br><hr>
 <h4>带有*的为文字注释</h4>
-1、“简介”为<a href="https://greasyfork.org/zh-CN/scripts/436446" rel="nofollow">【网盘直链下载助手】原简介</a>精简后得来的文字简介
-2、“主题色”指紫色，如不喜欢，你可在脚本设置中更改
+<br>1、“简介”为<a href="https://greasyfork.org/zh-CN/scripts/436446" rel="nofollow">【网盘直链下载助手】原简介</a>精简后得来的文字简介
+<br>2、“主题色”指紫色，如不喜欢，你可在脚本设置中更改
