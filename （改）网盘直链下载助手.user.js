@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.4
+// @version           1.0.5
 // @author            Hmjz100、油小猴
-// @icon              https://www.youxiaohou.com/48x48.png
+// @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @icon64            https://www.youxiaohou.com/64x64.png
-// @description       可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改自5.9.0版本,加彩蛋(提示:homo),自用,去推广,修原有BUG,修改界面。
+// @description       可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改自5.9.4版本,加彩蛋(提示:homo),自用,去推广,修原有BUG,修改界面。
 // @license           AGPL-3.0-or-later
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
@@ -185,6 +185,10 @@
             arr.sort(handle());
         },
 
+        fixFilename(name) {
+            return name.replace(/[!?&|`"'*\/:<>\\]/g, '_');
+        },
+
         blobDownload(blob, filename) {
             if (blob instanceof Blob) {
                 const url = URL.createObjectURL(blob);
@@ -269,6 +273,10 @@
             style.id = id;
             tag === 'style' ? style.innerHTML = css : style.href = css;
             doc.getElementsByTagName('head')[0].appendChild(style);
+        },
+
+        sleep(time) {
+            return new Promise(resolve => setTimeout(resolve, time));
         },
 
         findReact(dom, traverseUp = 0) {
@@ -394,7 +402,7 @@
             Swal.fire({
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
-                html: '<span>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
+                html: '<span>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
                 allowOutsideClick: false,
                 showCloseButton: false,
                 confirmButtonText: '我已阅',
@@ -557,7 +565,7 @@
                 showCancelButton: true,
                 cancelButtonColor: '#335bdd',
                 confirmButtonText: '确定',
-                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" style="width:373;font-size:19px;" type="text" placeholder="${pan.init[1]}"><br><span>你可以选择“注入”立即点亮按钮，<br>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
+                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" style="width:373;font-size:19px;" type="text" placeholder="${pan.init[1]}"><br><span>你可以选择“注入”立即点亮按钮，<br>（判断没写好，暗号用不了了，直接注入吧【彩蛋还能用】）暗号：“${pan.num}”。</span></div>`,
                 cancelButtonText: '注入(点亮下载助手按钮)'
             });
             if (result.isDismissed && result.dismiss === 'close') return;
@@ -755,7 +763,7 @@
         convertLinkToAria(link, filename, ua) {
             let BDUSS = this.getBDUSS();
             if (!!BDUSS) {
-                filename = filename.replace(' ', '_');
+                filename = base.fixFilename(filename);
                 return encodeURIComponent(`aria2c "${link}" --out "${filename}" --header "User-Agent: ${ua}" --header "Cookie: BDUSS=${BDUSS}"`);
             }
             return {
@@ -781,8 +789,8 @@
             let BDUSS = this.getBDUSS();
             if (!!BDUSS) {
                 let terminal = base.getValue('setting_terminal_type');
-                filename = filename.replace(' ', '_');
-                return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L "${link}" --output "${filename}" -A "${ua}" -b "BDUSS=${BDUSS}"`);
+                filename = base.fixFilename(filename);
+                return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L -C - "${link}" -o "${filename}" -A "${ua}" -b "BDUSS=${BDUSS}"`);
             }
             return {
                 link: pan.assistant,
@@ -1226,7 +1234,7 @@
     let ali = {
 
         convertLinkToAria(link, filename, ua) {
-            filename = filename.replace(' ', '_');
+            filename = base.fixFilename(filename);
             return encodeURIComponent(`aria2c "${link}" --out "${filename}" --header "Referer: https://www.aliyundrive.com/"`);
         },
 
@@ -1237,8 +1245,8 @@
 
         convertLinkToCurl(link, filename, ua) {
             let terminal = base.getValue('setting_terminal_type');
-            filename = filename.replace(' ', '_');
-            return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L "${link}" --output "${filename}" -e "https://www.aliyundrive.com/"`);
+            filename = base.fixFilename(filename);
+            return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L -C - "${link}" -o "${filename}" -e "https://www.aliyundrive.com/"`);
         },
 
         addPageListener() {
@@ -1514,8 +1522,8 @@
             try {
                 let selectedList = [];
                 let reactDom = document.getElementsByClassName(pan.dom.list)[0];
-                let reactObj = base.findReact(reactDom,1);
-                let props = reactObj.pendingProps
+                let reactObj = base.findReact(reactDom, 1);
+                let props = reactObj.pendingProps;
                 if (props) {
                     let fileList = props.dataSource || [];
                     let selectedKeys = props.selectedKeys.split(',');
@@ -1577,7 +1585,7 @@
     let tianyi = {
 
         convertLinkToAria(link, filename, ua) {
-            filename = filename.replace(' ', '_');
+            filename = base.fixFilename(filename);
             return encodeURIComponent(`aria2c "${link}" --out "${filename}"`);
         },
 
@@ -1588,8 +1596,8 @@
 
         convertLinkToCurl(link, filename, ua) {
             let terminal = base.getValue('setting_terminal_type');
-            filename = filename.replace(' ', '_');
-            return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L "${link}" --output "${filename}"`);
+            filename = base.fixFilename(filename);
+            return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L -C - "${link}" -o "${filename}"`);
         },
 
         addPageListener() {
@@ -1921,7 +1929,7 @@
     let xunlei = {
 
         convertLinkToAria(link, filename, ua) {
-            filename = filename.replace(' ', '_');
+            filename = base.fixFilename(filename);
             return encodeURIComponent(`aria2c "${link}" --out "${filename}"`);
         },
 
@@ -1932,8 +1940,8 @@
 
         convertLinkToCurl(link, filename, ua) {
             let terminal = base.getValue('setting_terminal_type');
-            filename = filename.replace(' ', '_');
-            return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L "${link}" --output "${filename}"`);
+            filename = base.fixFilename(filename);
+            return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L -C - "${link}" -o "${filename}"`);
         },
 
         addPageListener() {
@@ -2277,7 +2285,7 @@
     let quark = {
 
         convertLinkToAria(link, filename, ua) {
-            filename = filename.replace(' ', '_');
+            filename = base.fixFilename(filename);
             return encodeURIComponent(`aria2c "${link}" --out "${filename}" --header "Cookie: ${document.cookie}"`);
         },
 
@@ -2288,11 +2296,17 @@
 
         convertLinkToCurl(link, filename, ua) {
             let terminal = base.getValue('setting_terminal_type');
-            filename = filename.replace(' ', '_');
-            return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L "${link}" --output "${filename}" -b "${document.cookie}"`);
+            filename = base.fixFilename(filename);
+            return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L -C - "${link}" -o "${filename}" -b "${document.cookie}"`);
         },
 
         addPageListener() {
+            window.addEventListener('hashchange', async (e) => {
+                let home = 'https://pan.quark.cn/list#/', all = 'https://pan.quark.cn/list#/list/all';
+                if (e.oldURL === home && e.newURL === all ) return;
+                await base.sleep(150);
+                if ($('.quark-button').length > 0) return;
+            });
             window.addEventListener('hashchange', (event)=>{
                 pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
 
@@ -2423,7 +2437,10 @@
                 let html = this.generateDom(res.data);
                 this.showMainDialog(pan[mode][0], html, pan[mode][1]);
             } else {
-                return message.error('提示：请转存到自己网盘后去网盘主页下载！');
+                message.error('提示：请保存到自己网盘后去网盘主页下载！');
+                await base.sleep(1000);
+                document.querySelector('.file-info_r').click();
+                return
             }
         },
 
@@ -2453,7 +2470,7 @@
                         content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
-                }
+                    }
                 }
                 if (mode === 'rpc') {
                     content += `<div class="pl-item">
@@ -2471,7 +2488,7 @@
                         content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
                                 <a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
-                }
+                    }
                 }
                 if (mode === 'bc') {
                     let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
@@ -2526,7 +2543,7 @@
                 let selectedList = [];
                 let reactDom = document.getElementsByClassName('file-list')[0];
                 let reactObj = base.findReact(reactDom);
-                let props = reactObj.props
+                let props = reactObj.props;
                 if (props) {
                     let fileList = props.list || [];
                     let selectedKeys = props.selectedRowKeys || [];
