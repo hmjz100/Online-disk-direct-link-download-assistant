@@ -367,7 +367,7 @@
                 value: ''
             }, {
                 name: 'setting_getuser_info',
-                value: 'true'
+                value: 'yes'
             }];
 
             value.forEach((v) => {
