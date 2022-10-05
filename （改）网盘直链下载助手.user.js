@@ -609,7 +609,6 @@
                 allowOutsideClick: false,
                 showCloseButton: true,
                 showCancelButton: true,
-                cancelButtonColor: '#335bdd',
                 confirmButtonText: '确定',
                 html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" style="width:373;font-size:19px;" type="text" placeholder="${pan.init[1]}"><br><span>你可以选择“注入”立即点亮按钮，<br>（判断没写好，暗号用不了了，直接点击注入吧【彩蛋还能用】）暗号：“${pan.num}”。</span></div>`,
                 cancelButtonText: '注入(点亮下载助手按钮)'
