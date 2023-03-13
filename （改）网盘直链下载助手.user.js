@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.5.2
+// @version           1.0.5.4
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @icon64            https://www.youxiaohou.com/64x64.png
-// @description       可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改自5.9.4版本,加彩蛋(提示:homo),自用,去推广,修原有BUG,修改界面。
-// @license           AGPL-3.0-or-later
+// @description       可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改自5.9.4版本,自用,去推广,修原有BUG,修改界面。
+// @license           MIT
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
 // @match             *://pan.baidu.com/disk/home*
@@ -23,7 +23,7 @@
 // @match             *://pan.xunlei.com/*
 // @match             *://pan.quark.cn/*
 // @require           https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
-// @require           https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.all.min.js
+// @require           https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js
 // @require           https://unpkg.com/js-md5@0.7.3/build/md5.min.js
 // @connect           baidu.com
 // @connect           baidupcs.com
@@ -50,10 +50,10 @@
     'use strict';
     let pt = '', selectList = [], params = {}, mode = '', width = 800, pan = {}, color = '',
         doc = $(document), progress = {}, request = {}, ins = {}, idm = {};
-    const scriptInfo = GM_info.script;
-    const version = scriptInfo.version;
-    const author = scriptInfo.author;
-    const name = scriptInfo.name;
+    const scriptInfo = GM_info.script;//用于油小猴检测的脚本介绍
+    const version = scriptInfo.version;//用于油小猴检测的脚本版本
+    const author = scriptInfo.author;//用于油小猴检测的脚本作者
+    const name = scriptInfo.name;//用于油小猴检测的脚本名称
     const customClass = {
         popup: 'pl-popup',
         header: 'pl-header',
@@ -62,14 +62,18 @@
         content: 'pl-content',
         input: 'pl-input',
         footer: 'pl-footer'
-    };
+    };//准备好要用到的元素
 
+    //加上SweetAlert的主题css
+    //以后可能会直接把css本地化直接加到网页中
     let script = document.createElement('link');
     script.setAttribute('rel', 'stylesheet');
     script.setAttribute('type', 'text/css');
     script.href = "https://cdn.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/default.min.css";
     document.documentElement.appendChild(script);
 
+
+    //准备好Shell类型（用于curl下载）
     const terminalType = {
         wc: "Windows CMD",
         wp: "Windows PowerShell",
@@ -78,10 +82,12 @@
         mt: "MacOS 终端",
     };
 
+    //准备好信息界面的*假隐私设置*（实际上油小猴就是通过服务器获取的“暗号”）
     const getuserinfo = {
         yes: "允许",
     };
 
+    //准备好右上角的Toast提示
     let toast = Swal.mixin({
         toast: true,
         position: 'top-end',
@@ -94,6 +100,7 @@
         }
     });
 
+    //提示的信息内容
     const message = {
         success: (text) => {
             toast.fire({title: text, icon: 'success'});
@@ -113,6 +120,7 @@
     };
 
     let base = {
+        //脚本正常情况下默认加载的菜单
         registerMenuCommand() {
             GM_registerMenuCommand('⚙️ 设置', () => {
                 this.showSetting();
@@ -128,6 +136,7 @@
             });
         },
 
+        //取消点亮按钮按下后运行的
         registerSetting() {
             console.log("正在注入取消点亮按钮设置项目...");
             message.warning("正在注入取消点亮按钮设置项目...(您可以再次点亮按钮)");
@@ -135,6 +144,7 @@
             history.go(0)
         },
 
+        //获取网页Cookie
         getCookie(name) {
             let arr = document.cookie.replace(/\s/g, "").split(';');
             for (let i = 0, l = arr.length; i < l; i++) {
@@ -340,6 +350,7 @@
             return compFiber.stateNode || compFiber;
         },
 
+        //注册默认设置
         initDefaultConfig() {
             let value = [{
                 name: 'setting_rpc_domain',
@@ -377,7 +388,7 @@
 
         showSetting() {
             let dom = '', btn = '',
-                colorList = ['#574ab8', '#09AAFF', '#cc3235', '#526efa', '#518c17', '#ed944b', '#f969a5', '#bca280'];
+                colorList = ['#09AAFF', '#cc3235', '#526efa', '#518c17', '#ed944b', '#f969a5', '#bca280', '#574ab8', '#F8D800', '#0396FF', '#32CCBC', '#F6416C', '#2271b1', '#59524c', '#1d2327', '#18a497', '#10171d', '#2828ff'];
             dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://" class="pl-input listener-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
             dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix为16800" class="pl-input listener-port" value="${base.getValue('setting_rpc_port')}"></label>`;
             dom += `<label class="pl-setting-label"><div class="pl-label">RPC路径</div><input type="text" placeholder="路径，默认为/jsonrpc" class="pl-input listener-path" value="${base.getValue('setting_rpc_path')}"></label>`;
@@ -467,7 +478,7 @@
             Swal.fire({
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
-                html: '<span>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
+                html: '<span>V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br>说明：此脚本不提供会员链接解析功能！<br><br>V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
                 allowOutsideClick: false,
                 showCloseButton: false,
                 confirmButtonText: '我已阅',
@@ -560,15 +571,15 @@
             .pl-btn-warning { background: #da9328; }
             .pl-btn-danger { background: #cc3235; }
             .ali-button {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;font-size: 14px;margin-left: 20px;padding: 1px 12px;position: relative;}
-            .ali-button-big {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: rgb(99 125 255);margin-left: 20px;padding: 1px 12px;position: relative; cursor:pointer; height: 32px;}
+            .ali-button-big {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: ${color};margin-left: 20px;padding: 1px 12px;position: relative; cursor:pointer; height: 32px;}
             .ali-button:hover {background: rgb(122, 144, 255)}
-            .tianyi-button {margin-right: 20px; padding: 4px 12px; border-radius: 4px; color: #fff; font-size: 12px; border: 1px solid #0073e3; background: #2b89ea; cursor: pointer; position: relative;}
-            .tianyi-button:hover {border-color: #1874d3; background: #3699ff;}
-            .xunlei-button {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: #3f85ff;margin-left: 12px;padding: 0px 12px;position: relative; cursor:pointer; height: 36px;}
-            .xunlei-button:hover {background: #619bff}
+            .tianyi-button {margin-right: 20px; padding: 4px 12px; border-radius: 4px; color: #fff; font-size: 12px; border: 1px solid ${color}; background: ${color}; cursor: pointer; position: relative;}
+            .tianyi-button:hover {border-color: #a5a5a5; background: #a5a5a5;}
+            .xunlei-button {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: ${color};margin-left: 12px;padding: 0px 12px;position: relative; cursor:pointer; height: 36px;}
+            .xunlei-button:hover {background: #a5a5a5}
             .quark-button {display: inline-flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 8px; white-space: nowrap; flex-shrink: 0; font-size: 14px; line-height: 1.5; outline: 0; color: #fff; margin-right: 10px; padding: 0px 14px; position: relative; cursor: pointer; height: 36px;}
-            .quark-button:hover { background: ${color};}
-            .pl-dropdown-menu {position: absolute;right: 0;top: 32px;padding: 5px 0;color: rgb(37, 38, 43);background: #fff;z-index: 999;width: 102px;border-radius: 10px;box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%);}
+            .quark-button:hover { background: #a5a5a5;}
+            .pl-dropdown-menu {position: absolute;right: 0;top: 25px;padding: 5px 0;color: rgb(37, 38, 43);background: #fff;z-index: 999;width: 102px;border-radius: 10px;box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%);}
             .pl-dropdown-menu-old {position: absolute;right: 0;top: 30px;padding: 5px 0;color: rgb(37, 38, 43);background: #fff;z-index: 999;width: 102px;border: 1px solid #ddd;border-radius: 10px; box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%);}
             .pl-dropdown-menu-item { height: 30px;display: flex;align-items: center;justify-content: center;color: ${color};}
             .pl-dropdown-menu-item:hover { background-color: rgba(132,133,141,0.08);}
@@ -610,11 +621,12 @@
                 showCloseButton: true,
                 showCancelButton: true,
                 confirmButtonText: '确定',
-                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" style="width:373;font-size:19px;" type="text" placeholder="${pan.init[1]}"><br><span>你可以选择“注入”立即点亮按钮，<br>（判断没写好，暗号用不了了，直接点击注入吧【彩蛋还能用】）暗号：“${pan.num}”。</span></div>`,
+                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" style="width:373;font-size:19px;" type="text" placeholder="${pan.init[1]}"><br><span>你可以选择“注入”立即点亮按钮，或者输入暗号。<br>(还是一样，判断没写好，直接注入吧)<br>暗号：“${pan.num}”。<br>(希望能有个人帮我看看判断问题出在哪儿，这句话在脚本的624行)</span></div>`,
                 cancelButtonText: '注入(点亮下载助手按钮)'
             });
-            if (result.isDismissed && result.dismiss === 'close') return;
+            if (result.isDismissed && result.dismiss === 'close') {console.log("窗口关闭");return};
             if (result.isDismissed && result.dismiss === 'cancel') {
+                console.log("注入暗号")
                 console.log("正在注入点亮按钮设置项目...");
                 message.warning("正在注入点亮按钮设置项目...");
                 setTimeout(() => {
@@ -629,126 +641,32 @@
                 }, 5000);
                 return;
             };
-            if ('114514' === $('#init').val()) {
-                await Swal.fire({
-                    icon: 'error',
-                    title: '1145141919810',
-                    html: '<span>homo特有的数字当然不行啦<br>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
-                    timer: 8000,
-                    imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
-                    allowOutsideClick: false,
-                    timerProgressBar: true,
-                    showConfirmButton: false,
-                    showCancelButton: true,
-                    cancelButtonText: '哼哼哼啊啊啊啊啊啊啊啊啊啊',
-                });
-                message.info("成就：你触发了一个homo特有的彩蛋！");
+            if (pan.num === $('#init').val()) {
+                console.log("暗号正确")
+                message.success(pan.init[2]);
                 setTimeout(() => {
-                    Swal.fire({
-                        title: '1145141919810',
-                        text:'homo特有的数字当然不行啦...吗？',
-                        icon: 'question',
-                        imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
-                        showConfirmButton: false,
-                        allowOutsideClick: false,
-                    });
+                    base.setValue('setting_init_code', pan.num);
                     setTimeout(() => {
-                        base.setValue('setting_init_code', pan.num);
-                        message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功");
-                        setTimeout(() => {
-                            history.go(0);
-                        }, 3000);
-                    }, 3000)
-                }, 5000)
-
+                        history.go(0);
+                    }, 3000);
+                }, 3000)
+                return;
             } else {
-                if ('1919810' === $('#init').val()) {
-                    await Swal.fire({
-                        icon: 'error',
-                        title: '1145141919810',
-                        html: '<span>homo特有的数字当然不行啦<br>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
-                        timer: 8000,
-                        imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
-                        allowOutsideClick: false,
-                        timerProgressBar: true,
-                        showConfirmButton: false,
-                        showCancelButton: true,
-                        cancelButtonText: '哼哼哼啊啊啊啊啊啊啊啊啊啊',
-                    });
-                    message.info("成就：你触发了一个homo特有的彩蛋！");
-                    setTimeout(() => {
-                        Swal.fire({
-                            title: '1145141919810',
-                            text:'homo特有的数字当然不行啦...吗？',
-                            icon: 'question',
-                            imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
-                            showConfirmButton: false,
-                            allowOutsideClick: false,
-                        });
-                        setTimeout(() => {
-                            base.setValue('setting_init_code', pan.num);
-                            message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功");
-                            setTimeout(() => {
-                                history.go(0);
-                            }, 3000);
-                        }, 3000)
-                    }, 5000)
-
-
-                } else {
-                    if ('1145141919810' === $('#init').val()) {
-                        await Swal.fire({
-                            icon: 'error',
-                            title: '1145141919810',
-                            html: '<span>homo特有的数字当然不行啦<br>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
-                            timer: 8000,
-                            imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
-                            allowOutsideClick: false,
-                            timerProgressBar: true,
-                            showConfirmButton: false,
-                            showCancelButton: true,
-                            cancelButtonText: '哼哼哼啊啊啊啊啊啊啊啊啊啊',
-                        });
-                        message.info("成就：你触发了一个homo特有的彩蛋！");
-                        setTimeout(() => {
-                            Swal.fire({
-                                title: '1145141919810',
-                                text:'homo特有的数字当然不行啦...吗？',
-                                icon: 'question',
-                                imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
-                                showConfirmButton: false,
-                                allowOutsideClick: false,
-                            });
-                            setTimeout(() => {
-                                base.setValue('setting_init_code', pan.num);
-                                message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功");
-                                setTimeout(() => {
-                                    history.go(0);
-                                }, 3000);
-                            }, 3000)
-                        }, 5000)
-
-                    } else {
-                        if (pan.num === $('#init').val()) {
-                            message.success(pan.init[2]);
-                            setTimeout(() => {
-                                base.setValue('setting_init_code', pan.num);
-                                setTimeout(() => {
-                                    history.go(0);
-                                }, 3000);
-                            }, 3000)
-                        } else {
-                            await Swal.fire({
-                                imageUrl: pan.img,
-                                title: pan.init[3],
-                                html: `<div><span>${pan.init[4]}<br>你可以在返回后选择“注入”立即点亮按钮，<br>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
-                                confirmButtonText: '重新输入（返回）',
-                            });
-                            await this.initDialog();
-                        };
-                    };
-                };
+                console.log("暗号错误")
+                await Swal.fire({
+                    imageUrl: pan.img,
+                    title: pan.init[3],
+                    html: `<div><span>${pan.init[4]}<br>你可以在返回后选择“注入”立即点亮按钮，<br>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
+                    confirmButtonText: '重新输入（返回）',
+                });
+                await this.initDialog();
+                return;
             };
+            /*---
+            homo彩蛋被删去力（悲），存下图片罢！
+            imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
+            imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
+            */
         },
     };
 
@@ -1085,7 +1003,7 @@
             } else if (res.errno === 112) {
                 return message.error('提示：页面过期，请刷新重试！');
             } else {
-                message.error('提示：获取下载链接失败！请刷新网页后重试！');
+                message.error('提示：获取下载链接失败！请刷新网页后重试！（或者试试重新登录网盘？）');
             }
         },
 
