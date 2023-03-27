@@ -641,7 +641,7 @@
                 }, 5000);
                 return;
             };
-            if (pan.num === $('#init').val()) {
+            if (pan.num.substr(0, pan.num.length - 1) === $('#init').val()) {
                 console.log("暗号正确")
                 message.success(pan.init[2]);
                 setTimeout(() => {
