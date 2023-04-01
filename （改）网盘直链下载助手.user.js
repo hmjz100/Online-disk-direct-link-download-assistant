@@ -56,7 +56,8 @@
     const scriptInfo = '👆👆👆👆👆👆👆 - 支持批量获取 ✅百度网盘 ✅阿里云盘 ✅天翼云盘 ✅迅雷云盘 ✅夸克网盘 ✅移动云盘 六大网盘的直链下载地址，配合 IDM，Xdown，Aria2，Curl，比特彗星等工具高效🚀🚀🚀下载，完美适配 Chrome，Edge，FireFox，360，QQ，搜狗，百分，遨游，星愿，Opera，猎豹，Vivaldi，Yandex，Kiwi 等 18 种浏览器。可在无法安装客户端的环境下使用，助手免费开源。😎';
 
     //用于油小猴服务器检测的脚本版本
-    const version = scriptInfo.version;
+    //const version = scriptInfo.version;
+    const version = 9999999999999;//防止显示更新
 
     //用于油小猴服务器检测的脚本作者
     //const author = scriptInfo.author;
