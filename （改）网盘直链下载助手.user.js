@@ -654,14 +654,12 @@
                 }, 5000);
                 return;
             };
-            if (pan.num.substr(0, pan.num.length - 1) === $('#init').val()) {
+            if (pan.num === $('#init').val()) {
                 console.log("暗号正确")
                 message.success(pan.init[2]);
                 setTimeout(() => {
                     base.setValue('setting_init_code', pan.num);
-                    setTimeout(() => {
-                        history.go(0);
-                    }, 3000);
+                    history.go(0);
                 }, 3000)
                 return;
             } else {
