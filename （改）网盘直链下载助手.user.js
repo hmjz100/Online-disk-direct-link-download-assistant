@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.5.4
+// @version           1.0.5.5
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @icon64            https://www.youxiaohou.com/64x64.png
@@ -50,10 +50,22 @@
     'use strict';
     let pt = '', selectList = [], params = {}, mode = '', width = 800, pan = {}, color = '',
         doc = $(document), progress = {}, request = {}, ins = {}, idm = {};
-    const scriptInfo = GM_info.script;//用于油小猴检测的脚本介绍
-    const version = scriptInfo.version;//用于油小猴检测的脚本版本
-    const author = scriptInfo.author;//用于油小猴检测的脚本作者
-    const name = scriptInfo.name;//用于油小猴检测的脚本名称
+
+    //用于油小猴服务器检测的脚本介绍
+    //const scriptInfo = GM_info.script;
+    const scriptInfo = '👆👆👆👆👆👆👆 - 支持批量获取 ✅百度网盘 ✅阿里云盘 ✅天翼云盘 ✅迅雷云盘 ✅夸克网盘 ✅移动云盘 六大网盘的直链下载地址，配合 IDM，Xdown，Aria2，Curl，比特彗星等工具高效🚀🚀🚀下载，完美适配 Chrome，Edge，FireFox，360，QQ，搜狗，百分，遨游，星愿，Opera，猎豹，Vivaldi，Yandex，Kiwi 等 18 种浏览器。可在无法安装客户端的环境下使用，助手免费开源。😎';
+
+    //用于油小猴服务器检测的脚本版本
+    const version = scriptInfo.version;
+
+    //用于油小猴服务器检测的脚本作者
+    //const author = scriptInfo.author;
+    const author = '油小猴';
+
+    //用于油小猴服务器检测的脚本名称
+    //const name = scriptInfo.name;
+    const name = '网盘直链下载助手';
+
     const customClass = {
         popup: 'pl-popup',
         header: 'pl-header',
@@ -66,11 +78,11 @@
 
     //加上SweetAlert的主题css
     //以后可能会直接把css本地化直接加到网页中
-    let script = document.createElement('link');
-    script.setAttribute('rel', 'stylesheet');
-    script.setAttribute('type', 'text/css');
-    script.href = "https://cdn.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/default.min.css";
-    document.documentElement.appendChild(script);
+    let alertstyle = document.createElement('link');
+    alertstyle.setAttribute('rel', 'stylesheet');
+    alertstyle.setAttribute('type', 'text/css');
+    alertstyle.href = "https://cdn.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/default.min.css";
+    document.documentElement.appendChild(alertstyle);
 
 
     //准备好Shell类型（用于curl下载）
@@ -128,7 +140,7 @@
             GM_registerMenuCommand('更新日志', () => {
                 this.showUpdateLog();
             });
-            GM_registerMenuCommand('脚本信息', () => {
+            GM_registerMenuCommand('分析信息', () => {
                 this.showInfo();
             });
             GM_registerMenuCommand('取消点亮按钮', () => {
@@ -445,28 +457,29 @@
 
         showInfo() {
             let hideinfo='';
-            hideinfo +=`<label class="pl-setting-label"><div class="pl-label">版本</div>${version}</label>`;
-            hideinfo +=`<label class="pl-setting-label"><div class="pl-label">作者</div>${author}</label>`;
-            hideinfo += `<label class="pl-setting-label"><div class="pl-label">暗号</div>${pan.num}</label>`;
-            hideinfo += `<label class="pl-setting-label"><div class="pl-label">代理</div>${pan.ua}</label>`;
-            hideinfo += `<label class="pl-setting-label"><div class="pl-label">公众号</div>${pan.img}</label>`;
+            hideinfo +=`<span>以下内容都是脚本自己检测到的信息(非实际脚本信息)<br>本页面仅作为调试使用<span>`;
+            hideinfo +=`<label class="pl-setting-label"><div class="pl-label">脚本版本</div>${version}</label>`;
+            hideinfo +=`<label class="pl-setting-label"><div class="pl-label">脚本作者</div>${author}</label>`;
+            hideinfo += `<label class="pl-setting-label"><div class="pl-label">初始化暗号</div>${pan.num}</label>`;
+            hideinfo += `<label class="pl-setting-label"><div class="pl-label">UA代理</div>${pan.ua}</label>`;
+            hideinfo += `<label class="pl-setting-label"><div class="pl-label">公众号地址</div>${pan.img}</label>`;
             hideinfo += `<label class="pl-setting-label"><div class="pl-label">网盘万能助手</div>${pan.assistant}</label>`;
             hideinfo += `<label class="pl-setting-label"><div class="pl-label">网盘镜像</div>${pan.mirror}</label>`;
-            hideinfo += `<label class="pl-setting-label"><div class="pl-label">RPC在线管理</div>${pan.d}</label>`;
-            hideinfo += `<label class="pl-setting-label"><div class="pl-label">IDM</div>${pan.idm}</label>`;
-            hideinfo += `<label class="pl-setting-label"><div class="pl-label">提示文本</div>0${pan.init[0]}<br>1${pan.init[1]}<br>2${pan.init[2]}<br>3${pan.init[3]}<br>4${pan.init[4]}<br>5${pan.init[5]}</label>`;
+            hideinfo += `<label class="pl-setting-label"><div class="pl-label">RPC管理</div>${pan.d}</label>`;
+            hideinfo += `<label class="pl-setting-label"><div class="pl-label">IDM介绍</div>${pan.idm}</label>`;
+            hideinfo += `<label class="pl-setting-label"><div class="pl-label">提示文本</div>0、${pan.init[0]}<br>1、${pan.init[1]}<br>2、${pan.init[2]}<br>3、${pan.init[3]}<br>4、${pan.init[4]}<br>5、${pan.init[5]}</label>`;
             hideinfo += `<label class="pl-setting-label"><div class="pl-label">页脚</div>${pan.fotter}</label>`;
-            hideinfo +=`<label class="pl-setting-label"><div class="pl-label">允许油小猴在线收集作者名称与获取暗号</div><select class="pl-input getuser_info">`;
+            hideinfo +=`<label class="pl-setting-label"><div class="pl-label">允许油小猴在线收集作者名称与获取暗号(没有用)</div><select class="pl-input getuser_info">`;
             Object.keys(getuserinfo).forEach(value1 => {hideinfo += `<option value="${value1}" ${base.getValue('setting_getuser_info') === value1 ? 'selected' : ''}>${getuserinfo[value1]}</option></label>`;});
             hideinfo = '<div>' + hideinfo + '</div>';
 
             Swal.fire({
                 icon: 'info',
-                title: '脚本信息',
+                title: '脚本分析信息',
                 html: hideinfo,
                 allowOutsideClick: false,
                 showCloseButton: true,
-                confirmButtonText: '保存配置'
+                confirmButtonText: '保存配置(关闭)'
             });
 
             doc.on('change', '.getuser_info', async (e) => {
@@ -478,7 +491,7 @@
             Swal.fire({
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
-                html: '<span>V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br>说明：此脚本不提供会员链接解析功能！<br><br>V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
+                html: '<span>V1.0.5.5<br>1、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。<br>说明：此脚本不提供会员链接解析功能！<br><br>V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br><br>V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
                 allowOutsideClick: false,
                 showCloseButton: false,
                 confirmButtonText: '我已阅',
@@ -621,7 +634,7 @@
                 showCloseButton: true,
                 showCancelButton: true,
                 confirmButtonText: '确定',
-                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" style="width:373;font-size:19px;" type="text" placeholder="${pan.init[1]}"><br><span>你可以选择“注入”立即点亮按钮，或者输入暗号。<br>(还是一样，判断没写好，直接注入吧)<br>暗号：“${pan.num}”。<br>(希望能有个人帮我看看判断问题出在哪儿，这句话在脚本的624行)</span></div>`,
+                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" style="width:373;font-size:19px;" type="text" placeholder="${pan.init[1]}"><br><span>你可以选择“注入”立即点亮按钮，或者输入暗号。<br>暗号：“${pan.num}”。<br>(也可以扫码支持一下原作者油小猴)</span></div>`,
                 cancelButtonText: '注入(点亮下载助手按钮)'
             });
             if (result.isDismissed && result.dismiss === 'close') {console.log("窗口关闭");return};
@@ -641,7 +654,7 @@
                 }, 5000);
                 return;
             };
-            if (pan.num === $('#init').val()) {
+            if (pan.num.substr(0, pan.num.length - 1) === $('#init').val()) {
                 console.log("暗号正确")
                 message.success(pan.init[2]);
                 setTimeout(() => {
@@ -2147,7 +2160,7 @@
                     let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
                     content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> 
+                                <a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a>
                                 <div class="pl-item-btn listener-link-bc-btn" data-dlink="${dlink}">复制镜像地址</div>
                                 </div>`;
                 }
