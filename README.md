@@ -1,21 +1,24 @@
 # （改）网盘直链下载助手 | Online disk direct link download assistant
-可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：https://www.baiduyun.wiki/ ，自用，去推广。
+可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：https://www.baiduyun.wiki/ ，自用，去广告，无需输入“暗号”即可使用。
 
 <hr><h1>说明</h1>
 基于<a href="https://www.baiduyun.wiki/" rel="nofollow">【网盘直链下载助手】</a>修改（改自最新5.9.4版本），原作者：https://www.baiduyun.wiki/ ，<br>
 原脚本：https://greasyfork.org/zh-CN/scripts/436446 。
-自用，去广告，无需输入“暗号”即可使用。因<a href="https://greasyfork.org/zh-CN/scripts/422818" rel="nofollow">上一个修改作者</a>已经弃坑，所以由我来代其更新。
-<br>greasyfork链接：<a href="https://greasyfork.org/zh-CN/scripts/449291" rel="nofollow">greasyfork.org/zh-CN/scripts/449291</a>
+因<a href="https://greasyfork.org/zh-CN/scripts/422818" rel="nofollow">上一个修改作者</a>已经弃坑，所以由我来代其更新。
+<br>GreasyFork链接：<a href="https://greasyfork.org/zh-CN/scripts/449291" rel="nofollow">greasyfork.org/zh-CN/scripts/449291</a>
 <br>因网络环境，发布新脚本时GreasyFork是最快更新的。
 <br><hr>
 <h1>*简介</h1>
-现已支持百度阿里天翼迅雷夸克五大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎
+现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎
 <br><hr>
 <h4>卑微的小标题</h4>
-这个脚本只有一个人在修改~如果喜欢的话还请留个好评和Star哦~
+这个脚本只有一个人在修改~如果喜欢的话还请留个好评和Star哦~<br>如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。
+<br><hr>
+<h1>统计~</h1>
+<div><img src="https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=%E5%BE%97%E5%88%86&rcolor=orange">  <img src="https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=%E5%A5%BD%E8%AF%84&rcolor=darkcyan">  <img src="https://palerock.cn/node-service/images/greasyfork/views-info/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=%E8%AE%B8%E5%8F%AF%E8%AF%81&rcolor=blueviolet"></div>
 <br><hr>
 <h3>最新版本号</h3>
-V. 1.0.5.5（改自5.9.4版本）
+V. 1.0.6（改自6.0.4版本）
 <br><hr>
 <h1>更新日志</h1>
 <br>1、增加“<b>注入</b>”功能（bushi）；
@@ -43,6 +46,8 @@ V. 1.0.5.5（改自5.9.4版本）
 <br>23、homo彩蛋被删去力（悲）；
 <br>24、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；
 <br>25、修改一些文本以及提供给服务器的信息。
+<br>26、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；
+<br>27、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。
 <br><hr>
 <h4>带有*的为文字注释</h4>
 1、“简介”为<a href="https://greasyfork.org/zh-CN/scripts/436446" rel="nofollow">【网盘直链下载助手】原简介</a>精简后得来的文字简介
