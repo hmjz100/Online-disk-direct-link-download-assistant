@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.6.1
+// @version           1.0.6.2
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.0.4版本,自用,去推广,修原有BUG,修改界面,比原版还好用！
@@ -25,9 +25,8 @@
 // @match             *://caiyun.139.com/*
 // @match             *://*.youxiaohou.com/*
 // @require           https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
-// @require           https://fastly.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js
+// @require           https://unpkg.com/sweetalert2@11/dist/sweetalert2.js
 // @require           https://unpkg.com/js-md5@0.7.3/build/md5.min.js
-// @resource AlertCSS https://fastly.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/default.min.css
 // @connect           baidu.com
 // @connect           baidupcs.com
 // @connect           aliyundrive.com
@@ -41,7 +40,6 @@
 // @compatible	      Chrome
 // @compatible	      Firefox
 // @compatible	      Safari
-// @compatible	      Edge
 // @compatible	      Opera
 // @grant             unsafeWindow
 // @grant             GM_xmlhttpRequest
@@ -150,10 +148,6 @@
         footer: 'pl-footer'
     };//准备好要用到的元素
 
-    //加上SweetAlert的主题css
-    //以后可能会直接把css本地化直接加到网页中
-    GM_addStyle(GM_getResourceText("AlertCSS"));
-
 
     //准备好Shell类型（用于curl下载）
     const terminalType = {
@@ -180,6 +174,7 @@
         showConfirmButton: false,
         timer: 3500,
         timerProgressBar: true,
+        showCloseButton: true,
         didOpen: (toast) => {
             toast.addEventListener('mouseenter', Swal.stopTimer);
             toast.addEventListener('mouseleave', Swal.resumeTimer);
@@ -615,7 +610,7 @@
             Swal.fire({
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
-                html: '<span>V1.0.6.1<br>1、新增百度云盘API下载支持复制链接；<br>2、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；<br>3、修改CSS，界面会出现更多的主题色；<br>4、支持在游小猴官网查看暗号；<br>5、修复部分语法错误。<br><br>V1.0.6<br>1、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；<br>2、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。<br><br>V1.0.5.5<br>1、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。<br><br>V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br><br>V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
+                html: '<span>V1.0.6.2<br>1、修复部分界面错位，实现CSS内置；<br>2、百度网盘界面将变得更加简洁。<br><br>V1.0.6.1<br>1、新增百度云盘API下载支持复制链接；<br>2、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；<br>3、修改CSS，界面会出现更多的主题色；<br>4、支持在游小猴官网查看暗号；<br>5、修复部分语法错误。<br><br>V1.0.6<br>1、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；<br>2、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。<br><br>V1.0.5.5<br>1、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。<br><br>V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br><br>V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
                 allowOutsideClick: false,
                 showCloseButton: false,
                 confirmButtonText: '我已阅',
@@ -687,7 +682,7 @@
             .pl-item-link { flex: 1; text-align: left; white-space: nowrap; text-overflow: ellipsis;cursor:pointer; overflow: hidden; }
             .pl-item-btn { background: ${color}; border-radius: 3px; color: #ffffff; cursor: pointer; font-size: 12px; outline: none; display: flex; align-items: center; justify-content: center; margin: 6px 6px; padding: 0.625em 1.1em; }
             .pl-item-tip { display: flex; justify-content: space-between;flex: 1; }
-            .pl-back { width: 70px; background: #ddd; border-radius: 3px; cursor:pointer; margin:1px 0; }
+            .pl-back { width: 70px; background: #ddd; border-radius: 3px; cursor:pointer; margin:1px 6px; }
             .pl-ext { display: inline-block; width: 44px; background: #999; color: #fff; height: 16px; line-height: 16px; font-size: 12px; border-radius: 3px;}
             .pl-retry {padding: 3px 10px; background: #cc3235; color: #fff; border-radius: 3px; cursor: pointer;}
             .pl-browserdownload { padding: 3px 10px; background: ${color}; color: #fff; border-radius: 3px; cursor: pointer;}
@@ -698,7 +693,7 @@
             .pl-progress-inner-text { display: inline-block;vertical-align: middle;color: #ffffff;font-size: 12px;margin: 0 5px;height: 15px}
             .pl-progress-tip{ flex:1;text-align:right}
             .pl-progress-how{ flex: 0 0 100px; background: #ddd; border-radius: 3px; margin-left: 10px; cursor: pointer; text-align: center;}
-            .pl-progress-stop{ flex: 0 0 75px; background: #cc3235; cursor: pointer; margin-left: 10px; font-size: 12px; border: 0; border-radius: 4px; color: #ffffff; outline: none; display: flex; align-items: center; justify-content: center; padding: 0.625em 1.1em;}
+            .pl-progress-stop{ flex: 0 0 80px; background: #cc3235; cursor: pointer; margin: 6px 6px 6px 10px; font-size: 12px; border: 0; border-radius: 4px; color: #ffffff; outline: none; display: flex; align-items: center; justify-content: center; padding: 0.625em 1.1em;}
             .pl-progress-inner-text:after { display: inline-block;content: "";height: 100%;vertical-align: middle;}
             .pl-btn-primary { background: ${color}; border: 0; border-radius: 4px; color: #ffffff; cursor: pointer; font-size: 12px; outline: none; display:flex; align-items: center; justify-content: center; margin: 6px 6px; padding: 0.625em 1.1em;transition: 0.3s opacity; }
             .pl-btn-primary:hover { opacity: 0.9;transition: 0.3s opacity; }
@@ -724,7 +719,7 @@
             .pl-dropdown-menu-item { height: 30px;display: flex;align-items: center;justify-content: center;color: ${color};}
             .pl-dropdown-menu-item:hover { background-color: rgba(132,133,141,0.08);}
             .pl-button .pl-dropdown-menu { display: none; }
-            .pl-button-mode {padding-left: 0px !important;}
+            .pl-button-mode {padding: 0px !important;}
             .pl-button:hover .pl-dropdown-menu { display: block!important; }
             .pl-button-init { opacity: 0.5; animation: easeInitOpacity 1.2s 3; animation-fill-mode:forwards }
              @keyframes easeInitOpacity { from { opacity: 0.5; } 50% { opacity: 1 } to { opacity: 0.5; } }
@@ -753,6 +748,1379 @@
             body.swal2-height-auto { height: inherit!important; }
             `;
             this.addStyle('panlinker-style', 'style', css);
+
+            let swalcss = `
+.swal2-popup.swal2-toast {
+                box-sizing:border-box;
+                grid-column:1/4!important;
+                grid-row:1/4!important;
+                grid-template-columns:1fr 99fr 1fr;
+                padding:1em;
+                overflow-y:hidden;
+                background:#fff;
+                box-shadow:0 0 1px hsla(0deg,0%,0%,.075),0 1px 2px hsla(0deg,0%,0%,.075),1px 2px 4px hsla(0deg,0%,0%,.075),1px 3px 8px hsla(0deg,0%,0%,.075),2px 4px 16px hsla(0deg,0%,0%,.075);
+                pointer-events:all
+}
+.swal2-popup.swal2-toast>* {
+                grid-column:2
+}
+.swal2-popup.swal2-toast .swal2-title {
+                margin:.5em 1em;
+                padding:0;
+                font-size:1em;
+                text-align:initial
+}
+.swal2-popup.swal2-toast .swal2-loading {
+                justify-content:center
+}
+.swal2-popup.swal2-toast .swal2-input {
+                height:2em;
+                margin:.5em;
+                font-size:1em
+}
+.swal2-popup.swal2-toast .swal2-validation-message {
+                font-size:1em
+}
+.swal2-popup.swal2-toast .swal2-footer {
+                margin:.5em 0 0;
+                padding:.5em 0 0;
+                font-size:.8em
+}
+.swal2-popup.swal2-toast .swal2-close {
+                grid-column:3/3;
+                grid-row:1/99;
+                align-self:center;
+                width:.8em;
+                height:.8em;
+                margin:0;
+                font-size:2em
+}
+.swal2-popup.swal2-toast .swal2-html-container {
+                margin:.5em 1em;
+                padding:0;
+                overflow:initial;
+                font-size:1em;
+                text-align:initial
+}
+.swal2-popup.swal2-toast .swal2-html-container:empty {
+                padding:0
+}
+.swal2-popup.swal2-toast .swal2-loader {
+                grid-column:1;
+                grid-row:1/99;
+                align-self:center;
+                width:2em;
+                height:2em;
+                margin:.25em
+}
+.swal2-popup.swal2-toast .swal2-icon {
+                grid-column:1;
+                grid-row:1/99;
+                align-self:center;
+                width:2em;
+                min-width:2em;
+                height:2em;
+                margin:0 .5em 0 0
+}
+.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {
+                display:flex;
+                align-items:center;
+                font-size:1.8em;
+                font-weight:700
+}
+.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
+                width:2em;
+                height:2em
+}
+.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+                top:.875em;
+                width:1.375em
+}
+.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+                left:.3125em
+}
+.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+                right:.3125em
+}
+.swal2-popup.swal2-toast .swal2-actions {
+                justify-content:flex-start;
+                height:auto;
+                margin:0;
+                margin-top:.5em;
+                padding:0 .5em
+}
+.swal2-popup.swal2-toast .swal2-styled {
+                margin:.25em .5em;
+                padding:.4em .6em;
+                font-size:1em
+}
+.swal2-popup.swal2-toast .swal2-success {
+                border-color:#a5dc86
+}
+.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line] {
+                position:absolute;
+                width:1.6em;
+                height:3em;
+                transform:rotate(45deg);
+                border-radius:50%
+}
+.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {
+                top:-.8em;
+                left:-.5em;
+                transform:rotate(-45deg);
+                transform-origin:2em 2em;
+                border-radius:4em 0 0 4em
+}
+.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {
+                top:-.25em;
+                left:.9375em;
+                transform-origin:0 1.5em;
+                border-radius:0 4em 4em 0
+}
+.swal2-popup.swal2-toast .swal2-success .swal2-success-ring {
+                width:2em;
+                height:2em
+}
+.swal2-popup.swal2-toast .swal2-success .swal2-success-fix {
+                top:0;
+                left:.4375em;
+                width:.4375em;
+                height:2.6875em
+}
+.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line] {
+                height:.3125em
+}
+.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {
+                top:1.125em;
+                left:.1875em;
+                width:.75em
+}
+.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {
+                top:.9375em;
+                right:.1875em;
+                width:1.375em
+}
+.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {
+                -webkit-animation:swal2-toast-animate-success-line-tip .75s;
+                animation:swal2-toast-animate-success-line-tip .75s
+}
+.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {
+                -webkit-animation:swal2-toast-animate-success-line-long .75s;
+                animation:swal2-toast-animate-success-line-long .75s
+}
+.swal2-popup.swal2-toast.swal2-show {
+                -webkit-animation:swal2-toast-show .5s;
+                animation:swal2-toast-show .5s
+}
+.swal2-popup.swal2-toast.swal2-hide {
+                -webkit-animation:swal2-toast-hide .1s forwards;
+                animation:swal2-toast-hide .1s forwards
+}
+.swal2-container {
+                display:grid;
+                position:fixed;
+                z-index:1060;
+                top:0;
+                right:0;
+                bottom:0;
+                left:0;
+                box-sizing:border-box;
+                grid-template-areas:"top-start         top                        top-end" "center-start  center                 center-end" "bottom-start  bottom-center  bottom-end";
+                grid-template-rows:minmax(-webkit-min-content,auto) minmax(-webkit-min-content,auto) minmax(-webkit-min-content,auto);
+                grid-template-rows:minmax(min-content,auto) minmax(min-content,auto) minmax(min-content,auto);
+                height:100%;
+                padding:.625em;
+                overflow-x:hidden;
+                transition:background-color .1s;
+                -webkit-overflow-scrolling:touch
+}
+.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation {
+                background:${color}66 !important
+}
+.swal2-container.swal2-backdrop-hide {
+                background:0 0!important
+}
+.swal2-container.swal2-bottom-start,.swal2-container.swal2-center-start,.swal2-container.swal2-top-start {
+                grid-template-columns:minmax(0,1fr) auto auto
+}
+.swal2-container.swal2-bottom,.swal2-container.swal2-center,.swal2-container.swal2-top {
+                grid-template-columns:auto minmax(0,1fr) auto
+}
+.swal2-container.swal2-bottom-end,.swal2-container.swal2-center-end,.swal2-container.swal2-top-end {
+                grid-template-columns:auto auto minmax(0,1fr)
+}
+.swal2-container.swal2-top-start>.swal2-popup {
+                align-self:start
+}
+.swal2-container.swal2-top>.swal2-popup {
+                grid-column:2;
+                align-self:start;
+                justify-self:center
+}
+.swal2-container.swal2-top-end>.swal2-popup,.swal2-container.swal2-top-right>.swal2-popup {
+                grid-column:3;
+                align-self:start;
+                justify-self:end
+}
+.swal2-container.swal2-center-left>.swal2-popup,.swal2-container.swal2-center-start>.swal2-popup {
+                grid-row:2;
+                align-self:center
+}
+.swal2-container.swal2-center>.swal2-popup {
+                grid-column:2;
+                grid-row:2;
+                align-self:center;
+                justify-self:center
+}
+.swal2-container.swal2-center-end>.swal2-popup,.swal2-container.swal2-center-right>.swal2-popup {
+                grid-column:3;
+                grid-row:2;
+                align-self:center;
+                justify-self:end
+}
+.swal2-container.swal2-bottom-left>.swal2-popup,.swal2-container.swal2-bottom-start>.swal2-popup {
+                grid-column:1;
+                grid-row:3;
+                align-self:end
+}
+.swal2-container.swal2-bottom>.swal2-popup {
+                grid-column:2;
+                grid-row:3;
+                justify-self:center;
+                align-self:end
+}
+.swal2-container.swal2-bottom-end>.swal2-popup,.swal2-container.swal2-bottom-right>.swal2-popup {
+                grid-column:3;
+                grid-row:3;
+                align-self:end;
+                justify-self:end
+}
+.swal2-container.swal2-grow-fullscreen>.swal2-popup,.swal2-container.swal2-grow-row>.swal2-popup {
+                grid-column:1/4;
+                width:100%
+}
+.swal2-container.swal2-grow-column>.swal2-popup,.swal2-container.swal2-grow-fullscreen>.swal2-popup {
+                grid-row:1/4;
+                align-self:stretch
+}
+.swal2-container.swal2-no-transition {
+                transition:none!important
+}
+.swal2-popup {
+                display:none;
+                position:relative;
+                box-sizing:border-box;
+                grid-template-columns:minmax(0,100%);
+                width:32em;
+                max-width:100%;
+                padding:0 0 1.25em;
+                border:none;
+                border-radius:5px;
+                background:#fff;
+                color:#545454;
+                font-family:inherit;
+                font-size:1rem
+}
+.swal2-popup:focus {
+                outline:0
+}
+.swal2-popup.swal2-loading {
+                overflow-y:hidden
+}
+.swal2-title {
+                position:relative;
+                max-width:100%;
+                margin:0;
+                padding:.8em 1em 0;
+                color:inherit;
+                font-size:1.875em;
+                font-weight:600;
+                text-align:center;
+                text-transform:none;
+                word-wrap:break-word
+}
+.swal2-actions {
+                display:flex;
+                z-index:1;
+                box-sizing:border-box;
+                flex-wrap:wrap;
+                align-items:center;
+                justify-content:center;
+                width:auto;
+                margin:1.25em auto 0;
+                padding:0
+}
+.swal2-actions:not(.swal2-loading) .swal2-styled[disabled] {
+                opacity:.4
+}
+.swal2-actions:not(.swal2-loading) .swal2-styled:hover {
+                background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))
+}
+.swal2-actions:not(.swal2-loading) .swal2-styled:active {
+                background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))
+}
+.swal2-loader {
+                display:none;
+                align-items:center;
+                justify-content:center;
+                width:2.2em;
+                height:2.2em;
+                margin:0 1.875em;
+                -webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;
+                animation:swal2-rotate-loading 1.5s linear 0s infinite normal;
+                border-width:.25em;
+                border-style:solid;
+                border-radius:100%;
+                border-color:${color} transparent ${color} transparent !important
+}
+.swal2-styled {
+                margin:.3125em;
+                padding:.625em 1.1em;
+                transition:box-shadow .1s;
+                box-shadow:0 0 0 3px transparent;
+                font-weight:500
+}
+.swal2-styled:not([disabled]) {
+                cursor:pointer
+}
+.swal2-styled.swal2-confirm {
+                border:0;
+                border-radius:.25em;
+                background:initial;
+                background-color:${color} !important;
+                color:#fff;
+                font-size:1em
+}
+.swal2-styled.swal2-confirm:focus {
+                box-shadow:0 0 0 3px ${color}80 !important
+}
+.swal2-styled.swal2-deny {
+                border:0;
+                border-radius:.25em;
+                background:initial;
+                background-color:#dc3741;
+                color:#fff;
+                font-size:1em
+}
+.swal2-styled.swal2-deny:focus {
+                box-shadow:0 0 0 3px rgba(220,55,65,.5)
+}
+.swal2-styled.swal2-cancel {
+                border:0;
+                border-radius:.25em;
+                background:initial;
+                background-color:#dd3333;
+                color:#fff;
+                font-size:1em
+}
+.swal2-styled.swal2-cancel:focus {
+                box-shadow:0 0 0 3px rgba(110,120,129,.5)
+}
+.swal2-styled.swal2-default-outline:focus {
+                box-shadow:0 0 0 3px rgba(100,150,200,.5)
+}
+.swal2-styled:focus {
+                outline:0
+}
+.swal2-styled::-moz-focus-inner {
+                border:0
+}
+.swal2-footer {
+                justify-content:center;
+                margin:1em 0 0;
+                padding:1em 1em 0;
+                border-top:1px solid #eee;
+                color:inherit;
+                font-size:1em
+}
+.swal2-timer-progress-bar-container {
+                position:absolute;
+                right:0;
+                bottom:0;
+                left:0;
+                grid-column:auto!important;
+                overflow:hidden;
+                border-bottom-right-radius:5px;
+                border-bottom-left-radius:5px
+}
+.swal2-timer-progress-bar {
+                width:100%;
+                height:.25em;
+                background:rgba(0,0,0,.2)
+}
+.swal2-image {
+                max-width:100%;
+                margin:2em auto 1em
+}
+.swal2-close {
+                z-index:2;
+                align-items:center;
+                justify-content:center;
+                width:1.2em;
+                height:1.2em;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:-1.2em;
+                padding:0;
+                overflow:hidden;
+                transition:color .1s,box-shadow .1s;
+                border:none;
+                border-radius:5px;
+                background:0 0;
+                color:#ccc;
+                font-family:serif;
+                font-family:monospace;
+                font-size:2.5em;
+                cursor:pointer;
+                justify-self:end
+}
+.swal2-close:hover {
+                transform:none;
+                background:0 0;
+                color:#f27474
+}
+.swal2-close:focus {
+                outline:0;
+                box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)
+}
+.swal2-close::-moz-focus-inner {
+                border:0
+}
+.swal2-html-container {
+                z-index:1;
+                justify-content:center;
+                margin:1em 1.6em .3em;
+                padding:0;
+                overflow:auto;
+                color:inherit;
+                font-size:1.125em;
+                font-weight:400;
+                line-height:normal;
+                text-align:center;
+                word-wrap:break-word;
+                word-break:break-word
+}
+.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea {
+                margin:1em 2em 3px
+}
+.swal2-file,.swal2-input,.swal2-textarea {
+                box-sizing:border-box;
+                width:auto;
+                transition:border-color .1s,box-shadow .1s;
+                border:1px solid #d9d9d9;
+                border-radius:.1875em;
+                background:0 0;
+                box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px transparent;
+                color:inherit;
+                font-size:1.125em
+}
+.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror {
+                border-color:#f27474!important;
+                box-shadow:0 0 2px #f27474!important
+}
+.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus {
+                border:1px solid #b4dbed;
+                outline:0;
+                box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(100,150,200,.5)
+}
+.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder {
+                color:#ccc
+}
+.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder {
+                color:#ccc
+}
+.swal2-range {
+                margin:1em 2em 3px;
+                background:#fff
+}
+.swal2-range input {
+                width:80%
+}
+.swal2-range output {
+                width:20%;
+                color:inherit;
+                font-weight:600;
+                text-align:center
+}
+.swal2-range input,.swal2-range output {
+                height:2.625em;
+                padding:0;
+                font-size:1.125em;
+                line-height:2.625em
+}
+.swal2-input {
+                height:2.625em;
+                padding:0 .75em
+}
+.swal2-file {
+                width:75%;
+                margin-right:auto;
+                margin-left:auto;
+                background:0 0;
+                font-size:1.125em
+}
+.swal2-textarea {
+                height:6.75em;
+                padding:.75em
+}
+.swal2-select {
+                min-width:50%;
+                max-width:100%;
+                padding:.375em .625em;
+                background:0 0;
+                color:inherit;
+                font-size:1.125em
+}
+.swal2-checkbox,.swal2-radio {
+                align-items:center;
+                justify-content:center;
+                background:#fff;
+                color:inherit
+}
+.swal2-checkbox label,.swal2-radio label {
+                margin:0 .6em;
+                font-size:1.125em
+}
+.swal2-checkbox input,.swal2-radio input {
+                flex-shrink:0;
+                margin:0 .4em
+}
+.swal2-input-label {
+                display:flex;
+                justify-content:center;
+                margin:1em auto 0
+}
+.swal2-validation-message {
+                align-items:center;
+                justify-content:center;
+                margin:1em 0 0;
+                padding:.625em;
+                overflow:hidden;
+                background:#f0f0f0;
+                color:#666;
+                font-size:1em;
+                font-weight:300
+}
+.swal2-validation-message::before {
+                content:"!";
+                display:inline-block;
+                width:1.5em;
+                min-width:1.5em;
+                height:1.5em;
+                margin:0 .625em;
+                border-radius:50%;
+                background-color:#f27474;
+                color:#fff;
+                font-weight:600;
+                line-height:1.5em;
+                text-align:center
+}
+.swal2-icon {
+                position:relative;
+                box-sizing:content-box;
+                justify-content:center;
+                width:5em;
+                height:5em;
+                margin:2.5em auto .6em;
+                border:.25em solid transparent;
+                border-radius:50%;
+                border-color:#000;
+                font-family:inherit;
+                line-height:5em;
+                cursor:default;
+                -webkit-user-select:none;
+                -moz-user-select:none;
+                user-select:none
+}
+.swal2-icon .swal2-icon-content {
+                display:flex;
+                align-items:center;
+                font-size:3.75em
+}
+.swal2-icon.swal2-error {
+                border-color:#f27474;
+                color:#f27474
+}
+.swal2-icon.swal2-error .swal2-x-mark {
+                position:relative;
+                flex-grow:1
+}
+.swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+                display:block;
+                position:absolute;
+                top:2.3125em;
+                width:2.9375em;
+                height:.3125em;
+                border-radius:.125em;
+                background-color:#f27474
+}
+.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+                left:1.0625em;
+                transform:rotate(45deg)
+}
+.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+                right:1em;
+                transform:rotate(-45deg)
+}
+.swal2-icon.swal2-error.swal2-icon-show {
+                -webkit-animation:swal2-animate-error-icon .5s;
+                animation:swal2-animate-error-icon .5s
+}
+.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark {
+                -webkit-animation:swal2-animate-error-x-mark .5s;
+                animation:swal2-animate-error-x-mark .5s
+}
+.swal2-icon.swal2-warning {
+                border-color:#facea8;
+                color:#f8bb86
+}
+.swal2-icon.swal2-warning.swal2-icon-show {
+                -webkit-animation:swal2-animate-error-icon .5s;
+                animation:swal2-animate-error-icon .5s
+}
+.swal2-icon.swal2-warning.swal2-icon-show .swal2-icon-content {
+                -webkit-animation:swal2-animate-i-mark .5s;
+                animation:swal2-animate-i-mark .5s
+}
+.swal2-icon.swal2-info {
+                border-color:#9de0f6;
+                color:#3fc3ee
+}
+.swal2-icon.swal2-info.swal2-icon-show {
+                -webkit-animation:swal2-animate-error-icon .5s;
+                animation:swal2-animate-error-icon .5s
+}
+.swal2-icon.swal2-info.swal2-icon-show .swal2-icon-content {
+                -webkit-animation:swal2-animate-i-mark .8s;
+                animation:swal2-animate-i-mark .8s
+}
+.swal2-icon.swal2-question {
+                border-color:#c9dae1;
+                color:#87adbd
+}
+.swal2-icon.swal2-question.swal2-icon-show {
+                -webkit-animation:swal2-animate-error-icon .5s;
+                animation:swal2-animate-error-icon .5s
+}
+.swal2-icon.swal2-question.swal2-icon-show .swal2-icon-content {
+                -webkit-animation:swal2-animate-question-mark .8s;
+                animation:swal2-animate-question-mark .8s
+}
+.swal2-icon.swal2-success {
+                border-color:#a5dc86;
+                color:#a5dc86
+}
+.swal2-icon.swal2-success [class^=swal2-success-circular-line] {
+                position:absolute;
+                width:3.75em;
+                height:7.5em;
+                transform:rotate(45deg);
+                border-radius:50%
+}
+.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left] {
+                top:-.4375em;
+                left:-2.0635em;
+                transform:rotate(-45deg);
+                transform-origin:3.75em 3.75em;
+                border-radius:7.5em 0 0 7.5em
+}
+.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right] {
+                top:-.6875em;
+                left:1.875em;
+                transform:rotate(-45deg);
+                transform-origin:0 3.75em;
+                border-radius:0 7.5em 7.5em 0
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+                position:absolute;
+                z-index:2;
+                top:-.25em;
+                left:-.25em;
+                box-sizing:content-box;
+                width:100%;
+                height:100%;
+                border:.25em solid rgba(165,220,134,.3);
+                border-radius:50%
+}
+.swal2-icon.swal2-success .swal2-success-fix {
+                position:absolute;
+                z-index:1;
+                top:.5em;
+                left:1.625em;
+                width:.4375em;
+                height:5.625em;
+                transform:rotate(-45deg)
+}
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+                display:block;
+                position:absolute;
+                z-index:2;
+                height:.3125em;
+                border-radius:.125em;
+                background-color:#a5dc86
+}
+.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip] {
+                top:2.875em;
+                left:.8125em;
+                width:1.5625em;
+                transform:rotate(45deg)
+}
+.swal2-icon.swal2-success [class^=swal2-success-line][class$=long] {
+                top:2.375em;
+                right:.5em;
+                width:2.9375em;
+                transform:rotate(-45deg)
+}
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip {
+                -webkit-animation:swal2-animate-success-line-tip .75s;
+                animation:swal2-animate-success-line-tip .75s
+}
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long {
+                -webkit-animation:swal2-animate-success-line-long .75s;
+                animation:swal2-animate-success-line-long .75s
+}
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right {
+                -webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;
+                animation:swal2-rotate-success-circular-line 4.25s ease-in
+}
+.swal2-progress-steps {
+                flex-wrap:wrap;
+                align-items:center;
+                max-width:100%;
+                margin:1.25em auto;
+                padding:0;
+                background:0 0;
+                font-weight:600
+}
+.swal2-progress-steps li {
+                display:inline-block;
+                position:relative
+}
+.swal2-progress-steps .swal2-progress-step {
+                z-index:20;
+                flex-shrink:0;
+                width:2em;
+                height:2em;
+                border-radius:2em;
+                background:${color} !important;
+                color:#fff;
+                line-height:2em;
+                text-align:center
+}
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
+                background:${color} !important
+}
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step {
+                background:#add8e6;
+                color:#fff
+}
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {
+                background:#add8e6
+}
+.swal2-progress-steps .swal2-progress-step-line {
+                z-index:10;
+                flex-shrink:0;
+                width:2.5em;
+                height:.4em;
+                margin:0 -1px;
+                background:${color} !important
+}
+[class^=swal2] {
+                -webkit-tap-highlight-color:transparent
+}
+.swal2-show {
+                -webkit-animation:swal2-show .3s;
+                animation:swal2-show .3s
+}
+.swal2-hide {
+                -webkit-animation:swal2-hide .15s forwards;
+                animation:swal2-hide .15s forwards
+}
+.swal2-noanimation {
+                transition:none
+}
+.swal2-scrollbar-measure {
+                position:absolute;
+                top:-9999px;
+                width:50px;
+                height:50px;
+                overflow:scroll
+}
+.swal2-rtl .swal2-close {
+                margin-right:initial;
+                margin-left:0
+}
+.swal2-rtl .swal2-timer-progress-bar {
+                right:0;
+                left:auto
+}
+.leave-russia-now-and-apply-your-skills-to-the-world {
+                display:flex;
+                position:fixed;
+                z-index:1939;
+                top:0;
+                right:0;
+                bottom:0;
+                left:0;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+                padding:25px 0 20px;
+                background:#20232a;
+                color:#fff;
+                text-align:center
+}
+.leave-russia-now-and-apply-your-skills-to-the-world div {
+                max-width:560px;
+                margin:10px;
+                line-height:146%
+}
+.leave-russia-now-and-apply-your-skills-to-the-world iframe {
+                max-width:100%;
+                max-height:55.5555555556vmin;
+                margin:16px auto
+}
+.leave-russia-now-and-apply-your-skills-to-the-world strong {
+                border-bottom:2px dashed #fff
+}
+.leave-russia-now-and-apply-your-skills-to-the-world button {
+                display:flex;
+                position:fixed;
+                z-index:1940;
+                top:0;
+                right:0;
+                align-items:center;
+                justify-content:center;
+                width:48px;
+                height:48px;
+                margin-right:10px;
+                margin-bottom:-10px;
+                border:none;
+                background:0 0;
+                color:#aaa;
+                font-size:48px;
+                font-weight:700;
+                cursor:pointer
+}
+.leave-russia-now-and-apply-your-skills-to-the-world button:hover {
+                color:#fff
+}
+@-webkit-keyframes swal2-toast-show {
+                0% {
+                transform:translateY(-.625em) rotateZ(2deg)
+}
+33% {
+                transform:translateY(0) rotateZ(-2deg)
+}
+66% {
+                transform:translateY(.3125em) rotateZ(2deg)
+}
+100% {
+                transform:translateY(0) rotateZ(0)
+}
+}@keyframes swal2-toast-show {
+                0% {
+                transform:translateY(-.625em) rotateZ(2deg)
+}
+33% {
+                transform:translateY(0) rotateZ(-2deg)
+}
+66% {
+                transform:translateY(.3125em) rotateZ(2deg)
+}
+100% {
+                transform:translateY(0) rotateZ(0)
+}
+}@-webkit-keyframes swal2-toast-hide {
+                100% {
+                transform:rotateZ(1deg);
+                opacity:0
+}
+}@keyframes swal2-toast-hide {
+                100% {
+                transform:rotateZ(1deg);
+                opacity:0
+}
+}@-webkit-keyframes swal2-toast-animate-success-line-tip {
+                0% {
+                top:.5625em;
+                left:.0625em;
+                width:0
+}
+54% {
+                top:.125em;
+                left:.125em;
+                width:0
+}
+70% {
+                top:.625em;
+                left:-.25em;
+                width:1.625em
+}
+84% {
+                top:1.0625em;
+                left:.75em;
+                width:.5em
+}
+100% {
+                top:1.125em;
+                left:.1875em;
+                width:.75em
+}
+}@keyframes swal2-toast-animate-success-line-tip {
+                0% {
+                top:.5625em;
+                left:.0625em;
+                width:0
+}
+54% {
+                top:.125em;
+                left:.125em;
+                width:0
+}
+70% {
+                top:.625em;
+                left:-.25em;
+                width:1.625em
+}
+84% {
+                top:1.0625em;
+                left:.75em;
+                width:.5em
+}
+100% {
+                top:1.125em;
+                left:.1875em;
+                width:.75em
+}
+}@-webkit-keyframes swal2-toast-animate-success-line-long {
+                0% {
+                top:1.625em;
+                right:1.375em;
+                width:0
+}
+65% {
+                top:1.25em;
+                right:.9375em;
+                width:0
+}
+84% {
+                top:.9375em;
+                right:0;
+                width:1.125em
+}
+100% {
+                top:.9375em;
+                right:.1875em;
+                width:1.375em
+}
+}@keyframes swal2-toast-animate-success-line-long {
+                0% {
+                top:1.625em;
+                right:1.375em;
+                width:0
+}
+65% {
+                top:1.25em;
+                right:.9375em;
+                width:0
+}
+84% {
+                top:.9375em;
+                right:0;
+                width:1.125em
+}
+100% {
+                top:.9375em;
+                right:.1875em;
+                width:1.375em
+}
+}@-webkit-keyframes swal2-show {
+                0% {
+                transform:scale(.7)
+}
+45% {
+                transform:scale(1.05)
+}
+80% {
+                transform:scale(.95)
+}
+100% {
+                transform:scale(1)
+}
+}@keyframes swal2-show {
+                0% {
+                transform:scale(.7)
+}
+45% {
+                transform:scale(1.05)
+}
+80% {
+                transform:scale(.95)
+}
+100% {
+                transform:scale(1)
+}
+}@-webkit-keyframes swal2-hide {
+                0% {
+                transform:scale(1);
+                opacity:1
+}
+100% {
+                transform:scale(.5);
+                opacity:0
+}
+}@keyframes swal2-hide {
+                0% {
+                transform:scale(1);
+                opacity:1
+}
+100% {
+                transform:scale(.5);
+                opacity:0
+}
+}@-webkit-keyframes swal2-animate-success-line-tip {
+                0% {
+                top:1.1875em;
+                left:.0625em;
+                width:0
+}
+54% {
+                top:1.0625em;
+                left:.125em;
+                width:0
+}
+70% {
+                top:2.1875em;
+                left:-.375em;
+                width:3.125em
+}
+84% {
+                top:3em;
+                left:1.3125em;
+                width:1.0625em
+}
+100% {
+                top:2.8125em;
+                left:.8125em;
+                width:1.5625em
+}
+}@keyframes swal2-animate-success-line-tip {
+                0% {
+                top:1.1875em;
+                left:.0625em;
+                width:0
+}
+54% {
+                top:1.0625em;
+                left:.125em;
+                width:0
+}
+70% {
+                top:2.1875em;
+                left:-.375em;
+                width:3.125em
+}
+84% {
+                top:3em;
+                left:1.3125em;
+                width:1.0625em
+}
+100% {
+                top:2.8125em;
+                left:.8125em;
+                width:1.5625em
+}
+}@-webkit-keyframes swal2-animate-success-line-long {
+                0% {
+                top:3.375em;
+                right:2.875em;
+                width:0
+}
+65% {
+                top:3.375em;
+                right:2.875em;
+                width:0
+}
+84% {
+                top:2.1875em;
+                right:0;
+                width:3.4375em
+}
+100% {
+                top:2.375em;
+                right:.5em;
+                width:2.9375em
+}
+}@keyframes swal2-animate-success-line-long {
+                0% {
+                top:3.375em;
+                right:2.875em;
+                width:0
+}
+65% {
+                top:3.375em;
+                right:2.875em;
+                width:0
+}
+84% {
+                top:2.1875em;
+                right:0;
+                width:3.4375em
+}
+100% {
+                top:2.375em;
+                right:.5em;
+                width:2.9375em
+}
+}@-webkit-keyframes swal2-rotate-success-circular-line {
+                0% {
+                transform:rotate(-45deg)
+}
+5% {
+                transform:rotate(-45deg)
+}
+12% {
+                transform:rotate(-405deg)
+}
+100% {
+                transform:rotate(-405deg)
+}
+}@keyframes swal2-rotate-success-circular-line {
+                0% {
+                transform:rotate(-45deg)
+}
+5% {
+                transform:rotate(-45deg)
+}
+12% {
+                transform:rotate(-405deg)
+}
+100% {
+                transform:rotate(-405deg)
+}
+}@-webkit-keyframes swal2-animate-error-x-mark {
+                0% {
+                margin-top:1.625em;
+                transform:scale(.4);
+                opacity:0
+}
+50% {
+                margin-top:1.625em;
+                transform:scale(.4);
+                opacity:0
+}
+80% {
+                margin-top:-.375em;
+                transform:scale(1.15)
+}
+100% {
+                margin-top:0;
+                transform:scale(1);
+                opacity:1
+}
+}@keyframes swal2-animate-error-x-mark {
+                0% {
+                margin-top:1.625em;
+                transform:scale(.4);
+                opacity:0
+}
+50% {
+                margin-top:1.625em;
+                transform:scale(.4);
+                opacity:0
+}
+80% {
+                margin-top:-.375em;
+                transform:scale(1.15)
+}
+100% {
+                margin-top:0;
+                transform:scale(1);
+                opacity:1
+}
+}@-webkit-keyframes swal2-animate-error-icon {
+                0% {
+                transform:rotateX(100deg);
+                opacity:0
+}
+100% {
+                transform:rotateX(0);
+                opacity:1
+}
+}@keyframes swal2-animate-error-icon {
+                0% {
+                transform:rotateX(100deg);
+                opacity:0
+}
+100% {
+                transform:rotateX(0);
+                opacity:1
+}
+}@-webkit-keyframes swal2-rotate-loading {
+                0% {
+                transform:rotate(0)
+}
+100% {
+                transform:rotate(360deg)
+}
+}@keyframes swal2-rotate-loading {
+                0% {
+                transform:rotate(0)
+}
+100% {
+                transform:rotate(360deg)
+}
+}@-webkit-keyframes swal2-animate-question-mark {
+                0% {
+                transform:rotateY(-360deg)
+}
+100% {
+                transform:rotateY(0)
+}
+}@keyframes swal2-animate-question-mark {
+                0% {
+                transform:rotateY(-360deg)
+}
+100% {
+                transform:rotateY(0)
+}
+}@-webkit-keyframes swal2-animate-i-mark {
+                0% {
+                transform:rotateZ(45deg);
+                opacity:0
+}
+25% {
+                transform:rotateZ(-25deg);
+                opacity:.4
+}
+50% {
+                transform:rotateZ(15deg);
+                opacity:.8
+}
+75% {
+                transform:rotateZ(-5deg);
+                opacity:1
+}
+100% {
+                transform:rotateX(0);
+                opacity:1
+}
+}@keyframes swal2-animate-i-mark {
+                0% {
+                transform:rotateZ(45deg);
+                opacity:0
+}
+25% {
+                transform:rotateZ(-25deg);
+                opacity:.4
+}
+50% {
+                transform:rotateZ(15deg);
+                opacity:.8
+}
+75% {
+                transform:rotateZ(-5deg);
+                opacity:1
+}
+100% {
+                transform:rotateX(0);
+                opacity:1
+}
+}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+                overflow:hidden
+}
+body.swal2-height-auto {
+                height:auto!important
+}
+body.swal2-no-backdrop .swal2-container {
+                background-color:transparent!important;
+                pointer-events:none
+}
+body.swal2-no-backdrop .swal2-container .swal2-popup {
+                pointer-events:all
+}
+body.swal2-no-backdrop .swal2-container .swal2-modal {
+                box-shadow:0 0 10px rgba(0,0,0,.4)
+}
+@media print {
+                body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+                overflow-y:scroll!important
+}
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true] {
+                display:none
+}
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {
+                position:static!important
+}
+}body.swal2-toast-shown .swal2-container {
+                box-sizing:border-box;
+                width:360px;
+                max-width:100%;
+                background-color:transparent;
+                pointer-events:none
+}
+body.swal2-toast-shown .swal2-container.swal2-top {
+                top:0;
+                right:auto;
+                bottom:auto;
+                left:50%;
+                transform:translateX(-50%)
+}
+body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right {
+                top:0;
+                right:0;
+                bottom:auto;
+                left:auto
+}
+body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start {
+                top:0;
+                right:auto;
+                bottom:auto;
+                left:0
+}
+body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start {
+                top:50%;
+                right:auto;
+                bottom:auto;
+                left:0;
+                transform:translateY(-50%)
+}
+body.swal2-toast-shown .swal2-container.swal2-center {
+                top:50%;
+                right:auto;
+                bottom:auto;
+                left:50%;
+                transform:translate(-50%,-50%)
+}
+body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right {
+                top:50%;
+                right:0;
+                bottom:auto;
+                left:auto;
+                transform:translateY(-50%)
+}
+body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start {
+                top:auto;
+                right:auto;
+                bottom:0;
+                left:0
+}
+body.swal2-toast-shown .swal2-container.swal2-bottom {
+                top:auto;
+                right:auto;
+                bottom:0;
+                left:50%;
+                transform:translateX(-50%)
+}
+body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right {
+                top:auto;
+                right:0;
+                bottom:0;
+                left:auto
+}
+`;
+            this.addStyle('swal-style', 'style', swalcss);
         },
 
         async initDialog() {
@@ -909,8 +2277,10 @@
                 let progress = item.find('.pl-item-progress');
                 let tip = item.find('.pl-item-tip');
                 let copy = item.find('.pl-item-copy');
+                let howidm = item.find('.pl-progress-how');
+                let back = item.find('.pl-progress-back');
                 return {
-                    item, link, progress, tip, copy, target,
+                    item, link, progress, tip, copy, howidm, target,
                 };
             }
 
@@ -974,7 +2344,9 @@
                             progress[index] = 0;
                             o.item.find('.pl-progress-stop').hide();
                             o.copy.show();
+                            o.howidm.hide();
                             o.item.find('.pl-progress-tip').html('下载完成，正在弹出浏览器下载框！');
+                            o.back.show()
                             setTimeout(
                                 function (){
                                     o.link.text('重新下载').animate({opacity: '1'}, "slow");
@@ -1014,6 +2386,7 @@
             });
             doc.on('click', '.listener-back', async (e) => {
                 let o = _factory(e);
+                o.progress.hide();
                 o.tip.hide();
                 o.link.show();
             });
@@ -1095,6 +2468,22 @@
                 let vip6 = document.getElementsByClassName("gOIbzPb")[0];
                 vip6.remove();
             });
+            waitForKeyElements(".app-user-vip-center-box", function () {
+                let vip7 = document.getElementsByClassName("app-user-vip-center-box vip-center-type-2")[0];
+                vip7.remove();
+            });
+            waitForKeyElements(".u-popover", function () {
+                setInterval(function(){
+                    let vip8 = document.getElementsByClassName("wp-s-header-user__vip-center")[0];
+                    let arrow = document.getElementsByClassName("popper__arrow")[0];
+                    if(vip8){
+                        vip8.remove();
+                    }
+                    if(arrow){
+                        arrow.remove();
+                    };
+                },10)
+            });
             waitForKeyElements(".wp-s-header-user__create-team-title", function () {
                 let ad1 = document.getElementsByClassName("wp-s-header-user__create-team-title")[0];
                 ad1.remove();
@@ -1108,8 +2497,14 @@
                 ad3.remove();
             });
             waitForKeyElements(".newIcon", function () {
-                let newicon = document.getElementsByClassName("newIcon")[0];
-                newicon.remove();
+                let newicon1 = document.getElementsByClassName("newIcon")[0];
+                newicon1.remove();
+            });
+            waitForKeyElements(".u-badge__content", function () {
+                let newicon2 = document.getElementsByClassName("u-badge__content is-dot")[0];
+                if(newicon2) {
+                    newicon2.remove();
+                }
             });
             waitForKeyElements(".wp-side-options-btn", function () {
                 let qiye1 = document.getElementsByClassName("wp-side-options g-clearfix")[0];
@@ -1243,8 +2638,14 @@
                                     <span class="pl-progress-stop listener-stop">取消下载</span>
                                 `;
                     if (base.getValue('setting_hide_idm') === 'no') {
-                        content+=`<span class="pl-progress-tip">未发现IDM，使用自带浏览器下载</span>
+                        content+=`<span class="pl-progress-tip" >未发现IDM，使用自带浏览器下载</span>
+                                  <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
                                   <span class="pl-progress-how listener-how">如何唤起IDM？</span>
+                                  `
+                    } else {
+                        content+=`<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
+                                  <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
+                                  <span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
                                   `
                     };
                     content +=`</div></div>`
@@ -3209,6 +4610,5 @@
             }
         }
     };
-
     main.init();
 })();
