@@ -12,7 +12,7 @@
 现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎
 <br><hr>
 <h4>卑微的小标题</h4>
-这个脚本只有一个人在修改~如果喜欢的话还请留个好评和Star哦~<br>如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。
+这个脚本只有一个人在修改~如果喜欢的话还请留个好评和Star哦~<!--<br>如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。-->
 <br><hr>
 <h1>统计~</h1>
 <div><img src="https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=%E5%BE%97%E5%88%86&rcolor=orange">  <img src="https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=%E5%A5%BD%E8%AF%84&rcolor=darkcyan">  <img src="https://palerock.cn/node-service/images/greasyfork/views-info/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=%E8%AE%B8%E5%8F%AF%E8%AF%81&rcolor=blueviolet"></div>
