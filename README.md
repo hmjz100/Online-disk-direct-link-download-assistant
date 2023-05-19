@@ -20,6 +20,7 @@
 <div><img src="https://img.shields.io/badge/TamperMonkeyBeta 篡改猴测试版-v4.19.6183-red.svg" alt="tampermonkeybeta">  <img src="https://img.shields.io/badge/TamperMonkey 篡改猴-v4.18.1-brightgreen.svg" alt="tampermonkey">  <img src="https://img.shields.io/badge/ScriptCat 脚本猫-0.12.0-blue.svg" alt="scriptcat">  <img src="https://img.shields.io/badge/Violentmonkey 暴力猴-v2.14.0-brown.svg" alt="violentmonkey"></div>
 
 <div><img src="https://img.shields.io/badge/Google Chrome-≥76.0-yellow.svg" alt="chrome">  <img src="https://img.shields.io/badge/Microsoft Edge-≥88.0-blue.svg" alt="edge">  <img src="https://img.shields.io/badge/支持平台-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android-blueviolet.svg" alt="platform"></div>
+<img src="https://api.star-history.com/svg?repos=hmjz100/Online-disk-direct-link-download-assistant&type=Date"></img>
 <br><hr>
 <h3>最新版本号</h3>
 V. 1.0.6.3（改自6.0.4版本）
