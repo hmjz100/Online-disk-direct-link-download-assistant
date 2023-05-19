@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.6.2
+// @version           1.0.6.3
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
-// @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.0.4版本,自用,去推广,修原有BUG,修改界面,比原版还好用！
+// @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.0.4版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
 // @license           MIT
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
@@ -38,6 +38,7 @@
 // @connect           *
 // @run-at            document-idle
 // @compatible	      Chrome
+// @compatible	      Edge
 // @compatible	      Firefox
 // @compatible	      Safari
 // @compatible	      Opera
@@ -127,7 +128,7 @@
 
     //用于油小猴服务器检测的脚本版本
     const realversion = scriptInfo.version;
-    const version = 9999999999999;//防止显示更新
+    const version = 9999999999999;//防止服务器返回更新信息
     //const version = generateRandomNumberInRange(1000,9999999999);
 
     //用于油小猴服务器检测的脚本作者
@@ -158,7 +159,7 @@
         mt: "Apple MacOS 终端",
     };
 
-    //准备好信息界面的*假隐私设置*（实际上油小猴就是通过服务器获取的“暗号”）
+    //准备好信息界面的*假隐私设置*（实际上油小猴是通过自己服务器获取的“暗号”）
     const getuserinfo = {
         yes: "允许",
     };
@@ -610,7 +611,7 @@
             Swal.fire({
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
-                html: '<span>V1.0.6.2<br>1、修复部分界面错位，实现CSS内置；<br>2、百度网盘界面将变得更加简洁。<br><br>V1.0.6.1<br>1、新增百度云盘API下载支持复制链接；<br>2、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；<br>3、修改CSS，界面会出现更多的主题色；<br>4、支持在游小猴官网查看暗号；<br>5、修复部分语法错误。<br><br>V1.0.6<br>1、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；<br>2、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。<br><br>V1.0.5.5<br>1、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。<br><br>V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br><br>V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
+                html: '<span>V1.0.6.3<br>1、照顾小屏幕用户，将始终显示复制全部链接的按钮；<br>2、增加取消下载时的动画。<br><br>V1.0.6.2<br>1、修复部分界面错位，实现CSS内置；<br>2、百度网盘界面将变得更加简洁。<br><br>V1.0.6.1<br>1、新增百度云盘API下载支持复制链接；<br>2、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；<br>3、修改CSS，界面会出现更多的主题色；<br>4、支持在游小猴官网查看暗号；<br>5、修复部分语法错误。<br><br>V1.0.6<br>1、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；<br>2、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。<br><br>V1.0.5.5<br>1、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。<br><br>V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br><br>V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
                 allowOutsideClick: false,
                 showCloseButton: false,
                 confirmButtonText: '我已阅',
@@ -675,7 +676,7 @@
             .pl-header { padding: 0!important;align-items: flex-start!important; border-bottom: 1px solid #eee!important; margin: 0 0 10px!important; padding: 0 0 5px!important; }
             .pl-title { font-size: 16px!important; line-height: 1!important;white-space: nowrap!important; text-overflow: ellipsis!important;}
             .pl-content { padding: 0 !important; font-size: 12px!important; }
-            .pl-main { background-color:${color}15 ;overflow:auto; border-radius: 5px;}
+            .pl-main { background-color:${color}15 ;overflow:auto; border-radius: 5px; max-height:calc(${document.documentElement.clientHeight}px - 250px);}
             .pl-footer {font-size: 15px!important;justify-content: flex-start!important; margin: 10px 0 0!important; padding: 5px 0 0!important; color: #f56c6c!important; height:25px;}
             .pl-item { display: flex; align-items: center; line-height: 22px; height: 50px; background-color: ${color}30; border-radius: 5px; margin: 8px 6px; }
             .pl-item-name { flex: 0 0 170px; text-align: left;margin: 6px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor:default; height: 30px;}
@@ -689,9 +690,9 @@
             .pl-item-progress { display:flex;flex: 1;align-items:center}
             .pl-progress { display: inline-block;vertical-align: middle;width: 100%; box-sizing: border-box;line-height: 1;position: relative;height:15px; flex: 1}
             .pl-progress-outer { height: 15px;border-radius: 100px;background-color: #c1c1c1;overflow: hidden;position: relative;vertical-align: middle;}
-            .pl-progress-inner{ position: absolute;left: 0;top: 0;background-color: ${color};text-align: right;border-radius: 100px;line-height: 1;white-space: nowrap;transition: width .6s ease;}
+            .pl-progress-inner{ position: absolute;left: 0;top: 0;background-color: ${color};text-align: center;border-radius: 100px;line-height: 1;white-space: nowrap;transition: width .6s ease;}
             .pl-progress-inner-text { display: inline-block;vertical-align: middle;color: #ffffff;font-size: 12px;margin: 0 5px;height: 15px}
-            .pl-progress-tip{ flex:1;text-align:right}
+            .pl-progress-tip{ flex:1; text-align:right}
             .pl-progress-how{ flex: 0 0 100px; background: #ddd; border-radius: 3px; margin-left: 10px; cursor: pointer; text-align: center;}
             .pl-progress-stop{ flex: 0 0 80px; background: #cc3235; cursor: pointer; margin: 6px 6px 6px 10px; font-size: 12px; border: 0; border-radius: 4px; color: #ffffff; outline: none; display: flex; align-items: center; justify-content: center; padding: 0.625em 1.1em;}
             .pl-progress-inner-text:after { display: inline-block;content: "";height: 100%;vertical-align: middle;}
@@ -2279,8 +2280,9 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                 let copy = item.find('.pl-item-copy');
                 let howidm = item.find('.pl-progress-how');
                 let back = item.find('.pl-progress-back');
+                let stop = item.find('.pl-progress-stop');
                 return {
-                    item, link, progress, tip, copy, howidm, target,
+                    item, link, progress, tip, copy, stop, howidm, back, target,
                 };
             }
 
@@ -2323,18 +2325,19 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                     if (isIDM) {
                         o.tip.hide();
                         o.progress.hide();
+                        o.copy.show();
                         o.link.text('已成功唤起IDM，请查看IDM下载框！').animate({opacity: '0.5'}, "slow").show();
                         clearInterval(ins[index]);
                         setTimeout(
-                            function (){
-                                o.copy.show();
-                                o.link.text('重新下载').animate({opacity: '1'}, "slow");
-                            },2000
-                        )
+                                function (){
+                                    o.link.text('重新下载').animate({opacity: '1'}, "slow");
+                                },2000
+                            )
                         idm[index] = false;
                     } else {
                         o.link.hide();
                         o.tip.hide();
+                        o.stop.show();
                         o.copy.hide();
                         o.progress.show();
                         $width.css('width', prog + '%');
@@ -2343,9 +2346,8 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                             clearInterval(ins[index]);
                             progress[index] = 0;
                             o.item.find('.pl-progress-stop').hide();
-                            o.copy.show();
                             o.howidm.hide();
-                            o.item.find('.pl-progress-tip').html('下载完成，正在弹出浏览器下载框！');
+                            $text.text('下载完成，正在弹出浏览器下载框！');
                             o.back.show()
                             setTimeout(
                                 function (){
@@ -2378,10 +2380,16 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                 if (request[index]) {
                     request[index].abort();
                     clearInterval(ins[index]);
-                    o.tip.hide();
-                    o.progress.hide();
-                    o.link.show(0);
-                    o.copy.show();
+                    o.item.find('.pl-progress-inner-text').text('正在取消...');
+                    o.item.find('.pl-progress-inner').css('width', 100 + '%');
+                    setTimeout(function(){
+                        o.tip.hide();
+                        o.back.hide();
+                        o.link.show(0);
+                        o.copy.show();
+                        o.progress.hide();
+                        o.stop.hide();
+                    },1050)
                 }
             });
             doc.on('click', '.listener-back', async (e) => {
@@ -2389,6 +2397,9 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                 o.progress.hide();
                 o.tip.hide();
                 o.link.show();
+                o.copy.show();
+                o.stop.hide();
+                o.back.hide();
             });
             doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
                 e.preventDefault();
@@ -2624,7 +2635,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                     alinkAllText += dlink + '\r\n';
                     content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br>使用blob技术(支持断点续传) 下载 ${filename}</a>
+                                <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
                                 <!--<a class="pl-item-copy" target="_blank" href="${dlink}" title="点击使用浏览器下载" data-filename="${filename}" data-link="${dlink}">传统下载</a>-->
                                 <button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
                                 <div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
@@ -2697,6 +2708,8 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                 }
             });
 
+            content += '</div>';
+
             if (mode === 'api'){
                 content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;}
             if (mode === 'aria'){
@@ -2709,7 +2722,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                 content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;}
             if (mode === 'bc'){
                 content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;}
-            content += '</div>';
+
             return content;
         },
 
@@ -2795,7 +2808,6 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                 confirmButtonText: '关闭',
                 position: 'top',
                 width: '1000px',
-                padding: '15px 20px 5px',
                 customClass,
             }).then(() => {
                 this._resetData();
