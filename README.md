@@ -2,7 +2,7 @@
 可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：https://www.baiduyun.wiki/ ，自用，去广告，无需输入“暗号”即可使用，甚至比原版还要好用！
 
 <hr><h1>说明</h1>
-基于<a href="https://www.baiduyun.wiki/" rel="nofollow">【网盘直链下载助手】</a>修改（改自最新6.0.4版本），原作者：https://www.baiduyun.wiki/ ，<br>
+基于<a href="https://www.baiduyun.wiki/" rel="nofollow">【网盘直链下载助手】</a>修改（改自最新6.1.1版本），原作者：https://www.baiduyun.wiki/ ，<br>
 原脚本：https://greasyfork.org/zh-CN/scripts/436446 。
 因<a href="https://greasyfork.org/zh-CN/scripts/422818" rel="nofollow">上一个修改作者</a>已经弃坑，所以由我来代其更新。
 <br>GreasyFork链接：<a href="https://greasyfork.org/zh-CN/scripts/449291" rel="nofollow">greasyfork.org/zh-CN/scripts/449291</a>
@@ -10,7 +10,7 @@
 <br><hr>
 <h1>*简介</h1>
 现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎
-<br><hr>
+<!--<br><hr>
 <h4>卑微的小标题</h4>
 这个脚本只有一个人在修改~如果喜欢的话还请留个好评和Star哦~<!--<br>如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。-->
 <br><hr>
@@ -23,7 +23,7 @@
 <img src="https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg"></img>
 <br><hr>
 <h3>最新版本号</h3>
-V. 1.0.6.3（改自6.0.4版本）
+V. 1.0.6.4（改自6.1.1版本）
 <br><hr>
 <h1>更新日志</h1>
 <br>1、增加“<b>注入</b>”功能（bushi）；
@@ -62,6 +62,7 @@ V. 1.0.6.3（改自6.0.4版本）
 <br>34、百度网盘界面将变得更加简洁；
 <br>35、照顾小屏幕用户，将始终显示复制全部链接的按钮；
 <br>36、增加取消下载时的动画。
+<br>37、跟进官方V6.1.1版本，修复阿里云盘获取下载链接时的问题。
 <br><hr>
 <h4>带有*的为文字注释</h4>
 1、“简介”为<a href="https://greasyfork.org/zh-CN/scripts/436446" rel="nofollow">【网盘直链下载助手】原简介</a>精简后得来的文字简介
