@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.6.4
+// @version           1.0.6.5
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.0.4版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
@@ -57,9 +57,6 @@
 
 (function () {
     'use strict';
-    function generateRandomNumberInRange(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
-    };
     /*--- waitForKeyElements():  A utility function, for Greasemonkey scripts,
     that detects and handles AJAXed content.
     Usage example:
@@ -123,21 +120,6 @@
     let pt = '', selectList = [], params = {}, mode = '', width = 800, pan = {}, color = '',
         doc = $(document), progress = {}, request = {}, ins = {}, idm = {};
 
-    //用于油小猴服务器检测的脚本内容
-    const scriptInfo = GM_info.script;
-
-    //用于油小猴服务器检测的脚本版本
-    const realversion = scriptInfo.version;
-    const version = 9999999999999;//防止服务器返回更新信息
-    //const version = generateRandomNumberInRange(1000,9999999999);
-
-    //用于油小猴服务器检测的脚本作者
-    const realauthor = scriptInfo.author;
-    const author = '油小猴';
-
-    //用于油小猴服务器检测的脚本名称
-    const realname = scriptInfo.name;
-    const name = '网盘直链下载助手';
 
     const customClass = {
         popup: 'pl-popup',
@@ -628,7 +610,7 @@
             Swal.fire({
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
-                html: '<span>V1.0.6.4<br>1、跟进官方V6.1.1版本，修复阿里云盘获取下载链接时的问题。<br><br>V1.0.6.3<br>1、照顾小屏幕用户，将始终显示复制全部链接的按钮；<br>2、增加取消下载时的动画。<br><br>V1.0.6.2<br>1、修复部分界面错位，实现CSS内置；<br>2、百度网盘界面将变得更加简洁。<br><br>V1.0.6.1<br>1、新增百度云盘API下载支持复制链接；<br>2、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；<br>3、修改CSS，界面会出现更多的主题色；<br>4、支持在游小猴官网查看暗号；<br>5、修复部分语法错误。<br><br>V1.0.6<br>1、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；<br>2、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。<br><br>V1.0.5.5<br>1、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。<br><br>V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br><br>V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
+                html: '<span>V1.0.6.5<br>1、修复即使输入正确暗号也不能成功点亮按钮的服务器错误。<br><br>V1.0.6.4<br>1、跟进官方V6.1.1版本，修复阿里云盘获取下载链接时的问题。<br><br>V1.0.6.3<br>1、照顾小屏幕用户，将始终显示复制全部链接的按钮；<br>2、增加取消下载时的动画。<br><br>V1.0.6.2<br>1、修复部分界面错位，实现CSS内置；<br>2、百度网盘界面将变得更加简洁。<br><br>V1.0.6.1<br>1、新增百度云盘API下载支持复制链接；<br>2、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；<br>3、修改CSS，界面会出现更多的主题色；<br>4、支持在游小猴官网查看暗号；<br>5、修复部分语法错误。<br><br>V1.0.6<br>1、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；<br>2、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。<br><br>V1.0.5.5<br>1、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。<br><br>V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br><br>V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>V1.0.3<br>1、增加一个小彩蛋； 提示：homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。</span>',
                 allowOutsideClick: false,
                 showCloseButton: false,
                 confirmButtonText: '我已阅',
@@ -688,7 +670,7 @@
             ::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb:hover { border-radius: 5px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2) }
             ::-webkit-scrollbar-thumb:hover { background-color: rgba(85,85,85,.3) }
             .swal2-popup { font-size: 16px !important; width: 550px;}
-            .pl-popup { font-size: 12px !important; width: 99% !important;}
+            .pl-popup { font-size: 12px !important; width: 90% !important;}
             .pl-popup a { color: ${color} !important; }
             .pl-header { padding: 0!important;align-items: flex-start!important; border-bottom: 1px solid #eee!important; margin: 0 0 10px!important; padding: 0 0 5px!important; }
             .pl-title { font-size: 16px!important; line-height: 1!important;white-space: nowrap!important; text-overflow: ellipsis!important;}
@@ -2148,7 +2130,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
                 showCloseButton: true,
                 showCancelButton: true,
                 confirmButtonText: '确定',
-                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" style="width:373;font-size:19px;" type="text" placeholder="${pan.init[1]}"><br><span>你可以选择“注入”立即点亮按钮，或者输入暗号。<br>暗号：“${pan.num}”。<br>(也可以扫码支持一下原作者油小猴)</span></div>`,
+                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" style="width:373;font-size:19px;" type="text" placeholder="${pan.init[1]}"><br><span>你可以选择“注入”立即点亮按钮，或者输入暗号再点亮。<br>暗号：“${pan.num}”。<br>你可以扫码支持一下原作者油小猴<br>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...</span></div>`,
                 cancelButtonText: '注入(点亮下载助手按钮)'
             });
             if (result.isDismissed && result.dismiss === 'close') {console.log("窗口关闭");return};
@@ -4694,6 +4676,55 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
             document.getElementsByClassName("nav-links can-hide")[0].innerHTML += $button2
         }
     }
+
+    //获取原脚本的GreasyFork信息，确保油小猴服务器信任
+    var scriptId = '436446'; // 替换为要获取版本的脚本的唯一标识
+    var scriptUrl = 'https://greasyfork.org/zh-CN/scripts/' + scriptId + '.json';
+    var retryCount = 3; // 重新尝试次数
+
+    function fetchScriptInfo(url, retryCount) {
+        fetch(scriptUrl)
+            .then(response => response.json())
+            .then(data => {
+            var scriptVersion = data.version;
+            var scriptAuthor = data.users[0].name;
+            var scriptName = data.name;
+            var scriptDescription = data.description;
+            console.log('原脚本版本：', scriptVersion);
+            console.log('原脚本作者：', scriptAuthor);
+            console.log('原脚本名称：', scriptName);
+            console.log('原脚本介绍：', scriptDescription);
+            base.setValue('setting_script_version', scriptVersion);
+            base.setValue('setting_script_author', scriptAuthor);
+            base.setValue('setting_script_name', scriptName);
+            base.setValue('setting_script_description', scriptDescription);
+        })
+            .catch(error => {
+            console.error('获取脚本版本时发生错误：', error);
+            if (retryCount > 0) {
+                console.log('重新尝试获取脚本信息...');
+                fetchScriptInfo(url, retryCount - 1); // 重新尝试获取脚本版本
+            } else {
+                console.error('无法获取脚本信息，达到最大尝试次数。');
+            }
+        });
+    }
+    fetchScriptInfo(scriptUrl, retryCount);
+
+    //用于油小猴服务器检测的脚本内容
+    const scriptInfo = GM_info.script;
+
+    //用于油小猴服务器检测的脚本作者
+    const realauthor = scriptInfo.author;
+    const author = base.getValue('setting_script_author');
+
+    //用于油小猴服务器检测的脚本名称
+    const realname = scriptInfo.name;
+    const name = base.getValue('setting_script_name');
+
+    //用于油小猴服务器检测的脚本版本,防止服务器返回更新信息
+    const version = base.getValue('setting_script_version');
+    const realversion = scriptInfo.version;
 
     let main = {
         init() {
