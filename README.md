@@ -23,7 +23,7 @@
 <img src="https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg"></img>
 <br><hr>
 <h3>最新版本号</h3>
-V. 1.0.6.7（改自6.1.1版本）
+V. 1.0.6.8（改自6.1.1版本）
 <br><hr>
 <h1>更新日志</h1>
 <br>1、增加“<b>注入</b>”功能（bushi）；
@@ -71,7 +71,8 @@ V. 1.0.6.7（改自6.1.1版本）
 <br>43、优化控制台输出结果；
 <br>44、百度网盘API下载不使用IDM时可以显示剩余时间；
 <br>45、“取消点亮按钮”按钮的位置现已移动到设置页面；
-<br>46、homo特有的彩蛋又回来力(喜)。
+<br>46、homo特有的彩蛋又回来力(喜)；
+<br>47、修复夸克网盘按钮错位。
 <br><hr>
 <h4>带有*的为文字注释</h4>
 1、“简介”为<a href="https://greasyfork.org/zh-CN/scripts/436446" rel="nofollow">【网盘直链下载助手】原简介</a>精简后得来的文字简介
