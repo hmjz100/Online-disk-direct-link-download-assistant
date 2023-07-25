@@ -1,79 +1,100 @@
 # （改）网盘直链下载助手 | Online disk direct link download assistant
-可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：https://www.baiduyun.wiki/ ，自用，去广告，无需输入“暗号”即可使用，甚至比原版还要好用！
 
-<hr><h1>说明</h1>
-基于<a href="https://www.baiduyun.wiki/" rel="nofollow">【网盘直链下载助手】</a>修改（改自最新6.1.1版本），原作者：https://www.baiduyun.wiki/ ，<br>
-原脚本：https://greasyfork.org/zh-CN/scripts/436446 。
-因<a href="https://greasyfork.org/zh-CN/scripts/422818" rel="nofollow">上一个修改作者</a>已经弃坑，所以由我来代其更新。
-<br>GreasyFork链接：<a href="https://greasyfork.org/zh-CN/scripts/449291" rel="nofollow">greasyfork.org/zh-CN/scripts/449291</a>
-<br>因网络环境，发布新脚本时GreasyFork是最快更新的。
-<br><hr>
-<h1>*简介</h1>
-现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎
-<!--<br><hr>
+可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：[https://www.baiduyun.wiki/](https://www.baiduyun.wiki/) ，自用，去广告，无需输入“暗号”即可使用，甚至比原版还要好用！
+
+## 说明
+
+基于[【网盘直链下载助手】](https://www.baiduyun.wiki/)修改（改自最新6.1.1版本）  
+原作者：[https://www.baiduyun.wiki/](https://www.baiduyun.wiki/)  
+原脚本：[https://greasyfork.org/zh-CN/scripts/436446](https://greasyfork.org/zh-CN/scripts/436446)  
+<!--因[上一个修改作者](https://greasyfork.org/zh-CN/scripts/422818)已经弃坑，所以由我来代其更新。-->  
+GreasyFork链接：[greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/zh-CN/scripts/449291)  
+因网络环境，发布新脚本时GreasyFork是最快更新的。
+
+## *简介
+
+现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎  
+
+
+---
+
 <h4>卑微的小标题</h4>
-这个脚本只有一个人在修改~如果喜欢的话还请留个好评和Star哦~<!--<br>如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。-->
-<br><hr>
-<h1>统计~</h1>
-<div><img src="https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=%E5%BE%97%E5%88%86&rcolor=orange">  <img src="https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=%E5%A5%BD%E8%AF%84&rcolor=darkcyan">  <img src="https://palerock.cn/node-service/images/greasyfork/views-info/449291">  <img src="https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=%E8%AE%B8%E5%8F%AF%E8%AF%81&rcolor=blueviolet"></div>
 
-<div><img src="https://img.shields.io/badge/TamperMonkeyBeta 篡改猴测试版-v4.19.6183-red.svg" alt="tampermonkeybeta">  <img src="https://img.shields.io/badge/TamperMonkey 篡改猴-v4.18.1-brightgreen.svg" alt="tampermonkey">  <img src="https://img.shields.io/badge/ScriptCat 脚本猫-0.12.0-blue.svg" alt="scriptcat">  <img src="https://img.shields.io/badge/Violentmonkey 暴力猴-v2.14.0-brown.svg" alt="violentmonkey"></div>
+这个脚本只有一个人在修改\~如果喜欢的话还请留个好评和Star哦\~
+<!--如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。-->
 
-<div><img src="https://img.shields.io/badge/Google Chrome-≥76.0-yellow.svg" alt="chrome">  <img src="https://img.shields.io/badge/Microsoft Edge-≥88.0-blue.svg" alt="edge">  <img src="https://img.shields.io/badge/支持平台-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android-blueviolet.svg" alt="platform"></div>
-<img src="https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg"></img>
-<br><hr>
-<h3>最新版本号</h3>
-V. 1.0.6.8（改自6.1.1版本）
-<br><hr>
-<h1>更新日志</h1>
-<br>1、增加“<b>注入</b>”功能（bushi）；
-<br>2、<b>去除广告</b>；
-<br>3、更新<b>Sweetalert2</b>至11版本；
-<br>4、部分CDN节点更换为jsdelivr；
-<br>5、去除更新提示；
-<br>6、增加一个小彩蛋 提示：homo（需在未点亮按钮状态触发）；<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】
-<br>7、修改/增加默认*主题色*；
-<br>大改！
-<br>9、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；
-<br>10、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】
-<br>11、修改阿里云盘和夸克网盘下载助手按钮样式；
-<br>12、增加“取消点亮按钮”油猴菜单；
-<br>13、修改部分css，使其与选择的主题更贴切；
-<br>14、跟进官方5.9.4版，修复文件名识别；
-<br>15、修复在切换按钮主题后夸克网盘不能正常显示按钮；
-<br>16、增加脚本信息菜单（没有用）；
-<br>17、优化阿里云盘显示svg图片；
-<br>18、修改弹窗按钮颜色；
-<br>19、修啦修啦，阿里云盘可以摸到下载菜单了；
-<br>20、小修小改css，让主题色出现在更多地方；
-<br>21、修改下载链接获取失败的提示；
-<br>22、增加更多的主题色，可在助手设置查看；
-<br>23、homo彩蛋被删去力（悲）；
-<br>24、感谢<a href="https://githubfast.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；
-<br>25、修改一些文本以及提供给服务器的信息；
-<br>26、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；
-<br>27、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘；
-<br>28、新增百度云盘API下载支持复制链接；
-<br>29、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；
-<br>30、修改CSS，界面会出现更多的主题色；
-<br>31、支持在游小猴官网查看暗号；
-<br>32、修复部分语法错误；
-<br>33、修复部分界面错位，实现CSS内置；
-<br>34、百度网盘界面将变得更加简洁；
-<br>35、照顾小屏幕用户，将始终显示复制全部链接的按钮；
-<br>36、增加取消下载时的动画。
-<br>37、跟进官方V6.1.1版本，修复阿里云盘获取下载链接时的问题；
-<br>38、修复即使输入正确暗号也不能成功点亮按钮的服务器错误；
-<br>39、修复暗号错误。
-<br>40、将百度网盘界面修改为主题色，可在设置选择是否修改；
-<br>41、增加主题色名称，更改部分内容颜色；
-<br>42、移动云盘API下载支持批量复制；
-<br>43、优化控制台输出结果；
-<br>44、百度网盘API下载不使用IDM时可以显示剩余时间；
-<br>45、“取消点亮按钮”按钮的位置现已移动到设置页面；
-<br>46、homo特有的彩蛋又回来力(喜)；
-<br>47、修复夸克网盘按钮错位。
-<br><hr>
+---
+
+## 统计~
+
+![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)  ![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)  ![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)  ![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=%E5%BE%97%E5%88%86&rcolor=orange)  ![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=%E5%A5%BD%E8%AF%84&rcolor=darkcyan)  ![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)  ![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=%E8%AE%B8%E5%8F%AF%E8%AF%81&rcolor=blueviolet)
+
+![TamperMonkeyBeta 篡改猴测试版-v4.19.6183](https://img.shields.io/badge/TamperMonkeyBeta%20%E7%AF%A1%E6%94%B9%E7%8C%B4%E6%B5%8B%E8%AF%95%E7%89%88-v4.19.6183-red.svg)  ![TamperMonkey 篡改猴-v4.18.1](https://img.shields.io/badge/TamperMonkey%20%E7%AF%A1%E6%94%B9%E7%8C%B4-v4.18.1-brightgreen.svg)  ![ScriptCat 脚本猫-0.12.0](https://img.shields.io/badge/ScriptCat%20%E8%84%9A%E6%9C%AC%E7%8C%AB-0.12.0-blue.svg)  ![Violentmonkey 暴力猴-v2.14.0](https://img.shields.io/badge/Violentmonkey%20%E6%9A%B4%E5%8A%9B%E7%8C%B4-v2.14.0-brown.svg)
+
+![Google Chrome-≥76.0](https://img.shields.io/badge/Google%20Chrome-%E2%89%A576.0-yellow.svg)  ![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft%20Edge-%E2%89%A588.0-blue.svg)  ![支持平台-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android](https://img.shields.io/badge/%E6%94%AF%E6%8C%81%E5%B9%B3%E5%8F%B0-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android-blueviolet.svg)
+
+![Starchart](https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg)
+
+### 最新版本号
+
+V. 1.0.6.9（改自6.1.1版本）
+
+## 更新日志
+
+1、增加“**注入**”功能（bushi）；  
+2、**去除广告**；  
+3、更新**Sweetalert2**至11版本；  
+4、部分CDN节点更换为jsdelivr；  
+5、去除更新提示；  
+6、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；  
+7、增加一个小彩蛋 提示：homo（需在未点亮按钮状态触发）；  
+【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】  
+8、修改/增加默认**主题色**；  
+9、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；  
+10、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；  
+【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】  
+11、修改阿里云盘和夸克网盘下载助手按钮样式；  
+12、增加“取消点亮按钮”油猴菜单；  
+13、修改部分css，使其与选择的主题更贴切；  
+14、跟进官方5.9.4版，修复文件名识别；  
+15、修复在切换按钮主题后夸克网盘不能正常显示按钮；  
+16、增加脚本信息菜单（没有用）；  
+17、优化阿里云盘显示svg图片；  
+18、修改弹窗按钮颜色；  
+19、修啦修啦，阿里云盘可以摸到下载菜单了；  
+20、小修小改css，让主题色出现在更多地方；  
+21、修改下载链接获取失败的提示；  
+22、增加更多的主题色，可在助手设置查看；  
+23、homo彩蛋被删去力（悲）；  
+24、感谢[https://githubfast.com/Night-stars-1](https://githubfast.com/Night-stars-1)的帮助，修复因为原作者服务器导致的初始化暗号识别错误；  
+25、修改一些文本以及提供给服务器的信息；  
+26、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；  
+27、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘；  
+28、新增百度云盘API下载支持复制链接；  
+29、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；  
+30、修改CSS，界面会出现更多的主题色；  
+31、支持在游小猴官网查看暗号；  
+32、修复部分语法错误；  
+33、修复部分界面错位，实现CSS内置；  
+34、百度网盘界面将变得更加简洁；  
+35、照顾小屏幕用户，将始终显示复制全部链接的按钮；  
+36、增加取消下载时的动画。  
+37、跟进官方V6.1.1版本，修复阿里云盘获取下载链接时的问题；  
+38、修复即使输入正确暗号也不能成功点亮按钮的服务器错误；  
+39、修复暗号错误。  
+40、将百度网盘界面修改为主题色，可在设置选择是否修改；  
+41、增加主题色名称，更改部分内容颜色；  
+42、移动云盘API下载支持批量复制；  
+43、优化控制台输出结果；  
+44、百度网盘API下载不使用IDM时可以显示剩余时间；  
+45、“取消点亮按钮”按钮的位置现已移动到设置页面；  
+46、homo特有的彩蛋又回来力(喜)；  
+47、修复夸克网盘按钮错位；  
+48、下载窗口加入关闭按钮。
+
+---
+
 <h4>带有*的为文字注释</h4>
-1、“简介”为<a href="https://greasyfork.org/zh-CN/scripts/436446" rel="nofollow">【网盘直链下载助手】原简介</a>精简后得来的文字简介
-<br>2、“主题色”指紫色，如不喜欢，你可在助手选项中更改
+
+1、“简介”为[【网盘直链下载助手】原简介](https://greasyfork.org/zh-CN/scripts/436446)精简后得来的文字简介  
+2、“主题色”指紫色，如不喜欢，你可在助手选项中更改
