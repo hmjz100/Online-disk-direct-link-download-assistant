@@ -19,7 +19,7 @@ GreasyFork链接：[greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/
 #### 卑微的小标题
 
 这个脚本只有一个人在修改\~如果喜欢的话还请留个[好评](https://greasyfork.org/scripts/449291/feedback)和Star哦\~   
-如有bug等问题请前往Github发[issues反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
+如有bug等问题请前往Github发[issues反馈](https://githubfast.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
 或者在[GreasyFork反馈](https://greasyfork.org/scripts/449291/feedback)，如果看到的话我会尽量修改。
 <!--如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。-->
 
@@ -27,7 +27,7 @@ GreasyFork链接：[greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/
 
 ![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)  ![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)  ![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)  ![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=%E5%BE%97%E5%88%86&rcolor=orange)  ![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=%E5%A5%BD%E8%AF%84&rcolor=darkcyan)  ![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)  ![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=%E8%AE%B8%E5%8F%AF%E8%AF%81&rcolor=blueviolet)
 
-![TamperMonkeyBeta 篡改猴测试版-v4.19.6183](https://img.shields.io/badge/TamperMonkeyBeta%20%E7%AF%A1%E6%94%B9%E7%8C%B4%E6%B5%8B%E8%AF%95%E7%89%88-v4.19.6183-red.svg)  ![TamperMonkey 篡改猴-v4.18.1](https://img.shields.io/badge/TamperMonkey%20%E7%AF%A1%E6%94%B9%E7%8C%B4-v4.18.1-brightgreen.svg)  ![ScriptCat 脚本猫-0.12.0](https://img.shields.io/badge/ScriptCat%20%E8%84%9A%E6%9C%AC%E7%8C%AB-0.12.0-blue.svg)  ![Violentmonkey 暴力猴-v2.14.0](https://img.shields.io/badge/Violentmonkey%20%E6%9A%B4%E5%8A%9B%E7%8C%B4-v2.14.0-brown.svg)
+![TamperMonkeyBeta 篡改猴测试版-v4.19.6183](https://img.shields.io/badge/TamperMonkeyBeta%20%E7%AF%A1%E6%94%B9%E7%8C%B4%E6%B5%8B%E8%AF%95%E7%89%88-v4.19.6183-red.svg)  ![TamperMonkey 篡改猴-v4.18.1](https://img.shields.io/badge/TamperMonkey%20%E7%AF%A1%E6%94%B9%E7%8C%B4-v4.18.1-brightgreen.svg)  ![ScriptCat 脚本猫-0.14.1](https://img.shields.io/badge/ScriptCat%20%E8%84%9A%E6%9C%AC%E7%8C%AB-0.14.1-blue.svg)  ![Violentmonkey 暴力猴-v2.14.0](https://img.shields.io/badge/Violentmonkey%20%E6%9A%B4%E5%8A%9B%E7%8C%B4-v2.14.0-brown.svg)
 
 ![Google Chrome-≥76.0](https://img.shields.io/badge/Google%20Chrome-%E2%89%A576.0-yellow.svg)  ![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft%20Edge-%E2%89%A588.0-blue.svg)  ![支持平台-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android](https://img.shields.io/badge/%E6%94%AF%E6%8C%81%E5%B9%B3%E5%8F%B0-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android-blueviolet.svg)
 
