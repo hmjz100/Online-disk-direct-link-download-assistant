@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.6.8
+// @version           1.0.6.9
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
@@ -239,7 +239,7 @@
         decode(str) {
             return decodeURIComponent(escape(atob(str)));
         },
-        
+
         //数字补零
         repairTimer(i){
             if (i >= 0 && i <= 9) {
@@ -634,6 +634,7 @@
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
                 html: `<span>
+                V1.0.6.9<br>1、下载窗口加入关闭按钮。<br><br>
                 V1.0.6.8<br>1、修复夸克网盘按钮错位。<br><br>
                 V1.0.6.7<br>1、将百度网盘界面修改为主题色，可在设置选择是否修改；<br>2、增加主题色名称，更改部分内容颜色；<br>3、移动云盘API下载支持批量复制；<br>4、优化控制台输出结果；<br>5、百度网盘API下载不使用IDM时可以显示剩余时间；<br>6、“取消点亮按钮”按钮的位置现已移动到设置页面。<br>7、homo特有的彩蛋又回来力(喜)。<br><br>
                 V1.0.6.6<br>1、修复暗号错误。<br><br>
@@ -1975,17 +1976,17 @@
             return '';
         },
 
-        showMainDialog(title, html, footer) { //下载窗口
+        showMainDialog(title, html, footer) {
             Swal.fire({
                 title,
                 html,
                 footer,
                 allowOutsideClick: false,
                 showCloseButton: true,
-                showConfirmButton: false,
                 position: 'top',
                 width: '1000px',
                 customClass,
+                confirmButtonText: '关闭',
             }).then(() => {
                 this._resetData();
             });
@@ -2368,11 +2369,11 @@
                 footer,
                 allowOutsideClick: false,
                 showCloseButton: true,
-                showConfirmButton: false,
                 position: 'top',
                 width,
                 padding: '15px 20px 5px',
                 customClass,
+                confirmButtonText: '关闭',
             });
         },
 
@@ -2724,11 +2725,11 @@
                 footer,
                 allowOutsideClick: false,
                 showCloseButton: true,
-                showConfirmButton: false,
                 position: 'top',
                 width,
                 padding: '15px 20px 5px',
                 customClass,
+                confirmButtonText: '关闭',
             });
         },
 
@@ -3102,11 +3103,11 @@
                 footer,
                 allowOutsideClick: false,
                 showCloseButton: true,
-                showConfirmButton: false,
                 position: 'top',
                 width,
                 padding: '15px 20px 5px',
                 customClass,
+                confirmButtonText: '关闭',
             });
         },
 
@@ -3431,11 +3432,11 @@
                 footer,
                 allowOutsideClick: false,
                 showCloseButton: true,
-                showConfirmButton: false,
                 position: 'top',
                 width,
                 padding: '15px 20px 5px',
                 customClass,
+                confirmButtonText: '关闭',
             });
         },
 
@@ -3851,11 +3852,11 @@
                 footer,
                 allowOutsideClick: false,
                 showCloseButton: true,
-                showConfirmButton: false,
                 position: 'top',
                 width,
                 padding: '15px 20px 5px',
                 customClass,
+                confirmButtonText: '关闭',
             });
         },
 
@@ -3882,16 +3883,14 @@
             base.registerPanMenuCommand();
 
             let $button1 = `<div class="nav-item" style="text-align: center;"><a class="listener-open-updatelog">（改）下载助手<br>更新日志</a></div>`
+            let $button2 = `<div class="nav-item" style="text-align: center;"><a class="listener-open-info">（改）下载助手<br>暗号查看</a></div>`
             doc.on('click', '.listener-open-updatelog', () => {
                 base.showUpdateLog();
             });
-            document.getElementsByClassName("nav-links can-hide")[0].innerHTML += $button1
-
-            let $button2 = `<div class="nav-item" style="text-align: center;"><a class="listener-open-info">（改）下载助手<br>暗号查看</a></div>`
             doc.on('click', '.listener-open-info', () => {
                 base.showPanInfo();
             });
-            document.getElementsByClassName("nav-links can-hide")[0].innerHTML += $button2
+            document.getElementsByClassName("nav-links can-hide")[0].innerHTML += $button1 + $button2
         }
     }
 
@@ -3985,7 +3984,7 @@
                     //--- 调用载荷函数。
                     var cancelFound = actionFunction(jThis);
                     if (cancelFound) btargetsFound = false;
-                    else jThis.data('alreadyFound'， true);
+                    else jThis.data('alreadyFound', true);
                 }
             });
         } else {
@@ -3994,7 +3993,7 @@
 
         //--- 获取这个选择器的定时器控制变量。
         var controlObj = waitForKeyElements.controlObj || {};
-        var controlKey = selectorTxt.replace(/[^\w]/g， "_");
+        var controlKey = selectorTxt.replace(/[^\w]/g, "_");
         var timeControl = controlObj[controlKey];
 
         //--- 现在根据情况设置或清除定时器。
@@ -4007,7 +4006,7 @@
             if (!timeControl) {
                 timeControl = setInterval(function () {
                     waitForKeyElements(selectorTxt, actionFunction, bWaitOnce, iframeSelector);
-                }， 300);
+                }, 300);
                 controlObj[controlKey] = timeControl;
             }
         }
@@ -4021,25 +4020,25 @@
             base.addPanLinkerStyle();
 
             // 判断网盘地址并加载对应的initPanLinker
-            if (/(pan|yun).baidu.com/。test(location.host)) {
+            if (/(pan|yun).baidu.com/.test(location.host)) {
                 baidu.initPanLinker();
             }
-            if (/www.aliyundrive.com/。test(location.host)) {
+            if (/www.aliyundrive.com/.test(location.host)) {
                 ali.initPanLinker();
             }
-            if (/cloud.189.cn/。test(location.host)) {
+            if (/cloud.189.cn/.test(location.host)) {
                 tianyi.initPanLinker();
             }
-            if (/pan.xunlei.com/。test(location.host)) {
+            if (/pan.xunlei.com/.test(location.host)) {
                 xunlei.initPanLinker();
             }
-            if (/pan.quark.cn/。test(location.host)) {
+            if (/pan.quark.cn/.test(location.host)) {
                 quark.initPanLinker();
             }
-            if (/(yun|caiyun).139.com/。test(location.host)) {
+            if (/(yun|caiyun).139.com/.test(location.host)) {
                 yidong.initPanLinker();
             }
-            if (/www.youxiaohou.com/。test(location.host)) {
+            if (/www.youxiaohou.com/.test(location.host)) {
                 youxiaohou.initPanLinker();
             }
         }
