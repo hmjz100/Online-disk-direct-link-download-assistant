@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.7
+// @version           1.0.7.1
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
@@ -573,6 +573,92 @@
             });
         },
 
+        // 手机版设置界面
+        showWapSetting() {
+            let dom = '',
+                btn = '',
+                colorList = ['#09AAFF','#cc3235','#637df8','#518c17','#ed944b','#f969a5','#bca280','#574AB8','#0d53ff','#637dff','#3181f9'],
+                colorNameList = ['度盘<br>经典蓝','度盘<br>平安红','度盘<br>霞光紫','度盘<br>盎然绿','度盘<br>周年橙','度盘<br>幸会粉','度盘<br>午后棕','度盘<br>星空紫','夸克<br>明亮蓝','阿里<br>云盘紫','移动<br>彩云蓝'];
+            dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://" class="pl-input listener-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
+            dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix为16800" class="pl-input listener-port" value="${base.getValue('setting_rpc_port')}"></label>`;
+            dom += `<label class="pl-setting-label"><div class="pl-label">RPC路径</div><input type="text" placeholder="路径，默认为/jsonrpc" class="pl-input listener-path" value="${base.getValue('setting_rpc_path')}"></label>`;
+            dom += `<label class="pl-setting-label"><div class="pl-label">RPC密钥</div><input type="text" placeholder="无密钥无需填写" class="pl-input listener-token" value="${base.getValue('setting_rpc_token')}"></label>`;
+            dom += `<label class="pl-setting-label"><div class="pl-label">保存路径</div><input type="text" placeholder="文件下载后保存路径，例如：D:" class="pl-input listener-dir" value="${base.getValue('setting_rpc_dir')}"></label>`;
+
+            colorList.forEach((v, i) => {
+                btn += `<div data-color="${v}" style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'checked' : 'listener-color'}">
+                <div data-color="${v}" class="pl-mask">${colorNameList[i]}${v === base.getValue('setting_theme_color') ? '<br>(当前)' : ''}</div>
+            </div>`;
+            });
+
+
+            dom += `<label class="pl-setting-label"><div class="pl-label">终端类型</div><select class="pl-input listener-terminal">`;
+            Object.keys(terminalType).forEach(k => {
+                dom += `<option value="${k}" ${base.getValue('setting_terminal_type') === k ? 'selected' : ''}>${terminalType[k]}</option>`;
+            });
+            dom += `</select></label>`;
+
+            dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="pl-input baidu_theme">`;
+            Object.keys(hideidm).forEach(value3 => {dom += `<option value="${value3}" ${base.getValue('setting_baidu_theme') === value3 ? 'selected' : ''}>${baidutheme[value3]}</option>`;});
+            dom += `</select></label>`;
+
+            dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
+
+            dom += `<button type="button" class="swal2-confirm swal2-styled listener-register">熄灭已经点亮的按钮</button>`
+
+            dom = '<div>' + dom + '</div>';
+
+            Swal.fire({
+                title: '助手设置',
+                html: dom,
+                icon: 'info',
+                allowOutsideClick: false,
+                howCloseButton: true,
+                position: 'top',
+                confirmButtonText: '关闭',
+                showCloseButton: true,
+                footer: pan.footer,
+            }).then(() => {
+                message.success('设置成功！');
+                history.go(0);
+            });
+
+            doc.on('click', '.listener-register', async (e) => {
+                base.registerInitCode(111111);
+            });
+            doc.on('click', '.listener-color', async (e) => {
+                base.setValue('setting_theme_color', e.target.dataset.color);
+                message.success('主题色设置成功！');
+                setTimeout(function(){
+                    history.go(0);
+                },1000)
+            });
+            doc.on('input', '.listener-domain', async (e) => {
+                base.setValue('setting_rpc_domain', e.target.value);
+            });
+            doc.on('input', '.listener-port', async (e) => {
+                base.setValue('setting_rpc_port', e.target.value);
+            });
+            doc.on('input', '.listener-path', async (e) => {
+                base.setValue('setting_rpc_path', e.target.value);
+            });
+            doc.on('input', '.listener-token', async (e) => {
+                base.setValue('setting_rpc_token', e.target.value);
+            });
+            doc.on('input', '.listener-dir', async (e) => {
+                base.setValue('setting_rpc_dir', e.target.value);
+            });
+            doc.on('change', '.listener-terminal', async (e) => {
+                base.setValue('setting_terminal_type', e.target.value);
+            });
+            doc.on('change', '.hide_idm', async (e) => {
+                base.setValue('setting_hide_idm', e.target.value);
+            });
+            doc.on('change', '.baidu_theme', async (e) => {
+                base.setValue('setting_baidu_theme', e.target.value);
+            });
+        },
+
         showInfo() {
             let hideinfo='';
             hideinfo +=`<span>以下内容都是脚本自己检测到的信息<br>本页面仅作为调试使用<span>`;
@@ -634,6 +720,7 @@
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
                 html: `<span>
+                V1.0.7.1<br>1、[实验功能，不影响正常使用]支持百度网盘手机网页版，勾选文件后可在顶栏找到“下载助手”按钮。<br><br>
                 V1.0.7<br>1、重构夸克网盘、阿里云盘按钮。<br><br>
                 V1.0.6.9<br>1、下载窗口加入关闭按钮。<br><br>
                 V1.0.6.8<br>1、修复夸克网盘按钮错位。<br><br>
@@ -750,6 +837,16 @@
             .pl-btn-danger { background: #cc3235; }
             .baidu-button { background: ${color} !important; border-color: ${color} !important;}
             .baidu-button:hover { background: ${color}b0 !important; border-color: ${color} !important;}
+            header[style="display: none;"] ~ #pl-button-link {
+                display: inline-block;
+                position: fixed;
+                top: 0.6em;
+                left: 18em;
+                z-index: 99999;
+            }
+            .baidu-wap-button {display: none; color: ${color}; font-size: .28rem; padding: 0.3em;}
+            .baidu-wap-button:after {content: "下载助手";}
+            .baidu-wap-mode {padding: 10px 0px !important;}
             .ali-button {border: 0 solid transparent;font-size: 14px;margin-left: 20px;padding: 1px 12px;position: relative;height: 32px;width: 32px;background: linear-gradient(129.12deg, ${color} 0%, rgba(99, 125, 255, 0.75) 100%);border-radius: 100px;display: flex;align-items: center;justify-content: center;color: var(--basic_white);cursor: pointer;transition: all .3s ease;}
             .ali-button:hover {background: linear-gradient(129.12deg, #446dff 0%, ${color} 100%);}
             .ali-btn-icon {vertical-align: -0.2em;}
@@ -769,7 +866,7 @@
             .pl-dropdown-menu-old {position: absolute;right: 0;top: 30px;padding: 5px 0;color: rgb(37, 38, 43);background: #fff;z-index: 999;width: 102px;border: 1px solid #ddd;border-radius: 10px; box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%);}
             .pl-dropdown-menu-item {height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: ${color}; transition: all 0.3s ease;}
             .pl-dropdown-menu-item:hover { background-color: ${color}15 !important;}
-            .pl-button-mode {padding: 0px !important; color: ${color} !important;}
+            .pl-button-mode {padding: 0px; padding-left: 0px !important; color: ${color} !important;}
             .pl-button-mode:hover {background-color: ${color}15 !important;}
             .pl-button, .pl-dropdown-menu { transition: all 0.3s ease;}
             .pl-button .pl-dropdown-menu { display: none;}
@@ -1252,6 +1349,105 @@
                 return;
             };
         },
+
+        async initDialogWap() {
+            let result = await Swal.fire({
+                title: pan.init[0],
+                allowOutsideClick: false,
+                showCloseButton: true,
+                showCancelButton: true,
+                position: 'top',
+                heightAuto: false,
+                scrollbarPadding: false,
+                confirmButtonText: '确定',
+                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}">
+                <input class="swal2-input init-input" id="init" type="text" placeholder="${pan.init[1]}"><br>
+                <span>你可以选择"注入"立即点亮按钮，或者输入暗号点亮。<br>当前暗号是：“${pan.num}”。<br>
+                还可以扫码支持一下原作者油小猴的公众号<br>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...<br>
+                点亮后可以精简百度网盘界面哦!</span></div>`,
+                cancelButtonText: '注入(点亮下载助手按钮)'
+            });
+            if (result.isDismissed && result.dismiss === 'close') {return};
+            if (result.isDismissed && result.dismiss === 'cancel') {
+                console.log("【（改）网盘直链下载助手】\n正在注入点亮按钮设置项目...");
+                message.warning("正在注入点亮按钮设置项目...");
+                setTimeout(() => {
+                    base.setValue('setting_init_code', pan.num);
+                    message.success("注入成功！");
+                    setTimeout(() => {
+                        message.success(pan.init[2]);
+                        setTimeout(() => {
+                            history.go(0);
+                        }, 3000);
+                    }, 3000);
+                }, 5000);
+                return;
+            };
+            if (pan.num === $('#init').val()) {
+                console.log("【（改）网盘直链下载助手】\n暗号正确")
+                message.success(pan.init[2]);
+                setTimeout(() => {
+                    base.setValue('setting_init_code', pan.num);
+                    history.go(0);
+                }, 3000)
+                return;
+            } else if ($('#init').val() === '114514' || $('#init').val() === '1919810' || $('#init').val() === '1145141919810') {
+                /*---
+                    homo彩蛋又回来力（喜）
+                    imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
+                    imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
+                */
+                await Swal.fire({
+                    icon: 'error',
+                    title: '1145141919810',
+                    html: '<span>homo特有的数字当然不行啦<br>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
+                    timer: 8000,
+                    imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
+                    allowOutsideClick: false,
+                    timerProgressBar: true,
+                    showConfirmButton: false,
+                    showCancelButton: true,
+                    position: 'top',
+                    heightAuto: false,
+                    scrollbarPadding: false,
+                    cancelButtonText: '哼哼哼啊啊啊啊啊啊啊啊啊啊',
+                });
+                message.info("成就：你触发了一个homo特有的彩蛋！");
+                setTimeout(() => {
+                    Swal.fire({
+                        title: '1145141919810',
+                        text:'homo特有的数字当然不行啦...吗？',
+                        icon: 'question',
+                        imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
+                        showConfirmButton: false,
+                        allowOutsideClick: false,
+                        position: 'top',
+                        heightAuto: false,
+                        scrollbarPadding: false,
+                    });
+                    setTimeout(() => {
+                        base.setValue('setting_init_code', pan.num);
+                        message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功(喜)");
+                        setTimeout(() => {
+                            history.go(0);
+                        }, 3000);
+                    }, 3000)
+                }, 4000)
+            } else {
+                console.log("【（改）网盘直链下载助手】\n暗号错误")
+                await Swal.fire({
+                    imageUrl: pan.img,
+                    title: pan.init[3],
+                    html: `<div><span>${pan.init[4]}<br>你可以在返回后选择“注入”立即点亮按钮，<br>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
+                    position: 'top',
+                    heightAuto: false,
+                    scrollbarPadding: false,
+                    confirmButtonText: '重新输入（返回）',
+                });
+                await this.initDialog();
+                return;
+            };
+        },
     };
 
     //百度网盘
@@ -1553,6 +1749,9 @@
             doc.on('click', '.listener-open-setting', () => {
                 base.showSetting();
             });
+            doc.on('click', '.listener-open-wapsetting', () => {
+                base.showWapSetting();
+            });
             doc.on('click', '.listener-open-updatelog', () => {
                 base.showUpdateLog();
             });
@@ -1669,7 +1868,14 @@
                 $button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li></ul></div>`);
             }
             if (pt === 'share') $toolWrap = $(pan.btn.share);
-            $toolWrap.prepend($button);
+            if (pt === 'wap') {
+                $toolWrap = $('.main-container');
+                $button = $(`<span id="pl-button-link" class="wapfont none-pointer pl-button baidu-wap-button"><span></span><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu" style="top: 40px; right: 0;"><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p listener-open-wapsetting"">助手设置</li></ul></span>`);
+                $('header h1[data-v-59779e34]').css({"left":"75%"})
+                $toolWrap.append($button);
+            } else {
+                $toolWrap.prepend($button);
+            }
             this.setBDUSS();
             this.addPageListener();
             setInterval(function(){
@@ -1692,8 +1898,16 @@
                 $button = $(`<div class="pl-button-init" id="pl-button-link" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="background: ${color};border-color: ${color};font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手(未点亮)</span></button></div>`);
             }
             if (pt === 'share') $toolWrap = $(pan.btn.share);
-            $toolWrap.prepend($button);
-            $button.click(() => base.initDialog());
+            if (pt === 'wap') {
+                $toolWrap = $('.main-container');
+                $button = $(`<span id="pl-button-link" class="wapfont none-pointer pl-button-init baidu-wap-button"><span></span></span>`);
+                $('header h1[data-v-59779e34]').css({"left":"75%"})
+                $toolWrap.append($button);
+                $button.click(() => base.initDialogWap());
+            } else {
+                $toolWrap.prepend($button);
+                $button.click(() => base.initDialog());
+            }
             setInterval(function(){
                 if(!document.getElementById("pl-button-link")){
                     baidu.addInitButton()
@@ -1732,7 +1946,7 @@
             selectList = this.getSelectedList();
             let fidList = this._getFidList(), url, res;
 
-            if (pt === 'home' || pt === 'main') {
+            if (pt === 'home' || pt === 'main' || pt === 'wap') {
                 if (selectList.length === 0) {
                     return message.error('提示：请先勾选要下载的文件！');
                 }
@@ -1815,78 +2029,139 @@
                 let ext = base.getExtension(filename);
                 let size = base.sizeFormat(v.size);
                 let dlink = v.dlink;
-                if (mode === 'api') {
-                    alinkAllText += dlink + '\r\n';
-                    content += `<div class="pl-item">
-                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
-                                <!--<a class="pl-item-copy" target="_blank" href="${dlink}" title="点击使用浏览器下载" data-filename="${filename}" data-link="${dlink}">传统下载</a>-->
-                                <button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
-                                <div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
-                                <div class="pl-item-progress" style="display: none">
-                                    <div class="pl-progress">
-                                        <div class="pl-progress-outer"></div>
-                                        <div class="pl-progress-inner" style="width:5%">
-                                          <div class="pl-progress-inner-text">正在加载进度...0%</div>
+                if (pt === !'wap') {
+                    if (mode === 'api') {
+                        alinkAllText += dlink + '\r\n';
+                        content += `<div class="pl-item">
+                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                    <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
+                                    <!--<a class="pl-item-copy" target="_blank" href="${dlink}" title="点击使用浏览器下载" data-filename="${filename}" data-link="${dlink}">传统下载</a>-->
+                                    <button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+                                    <div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
+                                    <div class="pl-item-progress" style="display: none">
+                                        <div class="pl-progress">
+                                            <div class="pl-progress-outer"></div>
+                                            <div class="pl-progress-inner" style="width:5%">
+                                            <div class="pl-progress-inner-text">正在加载进度...0%</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <span class="pl-progress-stop listener-stop">取消下载</span>
-                                `;
-                    if (base.getValue('setting_hide_idm') === 'no') {
-                        content+=`<span class="pl-progress-tip" >未发现IDM，使用自带浏览器下载</span>
-                                  <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
-                                  <span class="pl-progress-how listener-how">如何唤起IDM？</span>
-                                  `
-                    } else {
-                        content+=`<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
-                                  <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
-                                  <span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
-                                  `
-                    };
-                    content +=`</div></div>`
-                }
-                if (mode === 'aria') {
-                    let alink = this.convertLinkToAria(dlink, filename, pan.ua);
-                    if (typeof (alink) === 'object') {
-                        content += `<div class="pl-item">
-                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
-                    } else {
-                        alinkAllText += alink + '\r\n';
-                        content += `<div class="pl-item">
-                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                                        <span class="pl-progress-stop listener-stop">取消下载</span>
+                                    `;
+                        if (base.getValue('setting_hide_idm') === 'no') {
+                            content+=`<span class="pl-progress-tip" >未发现IDM，使用自带浏览器下载</span>
+                                    <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
+                                    <span class="pl-progress-how listener-how">如何唤起IDM？</span>
+                                    `
+                        } else {
+                            content+=`<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
+                                    <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
+                                    <span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
+                                    `
+                        };
+                        content +=`</div></div>`
                     }
-                }
-                if (mode === 'rpc') {
-                    content += `<div class="pl-item">
-                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
-                }
-                if (mode === 'curl') {
-                    let alink = this.convertLinkToCurl(dlink, filename, pan.ua);
-                    if (typeof (alink) === 'object') {
-                        content += `<div class="pl-item">
-                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
-                    } else {
-                        alinkAllText += alink + '\r\n';
-                        content += `<div class="pl-item">
-                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                    if (mode === 'aria') {
+                        let alink = this.convertLinkToAria(dlink, filename, pan.ua);
+                        if (typeof (alink) === 'object') {
+                            content += `<div class="pl-item">
+                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                    <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                        } else {
+                            alinkAllText += alink + '\r\n';
+                            content += `<div class="pl-item">
+                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                    <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                        }
                     }
-                }
-                if (mode === 'bc') {
-                    let alink = this.convertLinkToBC(dlink, filename, pan.ua);
-                    if (typeof (alink) === 'object') {
+                    if (mode === 'rpc') {
                         content += `<div class="pl-item">
-                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link pl-a" href="${decodeURIComponent(alink.link)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink.text)}<br>下载 ${filename}</a> </div>`;
-                    } else {
-                        alinkAllText += alink + '\r\n';
+                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                    <button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+                    }
+                    if (mode === 'curl') {
+                        let alink = this.convertLinkToCurl(dlink, filename, pan.ua);
+                        if (typeof (alink) === 'object') {
+                            content += `<div class="pl-item">
+                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                    <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                        } else {
+                            alinkAllText += alink + '\r\n';
+                            content += `<div class="pl-item">
+                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                    <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                        }
+                    }
+                    if (mode === 'bc') {
+                        let alink = this.convertLinkToBC(dlink, filename, pan.ua);
+                        if (typeof (alink) === 'object') {
+                            content += `<div class="pl-item">
+                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                    <a class="pl-item-link pl-a" href="${decodeURIComponent(alink.link)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink.text)}<br>下载 ${filename}</a> </div>`;
+                        } else {
+                            alinkAllText += alink + '\r\n';
+                            content += `<div class="pl-item">
+                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                    <a class="pl-item-link pl-a" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>下载 ${filename}</a> </div>`;
+                        }
+                    }
+                } else {
+                    if (mode === 'api') {
+                        alinkAllText += dlink + '\r\n';
                         content += `<div class="pl-item">
-                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link pl-a" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>下载 ${filename}</a> </div>`;
+                                    <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
+                                    <button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+                                    <div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
+                                    <div class="pl-item-progress" style="display: none">
+                                        <div class="pl-progress">
+                                            <div class="pl-progress-outer"></div>
+                                            <div class="pl-progress-inner" style="width:5%">
+                                            <div class="pl-progress-inner-text">正在加载进度...0%</div>
+                                            </div>
+                                        </div>
+                                        <span class="pl-progress-stop listener-stop">取消下载</span>
+                                    `;
+                        content += `<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
+                                    <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
+                                    <span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
+                                    `
+                        content +=`</div></div>`
+                    }
+                    if (mode === 'aria') {
+                        let alink = this.convertLinkToAria(dlink, filename, pan.ua);
+                        if (typeof (alink) === 'object') {
+                            content += `<div class="pl-item">
+                                    <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                        } else {
+                            alinkAllText += alink + '\r\n';
+                            content += `<div class="pl-item">
+                                    <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                        }
+                    }
+                    if (mode === 'rpc') {
+                        content += `<div class="pl-item">
+                                    <button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+                    }
+                    if (mode === 'curl') {
+                        let alink = this.convertLinkToCurl(dlink, filename, pan.ua);
+                        if (typeof (alink) === 'object') {
+                            content += `<div class="pl-item">
+                                    <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                        } else {
+                            alinkAllText += alink + '\r\n';
+                            content += `<div class="pl-item">
+                                    <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                        }
+                    }
+                    if (mode === 'bc') {
+                        let alink = this.convertLinkToBC(dlink, filename, pan.ua);
+                        if (typeof (alink) === 'object') {
+                            content += `<div class="pl-item">
+                                    <a class="pl-item-link pl-a" href="${decodeURIComponent(alink.link)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink.text)}<br>下载 ${filename}</a> </div>`;
+                        } else {
+                            alinkAllText += alink + '\r\n';
+                            content += `<div class="pl-item">
+                                    <a class="pl-item-link pl-a" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>下载 ${filename}</a> </div>`;
+                        }
                     }
                 }
             });
@@ -1939,9 +2214,20 @@
 
         getSelectedList() {
             try {
-                return require('system-core:context/context.js').instanceForSystem.list.getSelected();
+                var List = require("system-core:context/context.js").instanceForSystem.list;
+                var selectList = List.getSelected();
+                if (!selectList.length) {
+                    selectList = List.getCurrentList();
+                }
+                return selectList;
             } catch (e) {
-                return document.querySelector('.wp-s-core-pan').__vue__.selectedList;
+                var list1 = document.querySelector('.wp-s-core-pan');
+                if (list1 && list1.__vue__) {
+                    return list1.__vue__.selectedList;
+                } else {
+                    var list2 =  document.getElementsByClassName("file-list")[0];
+                    return list2.__vue__.allFileList.filter(function (item) { return !!item.selected; });
+                }
             }
         },
 
@@ -1973,25 +2259,43 @@
             let path = location.pathname;
             if (/^\/disk\/home/.test(path)) return 'home';
             if (/^\/disk\/main/.test(path)) return 'main';
+            if (/^\/wap\/home/.test(path)) return 'wap';
             if (/^\/(s|share)\//.test(path)) return 'share';
             return '';
             return '';
         },
 
         showMainDialog(title, html, footer) {
-            Swal.fire({
-                title,
-                html,
-                footer,
-                allowOutsideClick: false,
-                showCloseButton: true,
-                position: 'top',
-                width: '1000px',
-                customClass,
-                confirmButtonText: '关闭',
-            }).then(() => {
-                this._resetData();
-            });
+            if (pt === 'wap'){
+                Swal.fire({
+                    title,
+                    html,
+                    allowOutsideClick: false,
+                    showCloseButton: true,
+                    position: 'top',
+                    heightAuto: false,
+                    scrollbarPadding: false,
+                    width: '1000px',
+                    customClass,
+                    confirmButtonText: '关闭',
+                }).then(() => {
+                    this._resetData();
+                });
+            } else {
+                Swal.fire({
+                    title,
+                    html,
+                    footer,
+                    allowOutsideClick: false,
+                    showCloseButton: true,
+                    position: 'top',
+                    width: '1000px',
+                    customClass,
+                    confirmButtonText: '关闭',
+                }).then(() => {
+                    this._resetData();
+                });
+            }
         },
 
         async initPanLinker() {
