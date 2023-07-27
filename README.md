@@ -25,17 +25,17 @@ GreasyFork链接：[greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/
 
 ## 统计~
 
-![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)  ![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)  ![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)  ![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=%E5%BE%97%E5%88%86&rcolor=orange)  ![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=%E5%A5%BD%E8%AF%84&rcolor=darkcyan)  ![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)  ![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=%E8%AE%B8%E5%8F%AF%E8%AF%81&rcolor=blueviolet)
-
-![TamperMonkeyBeta 篡改猴测试版-v4.19.6183](https://img.shields.io/badge/TamperMonkeyBeta%20%E7%AF%A1%E6%94%B9%E7%8C%B4%E6%B5%8B%E8%AF%95%E7%89%88-v4.19.6183-red.svg)  ![TamperMonkey 篡改猴-v4.18.1](https://img.shields.io/badge/TamperMonkey%20%E7%AF%A1%E6%94%B9%E7%8C%B4-v4.18.1-brightgreen.svg)  ![ScriptCat 脚本猫-0.14.1](https://img.shields.io/badge/ScriptCat%20%E8%84%9A%E6%9C%AC%E7%8C%AB-0.14.1-blue.svg)  ![Violentmonkey 暴力猴-v2.14.0](https://img.shields.io/badge/Violentmonkey%20%E6%9A%B4%E5%8A%9B%E7%8C%B4-v2.14.0-brown.svg)
-
-![Google Chrome-≥76.0](https://img.shields.io/badge/Google%20Chrome-%E2%89%A576.0-yellow.svg)  ![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft%20Edge-%E2%89%A588.0-blue.svg)  ![支持平台-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android](https://img.shields.io/badge/%E6%94%AF%E6%8C%81%E5%B9%B3%E5%8F%B0-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android-blueviolet.svg)
+![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)  ![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)  ![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)  ![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=得分&rcolor=orange)  ![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=好评&rcolor=darkcyan)  ![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)  ![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=许可证&rcolor=blueviolet)
+  
+![TamperMonkeyBeta](https://img.shields.io/badge/TamperMonkeyBeta 篡改猴测试版-v4.19.6183-red.svg)  ![TamperMonkey](https://img.shields.io/badge/TamperMonkey 篡改猴-v4.18.1-brightgreen.svg)  ![ScriptCat](https://img.shields.io/badge/ScriptCat 脚本猫-0.14.1-blue.svg)  ![Violentmonkey](https://img.shields.io/badge/Violentmonkey 暴力猴-v2.14.0-brown.svg)
+  
+![Google Chrome-≥76.0](https://img.shields.io/badge/Google Chrome-≥76.0-yellow.svg)  ![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft Edge-≥88.0-blue.svg)  ![支持平台-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android](https://img.shields.io/badge/支持平台-Windows | Mac | Linux | Android-blueviolet.svg)
 
 ![Starchart](https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg)
 
 ### 最新版本号
 
-V. 1.0.7（改自6.1.1版本）
+V. 1.0.7.1（改自6.1.1版本）
 
 ## 更新日志
 
@@ -89,7 +89,8 @@ V. 1.0.7（改自6.1.1版本）
 46、homo特有的彩蛋又回来力(喜)；  
 47、修复夸克网盘按钮错位；  
 48、下载窗口加入关闭按钮；  
-49、重构夸克网盘、阿里云盘按钮。
+49、重构夸克网盘、阿里云盘按钮；  
+50、\[实验功能，不影响正常使用\]支持百度网盘手机网页版，勾选文件后可在顶栏找到“下载助手”按钮。
 
 ---
 
