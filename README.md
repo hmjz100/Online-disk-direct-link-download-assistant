@@ -8,7 +8,7 @@
 原作者：[https://www.baiduyun.wiki/](https://www.baiduyun.wiki/)  
 原脚本：[https://greasyfork.org/zh-CN/scripts/436446](https://greasyfork.org/zh-CN/scripts/436446)  
 <!--因[上一个修改作者](https://greasyfork.org/zh-CN/scripts/422818)已经弃坑，所以由我来代其更新。-->  
-GreasyFork链接：[greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/zh-CN/scripts/449291)  
+GreasyFork链接：[https://greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/zh-CN/scripts/449291)  
 因网络环境，发布新脚本时GreasyFork是最快更新的。
 
 ## *简介
@@ -19,7 +19,7 @@ GreasyFork链接：[greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/
 #### 卑微的小标题
 
 这个脚本只有一个人在修改\~如果喜欢的话还请留个[好评](https://greasyfork.org/scripts/449291/feedback)和Star哦\~   
-如有bug等问题请前往Github发[issues反馈](https://githubfast.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
+如有bug等问题请前往Github发[议题反馈](https://githubfast.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
 或者在[GreasyFork反馈](https://greasyfork.org/scripts/449291/feedback)，如果看到的话我会尽量修改。
 <!--如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。-->
 
@@ -27,9 +27,9 @@ GreasyFork链接：[greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/
 
 ![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)  ![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)  ![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)  ![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=得分&rcolor=orange)  ![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=好评&rcolor=darkcyan)  ![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)  ![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=许可证&rcolor=blueviolet)
   
-![TamperMonkeyBeta](https://img.shields.io/badge/TamperMonkeyBeta 篡改猴测试版-v4.19.6183-red.svg)  ![TamperMonkey](https://img.shields.io/badge/TamperMonkey 篡改猴-v4.18.1-brightgreen.svg)  ![ScriptCat](https://img.shields.io/badge/ScriptCat 脚本猫-0.14.1-blue.svg)  ![Violentmonkey](https://img.shields.io/badge/Violentmonkey 暴力猴-v2.14.0-brown.svg)
+![TamperMonkeyBeta](https://img.shields.io/badge/TamperMonkeyBeta%20篡改猴测试版-v4.19.6183-red.svg)  ![TamperMonkey](https://img.shields.io/badge/TamperMonkey%20篡改猴-v4.18.1-brightgreen.svg)  ![ScriptCat](https://img.shields.io/badge/ScriptCat%20脚本猫-0.14.1-blue.svg)  ![Violentmonkey](https://img.shields.io/badge/Violentmonkey%20暴力猴-v2.14.0-brown.svg)
   
-![Google Chrome-≥76.0](https://img.shields.io/badge/Google Chrome-≥76.0-yellow.svg)  ![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft Edge-≥88.0-blue.svg)  ![支持平台-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android](https://img.shields.io/badge/支持平台-Windows | Mac | Linux | Android-blueviolet.svg)
+![Google Chrome-≥76.0](https://img.shields.io/badge/Google%20Chrome-≥76.0-yellow.svg)  ![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft%20Edge-≥88.0-blue.svg)  ![支持平台](https://img.shields.io/badge/支持平台-Windows%20|%20Mac%20|%20Linux%20|%20Android-blueviolet.svg)
 
 ![Starchart](https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg)
 
