@@ -2029,82 +2029,7 @@
                 let ext = base.getExtension(filename);
                 let size = base.sizeFormat(v.size);
                 let dlink = v.dlink;
-                if (pt === !'wap') {
-                    if (mode === 'api') {
-                        alinkAllText += dlink + '\r\n';
-                        content += `<div class="pl-item">
-                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                    <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
-                                    <!--<a class="pl-item-copy" target="_blank" href="${dlink}" title="点击使用浏览器下载" data-filename="${filename}" data-link="${dlink}">传统下载</a>-->
-                                    <button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
-                                    <div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
-                                    <div class="pl-item-progress" style="display: none">
-                                        <div class="pl-progress">
-                                            <div class="pl-progress-outer"></div>
-                                            <div class="pl-progress-inner" style="width:5%">
-                                            <div class="pl-progress-inner-text">正在加载进度...0%</div>
-                                            </div>
-                                        </div>
-                                        <span class="pl-progress-stop listener-stop">取消下载</span>
-                                    `;
-                        if (base.getValue('setting_hide_idm') === 'no') {
-                            content+=`<span class="pl-progress-tip" >未发现IDM，使用自带浏览器下载</span>
-                                    <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
-                                    <span class="pl-progress-how listener-how">如何唤起IDM？</span>
-                                    `
-                        } else {
-                            content+=`<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
-                                    <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
-                                    <span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
-                                    `
-                        };
-                        content +=`</div></div>`
-                    }
-                    if (mode === 'aria') {
-                        let alink = this.convertLinkToAria(dlink, filename, pan.ua);
-                        if (typeof (alink) === 'object') {
-                            content += `<div class="pl-item">
-                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                    <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
-                        } else {
-                            alinkAllText += alink + '\r\n';
-                            content += `<div class="pl-item">
-                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                    <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
-                        }
-                    }
-                    if (mode === 'rpc') {
-                        content += `<div class="pl-item">
-                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                    <button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
-                    }
-                    if (mode === 'curl') {
-                        let alink = this.convertLinkToCurl(dlink, filename, pan.ua);
-                        if (typeof (alink) === 'object') {
-                            content += `<div class="pl-item">
-                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                    <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
-                        } else {
-                            alinkAllText += alink + '\r\n';
-                            content += `<div class="pl-item">
-                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                    <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
-                        }
-                    }
-                    if (mode === 'bc') {
-                        let alink = this.convertLinkToBC(dlink, filename, pan.ua);
-                        if (typeof (alink) === 'object') {
-                            content += `<div class="pl-item">
-                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                    <a class="pl-item-link pl-a" href="${decodeURIComponent(alink.link)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink.text)}<br>下载 ${filename}</a> </div>`;
-                        } else {
-                            alinkAllText += alink + '\r\n';
-                            content += `<div class="pl-item">
-                                    <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                    <a class="pl-item-link pl-a" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>下载 ${filename}</a> </div>`;
-                        }
-                    }
-                } else {
+                if (pt === 'wap') {
                     if (mode === 'api') {
                         alinkAllText += dlink + '\r\n';
                         content += `<div class="pl-item">
@@ -2163,7 +2088,82 @@
                                     <a class="pl-item-link pl-a" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>下载 ${filename}</a> </div>`;
                         }
                     }
+                } else {
+                if (mode === 'api') {
+                    alinkAllText += dlink + '\r\n';
+                    content += `<div class="pl-item">
+                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
+                                <!--<a class="pl-item-copy" target="_blank" href="${dlink}" title="点击使用浏览器下载" data-filename="${filename}" data-link="${dlink}">传统下载</a>-->
+                                <button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+                                <div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
+                                <div class="pl-item-progress" style="display: none">
+                                    <div class="pl-progress">
+                                        <div class="pl-progress-outer"></div>
+                                        <div class="pl-progress-inner" style="width:5%">
+                                        <div class="pl-progress-inner-text">正在加载进度...0%</div>
+                                        </div>
+                                    </div>
+                                    <span class="pl-progress-stop listener-stop">取消下载</span>
+                                `;
+                    if (base.getValue('setting_hide_idm') === 'no') {
+                        content+=`<span class="pl-progress-tip" >未发现IDM，使用自带浏览器下载</span>
+                                <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
+                                <span class="pl-progress-how listener-how">如何唤起IDM？</span>
+                                `
+                    } else {
+                        content+=`<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
+                                <span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
+                                <span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
+                                `
+                    };
+                    content +=`</div></div>`
                 }
+                if (mode === 'aria') {
+                    let alink = this.convertLinkToAria(dlink, filename, pan.ua);
+                    if (typeof (alink) === 'object') {
+                        content += `<div class="pl-item">
+                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                    } else {
+                        alinkAllText += alink + '\r\n';
+                        content += `<div class="pl-item">
+                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                    }
+                }
+                if (mode === 'rpc') {
+                    content += `<div class="pl-item">
+                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                <button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+                }
+                if (mode === 'curl') {
+                    let alink = this.convertLinkToCurl(dlink, filename, pan.ua);
+                    if (typeof (alink) === 'object') {
+                        content += `<div class="pl-item">
+                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                <a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                    } else {
+                        alinkAllText += alink + '\r\n';
+                        content += `<div class="pl-item">
+                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                <a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+                    }
+                }
+                if (mode === 'bc') {
+                    let alink = this.convertLinkToBC(dlink, filename, pan.ua);
+                    if (typeof (alink) === 'object') {
+                        content += `<div class="pl-item">
+                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                <a class="pl-item-link pl-a" href="${decodeURIComponent(alink.link)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink.text)}<br>下载 ${filename}</a> </div>`;
+                    } else {
+                        alinkAllText += alink + '\r\n';
+                        content += `<div class="pl-item">
+                                <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
+                                <a class="pl-item-link pl-a" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>下载 ${filename}</a> </div>`;
+                    }
+                }
+            }
             });
 
             content += '</div>';
