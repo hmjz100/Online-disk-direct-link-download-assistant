@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.7.1
+// @version           1.0.7.2
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
@@ -262,12 +262,16 @@
         // 文件大小转换（以字节为单位）
         sizeFormat(value) {
             if (value === +value) {
-                let unit = ["字节(B)", "千字节(KB)", "兆字节(MB)", "吉字节(GB)", "太字节(TB)", "拍字节(PB)", "艾字节(EB)", "泽字节(ZB)", "尧字节(YB)"];
+            let unit = ["字节(B)", "千字节(KB)", "兆字节(MB)", "吉字节(GB)", "太字节(TB)", "拍字节(PB)", "艾字节(EB)", "泽字节(ZB)", "尧字节(YB)"];
+            if (value === 0) {
+                return "0字节(B)";
+            } else {
                 let index = Math.floor(Math.log(value) / Math.log(1024));
                 let size = value / Math.pow(1024, index);
                 size = size.toFixed(1);
                 return size + unit[index];
             }
+        }
             return '';
         },
 
@@ -720,6 +724,7 @@
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
                 html: `<span>
+                V1.0.7.2<br>1、修复使用RPC下载时会重复发送链接的Bug。<br><br>
                 V1.0.7.1<br>1、[实验功能，不影响正常使用]支持百度网盘手机网页版，勾选文件后可在顶栏找到“下载助手”按钮。<br><br>
                 V1.0.7<br>1、重构夸克网盘、阿里云盘按钮。<br><br>
                 V1.0.6.9<br>1、下载窗口加入关闭按钮。<br><br>
@@ -1592,15 +1597,19 @@
                 _reset(index);
                 base.get(o.link[0].dataset.link, {"User-Agent": pan.ua}, 'blob', {filename, index});
                 let startTime = Date.now(); // 记录下载开始时间
+                let prevLoaded = 0; // 上一次的已下载数据量
+                let prevTime = startTime; // 上一次的时间
+                let size = Number(o.link[0].dataset.size);
                 ins[index] = setInterval(() => {
                     let prog = +progress[index] || 0;
                     let isIDM = idm[index] || false;
+                    
                     if (isIDM) {
                         // 处理IDM的代码
                         o.tip.hide();
                         o.progress.hide();
                         o.copy.show();
-                        o.link.text('已成功唤起IDM，请查看IDM下载框！').animate({opacity: '0.5'}, "slow").show();
+                        o.link.text('链接已被IDM捕获~请查看IDM下载窗口哦！').animate({opacity: '0.5'}, "slow").show();
                         clearInterval(ins[index]);
                         setTimeout(
                             function (){
@@ -1627,6 +1636,16 @@
                         let remainingMinutes = Math.floor(remainingTimeSeconds / 60);
                         let remainingSeconds = Math.floor(remainingTimeSeconds % 60);
 
+                        // 计算下载速度
+                        let loaded = prog * size / 100; // 已下载数据量
+                        let currentTimeDiff = currentTime - prevTime; // 当前时间与上一次时间的差值
+                        let loadedDiff = loaded - prevLoaded; // 当前已下载数据量与上一次的差值
+                        let downloadSpeed = (currentTimeDiff !== 0) ? loadedDiff / (currentTimeDiff / 1000) : 0; // 下载速度（单位：字节/秒）
+
+                        // 更新上一次的数据
+                        prevLoaded = loaded;
+                        prevTime = currentTime;
+
                         // 更改界面
                         o.link.hide();
                         o.tip.hide();
@@ -1652,7 +1671,11 @@
                         } else {
                             timeText = '计算中...';
                         }
-                        $text.text(prog + '% | 剩余时间：' + timeText);
+
+                        let speedText ='';
+                        speedText = base.sizeFormat(downloadSpeed)
+
+                        $text.text(prog + '% | 剩余时间：' + timeText + ' | 速度：' + speedText + '/秒');
 
                         if (prog === 100) {
                             setTimeout(function (){
@@ -1729,17 +1752,29 @@
             });
             doc.on('click', '.listener-link-rpc', async (e) => {
                 let target = $(e.currentTarget);
+                if (target.data('processing')) {
+                    return; // 如果按钮正在处理中，避免重复
+                }
+                
                 target.find('.icon').remove();
                 target.find('.pl-loading').remove();
                 target.prepend(base.createLoading());
-                let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
-                if (res === 'success') {
-                    $('.listener-rpc-task').show();
-                    target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
-                } else if (res === 'assistant') {
-                    target.addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
-                } else {
-                    target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+            
+                try {
+                    target.data('processing', true); // 设置标志，表示按钮正在处理中
+                    let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+                    if (res === 'success') {
+                        $('.listener-rpc-task').show();
+                        target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+                    } else if (res === 'assistant') {
+                        target.addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
+                    } else {
+                        target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+                    }
+                } catch (error) {
+                    console.error(error); // 打印错误信息，方便排查问题
+                } finally {
+                    target.data('processing', false); // 重置标志，表示按钮处理完毕
                 }
             });
             doc.on('click', '.listener-send-rpc', (e) => {
@@ -1861,7 +1896,7 @@
             });
             if (!pt) return;
             let $toolWrap;
-            let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" ">更新日志</div></div></div>`);
+            let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="padding: 0px;" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="padding: 0px;" ">更新日志</div></div></div>`);
             if (pt === 'home') $toolWrap = $(pan.btn.home);
             if (pt === 'main') {
                 $toolWrap = $(pan.btn.main);
@@ -2033,7 +2068,8 @@
                     if (mode === 'api') {
                         alinkAllText += dlink + '\r\n';
                         content += `<div class="pl-item">
-                                    <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
+                                    <div class="pl-item-name listener-tip" data-size="${size}" style="display: none">${filename}</div>
+                                    <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-size="${v.size}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
                                     <button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
                                     <div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
                                     <div class="pl-item-progress" style="display: none">
@@ -2093,7 +2129,7 @@
                     alinkAllText += dlink + '\r\n';
                     content += `<div class="pl-item">
                                 <div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-                                <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
+                                <a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
                                 <!--<a class="pl-item-copy" target="_blank" href="${dlink}" title="点击使用浏览器下载" data-filename="${filename}" data-link="${dlink}">传统下载</a>-->
                                 <button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
                                 <div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
@@ -2371,15 +2407,27 @@
             });
             doc.on('click', '.listener-link-rpc', async (e) => {
                 let target = $(e.currentTarget);
+                if (target.data('processing')) {
+                    return; // 如果按钮正在处理中，避免重复
+                }
+                
                 target.find('.icon').remove();
                 target.find('.pl-loading').remove();
                 target.prepend(base.createLoading());
-                let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
-                if (res === 'success') {
-                    $('.listener-rpc-task').show();
-                    target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
-                } else {
-                    target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+            
+                try {
+                    target.data('processing', true); // 设置标志，表示按钮正在处理中
+                    let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+                    if (res === 'success') {
+                        $('.listener-rpc-task').show();
+                        target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+                    } else {
+                        target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+                    }
+                } catch (error) {
+                    console.error(error); // 打印错误信息，方便排查问题
+                } finally {
+                    target.data('processing', false); // 重置标志，表示按钮处理完毕
                 }
             });
             doc.on('click', '.listener-send-rpc', (e) => {
@@ -2743,15 +2791,27 @@
             });
             doc.on('click', '.listener-link-rpc', async (e) => {
                 let target = $(e.currentTarget);
+                if (target.data('processing')) {
+                    return; // 如果按钮正在处理中，避免重复
+                }
+                
                 target.find('.icon').remove();
                 target.find('.pl-loading').remove();
                 target.prepend(base.createLoading());
-                let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
-                if (res === 'success') {
-                    $('.listener-rpc-task').show();
-                    target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
-                } else {
-                    target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+            
+                try {
+                    target.data('processing', true); // 设置标志，表示按钮正在处理中
+                    let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+                    if (res === 'success') {
+                        $('.listener-rpc-task').show();
+                        target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+                    } else {
+                        target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+                    }
+                } catch (error) {
+                    console.error(error); // 打印错误信息，方便排查问题
+                } finally {
+                    target.data('processing', false); // 重置标志，表示按钮处理完毕
                 }
             });
             doc.on('click', '.listener-send-rpc', (e) => {
@@ -3119,15 +3179,27 @@
             });
             doc.on('click', '.listener-link-rpc', async (e) => {
                 let target = $(e.currentTarget);
+                if (target.data('processing')) {
+                    return; // 如果按钮正在处理中，避免重复
+                }
+                
                 target.find('.icon').remove();
                 target.find('.pl-loading').remove();
                 target.prepend(base.createLoading());
-                let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
-                if (res === 'success') {
-                    $('.listener-rpc-task').show();
-                    target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
-                } else {
-                    target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+            
+                try {
+                    target.data('processing', true); // 设置标志，表示按钮正在处理中
+                    let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+                    if (res === 'success') {
+                        $('.listener-rpc-task').show();
+                        target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+                    } else {
+                        target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+                    }
+                } catch (error) {
+                    console.error(error); // 打印错误信息，方便排查问题
+                } finally {
+                    target.data('processing', false); // 重置标志，表示按钮处理完毕
                 }
             });
             doc.on('click', '.listener-send-rpc', (e) => {
@@ -3494,15 +3566,27 @@
             });
             doc.on('click', '.listener-link-rpc', async (e) => {
                 let target = $(e.currentTarget);
+                if (target.data('processing')) {
+                    return; // 如果按钮正在处理中，避免重复
+                }
+                
                 target.find('.icon').remove();
                 target.find('.pl-loading').remove();
                 target.prepend(base.createLoading());
-                let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
-                if (res === 'success') {
-                    $('.listener-rpc-task').show();
-                    target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
-                } else {
-                    target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+            
+                try {
+                    target.data('processing', true); // 设置标志，表示按钮正在处理中
+                    let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+                    if (res === 'success') {
+                        $('.listener-rpc-task').show();
+                        target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+                    } else {
+                        target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+                    }
+                } catch (error) {
+                    console.error(error); // 打印错误信息，方便排查问题
+                } finally {
+                    target.data('processing', false); // 重置标志，表示按钮处理完毕
                 }
             });
             doc.on('click', '.listener-send-rpc', (e) => {
@@ -3817,15 +3901,27 @@
             });
             doc.on('click', '.listener-link-rpc', async (e) => {
                 let target = $(e.currentTarget);
+                if (target.data('processing')) {
+                    return; // 如果按钮正在处理中，避免重复
+                }
+                
                 target.find('.icon').remove();
                 target.find('.pl-loading').remove();
                 target.prepend(base.createLoading());
-                let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
-                if (res === 'success') {
-                    $('.listener-rpc-task').show();
-                    target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
-                } else {
-                    target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+            
+                try {
+                    target.data('processing', true); // 设置标志，表示按钮正在处理中
+                    let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+                    if (res === 'success') {
+                        $('.listener-rpc-task').show();
+                        target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+                    } else {
+                        target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+                    }
+                } catch (error) {
+                    console.error(error); // 打印错误信息，方便排查问题
+                } finally {
+                    target.data('processing', false); // 重置标志，表示按钮处理完毕
                 }
             });
             doc.on('click', '.listener-send-rpc', (e) => {
