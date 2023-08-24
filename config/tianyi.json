@@ -1,0 +1,49 @@
+{
+	"tips":"这是一个备份的文件而已，只在无法访问油小猴的服务器时调用，并不是我操控的“暗号”。", 
+    "code": 200,
+    "pcs": {
+        "0": "https://cloud.189.cn/api/open/file/getFileDownloadUrl.action",
+        "1": "https://api.cloud.189.cn/open/oauth2/ssoH5.action",
+        "2": "https://api.cloud.189.cn/open/file/getFileDownloadUrl.action"
+    },
+    "img": "https://pic.rmb.bdstatic.com/bjh/8b9e14345b3cdf96aedac2f3971adcb02681.png",
+    "btn": {
+        "home": ".nav-opea",
+        "share": ".nav-opea"
+    },
+    "d": "http://d.youxiaohou.com",
+    "name": "（改）网盘直链下载助手备份",
+    "init": {
+        "0": "请输入初始化暗号",
+        "1": "请输入暗号点亮按钮，扫二维码免费获取",
+        "2": "暗号正确！【下载助手】点亮成功！",
+        "3": "暗号不正确！",
+        "4": "试试用微信扫码回复👉暗号👈来点亮按钮吧！",
+        "5": "请先安装网盘万能助手，安装后请刷新本页！！！"
+    },
+    "api": {
+        "0": "API下载<span style=\"font-size:14px;font-weight: 400;opacity: .8;\">（适用于 <a href=\"https://www.youxiaohou.com/zh-cn/idm.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">IDM</a>，<a href=\"https://www.youxiaohou.com/zh-cn/ndm.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">NDM</a> 以及浏览器自带下载）</span>",
+        "1": "点击链接直接下载，例如：<a href=\"https://www.youxiaohou.com/zh-cn/idm.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">IDM</a>，若未唤起IDM，请 <a href=\"https://www.youxiaohou.com/zh-cn/idm.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">点击这里</a> 配置文件类型"
+    },
+    "aria": {
+        "0": "Aria下载<span style=\"font-size:14px;font-weight: 400;opacity: .8;\">（适用于 <a href=\"https://www.youxiaohou.com/zh-cn/xdown.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">XDown</a> 及 <a href=\"https://www.youxiaohou.com/zh-cn/linux.html#linux-shell\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">Linux Shell命令行</a>）</span>",
+        "1": "点击链接复制地址到剪切板，粘贴到支持 aria2c 协议的下载器中，例如：<a href=\"https://www.youxiaohou.com/zh-cn/xdown.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">XDown</a>，<a href=\"https://www.youxiaohou.com/zh-cn/linux.html#linux-shell\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">Linux Shell</a>"
+    },
+    "rpc": {
+        "0": "RPC下载<span style=\"font-size:14px;font-weight: 400;opacity: .8;\">（适用于 <a href=\"https://www.youxiaohou.com/zh-cn/motrix.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">Motrix</a>，<a href=\"https://www.youxiaohou.com/download.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">Aria2 Tools</a>，<a href=\"https://www.youxiaohou.com/download.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">AriaNgGUI</a>）</span>",
+        "1": "点击按钮发送链接至本地或远程 RPC 服务，例如：<a href=\"https://www.youxiaohou.com/zh-cn/motrix.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">Motrix</a>，RPC 参数含义见<a href=\"https://www.youxiaohou.com/zh-cn/motrix.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">此处</a>"
+    },
+    "curl": {
+        "0": "cURL下载<span style=\"font-size:14px;font-weight: 400;opacity: .8;\">（适用于 <a href=\"https://www.youxiaohou.com/zh-cn/curl.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">Windows，Linux，MacOS 终端</a>）</span>",
+        "1": "点击链接复制地址到剪切板，粘贴到 <a href=\"https://www.youxiaohou.com/zh-cn/curl.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">Windows，Linux，MacOS 终端</a>，支持断点续传"
+    },
+    "bc": {
+        "0": "BC下载<span style=\"font-size:14px;font-weight: 400;opacity: .8;\">（适用于 <a href=\"https://www.youxiaohou.com/zh-cn/bitcomet.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">比特彗星</a>）</span>",
+        "1": "点击链接复制地址到剪切板，粘贴到 <a href=\"https://www.youxiaohou.com/zh-cn/bitcomet.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">比特彗星</a> 下载器中"
+    },
+    "num": "865746",
+    "license": "MIT",
+    "version": "6.1.1",
+    "new": "<li class=\"pl-dropdown-menu-item\"><a class=\"pl-a\" data-no-instant=\"1\" style=\"color:#F24C43\" href=\"https://www.youxiaohou.com/install.html?from=update\" target=\"_blank\"><span style=\"margin-right: 5px;\">发现新版</span><svg style=\"animation: load 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\"><path d=\"M171.31 549.028c-24.558-153.572 59.801-308.76 210.442-367.477 111.637-43.53 232.005-22.71 317.236 39.47l-72.527 117.48 325.245-1.254L835.459 0l-59.547 96.426C650.34 15.104 479.156-11.493 329.258 46.95 121.578 127.91 2.038 337.29 25.64 549.03h145.67z\" fill=\"#F24C43\"/><path d=\"M852.688 464.966c24.536 153.572-59.78 308.78-210.422 367.477-102.693 40.024-215.86 24.94-302.874-29.019 16.57-26.895 65.537-106.198 65.537-106.198L55.17 676.704 203.176 1024l62.053-100.484c125.552 81.322 279.592 101.992 429.489 43.55 207.638-80.982 327.22-290.34 303.618-502.058H852.688z\" fill=\"#F24C43\"/></svg></a></li>",
+    "footer": "<div style=\"text-align: center;\">点击查看 <a href=\"https://www.youxiaohou.com/zh-cn/motrix.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">RPC配置说明</a>，配置修改后自动生效</div>"
+}
