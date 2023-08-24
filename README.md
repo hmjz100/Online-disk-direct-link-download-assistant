@@ -5,32 +5,41 @@
 ## 说明
 
 基于[【网盘直链下载助手】](https://www.baiduyun.wiki/)修改（改自最新6.1.1版本）  
-原作者：[油小猴](https://www.youxiaohou.com/)  
-原脚本：[https://greasyfork.org/zh-CN/scripts/436446](https://greasyfork.org/zh-CN/scripts/436446)  
-<!--因[上一个修改作者](https://greasyfork.org/zh-CN/scripts/422818)已经弃坑，所以由我来代其更新。-->  
-GreasyFork链接：[https://greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/zh-CN/scripts/449291)  
+- 原作者：[油小猴](https://www.youxiaohou.com/)  
+- 原脚本：[https://greasyfork.org/zh-CN/scripts/436446](https://greasyfork.org/zh-CN/scripts/436446)   
+- GreasyFork：[https://greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/zh-CN/scripts/449291)
+   
 因网络环境，发布新脚本时GreasyFork是最快更新的。  
-**如果遇到了只加载出油猴菜单，没有出现“下载助手”按钮的情况，请进入油猴菜单中的“⚙ 设置”→找到“使用油小猴服务器”→选择“不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）”可能会解决该情况。**
+**如果遇到了只加载出油猴菜单，没有出现“下载助手”按钮的情况，请先打开任意网盘页面，进入脚本菜单中的`⚙ 设置`→在打开的`助手设置`弹窗找到`使用油小猴服务器`→选择`不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）`可能会暂时解决该情况。**   
+![2](https://greasyfork.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd3pKQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9a082a73b5617faa71ad0ae5f048f27c87df4ff6/1.png)
 
-## *简介
+## 简介
 
 现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎  
+![TamperMonkeyBeta](https://img.shields.io/badge/TamperMonkeyBeta%20篡改猴测试版-v4.19.6183-red.svg)
+![TamperMonkey](https://img.shields.io/badge/TamperMonkey%20篡改猴-v4.18.1-brightgreen.svg)
+![ScriptCat](https://img.shields.io/badge/ScriptCat%20脚本猫-0.14.1-blue.svg)
+![Violentmonkey](https://img.shields.io/badge/Violentmonkey%20暴力猴-v2.14.0-brown.svg)  
+![Google Chrome-≥76.0](https://img.shields.io/badge/Google%20Chrome-≥76.0-yellow.svg)
+![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft%20Edge-≥88.0-blue.svg)
+![支持平台](https://img.shields.io/badge/支持平台-Windows%20|%20Mac%20|%20Linux%20|%20Android-blueviolet.svg)
 
 
 #### 卑微的小标题
 
 这个脚本只有一个人在修改\~如果喜欢的话还请留个[好评](https://greasyfork.org/scripts/449291/feedback)和Star哦\~   
-如有bug等问题请前往Github发[议题反馈](https://githubfast.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
-或者在[GreasyFork反馈](https://greasyfork.org/scripts/449291/feedback)，如果看到的话我会尽量修改。
-<!--如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。-->
+- 如有bug等问题请在这发[议题反馈](https://githubfast.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
+- 或者在[GreasyFork反馈](https://greasyfork.org/scripts/449291/feedback)，如果看到的话我会尽量修改。
 
 ## 统计~
 
-![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)  ![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)  ![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)  ![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=得分&rcolor=orange)  ![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=好评&rcolor=darkcyan)  ![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)  ![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=许可证&rcolor=blueviolet)
-  
-![TamperMonkeyBeta](https://img.shields.io/badge/TamperMonkeyBeta%20篡改猴测试版-v4.19.6183-red.svg)  ![TamperMonkey](https://img.shields.io/badge/TamperMonkey%20篡改猴-v4.18.1-brightgreen.svg)  ![ScriptCat](https://img.shields.io/badge/ScriptCat%20脚本猫-0.14.1-blue.svg)  ![Violentmonkey](https://img.shields.io/badge/Violentmonkey%20暴力猴-v2.14.0-brown.svg)
-  
-![Google Chrome-≥76.0](https://img.shields.io/badge/Google%20Chrome-≥76.0-yellow.svg)  ![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft%20Edge-≥88.0-blue.svg)  ![支持平台](https://img.shields.io/badge/支持平台-Windows%20|%20Mac%20|%20Linux%20|%20Android-blueviolet.svg)
+![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)
+![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)
+![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)
+![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=得分&rcolor=orange)
+![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=好评&rcolor=darkcyan)
+![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)
+![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=许可证&rcolor=blueviolet)  
 
 ![Starchart](https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg)
 
@@ -124,7 +133,10 @@ V. 1.0.7.3（改自6.1.1版本）
 52、如果出现网络请求错误时支持自动重新请求；
 53、可选择是否使用油小猴服务器。-->
 
-<h4>带有*的为文字注释</h4>
+<!--
+#### 带有*的为文字注释
 
 1、“简介”为[【网盘直链下载助手】原简介](https://greasyfork.org/zh-CN/scripts/436446)精简后得来的文字简介  
-2、“主题色”指紫色，如不喜欢，你可在助手选项中更改
+2、“主题色”指紫色，如不喜欢，你可在助手选项中更改-->
+<!--如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。-->
+<!--因[上一个修改作者](https://greasyfork.org/zh-CN/scripts/422818)已经弃坑，所以由我来代其更新。--> 
