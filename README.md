@@ -28,7 +28,7 @@
 #### 卑微的小标题
 
 这个脚本只有一个人在修改\~如果喜欢的话还请留个[好评](https://greasyfork.org/scripts/449291/feedback)和Star哦\~   
-- 如有bug等问题请在这发[议题反馈](https://githubfast.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
+- 如有bug等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
 - 或者在[GreasyFork反馈](https://greasyfork.org/scripts/449291/feedback)，如果看到的话我会尽量修改。
 
 ## 统计~
@@ -102,7 +102,7 @@ V. 1.0.7.3（改自6.1.1版本）
 21、修改下载链接获取失败的提示；  
 22、增加更多的主题色，可在助手设置查看；  
 23、homo彩蛋被删去力（悲）；  
-24、感谢[https://githubfast.com/Night-stars-1](https://githubfast.com/Night-stars-1)的帮助，修复因为原作者服务器导致的初始化暗号识别错误；  
+24、感谢[https://github.com/Night-stars-1](https://github.com/Night-stars-1)的帮助，修复因为原作者服务器导致的初始化暗号识别错误；  
 25、修改一些文本以及提供给服务器的信息；  
 26、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；  
 27、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘；  
