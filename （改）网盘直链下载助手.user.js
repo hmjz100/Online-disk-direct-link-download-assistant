@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.7.2
+// @version           1.0.7.3
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
-// @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
+// @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,支持手机百度网盘,修改界面,甚至比原版还好用！
 // @license           MIT
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
@@ -42,6 +42,7 @@
 // @connect           xunlei.com
 // @connect           quark.cn
 // @connect           youxiaohou.com
+// @connect           ghproxy.com
 // @connect           localhost
 // @connect           *
 // @run-at            document-idle
@@ -94,7 +95,8 @@
 
     //准备好信息界面的设置选项
     const getuserinfo = {
-        yes: "允许",
+        yes: "使用（使用油小猴服务器获取信息）",
+        no: "不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）"
     };
     const hideidm = {
         yes: "隐藏",
@@ -305,83 +307,119 @@
         },
 
         // 使用Post发送请求
-        post(url, data, headers, type) {
+        post(url, data, headers, type, maxRetries = 10, currentRetry = 0) {
             if (this.isType(data) === 'object') {
                 data = JSON.stringify(data);
             }
             return new Promise((resolve, reject) => {
-                GM_xmlhttpRequest({
-                    method: "POST", url, headers, data,
-                    responseType: type || 'json',
-                    onload: (res) => {
-                        // 判断是否是base64编码的字符串，包含空白字符
-                        if (/^[A-Za-z0-9+/=\\s]+$/.test(res.response) || /^[A-Za-z0-9+/=\\s]+$/.test(res.responseText)) {
-                            // 使用base里封装好的decode函数（decodeURIComponent和escape）解码非ASCII字符
-                            if (res.response) {
-                                res.decodedResponse = JSON.parse(base.decode(res.response));
-                            };
-                            if (res.responseText) {
-                                res.decodedResponseText = base.decode(res.responseText);
-                            };
-                        };
-                        console.log('【（改）网盘直链下载助手】Post\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
-                        type === 'blob' ? resolve(res) : resolve(res.response || res.responseText);
-                    },
-                    onerror: (err) => {
-                        reject(err);
-                    },
-                });
+                const sendRequest = () => {
+                    GM_xmlhttpRequest({
+                        method: "POST", url, headers, data,
+                        responseType: type || 'json',
+                        onload: (res) => {
+                            if (/^[A-Za-z0-9+/=\s]+$/.test(res.response) || /^[A-Za-z0-9+/=\s]+$/.test(res.responseText)) {
+                                if (res.response) {
+                                    res.decodedResponse = JSON.parse(base.decode(res.response));
+                                }
+                                if (res.responseText) {
+                                    res.decodedResponseText = base.decode(res.responseText);
+                                }
+                            }
+                            console.log('【（改）网盘直链下载助手】Post\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
+                            type === 'blob' ? resolve(res) : resolve(res.response || res.responseText);
+                        },
+                        onerror: (err) => {
+                            if (currentRetry < maxRetries) {
+                                currentRetry++;
+                                console.error(`【（改）网盘直链下载助手】Post\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`, err);
+                                setTimeout(function(){
+                                    console.log(`【（改）网盘直链下载助手】Post\n重新尝试请求...`);
+                                    sendRequest(); // 重新发送请求
+                                },5000)
+                            } else {
+                                reject('【（改）网盘直链下载助手】Post\n请求出现错误，可能是网络问题\n无法继续请求，达到最大错误次数。', err); // 达到最大重试次数，拒绝 Promise
+                            }
+                        },
+                    });
+                };
+                sendRequest(); // 初始请求
             });
         },
 
         // 使用Get发送请求
-        get(url, headers, type, extra) {
+        get(url, headers, type, extra, maxRetries = 10, currentRetry = 0) {
             return new Promise((resolve, reject) => {
-                let requestObj = GM_xmlhttpRequest({
-                    method: "GET", url, headers,
-                    responseType: type || 'json',
-                    onload: (res) => {
-                        console.log('【（改）网盘直链下载助手】Get Onload\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
-                        if (res.status === 204) {
-                            requestObj.abort();
-                            idm[extra.index] = true;
-                        }
-                        if (type === 'blob') {
-                            res.status === 200 && base.blobDownload(res.response, extra.filename);
-                            resolve(res);
-                        } else {
-                            resolve(res.response || res.responseText);
-                        }
-                    },
-                    onprogress: (res) => {
-                        console.log('【（改）网盘直链下载助手】Get OnProgress\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n返回结果：', res);
-                        if (extra && extra.filename && extra.index) {
-                            res.total > 0 ? progress[extra.index] = (res.loaded * 100 / res.total).toFixed(2) : progress[extra.index] = 0.00;
-                        }
-                    },
-                    onloadstart() {
-                        extra && extra.filename && extra.index && (request[extra.index] = requestObj);
-                    },
-                    onerror: (err) => {
-                        reject(err);
-                    },
-                });
+                const sendRequest = () => {
+                    let requestObj = GM_xmlhttpRequest({
+                        method: "GET", url, headers,
+                        responseType: type || 'json',
+                        onload: (res) => {
+                            console.log('【（改）网盘直链下载助手】Get Onload\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
+                            if (res.status === 204) {
+                                requestObj.abort();
+                                idm[extra.index] = true;
+                            }
+                            if (type === 'blob') {
+                                res.status === 200 && base.blobDownload(res.response, extra.filename);
+                                resolve(res);
+                            } else {
+                                resolve(res.response || res.responseText);
+                            }
+                        },
+                        onprogress: (res) => {
+                            console.log('【（改）网盘直链下载助手】Get OnProgress\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n返回结果：', res);
+                            if (extra && extra.filename && extra.index) {
+                                res.total > 0 ? progress[extra.index] = (res.loaded * 100 / res.total).toFixed(2) : progress[extra.index] = 0.00;
+                            }
+                        },
+                        onloadstart() {
+                            extra && extra.filename && extra.index && (request[extra.index] = requestObj);
+                        },
+                        onerror: (err) => {
+                            if (currentRetry < maxRetries) {
+                                currentRetry++;
+                                console.error(`【（改）网盘直链下载助手】Get\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`, err);
+                                setTimeout(function(){
+                                    console.log(`【（改）网盘直链下载助手】Get\n重新尝试请求...`);
+                                    sendRequest(); // 重新发送请求
+                                },5000)
+                            } else {
+                                reject('【（改）网盘直链下载助手】Get\n请求出现错误，可能是网络问题\n无法继续请求，达到最大错误次数。', err); // 达到最大重试次数，拒绝 Promise
+                            }
+                        },
+                    });
+                };
+
+                sendRequest(); // 初始请求
             });
         },
 
         // 获取最终链接
-        getFinalUrl(url, headers) {
+        getFinalUrl(url, headers, maxRetries = 10, currentRetry = 0) {
             return new Promise((resolve, reject) => {
-                let requestObj = GM_xmlhttpRequest({
-                    method: "GET", url, headers,
-                    onload: (res) => {
-                        console.log('【（改）网盘直链下载助手】GetFinalUrl\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n返回结果：', res);
-                        resolve(res.finalUrl);
-                    },
-                    onerror: (err) => {
-                        reject(err);
-                    },
-                });
+                const sendRequest = () => {
+                    let requestObj = GM_xmlhttpRequest({
+                        method: "GET", url, headers,
+                        onload: (res) => {
+                            console.log('【（改）网盘直链下载助手】Get FinalUrl\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n返回结果：', res);
+                            resolve(res.finalUrl);
+                        },
+                        onerror: (err) => {
+                            if (currentRetry < maxRetries) {
+                                currentRetry++;
+                                console.error(`【（改）网盘直链下载助手】Get FinalUrl\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`);
+                                setTimeout(function(){
+                                    console.log(`【（改）网盘直链下载助手】Get FinalUrl\n重新尝试请求...`);
+                                    sendRequest(); // 重新发送请求
+                                },5000)
+                            } else {
+                                reject('【（改）网盘直链下载助手】Get FinalUrl\n请求出现错误，可能是网络问题\n无法继续请求，达到最大错误次数。', err); // 达到最大重试次数，拒绝 Promise
+                            }
+                        },
+                    });
+                };
+
+                sendRequest(); // 初始请求
             });
         },
 
@@ -516,11 +554,15 @@
             dom += `</select></label>`;
 
             dom +=`<label class="pl-setting-label"><div class="pl-label">未找到IDM提示</div><select class="pl-input hide_idm">`;
-            Object.keys(hideidm).forEach(value2 => {dom += `<option value="${value2}" ${base.getValue('setting_hide_idm') === value2 ? 'selected' : ''}>${hideidm[value2]}</option>`;});
+            Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_hide_idm') === value ? 'selected' : ''}>${hideidm[value]}</option>`;});
             dom += `</select></label>`;
 
             dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="pl-input baidu_theme">`;
-            Object.keys(hideidm).forEach(value3 => {dom += `<option value="${value3}" ${base.getValue('setting_baidu_theme') === value3 ? 'selected' : ''}>${baidutheme[value3]}</option>`;});
+            Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
+            dom += `</select></label>`;
+
+            dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="pl-input getuser_info">`;
+            Object.keys(getuserinfo).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_getuser_info') === value ? 'selected' : ''}>${getuserinfo[value]}</option>`;});
             dom += `</select></label>`;
 
             dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
@@ -575,6 +617,9 @@
             doc.on('change', '.baidu_theme', async (e) => {
                 base.setValue('setting_baidu_theme', e.target.value);
             });
+            doc.on('change', '.getuser_info', async (e) => {
+                base.setValue('setting_getuser_info', e.target.value);
+            });
         },
 
         // 手机版设置界面
@@ -605,6 +650,9 @@
             dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="pl-input baidu_theme">`;
             Object.keys(hideidm).forEach(value3 => {dom += `<option value="${value3}" ${base.getValue('setting_baidu_theme') === value3 ? 'selected' : ''}>${baidutheme[value3]}</option>`;});
             dom += `</select></label>`;
+
+            dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="pl-input getuser_info">`;
+            Object.keys(getuserinfo).forEach(value1 => {dom += `<option value="${value1}" ${base.getValue('setting_getuser_info') === value1 ? 'selected' : ''}>${getuserinfo[value1]}</option></select></label>`;});
 
             dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
 
@@ -661,6 +709,9 @@
             doc.on('change', '.baidu_theme', async (e) => {
                 base.setValue('setting_baidu_theme', e.target.value);
             });
+            doc.on('change', '.getuser_info', async (e) => {
+                base.setValue('setting_getuser_info', e.target.value);
+            });
         },
 
         showInfo() {
@@ -679,8 +730,6 @@
             hideinfo += `<label class="pl-setting-label"><div class="pl-label">IDM介绍</div>${pan.idm}</label>`;
             hideinfo += `<label class="pl-setting-label"><div class="pl-label">提示文本</div>0、${pan.init[0]}<br>1、${pan.init[1]}<br>2、${pan.init[2]}<br>3、${pan.init[3]}<br>4、${pan.init[4]}<br>5、${pan.init[5]}</label>`;
             hideinfo += `<label class="pl-setting-label"><div class="pl-label">页脚</div>${pan.fotter}</label>`;
-            hideinfo +=`<label class="pl-setting-label"><div class="pl-label">允许油小猴在线收集作者名称与获取暗号(没有用)</div><select class="pl-input getuser_info">`;
-            Object.keys(getuserinfo).forEach(value1 => {hideinfo += `<option value="${value1}" ${base.getValue('setting_getuser_info') === value1 ? 'selected' : ''}>${getuserinfo[value1]}</option></select></label>`;});
             hideinfo = '<div>' + hideinfo + '</div>';
 
             Swal.fire({
@@ -690,10 +739,6 @@
                 allowOutsideClick: false,
                 showCloseButton: true,
                 confirmButtonText: '保存配置(关闭)'
-            });
-
-            doc.on('change', '.getuser_info', async (e) => {
-                base.setValue('setting_getuser_info', e.target.value);
             });
         },
 
@@ -724,6 +769,7 @@
                 icon: 'info',
                 title: '更新日志(关闭按钮在下面哦)',
                 html: `<span>
+                V1.0.7.3<br>1、如果出现网络请求错误时支持自动重新请求；<br>2、可选择是否使用油小猴服务器。<br><br>
                 V1.0.7.2<br>1、修复使用RPC下载时会重复发送链接的Bug。<br><br>
                 V1.0.7.1<br>1、[实验功能，不影响正常使用]支持百度网盘手机网页版，勾选文件后可在顶栏找到“下载助手”按钮。<br><br>
                 V1.0.7<br>1、重构夸克网盘、阿里云盘按钮。<br><br>
@@ -814,7 +860,7 @@
             .pl-title { font-size: 16px!important; line-height: 1!important;white-space: nowrap!important; text-overflow: ellipsis!important;}
             .pl-content { padding: 0 !important; font-size: 12px!important; }
             .pl-main { background-color:${color}15 ;overflow:auto; border-radius: 5px; max-height:calc(${document.documentElement.clientHeight}px - 250px);}
-            .pl-footer {font-size: 15px!important; margin-top: 10px!important; padding-top: 5px!important; color: #f56c6c!important;}
+            .pl-footer {font-size: 15px!important; margin-top: 10px!important; padding-top: 5px!important; color: #f56c6c!important; text-align: center;}
             .pl-item { display: flex; align-items: center; line-height: 22px; height: 50px; background-color: ${color}30; border-radius: 5px; margin: 8px 6px; }
             .pl-item-name { flex: 0 0 170px; text-align: left;margin: 6px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor:default; height: 30px;}
             .pl-item-link { flex: 1; text-align: left; white-space: nowrap; text-overflow: ellipsis;cursor:pointer; overflow: hidden; }
@@ -885,7 +931,7 @@
             .pointer { cursor:pointer }
             .pl-setting-label { display: flex;align-items: center;justify-content: space-between;padding-top: 10px; }
             .pl-label { flex: 0 0 100px;text-align:left; }
-            .pl-input { flex: 1; padding: 8px 10px; border: 1px solid #c2c2c2; border-radius: 5px; font-size: 14px }
+            .pl-input { flex: 1; padding: 8px 10px; border: 1px solid #c2c2c2; border-radius: 5px; font-size: 14px; min-width: 300px; }
             .init-input {
                 width: 373px !important;
                 font-size: 20px !important;
@@ -925,12 +971,8 @@
             .swal2-container { z-index:100000!important; }
             body.swal2-height-auto { height: inherit!important; }
 
-
-            .share-detail-content .share-content {
-                width: auto !important;
-            }
             .DetailLayout--content--14Z28Ay {
-                width: 950px !important;
+                width: 830px !important;
             }
             /* webkit, opera, IE9, Chrome*/
             ::selection {
@@ -946,7 +988,6 @@
             }
             `;
             this.addStyle('panlinker-style', 'style', css);
-
 
             let swalcss = `
             .swal2-popup.swal2-toast{box-sizing:border-box;grid-column:1/4!important;grid-row:1/4!important;grid-template-columns:1fr 99fr 1fr;padding:1em;overflow-y:hidden;background:#fff;box-shadow:0 0 1px hsla(0deg,0%,0%,.075),0 1px 2px hsla(0deg,0%,0%,.075),1px 2px 4px hsla(0deg,0%,0%,.075),1px 3px 8px hsla(0deg,0%,0%,.075),2px 4px 16px hsla(0deg,0%,0%,.075);pointer-events:all}
@@ -1276,10 +1317,13 @@
                 showCancelButton: true,
                 confirmButtonText: '确定',
                 html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}">
-                <input class="swal2-input init-input" id="init" type="text" placeholder="${pan.init[1]}"><br>
-                <span>你可以选择"注入"立即点亮按钮，或者输入暗号点亮。<br>当前暗号是：“${pan.num}”。<br>
-                还可以扫码支持一下原作者油小猴的公众号<br>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...<br>
-                点亮后可以精简百度网盘界面哦!</span></div>`,
+                <input class="swal2-input init-input" id="init" type="text" placeholder="${pan.init[1]}"></div>
+                <div><span>你可以选择"注入"立即点亮按钮，或者输入暗号点亮</span></div>
+                <div><span>当前暗号是：“${pan.num}”。</span></div>
+                <div><span>还可以扫码支持一下原作者油小猴的公众号</span></div>
+                <div><span>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...</span></div>
+                <div><span>点亮后可以精简百度网盘界面哦!</span></div>
+                `,
                 cancelButtonText: '注入(点亮下载助手按钮)'
             });
             if (result.isDismissed && result.dismiss === 'close') {return};
@@ -1584,7 +1628,15 @@
 
             doc.on('click', '.pl-button-mode', (e) => {
                 mode = e.target.dataset.mode;
-                Swal.showLoading();
+				Swal.fire({
+					heightAuto: false,
+					scrollbarPadding: false,
+					showConfirmButton: false,
+					html: `链接获取中`,
+					willOpen: function() {
+						Swal.showLoading();
+					}
+				});				
                 this.getPCSLink();
             });
             doc.on('click', '.listener-link-api', async (e) => {
@@ -2302,50 +2354,36 @@
         },
 
         showMainDialog(title, html, footer) {
-            if (pt === 'wap'){
-                Swal.fire({
-                    title,
-                    html,
-                    allowOutsideClick: false,
-                    showCloseButton: true,
-                    position: 'top',
-                    heightAuto: false,
-                    scrollbarPadding: false,
-                    width: '1000px',
-                    customClass,
-                    confirmButtonText: '关闭',
-                }).then(() => {
-                    this._resetData();
-                });
-            } else {
-                Swal.fire({
-                    title,
-                    html,
-                    footer,
-                    allowOutsideClick: false,
-                    showCloseButton: true,
-                    position: 'top',
-                    width: '1000px',
-                    customClass,
-                    confirmButtonText: '关闭',
-                }).then(() => {
-                    this._resetData();
-                });
-            }
+            Swal.fire({
+                title,
+                html,
+                footer,
+                allowOutsideClick: false,
+                showCloseButton: true,
+				heightAuto: false,
+     			scrollbarPadding: false,
+                position: 'top',
+                width: '1000px',
+                customClass,
+                confirmButtonText: '关闭',
+            }).then(() => {
+                this._resetData();
+            });
         },
 
         async initPanLinker() {
-            base.initDefaultConfig();
             pt = this.detectPage();
-            if (base.getValue('setting_getuser_info') === 'yes') {
-                let res = await base.post
-                (`https://api.youxiaohou.com/config?ver=${version}&a=${author}`, {}, {}, 'text');
-                pan = JSON.parse(base.decode(res));
-            };
-            Object.freeze && Object.freeze(pan);
-            pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
             base.createTip();
             base.registerMenuCommand();
+            if (base.getValue('setting_getuser_info') === 'yes') {
+                let res = await base.post(`https://api.youxiaohou.com/config?ver=${version}&a=${author}`, {}, {}, 'text');
+                pan = JSON.parse(base.decode(res));
+            } else {
+                let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+                pan = JSON.parse(res);
+            }
+            Object.freeze && Object.freeze(pan);
+            pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
         }
     };
 
@@ -2736,17 +2774,19 @@
         },
 
         async initPanLinker() {
-            base.initDefaultConfig();
             pt = this.detectPage();
+            base.createTip();
+            base.registerMenuCommand();
             if (base.getValue('setting_getuser_info') === 'yes') {
                 let res = await base.post
                 (`https://api.youxiaohou.com/config/ali?ver=${version}&a=${author}`, {}, {}, 'text');
                 pan = JSON.parse(base.decode(res));
-            };
+            } else {
+                let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/ali.json`, {}, "text", {});
+                pan = JSON.parse(res);
+            }
             Object.freeze && Object.freeze(pan);
             pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
-            base.createTip();
-            base.registerMenuCommand();
         }
     };
 
@@ -3104,18 +3144,20 @@
         },
 
         async initPanLinker() {
-            base.initDefaultConfig();
             pt = this.detectPage();
+            base.createTip();
+            base.registerMenuCommand();
             if (base.getValue('setting_getuser_info') === 'yes') {
                 let res = await base.post
                 (`https://api.youxiaohou.com/config/tianyi?ver=${version}&a=${author}`, {}, {}, 'text');
                 pan = JSON.parse(base.decode(res));
-            };
+            } else {
+                let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/tianyi.json`, {}, "text", {});
+                pan = JSON.parse(res);
+            }
             Object.freeze && Object.freeze(pan);
             pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
             this.getToken();
-            base.createTip();
-            base.registerMenuCommand();
         }
     };
 
@@ -3494,17 +3536,19 @@
         },
 
         async initPanLinker() {
-            base.initDefaultConfig();
             pt = this.detectPage();
+            base.createTip();
+            base.registerMenuCommand();
             if (base.getValue('setting_getuser_info') === 'yes') {
                 let res = await base.post
                 (`https://api.youxiaohou.com/config/xunlei?ver=${version}&a=${author}`, {}, {}, 'text');
                 pan = JSON.parse(base.decode(res));
-            };
+            } else {
+                let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/xunlei.json`, {}, "text", {});
+                pan = JSON.parse(res);
+            }
             Object.freeze && Object.freeze(pan);
             pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
-            base.createTip();
-            base.registerMenuCommand();
         }
     };
 
@@ -3844,19 +3888,21 @@
         },
 
         async initPanLinker() {
-            base.initDefaultConfig();
             pt = this.detectPage();
+            base.createTip();
+            base.registerMenuCommand();
             if (base.getValue('setting_getuser_info') === 'yes') {
                 let res = await base.post
                 (`https://api.youxiaohou.com/config/quark?ver=${version}&a=${author}`, {}, {}, 'text');
                 pan = JSON.parse(base.decode(res));
-            };
+            } else {
+                let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/quark.json`, {}, "text", {});
+                pan = JSON.parse(res);
+            }
             Object.freeze && Object.freeze(pan);
             pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
             this.addPageListener();
-            base.createTip();
             base.createDownloadIframe();
-            base.registerMenuCommand();
         }
     };
 
@@ -4276,26 +4322,36 @@
         },
 
         async initPanLinker() {
-            base.initDefaultConfig();
             pt = this.detectPage();
-            let res = await base.post
-            (`https://api.youxiaohou.com/config/yidong?ver=${version}&a=${author}`, {}, {}, 'text');
-            pan = JSON.parse(base.decode(res));
-            Object.freeze && Object.freeze(pan);
-            pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
             base.createTip();
             base.registerMenuCommand();
+            if (base.getValue('setting_getuser_info') === 'yes') {
+                let res = await base.post
+                (`https://api.youxiaohou.com/config/yidong?ver=${version}&a=${author}`, {}, {}, 'text');
+                pan = JSON.parse(base.decode(res));
+            } else {
+                let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/yidong.json`, {}, "text", {});
+                pan = JSON.parse(res);
+            }
+            Object.freeze && Object.freeze(pan);
+            pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
         }
     };
 
     // 油小猴
     let youxiaohou ={
         async initPanLinker() {
-            base.initDefaultConfig();
-            let res = await base.post(`https://api.youxiaohou.com/config/?ver=${version}&a=${author}`, {}, {}, 'text');
-            pan = JSON.parse(base.decode(res));
             base.createTip();
             base.registerPanMenuCommand();
+            if (base.getValue('setting_getuser_info') === 'yes') {
+                let res = await base.post
+                (`https://api.youxiaohou.com/config/?ver=${version}&a=${author}`, {}, {}, 'text');
+                pan = JSON.parse(base.decode(res));
+            } else {
+                let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+                pan = JSON.parse(res);
+            }
+            pan = JSON.parse(base.decode(res));
 
             let $button1 = `<div class="nav-item" style="text-align: center;"><a class="listener-open-updatelog">（改）下载助手<br>更新日志</a></div>`
             let $button2 = `<div class="nav-item" style="text-align: center;"><a class="listener-open-info">（改）下载助手<br>暗号查看</a></div>`
@@ -4318,7 +4374,6 @@
             var scriptVersion = data.version;
             var scriptAuthor = data.users[0].name;
             var scriptName = data.name;
-            var scriptDescription = data.description;
             /*---
                 console/log('原脚本名称：', scriptName);
                 console/log('原脚本版本：', scriptVersion);
@@ -4328,22 +4383,21 @@
                 console/log('真实版本：', scriptInfo.version);
                 console/log('真实作者：', scriptInfo.author);
                 console/log('真实介绍：', scriptInfo.description);
-                */
+            ---*/
             base.setValue('setting_script_version', scriptVersion);
             base.setValue('setting_script_author', 'YouXiaoHou');
             base.setValue('setting_script_name', scriptName);
-            base.setValue('setting_script_description', scriptDescription);
         })
             .catch(error => {
-            console.error('【（改）网盘直链下载助手】\n获取脚本版本时发生错误', error);
+            console.error('【（改）网盘直链下载助手】Fetch\n获取脚本版本时发生错误', error);
             if (retryCount > 0) {
-                console.log("【（改）网盘直链下载助手】\n5秒后将重试获取版本")
+                console.log("【（改）网盘直链下载助手】Fetch\n5秒后将重新尝试获取版本")
                 setTimeout(function(){
-                    console.log('【（改）网盘直链下载助手】\n重新尝试获取脚本信息...');
+                    console.log('【（改）网盘直链下载助手】Fetch\n重新尝试获取脚本信息...');
                     fetchScriptInfo(url, retryCount - 1); // 重新尝试获取脚本版本
                 },5000)
             } else {
-                console.error('【（改）网盘直链下载助手】\n无法获取脚本信息，达到最大尝试次数。');
+                console.error('【（改）网盘直链下载助手】Fetch\n请求出现错误，可能是网络问题\n无法获取脚本信息，达到最大尝试次数。');
             }
         });
     }
@@ -4431,9 +4485,10 @@
     // 主代码
     let main = {
         init() {
-            // 加载网页样式
+            // 先加载默认设置
+            base.initDefaultConfig();
+            // 再加载网页样式
             base.addPanLinkerStyle();
-
             // 判断网盘地址并加载对应的initPanLinker
             if (/(pan|yun).baidu.com/.test(location.host)) {
                 baidu.initPanLinker();
