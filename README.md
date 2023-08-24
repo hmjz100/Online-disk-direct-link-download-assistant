@@ -7,7 +7,7 @@
 基于[【网盘直链下载助手】](https://www.baiduyun.wiki/)修改（改自最新6.1.1版本）  
 - 原作者：[油小猴](https://www.youxiaohou.com/)  
 - 原脚本：[https://greasyfork.org/zh-CN/scripts/436446](https://greasyfork.org/zh-CN/scripts/436446)   
-- GreasyFork：[https://greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/zh-CN/scripts/449291)
+- 本脚本发布至GreasyFork：[https://greasyfork.org/zh-CN/scripts/449291](https://greasyfork.org/zh-CN/scripts/449291)
    
 因网络环境，发布新脚本时GreasyFork是最快更新的。  
 **如果遇到了只加载出油猴菜单，没有出现“下载助手”按钮的情况，请先打开任意网盘页面，进入脚本菜单中的`⚙ 设置`→在打开的`助手设置`弹窗找到`使用油小猴服务器`→选择`不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）`可能会暂时解决该情况。**   
