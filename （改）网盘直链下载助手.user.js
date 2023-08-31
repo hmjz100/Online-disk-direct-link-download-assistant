@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.7.4
+// @version           1.0.7.5
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
-// @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,支持手机百度网盘,修改界面,甚至比原版还好用！
+// @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
 // @license           MIT
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
@@ -35,9 +35,12 @@
 // @require           https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
 // @require           https://unpkg.com/sweetalert2@11/dist/sweetalert2.js
 // @require           https://unpkg.com/js-md5@0.7.3/build/md5.min.js
+// @resource Swal     https://unpkg.com/sweetalert2@11/dist/sweetalert2.min.css
+// @resource SwalDark https://unpkg.com/@sweetalert2/theme-dark@5.0.15/dark.min.css
 // @connect           baidu.com
 // @connect           baidupcs.com
 // @connect           aliyundrive.com
+// @connect           aliyundrive.net
 // @connect           189.cn
 // @connect           xunlei.com
 // @connect           quark.cn
@@ -68,8 +71,9 @@
 	'use strict';
 
 	// 界面参数
-	let pt = '', selectList = [], params = {}, mode = '', width = 800, pan = {}, color = '',
-		doc = $(document), progress = {}, request = {}, ins = {}, idm = {};
+	let pt = '', selectList = [], params = {}, mode = '', width = '', pan = {}, color = '',
+	update = '', update_baidu = '', update_baiduX = '',
+	doc = $(document), progress = {}, request = {}, ins = {}, idm = {};
 
 
 	// 准备好对应的元素
@@ -94,15 +98,19 @@
 	};
 
 	//准备好信息界面的设置选项
-	const getuserinfo = {
+	let updatecheck = {
+		yes: "自动检查更新",
+		no: "不检查更新"
+	}
+	let getuserinfo = {
 		yes: "使用（使用油小猴服务器获取信息）",
 		no: "不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）"
 	};
-	const hideidm = {
+	let hideidm = {
 		yes: "隐藏",
 		no: "显示"
 	};
-	const baidutheme = {
+	let baidutheme = {
 		yes: "修改主题色",
 		no: "不修改主题色"
 	};
@@ -147,10 +155,10 @@
 			GM_registerMenuCommand('⚙️ 设置', () => {
 				base.showSetting();
 			});
-			GM_registerMenuCommand('更新日志', () => {
+			GM_registerMenuCommand('📃 更新', () => {
 				base.showUpdateLog();
 			});
-			GM_registerMenuCommand('分析信息', () => {
+			GM_registerMenuCommand('🛠️ 调试', () => {
 				base.showInfo();
 			});
 		},
@@ -160,10 +168,10 @@
 			GM_registerMenuCommand('⚙️ 设置', () => {
 				base.showSetting();
 			});
-			GM_registerMenuCommand('更新日志', () => {
+			GM_registerMenuCommand('📃 更新', () => {
 				base.showUpdateLog();
 			});
-			GM_registerMenuCommand('分析信息', () => {
+			GM_registerMenuCommand('🛠️ 调试', () => {
 				base.showPanInfo();
 			});
 		},
@@ -291,7 +299,8 @@
 
 		// 替换特殊字符为下划线
 		fixFilename(name) {
-			return name.replace(/[!?&|`"'*\/:<>\\]/g, '_');
+			let replace = /[!?&|`"'*\/:<>\\]/g
+			return name.replace(replace, '_');
 		},
 
 		// 接受Blob对象和文件名，然后创建临时链接指向blob对象，之后创建a标签指向临时链接和设置文件名，最后模拟点击a标签实现下载和释放临时链接
@@ -367,12 +376,12 @@
 							}
 						},
 						onprogress: (res) => {
-							console.log('【（改）网盘直链下载助手】Get OnProgress\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n返回结果：', res);
 							if (extra && extra.filename && extra.index) {
 								res.total > 0 ? progress[extra.index] = (res.loaded * 100 / res.total).toFixed(2) : progress[extra.index] = 0.00;
 							}
 						},
 						onloadstart() {
+							console.log('【（改）网盘直链下载助手】Get OnloadStart\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers));
 							extra && extra.filename && extra.index && (request[extra.index] = requestObj);
 						},
 						onerror: (err) => {
@@ -423,6 +432,59 @@
 			});
 		},
 
+		// 获取脚本信息
+		fetchScriptInfo(url, retryCount) {
+			return fetch(url)
+			.then(response => response.json())
+			.then(data => {
+				console.log('【（改）网盘直链下载助手】Fetch\n请求地址：' + url + ' (GreasyFork)\n返回结果：', data);
+				return data;
+			})
+			.catch(error => {
+				console.error('【（改）网盘直链下载助手】Fetch\n获取脚本版本时发生错误', error);
+				if (retryCount > 0) {
+					console.log("【（改）网盘直链下载助手】Fetch\n5秒后将重新尝试获取版本");
+					return new Promise(resolve => setTimeout(resolve, 5000))
+						.then(() => {
+							console.log('【（改）网盘直链下载助手】Fetch\n重新尝试获取脚本信息...');
+							return fetchScriptInfo(url, retryCount - 1);
+						});
+				} else {
+					console.error('【（改）网盘直链下载助手】Fetch\n请求出现错误，可能是网络问题\n无法获取脚本信息，达到最大尝试次数。');
+					throw error;
+				}
+			});
+		},
+
+		async rpcTest(domain, port, path, token) {
+			return new Promise((resolve, reject) => {
+				let rpc = { domain, port, path, token };
+				let url = `${rpc.domain}:${rpc.port}${rpc.path}`;
+				let rpcData = {
+					id: new Date().getTime(),
+					jsonrpc: '2.0',
+					method: 'system.listMethods',
+					params: [`token:${rpc.token}`],
+				};
+				GM_xmlhttpRequest({
+					method: "POST", url, headers: {}, data: JSON.stringify(rpcData),
+					responseType: 'json',
+					onload: (res) => {
+						console.log('【（改）网盘直链下载助手】Post RPCTest\n请求地址：' + url + '\n请求结果：', res);
+						if(res.response){
+							resolve("success");
+						} else {
+							resolve("fail");
+						}
+					},
+					onerror: (err) => {
+						console.error('【（改）网盘直链下载助手】Post RPCTest\n请求失败', err);
+						resolve("fail");
+					},
+				});
+			});
+		},
+
 		stringify(obj) {
 			let str = '';
 			for (var key in obj) {
@@ -448,8 +510,9 @@
 			style.rel = 'stylesheet';
 			style.id = id;
 			tag === 'style' ? style.innerHTML = css : style.href = css;
-			doc.getElementsByTagName('head')[0].appendChild(style);
+			doc.getElementsByTagName('body')[0].appendChild(style);
 		},
+		  
 
 		sleep(time) {
 			return new Promise(resolve => setTimeout(resolve, time));
@@ -511,7 +574,10 @@
 			}, {
 				name: 'setting_init_code',
 				value: ''
-			}, {
+			}, /*{
+				name: 'setting_update_check',
+				value: 'yes'
+			},*/ {
 				name: 'setting_getuser_info',
 				value: 'yes'
 			}, {
@@ -534,11 +600,12 @@
 				btn = '',
 				colorList = ['#09AAFF','#cc3235','#637df8','#518c17','#ed944b','#f969a5','#bca280','#574AB8','#0d53ff','#637dff','#3181f9','#f8d800','#0396ff','#32ccbc','#f6416c','#2271b1','#59524c','#10171d','#1d2327','#18a497'],
 				colorNameList = ['度盘<br>经典蓝','度盘<br>平安红','度盘<br>霞光紫','度盘<br>盎然绿','度盘<br>周年橙','度盘<br>幸会粉','度盘<br>午后棕','度盘<br>星空紫','夸克<br>明亮蓝','阿里<br>云盘紫','移动<br>彩云蓝','果核<br>柠檬黄','果核<br>默认蓝','果核<br>碧波绿','果核<br>玫瑰红','文派<br>默认蓝','文派<br>咖啡灰','文派<br>默认黑','OpenAI<br>默认黑','OpenAI<br>默认青'];
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://" class="pl-input listener-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix为16800" class="pl-input listener-port" value="${base.getValue('setting_rpc_port')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://，但不需要写端口与路径" class="pl-input listener-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix下载器为16800" class="pl-input listener-port" value="${base.getValue('setting_rpc_port')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC路径</div><input type="text" placeholder="路径，默认为/jsonrpc" class="pl-input listener-path" value="${base.getValue('setting_rpc_path')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC密钥</div><input type="text" placeholder="无密钥无需填写" class="pl-input listener-token" value="${base.getValue('setting_rpc_token')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">保存路径</div><input type="text" placeholder="文件下载后保存路径，例如：D:" class="pl-input listener-dir" value="${base.getValue('setting_rpc_dir')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">当前RPC</div><div><span id="pl-rpcDomain">${base.getValue('setting_rpc_domain')}</span>:<span id="pl-rpcPort">${base.getValue('setting_rpc_port')}</span><span id="pl-rpcPath">${base.getValue('setting_rpc_path')}</span><button type="button" class="pl-button-mini swal2-confirm swal2-styled listener-rpc-test">测试</button></div></label>`;
 
 			colorList.forEach((v, i) => {
 				btn += `<div data-color="${v}" style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'checked' : 'listener-color'}">
@@ -553,12 +620,16 @@
 			});
 			dom += `</select></label>`;
 
+			/*dom +=`<label class="pl-setting-label"><div class="pl-label">检查更新</div><select class="pl-input update_check">`;
+			Object.keys(updatecheck).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_update_check') === value ? 'selected' : ''}>${updatecheck[value]}</option>`;});
+			dom += `</select></label>`;*/
+
 			dom +=`<label class="pl-setting-label"><div class="pl-label">未找到IDM提示</div><select class="pl-input hide_idm">`;
 			Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_hide_idm') === value ? 'selected' : ''}>${hideidm[value]}</option>`;});
 			dom += `</select></label>`;
 
 			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="pl-input baidu_theme">`;
-			Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
+			Object.keys(baidutheme).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
 			dom += `</select></label>`;
 
 			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="pl-input getuser_info">`;
@@ -567,7 +638,7 @@
 
 			dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
 
-			dom += `<button type="button" class="swal2-confirm swal2-styled listener-register">熄灭已经点亮的按钮</button>`
+			dom += `<button type="button" style="margin-top: 30px;" class="pl-button-mini swal2-deny swal2-styled listener-register">熄灭已经点亮的按钮</button>`
 
 			dom = '<div>' + dom + '</div>';
 
@@ -575,34 +646,73 @@
 				title: '助手设置',
 				html: dom,
 				icon: 'info',
+				iconHtml: '⚙',
 				showCloseButton: true,
 				showConfirmButton: false,
 				heightAuto: false,
 				scrollbarPadding: false,
 				footer: pan.footer,
-			}).then(() => {
-				message.success('设置成功！');
-				history.go(0);
+			}).then((result) => {
+				Swal.fire({
+					title: "设置已保存",
+					icon: 'success',
+					allowOutsideClick: false,
+					showCloseButton: true,
+					showDenyButton: true,
+					confirmButtonText: '刷新',
+					heightAuto: false,
+					scrollbarPadding: false,
+					html: `已经保存设置了哦~ 刷新就生效啦!`,
+					denyButtonText: '取消'
+				}).then((result) => {
+					if (result.isConfirmed){
+						message.success('刷新中');
+						history.go(0);
+					}
+				});
 			});
+			
 
 			doc.on('click', '.listener-register', async (e) => {
 				base.registerInitCode(111111);
 			});
+			doc.off('click', '.listener-rpc-test').on('click', '.listener-rpc-test', async (e) => {
+				e.preventDefault();
+				let domain = base.getValue('setting_rpc_domain'),
+				port = base.getValue('setting_rpc_port'),
+				path = base.getValue('setting_rpc_path'),
+				token = base.getValue('setting_rpc_token');
+				let result = await base.rpcTest(domain, port, path, token);
+				if (result === "success") {
+					e.target.innerHTML = "成功";
+					e.target.style.backgroundColor = "#52c41a";
+				} else {
+					e.target.innerHTML = "失败";
+					e.target.style.backgroundColor = "#cb1616";
+				}
+				setTimeout(function(){
+					e.target.innerHTML = "测试";
+					e.target.style.backgroundColor = base.getValue('setting_theme_color');
+				},5000)
+			});
 			doc.on('click', '.listener-color', async (e) => {
 				base.setValue('setting_theme_color', e.target.dataset.color);
-				message.success('主题色设置成功！');
+				message.success('主题色设置成功了!');
 				setTimeout(function(){
 					history.go(0);
 				},1000)
 			});
 			doc.on('input', '.listener-domain', async (e) => {
 				base.setValue('setting_rpc_domain', e.target.value);
+				document.getElementById("pl-rpcDomain").innerHTML = e.target.value;
 			});
 			doc.on('input', '.listener-port', async (e) => {
 				base.setValue('setting_rpc_port', e.target.value);
+				document.getElementById("pl-rpcPort").innerHTML = e.target.value;
 			});
 			doc.on('input', '.listener-path', async (e) => {
 				base.setValue('setting_rpc_path', e.target.value);
+				document.getElementById("pl-rpcPath").innerHTML = e.target.value;
 			});
 			doc.on('input', '.listener-token', async (e) => {
 				base.setValue('setting_rpc_token', e.target.value);
@@ -612,6 +722,9 @@
 			});
 			doc.on('change', '.listener-terminal', async (e) => {
 				base.setValue('setting_terminal_type', e.target.value);
+			});
+			doc.on('change', '.update_check', async (e) => {
+				base.setValue('setting_update_check', e.target.value);
 			});
 			doc.on('change', '.hide_idm', async (e) => {
 				base.setValue('setting_hide_idm', e.target.value);
@@ -635,6 +748,7 @@
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC路径</div><input type="text" placeholder="路径，默认为/jsonrpc" class="pl-input listener-path" value="${base.getValue('setting_rpc_path')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC密钥</div><input type="text" placeholder="无密钥无需填写" class="pl-input listener-token" value="${base.getValue('setting_rpc_token')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">保存路径</div><input type="text" placeholder="文件下载后保存路径，例如：D:" class="pl-input listener-dir" value="${base.getValue('setting_rpc_dir')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">当前RPC</div><div><span id="pl-rpcDomain">${base.getValue('setting_rpc_domain')}</span>:<span id="pl-rpcPort">${base.getValue('setting_rpc_port')}</span><span id="pl-rpcPath">${base.getValue('setting_rpc_path')}</span><button type="button" class="pl-button-mini swal2-confirm swal2-styled listener-rpc-test">测试</button></div></label>`;
 
 			colorList.forEach((v, i) => {
 				btn += `<div data-color="${v}" style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'checked' : 'listener-color'}">
@@ -649,16 +763,20 @@
 			});
 			dom += `</select></label>`;
 
+			/*dom +=`<label class="pl-setting-label"><div class="pl-label">检查更新</div><select class="pl-input update_check">`;
+			Object.keys(updatecheck).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_update_check') === value ? 'selected' : ''}>${update[value]}</option>`;});
+			dom += `</select></label>`;*/
+
 			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="pl-input baidu_theme">`;
-			Object.keys(hideidm).forEach(value3 => {dom += `<option value="${value3}" ${base.getValue('setting_baidu_theme') === value3 ? 'selected' : ''}>${baidutheme[value3]}</option>`;});
+			Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
 			dom += `</select></label>`;
 
 			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="pl-input getuser_info">`;
-			Object.keys(getuserinfo).forEach(value1 => {dom += `<option value="${value1}" ${base.getValue('setting_getuser_info') === value1 ? 'selected' : ''}>${getuserinfo[value1]}</option></select></label>`;});
+			Object.keys(getuserinfo).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_getuser_info') === value ? 'selected' : ''}>${getuserinfo[value]}</option></select></label>`;});
 
 			dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
 
-			dom += `<button type="button" class="swal2-confirm swal2-styled listener-register">熄灭已经点亮的按钮</button>`
+			dom += `<button type="button" class="pl-button-mini swal2-deny swal2-styled listener-register">熄灭已经点亮的按钮</button>`
 
 			dom = '<div>' + dom + '</div>';
 
@@ -666,16 +784,30 @@
 				title: '助手设置',
 				html: dom,
 				icon: 'info',
-				allowOutsideClick: false,
-				position: 'top',
-				confirmButtonText: '关闭',
+				iconHtml: '⚙',
 				showCloseButton: true,
+				showConfirmButton: false,
 				heightAuto: false,
 				scrollbarPadding: false,
 				footer: pan.footer,
-			}).then(() => {
-				message.success('设置成功！');
-				history.go(0);
+			}).then((result) => {
+				Swal.fire({
+					title: "设置已保存",
+					icon: 'success',
+					allowOutsideClick: false,
+					showCloseButton: true,
+					showDenyButton: true,
+					confirmButtonText: '刷新',
+					heightAuto: false,
+					scrollbarPadding: false,
+					html: `已经保存设置了哦~ 刷新就生效啦!`,
+					denyButtonText: '取消'
+				}).then((result) => {
+					if (result.isConfirmed){
+						message.success('刷新中');
+						history.go(0);
+					}
+				});
 			});
 
 			doc.on('click', '.listener-register', async (e) => {
@@ -683,7 +815,7 @@
 			});
 			doc.on('click', '.listener-color', async (e) => {
 				base.setValue('setting_theme_color', e.target.dataset.color);
-				message.success('主题色设置成功！');
+				message.success('主题色设置成功了!');
 				setTimeout(function(){
 					history.go(0);
 				},1000)
@@ -705,6 +837,9 @@
 			});
 			doc.on('change', '.listener-terminal', async (e) => {
 				base.setValue('setting_terminal_type', e.target.value);
+			});
+			doc.on('change', '.update_check', async (e) => {
+				base.setValue('setting_update_check', e.target.value);
 			});
 			doc.on('change', '.hide_idm', async (e) => {
 				base.setValue('setting_hide_idm', e.target.value);
@@ -776,6 +911,7 @@
 				icon: 'info',
 				title: '更新日志(关闭按钮在下面哦)',
 				html: `<span>
+				V1.0.7.5<br>1、修复阿里云盘下载逻辑；<br>2、精简代码；<br>3、支持深色模式；<br>4、修改部分提示文本；<br>5、修改部分CSS；<br>6、设置可测试RPC连接。<br><br>
 				V1.0.7.4<br>1、优化下载逻辑；<br>2、修复阿里云盘无法使用API下载。<br><br>
 				V1.0.7.3<br>1、如果出现网络请求错误时支持自动重新请求；<br>2、可选择是否使用油小猴服务器。<br><br>
 				V1.0.7.2<br>1、修复使用RPC下载时会重复发送链接的Bug。<br><br>
@@ -856,33 +992,54 @@
 
 		addPanLinkerStyle() {
 			color = base.getValue('setting_theme_color');
-			let css = `
+
+			let swalcss = `
+			.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:${color} transparent ${color} transparent }
+			.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:${color} ;color:#fff;font-size:1em}
+			.swal2-styled.swal2-confirm:focus{box-shadow:0 0 0 3px ${color}80 }
+			.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
+			.swal2-timer-progress-bar{width:100%;height:.25em;background:${color}33 }
+			.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:${color} ;color:#fff;line-height:2em;text-align:center}
+			.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:${color} }
+			.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:${color} }
+			div:where(.swal2-container) .swal2-html-container{margin: 1em 1.3em 0.3em;}
+			`;
+			
+			this.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				this.addStyle('Panlinker-SweetAlert2-Default', 'style', GM_getResourceText('SwalDark'));
+			} else {
+				this.addStyle('Panlinker-SweetAlert2-Default', 'style', GM_getResourceText('Swal'));
+			}
+
+
+			let uicss = `
 			body::-webkit-scrollbar { display: none }
 			::-webkit-scrollbar { width: 6px; height: 10px }
 			::-webkit-scrollbar-track { border-radius: 0; background: none }
 			::-webkit-scrollbar-thumb { background-color: rgba(85,85,85,.4) }
 			::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb:hover { border-radius: 5px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2) }
 			::-webkit-scrollbar-thumb:hover { background-color: rgba(85,85,85,.3) }
-			.swal2-popup { font-size: 16px !important; width: 550px;}
-			.pl-popup { font-size: 12px !important; width: 90% !important;}
-			.pl-popup a { color: ${color} !important; }
-			.pl-header { padding: 0!important;align-items: flex-start!important; border-bottom: 1px solid #eee!important; margin: 0 0 10px!important; padding: 0 0 5px!important; }
-			.pl-title { font-size: 16px!important; line-height: 1!important;white-space: nowrap!important; text-overflow: ellipsis!important;}
-			.pl-content { padding: 0 !important; font-size: 12px!important; }
+			.swal2-popup { font-size: 16px }
+			.pl-popup { font-size: 12px ; width: 90% ;}
+			.pl-popup a { color: ${color}; }
+			.pl-header { padding: 0;align-items: flex-start; border-bottom: 1px solid #eee; margin: 0 0 10px; padding: 0 0 5px; }
+			.pl-title { font-size: 16px; line-height: 1;white-space: nowrap; text-overflow: ellipsis;}
+			.pl-content { padding: 0 ; font-size: 12px; }
 			.pl-main { background-color:${color}15 ;overflow:auto; border-radius: 5px; max-height:calc(${document.documentElement.clientHeight}px - 250px);}
-			.pl-footer {font-size: 15px!important; margin-top: 10px!important; padding-top: 5px!important; color: #f56c6c!important; text-align: center;}
+			.pl-footer {font-size: 15px; margin-top: 10px; padding-top: 5px; color: #f56c6c; text-align: center;}
 			.pl-item { display: flex; align-items: center; line-height: 22px; height: 50px; background-color: ${color}30; border-radius: 5px; margin: 8px 6px; }
 			.pl-item-name { flex: 0 0 170px; text-align: left;margin: 6px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor:default; height: 30px;}
 			.pl-item-link { flex: 1; text-align: left; white-space: nowrap; text-overflow: ellipsis;cursor:pointer; overflow: hidden; }
 			.pl-item-btn { background: ${color}; border-radius: 3px; color: #ffffff; cursor: pointer; font-size: 12px; outline: none; display: flex; align-items: center; justify-content: center; margin: 6px 6px; padding: 0.625em 1.1em; }
 			.pl-item-tip { display: flex; justify-content: space-between;flex: 1; }
-			.pl-back { width: 70px; background: #ddd; border-radius: 3px; cursor:pointer; margin:1px 6px; }
+			.pl-back { width: 70px; background: #ddd; border-radius: 3px; cursor:pointer; margin:1px 6px; color: #000; }
 			.pl-ext { display: inline-block; width: 44px; background: #999; color: #fff; height: 16px; line-height: 16px; font-size: 12px; border-radius: 3px;}
 			.pl-retry {padding: 3px 10px; background: #cc3235; color: #fff; border-radius: 3px; cursor: pointer;}
 			.pl-browserdownload { padding: 3px 10px; background: ${color}; color: #fff; border-radius: 3px; cursor: pointer;}
 			.pl-item-progress { display:flex;flex: 1;align-items:center}
 			.pl-progress { display: inline-block;vertical-align: middle;width: 100%; box-sizing: border-box;line-height: 1;position: relative;height:15px; flex: 1}
-			.pl-progress-outer { height: 15px;border-radius: 100px;background-color: #c1c1c1;overflow: hidden;position: relative;vertical-align: middle;}
+			.pl-progress-outer { height: 15px;border-radius: 100px;background-color: #c1c1c1a1;overflow: hidden;position: relative;vertical-align: middle;}
 			.pl-progress-inner{ position: absolute;left: 0;top: 0;background-color: ${color};text-align: center;border-radius: 100px;line-height: 1;white-space: nowrap;transition: width .6s ease;height: 15px}
 			.pl-progress-inner-text { display: inline-block;vertical-align: middle;color: #ffffff;font-size: 12px;margin: 0 5px;height: 15px}
 			.pl-progress-tip{ flex:1; text-align:right}
@@ -896,18 +1053,30 @@
 			.pl-btn-warning { background: #da9328; }
 			.pl-btn-warning { background: #da9328; }
 			.pl-btn-danger { background: #cc3235; }
-			.baidu-button { background: ${color} !important; border-color: ${color} !important;}
-			.baidu-button:hover { background: ${color}b0 !important; border-color: ${color} !important;}
+			.pl-button-mini {padding: 5px 10px; }
+			.pl-dropdown-menu {position: absolute;padding: 5px 0;color: ${color};background: #fff;z-index: 999;width: 110px;border-radius: 10px;box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%); text-align: center;}
+			.pl-dropdown-menu-item {height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: ${color}; transition: all 0.3s ease;}
+			.pl-dropdown-menu-item:hover { background-color: ${color}15 ;}
+			.pl-button-mode {padding: 0p; padding-left: 0px !important; color: ${color} ;}
+			.pl-button-mode:hover {background-color: ${color}15 ;}
+			.pl-button, .pl-dropdown-menu { transition: all 0.3s ease;}
+			.pl-button .pl-dropdown-menu { display: none;}
+			.pl-button:hover .pl-dropdown-menu { display: block; }
+			.pl-button-init { opacity: 0.5; animation: easeInitOpacity 1.2s 3; animation-fill-mode:forwards }
+			 @keyframes easeInitOpacity { from { opacity: 0.5; } 50% { opacity: 1 } to { opacity: 0.5; } }
+			 @keyframes easeOpacity { from { opacity: 1; } 50% { opacity: 0.35 } to { opacity: 1; } }
+			.baidu-button { background: ${color} ; border-color: ${color} ;}
+			.baidu-button:hover { background: ${color}b0 ; border-color: ${color} ;}
 			header[style="display: none;"] ~ #pl-button-link {
 				display: inline-block;
 				position: fixed;
 				top: 0.6em;
-				left: 18em;
+				left: 65%;
 				z-index: 99999;
 			}
 			.baidu-wap-button {display: none; color: ${color}; font-size: .28rem; padding: 0.3em;}
 			.baidu-wap-button:after {content: "下载助手";}
-			.baidu-wap-mode {padding: 10px 0px !important;}
+			.baidu-wap-mode {padding: 10px 0px ;}
 			.ali-button {border: 0 solid transparent;font-size: 14px;margin-left: 20px;padding: 1px 12px;position: relative;height: 32px;width: 32px;background: linear-gradient(129.12deg, ${color} 0%, rgba(99, 125, 255, 0.75) 100%);border-radius: 100px;display: flex;align-items: center;justify-content: center;color: var(--basic_white);cursor: pointer;transition: all .3s ease;}
 			.ali-button:hover {background: linear-gradient(129.12deg, #446dff 0%, ${color} 100%);}
 			.ali-btn-icon {vertical-align: -0.2em;}
@@ -920,21 +1089,9 @@
 			.yidong-btn { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAGNQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////mkUNoAAAACF0Uk5TAAbHPP9AMRtr9PwrV8zqXfmNgDODHTLD4iJxhGJJ8Z269m0aDgAAAMZJREFUeJzd0ssOgyAQBVDUK74rWq0PFP3/ryxqTMdGqJtuvGHD5CTDTGDs3nFc17kEPcC7BH3At/Tjvk5AYbBU+NcrwghL4uQDk3gtRSF1KWCCQEpghkd+3jp/ICNQoDANU0AQCJQmWAJ3h8+q3mFdvSywQdttsGvRWGAPLReoHXrbG6WWAzBoJ+3DaCnWI39NLbcvszvLeuTB2fYoqbNBNo7sGjzk31BhMsEJitxmiKk8zSQwE8gFjBGcNuCzOmdqPrib5A2JRQ7qK9g+hQAAAABJRU5ErkJggg==); height: 20px; line-height: 20px; display: inline-block; background-repeat: no-repeat; background-size: 20px 20px; text-indent: 25px;}
 			.xunlei-button {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: ${color};margin-left: 12px;padding: 0px 12px;position: relative; cursor:pointer; height: 36px;}
 			.xunlei-button:hover {background: ${color}b0;}
-			.quark-button {background: ${color} !important;}
-			.quark-button:hover { background: ${color}b0 !important;}
-			.quark-btn-icon {width: 20px !important; height: 20px !important; vertical-align: -0.3em !important;}
-			.pl-dropdown-menu {position: absolute;padding: 5px 0;color: ${color};background: #fff;z-index: 999;width: 102px;border-radius: 10px;box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%); text-align: center;}
-			.pl-dropdown-menu-old {position: absolute;right: 0;top: 30px;padding: 5px 0;color: rgb(37, 38, 43);background: #fff;z-index: 999;width: 102px;border: 1px solid #ddd;border-radius: 10px; box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%);}
-			.pl-dropdown-menu-item {height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: ${color}; transition: all 0.3s ease;}
-			.pl-dropdown-menu-item:hover { background-color: ${color}15 !important;}
-			.pl-button-mode {padding: 0px; padding-left: 0px !important; color: ${color} !important;}
-			.pl-button-mode:hover {background-color: ${color}15 !important;}
-			.pl-button, .pl-dropdown-menu { transition: all 0.3s ease;}
-			.pl-button .pl-dropdown-menu { display: none;}
-			.pl-button:hover .pl-dropdown-menu { display: block!important; }
-			.pl-button-init { opacity: 0.5; animation: easeInitOpacity 1.2s 3; animation-fill-mode:forwards }
-			 @keyframes easeInitOpacity { from { opacity: 0.5; } 50% { opacity: 1 } to { opacity: 0.5; } }
-			 @keyframes easeOpacity { from { opacity: 1; } 50% { opacity: 0.35 } to { opacity: 1; } }
+			.quark-button {background: ${color} ;}
+			.quark-button:hover { background: ${color}b0 ;}
+			.quark-btn-icon {width: 20px ; height: 20px ; vertical-align: -0.3em ;}
 			.element-clicked { opacity: 0.5; }
 			.pl-extra { margin-top: 10px;display:flex}
 			.pl-extra button { flex: 1}
@@ -943,21 +1100,19 @@
 			.pl-label { flex: 0 0 100px;text-align:left; }
 			.pl-input { flex: 1; padding: 8px 10px; border: 1px solid #c2c2c2; border-radius: 5px; font-size: 14px; min-width: 300px; }
 			.init-input {
-				width: 373px !important;
-				font-size: 20px !important;
-				text-align: center !important;
-				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif !important;
-				font-weight: 300 !important;
+				width: 373px ;
+				font-size: 20px ;
+				text-align: center ;
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif ;
+				font-weight: 300 ;
 			}
-			.pl-color { flex: 1;display: flex;flex-wrap: wrap}
-			.pl-color-box { width: 50px;height: 50px;margin:10px 10px 0 0;; box-sizing: border-box;border:1px solid #fff;cursor:pointer }
+			.pl-color {flex: 1; display: flex; flex-wrap: wrap}
+			.pl-color-box {width: 55px; height: 55px; margin:10px 10px 0 0; box-sizing: border-box; border:1px solid #fff; cursor:pointer }
 			.pl-mask {
-				width: 50px;
-				height: 50px;
-				background-color: rgba(0,0,0,0.5);
+				width: 53px;
+				height: 53px;
 				opacity: 0;
 				transition: opacity 0.3s;
-				position: absolute;
 				color: #fff;
 				font-size: 13px;
 				display: flex;
@@ -967,7 +1122,7 @@
 			.pl-color-box:hover .pl-mask {
 				opacity: 1;
 			}
-			.pl-color-box.checked { border:3px dashed #111!important }
+			.pl-color-box.checked { border:3px dashed #111 }
 			.pl-close:focus { outline: 0; box-shadow: none; }
 			.tag-danger {color:#cc3235;margin: 0 5px;}
 			.pl-tooltip { position: absolute; color: #ffffff; max-width: 600px; font-size: 12px; padding: 5px 10px; background: #333; border-radius: 5px; z-index: 110000; line-height: 1.3; display:none; word-break: break-all;}
@@ -978,298 +1133,31 @@
 			.pl-loading { width: 16px;height: 16px;display: inline-block;overflow: hidden;background: none;}
 			.pl-loading-box { width: 100%;height: 100%;position: relative;transform: translateZ(0) scale(0.16);backface-visibility: hidden;transform-origin: 0 0;}
 			.pl-loading-box div { box-sizing: content-box; }
-			.swal2-container { z-index:100000!important; }
-			body.swal2-height-auto { height: inherit!important; }
+			.swal2-container { z-index:100000; }
+			body.swal2-height-auto { height: inherit; }
 
 			.DetailLayout--content--14Z28Ay {
-				width: 830px !important;
+				width: 830px ;
 			}
 			/* webkit, opera, IE9, Chrome*/
 			::selection {
-				background-color: ${color} !important;
-				background: ${color} !important;
+				background-color: ${color} ;
+				background: ${color} ;
 				color: white;
 			}
 			/* mozilla firefox */
 			::-moz-selection {
-				background-color: ${color} !important;
-				background: ${color} !important;
+				background-color: ${color} ;
+				background: ${color} ;
 				color: white;
 			}
 			`;
-			this.addStyle('panlinker-style', 'style', css);
-
-			let swalcss = `
-			.swal2-popup.swal2-toast{box-sizing:border-box;grid-column:1/4!important;grid-row:1/4!important;grid-template-columns:1fr 99fr 1fr;padding:1em;overflow-y:hidden;background:#fff;box-shadow:0 0 1px hsla(0deg,0%,0%,.075),0 1px 2px hsla(0deg,0%,0%,.075),1px 2px 4px hsla(0deg,0%,0%,.075),1px 3px 8px hsla(0deg,0%,0%,.075),2px 4px 16px hsla(0deg,0%,0%,.075);pointer-events:all}
-			.swal2-popup.swal2-toast>*{grid-column:2}
-			.swal2-popup.swal2-toast .swal2-title{margin:.5em 1em;padding:0;font-size:1em;text-align:initial}
-			.swal2-popup.swal2-toast .swal2-loading{justify-content:center}
-			.swal2-popup.swal2-toast .swal2-input{height:2em;margin:.5em;font-size:1em}
-			.swal2-popup.swal2-toast .swal2-validation-message{font-size:1em}
-			.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}
-			.swal2-popup.swal2-toast .swal2-close{grid-column:3/3;grid-row:1/99;align-self:center;width:.8em;height:.8em;margin:0;font-size:2em}
-			.swal2-popup.swal2-toast .swal2-html-container{margin:.5em 1em;padding:0;overflow:initial;font-size:1em;text-align:initial}
-			.swal2-popup.swal2-toast .swal2-html-container:empty{padding:0}
-			.swal2-popup.swal2-toast .swal2-loader{grid-column:1;grid-row:1/99;align-self:center;width:2em;height:2em;margin:.25em}
-			.swal2-popup.swal2-toast .swal2-icon{grid-column:1;grid-row:1/99;align-self:center;width:2em;min-width:2em;height:2em;margin:0 .5em 0 0}
-			.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}
-			.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}
-			.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}
-			.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}
-			.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}
-			.swal2-popup.swal2-toast .swal2-actions{justify-content:flex-start;height:auto;margin:0;margin-top:.5em;padding:0 .5em}
-			.swal2-popup.swal2-toast .swal2-styled{margin:.25em .5em;padding:.4em .6em;font-size:1em}
-			.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}
-			.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}
-			.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}
-			.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}
-			.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}
-			.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}
-			.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}
-			.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}
-			.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}
-			.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}
-			.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}
-			.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}
-			.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}
-			.swal2-container{display:grid;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;box-sizing:border-box;grid-template-areas:"top-start         top                        top-end" "center-start  center                 center-end" "bottom-start  bottom-center  bottom-end";grid-template-rows:minmax(-webkit-min-content,auto) minmax(-webkit-min-content,auto) minmax(-webkit-min-content,auto);grid-template-rows:minmax(min-content,auto) minmax(min-content,auto) minmax(min-content,auto);height:100%;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}
-			.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:#00000066}
-			.swal2-container.swal2-backdrop-hide{background:0 0!important}
-			.swal2-container.swal2-bottom-start,.swal2-container.swal2-center-start,.swal2-container.swal2-top-start{grid-template-columns:minmax(0,1fr) auto auto}
-			.swal2-container.swal2-bottom,.swal2-container.swal2-center,.swal2-container.swal2-top{grid-template-columns:auto minmax(0,1fr) auto}
-			.swal2-container.swal2-bottom-end,.swal2-container.swal2-center-end,.swal2-container.swal2-top-end{grid-template-columns:auto auto minmax(0,1fr)}
-			.swal2-container.swal2-top-start>.swal2-popup{align-self:start}
-			.swal2-container.swal2-top>.swal2-popup{grid-column:2;align-self:start;justify-self:center}
-			.swal2-container.swal2-top-end>.swal2-popup,.swal2-container.swal2-top-right>.swal2-popup{grid-column:3;align-self:start;justify-self:end}
-			.swal2-container.swal2-center-left>.swal2-popup,.swal2-container.swal2-center-start>.swal2-popup{grid-row:2;align-self:center}
-			.swal2-container.swal2-center>.swal2-popup{grid-column:2;grid-row:2;align-self:center;justify-self:center}
-			.swal2-container.swal2-center-end>.swal2-popup,.swal2-container.swal2-center-right>.swal2-popup{grid-column:3;grid-row:2;align-self:center;justify-self:end}
-			.swal2-container.swal2-bottom-left>.swal2-popup,.swal2-container.swal2-bottom-start>.swal2-popup{grid-column:1;grid-row:3;align-self:end}
-			.swal2-container.swal2-bottom>.swal2-popup{grid-column:2;grid-row:3;justify-self:center;align-self:end}
-			.swal2-container.swal2-bottom-end>.swal2-popup,.swal2-container.swal2-bottom-right>.swal2-popup{grid-column:3;grid-row:3;align-self:end;justify-self:end}
-			.swal2-container.swal2-grow-fullscreen>.swal2-popup,.swal2-container.swal2-grow-row>.swal2-popup{grid-column:1/4;width:100%}
-			.swal2-container.swal2-grow-column>.swal2-popup,.swal2-container.swal2-grow-fullscreen>.swal2-popup{grid-row:1/4;align-self:stretch}
-			.swal2-container.swal2-no-transition{transition:none!important}
-			.swal2-popup{display:none;position:relative;box-sizing:border-box;grid-template-columns:minmax(0,100%);width:32em;max-width:100%;padding:0 0 1.25em;border:none;border-radius:5px;background:#fff;color:#545454;font-family:inherit;font-size:1rem}
-			.swal2-popup:focus{outline:0}
-			.swal2-popup.swal2-loading{overflow-y:hidden}
-			.swal2-title{position:relative;max-width:100%;margin:0;padding:.8em 1em 0;color:inherit;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}
-			.swal2-actions{display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:auto;margin:1.25em auto 0;padding:0}
-			.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}
-			.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}
-			.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}
-			.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:${color} transparent ${color} transparent !important}
-			.swal2-styled{margin:.3125em;padding:.625em 1.1em;transition:box-shadow .1s;box-shadow:0 0 0 3px transparent;font-weight:500;transition: all 0.3s ease !important;}
-			.swal2-styled:not([disabled]){cursor:pointer}
-			.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:${color} !important;color:#fff;font-size:1em}
-			.swal2-styled.swal2-confirm:focus{box-shadow:0 0 0 3px ${color}80 !important}
-			.swal2-styled.swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#dc3741 !important;color:#fff;font-size:1em}
-			.swal2-styled.swal2-deny:focus{box-shadow:0 0 0 3px rgba(220,55,65,.5)}
-			.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#dd3333 !important;color:#fff;font-size:1em}
-			.swal2-styled.swal2-cancel:focus{box-shadow:0 0 0 3px rgba(110,120,129,.5)}
-			.swal2-styled.swal2-default-outline:focus{box-shadow:0 0 0 3px rgba(100,150,200,.5)}
-			.swal2-styled:focus{outline:0}
-			.swal2-styled::-moz-focus-inner{border:0}
-			.swal2-footer{justify-content:center;margin:1em 0 0;padding:1em 1em 0;border-top:1px solid #eee;color:inherit;font-size:1em}
-			.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto!important;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
-			.swal2-timer-progress-bar{width:100%;height:.25em;background:${color}33 !important}
-			.swal2-image{max-width:100%;margin:2em auto 1em}
-			.swal2-close{z-index:2;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-top:0;margin-right:0;margin-bottom:-1.2em;padding:0;overflow:hidden;transition:color .1s,box-shadow .1s;border:none;border-radius:5px;background:0 0;color:#ccc;font-family:serif;font-family:monospace;font-size:2.5em;cursor:pointer;justify-self:end}
-			.swal2-close:hover{transform:none;background:0 0;color:#f27474}
-			.swal2-close:focus{outline:0;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}
-			.swal2-close::-moz-focus-inner{border:0}
-			.swal2-html-container{z-index:1;justify-content:center;margin:1em 1.6em .3em;padding:0;overflow:auto;color:inherit;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word;word-break:break-word}
-			.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em 2em 3px}
-			.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:auto;transition:border-color .1s,box-shadow .1s;border:1px solid #d9d9d9;border-radius:.1875em;background:0 0;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px transparent;color:inherit;font-size:1.125em}
-			.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}
-			.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(100,150,200,.5)}
-			.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}
-			.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}
-			.swal2-range{margin:1em 2em 3px;background:#fff}
-			.swal2-range input{width:80%}
-			.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}
-			.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}
-			.swal2-input{height:2.625em;padding:0 .75em}
-			.swal2-file{width:75%;margin-right:auto;margin-left:auto;background:0 0;font-size:1.125em}
-			.swal2-textarea{height:6.75em;padding:.75em}
-			.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:0 0;color:inherit;font-size:1.125em}
-			.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}
-			.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}
-			.swal2-checkbox input,.swal2-radio input{flex-shrink:0;margin:0 .4em}
-			.swal2-input-label{display:flex;justify-content:center;margin:1em auto 0}
-			.swal2-validation-message{align-items:center;justify-content:center;margin:1em 0 0;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}
-			.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}
-			.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:2.5em auto .6em;border:.25em solid transparent;border-radius:50%;border-color:#000;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;user-select:none}
-			.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}
-			.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}
-			.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}
-			.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}
-			.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}
-			.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}
-			.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}
-			.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}
-			.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}
-			.swal2-icon.swal2-warning.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}
-			.swal2-icon.swal2-warning.swal2-icon-show .swal2-icon-content{-webkit-animation:swal2-animate-i-mark .5s;animation:swal2-animate-i-mark .5s}
-			.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}
-			.swal2-icon.swal2-info.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}
-			.swal2-icon.swal2-info.swal2-icon-show .swal2-icon-content{-webkit-animation:swal2-animate-i-mark .8s;animation:swal2-animate-i-mark .8s}
-			.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}
-			.swal2-icon.swal2-question.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}
-			.swal2-icon.swal2-question.swal2-icon-show .swal2-icon-content{-webkit-animation:swal2-animate-question-mark .8s;animation:swal2-animate-question-mark .8s}
-			.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}
-			.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}
-			.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}
-			.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}
-			.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}
-			.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}
-			.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}
-			.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}
-			.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}
-			.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}
-			.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}
-			.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}
-			.swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:1.25em auto;padding:0;background:0 0;font-weight:600}
-			.swal2-progress-steps li{display:inline-block;position:relative}
-			.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:${color} !important;color:#fff;line-height:2em;text-align:center}
-			.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:${color} !important}
-			.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}
-			.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}
-			.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:${color} !important}
-			[class^=swal2]{-webkit-tap-highlight-color:transparent}
-			.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}
-			.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}
-			.swal2-noanimation{transition:none}
-			.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}
-			.swal2-rtl .swal2-close{margin-right:initial;margin-left:0}
-			.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}
-			.leave-russia-now-and-apply-your-skills-to-the-world{display:flex;position:fixed;z-index:1939;top:0;right:0;bottom:0;left:0;flex-direction:column;align-items:center;justify-content:center;padding:25px 0 20px;background:#20232a;color:#fff;text-align:center}
-			.leave-russia-now-and-apply-your-skills-to-the-world div{max-width:560px;margin:10px;line-height:146%}
-			.leave-russia-now-and-apply-your-skills-to-the-world iframe{max-width:100%;max-height:55.5555555556vmin;margin:16px auto}
-			.leave-russia-now-and-apply-your-skills-to-the-world strong{border-bottom:2px dashed #fff}
-			.leave-russia-now-and-apply-your-skills-to-the-world button{display:flex;position:fixed;z-index:1940;top:0;right:0;align-items:center;justify-content:center;width:48px;height:48px;margin-right:10px;margin-bottom:-10px;border:none;background:0 0;color:#aaa;font-size:48px;font-weight:700;cursor:pointer}
-			.leave-russia-now-and-apply-your-skills-to-the-world button:hover{color:#fff}
-			@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}
-			33%{transform:translateY(0) rotateZ(-2deg)}
-			66%{transform:translateY(.3125em) rotateZ(2deg)}
-			100%{transform:translateY(0) rotateZ(0)}
-			}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}
-			33%{transform:translateY(0) rotateZ(-2deg)}
-			66%{transform:translateY(.3125em) rotateZ(2deg)}
-			100%{transform:translateY(0) rotateZ(0)}
-			}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}
-			}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}
-			}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}
-			54%{top:.125em;left:.125em;width:0}
-			70%{top:.625em;left:-.25em;width:1.625em}
-			84%{top:1.0625em;left:.75em;width:.5em}
-			100%{top:1.125em;left:.1875em;width:.75em}
-			}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}
-			54%{top:.125em;left:.125em;width:0}
-			70%{top:.625em;left:-.25em;width:1.625em}
-			84%{top:1.0625em;left:.75em;width:.5em}
-			100%{top:1.125em;left:.1875em;width:.75em}
-			}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}
-			65%{top:1.25em;right:.9375em;width:0}
-			84%{top:.9375em;right:0;width:1.125em}
-			100%{top:.9375em;right:.1875em;width:1.375em}
-			}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}
-			65%{top:1.25em;right:.9375em;width:0}
-			84%{top:.9375em;right:0;width:1.125em}
-			100%{top:.9375em;right:.1875em;width:1.375em}
-			}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}
-			45%{transform:scale(1.05)}
-			80%{transform:scale(.95)}
-			100%{transform:scale(1)}
-			}@keyframes swal2-show{0%{transform:scale(.7)}
-			45%{transform:scale(1.05)}
-			80%{transform:scale(.95)}
-			100%{transform:scale(1)}
-			}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}
-			100%{transform:scale(.5);opacity:0}
-			}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}
-			100%{transform:scale(.5);opacity:0}
-			}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}
-			54%{top:1.0625em;left:.125em;width:0}
-			70%{top:2.1875em;left:-.375em;width:3.125em}
-			84%{top:3em;left:1.3125em;width:1.0625em}
-			100%{top:2.8125em;left:.8125em;width:1.5625em}
-			}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}
-			54%{top:1.0625em;left:.125em;width:0}
-			70%{top:2.1875em;left:-.375em;width:3.125em}
-			84%{top:3em;left:1.3125em;width:1.0625em}
-			100%{top:2.8125em;left:.8125em;width:1.5625em}
-			}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}
-			65%{top:3.375em;right:2.875em;width:0}
-			84%{top:2.1875em;right:0;width:3.4375em}
-			100%{top:2.375em;right:.5em;width:2.9375em}
-			}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}
-			65%{top:3.375em;right:2.875em;width:0}
-			84%{top:2.1875em;right:0;width:3.4375em}
-			100%{top:2.375em;right:.5em;width:2.9375em}
-			}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}
-			5%{transform:rotate(-45deg)}
-			12%{transform:rotate(-405deg)}
-			100%{transform:rotate(-405deg)}
-			}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}
-			5%{transform:rotate(-45deg)}
-			12%{transform:rotate(-405deg)}
-			100%{transform:rotate(-405deg)}
-			}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}
-			50%{margin-top:1.625em;transform:scale(.4);opacity:0}
-			80%{margin-top:-.375em;transform:scale(1.15)}
-			100%{margin-top:0;transform:scale(1);opacity:1}
-			}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}
-			50%{margin-top:1.625em;transform:scale(.4);opacity:0}
-			80%{margin-top:-.375em;transform:scale(1.15)}
-			100%{margin-top:0;transform:scale(1);opacity:1}
-			}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}
-			100%{transform:rotateX(0);opacity:1}
-			}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}
-			100%{transform:rotateX(0);opacity:1}
-			}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}
-			100%{transform:rotate(360deg)}
-			}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}
-			100%{transform:rotate(360deg)}
-			}@-webkit-keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}
-			100%{transform:rotateY(0)}
-			}@keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}
-			100%{transform:rotateY(0)}
-			}@-webkit-keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}
-			25%{transform:rotateZ(-25deg);opacity:.4}
-			50%{transform:rotateZ(15deg);opacity:.8}
-			75%{transform:rotateZ(-5deg);opacity:1}
-			100%{transform:rotateX(0);opacity:1}
-			}@keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}
-			25%{transform:rotateZ(-25deg);opacity:.4}
-			50%{transform:rotateZ(15deg);opacity:.8}
-			75%{transform:rotateZ(-5deg);opacity:1}
-			100%{transform:rotateX(0);opacity:1}
-			}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}
-			body.swal2-height-auto{height:auto!important}
-			body.swal2-no-backdrop .swal2-container{background-color:transparent!important;pointer-events:none}
-			body.swal2-no-backdrop .swal2-container .swal2-popup{pointer-events:all}
-			body.swal2-no-backdrop .swal2-container .swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}
-			@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}
-			body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}
-			body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}
-			}body.swal2-toast-shown .swal2-container{box-sizing:border-box;width:360px;max-width:100%;background-color:transparent;pointer-events:none}
-			body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}
-			body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}
-			body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}
-			body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}
-			body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}
-			body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}
-			body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}
-			body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}
-			body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}
-			`;
-			this.addStyle('swal-style', 'style', swalcss);
+			this.addStyle('Panlinker-UI', 'style', uicss);
 
 
 			let baiducss = `
 			.wp-s-aside-nav__file-list-all.is-active.is-exact-active, .wp-s-aside-nav__sub-container.is-active, .wp-s-aside-nav__sub-item.is-active, .wp-s-aside-nav__main-item.is-active, .wp-s-agile-tool-bar__h-action-button:hover, .u-button--text, .wp-s-search .u-input__inner:focus+.u-input__suffix .wp-s-search__search-text, .wp-s-search .u-input__inner:hover+.u-input__suffix .wp-s-search__search-text, .wp-s-pan-list__file-name-title-text:hover, .aiTools-aside__item--active, .wp-s-pan-table__sort .icon.active, .g-button, .u-button--week, .nd-list-name__title-text:hover, .NHcGw .open-enable .file-name a:hover, .NHcGw .open-enable .file-name a:active, .BNfIyPb .cEefyz.open-enable .file-name a:hover, .BNfIyPb .cEefyz.open-enable .file-name a:active, .wp-s-pan-file-main__nav-item-title, .theme-primary-text, .icon.active, .wrapper .blueBtn[data-v-c74cfc74], .module-timeline-ruler .hover-day-desc .day-desc[data-v-08d8abbe], .imc-edit-keyword__breadcrumb-golist, .imc-edit-keyword__bottom-wrapper .u-button--week.is-disabled, .imc-keyword-list__table-list .action-btn {
-				color: ${color} !important;
+				color: ${color} ;
 			}
 			.wp-s-aside-nav__file-list-all.is-active.is-exact-active, .wp-s-agile-tool-bar__h-more-group, .wp-s-pan-table__body-row:hover, .wp-s-agile-tool-bar__h-action, .aiTools-aside__item--active, .wp-s-agile-tool-bar__h-action.is-need-left-sep+.is-need-left-sep:after, .wp-s-aside-nav__sub-item.is-active, .NHcGw .jlilR9go, .NHcGw .vzxrm4R, .u-button--week, .u-button--week:focus, .u-button--week:hover, .g-dropdown-button .menu .g-button-menu:hover, .xGLMIab .fufHyA:hover, .module-timeline-ruler .hover-day-desc .day-desc[data-v-08d8abbe], .imc-edit-keyword__bottom-wrapper .u-button--week.is-disabled, .wp-s-pan-table__body-row.selected, .nd-table__body-row.selected {
 				transition: all 0.3s ease;
@@ -1278,23 +1166,23 @@
 			}
 			.mzf_new_btn, .u-button--primary, .wp-s-aside-nav__quota-progress-rate, .u-checkbox__input.is-checked .u-checkbox__inner, .u-checkbox__input.is-indeterminate .u-checkbox__inner, .g-button-blue, .g-button-blue-large, .select, .m-button, .u-tabs__active-bar, .module-timeline-ruler .line-current[data-v-08d8abbe], .module-timeline-ruler .line-hover[data-v-08d8abbe], .module-timeline-ruler .line-current[data-v-08d8abbe]:after, .module-timeline-ruler .line-hover[data-v-08d8abbe]:after, .u-switch.is-checked .u-switch__core {
 				transition: all 0.3s ease;
-				background-color: ${color} !important;
+				background-color: ${color} ;
 			}
 			.wp-s-pan-table__body-row:hover, .wp-s-search .u-input--small .u-input__inner:hover, .u-checkbox__input.is-checked .u-checkbox__inner, .u-checkbox__inner:hover, .u-checkbox__input.is-indeterminate .u-checkbox__inner, .nd-table__body-row:hover .u-checkbox__inner, .NHcGw .jlilR9go, .NHcGw .vzxrm4R, .u-button--week, .u-button--primary, .g-button, .u-switch.is-checked .u-switch__core {
 				transition: all 0.3s ease;
-				border-color: ${color} !important;
+				border-color: ${color} ;
 			}
 			.wp-s-aside-nav__file-list-cate.is-active {
-				background-color: #fff !important
+				background-color: #fff 
 			}
 			.g-button:hover, .wp-s-pan-file-main__nav-item-sep {
 				transition: all 0.3s ease;
-				color: ${color}d0 !important;
+				color: ${color}d0 ;
 			}
 			.g-button-blue:hover, .g-button.g-button-blue-large:hover {
 				transition: all 0.3s ease;
-				color: ${color}d0 !important;
-				background-color: ${color}b0 !important;
+				color: ${color}d0 ;
+				background-color: ${color}b0 ;
 			}
 			.g-button:hover .icon {
 				color: ${color}d0;
@@ -1309,13 +1197,13 @@
 			}
 			/* 百度网盘 */
 			:not([class*="rwl-exempt"]) ::selection {
-				background-color: ${color} !important;
-				background: ${color} !important;
+				background-color: ${color} ;
+				background: ${color} ;
 				color: white;
 			}
 			`
-			if (base.getValue('setting_baidu_theme') === 'yes') {
-				this.addStyle('panlinker-baidu-style', 'style', baiducss);
+			if (/(pan|yun).baidu.com/.test(location.host) && base.getValue('setting_baidu_theme') === 'yes') {
+				this.addStyle('Panlinker-BaiduUI', 'style', baiducss);
 			};
 		},
 
@@ -1324,7 +1212,7 @@
 				title: pan.init[0],
 				allowOutsideClick: false,
 				showCloseButton: true,
-				showCancelButton: true,
+				showDenyButton: true,
 				confirmButtonText: '确定',
 				heightAuto: false,
 				scrollbarPadding: false,
@@ -1336,15 +1224,14 @@
 				<div><span>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...</span></div>
 				<div><span>点亮后可以精简百度网盘界面哦!</span></div>
 				`,
-				cancelButtonText: '注入(点亮下载助手按钮)'
+				denyButtonText: '注入(点亮下载助手按钮)'
 			});
-			if (result.isDismissed && result.dismiss === 'close') {return};
-			if (result.isDismissed && result.dismiss === 'cancel') {
+			if (result.isDismissed) {
 				console.log("【（改）网盘直链下载助手】\n正在注入点亮按钮设置项目...");
 				message.warning("正在注入点亮按钮设置项目...");
 				setTimeout(() => {
 					base.setValue('setting_init_code', pan.num);
-					message.success("注入成功！");
+					message.success("注入成功了欸!");
 					setTimeout(() => {
 						message.success(pan.init[2]);
 						setTimeout(() => {
@@ -1352,67 +1239,67 @@
 						}, 3000);
 					}, 3000);
 				}, 5000);
-				return;
 			};
-			if (pan.num === $('#init').val()) {
-				console.log("【（改）网盘直链下载助手】\n暗号正确")
-				message.success(pan.init[2]);
-				setTimeout(() => {
-					base.setValue('setting_init_code', pan.num);
-					history.go(0);
-				}, 3000)
-				return;
-			} else if ($('#init').val() === '114514' || $('#init').val() === '1919810' || $('#init').val() === '1145141919810') {
-				/*---
-					homo彩蛋又回来力（喜）
-					imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
-					imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
-				*/
-				await Swal.fire({
-					icon: 'error',
-					title: '1145141919810',
-					html: '<span>homo特有的数字当然不行啦<br>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
-					timer: 8000,
-					imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
-					allowOutsideClick: false,
-					timerProgressBar: true,
-					showConfirmButton: false,
-					showCancelButton: true,
-					heightAuto: false,
-					scrollbarPadding: false,
-					cancelButtonText: '哼哼哼啊啊啊啊啊啊啊啊啊啊',
-				});
-				message.info("成就：你触发了一个homo特有的彩蛋！");
-				setTimeout(() => {
-					Swal.fire({
-						title: '1145141919810',
-						text:'homo特有的数字当然不行啦...吗？',
-						icon: 'question',
-						imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
-						showConfirmButton: false,
-						allowOutsideClick: false,
-					});
+			if (result.isConfirmed){
+				if (pan.num === $('#init').val()) {
+					console.log("【（改）网盘直链下载助手】\n暗号正确")
+					message.success(pan.init[2]);
 					setTimeout(() => {
 						base.setValue('setting_init_code', pan.num);
-						message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功(喜)");
-						setTimeout(() => {
-							history.go(0);
-						}, 3000);
+						history.go(0);
 					}, 3000)
-				}, 4000)
-			} else {
-				console.log("【（改）网盘直链下载助手】\n暗号错误")
-				await Swal.fire({
-					imageUrl: pan.img,
-					title: pan.init[3],
-					heightAuto: false,
-					scrollbarPadding: false,
-					html: `<div><span>${pan.init[4]}<br>你可以在返回后选择“注入”立即点亮按钮，<br>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
-					confirmButtonText: '重新输入（返回）',
-				});
-				await this.initDialog();
-				return;
-			};
+				} else if ($('#init').val() === '114514' || $('#init').val() === '1919810' || $('#init').val() === '1145141919810') {
+					/*---
+						homo彩蛋又回来力（喜）
+						imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
+						imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
+					*/
+					await Swal.fire({
+						icon: 'error',
+						title: '1145141919810',
+						html: '<span>homo特有的数字当然不行啦<br>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
+						timer: 8000,
+						imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
+						allowOutsideClick: false,
+						timerProgressBar: true,
+						showConfirmButton: false,
+						showDenyButton: true,
+						heightAuto: false,
+						scrollbarPadding: false,
+						denyButtonText: '哼哼哼啊啊啊啊啊啊啊啊啊啊',
+					});
+					message.info("成就：你触发了一个homo特有的彩蛋！");
+					setTimeout(() => {
+						Swal.fire({
+							title: '1145141919810',
+							text:'homo特有的数字当然不行啦...吗？',
+							icon: 'question',
+							imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
+							showConfirmButton: false,
+							allowOutsideClick: false,
+						});
+						setTimeout(() => {
+							base.setValue('setting_init_code', pan.num);
+							message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功(喜)");
+							setTimeout(() => {
+								history.go(0);
+							}, 3000);
+						}, 3000)
+					}, 4000)
+				} else {
+					console.log("【（改）网盘直链下载助手】\n暗号错误")
+					await Swal.fire({
+						imageUrl: pan.img,
+						title: pan.init[3],
+						heightAuto: false,
+						scrollbarPadding: false,
+						html: `<div><span>${pan.init[4]}<br>你可以在返回后选择“注入”立即点亮按钮，<br>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
+						confirmButtonText: '重新输入',
+					});
+					await this.initDialog();
+					return;
+				};
+			}
 		},
 
 		async initDialogWap() {
@@ -1420,7 +1307,7 @@
 				title: pan.init[0],
 				allowOutsideClick: false,
 				showCloseButton: true,
-				showCancelButton: true,
+				showDenyButton: true,
 				position: 'top',
 				heightAuto: false,
 				scrollbarPadding: false,
@@ -1430,15 +1317,14 @@
 				<span>你可以选择"注入"立即点亮按钮，或者输入暗号点亮。<br>当前暗号是：“${pan.num}”。<br>
 				还可以扫码支持一下原作者油小猴的公众号<br>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...<br>
 				点亮后可以精简百度网盘界面哦!</span></div>`,
-				cancelButtonText: '注入(点亮下载助手按钮)'
+				denyButtonText: '注入'
 			});
-			if (result.isDismissed && result.dismiss === 'close') {return};
-			if (result.isDismissed && result.dismiss === 'cancel') {
+			if (result.isDismissed) {
 				console.log("【（改）网盘直链下载助手】\n正在注入点亮按钮设置项目...");
 				message.warning("正在注入点亮按钮设置项目...");
 				setTimeout(() => {
 					base.setValue('setting_init_code', pan.num);
-					message.success("注入成功！");
+					message.success("注入成功了欸!");
 					setTimeout(() => {
 						message.success(pan.init[2]);
 						setTimeout(() => {
@@ -1446,72 +1332,67 @@
 						}, 3000);
 					}, 3000);
 				}, 5000);
-				return;
 			};
-			if (pan.num === $('#init').val()) {
-				console.log("【（改）网盘直链下载助手】\n暗号正确")
-				message.success(pan.init[2]);
-				setTimeout(() => {
-					base.setValue('setting_init_code', pan.num);
-					history.go(0);
-				}, 3000)
-				return;
-			} else if ($('#init').val() === '114514' || $('#init').val() === '1919810' || $('#init').val() === '1145141919810') {
-				/*---
-					homo彩蛋又回来力（喜）
-					imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
-					imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
-				*/
-				await Swal.fire({
-					icon: 'error',
-					title: '1145141919810',
-					html: '<span>homo特有的数字当然不行啦<br>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
-					timer: 8000,
-					imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
-					allowOutsideClick: false,
-					timerProgressBar: true,
-					showConfirmButton: false,
-					showCancelButton: true,
-					position: 'top',
-					heightAuto: false,
-					scrollbarPadding: false,
-					cancelButtonText: '哼哼哼啊啊啊啊啊啊啊啊啊啊',
-				});
-				message.info("成就：你触发了一个homo特有的彩蛋！");
-				setTimeout(() => {
-					Swal.fire({
-						title: '1145141919810',
-						text:'homo特有的数字当然不行啦...吗？',
-						icon: 'question',
-						imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
-						showConfirmButton: false,
-						allowOutsideClick: false,
-						position: 'top',
-						heightAuto: false,
-						scrollbarPadding: false,
-					});
+			if (result.isConfirmed){
+				if (pan.num === $('#init').val()) {
+					console.log("【（改）网盘直链下载助手】\n暗号正确")
+					message.success(pan.init[2]);
 					setTimeout(() => {
 						base.setValue('setting_init_code', pan.num);
-						message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功(喜)");
-						setTimeout(() => {
-							history.go(0);
-						}, 3000);
+						history.go(0);
 					}, 3000)
-				}, 4000)
-			} else {
-				console.log("【（改）网盘直链下载助手】\n暗号错误")
-				await Swal.fire({
-					imageUrl: pan.img,
-					title: pan.init[3],
-					html: `<div><span>${pan.init[4]}<br>你可以在返回后选择“注入”立即点亮按钮，<br>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
-					position: 'top',
-					heightAuto: false,
-					scrollbarPadding: false,
-					confirmButtonText: '重新输入（返回）',
-				});
-				await this.initDialog();
-				return;
-			};
+				} else if ($('#init').val() === '114514' || $('#init').val() === '1919810' || $('#init').val() === '1145141919810') {
+					/*---
+						homo彩蛋又回来力（喜）
+						imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
+						imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
+					*/
+					await Swal.fire({
+						icon: 'error',
+						title: '1145141919810',
+						html: '<span>homo特有的数字当然不行啦<br>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
+						timer: 8000,
+						imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
+						allowOutsideClick: false,
+						timerProgressBar: true,
+						showConfirmButton: false,
+						showDenyButton: true,
+						heightAuto: false,
+						scrollbarPadding: false,
+						denyButtonText: '哼哼哼啊啊啊啊啊啊啊啊啊啊',
+					});
+					message.info("成就：你触发了一个homo特有的彩蛋！");
+					setTimeout(() => {
+						Swal.fire({
+							title: '1145141919810',
+							text:'homo特有的数字当然不行啦...吗？',
+							icon: 'question',
+							imageUrl: 'https://lh1.hetaousercontent.com/img/7d4c1c0b4adb0e95.jpg',
+							showConfirmButton: false,
+							allowOutsideClick: false,
+						});
+						setTimeout(() => {
+							base.setValue('setting_init_code', pan.num);
+							message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功(喜)");
+							setTimeout(() => {
+								history.go(0);
+							}, 3000);
+						}, 3000)
+					}, 4000)
+				} else {
+					console.log("【（改）网盘直链下载助手】\n暗号错误")
+					await Swal.fire({
+						imageUrl: pan.img,
+						title: pan.init[3],
+						heightAuto: false,
+						scrollbarPadding: false,
+						html: `<div><span>${pan.init[4]}<br>你可以在返回后选择“注入”立即点亮按钮，<br>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
+						confirmButtonText: '重新输入',
+					});
+					await this.initDialog();
+					return;
+				};
+			}
 		},
 	};
 
@@ -1561,6 +1442,7 @@
 					}
 				});
 			} catch (e) {
+				console.error("【（改）网盘直链下载助手】\nsetBDUSS\n错误信息：",e)
 			}
 		},
 
@@ -1677,7 +1559,7 @@
 						o.tip.hide();
 						o.progress.hide();
 						o.copy.show();
-						o.link.text('链接已被IDM捕获~请查看IDM下载窗口哦！').animate({opacity: '0.5'}, "slow").show();
+						o.link.text('链接已被IDM捕获~请查看IDM下载窗口哦!').animate({opacity: '0.5'}, "slow").show();
 						clearInterval(ins[index]);
 						setTimeout(
 							function (){
@@ -1743,7 +1625,12 @@
 						let speedText ='';
 						speedText = base.sizeFormat(downloadSpeed)
 
-						$text.text(prog + '% | 剩余时间：' + timeText + ' | 速度：' + speedText + '/秒');
+						
+						if (pt === 'wap') {
+							$text.text(prog + '%');
+						} else {
+							$text.text(prog + '% | 剩余时间：' + timeText + ' | 速度：' + speedText + '/秒');
+						}
 
 						if (prog === 100) {
 							setTimeout(function (){
@@ -1751,7 +1638,7 @@
 								progress[index] = 0;
 								o.item.find('.pl-progress-stop').hide();
 								o.howidm.hide();
-								$text.text('下载完成，正在弹出浏览器下载框！');
+								$text.text('下载完成了!浏览器下载框应该弹出来了哦~');
 								o.back.show()
 								setTimeout(function (){
 									o.link.text('重新下载').animate({opacity: '1'}, "slow");
@@ -1810,7 +1697,7 @@
 					$(e.target).removeClass('listener-copy-all').addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
 				} else {
 					base.setClipboard(decodeURIComponent(e.target.dataset.link));
-					$(e.target).text('复制成功！').animate({opacity: '0.5'}, "slow");
+					$(e.target).text('复制成功').animate({opacity: '0.5'}, "slow");
 					setTimeout(
 						function (){
 							$(e.target).text('重新复制').animate({opacity: '1'}, "slow");
@@ -1821,14 +1708,14 @@
 			doc.on('click', '.listener-copy-all-api', (e) => {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
-				$(e.target).text('复制成功！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('复制成功').animate({opacity: '0.5'}, "slow");
 				setTimeout(
 					function (){
 						$(e.target).text('重新复制').animate({opacity: '1'}, "slow");
 					},2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -1839,16 +1726,16 @@
 				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
-					target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({opacity: '0.5'}, "slow");
 				} else if (res === 'assistant') {
 					target.addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
 				} else {
-					target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
 			doc.on('click', '.listener-send-rpc', (e) => {
 				$('.listener-link-rpc').click();
-				$(e.target).text('发送完成，发送结果见上方按钮！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
 			doc.on('click', '.listener-open-setting', () => {
 				base.showSetting();
@@ -1966,16 +1853,16 @@
 			});
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="padding: 0px;" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="padding: 0px;" ">更新日志</div></div></div>`);
+			let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="padding: 0px;" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="padding: 0px;" ">更新日志</div>${update_baidu}</div></div>`);
 			if (pt === 'home') $toolWrap = $(pan.btn.home);
 			if (pt === 'main') {
 				$toolWrap = $(pan.btn.main);
-				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li></ul></div>`);
+				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li>${update_baiduX}</ul></div>`);
 			}
 			if (pt === 'share') $toolWrap = $(pan.btn.share);
 			if (pt === 'wap') {
 				$toolWrap = $('.main-container');
-				$button = $(`<span id="pl-button-link" class="wapfont none-pointer pl-button baidu-wap-button"><span></span><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu" style="top: 40px; right: 0;"><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p listener-open-wapsetting"">助手设置</li></ul></span>`);
+				$button = $(`<span id="pl-button-link" class="wapfont none-pointer pl-button baidu-wap-button"><span></span><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu" style="top: 40px; right: 0;"><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p listener-open-wapsetting"">助手设置</li>${update_baiduX}</ul></span>`);
 				$('header h1[data-v-59779e34]').css({"left":"75%"})
 				$toolWrap.append($button);
 			} else {
@@ -2053,10 +1940,10 @@
 
 			if (pt === 'home' || pt === 'main' || pt === 'wap') {
 				if (selectList.length === 0) {
-					return message.error('提示：请先勾选要下载的文件！');
+					return message.error('提示：先勾选要下载的文件捏~');
 				}
 				if (fidList.length === 2) {
-					return message.error('提示：请打开文件夹后勾选文件！');
+					return message.error('提示：请打开文件夹后再勾选文件~');
 				}
 				fidList = encodeURIComponent(fidList);
 				let accessToken = base.getStorage('accessToken') || await this.getToken();
@@ -2066,10 +1953,10 @@
 			if (pt === 'share') {
 				this.getShareData();
 				if (selectList.length === 0) {
-					return message.error('提示：请先勾选要下载的文件！');
+					return message.error('提示：请先勾选要下载的文件捏~');
 				}
 				if (fidList.length === 2) {
-					return message.error('提示：请打开文件夹后勾选文件！');
+					return message.error('提示：请打开文件夹后再勾选文件~');
 				}
 				if (!params.sign) {
 					let url = `${pan.pcs[2]}&surl=${params.surl}&logid=${params.logid}`;
@@ -2081,7 +1968,7 @@
 						let dialog = await Swal.fire({
 							toast: true,
 							icon: 'info',
-							title: `提示：请将文件<span class="tag-danger">[保存到网盘]</span>👉前往<span class="tag-danger">[我的网盘]</span>中下载！`,
+							title: `提示：请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
 							showConfirmButton: true,
 							confirmButtonText: '点击保存',
 							position: 'top',
@@ -2093,7 +1980,7 @@
 					}
 				}
 				if (!params.bdstoken) {
-					return message.error('提示：请先登录网盘！');
+					return message.error('提示：请先登录网盘~');
 				}
 				let formData = new FormData();
 				formData.append('encrypt', params.encrypt);
@@ -2110,17 +1997,17 @@
 				let html = this.generateDom(res.list);
 				this.showMainDialog(pan[mode][0], html, pan[mode][1]);
 			} else if (res.errno === 112) {
-				return message.error('提示：页面过期，请刷新重试！');
+				return message.error('提示：页面过期了，刷新重试下吧~');
 			} else if (res.errno === 9019) {
 				maxRequestTime--;
 				await this.getToken();
 				if (maxRequestTime > 0) {
 					await this.getPCSLink(maxRequestTime);
 				} else {
-					message.error('提示：获取下载链接失败！请刷新网页后重试！');
+					message.error('提示：获取下载链接失败，刷新网页后再试试吧~');
 				}
 			} else {
-				message.error('提示：获取下载链接失败！请刷新网页后重试！（或者试试重新登录网盘？）');
+				message.error('提示：获取下载链接失败，刷新网页后不行的话再试试重新登录网盘吧~');
 			}
 		},
 
@@ -2381,7 +2268,6 @@
 				heightAuto: false,
 	 			scrollbarPadding: false,
 				position: 'top',
-				width: '1000px',
 				customClass,
 				confirmButtonText: '关闭',
 			}).then(() => {
@@ -2435,9 +2321,6 @@
 				let howidm = item.find('.pl-progress-how');
 				let back = item.find('.pl-progress-back');
 				let stop = item.find('.pl-progress-stop');
-				console.log({
-					item, link, progress, tip, copy, howidm, back, stop, target,
-				})
 				return {
 					item, link, progress, tip, copy, howidm, back, stop, target,
 				};
@@ -2464,7 +2347,6 @@
 			});
 			doc.off('click', '.listener-link-api').on('click', '.listener-link-api', async (e) => {
 				e.preventDefault();
-				console.log(e)
 				let o = _factory(e);
 				let $width = o.item.find('.pl-progress-inner');
 				let $text = o.item.find('.pl-progress-inner-text');
@@ -2546,7 +2428,7 @@
 							progress[index] = 0;
 							o.item.find('.pl-progress-stop').hide();
 							o.howidm.hide();
-							$text.text('下载完成，正在弹出浏览器下载框！');
+							$text.text('下载完成了!浏览器下载框应该弹出来了哦~');
 							o.back.show()
 							setTimeout(function (){
 								o.link.text('重新下载').animate({opacity: '1'}, "slow");
@@ -2610,14 +2492,14 @@
 			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
-				$(e.target).text('复制成功！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('复制成功').animate({opacity: '0.5'}, "slow");
 				setTimeout(
 					function (){
 						$(e.target).text('重新复制').animate({opacity: '1'}, "slow");
 					},2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -2628,16 +2510,25 @@
 				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
-					target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({opacity: '0.5'}, "slow");
 				} else if (res === 'assistant') {
 					target.addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
 				} else {
-					target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
 			doc.on('click', '.listener-send-rpc', (e) => {
 				$('.listener-link-rpc').click();
-				$(e.target).text('发送完成，发送结果见上方按钮！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
+			});
+			doc.off('click', '.listener-download-all').on('click', '.listener-download-all', (e) => {
+				$('.pl-item-link').click();
+				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({opacity: '0.5'}, "slow");
+				setTimeout(
+					function (){
+						$(e.target).text('下载全部链接').animate({opacity: '1'}, "slow");
+					},2000
+				)
 			});
 			doc.on('click', '.listener-open-setting', () => {
 				base.showSetting();
@@ -2694,9 +2585,13 @@
 				let vip1 = document.getElementsByClassName("container--coOiS")[0];
 				vip1.remove();
 			});
+			waitForKeyElements(".SplashScreenImg--close--11GrlDz", function () {
+				let vip2 = document.getElementsByClassName("SplashScreenImg--close--11GrlDz")[0];
+				vip2.click();
+			});
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg></span><ul class="pl-dropdown-menu" style="top: 30px; right: 0;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg></span><ul class="pl-dropdown-menu" style="top: 30px; right: 0;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
 			if (pt === 'home') {
 				//let ins = setInterval(() => {
 				$toolWrap = $(pan.btn.home);
@@ -2707,7 +2602,7 @@
 				//}, 50);
 			}
 			if (pt === 'share') {
-				let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 16px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+				let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 16px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
 				$button.css({'margin-right': '10px',"height":"36px","width":"auto","padding":"1px 30px"});
 				//let ins = setInterval(() => {
 				$toolWrap = $(pan.btn.share);
@@ -2776,20 +2671,20 @@
 				});
 				if (res) {
 					document.querySelector(pan.dom.switch).click();
-					return message.success('切换成功，请重新获取下载链接！');
+					return message.success('切换为列表视图成功，请再获取一次下载链接呢~');
 				}
 				return false;
 			}
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：请先勾选要下载的文件！');
+				return message.error('提示：请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：请打开文件夹后勾选文件！');
+				return message.error('提示：请打开文件夹后再勾选文件~');
 			}
 			if (pt === 'share') {
 				if (selectList.length > 20) {
-					return message.error('提示：单次最多可勾选 20 个文件！');
+					return message.error('提示：一次最多只能勾选 20 个文件哦!');
 				}
 				try {
 					let authorization = `${base.getStorage('token').token_type} ${base.getStorage('token').access_token}`;
@@ -2810,7 +2705,7 @@
 						}
 					}
 				} catch (e) {
-					return message.error('提示：请先登录网盘！');
+					return message.error('提示：请先登录网盘~');
 				}
 			}
 			let html = this.generateDom(selectList);
@@ -2876,6 +2771,8 @@
 				}
 			});
 			content += '</div>';
+			if (mode === 'api')
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">下载全部链接</button></div>`;
 			if (mode === 'aria')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
 			if (mode === 'rpc') {
@@ -3023,14 +2920,14 @@
 			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
-				$(e.target).text('复制成功！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('复制成功').animate({opacity: '0.5'}, "slow");
 				setTimeout(
 					function (){
 						$(e.target).text('重新复制').animate({opacity: '1'}, "slow");
 					},2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -3041,16 +2938,16 @@
 				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
-					target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({opacity: '0.5'}, "slow");
 				} else if (res === 'assistant') {
 					target.addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
 				} else {
-					target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
 			doc.on('click', '.listener-send-rpc', (e) => {
 				$('.listener-link-rpc').click();
-				$(e.target).text('发送完成，发送结果见上方按钮！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
 			doc.on('click', '.listener-open-setting', () => {
 				base.showSetting();
@@ -3073,7 +2970,7 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="tianyi-button pl-button" id="pl-button-link">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let $button = $(`<div class="tianyi-button pl-button" id="pl-button-link">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
 			if (pt === 'home') {
 				//let ins = setInterval(() => {
 				$toolWrap = $(pan.btn.home);
@@ -3172,23 +3069,23 @@
 				} else if (res.errorCode === 'InvalidSessionKey') {
 					return {
 						index,
-						downloadUrl: '提示：请先登录网盘！'
+						downloadUrl: '提示：请先登录网盘~'
 					};
 				} else if (res.res_code === 'ShareNotFoundFlatDir') {
 					return {
 						index,
-						downloadUrl: '提示：请先[转存]文件，👉前往[我的网盘]中下载！'
+						downloadUrl: '提示：请先[转存]文件，之后再👉前往[我的网盘]中下载哦~'
 					};
 				} else {
 					return {
 						index,
-						downloadUrl: '获取下载地址失败，请刷新重试！'
+						downloadUrl: '获取下载地址失败，刷新后再试试吧~'
 					};
 				}
 			} catch (e) {
 				return {
 					index,
-					downloadUrl: '获取下载地址失败，请刷新重试！'
+					downloadUrl: '获取下载地址失败，刷新后再试试吧~'
 				};
 			}
 		},
@@ -3196,14 +3093,14 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：请先勾选要下载的文件！');
+				return message.error('提示：请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：请打开文件夹后勾选文件！');
+				return message.error('提示：请打开文件夹后再勾选文件~');
 			}
 			let token = base.getStorage('accessToken') || await this.getToken();
 			if (!token) {
-				return message.error('提示：请先登录网盘！');
+				return message.error('提示：请先登录网盘~');
 			}
 			let queue = [];
 			selectList.forEach((item, index) => {
@@ -3414,14 +3311,14 @@
 			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
-				$(e.target).text('复制成功！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('复制成功').animate({opacity: '0.5'}, "slow");
 				setTimeout(
 					function (){
 						$(e.target).text('重新复制').animate({opacity: '1'}, "slow");
 					},2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -3432,16 +3329,16 @@
 				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
-					target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({opacity: '0.5'}, "slow");
 				} else if (res === 'assistant') {
 					target.addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
 				} else {
-					target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
 			doc.on('click', '.listener-send-rpc', (e) => {
 				$('.listener-link-rpc').click();
-				$(e.target).text('发送完成，发送结果见上方按钮！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
 			doc.on('click', '.listener-open-setting', () => {
 				base.showSetting();
@@ -3464,7 +3361,7 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="xunlei-button pl-button" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span><ul class="pl-dropdown-menu" style="top: 34px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let $button = $(`<div class="xunlei-button pl-button" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span><ul class="pl-dropdown-menu" style="top: 34px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
 			if (pt === 'home') {
 				//let ins = setInterval(() => {
 				$toolWrap = $(pan.btn.home);
@@ -3567,21 +3464,21 @@
 				} else {
 					return {
 						index,
-						downloadUrl: '获取下载地址失败，请刷新重试！'
+						downloadUrl: '获取下载地址失败，刷新后再试试吧~'
 					};
 				}
 			} catch (e) {
-				return message.error('提示：请先登录网盘后刷新页面！');
+				return message.error('提示：请先登录网盘后再刷新页面呢~');
 			}
 		},
 
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：请先勾选要下载的文件！');
+				return message.error('提示：请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：请打开文件夹后勾选文件！');
+				return message.error('提示：请打开文件夹后再勾选文件~');
 			}
 			if (pt === 'home') {
 				let queue = [];
@@ -3594,7 +3491,7 @@
 					selectList[val.index].downloadUrl = val.downloadUrl;
 				});
 			} else {
-				return message.error('提示：请保存到自己网盘后去网盘主页下载！');
+				return message.error('提示：请保存到自己网盘后再去网盘主页下载哦~');
 			}
 			let html = this.generateDom(selectList);
 			this.showMainDialog(pan[mode][0], html, pan[mode][1]);
@@ -3787,13 +3684,13 @@
 				});
 				this.getPCSLink();
 			});
-			doc.on('click', '.listener-link-save', async (e) => {
+			doc.off('click', '.listener-link-save').on('click', '.listener-link-save', async (e) => {
 				e.preventDefault();
 				selectList = this.getSelectedList();
 				if (selectList.length === 0) {
-					return message.error('提示：请先勾选要保存到网盘的内容！');
+					return message.error('提示：请先勾选要保存到网盘的文件捏~');
 				}
-				message.info('提示：因夸克限制，请先保存到自己网盘后再下载哦');
+				message.info('提示：因夸克限制，请先保存到自己网盘后再下载哦!');
 				await base.sleep(500);
 				document.querySelector('.file-info_r').click();
 			});
@@ -3804,14 +3701,14 @@
 			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
-				$(e.target).text('复制成功！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('复制成功').animate({opacity: '0.5'}, "slow");
 				setTimeout(
 					function (){
 						$(e.target).text('重新复制').animate({opacity: '1'}, "slow");
 					},2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -3822,16 +3719,16 @@
 				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
-					target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({opacity: '0.5'}, "slow");
 				} else if (res === 'assistant') {
 					target.addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
 				} else {
-					target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
 			doc.on('click', '.listener-send-rpc', (e) => {
 				$('.listener-link-rpc').click();
-				$(e.target).text('发送完成，发送结果见上方按钮！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
 			doc.on('click', '.listener-open-setting', () => {
 				base.showSetting();
@@ -3862,7 +3759,7 @@
 
 			let $toolWrap;
 			if (pt === 'home') {
-				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
 				$button.css({"margin-right":"10px","display":"inline-block"});
 				$toolWrap = $(pan.btn.home);
 				if ($toolWrap.length > 0) {
@@ -3870,7 +3767,7 @@
 				}
 			}
 			if (pt === 'share') {
-				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0 !important;color:#fff !important;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0 ;color:#fff ;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
 				$button.css({"margin-right":"10px","display":"inline-block"});
 				$toolWrap = $(pan.btn.share);
 				if ($toolWrap.length > 0) {
@@ -3922,10 +3819,10 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：请先勾选要下载的文件！');
+				return message.error('提示：请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：请打开文件夹后勾选文件！');
+				return message.error('提示：请打开文件夹后再勾选文件~');
 			}
 			let fids = [];
 			selectList.forEach(val => {
@@ -3936,15 +3833,15 @@
 					"fids": fids
 				}, {"content-type": "application/json;charset=utf-8", "user-agent": pan.ua});
 				if (res.code === 31001) {
-					return message.error('提示：请先登录网盘！');
+					return message.error('提示：请先登录网盘~');
 				}
 				if (res.code !== 0) {
-					return message.error('提示：获取链接失败！');
+					return message.error('提示：获取链接失败了~');
 				}
 				let html = this.generateDom(res.data);
 				this.showMainDialog(pan[mode][0], html, pan[mode][1]);
 			} else {
-				message.error('提示：请保存到自己网盘后去网盘主页下载！');
+				message.error('提示：请保存到自己网盘后再去网盘主页下载哦~');
 				await base.sleep(1000);
 				document.querySelector('.file-info_r').click();
 				return;
@@ -4142,7 +4039,7 @@
 			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
-				$(e.target).text('复制成功！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('复制成功').animate({opacity: '0.5'}, "slow");
 				setTimeout(
 					function (){
 						$(e.target).text('重新复制').animate({opacity: '1'}, "slow");
@@ -4152,14 +4049,14 @@
 			doc.on('click', '.listener-copy-all-api', (e) => {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
-				$(e.target).text('复制成功！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('复制成功').animate({opacity: '0.5'}, "slow");
 				setTimeout(
 					function (){
 						$(e.target).text('重新复制').animate({opacity: '1'}, "slow");
 					},2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -4170,16 +4067,16 @@
 				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
-					target.removeClass('pl-btn-danger').html('发送成功，快去看看吧！').animate({opacity: '0.5'}, "slow");
+					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({opacity: '0.5'}, "slow");
 				} else if (res === 'assistant') {
 					target.addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
 				} else {
-					target.addClass('pl-btn-danger').text('发送失败，请检查您的RPC配置信息！').animate({opacity: '0.5'}, "slow");
+					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
 			doc.on('click', '.listener-send-rpc', (e) => {
 				$('.listener-link-rpc').click();
-				$(e.target).text('发送完成，发送结果见上方按钮！').animate({opacity: '0.5'}, "slow");
+				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
 			doc.on('click', '.listener-open-setting', () => {
 				base.showSetting();
@@ -4202,7 +4099,7 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="yidong-button pl-button btn-top" id="pl-button-link"><span class="yidong-btn">下载助手</span><ul class="pl-dropdown-menu" style="top: 36px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${pan.code == 200 && version < pan.version ? pan.new : ''}</ul></div>`);
+			let $button = $(`<div class="yidong-button pl-button btn-top" id="pl-button-link"><span class="yidong-btn">下载助手</span><ul class="pl-dropdown-menu" style="top: 36px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
 			if (pt === 'home') {
 				//let ins = setInterval(() => {
 				$toolWrap = $(pan.btn.home);
@@ -4342,7 +4239,7 @@
 					} else {
 						return {
 							index,
-							downloadUrl: '获取下载地址失败，请刷新重试！'
+							downloadUrl: '获取下载地址失败，刷新后再试试吧~'
 						};
 					}
 				}
@@ -4360,14 +4257,14 @@
 					} else {
 						return {
 							index,
-							downloadUrl: '获取下载地址失败，请刷新重试！'
+							downloadUrl: '获取下载地址失败，刷新后再试试吧~'
 						};
 					}
 				}
 			} catch (e) {
 				return {
 					index,
-					downloadUrl: '获取下载地址失败，请刷新重试！'
+					downloadUrl: '获取下载地址失败，刷新后再试试吧~'
 				};
 			}
 		},
@@ -4375,10 +4272,10 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：请先勾选要下载的文件！');
+				return message.error('提示：请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：请打开文件夹后勾选文件！');
+				return message.error('提示：请打开文件夹后再勾选文件~');
 			}
 
 			let queue = [];
@@ -4572,61 +4469,62 @@
 		}
 	}
 
-	//获取实时脚本信息
-	function fetchScriptInfo(url, retryCount) {
-		fetch(url)
-			.then(response => response.json())
-			.then(data => {
-			console.log('【（改）网盘直链下载助手】Fetch\n请求地址：' + url + ' (GreasyFork)\n返回结果：', data);
-			var scriptVersion = data.version;
-			var scriptAuthor = data.users[0].name;
-			var scriptName = data.name;
-			/*---
-				console/log('原脚本名称：', scriptName);
-				console/log('原脚本版本：', scriptVersion);
-				console/log('原脚本作者：', scriptAuthor);
-				console/log('原脚本介绍：', scriptDescription);
-				console/log('真实名称：', scriptInfo.name);
-				console/log('真实版本：', scriptInfo.version);
-				console/log('真实作者：', scriptInfo.author);
-				console/log('真实介绍：', scriptInfo.description);
-			---*/
-			base.setValue('setting_script_version', scriptVersion);
-			base.setValue('setting_script_author', 'YouXiaoHou');
-			base.setValue('setting_script_name', scriptName);
-		})
-			.catch(error => {
-			console.error('【（改）网盘直链下载助手】Fetch\n获取脚本版本时发生错误', error);
-			if (retryCount > 0) {
-				console.log("【（改）网盘直链下载助手】Fetch\n5秒后将重新尝试获取版本")
-				setTimeout(function(){
-					console.log('【（改）网盘直链下载助手】Fetch\n重新尝试获取脚本信息...');
-					fetchScriptInfo(url, retryCount - 1); // 重新尝试获取脚本版本
-				},5000)
-			} else {
-				console.error('【（改）网盘直链下载助手】Fetch\n请求出现错误，可能是网络问题\n无法获取脚本信息，达到最大尝试次数。');
-			}
-		});
-	}
 
-	//获取原脚本的GreasyFork信息，确保油小猴服务器信任
-	var retryCount = 5; // 重新尝试次数
-	fetchScriptInfo('https://greasyfork.org/zh-CN/scripts/436446.json', retryCount);
+	// 获取原脚本的GreasyFork信息，确保油小猴服务器信任
+	base.fetchScriptInfo('https://greasyfork.org/zh-CN/scripts/436446.json', 5).then(res => {
+		base.setValue('setting_script_version', res.version);
+		base.setValue('setting_script_author', 'GreasyFork');
+		base.setValue('setting_script_name', res.name);
+	})
 
-	//用于油小猴服务器检测的脚本信息
+	// 用于油小猴服务器检测的脚本信息
 	const scriptInfo = GM_info.script;
 
-	//用于油小猴服务器检测的脚本作者
+	// 用于油小猴服务器检测的脚本作者
 	const realauthor = scriptInfo.author;
 	const author = base.getValue('setting_script_author');
 
-	//用于油小猴服务器检测的脚本名称
+	// 用于油小猴服务器检测的脚本名称
 	const realname = scriptInfo.name;
 	const name = base.getValue('setting_script_name');
 
-	//用于油小猴服务器检测的脚本版本,防止服务器返回更新信息
+	// 用于油小猴服务器检测的脚本版本,防止服务器返回更新信息
 	const realversion = scriptInfo.version;
 	const version = base.getValue('setting_script_version');
+
+	// 获取本脚本的GreasyFork信息，以显示更新，有Bug，就不获取了吧
+	/*base.fetchScriptInfo('https://greasyfork.org/zh-CN/scripts/449291.json', 5).then(res => {
+		if(realversion < res.version){
+			update = `
+			<li class="pl-dropdown-menu-item">
+				<a class="pl-a" data-no-instant="1" style="color:#F24C43" href="${res.code_url}" target="_blank">
+					<svg style="animation: load 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M171.31 549.028c-24.558-153.572 59.801-308.76 210.442-367.477 111.637-43.53 232.005-22.71 317.236 39.47l-72.527 117.48 325.245-1.254L835.459 0l-59.547 96.426C650.34 15.104 479.156-11.493 329.258 46.95 121.578 127.91 2.038 337.29 25.64 549.03h145.67z" fill="#F24C43"/><path d="M852.688 464.966c24.536 153.572-59.78 308.78-210.422 367.477-102.693 40.024-215.86 24.94-302.874-29.019 16.57-26.895 65.537-106.198 65.537-106.198L55.17 676.704 203.176 1024l62.053-100.484c125.552 81.322 279.592 101.992 429.489 43.55 207.638-80.982 327.22-290.34 303.618-502.058H852.688z" fill="#F24C43"/></svg>
+					<span style="margin-right: 5px;">更新到${res.version}</span>
+				</a>
+			</li>
+			`;
+			update_baidu = `
+			<a style="color:#F24C43;display: flex;align-items: center;justify-content: center;" class="g-button-menu pl-a" data-no-instant="1" href="https://www.youxiaohou.com/install.html?from=update" target="_blank" >
+				<svg style="animation: load 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M171.31 549.028c-24.558-153.572 59.801-308.76 210.442-367.477 111.637-43.53 232.005-22.71 317.236 39.47l-72.527 117.48 325.245-1.254L835.459 0l-59.547 96.426C650.34 15.104 479.156-11.493 329.258 46.95 121.578 127.91 2.038 337.29 25.64 549.03h145.67z" fill="#F24C43"/><path d="M852.688 464.966c24.536 153.572-59.78 308.78-210.422 367.477-102.693 40.024-215.86 24.94-302.874-29.019 16.57-26.895 65.537-106.198 65.537-106.198L55.17 676.704 203.176 1024l62.053-100.484c125.552 81.322 279.592 101.992 429.489 43.55 207.638-80.982 327.22-290.34 303.618-502.058H852.688z" fill="#F24C43"/></svg>
+				<span style="margin-right: 5px;">更新到${res.version}</span>
+			</a>
+			`;
+			update_baiduX = `
+			<li class="sub cursor-p">
+				<a class="pl-a" data-no-instant="1" style="color:#F24C43" href="https://www.youxiaohou.com/install.html?from=update" target="_blank">
+					<svg style="animation: load 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M171.31 549.028c-24.558-153.572 59.801-308.76 210.442-367.477 111.637-43.53 232.005-22.71 317.236 39.47l-72.527 117.48 325.245-1.254L835.459 0l-59.547 96.426C650.34 15.104 479.156-11.493 329.258 46.95 121.578 127.91 2.038 337.29 25.64 549.03h145.67z" fill="#F24C43"/><path d="M852.688 464.966c24.536 153.572-59.78 308.78-210.422 367.477-102.693 40.024-215.86 24.94-302.874-29.019 16.57-26.895 65.537-106.198 65.537-106.198L55.17 676.704 203.176 1024l62.053-100.484c125.552 81.322 279.592 101.992 429.489 43.55 207.638-80.982 327.22-290.34 303.618-502.058H852.688z" fill="#F24C43"/></svg>
+					<span style="margin-right: 5px;">更新到${res.version}</span>
+				</a>
+			</li>
+			`;
+		} else {
+			update = `
+			`;
+			update_baidu = `
+			`;
+			update_baiduX = ``;
+		}
+	})*/
 
 	/*--- waitForKeyElements(): 一个实用函数，用于Greasemonkey脚本，
 	它可以检测和处理AJAX加载的内容。
