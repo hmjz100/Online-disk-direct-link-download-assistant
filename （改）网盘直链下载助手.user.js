@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.7.6
+// @version           1.0.7.7
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
@@ -33,7 +33,7 @@
 // @match             *://caiyun.139.com/*
 // @match             *://*.youxiaohou.com/*
 // @require           https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
-// @require           https://unpkg.com/sweetalert2@11/dist/sweetalert2.js
+// @require           https://unpkg.com/sweetalert2@11/dist/sweetalert2.min.js
 // @require           https://unpkg.com/js-md5@0.7.3/build/md5.min.js
 // @resource Swal     https://unpkg.com/sweetalert2@11/dist/sweetalert2.min.css
 // @resource SwalDark https://unpkg.com/@sweetalert2/theme-dark@5.0.15/dark.min.css
@@ -599,11 +599,11 @@
 				btn = '',
 				colorList = ['#09AAFF','#cc3235','#637df8','#518c17','#ed944b','#f969a5','#bca280','#574AB8','#0d53ff','#637dff','#3181f9','#f8d800','#0396ff','#32ccbc','#f6416c','#2271b1','#59524c','#10171d','#1d2327','#18a497'],
 				colorNameList = ['度盘<br>经典蓝','度盘<br>平安红','度盘<br>霞光紫','度盘<br>盎然绿','度盘<br>周年橙','度盘<br>幸会粉','度盘<br>午后棕','度盘<br>星空紫','夸克<br>明亮蓝','阿里<br>云盘紫','移动<br>彩云蓝','果核<br>柠檬黄','果核<br>默认蓝','果核<br>碧波绿','果核<br>玫瑰红','文派<br>默认蓝','文派<br>咖啡灰','文派<br>默认黑','OpenAI<br>默认黑','OpenAI<br>默认青'];
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://，但不需要写端口与路径" class="pl-input listener-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix下载器为16800" class="pl-input listener-port" value="${base.getValue('setting_rpc_port')}"></label>`;
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC路径</div><input type="text" placeholder="路径，默认为/jsonrpc" class="pl-input listener-path" value="${base.getValue('setting_rpc_path')}"></label>`;
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC密钥</div><input type="text" placeholder="无密钥无需填写" class="pl-input listener-token" value="${base.getValue('setting_rpc_token')}"></label>`;
-			dom += `<label class="pl-setting-label"><div class="pl-label">保存路径</div><input type="text" placeholder="文件下载后保存路径，例如：D:" class="pl-input listener-dir" value="${base.getValue('setting_rpc_dir')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://，但不需要写端口与路径" class="swal2-input pl-input listener-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix下载器为16800" class="swal2-input pl-input listener-port" value="${base.getValue('setting_rpc_port')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC路径</div><input type="text" placeholder="路径，默认为/jsonrpc" class="swal2-input pl-input listener-path" value="${base.getValue('setting_rpc_path')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC密钥</div><input type="text" placeholder="无密钥无需填写" class="swal2-input pl-input listener-token" value="${base.getValue('setting_rpc_token')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">保存路径</div><input type="text" placeholder="文件下载后保存路径，例如：D:" class="swal2-input pl-input listener-dir" value="${base.getValue('setting_rpc_dir')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">当前RPC</div><div><span id="pl-rpcDomain">${base.getValue('setting_rpc_domain')}</span>:<span id="pl-rpcPort">${base.getValue('setting_rpc_port')}</span><span id="pl-rpcPath">${base.getValue('setting_rpc_path')}</span><button type="button" class="pl-button-mini swal2-confirm swal2-styled listener-rpc-test">测试</button></div></label>`;
 
 			colorList.forEach((v, i) => {
@@ -613,25 +613,25 @@
 			});
 
 
-			dom += `<label class="pl-setting-label"><div class="pl-label">终端类型</div><select class="pl-input listener-terminal">`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">终端类型</div><select class="swal2-select pl-input listener-terminal">`;
 			Object.keys(terminalType).forEach(k => {
 				dom += `<option value="${k}" ${base.getValue('setting_terminal_type') === k ? 'selected' : ''}>${terminalType[k]}</option>`;
 			});
 			dom += `</select></label>`;
 
-			/*dom +=`<label class="pl-setting-label"><div class="pl-label">检查更新</div><select class="pl-input update_check">`;
+			/*dom +=`<label class="pl-setting-label"><div class="pl-label">检查更新</div><select class="swal2-select pl-input update_check">`;
 			Object.keys(updatecheck).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_update_check') === value ? 'selected' : ''}>${updatecheck[value]}</option>`;});
 			dom += `</select></label>`;*/
 
-			dom +=`<label class="pl-setting-label"><div class="pl-label">未找到IDM提示</div><select class="pl-input hide_idm">`;
+			dom +=`<label class="pl-setting-label"><div class="pl-label">未找到IDM提示</div><select class="swal2-select pl-input hide_idm">`;
 			Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_hide_idm') === value ? 'selected' : ''}>${hideidm[value]}</option>`;});
 			dom += `</select></label>`;
 
-			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="pl-input baidu_theme">`;
+			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="swal2-select pl-input baidu_theme">`;
 			Object.keys(baidutheme).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
 			dom += `</select></label>`;
 
-			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="pl-input getuser_info">`;
+			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="swal2-select pl-input getuser_info">`;
 			Object.keys(getuserinfo).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_getuser_info') === value ? 'selected' : ''}>${getuserinfo[value]}</option>`;});
 			dom += `</select></label>`;
 
@@ -744,11 +744,11 @@
 				btn = '',
 				colorList = ['#09AAFF','#cc3235','#637df8','#518c17','#ed944b','#f969a5','#bca280','#574AB8','#0d53ff','#637dff','#3181f9'],
 				colorNameList = ['度盘<br>经典蓝','度盘<br>平安红','度盘<br>霞光紫','度盘<br>盎然绿','度盘<br>周年橙','度盘<br>幸会粉','度盘<br>午后棕','度盘<br>星空紫','夸克<br>明亮蓝','阿里<br>云盘紫','移动<br>彩云蓝'];
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://" class="pl-input listener-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix为16800" class="pl-input listener-port" value="${base.getValue('setting_rpc_port')}"></label>`;
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC路径</div><input type="text" placeholder="路径，默认为/jsonrpc" class="pl-input listener-path" value="${base.getValue('setting_rpc_path')}"></label>`;
-			dom += `<label class="pl-setting-label"><div class="pl-label">RPC密钥</div><input type="text" placeholder="无密钥无需填写" class="pl-input listener-token" value="${base.getValue('setting_rpc_token')}"></label>`;
-			dom += `<label class="pl-setting-label"><div class="pl-label">保存路径</div><input type="text" placeholder="文件下载后保存路径，例如：D:" class="pl-input listener-dir" value="${base.getValue('setting_rpc_dir')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://" class="swal2-input pl-input listener-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix为16800" class="swal2-input pl-input listener-port" value="${base.getValue('setting_rpc_port')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC路径</div><input type="text" placeholder="路径，默认为/jsonrpc" class="swal2-input pl-input listener-path" value="${base.getValue('setting_rpc_path')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">RPC密钥</div><input type="text" placeholder="无密钥无需填写" class="swal2-input pl-input listener-token" value="${base.getValue('setting_rpc_token')}"></label>`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">保存路径</div><input type="text" placeholder="文件下载后保存路径，例如：D:" class="swal2-input pl-input listener-dir" value="${base.getValue('setting_rpc_dir')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">当前RPC</div><div><span id="pl-rpcDomain">${base.getValue('setting_rpc_domain')}</span>:<span id="pl-rpcPort">${base.getValue('setting_rpc_port')}</span><span id="pl-rpcPath">${base.getValue('setting_rpc_path')}</span><button type="button" class="pl-button-mini swal2-confirm swal2-styled listener-rpc-test">测试</button></div></label>`;
 
 			colorList.forEach((v, i) => {
@@ -758,21 +758,21 @@
 			});
 
 
-			dom += `<label class="pl-setting-label"><div class="pl-label">终端类型</div><select class="pl-input listener-terminal">`;
+			dom += `<label class="pl-setting-label"><div class="pl-label">终端类型</div><select class="swal2-select pl-input listener-terminal">`;
 			Object.keys(terminalType).forEach(k => {
 				dom += `<option value="${k}" ${base.getValue('setting_terminal_type') === k ? 'selected' : ''}>${terminalType[k]}</option>`;
 			});
 			dom += `</select></label>`;
 
-			/*dom +=`<label class="pl-setting-label"><div class="pl-label">检查更新</div><select class="pl-input update_check">`;
+			/*dom +=`<label class="pl-setting-label"><div class="pl-label">检查更新</div><select class="swal2-select pl-input update_check">`;
 			Object.keys(updatecheck).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_update_check') === value ? 'selected' : ''}>${update[value]}</option>`;});
 			dom += `</select></label>`;*/
 
-			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="pl-input baidu_theme">`;
+			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="swal2-select pl-input baidu_theme">`;
 			Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
 			dom += `</select></label>`;
 
-			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="pl-input getuser_info">`;
+			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="swal2-select pl-input getuser_info">`;
 			Object.keys(getuserinfo).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_getuser_info') === value ? 'selected' : ''}>${getuserinfo[value]}</option></select></label>`;});
 
 			dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
@@ -912,6 +912,7 @@
 				icon: 'info',
 				title: '更新日志(关闭按钮在下面哦)',
 				html: `<span>
+				V1.0.7.7<br>1、修复百度网盘的按钮会因为主题不同而被改变颜色的Bug；<br>2、更新夸克网盘按钮与界面。<br><br>
 				V1.0.7.6<br>1、修复“注入”功能；<br>2、黑暗模式支持随设置热切换。<br><br>
 				V1.0.7.5<br>1、修复阿里云盘下载逻辑；<br>2、精简代码；<br>3、支持深色模式；<br>4、修改部分提示文本；<br>5、修改部分CSS；<br>6、设置可测试RPC连接。<br><br>
 				V1.0.7.4<br>1、优化下载逻辑；<br>2、修复阿里云盘无法使用API下载。<br><br>
@@ -1008,24 +1009,24 @@
 			div:where(.swal2-container) .swal2-html-container{margin: 1em 1.3em 0.3em;}
 			`;
 
-			// 先监听颜色方案变化
+			// 先监听颜色方案变化 Panlinker-SweetAlert2-Default
 			window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
 				if (e.matches) {
 					// 切换到暗色主题
-					this.addStyle('Panlinker-SweetAlert2-Default', 'style', GM_getResourceText('SwalDark'));
+					this.addStyle('swal-pub-style', 'style', GM_getResourceText('SwalDark'));
 				} else {
 					// 切换到浅色主题
-					this.addStyle('Panlinker-SweetAlert2-Default', 'style', GM_getResourceText('Swal'));
+					this.addStyle('swal-pub-style', 'style', GM_getResourceText('Swal'));
 				}
 				this.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
 			});
-			// 再修改主题
+			// 再修改主题 Panlinker-SweetAlert2-Default
 			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				// 切换到暗色主题
-				this.addStyle('Panlinker-SweetAlert2-Default', 'style', GM_getResourceText('SwalDark'));
+				this.addStyle('swal-pub-style', 'style', GM_getResourceText('SwalDark'));
 			} else {
 				// 切换到浅色主题
-				this.addStyle('Panlinker-SweetAlert2-Default', 'style', GM_getResourceText('Swal'));
+				this.addStyle('swal-pub-style', 'style', GM_getResourceText('Swal'));
 			}
 			this.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
 
@@ -1073,16 +1074,16 @@
 			.pl-button-mini {padding: 5px 10px; }
 			.pl-dropdown-menu-item {height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: ${color}; transition: all 0.3s ease;}
 			.pl-dropdown-menu-item:hover { background-color: ${color}15;}
-			.pl-button-mode {padding: 0p; padding-left: 0px !important; color: ${color}; transition: all 0.3s ease;}
-			.pl-button-mode:hover {background-color: ${color}33!important;}
+			.pl-button-mode {padding: 0p; padding-left: 0px !important; color: ${color} !important; transition: all 0.3s ease;}
+			.pl-button-mode:hover {background-color: ${color}33 !important;}
 			.pl-button, .pl-dropdown-menu { transition: all 0.3s ease;}
 			.pl-button .pl-dropdown-menu { display: none;}
 			.pl-button:hover .pl-dropdown-menu { display: block; }
 			.pl-button-init { opacity: 0.5; animation: easeInitOpacity 1.2s 3; animation-fill-mode:forwards }
 			@keyframes easeInitOpacity { from { opacity: 0.5; } 50% { opacity: 1 } to { opacity: 0.5; } }
 			@keyframes easeOpacity { from { opacity: 1; } 50% { opacity: 0.35 } to { opacity: 1; } }
-			.baidu-button { background: ${color}; border-color: ${color};}
-			.baidu-button:hover { background: ${color}b0; border-color: ${color};}
+			.baidu-button {background: ${color} !important; border-color: ${color} !important; border: 1px solid ${color} !important;}
+			.baidu-button:hover { background: ${color}b0 !important; border-color: ${color} !important;}
 			header[style="display: none;"] ~ #pl-button-link {
 				display: inline-block;
 				position: fixed;
@@ -1105,8 +1106,8 @@
 			.yidong-btn { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAGNQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////mkUNoAAAACF0Uk5TAAbHPP9AMRtr9PwrV8zqXfmNgDODHTLD4iJxhGJJ8Z269m0aDgAAAMZJREFUeJzd0ssOgyAQBVDUK74rWq0PFP3/ryxqTMdGqJtuvGHD5CTDTGDs3nFc17kEPcC7BH3At/Tjvk5AYbBU+NcrwghL4uQDk3gtRSF1KWCCQEpghkd+3jp/ICNQoDANU0AQCJQmWAJ3h8+q3mFdvSywQdttsGvRWGAPLReoHXrbG6WWAzBoJ+3DaCnWI39NLbcvszvLeuTB2fYoqbNBNo7sGjzk31BhMsEJitxmiKk8zSQwE8gFjBGcNuCzOmdqPrib5A2JRQ7qK9g+hQAAAABJRU5ErkJggg==); height: 20px; line-height: 20px; display: inline-block; background-repeat: no-repeat; background-size: 20px 20px; text-indent: 25px;}
 			.xunlei-button {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: ${color};margin-left: 12px;padding: 0px 12px;position: relative; cursor:pointer; height: 36px;}
 			.xunlei-button:hover {background: ${color}b0;}
-			.quark-button {background: ${color};}
-			.quark-button:hover { background: ${color}b0;}
+			.quark-button {background: ${color} !important; background-color:${color} !important;}
+			.quark-button:hover { background: ${color}b0 !important; background-color:${color}b0 !important;}
 			.quark-btn-icon {width: 20px; height: 20px; vertical-align: -0.3em;}
 			.element-clicked { opacity: 0.5; }
 			.pl-extra { margin-top: 10px;display:flex}
@@ -1114,7 +1115,7 @@
 			.pointer { cursor:pointer }
 			.pl-setting-label { display: flex;align-items: center;justify-content: space-between;padding-top: 10px; }
 			.pl-label { flex: 0 0 100px;text-align:left; }
-			.pl-input { flex: 1; padding: 8px 10px; border: 1px solid #c2c2c2; border-radius: 5px; font-size: 14px; min-width: 300px; darktheme}
+			.pl-input { flex: 1; padding: 8px 10px !important; border: 1px solid #c2c2c2; border-radius: 5px; font-size: 14px !important; min-width: 300px; margin: 0;darktheme}
 			.init-input {
 				width: 373px;
 				font-size: 20px;
@@ -1562,7 +1563,7 @@
 				$(e.currentTarget).hide();
 			});
 
-			doc.on('click', '.pl-button-mode', (e) => {
+			doc.off('click', '.pl-button-mode').on('click', '.pl-button-mode', (e) => {
 				mode = e.target.dataset.mode;
 				Swal.fire({
 					heightAuto: false,
@@ -1575,7 +1576,7 @@
 				});
 				this.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async (e) => {
+			doc.off('click', '.listener-link-api').on('click', '.listener-link-api', async (e) => {
 				e.preventDefault();
 				let o = _factory(e);
 				let $width = o.item.find('.pl-progress-inner');
@@ -1892,7 +1893,9 @@
 			if (!pt) return;
 			let $toolWrap;
 			let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="padding: 0px;" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="padding: 0px;" ">更新日志</div>${update_baidu}</div></div>`);
-			if (pt === 'home') $toolWrap = $(pan.btn.home);
+			if (pt === 'home') {
+				$toolWrap = $(pan.btn.home);
+			}
 			if (pt === 'main') {
 				$toolWrap = $(pan.btn.main);
 				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li>${update_baiduX}</ul></div>`);
@@ -1921,8 +1924,10 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="g-dropdown-button pointer pl-button-init" id="pl-button-link" style="opacity:.5"><div style="color:#fff;background: ${color};border-color:${color}" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div></div>`);
-			if (pt === 'home') $toolWrap = $(pan.btn.home);
+			let $button = $(`<div class="g-dropdown-button pointer pl-button-init" id="pl-button-link" style="opacity:0.5"><div style="color:#fff;" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div></div>`);
+			if (pt === 'home') {
+				$toolWrap = $(pan.btn.home);
+			}
 			if (pt === 'main') {
 				$toolWrap = $(pan.btn.main);
 				$button = $(`<div class="pl-button-init" id="pl-button-link" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="background: ${color};border-color: ${color};font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手(未点亮)</span></button></div>`);
@@ -2305,7 +2310,7 @@
 				showCloseButton: true,
 				heightAuto: false,
 	 			scrollbarPadding: false,
-				position: 'top',
+				position: 'center',//top
 				width,
 				padding: '15px 20px 5px',
 				customClass,
@@ -2895,7 +2900,7 @@
 				footer,
 				allowOutsideClick: false,
 				showCloseButton: true,
-				position: 'top',
+				position: 'center',//top
 				width,
 				padding: '15px 20px 5px',
 				customClass,
@@ -3266,7 +3271,7 @@
 				footer,
 				allowOutsideClick: false,
 				showCloseButton: true,
-				position: 'top',
+				position: 'center',//top
 				width,
 				padding: '15px 20px 5px',
 				customClass,
@@ -3659,7 +3664,7 @@
 				footer,
 				allowOutsideClick: false,
 				showCloseButton: true,
-				position: 'top',
+				position: 'center',//top
 				width,
 				padding: '15px 20px 5px',
 				customClass,
@@ -3802,9 +3807,19 @@
 				login1.click();
 			},true);
 
+			waitForKeyElements(".tips", function () {
+				let vip1 = document.getElementsByClassName("tips")[0];
+				vip1.remove();
+			},true);
+			
+			waitForKeyElements(".pc-member-entrance", function () {
+				let vip2 = document.querySelector('.pc-member-entrance span');
+				window.onload = vip2.innerHTML = "开通SVIP";
+			});
+
 			let $toolWrap;
 			if (pt === 'home') {
-				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
+				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
 				$button.css({"margin-right":"10px","display":"inline-block"});
 				$toolWrap = $(pan.btn.home);
 				if ($toolWrap.length > 0) {
@@ -3812,7 +3827,7 @@
 				}
 			}
 			if (pt === 'share') {
-				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0;color:#fff;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
+				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0 !important;color:#fff !important;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
 				$button.css({"margin-right":"10px","display":"inline-block"});
 				$toolWrap = $(pan.btn.share);
 				if ($toolWrap.length > 0) {
@@ -3833,7 +3848,7 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button-init"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon btn-icon" src="`+ svg +`"><span>下载助手(未点亮)</span></button></div>`);
+			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button-init"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="`+ svg +`"><span>下载助手(未点亮)</span></button></div>`);
 			$button.css({"margin-right":"10px","display":"inline-block"});
 			if (pt === 'home') {
 				//let ins = setInterval(() => {
@@ -4017,7 +4032,7 @@
 				footer,
 				allowOutsideClick: false,
 				showCloseButton: true,
-				position: 'top',
+				position: 'center',//top
 				width,
 				padding: '15px 20px 5px',
 				customClass,
@@ -4462,7 +4477,7 @@
 				footer,
 				allowOutsideClick: false,
 				showCloseButton: true,
-				position: 'top',
+				position: 'center',//top
 				width,
 				padding: '15px 20px 5px',
 				customClass,
