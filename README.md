@@ -4,7 +4,7 @@
 
 ## 说明
 
-基于[【网盘直链下载助手】](https://www.baiduyun.wiki/)修改（改自最新6.1.1版本）  
+基于[【网盘直链下载助手】](https://www.baiduyun.wiki/)修改（改自最新6.1.2版本）  
 - 原作者：[油小猴](https://www.youxiaohou.com/)  
 - 原脚本：[https://greasyfork.org/scripts/436446](https://greasyfork.org/scripts/436446)   
 - 本脚本发布至GreasyFork：[https://greasyfork.org/scripts/449291](https://greasyfork.org/scripts/449291)
@@ -44,7 +44,7 @@
 
 ### 最新版本号
 
-V. 1.0.7.8（改自6.1.1版本）
+V. 1.0.7.8（改自6.1.2版本）
 
 ## 更新日志
 
