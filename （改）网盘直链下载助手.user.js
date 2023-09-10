@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.7.7
+// @version           1.0.7.8
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
 // @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
-// @license           MIT
+// @license           AGPL-3.0-or-later
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
 // @match             *://pan.baidu.com/disk/home*
@@ -102,8 +102,9 @@
 		yes: "自动检查更新",
 		no: "不检查更新"
 	}
-	let getuserinfo = {
-		yes: "使用（使用油小猴服务器获取信息）",
+	let youserver = {
+		v1: "使用（使用油小猴服务器V1接口获取信息）",
+		v2: "使用（使用油小猴服务器V2接口获取信息）",
 		no: "不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）"
 	};
 	let hideidm = {
@@ -326,7 +327,7 @@
 						method: "POST", url, headers, data,
 						responseType: type || 'json',
 						onload: (res) => {
-							if (/^[A-Za-z0-9+/=\s]+$/.test(res.response) || /^[A-Za-z0-9+/=\s]+$/.test(res.responseText)) {
+							if (/^[A-Za-z0-9+/=\s]+$/.test(res.response) && /^[A-Za-z0-9+/=\s]+$/.test(res.responseText)) {
 								if (res.response) {
 									res.decodedResponse = JSON.parse(base.decode(res.response));
 								}
@@ -569,16 +570,19 @@
 				value: 'wc'
 			}, {
 				name: 'setting_theme_color',
-				value: '#574ab8'
+				value: '#574AB8'
 			}, {
 				name: 'setting_init_code',
+				value: ''
+			}, {
+				name: 'license',
 				value: ''
 			}, /*{
 				name: 'setting_update_check',
 				value: 'yes'
 			},*/ {
-				name: 'setting_getuser_info',
-				value: 'yes'
+				name: 'setting_youxiaohou_server',
+				value: 'v2'
 			}, {
 				name: 'setting_hide_idm',
 				value: 'no'
@@ -607,8 +611,8 @@
 			dom += `<label class="pl-setting-label"><div class="pl-label">当前RPC</div><div><span id="pl-rpcDomain">${base.getValue('setting_rpc_domain')}</span>:<span id="pl-rpcPort">${base.getValue('setting_rpc_port')}</span><span id="pl-rpcPath">${base.getValue('setting_rpc_path')}</span><button type="button" class="pl-button-mini swal2-confirm swal2-styled listener-rpc-test">测试</button></div></label>`;
 
 			colorList.forEach((v, i) => {
-				btn += `<div data-color="${v}" style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'checked' : 'listener-color'}">
-				<div data-color="${v}" class="pl-mask">${colorNameList[i]}${v === base.getValue('setting_theme_color') ? '<br>(当前)' : ''}</div>
+				btn += `<div style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'listener-color' : 'listener-color'}">
+				<div data-color="${v}" class="pl-mask">${colorNameList[i]} ${v === base.getValue('setting_theme_color') ? '<span id="pl-thisColor">(当前)</span>' : ''}</div>
 			</div>`;
 			});
 
@@ -631,8 +635,8 @@
 			Object.keys(baidutheme).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
 			dom += `</select></label>`;
 
-			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="swal2-select pl-input getuser_info">`;
-			Object.keys(getuserinfo).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_getuser_info') === value ? 'selected' : ''}>${getuserinfo[value]}</option>`;});
+			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="swal2-select pl-input youxiaohou_server">`;
+			Object.keys(youserver).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_youxiaohou_server') === value ? 'selected' : ''}>${youserver[value]}</option>`;});
 			dom += `</select></label>`;
 
 			dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
@@ -697,11 +701,14 @@
 				},5000)
 			});
 			doc.on('click', '.listener-color', async (e) => {
-				base.setValue('setting_theme_color', e.target.dataset.color);
-				message.success('主题色设置成功了!');
-				setTimeout(function(){
-					history.go(0);
-				},1000)
+				if(e.target.dataset.color){
+					if (document.getElementById("pl-thisColor")){
+						document.getElementById("pl-thisColor").remove();
+					}
+					e.target.innerHTML += '<span id="pl-thisColor">(当前)</span>';
+					base.setValue('setting_theme_color', e.target.dataset.color);
+					base.addPanLinkerStyle();
+				}
 			});
 			doc.on('input', '.listener-domain', async (e) => {
 				base.setValue('setting_rpc_domain', e.target.value);
@@ -733,8 +740,8 @@
 			doc.on('change', '.baidu_theme', async (e) => {
 				base.setValue('setting_baidu_theme', e.target.value);
 			});
-			doc.on('change', '.getuser_info', async (e) => {
-				base.setValue('setting_getuser_info', e.target.value);
+			doc.on('change', '.youxiaohou_server', async (e) => {
+				base.setValue('setting_youxiaohou_server', e.target.value);
 			});
 		},
 
@@ -752,8 +759,8 @@
 			dom += `<label class="pl-setting-label"><div class="pl-label">当前RPC</div><div><span id="pl-rpcDomain">${base.getValue('setting_rpc_domain')}</span>:<span id="pl-rpcPort">${base.getValue('setting_rpc_port')}</span><span id="pl-rpcPath">${base.getValue('setting_rpc_path')}</span><button type="button" class="pl-button-mini swal2-confirm swal2-styled listener-rpc-test">测试</button></div></label>`;
 
 			colorList.forEach((v, i) => {
-				btn += `<div data-color="${v}" style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'checked' : 'listener-color'}">
-				<div data-color="${v}" class="pl-mask">${colorNameList[i]}${v === base.getValue('setting_theme_color') ? '<br>(当前)' : ''}</div>
+				btn += `<div style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'listener-color' : 'listener-color'}">
+				<div data-color="${v}" class="pl-mask">${colorNameList[i]} ${v === base.getValue('setting_theme_color') ? '<span id="pl-thisColor">(当前)</span>' : ''}</div>
 			</div>`;
 			});
 
@@ -772,8 +779,8 @@
 			Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
 			dom += `</select></label>`;
 
-			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="swal2-select pl-input getuser_info">`;
-			Object.keys(getuserinfo).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_getuser_info') === value ? 'selected' : ''}>${getuserinfo[value]}</option></select></label>`;});
+			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="swal2-select pl-input youxiaohou_server">`;
+			Object.keys(youserver).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_youxiaohou_server') === value ? 'selected' : ''}>${youserver[value]}</option></select></label>`;});
 
 			dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
 
@@ -815,11 +822,14 @@
 				base.registerInitCode(111111);
 			});
 			doc.on('click', '.listener-color', async (e) => {
-				base.setValue('setting_theme_color', e.target.dataset.color);
-				message.success('主题色设置成功了!');
-				setTimeout(function(){
-					history.go(0);
-				},1000)
+				if(e.target.dataset.color){
+					if (document.getElementById("pl-thisColor")){
+						document.getElementById("pl-thisColor").remove();
+					}
+					e.target.innerHTML += '<span id="pl-thisColor">(当前)</span>';
+					base.setValue('setting_theme_color', e.target.dataset.color);
+					base.addPanLinkerStyle();
+				}
 			});
 			doc.on('input', '.listener-domain', async (e) => {
 				base.setValue('setting_rpc_domain', e.target.value);
@@ -848,8 +858,8 @@
 			doc.on('change', '.baidu_theme', async (e) => {
 				base.setValue('setting_baidu_theme', e.target.value);
 			});
-			doc.on('change', '.getuser_info', async (e) => {
-				base.setValue('setting_getuser_info', e.target.value);
+			doc.on('change', '.youxiaohou_server', async (e) => {
+				base.setValue('setting_youxiaohou_server', e.target.value);
 			});
 		},
 
@@ -861,6 +871,7 @@
 			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">脚本作者</div>${realauthor}</label>`;
 			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">虚假作者</div>${author}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">初始化暗号</div>${pan.num}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">初始化协议</div>${pan.license}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">UA代理</div>${pan.ua}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">公众号地址</div>${pan.img}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">网盘万能助手</div>${pan.assistant}</label>`;
@@ -868,12 +879,12 @@
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">RPC管理</div>${pan.d}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">IDM介绍</div>${pan.idm}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">提示文本</div>0、${pan.init[0]}<br>1、${pan.init[1]}<br>2、${pan.init[2]}<br>3、${pan.init[3]}<br>4、${pan.init[4]}<br>5、${pan.init[5]}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">页脚</div>${pan.fotter}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">页脚</div>${pan.footer}</label>`;
 			hideinfo = '<div>' + hideinfo + '</div>';
 
 			Swal.fire({
 				icon: 'info',
-				title: '脚本分析信息',
+				title: '调试信息',
 				html: hideinfo,
 				allowOutsideClick: false,
 				showCloseButton: true,
@@ -889,6 +900,7 @@
 			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">版本</div>${realversion}</label>`;
 			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">作者</div>${realauthor}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">初始化暗号</div>${pan.num}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">初始化协议</div>${pan.license}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">公众号地址</div>${pan.img}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">网盘万能助手</div>${pan.assistant}</label>`;
 			hideinfo += `<label class="pl-setting-label"><div class="pl-label">RPC管理</div>${pan.d}</label>`;
@@ -897,7 +909,7 @@
 
 			Swal.fire({
 				icon: 'info',
-				title: '脚本分析信息',
+				title: '调试信息',
 				html: hideinfo,
 				allowOutsideClick: false,
 				showCloseButton: true,
@@ -912,6 +924,7 @@
 				icon: 'info',
 				title: '更新日志(关闭按钮在下面哦)',
 				html: `<span>
+				V1.0.7.8<br>1、跟进官方V6.1.2，加入V2接口；<br>2、修复百度网盘下载时因为获取不到accessToken而一直转圈。<br><br>
 				V1.0.7.7<br>1、修复百度网盘的按钮会因为主题不同而被改变颜色的Bug；<br>2、更新夸克网盘按钮与界面。<br><br>
 				V1.0.7.6<br>1、修复“注入”功能；<br>2、黑暗模式支持随设置热切换。<br><br>
 				V1.0.7.5<br>1、修复阿里云盘下载逻辑；<br>2、精简代码；<br>3、支持深色模式；<br>4、修改部分提示文本；<br>5、修改部分CSS；<br>6、设置可测试RPC连接。<br><br>
@@ -991,6 +1004,23 @@
 				}
 			}
 			return mirrors.join('\n');
+		},
+
+		listenElement(element, callback) {
+			let checkInterval = 500; // 检查元素的间隔时间（毫秒）
+			let wasElementFound = false; // 用于跟踪元素是否之前已经找到
+			
+			function checkElement() {
+				if (document.querySelector(element)) {
+					wasElementFound = true;
+					callback();
+				} else if (wasElementFound) {
+					wasElementFound = false; // 元素消失后重置标志
+				}
+			
+				setTimeout(checkElement, checkInterval);
+			}
+			checkElement();
 		},
 
 		addPanLinkerStyle() {
@@ -1135,11 +1165,11 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				flex-direction: column;
 			}
 			.pl-color-box:hover .pl-mask {
 				opacity: 1;
 			}
-			.pl-color-box.checked { border:3px dashed #111 }
 			.pl-close:focus { outline: 0; box-shadow: none; }
 			.tag-danger {color:#cc3235;margin: 0 5px;}
 			.pl-tooltip { position: absolute; color: #ffffff; max-width: 600px; font-size: 12px; padding: 5px 10px; background: #333; border-radius: 5px; z-index: 110000; line-height: 1.3; display:none; word-break: break-all;}
@@ -1247,6 +1277,17 @@
 		},
 
 		async initDialog() {
+			let secret = ""
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				secret = "当前暗号是：“" + pan.num + "”。";
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				secret = "当前暗号是：“" + pan.num + "”，开源协议是“" + pan.license + "”。";
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
+				secret = "当前暗号是：“" + pan.num + "”。";
+			} else {
+				base.setValue('setting_youxiaohou_server', 'v2');
+				secret = "当前配置不正确，请刷新页面再继续";
+			}
 			let result = await Swal.fire({
 				title: pan.init[0],
 				allowOutsideClick: false,
@@ -1257,11 +1298,12 @@
 				scrollbarPadding: false,
 				html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}">
 				<input class="swal2-input init-input" id="init" type="text" placeholder="${pan.init[1]}"></div>
-				<div><span>你可以选择"注入"立即点亮按钮，或者输入暗号点亮</span></div>
-				<div><span>当前暗号是：“${pan.num}”。</span></div>
-				<div><span>还可以扫码支持一下原作者油小猴的公众号</span></div>
+				<div><span>你可以选择"注入"立即点亮按钮</span></div>
+				<div><span>或者输入 暗号/开源协议 点亮...</span></div>
+				<div><span>${secret}</span></div>
+				<div><span>原作者开发很辛苦，所以请扫码支持一下他的的公众号</span></div>
 				<div><span>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...</span></div>
-				<div><span>点亮后可以精简百度网盘界面哦!</span></div>
+				<div><span>点亮后可以精简部分网盘界面哦!</span></div>
 				`,
 				denyButtonText: '注入(点亮下载助手按钮)'
 			});
@@ -1270,6 +1312,7 @@
 				message.warning("正在注入点亮按钮设置项目...");
 				setTimeout(() => {
 					base.setValue('setting_init_code', pan.num);
+					base.setValue('license', pan.license);
 					message.success("注入成功了欸!");
 					setTimeout(() => {
 						message.success(pan.init[2]);
@@ -1280,11 +1323,12 @@
 				}, 5000);
 			};
 			if (result.isConfirmed){
-				if (pan.num === $('#init').val()) {
-					console.log("【（改）网盘直链下载助手】\n暗号正确")
+				if (pan.num === $('#init').val() || pan.license === $('#init').val()) {
+					console.log("【（改）网盘直链下载助手】\n暗号或协议正确")
 					message.success(pan.init[2]);
 					setTimeout(() => {
 						base.setValue('setting_init_code', pan.num);
+						base.setValue('license', pan.license);
 						history.go(0);
 					}, 3000)
 				} else if ($('#init').val() === '114514' || $('#init').val() === '1919810' || $('#init').val() === '1145141919810') {
@@ -1342,6 +1386,17 @@
 		},
 
 		async initDialogWap() {
+			let secret = ""
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				secret = "当前暗号是：“" + pan.num + "”。";
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				secret = "当前暗号是：“" + pan.num + "”，开源协议是“" + pan.license + "”。";
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
+				secret = "当前暗号是：“" + pan.num + "”。";
+			} else {
+				base.setValue('setting_youxiaohou_server', 'v2');
+				secret = "当前配置不正确，请刷新页面再继续";
+			}
 			let result = await Swal.fire({
 				title: pan.init[0],
 				allowOutsideClick: false,
@@ -1353,9 +1408,13 @@
 				confirmButtonText: '确定',
 				html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}">
 				<input class="swal2-input init-input" id="init" type="text" placeholder="${pan.init[1]}"><br>
-				<span>你可以选择"注入"立即点亮按钮，或者输入暗号点亮。<br>当前暗号是：“${pan.num}”。<br>
-				还可以扫码支持一下原作者油小猴的公众号<br>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...<br>
-				点亮后可以精简百度网盘界面哦!</span></div>`,
+				<div><span>你可以选择"注入"立即点亮按钮</span></div>
+				<div><span>或者输入 暗号/开源协议 点亮...</span></div>
+				<div><span>${secret}</span></div>
+				<div><span>原作者开发很辛苦，所以请扫码支持一下他的的公众号</span></div>
+				<div><span>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...</span></div>
+				<div><span>点亮后可以精简部分网盘界面哦!</span></div>
+				</div>`,
 				denyButtonText: '注入'
 			});
 			if (result.isDenied) {
@@ -1898,7 +1957,7 @@
 			}
 			if (pt === 'main') {
 				$toolWrap = $(pan.btn.main);
-				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li>${update_baiduX}</ul></div>`);
+				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li>${update_baiduX}</ul></div>`);
 			}
 			if (pt === 'share') $toolWrap = $(pan.btn.share);
 			if (pt === 'wap') {
@@ -1930,7 +1989,7 @@
 			}
 			if (pt === 'main') {
 				$toolWrap = $(pan.btn.main);
-				$button = $(`<div class="pl-button-init" id="pl-button-link" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="background: ${color};border-color: ${color};font-size: 14px; padding: 8px 16px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手(未点亮)</span></button></div>`);
+				$button = $(`<div class="pl-button-init" id="pl-button-link" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手(未点亮)</span></button></div>`);
 			}
 			if (pt === 'share') $toolWrap = $(pan.btn.share);
 			if (pt === 'wap') {
@@ -1952,10 +2011,17 @@
 
 		async getToken() {
 			let res = await base.getFinalUrl(pan.pcs[3]);
+			// 如果返回结果中没有包含'access_token'字符串
 			if (res.indexOf('access_token') === -1) {
+
+				// 使用await关键字等待base.get函数的返回结果，获取网页内容
 				let html = await base.get(pan.pcs[3], {}, 'text');
+
+				// 使用正则表达式匹配html中的'bdstoken'和'client_id'
 				let bdstoken = html.match(/name="bdstoken"\s+value="([^"]+)"/)?.[1];
 				let client_id = html.match(/name="client_id"\s+value="([^"]+)"/)?.[1];
+
+				// 构建一个包含所需参数的数据对象，包含百度授权所需参数
 				let data = {
 					grant_permissions_arr: 'netdisk',
 					bdstoken: bdstoken,
@@ -1964,14 +2030,19 @@
 					display: "page",
 					grant_permissions: "basic,netdisk"
 				}
+
+				// 向服务器发送POST请求，实现自动授权
 				await base.post(pan.pcs[3], base.stringify(data), {
 					'Content-Type': 'application/x-www-form-urlencoded',
 				})
+
+				// 授权完后再次获取'access_token'
 				let res2 = await base.getFinalUrl(pan.pcs[3]);
 				let accessToken = res2.match(/access_token=([^&]+)/)?.[1];
 				accessToken && base.setStorage('accessToken', accessToken);
 				return accessToken;
 			}
+			// 如果已有'access_token'，则获取新的'access_token'
 			let accessToken = res.match(/access_token=([^&]+)/)?.[1];
 			accessToken && base.setStorage('accessToken', accessToken);
 			return accessToken;
@@ -2324,15 +2395,22 @@
 			pt = this.detectPage();
 			base.createTip();
 			base.registerMenuCommand();
-			if (base.getValue('setting_getuser_info') === 'yes') {
-				let res = await base.post(`https://api.youxiaohou.com/config?ver=${version}&a=${author}`, {}, {}, 'text');
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				let res = await base.post(`https://api.youxiaohou.com/config/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
+				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
+				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				pan = JSON.parse(res);
 			} else {
 				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
+				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			Object.freeze && Object.freeze(pan);
-			pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
+			pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license') ? this.addButton() : this.addInitButton();
 		}
 	};
 
@@ -2912,16 +2990,22 @@
 			pt = this.detectPage();
 			base.createTip();
 			base.registerMenuCommand();
-			if (base.getValue('setting_getuser_info') === 'yes') {
-				let res = await base.post
-				(`https://api.youxiaohou.com/config/ali?ver=${version}&a=${author}`, {}, {}, 'text');
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				let res = await base.post(`https://api.youxiaohou.com/config/ali/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
-			} else {
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				let res = await base.post(`https://api.youxiaohou.com/config/v2/ali/?ver=${version}&a=${author}`, {}, {}, 'text');
+				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
 				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/ali.json`, {}, "text", {});
 				pan = JSON.parse(res);
+			} else {
+				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				pan = JSON.parse(res);
+				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			Object.freeze && Object.freeze(pan);
-			pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
+			pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license') ? this.addButton() : this.addInitButton();
 		}
 	};
 
@@ -3283,16 +3367,22 @@
 			pt = this.detectPage();
 			base.createTip();
 			base.registerMenuCommand();
-			if (base.getValue('setting_getuser_info') === 'yes') {
-				let res = await base.post
-				(`https://api.youxiaohou.com/config/tianyi?ver=${version}&a=${author}`, {}, {}, 'text');
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				let res = await base.post(`https://api.youxiaohou.com/config/tianyi/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
-			} else {
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				let res = await base.post(`https://api.youxiaohou.com/config/v2/tianyi/?ver=${version}&a=${author}`, {}, {}, 'text');
+				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
 				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/tianyi.json`, {}, "text", {});
 				pan = JSON.parse(res);
+			} else {
+				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				pan = JSON.parse(res);
+				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			Object.freeze && Object.freeze(pan);
-			pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
+			pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license') ? this.addButton() : this.addInitButton();
 			this.getToken();
 		}
 	};
@@ -3676,16 +3766,22 @@
 			pt = this.detectPage();
 			base.createTip();
 			base.registerMenuCommand();
-			if (base.getValue('setting_getuser_info') === 'yes') {
-				let res = await base.post
-				(`https://api.youxiaohou.com/config/xunlei?ver=${version}&a=${author}`, {}, {}, 'text');
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				let res = await base.post(`https://api.youxiaohou.com/config/xunlei/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
-			} else {
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				let res = await base.post(`https://api.youxiaohou.com/config/v2/xunlei/?ver=${version}&a=${author}`, {}, {}, 'text');
+				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
 				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/xunlei.json`, {}, "text", {});
 				pan = JSON.parse(res);
+			} else {
+				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				pan = JSON.parse(res);
+				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			Object.freeze && Object.freeze(pan);
-			pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
+			pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license') ? this.addButton() : this.addInitButton();
 		}
 	};
 
@@ -3714,7 +3810,7 @@
 				if (e.oldURL === home && e.newURL === all) return;
 				await base.sleep(150);
 				if ($('.quark-button').length > 0) return;
-				pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
+				pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license') ? this.addButton() : this.addInitButton();
 			});
 			doc.on('click', '.pl-button-mode', (e) => {
 				mode = e.target.dataset.mode;
@@ -4044,16 +4140,22 @@
 			pt = this.detectPage();
 			base.createTip();
 			base.registerMenuCommand();
-			if (base.getValue('setting_getuser_info') === 'yes') {
-				let res = await base.post
-				(`https://api.youxiaohou.com/config/quark?ver=${version}&a=${author}`, {}, {}, 'text');
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				let res = await base.post(`https://api.youxiaohou.com/config/quark/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
-			} else {
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				let res = await base.post(`https://api.youxiaohou.com/config/v2/quark/?ver=${version}&a=${author}`, {}, {}, 'text');
+				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
 				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/quark.json`, {}, "text", {});
 				pan = JSON.parse(res);
+			} else {
+				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				pan = JSON.parse(res);
+				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			Object.freeze && Object.freeze(pan);
-			pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
+			pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license') ? this.addButton() : this.addInitButton();
 			this.addPageListener();
 			base.createDownloadIframe();
 		}
@@ -4489,16 +4591,22 @@
 			pt = this.detectPage();
 			base.createTip();
 			base.registerMenuCommand();
-			if (base.getValue('setting_getuser_info') === 'yes') {
-				let res = await base.post
-				(`https://api.youxiaohou.com/config/yidong?ver=${version}&a=${author}`, {}, {}, 'text');
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				let res = await base.post(`https://api.youxiaohou.com/config/yidong/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
-			} else {
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				let res = await base.post(`https://api.youxiaohou.com/config/v2/yidong/?ver=${version}&a=${author}`, {}, {}, 'text');
+				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
 				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/yidong.json`, {}, "text", {});
 				pan = JSON.parse(res);
+			} else {
+				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				pan = JSON.parse(res);
+				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			Object.freeze && Object.freeze(pan);
-			pan.num === base.getValue('setting_init_code') ? this.addButton() : this.addInitButton();
+			pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license') ? this.addButton() : this.addInitButton();
 		}
 	};
 
@@ -4507,24 +4615,31 @@
 		async initPanLinker() {
 			base.createTip();
 			base.registerPanMenuCommand();
-			if (base.getValue('setting_getuser_info') === 'yes') {
-				let res = await base.post
-				(`https://api.youxiaohou.com/config/?ver=${version}&a=${author}`, {}, {}, 'text');
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				let res = await base.post(`https://api.youxiaohou.com/config/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
+				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
+				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				pan = JSON.parse(res);
 			} else {
 				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
+				base.setValue('setting_youxiaohou_server', 'v2');
 			}
+			Object.freeze && Object.freeze(pan);
 
 			let $button = `
 			<div class="nav-item">
 				<div class="dropdown-wrapper">
 					<button type="button" aria-label="(改)下载助手" class="dropdown-title">
-						<span class="title">(改)下载助手</span>
+						<span class="title">(改)下载助手⬇️</span>
 						<span class="arrow down"></span>
 					</button>
 					<button type="button" aria-label="(改)下载助手" class="mobile-dropdown-title">
-						<span class="title">(改)下载助手</span>
+						<span class="title">(改)下载助手⬇️</span>
 						<span class="arrow right"></span>
 					</button>
 					<ul class="nav-dropdown" style="display:none;">
@@ -4535,7 +4650,7 @@
 							<ul class="dropdown-subitem-wrapper">
 								<li class="dropdown-subitem">
 									<a href="javascript:void(0)" class="listener-open-info nav-link">
-										🛠️ 调试(查看暗号)
+										🛠️ 调试(查看暗号/协议)
 									</a>
 								</li>
 							</ul>
@@ -4547,12 +4662,12 @@
 							<ul class="dropdown-subitem-wrapper">
 								<li class="dropdown-subitem">
 									<a href="javascript:void(0)" class="listener-open-setting nav-link">
-										⚙️ 设置
+										⚙️ 助手设置
 									</a>
 								</li>
 								<li class="dropdown-subitem">
 									<a href="javascript:void(0)" class="listener-open-updatelog nav-link">
-										📃 更新
+										📃 更新日志
 									</a>
 								</li>
 							</ul>
@@ -4571,7 +4686,7 @@
 				base.showPanInfo();
 			});
 			
-			for (let i = 0; i < 3; i++) {
+			for (let i = 0; i < 2; i++) {
 				document.querySelectorAll(".nav-links")[i].innerHTML += $button
 			}
 		}
