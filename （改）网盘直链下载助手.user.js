@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.7.8
+// @version           1.0.7.9
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
-// @description       可以获取网盘文件真实下载地址。现已支持百度阿里天翼迅雷夸克移动六大网盘，基于【网盘直链下载助手】修改自6.1.1版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
+// @description       可以获取网盘文件真实下载地址。现已支持百度网盘阿里网盘天翼网盘迅雷网盘夸克网盘移动网盘六大网盘，基于【网盘直链下载助手】修改自6.1.2版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
 // @license           AGPL-3.0-or-later
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
@@ -106,10 +106,6 @@
 		v1: "使用（使用油小猴服务器V1接口获取信息）",
 		v2: "使用（使用油小猴服务器V2接口获取信息）",
 		no: "不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）"
-	};
-	let hideidm = {
-		yes: "隐藏",
-		no: "显示"
 	};
 	let baidutheme = {
 		yes: "修改主题色",
@@ -584,9 +580,6 @@
 				name: 'setting_youxiaohou_server',
 				value: 'v2'
 			}, {
-				name: 'setting_hide_idm',
-				value: 'no'
-			}, {
 				name: 'setting_baidu_theme',
 				value: 'no'
 			}];
@@ -626,10 +619,6 @@
 			/*dom +=`<label class="pl-setting-label"><div class="pl-label">检查更新</div><select class="swal2-select pl-input update_check">`;
 			Object.keys(updatecheck).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_update_check') === value ? 'selected' : ''}>${updatecheck[value]}</option>`;});
 			dom += `</select></label>`;*/
-
-			dom +=`<label class="pl-setting-label"><div class="pl-label">未找到IDM提示</div><select class="swal2-select pl-input hide_idm">`;
-			Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_hide_idm') === value ? 'selected' : ''}>${hideidm[value]}</option>`;});
-			dom += `</select></label>`;
 
 			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="swal2-select pl-input baidu_theme">`;
 			Object.keys(baidutheme).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
@@ -680,7 +669,7 @@
 			doc.on('click', '.listener-register', async (e) => {
 				base.registerInitCode(111111);
 			});
-			doc.off('click', '.listener-rpc-test').on('click', '.listener-rpc-test', async (e) => {
+			doc.on('click', '.listener-rpc-test', async (e) => {
 				e.preventDefault();
 				let domain = base.getValue('setting_rpc_domain'),
 				port = base.getValue('setting_rpc_port'),
@@ -734,9 +723,6 @@
 			doc.on('change', '.update_check', async (e) => {
 				base.setValue('setting_update_check', e.target.value);
 			});
-			doc.on('change', '.hide_idm', async (e) => {
-				base.setValue('setting_hide_idm', e.target.value);
-			});
 			doc.on('change', '.baidu_theme', async (e) => {
 				base.setValue('setting_baidu_theme', e.target.value);
 			});
@@ -776,7 +762,7 @@
 			dom += `</select></label>`;*/
 
 			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="swal2-select pl-input baidu_theme">`;
-			Object.keys(hideidm).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
+			Object.keys(baidutheme).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
 			dom += `</select></label>`;
 
 			dom +=`<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="swal2-select pl-input youxiaohou_server">`;
@@ -852,9 +838,6 @@
 			doc.on('change', '.update_check', async (e) => {
 				base.setValue('setting_update_check', e.target.value);
 			});
-			doc.on('change', '.hide_idm', async (e) => {
-				base.setValue('setting_hide_idm', e.target.value);
-			});
 			doc.on('change', '.baidu_theme', async (e) => {
 				base.setValue('setting_baidu_theme', e.target.value);
 			});
@@ -924,7 +907,8 @@
 				icon: 'info',
 				title: '更新日志(关闭按钮在下面哦)',
 				html: `<span>
-				V1.0.7.8<br>1、跟进官方V6.1.2，加入V2接口；<br>2、修复百度网盘下载时因为获取不到accessToken而一直转圈。<br><br>
+				V1.0.7.9<br>1、更新精简网盘元素匹配规则，防止因通知横条而导致不能点到“API下载”以下的按钮。<br><br>
+				V1.0.7.8<br>1、跟进官方V6.1.2，加入V2接口。<br>2、修复百度网盘下载时因为获取不到accessToken而一直转圈。<br><br>
 				V1.0.7.7<br>1、修复百度网盘的按钮会因为主题不同而被改变颜色的Bug；<br>2、更新夸克网盘按钮与界面。<br><br>
 				V1.0.7.6<br>1、修复“注入”功能；<br>2、黑暗模式支持随设置热切换。<br><br>
 				V1.0.7.5<br>1、修复阿里云盘下载逻辑；<br>2、精简代码；<br>3、支持深色模式；<br>4、修改部分提示文本；<br>5、修改部分CSS；<br>6、设置可测试RPC连接。<br><br>
@@ -1622,7 +1606,7 @@
 				$(e.currentTarget).hide();
 			});
 
-			doc.off('click', '.pl-button-mode').on('click', '.pl-button-mode', (e) => {
+			doc.on('click', '.pl-button-mode', (e) => {
 				mode = e.target.dataset.mode;
 				Swal.fire({
 					heightAuto: false,
@@ -1635,7 +1619,7 @@
 				});
 				this.getPCSLink();
 			});
-			doc.off('click', '.listener-link-api').on('click', '.listener-link-api', async (e) => {
+			doc.on('click', '.listener-link-api', async (e) => {
 				e.preventDefault();
 				let o = _factory(e);
 				let $width = o.item.find('.pl-progress-inner');
@@ -1803,17 +1787,16 @@
 					)
 				}
 			});
-			doc.on('click', '.listener-copy-all-api', (e) => {
-				e.preventDefault();
-				base.setClipboard(decodeURIComponent(e.target.dataset.link));
-				$(e.target).text('复制成功').animate({opacity: '0.5'}, "slow");
+			doc.on('click', '.listener-download-all', (e) => {
+				$('.pl-item-link').click();
+				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 				setTimeout(
 					function (){
-						$(e.target).text('重新复制').animate({opacity: '1'}, "slow");
+						$(e.target).text('下载全部链接').animate({opacity: '1'}, "slow");
 					},2000
 				)
 			});
-			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -2213,17 +2196,10 @@
 									</div>
 									<span class="pl-progress-stop listener-stop">取消下载</span>
 								`;
-					if (base.getValue('setting_hide_idm') === 'no') {
-						content+=`<span class="pl-progress-tip" >未发现IDM，使用自带浏览器下载</span>
-								<span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
-								<span class="pl-progress-how listener-how">如何唤起IDM？</span>
-								`
-					} else {
-						content+=`<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
+					content += `<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
 								<span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
 								<span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
-								`
-					};
+								`;
 					content +=`</div></div>`
 				}
 				if (mode === 'aria') {
@@ -2275,15 +2251,15 @@
 
 			content += '</div>';
 
-			if (mode === 'api'){
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all-api" data-link="${alinkAllText}">复制全部链接</button></div>`;}
-			if (mode === 'aria'){
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;}
+			if (mode === 'api')
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">下载全部链接</button></div>`;
+			if (mode === 'aria')
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
-			if (mode === 'curl'){
+			if (mode === 'curl') {
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;}
 			return content;
 		},
@@ -2476,8 +2452,9 @@
 				let filename = o.link[0].dataset.filename;
 				let index = o.link[0].dataset.index;
 				_reset(index);
-				let href = o.link[0].dataset.link;
-				let url = await this.getRealLink(o.link[0].dataset.did, o.link[0].dataset.fid);
+				let dataset = e.currentTarget.dataset;
+                let href = dataset.link;
+				let url = await this.getRealLink(dataset.did, dataset.fid);
 				if (url) href = url;
 				base.get(href, {"User-Agent": pan.ua, "Referer": "https://www.aliyundrive.com/"}, 'blob', {filename, index});
 				let startTime = Date.now(); // 记录下载开始时间
@@ -2622,7 +2599,7 @@
 					},2000
 				)
 			});
-			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -2640,7 +2617,7 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.off('click', '.listener-send-rpc').on('click', '.listener-send-rpc', (e) => {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
@@ -2692,24 +2669,30 @@
 			if(document.getElementById("pl-button-link")){
 				document.getElementById("pl-button-link").remove()
 			}
-			waitForKeyElements(".share-list-banner--1E8Jr", function () {
-				let tip1 = document.getElementsByClassName("share-list-banner--1E8Jr")[0];
-				tip1.style.zIndex = 0;
+			waitForKeyElements('[class^="share-list-banner"]', function () {
+				let ad1 = document.querySelector('[class^="share-list-banner"]');
+				//ad1.style.zIndex = 0;
+				ad1.remove();
 			},true);
-			waitForKeyElements(".to-app--DrlQQ", function () {
-				let tip2 = document.getElementsByClassName("to-app--DrlQQ")[0];
-				tip2.remove();
+			waitForKeyElements('[class^="to-app"]', function () {
+				let ad2 = document.querySelector('[class^="to-app"]');
+				ad2.remove();
 			},true);
-			waitForKeyElements(".btn-mobile-save--2nXdf", function () {
-				let tip3 = document.getElementsByClassName("btn-mobile-save--2nXdf")[0];
-				tip3.remove();
+			waitForKeyElements('[class^="btn-mobile-save"]', function () {
+				let ad3 = document.querySelector('[class^="btn-mobile-save"]');
+				ad3.remove();
 			},true);
-			waitForKeyElements(".container--coOiS", function () {
-				let vip1 = document.getElementsByClassName("container--coOiS")[0];
-				vip1.remove();
-			}),true;
-			waitForKeyElements(".SplashScreenImg--close--11GrlDz", function () {
-				let vip2 = document.getElementsByClassName("SplashScreenImg--close--11GrlDz")[0];
+			waitForKeyElements('[class^="text"]', function () {
+				let ad4 = document.querySelector('[class^="text"]');
+				if (ad4.innerHTML.match("SVIP") && ad4.innerHTML.match("抽") && ad4.innerHTML.match("赢"))
+				ad4.remove();
+			},true);
+			waitForKeyElements('[class^="SplashScreenImg--close"]', function () {
+				let vip1 = document.querySelector('[class^="SplashScreenImg--close"]');
+				vip1.click();
+			},true);
+			waitForKeyElements('[class^="popup_main_close"]', function () {
+				let vip2 = document.querySelector('[class^="popup_main_close"]');
 				vip2.click();
 			},true);
 			if (!pt) return;
@@ -2838,6 +2821,7 @@
 		generateDom(list) {
 			let content = '<div class="pl-main">';
 			let alinkAllText = '';
+			console.log(list)
 			list.forEach((v, i) => {
 				if (v.type === 'folder') return;
 				let filename = v.name;
@@ -2848,8 +2832,8 @@
 				if (mode === 'api') {
 					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
-								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a listener-link-api" data-did="${did}" data-fid="${fid}" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
+								<div class="pl-item-name listener-tip" data-size="${size}" >${filename}</div>
+								<a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-did="${did}" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-size="${v.size}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
 								<div class="pl-item-copy pl-btn-primary listener-link-api-btn" data-filename="${filename}">复制文件名</div>
 								<div class="pl-item-tip" style="display: none"><span><span class="pl-ext"></span></span> <span class="pl-back listener-back">返回</span></div>
 								<div class="pl-item-progress" style="display: none">
@@ -2897,7 +2881,7 @@
 			if (mode === 'api')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">下载全部链接</button></div>`;
 			if (mode === 'aria')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
@@ -3056,7 +3040,7 @@
 					},2000
 				)
 			});
-			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -3287,7 +3271,7 @@
 			});
 			content += '</div>';
 			if (mode === 'aria')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
@@ -3453,7 +3437,7 @@
 					},2000
 				)
 			});
-			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -3678,7 +3662,7 @@
 			});
 			content += '</div>';
 			if (mode === 'aria')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
@@ -3825,7 +3809,7 @@
 				});
 				this.getPCSLink();
 			});
-			doc.off('click', '.listener-link-save').on('click', '.listener-link-save', async (e) => {
+			doc.on('click', '.listener-link-save', async (e) => {
 				e.preventDefault();
 				selectList = this.getSelectedList();
 				if (selectList.length === 0) {
@@ -3849,7 +3833,7 @@
 					},2000
 				)
 			});
-			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -3900,17 +3884,24 @@
 
 			waitForKeyElements(".ant-modal-close", function () {
 				let login1 = document.getElementsByClassName("ant-modal-close")[0];
-				login1.click();
+			    // login1.click();
 			},true);
 
 			waitForKeyElements(".tips", function () {
 				let vip1 = document.getElementsByClassName("tips")[0];
 				vip1.remove();
-			},true);
-			
-			waitForKeyElements(".pc-member-entrance", function () {
 				let vip2 = document.querySelector('.pc-member-entrance span');
-				window.onload = vip2.innerHTML = "开通SVIP";
+				vip2.innerHTML = "开通SVIP";
+			},true);
+
+			waitForKeyElements(".pay-modal .close", function () {
+				let vip3 = document.querySelector('.pay-modal .close');
+				vip3.click();
+			});
+
+			waitForKeyElements(".red-envelope .close", function () {
+				let vip4 = document.querySelector('.red-envelope .close');
+				vip4.click();
 			});
 
 			let $toolWrap;
@@ -4047,7 +4038,7 @@
 			});
 			content += '</div>';
 			if (mode === 'aria')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
@@ -4218,7 +4209,7 @@
 					},2000
 				)
 			});
-			doc.off('click', '.listener-link-rpc').on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
 				let target = $(e.currentTarget); 
 
@@ -4500,7 +4491,7 @@
 			if (mode === 'api'){
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all-api" data-link="${alinkAllText}">复制全部链接</button></div>`;}
 			if (mode === 'aria')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
