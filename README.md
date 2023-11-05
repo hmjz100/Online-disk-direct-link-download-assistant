@@ -16,19 +16,35 @@
 ## 简介
 
 现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎  
-![TamperMonkeyBeta 篡改猴测试版](https://img.shields.io/badge/TamperMonkeyBeta%20%E7%AF%A1%E6%94%B9%E7%8C%B4%E6%B5%8B%E8%AF%95%E7%89%88-v4.20.6187-red.svg)
-![TamperMonkey 篡改猴](https://img.shields.io/badge/TamperMonkey%20%E7%AF%A1%E6%94%B9%E7%8C%B4-v4.19.0-brightgreen.svg)
-![Violentmonkey 暴力猴](https://img.shields.io/badge/Violentmonkey%20%E6%9A%B4%E5%8A%9B%E7%8C%B4-v2.15.0-brown.svg)  
-![Google Chrome-≥76.0](https://img.shields.io/badge/Google%20Chrome-≥76.0-yellow.svg)
-![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft%20Edge-≥88.0-blue.svg)
-![支持平台](https://img.shields.io/badge/支持平台-Windows%20|%20Mac%20|%20Linux%20|%20Android-blueviolet.svg)
+![TamperMonkeyBeta 篡改猴测试版](https://img.shields.io/badge/TamperMonkeyBeta_篡改猴测试版-v4.20.6187-red.svg)
+![TamperMonkey 篡改猴](https://img.shields.io/badge/TamperMonkey_篡改猴-v4.19.0-brightgreen.svg)
+![Violentmonkey 暴力猴](https://img.shields.io/badge/Violentmonkey_暴力猴-v2.15.0-brown.svg)  
+![Google Chrome-≥76.0](https://img.shields.io/badge/Google_Chrome-≥76.0-yellow.svg)
+![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft_Edge-≥88.0-blue.svg)
+![支持平台](https://img.shields.io/badge/支持平台-Windows_|_Mac_|_Linux_|_Android-blueviolet.svg)
 
 
 #### 卑微的小标题
 
 这个脚本只有一个人在修改\~如果喜欢的话还请留个[好评](https://greasyfork.org/scripts/449291/feedback)和Star哦\~   
-- 如有bug等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
+- 如有bug等问题请在这发[议题反馈](https://githubfast.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
 - 或者在[GreasyFork反馈](https://greasyfork.org/scripts/449291/feedback)，如果看到的话我会尽量修改。
+
+## Bug
+以下是一些因为我的垃圾代码而导致的Bug，望有好心人[提交拉取请求](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/pulls)来帮助我一同解决这些Bug。
+1. 不停检测按钮是否存在而导致的网页卡顿
+   ```
+   setInterval(function(){
+		if(!document.getElementById("pl-button-link")){
+		   xxx.addInitButton();
+		}
+	},1000)
+   ```
+2. 绑定点击下载按钮事件时重复绑定导致并发多条请求给aria2
+   ```
+   doc.on('click', '.xxx', async (e) => {
+   });
+   ```
 
 ## 统计~
 
@@ -71,7 +87,7 @@ V. 1.0.8（改自6.1.2版本）
 | 1.0.6.2 | 2023年05月08日 | 1、修复部分界面错位，实现CSS内置；<br>2、百度网盘界面将变得更加简洁。 |
 | 1.0.6.1 | 2023年05月06日 | 1、新增百度云盘API下载支持复制链接；<br>2、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；<br>3、修改CSS，界面会出现更多的主题色；<br>4、支持在游小猴官网查看暗号；<br>5、修复部分语法错误。 |
 | 1.0.6   | 2023年04月15日 | 1、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；<br>2、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。 |
-| 1.0.5.5 | 2023年04月01日 | 1、感谢[Night-stars](https://github.com/Night-stars-1)的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。 |
+| 1.0.5.5 | 2023年04月01日 | 1、感谢[Night-stars](https://githubfast.com/Night-stars-1)的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。 |
 | 1.0.5.4 | 2023年03月13日 | 1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。 |
 | 1.0.5.3 | 2023年03月10日 | 1、阿里云盘可以摸到下载菜单了。 |
 | 1.0.5.2 | 2022年10月04日 | 1、增加脚本信息菜单；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。 |
@@ -108,7 +124,7 @@ V. 1.0.8（改自6.1.2版本）
 21、修改下载链接获取失败的提示；  
 22、增加更多的主题色，可在助手设置查看；  
 23、homo彩蛋被删去力（悲）；  
-24、感谢[https://github.com/Night-stars-1](https://github.com/Night-stars-1)的帮助，修复因为原作者服务器导致的初始化暗号识别错误；  
+24、感谢[https://githubfast.com/Night-stars-1](https://githubfast.com/Night-stars-1)的帮助，修复因为原作者服务器导致的初始化暗号识别错误；  
 25、修改一些文本以及提供给服务器的信息；  
 26、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；  
 27、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘；  
