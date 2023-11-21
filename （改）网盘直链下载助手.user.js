@@ -46,6 +46,7 @@
 // @connect           quark.cn
 // @connect           youxiaohou.com
 // @connect           ghproxy.com
+// @connect           mirror.ghproxy.com
 // @connect           localhost
 // @connect           *
 // @run-at            document-idle
@@ -105,7 +106,7 @@
 	let youserver = {
 		v1: "使用（使用油小猴服务器V1接口获取信息）",
 		v2: "使用（使用油小猴服务器V2接口获取信息）",
-		no: "不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）"
+		no: "不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）",
 	};
 	let baidutheme = {
 		yes: "修改主题色",
@@ -125,6 +126,9 @@
 			toast.addEventListener('mouseleave', Swal.resumeTimer);
 		}
 	});
+
+	// 有效 ghproxy 域名
+	let ghproxyDomain = "https://mirror.ghproxy.com/";
 
 	//提示的信息内容
 	const message = {
@@ -2379,10 +2383,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -2982,10 +2986,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/ali/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/ali.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/ali.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/ali.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3359,10 +3363,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/tianyi/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/tianyi.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/tianyi.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/tianyi.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3758,10 +3762,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/xunlei/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/xunlei.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/xunlei.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/xunlei.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4139,10 +4143,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/quark/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/quark.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/quark.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/quark.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4590,10 +4594,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/yidong/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/yidong.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/yidong.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/yidong.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4614,10 +4618,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`${ghproxyDomain}https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
