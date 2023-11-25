@@ -10,7 +10,7 @@
 - 本脚本发布至GreasyFork：[https://greasyfork.org/scripts/449291](https://greasyfork.org/scripts/449291)
    
 因网络环境，发布新脚本时GreasyFork是最快更新的。  
-**如果遇到了只加载出油猴菜单，没有出现“下载助手”按钮的情况，请先打开任意网盘页面，进入脚本菜单中的`⚙ 设置`→在打开的`助手设置`弹窗找到`使用油小猴服务器`→选择`不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）`可能会暂时解决该情况。**   
+**如果遇到了只加载出油猴菜单，没有出现“下载助手”按钮的情况，请先打开任意网盘页面，进入脚本菜单中的`⚙ 设置`→在打开的`助手设置`弹窗找到`使用油小猴服务器`→选择`不使用 [用 jsdelivr 连接本项目 Github 仓库](更新可能不及时)`可能会暂时解决该情况。**   
 ![2](https://greasyfork.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd3pKQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9a082a73b5617faa71ad0ae5f048f27c87df4ff6/1.png)
 
 ## 简介
@@ -30,22 +30,6 @@
 - 如有bug等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
 - 或者在[GreasyFork反馈](https://greasyfork.org/scripts/449291/feedback)，如果看到的话我会尽量修改。
 
-## Bug
-以下是一些因为我的垃圾代码而导致的Bug，望有好心人[提交拉取请求](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/pulls)来帮助我一同解决这些Bug。
-1. 不停检测按钮是否存在而导致的网页卡顿
-   ```
-   setInterval(function(){
-		if(!document.getElementById("pl-button-link")){
-		   xxx.addInitButton();
-		}
-	},1000)
-   ```
-2. 绑定点击下载按钮事件时重复绑定导致并发多条请求给aria2
-   ```
-   doc.on('click', '.xxx', async (e) => {
-   });
-   ```
-
 ## 统计~
 
 ![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)
@@ -60,12 +44,13 @@
 
 ### 最新版本号
 
-V. 1.0.8（改自6.1.2版本）
+V. 1.0.8.1（改自6.1.4版本）
 
 ## 更新日志
 
 | 版本号 | 创建日期 | 更新日志 |
 | -------- | -------- | -------- |
+| 1.0.8.1 | 2023年11月25日 | 1、修复因重复绑定按钮而导致RPC下载会发送多条下载请求的Bug；<br>2、选择不使用油小猴服务器时，“用ghproxy连接Github仓库”更换为“用jsdelivr连接Github仓库”；<br>3、跟进官方V6.1.4版本，修复移动网盘无法获取链接，支持阿里云盘新域名alipan.com。 |
 | 1.0.8   | 2023年11月05日 | 1、修复迅雷网盘勾选文件后仍提示未勾选。 |
 | 1.0.7.9 | 2023年11月05日 | 1、更新精简网盘元素匹配规则，防止因通知横条而导致不能点到“API下载”以下的按钮。 |
 | 1.0.7.8 | 2023年09月10日 | 1、跟进官方V6.1.2，加入V2接口；<br>2、修复百度网盘下载时因为获取不到accessToken而一直转圈。 |
