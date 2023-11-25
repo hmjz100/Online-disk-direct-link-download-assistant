@@ -1,13 +1,23 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.8
+// @version           1.0.8.1
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjNDQ0Ii8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjMTM5N2Q4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=
-// @description       可以获取网盘文件真实下载地址。现已支持百度网盘阿里网盘天翼网盘迅雷网盘夸克网盘移动网盘六大网盘，基于【网盘直链下载助手】修改自6.1.2版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
+// @description       可以获取网盘文件真实下载地址。现已支持百度网盘阿里网盘天翼网盘迅雷网盘夸克网盘移动网盘六大网盘，基于【网盘直链下载助手】修改自6.1.4版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
 // @license           AGPL-3.0-or-later
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
+// @compatible	      Chrome
+// @compatible	      Edge
+// @compatible	      Firefox
+// @compatible	      Safari
+// @compatible	      Opera
+// @require           https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
+// @require           https://unpkg.com/sweetalert2@11/dist/sweetalert2.min.js
+// @require           https://unpkg.com/js-md5@0.7.3/build/md5.min.js
+// @resource Swal     https://unpkg.com/sweetalert2@11/dist/sweetalert2.min.css
+// @resource SwalDark https://unpkg.com/@sweetalert2/theme-dark@5.0.15/dark.min.css
 // @match             *://pan.baidu.com/disk/home*
 // @match             *://yun.baidu.com/disk/home*
 // @match             *://pan.baidu.com/disk/main*
@@ -26,34 +36,27 @@
 // @match             *://yun.baidu.com/share/*
 // @match             *://www.aliyundrive.com/s/*
 // @match             *://www.aliyundrive.com/drive*
+// @match             *://www.alipan.com/s/*
+// @match             *://www.alipan.com/drive*
 // @match             *://cloud.189.cn/web/*
 // @match             *://pan.xunlei.com/*
 // @match             *://pan.quark.cn/*
 // @match             *://yun.139.com/*
 // @match             *://caiyun.139.com/*
 // @match             *://*.youxiaohou.com/*
-// @require           https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
-// @require           https://unpkg.com/sweetalert2@11/dist/sweetalert2.min.js
-// @require           https://unpkg.com/js-md5@0.7.3/build/md5.min.js
-// @resource Swal     https://unpkg.com/sweetalert2@11/dist/sweetalert2.min.css
-// @resource SwalDark https://unpkg.com/@sweetalert2/theme-dark@5.0.15/dark.min.css
 // @connect           baidu.com
 // @connect           baidupcs.com
 // @connect           aliyundrive.com
 // @connect           aliyundrive.net
+// @connect           alipan.com
 // @connect           189.cn
 // @connect           xunlei.com
 // @connect           quark.cn
 // @connect           youxiaohou.com
-// @connect           ghproxy.com
+// @connect           gcore.jsdelivr.net
 // @connect           localhost
 // @connect           *
 // @run-at            document-idle
-// @compatible	      Chrome
-// @compatible	      Edge
-// @compatible	      Firefox
-// @compatible	      Safari
-// @compatible	      Opera
 // @grant             unsafeWindow
 // @grant             GM_xmlhttpRequest
 // @grant             GM_setClipboard
@@ -77,7 +80,7 @@
 
 
 	// 准备好对应的元素
-	const customClass = {
+	let customClass = {
 		popup: 'pl-popup',
 		header: 'pl-header',
 		title: 'pl-title',
@@ -89,7 +92,7 @@
 
 
 	// 准备好Shell类型（用于curl下载）
-	const terminalType = {
+	let terminalType = {
 		wc: "Microsoft Windows 命令提示符",
 		wp: "Microsoft Windows PowerShell",
 		lt: "Linux 终端",
@@ -103,9 +106,9 @@
 		no: "不检查更新"
 	}
 	let youserver = {
-		v1: "使用（使用油小猴服务器V1接口获取信息）",
-		v2: "使用（使用油小猴服务器V2接口获取信息）",
-		no: "不使用（使用GhProxy连接Github仓库获取信息,更新可能不及时）"
+		v1: "使用 [用油小猴服务器 V1 接口]",
+		v2: "使用 [用油小猴服务器 V2 接口]",
+		no: "不使用 [用 jsdelivr 连接本项目 Github 仓库](更新可能不及时)"
 	};
 	let baidutheme = {
 		yes: "修改主题色",
@@ -127,7 +130,7 @@
 	});
 
 	//提示的信息内容
-	const message = {
+	let message = {
 		success: (text) => {
 			toast.fire({title: text, icon: 'success'});
 		},
@@ -183,15 +186,18 @@
 
 		// 获取Cookie
 		getCookie(name) {
-			let arr = document.cookie.replace(/\s/g, "").split(';');
-			for (let i = 0, l = arr.length; i < l; i++) {
-				let tempArr = arr[i].split('=');
-				if (tempArr[0] === name) {
-					return decodeURIComponent(tempArr[1]);
-				}
-			}
-			return '';
-		},
+            let cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                let cookiePair = cookies[i].trim().split('=');
+                if (cookiePair.length === 2) {
+                    let cookieName = cookiePair[0];
+                    if (cookieName === name) {
+                        return cookiePair[1];
+                    }
+                }
+            }
+            return '';
+        },
 
 		/*-- 对象类型判断
 		示例：
@@ -453,6 +459,7 @@
 			});
 		},
 
+		// RPC测试
 		async rpcTest(domain, port, path, token) {
 			return new Promise((resolve, reject) => {
 				let rpc = { domain, port, path, token };
@@ -560,7 +567,7 @@
 				value: ''
 			}, {
 				name: 'setting_rpc_dir',
-				value: 'D:'
+				value: 'D:\Downloads'
 			}, {
 				name: 'setting_terminal_type',
 				value: 'wc'
@@ -573,10 +580,7 @@
 			}, {
 				name: 'license',
 				value: ''
-			}, /*{
-				name: 'setting_update_check',
-				value: 'yes'
-			},*/ {
+			}, {
 				name: 'setting_youxiaohou_server',
 				value: 'v2'
 			}, {
@@ -616,11 +620,7 @@
 			});
 			dom += `</select></label>`;
 
-			/*dom +=`<label class="pl-setting-label"><div class="pl-label">检查更新</div><select class="swal2-select pl-input update_check">`;
-			Object.keys(updatecheck).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_update_check') === value ? 'selected' : ''}>${updatecheck[value]}</option>`;});
-			dom += `</select></label>`;*/
-
-			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="swal2-select pl-input baidu_theme">`;
+			dom +=`<label class="pl-setting-label"><div class="pl-label">[实验选项]<br/>修改百度网盘界面为助手主题色</div><select class="swal2-select pl-input baidu_theme">`;
 			Object.keys(baidutheme).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
 			dom += `</select></label>`;
 
@@ -720,9 +720,6 @@
 			doc.on('change', '.listener-terminal', async (e) => {
 				base.setValue('setting_terminal_type', e.target.value);
 			});
-			doc.on('change', '.update_check', async (e) => {
-				base.setValue('setting_update_check', e.target.value);
-			});
 			doc.on('change', '.baidu_theme', async (e) => {
 				base.setValue('setting_baidu_theme', e.target.value);
 			});
@@ -757,11 +754,7 @@
 			});
 			dom += `</select></label>`;
 
-			/*dom +=`<label class="pl-setting-label"><div class="pl-label">检查更新</div><select class="swal2-select pl-input update_check">`;
-			Object.keys(updatecheck).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_update_check') === value ? 'selected' : ''}>${update[value]}</option>`;});
-			dom += `</select></label>`;*/
-
-			dom +=`<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为主题色[实验]</div><select class="swal2-select pl-input baidu_theme">`;
+			dom +=`<label class="pl-setting-label"><div class="pl-label">[实验选项]<br/>修改百度网盘界面为助手主题色</div><select class="swal2-select pl-input baidu_theme">`;
 			Object.keys(baidutheme).forEach(value => {dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`;});
 			dom += `</select></label>`;
 
@@ -835,9 +828,6 @@
 			doc.on('change', '.listener-terminal', async (e) => {
 				base.setValue('setting_terminal_type', e.target.value);
 			});
-			doc.on('change', '.update_check', async (e) => {
-				base.setValue('setting_update_check', e.target.value);
-			});
 			doc.on('change', '.baidu_theme', async (e) => {
 				base.setValue('setting_baidu_theme', e.target.value);
 			});
@@ -849,20 +839,20 @@
 		showInfo() {
 			let hideinfo='';
 			hideinfo +=`<span>以下内容都是脚本自己检测到的信息<br>本页面仅作为调试使用<span>`;
-			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">版本</div>${realversion}</label>`;
-			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">虚假版本</div>${version}</label>`;
-			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">脚本作者</div>${realauthor}</label>`;
-			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">虚假作者</div>${author}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">初始化暗号</div>${pan.num}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">初始化协议</div>${pan.license}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">UA代理</div>${pan.ua}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">公众号地址</div>${pan.img}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">网盘万能助手</div>${pan.assistant}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">网盘镜像</div>${pan.mirror}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">RPC管理</div>${pan.d}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">IDM介绍</div>${pan.idm}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">提示文本</div>0、${pan.init[0]}<br>1、${pan.init[1]}<br>2、${pan.init[2]}<br>3、${pan.init[3]}<br>4、${pan.init[4]}<br>5、${pan.init[5]}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">页脚</div>${pan.footer}</label>`;
+			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本版本</div>${realversion}</label>`;
+			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">[上报]<br/>脚本版本</div>${version}</label>`;
+			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本作者</div>${realauthor}</label>`;
+			hideinfo +=`<label class="pl-setting-label"><div class="pl-label">[上报]<br/>脚本作者</div>${author}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化暗号</div>${pan.num}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化协议</div>${pan.license}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>UA代理</div>${pan.ua}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>公众号地址</div>${pan.img}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘万能助手</div>${pan.assistant}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘CDN</div>${pan.mirror}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>RPC管理</div>${pan.d}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>IDM介绍</div>${pan.idm}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>提示文本</div>0、${pan.init[0]}<br>1、${pan.init[1]}<br>2、${pan.init[2]}<br>3、${pan.init[3]}<br>4、${pan.init[4]}<br>5、${pan.init[5]}</label>`;
+			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>Toast页脚</div>${pan.footer}</label>`;
 			hideinfo = '<div>' + hideinfo + '</div>';
 
 			Swal.fire({
@@ -907,7 +897,8 @@
 				icon: 'info',
 				title: '更新日志(关闭按钮在下面哦)',
 				html: `<span>
-				V1.0.8<br>1、修复迅雷网盘勾选文件后仍提示未勾选。<br><br>
+				V1.0.8.1<br>1、修复因重复绑定按钮而导致RPC下载会发送多条下载请求的Bug；<br>2、选择不使用油小猴服务器时，“用ghproxy连接Github仓库”更换为“用jsdelivr连接Github仓库”；<br>3、跟进官方V6.1.4版本，修复移动网盘无法获取链接，支持阿里云盘新域名alipan.com。<br><br>
+				V1.0.8<br>1、修复迅雷网盘无法勾选文件。<br><br>
 				V1.0.7.9<br>1、更新精简网盘元素匹配规则，防止因通知横条而导致不能点到“API下载”以下的按钮。<br><br>
 				V1.0.7.8<br>1、跟进官方V6.1.2，加入V2接口。<br>2、修复百度网盘下载时因为获取不到accessToken而一直转圈。<br><br>
 				V1.0.7.7<br>1、修复百度网盘的按钮会因为主题不同而被改变颜色的Bug；<br>2、更新夸克网盘按钮与界面。<br><br>
@@ -1935,18 +1926,16 @@
 			},true);
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="padding: 0px;" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="padding: 0px;" ">更新日志</div>${update_baidu}</div></div>`);
-			if (pt === 'home') {
-				$toolWrap = $(pan.btn.home);
-			}
+			let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="padding: 0px;" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="padding: 0px;" ">更新日志</div></div></div>`);
+			if (pt === 'home') $toolWrap = $(pan.btn.home);
 			if (pt === 'main') {
 				$toolWrap = $(pan.btn.main);
-				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li>${update_baiduX}</ul></div>`);
+				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li></ul></div>`);
 			}
 			if (pt === 'share') $toolWrap = $(pan.btn.share);
 			if (pt === 'wap') {
 				$toolWrap = $('.main-container');
-				$button = $(`<span id="pl-button-link" class="wapfont none-pointer pl-button baidu-wap-button"><span></span><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu" style="top: 40px; right: 0;"><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p listener-open-wapsetting"">助手设置</li>${update_baiduX}</ul></span>`);
+				$button = $(`<span id="pl-button-link" class="wapfont none-pointer pl-button baidu-wap-button"><span></span><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu" style="top: 40px; right: 0;"><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="baidu-wap-mode pl-button-mode sub cursor-p listener-open-wapsetting"">助手设置</li></ul></span>`);
 				$('header h1[data-v-59779e34]').css({"left":"75%"})
 				$toolWrap.append($button);
 			} else {
@@ -1954,11 +1943,6 @@
 			}
 			this.setBDUSS();
 			this.addPageListener();
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					baidu.addButton();
-				}
-			},5000)
 		},
 
 		addInitButton() {
@@ -2379,10 +2363,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -2445,7 +2429,7 @@
 				});
 				this.getPCSLink();
 			});
-			doc.off('click', '.listener-link-api').on('click', '.listener-link-api', async (e) => {
+			doc.on('click', '.listener-link-api', async (e) => {
 				e.preventDefault();
 				let o = _factory(e);
 				let $width = o.item.find('.pl-progress-inner');
@@ -2618,11 +2602,11 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
-			doc.off('click', '.listener-send-rpc').on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-send-rpc', (e) => {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
-			doc.off('click', '.listener-download-all').on('click', '.listener-download-all', (e) => {
+			doc.on('click', '.listener-download-all', (e) => {
 				$('.pl-item-link').click();
 				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 				setTimeout(
@@ -2698,34 +2682,23 @@
 			},true);
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg></span><ul class="pl-dropdown-menu" style="top: 30px; right: 0;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
+			let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg></span><ul class="pl-dropdown-menu" style="top: 30px; right: 0;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.append($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button').length === 0 && $toolWrap.append($button);
+                })
 			}
 			if (pt === 'share') {
-				let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 16px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
+				let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 16px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 				$button.css({'margin-right': '10px',"height":"36px","width":"auto","padding":"1px 30px"});
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-button').length === 0 && $toolWrap.prepend($button);
+                })
 			}
-			base.createDownloadIframe();
 			this.addPageListener();
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					ali.addButton();
-				}
-			},1000)
+			base.createDownloadIframe();
 		},
 
 		addInitButton() {
@@ -2736,33 +2709,21 @@
 			let $toolWrap;
 			let $button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>(未点亮)</span></div>`);
 			$button.css({"width":"auto"});
-			$button.click(() => base.initDialog());
 			if (pt === 'home') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.append($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button-init').length === 0 && $toolWrap.append($button);
+                })
 			}
 			if (pt === 'share') {
 				let $button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>(未点亮)</span></div>`);
 				$button.css({'margin-right': '10px',"height":"36px","padding":"1px 30px","width":"auto"});
-				$button.click(() => base.initDialog());
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-butto-init').length === 0 && $toolWrap.prepend($button);
+                })
 			}
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					ali.addInitButton();
-				}
-			},1000)
+			$button.click(() => base.initDialog());
 		},
 
 		async getPCSLink() {
@@ -2982,10 +2943,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/ali/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/ali.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3084,32 +3045,21 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="tianyi-button pl-button" id="pl-button-link">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
+			let $button = $(`<div class="tianyi-button pl-button" id="pl-button-link">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			if (pt === 'share') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-button').length === 0 && $toolWrap.prepend($button);
+                })
 			}
-			base.createDownloadIframe();
 			this.addPageListener();
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					tianyi.addButton();
-				}
-			},1000)
+			base.createDownloadIframe();
 		},
 
 		addInitButton() {
@@ -3120,30 +3070,19 @@
 			let $toolWrap;
 			let $button = $(`<div class="tianyi-button pl-button-init" id="pl-button-link">下载助手(未点亮)</div>`);
 			if (pt === 'home') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.append($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button-init').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			if (pt === 'share') {
 				$button.css({'margin-right': '10px'});
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+                base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-button-init').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			$button.click(() => base.initDialog());
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					tianyi.addInitButton();
-				}
-			},1000)
 		},
 
 		async getToken() {
@@ -3359,10 +3298,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/tianyi/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/tianyi.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3481,33 +3420,22 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="xunlei-button pl-button" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span><ul class="pl-dropdown-menu" style="top: 34px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
+			let $button = $(`<div class="xunlei-button pl-button" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span><ul class="pl-dropdown-menu" style="top: 34px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			if (pt === 'share') {
 				$button.css({'margin-right': '10px'});
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-button').length === 0 && $toolWrap.prepend($button);
+                })
 			}
-			base.createDownloadIframe();
 			this.addPageListener();
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					xunlei.addButton();
-				}
-			},1000)
+			base.createDownloadIframe();
 		},
 
 		addInitButton() {
@@ -3518,30 +3446,19 @@
 			let $toolWrap;
 			let $button = $(`<div class="xunlei-button pl-button-init" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手(未点亮)</span></div>`);
 			if (pt === 'home') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.append($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button-init').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			if (pt === 'share') {
 				$button.css({'margin-right': '10px'});
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-button-init').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			$button.click(() => base.initDialog());
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					xunlei.addInitButton();
-				}
-			},1000)
 		},
 
 		getToken() {
@@ -3758,10 +3675,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/xunlei/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/xunlei.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3907,26 +3824,22 @@
 
 			let $toolWrap;
 			if (pt === 'home') {
-				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
+				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 				$button.css({"margin-right":"10px","display":"inline-block"});
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-				}
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button').length === 0 && $toolWrap.prepend($button);
+                });
 			}
 			if (pt === 'share') {
-				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0 !important;color:#fff !important;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
+				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="`+ svg +`"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0 !important;color:#fff !important;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 				$button.css({"margin-right":"10px","display":"inline-block"});
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-				}
+				base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-button').length === 0 && $toolWrap.prepend($button);
+                });
 			}
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					quark.addButton();
-				}
-			},1000)
+			this.addPageListener();
 		},
 
 		addInitButton() {
@@ -3939,29 +3852,18 @@
 			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button-init"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="`+ svg +`"><span>下载助手(未点亮)</span></button></div>`);
 			$button.css({"margin-right":"10px","display":"inline-block"});
 			if (pt === 'home') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button-init').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			if (pt === 'share') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-button-init').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			$button.click(() => base.initDialog());
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					quark.addInitButton();
-				}
-			},1000)
 		},
 
 		async getPCSLink() {
@@ -4139,16 +4041,15 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/quark/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/quark.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			Object.freeze && Object.freeze(pan);
 			pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license') ? this.addButton() : this.addInitButton();
-			this.addPageListener();
 			base.createDownloadIframe();
 		}
 	};
@@ -4253,33 +4154,22 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="yidong-button pl-button btn-top" id="pl-button-link"><span class="yidong-btn">下载助手</span><ul class="pl-dropdown-menu" style="top: 36px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>${update}</ul></div>`);
+			let $button = $(`<div class="yidong-button pl-button btn-top" id="pl-button-link"><span class="yidong-btn">下载助手</span><ul class="pl-dropdown-menu" style="top: 36px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			if (pt === 'share') {
 				$button.removeClass('yidong-button').addClass('yidong-share-button');
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-button').length === 0 && $toolWrap.prepend($button);
+                })
 			}
-			base.createDownloadIframe();
 			this.addPageListener();
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					yidong.addButton();
-				}
-			},1000)
+			base.createDownloadIframe();
 		},
 
 		addInitButton() {
@@ -4290,30 +4180,19 @@
 			let $toolWrap;
 			let $button = $(`<div class="yidong-button pl-button-init btn-top" id="pl-button-link"><span class="yidong-btn">下载助手(未点亮)</span></div>`);
 			if (pt === 'home') {
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.home);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.home, () => {
+                    $toolWrap = $(pan.btn.home);
+                    $('.pl-button-init').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			if (pt === 'share') {
 				$button.removeClass('yidong-button').addClass('yidong-share-button');
-				//let ins = setInterval(() => {
-				$toolWrap = $(pan.btn.share);
-				if ($toolWrap.length > 0) {
-					$toolWrap.prepend($button);
-					//clearInterval(ins);
-				}
-				//}, 50);
+				base.listenElement(pan.btn.share, () => {
+                    $toolWrap = $(pan.btn.share);
+                    $('.pl-button-init').length === 0 && $toolWrap.prepend($button);
+                })
 			}
 			$button.click(() => base.initDialog());
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					yidong.addInitButton();
-				}
-			},1000)
 		},
 
 		getRandomString(len) {
@@ -4365,24 +4244,27 @@
 
 				if (this.detectPage() === 'home') {
 					let body = {
-						"appName": "",
 						"contentID": item.contentID,
-						"commonAccountInfo": {"account": item.owner, "accountType": 1}
+                        "commonAccountInfo": {"account": item.owner, "accountType": 1},
+                        "operation": "0",
+                        "inline": "0",
+                        "extInfo": {"isReturnCdnDownloadUrl": "1"}
 					};
 					let time = new Date(+new Date() + 8 * 3600 * 1000).toJSON().substr(0, 19).replace('T', ' ');
 					let key = this.getRandomString(16);
 					let sign = this.getSign(undefined, body, time, key);
 
 					let res = await base.post(pan.pcs[0], body, {
+						'authorization': base.getCookie('authorization'),
 						'x-huawei-channelSrc': '10000034',
-						'x-inner-ntwk': '2',
-						'mcloud-channel': '1000101',
-						'mcloud-client': '10701',
-						'mcloud-sign': time + "," + key + "," + sign,
-						'content-type': "application/json;charset=UTF-8",
-						'caller': 'web',
-						'CMS-DEVICE': 'default',
-						'x-DeviceInfo': '||9|7.11.0|chrome|102.0.0.0|||windows 10||zh-CN|||',
+                        'x-inner-ntwk': '2',
+                        'mcloud-channel': '1000101',
+                        'mcloud-client': '10701',
+                        'mcloud-sign': time + "," + key + "," + sign,
+                        'content-type': "application/json;charset=UTF-8",
+                        'caller': 'web',
+                        'CMS-DEVICE': 'default',
+						'x-DeviceInfo': '||9|7.12.0|chrome|119.0.0.0|||windows 10||zh-CN|||',
 						'x-SvcType': '1',
 					});
 					if (res.success) {
@@ -4590,10 +4472,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/yidong/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/yidong.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4614,10 +4496,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://ghproxy.com/https://raw.githubusercontent.com/hmjz100/Online-disk-direct-link-download-assistant/main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4693,53 +4575,19 @@
 	})
 
 	// 用于油小猴服务器检测的脚本信息
-	const scriptInfo = GM_info.script;
+	let scriptInfo = GM_info.script;
 
 	// 用于油小猴服务器检测的脚本作者
-	const realauthor = scriptInfo.author;
-	const author = base.getValue('setting_script_author');
+	let realauthor = scriptInfo.author;
+	let author = base.getValue('setting_script_author');
 
 	// 用于油小猴服务器检测的脚本名称
-	const realname = scriptInfo.name;
-	const name = base.getValue('setting_script_name');
+	let realname = scriptInfo.name;
+	let name = base.getValue('setting_script_name');
 
 	// 用于油小猴服务器检测的脚本版本,防止服务器返回更新信息
-	const realversion = scriptInfo.version;
-	const version = base.getValue('setting_script_version');
-
-	// 获取本脚本的GreasyFork信息，以显示更新，有Bug，就不获取了吧
-	/*base.fetchScriptInfo('https://greasyfork.org/zh-CN/scripts/449291.json', 5).then(res => {
-		if(realversion < res.version){
-			update = `
-			<li class="pl-dropdown-menu-item">
-				<a class="pl-a" data-no-instant="1" style="color:#F24C43" href="${res.code_url}" target="_blank">
-					<svg style="animation: load 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M171.31 549.028c-24.558-153.572 59.801-308.76 210.442-367.477 111.637-43.53 232.005-22.71 317.236 39.47l-72.527 117.48 325.245-1.254L835.459 0l-59.547 96.426C650.34 15.104 479.156-11.493 329.258 46.95 121.578 127.91 2.038 337.29 25.64 549.03h145.67z" fill="#F24C43"/><path d="M852.688 464.966c24.536 153.572-59.78 308.78-210.422 367.477-102.693 40.024-215.86 24.94-302.874-29.019 16.57-26.895 65.537-106.198 65.537-106.198L55.17 676.704 203.176 1024l62.053-100.484c125.552 81.322 279.592 101.992 429.489 43.55 207.638-80.982 327.22-290.34 303.618-502.058H852.688z" fill="#F24C43"/></svg>
-					<span style="margin-right: 5px;">更新到${res.version}</span>
-				</a>
-			</li>
-			`;
-			update_baidu = `
-			<a style="color:#F24C43;display: flex;align-items: center;justify-content: center;" class="g-button-menu pl-a" data-no-instant="1" href="https://www.youxiaohou.com/install.html?from=update" target="_blank" >
-				<svg style="animation: load 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M171.31 549.028c-24.558-153.572 59.801-308.76 210.442-367.477 111.637-43.53 232.005-22.71 317.236 39.47l-72.527 117.48 325.245-1.254L835.459 0l-59.547 96.426C650.34 15.104 479.156-11.493 329.258 46.95 121.578 127.91 2.038 337.29 25.64 549.03h145.67z" fill="#F24C43"/><path d="M852.688 464.966c24.536 153.572-59.78 308.78-210.422 367.477-102.693 40.024-215.86 24.94-302.874-29.019 16.57-26.895 65.537-106.198 65.537-106.198L55.17 676.704 203.176 1024l62.053-100.484c125.552 81.322 279.592 101.992 429.489 43.55 207.638-80.982 327.22-290.34 303.618-502.058H852.688z" fill="#F24C43"/></svg>
-				<span style="margin-right: 5px;">更新到${res.version}</span>
-			</a>
-			`;
-			update_baiduX = `
-			<li class="sub cursor-p">
-				<a class="pl-a" data-no-instant="1" style="color:#F24C43" href="https://www.youxiaohou.com/install.html?from=update" target="_blank">
-					<svg style="animation: load 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M171.31 549.028c-24.558-153.572 59.801-308.76 210.442-367.477 111.637-43.53 232.005-22.71 317.236 39.47l-72.527 117.48 325.245-1.254L835.459 0l-59.547 96.426C650.34 15.104 479.156-11.493 329.258 46.95 121.578 127.91 2.038 337.29 25.64 549.03h145.67z" fill="#F24C43"/><path d="M852.688 464.966c24.536 153.572-59.78 308.78-210.422 367.477-102.693 40.024-215.86 24.94-302.874-29.019 16.57-26.895 65.537-106.198 65.537-106.198L55.17 676.704 203.176 1024l62.053-100.484c125.552 81.322 279.592 101.992 429.489 43.55 207.638-80.982 327.22-290.34 303.618-502.058H852.688z" fill="#F24C43"/></svg>
-					<span style="margin-right: 5px;">更新到${res.version}</span>
-				</a>
-			</li>
-			`;
-		} else {
-			update = `
-			`;
-			update_baidu = `
-			`;
-			update_baiduX = ``;
-		}
-	})*/
+	let realversion = scriptInfo.version;
+	let version = base.getValue('setting_script_version');
 
 	/*--- waitForKeyElements(): 一个实用函数，用于Greasemonkey脚本，
 	它可以检测和处理AJAX加载的内容。
@@ -4816,7 +4664,7 @@
 			if (/(pan|yun).baidu.com/.test(location.host)) {
 				baidu.initPanLinker();
 			}
-			if (/www.aliyundrive.com/.test(location.host)) {
+			if (/www.(aliyundrive|alipan).com/.test(location.host)) {
 				ali.initPanLinker();
 			}
 			if (/cloud.189.cn/.test(location.host)) {
