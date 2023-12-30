@@ -1225,7 +1225,7 @@
 				border-color: ${color};
 			}
 			.wp-s-aside-nav__file-list-cate.is-active {
-				background-color: #fff 
+				background-color: #fff
 			}
 			.g-button:hover, .wp-s-pan-file-main__nav-item-sep {
 				transition: all 0.3s ease;
@@ -1791,7 +1791,7 @@
 			});
 			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
-				let target = $(e.currentTarget); 
+				let target = $(e.currentTarget);
 
 				target.find('.icon').remove();
 				target.find('.pl-loading').remove();
@@ -1807,7 +1807,7 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-sendall-rpc', (e) => {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
@@ -2243,7 +2243,7 @@
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-sendall-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
 			if (mode === 'curl') {
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;}
@@ -2587,7 +2587,7 @@
 			});
 			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
-				let target = $(e.currentTarget); 
+				let target = $(e.currentTarget);
 
 				target.find('.icon').remove();
 				target.find('.pl-loading').remove();
@@ -2603,7 +2603,7 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-sendall-rpc', (e) => {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
@@ -2847,7 +2847,7 @@
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-sendall-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
 			if (mode === 'curl')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">前往助手设置修改当前终端类型（${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
@@ -3005,7 +3005,7 @@
 			});
 			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
-				let target = $(e.currentTarget); 
+				let target = $(e.currentTarget);
 
 				target.find('.icon').remove();
 				target.find('.pl-loading').remove();
@@ -3021,7 +3021,7 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-sendall-rpc', (e) => {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
@@ -3215,7 +3215,7 @@
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-sendall-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
 			if (mode === 'curl')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
@@ -3380,7 +3380,7 @@
 			});
 			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
-				let target = $(e.currentTarget); 
+				let target = $(e.currentTarget);
 
 				target.find('.icon').remove();
 				target.find('.pl-loading').remove();
@@ -3396,7 +3396,7 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-sendall-rpc', (e) => {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
@@ -3584,7 +3584,7 @@
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-sendall-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
 			if (mode === 'curl')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
@@ -3754,7 +3754,7 @@
 			});
 			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
-				let target = $(e.currentTarget); 
+				let target = $(e.currentTarget);
 
 				target.find('.icon').remove();
 				target.find('.pl-loading').remove();
@@ -3770,7 +3770,7 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-sendall-rpc', (e) => {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
@@ -3945,7 +3945,7 @@
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-sendall-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
 			if (mode === 'curl')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
@@ -4114,7 +4114,7 @@
 			});
 			doc.on('click', '.listener-link-rpc', async (e) => {
 				e.preventDefault();
-				let target = $(e.currentTarget); 
+				let target = $(e.currentTarget);
 
 				target.find('.icon').remove();
 				target.find('.pl-loading').remove();
@@ -4130,7 +4130,7 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({opacity: '0.5'}, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-sendall-rpc', (e) => {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({opacity: '0.5'}, "slow");
 			});
@@ -4378,7 +4378,7 @@
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-sendall-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
 			if (mode === 'curl')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
