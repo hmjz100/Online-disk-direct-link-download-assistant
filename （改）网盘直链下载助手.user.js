@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.8.2
+// @version           1.0.8.3
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
 // @description       可以获取网盘文件真实下载地址。现已支持百度网盘阿里网盘天翼网盘迅雷网盘夸克网盘移动网盘六大网盘，基于【网盘直链下载助手】修改自6.1.4版本,自用,去推广,修原有BUG,修改界面,甚至比原版还好用！
@@ -49,6 +49,7 @@
 // @connect           aliyundrive.com
 // @connect           aliyundrive.net
 // @connect           alipan.com
+// @connect           alicloudccp.com
 // @connect           189.cn
 // @connect           xunlei.com
 // @connect           quark.cn
@@ -897,6 +898,7 @@
 				icon: 'info',
 				title: '更新日志(关闭按钮在下面哦)',
 				html: `<span>
+				V1.0.8.3<br>1、适配阿里云盘新域名alipan.com。<br><br>
 				V1.0.8.2<br>1、更换新图标。<br><br>
 				V1.0.8.1<br>1、修复因重复绑定按钮而导致RPC下载会发送多条下载请求的Bug；<br>2、选择不使用油小猴服务器时，“用ghproxy连接Github仓库”更换为“用jsdelivr连接Github仓库”；<br>3、跟进官方V6.1.4版本，修复移动网盘无法获取链接，支持阿里云盘新域名alipan.com。<br><br>
 				V1.0.8<br>1、修复迅雷网盘无法勾选文件。<br><br>
@@ -1011,8 +1013,9 @@
 			.swal2-timer-progress-bar{width:100%;height:.25em;background:${color}33 }
 			.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:${color};color:#fff;line-height:2em;text-align:center}
 			.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:${color} }
-			.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:${color} }
-			.swal2-popup {padding: 0 0 1.25em;}
+			.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:${color}}
+			.swal2-popup {padding:0 0 1.25em;flex-direction:column}
+			.swal2-close {position:absolute;top:0;right:0}
 			div:where(.swal2-container) .swal2-html-container{margin: 1em 1.3em 0.3em;}
 			`;
 
@@ -1971,11 +1974,6 @@
 				$toolWrap.prepend($button);
 				$button.click(() => base.initDialog());
 			}
-			setInterval(function(){
-				if(!document.getElementById("pl-button-link")){
-					baidu.addInitButton()
-				}
-			},1000)
 		},
 
 		async getToken() {
@@ -2171,7 +2169,7 @@
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
 								<a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
 								<!--<a class="pl-item-copy" target="_blank" href="${dlink}" title="点击使用浏览器下载" data-filename="${filename}" data-link="${dlink}">传统下载</a>-->
-								<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+								<!--<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>-->
 								<div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
 								<div class="pl-item-progress" style="display: none">
 									<div class="pl-progress">
@@ -2381,18 +2379,18 @@
 
 		convertLinkToAria(link, filename, ua) {
 			filename = base.fixFilename(filename);
-			return encodeURIComponent(`aria2c "${link}" --out "${filename}" --header "Referer: https://www.aliyundrive.com/"`);
+			return encodeURIComponent(`aria2c "${link}" --out "${filename}" --header "Referer: https://${location.host}/"`);
 		},
 
 		convertLinkToBC(link, filename, ua) {
-			let bc = `AA/${encodeURIComponent(filename)}/?url=${encodeURIComponent(link)}&refer=${encodeURIComponent('https://www.aliyundrive.com/')}ZZ`;
+			let bc = `AA/${encodeURIComponent(filename)}/?url=${encodeURIComponent(link)}&refer=${encodeURIComponent(`https://${location.host}/`)}ZZ`;
 			return encodeURIComponent(`bc://http/${base.encode(bc)}`);
 		},
 
 		convertLinkToCurl(link, filename, ua) {
 			let terminal = base.getValue('setting_terminal_type');
 			filename = base.fixFilename(filename);
-			return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L -C - "${link}" -o "${filename}" -e "https://www.aliyundrive.com/"`);
+			return encodeURIComponent(`${terminal !== 'wp' ? 'curl' : 'curl.exe'} -L -C - "${link}" -o "${filename}" -e "https://${location.host}/"`);
 		},
 
 		addPageListener() {
@@ -2442,7 +2440,7 @@
 				let href = dataset.link;
 				let url = await this.getRealLink(dataset.did, dataset.fid);
 				if (url) href = url;
-				base.get(href, {"User-Agent": pan.ua, "Referer": "https://www.aliyundrive.com/"}, 'blob', {filename, index});
+				base.get(href, {"User-Agent": pan.ua, "Referer": `https://${location.host}/`}, 'blob', {filename, index});
 				let startTime = Date.now(); // 记录下载开始时间
 				let prevLoaded = 0; // 上一次的已下载数据量
 				let prevTime = startTime; // 上一次的时间
@@ -2871,11 +2869,11 @@
 				params: [`token:${rpc.token}`, [link], {
 					dir: rpc.dir,
 					out: filename,
-					header: [`Referer: https://www.aliyundrive.com/`]
+					header: [`Referer: https://${location.host}/`]
 				}]
 			};
 			try {
-				let res = await base.post(url, rpcData, {"Referer": "https://www.aliyundrive.com/"}, '');
+				let res = await base.post(url, rpcData, {"Referer": `https://${location.host}/`}, '');
 				if (res.result) return 'success';
 				return 'fail';
 			} catch (e) {
