@@ -34,8 +34,6 @@
 // @match             *://yun.baidu.com/aipan/*
 // @match             *://pan.baidu.com/share/*
 // @match             *://yun.baidu.com/share/*
-// @match             *://www.aliyundrive.com/s/*
-// @match             *://www.aliyundrive.com/drive*
 // @match             *://www.alipan.com/s/*
 // @match             *://www.alipan.com/drive*
 // @match             *://cloud.189.cn/web/*
