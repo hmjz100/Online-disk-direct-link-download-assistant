@@ -1,6 +1,16 @@
-# （改）网盘直链下载助手 | Online disk direct link download assistant
+![welcome](https://socialify.git.ci/hmjz100/Online-disk-direct-link-download-assistant/image?description=1&descriptionEditable=%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%20JavaScript%20%E7%9A%84%E7%BD%91%E7%9B%98%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%E8%8E%B7%E5%8F%96%E5%B7%A5%E5%85%B7&font=Jost&language=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F98228280&name=1&owner=1&pattern=Charlie%20Brown&theme=Auto)
+![GreasyFork Version](https://img.shields.io/greasyfork/v/449291?label=版本&logo=greasyfork&logoColor=black&labelColor=brown&color=grey&style=for-the-badge)
+![GreasyFork Fan Score](https://img.shields.io/badge/dynamic/json?label=得分&url=https%3A%2F%2Fgreasyfork.org%2Fscripts%2F449291.json&query=fan_score&logo=greasyfork&logoColor=black&labelColor=brown&color=gold&style=for-the-badge)
+![GreasyFork Good Rings](https://img.shields.io/badge/dynamic/json?label=好评&url=https%3A%2F%2Fgreasyfork.org%2Fscripts%2F449291.json&query=good_ratings&logo=greasyfork&logoColor=black&labelColor=brown&color=gold&style=for-the-badge)
+![Github Stargazers](https://img.shields.io/badge/dynamic/json?label=星标&url=https%3A%2F%2Fapi.github.com%2Frepos%2FHmjz100%2FOnline-disk-direct-link-download-assistant&query=stargazers_count&link=https%3A%2F%2Fgithub.com%2Fhmjz100%2FOnline-disk-direct-link-download-assistant&logo=github&logoColor=white&labelColor=black&color=gold&style=for-the-badge)
+![GreasyFork Daily Install](https://img.shields.io/badge/dynamic/json?label=日装&url=https%3A%2F%2Fgreasyfork.org%2Fscripts%2F449291.json&query=daily_installs&logo=greasyfork&logoColor=black&labelColor=brown&color=darkcyan&style=for-the-badge)
+![GreasyFork Total Install](https://img.shields.io/badge/dynamic/json?label=总装&url=https%3A%2F%2Fgreasyfork.org%2Fscripts%2F449291.json&query=total_installs&logo=greasyfork&logoColor=black&labelColor=brown&color=darkcyan&style=for-the-badge)
+![Github Forks](https://img.shields.io/badge/dynamic/json?label=复刻&url=https%3A%2F%2Fapi.github.com%2Frepos%2FHmjz100%2FOnline-disk-direct-link-download-assistant&query=forks_count&link=https%3A%2F%2Fgithub.com%2Fhmjz100%2FOnline-disk-direct-link-download-assistant%2Ffork&logo=github&logoColor=white&labelColor=black&color=grey&style=for-the-badge)
 
-可以获取网盘文件真实下载地址。基于【网盘直链下载助手】修改，原作者：[油小猴](https://www.youxiaohou.com/) ，自用，去广告，无需输入“暗号”即可使用，甚至比原版还要好用！
+![GreasyFork Licence](https://img.shields.io/github/license/Hmjz100/Online-disk-direct-link-download-assistant?label=许可&logo=github&logoColor=white&labelColor=black&color=blueviolet&style=for-the-badge)
+![Github Licence](https://img.shields.io/greasyfork/l/449291?label=许可&logo=github&logoColor=white&labelColor=black&color=blueviolet&style=for-the-badge)
+
+自用，去广告，无需输入“暗号”即可使用，甚至比原版还要好用！
 
 ## 说明
 
@@ -29,18 +39,6 @@
 - 如有bug等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
 - 或者在[GreasyFork反馈](https://greasyfork.org/scripts/449291/feedback)，如果看到的话我会尽量修改。
 - Greasy Fork 有人乱举报/(ㄒoㄒ)/~~
-
-## 统计~
-
-![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)
-![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)
-![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)
-![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=得分&rcolor=orange)
-![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=好评&rcolor=darkcyan)
-![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)
-![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=许可证&rcolor=blueviolet)  
-
-![Starchart](https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg)
 
 ## 版本号
 V. 1.0.8.3（改自6.1.4版本）  
@@ -164,4 +162,17 @@ V. 1.0.8.3（改自6.1.4版本）
 
 **如果遇到了只加载出油猴菜单，没有出现“下载助手”按钮的情况，请先打开任意网盘页面，进入脚本菜单中的`⚙ 设置`→在打开的`助手设置`弹窗找到`使用油小猴服务器`→选择`不使用 [用 jsdelivr 连接本项目 Github 仓库](更新可能不及时)`可能会暂时解决该情况。**   
 ![2](https://greasyfork.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd3pKQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9a082a73b5617faa71ad0ae5f048f27c87df4ff6/1.png)
+
+## 统计~
+
+![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)
+![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)
+![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)
+![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=%E5%BE%97%E5%88%86&rcolor=orange)
+![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=%E5%A5%BD%E8%AF%84&rcolor=darkcyan)
+![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)
+![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=%E8%AE%B8%E5%8F%AF%E8%AF%81&rcolor=blueviolet)
+
+![Starchart](https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg)
+![Star History](https://api.star-history.com/svg?repos=hmjz100/Online-disk-direct-link-download-assistant&type=Date)
 --> 
