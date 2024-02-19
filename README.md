@@ -6,7 +6,6 @@
 ![GreasyFork Daily Install](https://img.shields.io/badge/dynamic/json?label=日装&url=https%3A%2F%2Fgreasyfork.org%2Fscripts%2F449291.json&query=daily_installs&logo=greasyfork&logoColor=black&labelColor=brown&color=darkcyan&style=for-the-badge)
 ![GreasyFork Total Install](https://img.shields.io/badge/dynamic/json?label=总装&url=https%3A%2F%2Fgreasyfork.org%2Fscripts%2F449291.json&query=total_installs&logo=greasyfork&logoColor=black&labelColor=brown&color=darkcyan&style=for-the-badge)
 ![Github Forks](https://img.shields.io/badge/dynamic/json?label=复刻&url=https%3A%2F%2Fapi.github.com%2Frepos%2FHmjz100%2FOnline-disk-direct-link-download-assistant&query=forks_count&link=https%3A%2F%2Fgithub.com%2Fhmjz100%2FOnline-disk-direct-link-download-assistant%2Ffork&logo=github&logoColor=white&labelColor=black&color=grey&style=for-the-badge)
-
 ![GreasyFork Licence](https://img.shields.io/github/license/Hmjz100/Online-disk-direct-link-download-assistant?label=许可&logo=greasyfork&logoColor=black&labelColor=brown&color=blueviolet&style=for-the-badge)
 ![Github Licence](https://img.shields.io/greasyfork/l/449291?label=许可&logo=github&logoColor=white&labelColor=black&color=blueviolet&style=for-the-badge)
 
