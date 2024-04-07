@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.8.5
+// @version           1.0.8.6
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
 // @description       一个基于 JavaScript 的网盘文件下载地址获取工具。现已支持百度网盘阿里网盘天翼网盘迅雷网盘夸克网盘移动网盘六大网盘 | 基于【网盘直链下载助手】修改自6.1.6版本 | 自用 | 去推广 | 修原有BUG | 修改界面 | 甚至比原版还好用！
@@ -775,6 +775,7 @@
 				icon: 'info',
 				title: '更新日志',
 				html: `<div>
+				V1.0.8.6<br>1、新增移动云盘会员中心页面，可在网盘中点击“会员中心”按钮查看(但无法使用第三方支付)。<br><br>
 				V1.0.8.5<br>1、跟进官方V6.1.6，修复迅雷网盘分享页面无法选中文件，修复移动云盘无法判断页面。<br><br>
 				V1.0.8.4<br>1、修复因重复绑定按钮而导致命令重复执行的Bug；<br>2、优化调试信息界面排版；<br>3、移除对百度网盘手机网页版的支持。<br><br>
 				V1.0.8.3<br>1、适配阿里云盘新域名alipan.com。<br><br>
@@ -3912,6 +3913,37 @@
 			if (document.getElementById("pl-button-link")) {
 				document.getElementById("pl-button-link").remove()
 			}
+			waitForKeyElements(".adv_swiper_menu", function () {
+				let ad1 = document.getElementsByClassName("adv_swiper_menu")[0];
+				ad1.remove();
+			}, true);
+			waitForKeyElements(".client-bubble", function () {
+				let ad2 = document.getElementsByClassName("client-bubble")[0];
+				ad2.remove();
+			}, true);
+			waitForKeyElements(".avs-box", function () {
+				let ad3 = document.getElementsByClassName("avs-box")[0];
+				ad3.remove();
+			}, true);
+			waitForKeyElements(".client_download_icon", function () {
+				let ui1 = document.getElementsByClassName("client_download_icon")[0];
+				ui1.remove();
+			}, true);
+			waitForKeyElements(".document_top_memberCenter", function () {
+				let vip1 = document.getElementsByClassName("document_top_memberCenter")[0];
+				$(vip1).click(() => {
+					//window.open("https://vip.yun.139.com/vip/", "_blank");
+					Swal.fire({
+						html: `<iframe 
+						style="height: 700px; width: 420px; border: 0;" src="https://vip.yun.139.com/vip/"></iframe>`,
+						allowOutsideClick: false,
+						showCloseButton: true,
+						showConfirmButton: false,
+						heightAuto: false,
+						scrollbarPadding: false,
+					});
+				});
+			}, true);
 			if (!pt) return;
 			let $toolWrap;
 			let $button = $(`<div class="yidong-button pl-button btn-top" id="pl-button-link"><span class="yidong-btn">下载助手</span><ul class="pl-dropdown-menu" style="top: 36px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
@@ -4075,7 +4107,7 @@
 
 			let queue = [];
 			for (const [index, item] of selectList.entries()) {
-				queue.push(this.getFileUrlByOnce(item, index, token));
+				queue.push(this.getFileUrlByOnce(item, index));
 			}
 
 			const res = await Promise.all(queue);
@@ -4193,12 +4225,11 @@
 		},
 
 		detectPage() {
-			let path = location.pathname;
-            if (/^\/disk\/home/.test(path)) return 'home';
-            if (/^\/disk\/main/.test(path)) return 'main';
-            if (/^\/(s|share)\//.test(path)) return 'share';
-			return '';
-		},
+            let path = location.pathname;
+            if (/^\/w/.test(path)) return 'home';
+            if (/^\/link/.test(path)) return 'share';
+            return '';
+        },
 
 		isOnlyFolder() {
 			for (let i = 0; i < selectList.length; i++) {
