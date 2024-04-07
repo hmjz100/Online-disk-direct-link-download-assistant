@@ -24,7 +24,7 @@
 ## 简介
 
 现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎  
-![TamperMonkeyBeta 篡改猴测试版](https://img.shields.io/badge/TamperMonkeyBeta_篡改猴测试版-v5.0.6190-red.svg)
+![TamperMonkeyBeta 篡改猴测试版](https://img.shields.io/badge/TamperMonkeyBeta_篡改猴测试版-v5.1.6194-red.svg)
 ![TamperMonkey 篡改猴](https://img.shields.io/badge/TamperMonkey_篡改猴-v4.19.0-brightgreen.svg)
 ![Violentmonkey 暴力猴](https://img.shields.io/badge/Violentmonkey_暴力猴-v2.15.0-brown.svg)  
 ![Google Chrome-≥76.0](https://img.shields.io/badge/Google_Chrome-≥76.0-yellow.svg)
@@ -40,7 +40,7 @@
 - Greasy Fork 有人乱举报/(ㄒoㄒ)/~~
 
 ## 版本号
-V. 1.0.8.4（改自6.1.4版本）  
+V. 1.0.8.5（改自6.1.6版本）  
 - 如果 此处公布的脚本版本号 与 您获取到本脚本的网站 上公布的脚本版本号不一致，请不要安装，因为那可能是盗脚本的网站   
 例如 MonkeyFork 就是盗用本脚本的网站之一，本脚本目前仅在 Github 与 Greasy(或者Sleazy?)Fork 发布，如果您是在其他渠道获取到本脚本的，请不要安装。
 
@@ -48,6 +48,7 @@ V. 1.0.8.4（改自6.1.4版本）
 
 | 版本号 | 创建日期 | 更新日志 |
 | -------- | -------- | -------- |
+| 1.0.8.5 | 2024年04月07日 | 1、跟进官方V6.1.6，修复迅雷网盘分享页面无法选中文件，修复移动云盘无法判断页面。 |
 | 1.0.8.4 | 2024年04月07日 | 1、修复因重复绑定按钮而导致命令重复执行的Bug；<br>2、优化调试信息界面排版；<br>3、移除对百度网盘手机网页版的支持。 |
 | 1.0.8.3 | 2024年02月11日 | 1、适配阿里云盘新域名alipan.com。 |
 | 1.0.8.2 | 2023年11月29日 | 1、更换新图标。 |
