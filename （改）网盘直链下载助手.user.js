@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.8.6
+// @version           1.0.8.7
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
-// @description       一个基于 JavaScript 的网盘文件下载地址获取工具。现已支持百度网盘阿里网盘天翼网盘迅雷网盘夸克网盘移动网盘六大网盘 | 基于【网盘直链下载助手】修改自6.1.6版本 | 自用 | 去推广 | 修原有BUG | 修改界面 | 甚至比原版还好用！
+// @description       一个基于 JavaScript 的网盘文件下载地址获取工具，支持 百度/阿里/天翼/迅雷/夸克/移动 六大网盘 | 基于【网盘直链下载助手】修改自6.1.6版本 | 开源 - 自用 - 去广 | 改界面 - 添功能 - 修Bug | 不仅能够精简网盘界面 还支持修改网盘界面主题颜色!
 // @license           AGPL-3.0-or-later
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
@@ -20,6 +20,8 @@
 // @resource SwalDark https://unpkg.com/@sweetalert2/theme-dark@5.0.15/dark.min.css
 // @match             *://pan.baidu.com/disk/home*
 // @match             *://yun.baidu.com/disk/home*
+// @match             *://pan.baidu.com/disk/timeline*
+// @match             *://yun.baidu.com/disk/timeline*
 // @match             *://pan.baidu.com/disk/main*
 // @match             *://yun.baidu.com/disk/main*
 // @match             *://pan.baidu.com/youth/pan/main*
@@ -69,7 +71,8 @@
 // @grant             GM_getResourceText
 // ==/UserScript==
 
-(function () {
+(function Panlinker() {
+	'use strict';
 
 	/*
 	防止代码因其他原因被执行多次
@@ -83,14 +86,42 @@
 	网盘直链下载助手
 	以下代码均改自 网盘直链下载助手，作者油小猴
 	*/
-	'use strict';
 
-	// 界面参数
+	/* 全局参数 */
 	let pt = '', selectList = [], params = {}, mode = '', width = '', pan = {}, color = '',
-		doc = $(document), progress = {}, request = {}, ins = {}, idm = {};
+		doc = $(document), progress = {}, request = {}, ins = {}, idm = {}, colored = false,
+		scriptInfo = GM_info.script,
+		realauthor = scriptInfo.author,
+		realname = scriptInfo.name,
+		realversion = scriptInfo.version
+		;
 
 
-	// 准备好对应的元素
+	/* 设置选项 */
+	// Shell类型（用于curl下载）
+	let terminalType = {
+		wc: "Microsoft Windows 命令提示符",
+		wp: "Microsoft Windows PowerShell",
+		lt: "Linux 终端",
+		ls: "Linux Shell",
+		mt: "Apple MacOS 终端",
+	};
+
+	// 使用油小猴服务器
+	let monkeyServer = {
+		v1: "使用 [用油小猴服务器 V1 接口]",
+		v2: "使用 [用油小猴服务器 V2 接口]",
+		no: "不使用 [用 jsdelivr 连接本项目 Github 仓库]"
+	};
+
+	// 更换 百度网盘新界面/阿里云盘/迅雷云盘/移动云盘 主题颜色
+	let assistantTheme = {
+		yes: "更换主题颜色",
+		no: "不更换主题颜色"
+	};
+
+	/* Sweet Alert 2 */
+	// 自定义元素 Class 名（于 showMainDialog() 中）
 	let customClass = {
 		popup: 'pl-popup',
 		header: 'pl-header',
@@ -101,28 +132,7 @@
 		footer: 'pl-footer'
 	};
 
-
-	// 准备好Shell类型（用于curl下载）
-	let terminalType = {
-		wc: "Microsoft Windows 命令提示符",
-		wp: "Microsoft Windows PowerShell",
-		lt: "Linux 终端",
-		ls: "Linux Shell",
-		mt: "Apple MacOS 终端",
-	};
-
-	//准备好信息界面的设置选项
-	let youserver = {
-		v1: "使用 [用油小猴服务器 V1 接口]",
-		v2: "使用 [用油小猴服务器 V2 接口]",
-		no: "不使用 [用 jsdelivr 连接本项目 Github 仓库](更新可能不及时)"
-	};
-	let baidutheme = {
-		yes: "修改主题色",
-		no: "不修改主题色"
-	};
-
-	//准备好右上角的Toast提示
+	// Toast 提示配置
 	let toast = Swal.mixin({
 		toast: true,
 		position: 'top-end',
@@ -136,7 +146,7 @@
 		}
 	});
 
-	//提示的信息内容
+	// Toast 简易调用
 	let message = {
 		success: (text) => {
 			toast.fire({ title: text, icon: 'success' });
@@ -155,9 +165,9 @@
 		}
 	};
 
-	// 封装好要用的函数
+	/* 基础函数 */
 	let base = {
-		// 默认菜单
+		// 创建 GreaseMonkey 菜单
 		registerMenuCommand() {
 			GM_registerMenuCommand('⚙️ 设置', () => {
 				base.showSetting();
@@ -166,11 +176,11 @@
 				base.showUpdateLog();
 			});
 			GM_registerMenuCommand('🛠️ 调试', () => {
-				base.showInfo();
+				base.showDebug();
 			});
 		},
 
-		// 取消点亮按钮按下后运行的
+		// 取消注册
 		unRegisterInit(value) {
 			console.log("【（改）网盘直链下载助手】\n正在注入设置项目...");
 			message.warning("正在注入设置项目...");
@@ -179,16 +189,16 @@
 			history.go(0)
 		},
 
-		// 获取Cookie
+		// 传递 Document Cookie
 		getCookie(name) {
-            let cname = name + "=";
-            let ca = document.cookie.split(';');
-            for (let i = 0; i < ca.length; i++) {
-                let c = ca[i].trim();
-                if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
-                }
-            return "";
-        },
+			let cname = name + "=";
+			let ca = document.cookie.split(';');
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i].trim();
+				if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
+			}
+			return "";
+		},
 
 		/*-- 对象类型判断
 		示例：
@@ -207,7 +217,7 @@
 			return GM_getValue(name);
 		},
 
-		// 修改本地保存的数值（仅用于 Greasemonkey）
+		// 增改本地保存的数值（仅用于 Greasemonkey）
 		setValue(name, value) {
 			GM_setValue(name, value);
 		},
@@ -229,7 +239,7 @@
 			return localStorage.setItem(key, value);
 		},
 
-		// 设置剪贴板（仅用于 Greasemonkey）
+		// 设置剪贴板
 		setClipboard(text) {
 			GM_setClipboard(text, 'text');
 		},
@@ -244,7 +254,7 @@
 			return decodeURIComponent(escape(atob(str)));
 		},
 
-		//数字补零
+		// 数字补零
 		repairTimer(i) {
 			if (i >= 0 && i <= 9) {
 				return "0" + i;
@@ -279,7 +289,7 @@
 			return '';
 		},
 
-		// 根据数组中的每个文件名进行排序，使用了localeCompare方法来比较中文字符串的顺序。
+		// 根据数组中的每个文件名进行排序，使用 localeCompare 方法来比较中文字符串的顺序。
 		sortByName(arr) {
 			const handle = () => {
 				return (a, b) => {
@@ -309,7 +319,8 @@
 			}
 		},
 
-		// 使用Post发送请求
+		/* 请求 */
+		// 使用 Post 发送请求
 		post(url, data, headers, type, maxRetries = 10, currentRetry = 0) {
 			if (this.isType(data) === 'object') {
 				data = JSON.stringify(data);
@@ -349,7 +360,7 @@
 			});
 		},
 
-		// 使用Get发送请求
+		// 使用 Get 发送请求
 		get(url, headers, type, extra, maxRetries = 10, currentRetry = 0) {
 			return new Promise((resolve, reject) => {
 				const sendRequest = () => {
@@ -397,7 +408,7 @@
 			});
 		},
 
-		// 获取最终链接
+		// 使用 Get 发送请求获取直链
 		getFinalUrl(url, headers, maxRetries = 10, currentRetry = 0) {
 			return new Promise((resolve, reject) => {
 				const sendRequest = () => {
@@ -427,27 +438,26 @@
 		},
 
 		// 获取脚本信息
-		fetchScriptInfo(url, retryCount) {
-			return fetch(url)
-				.then(response => response.json())
-				.then(data => {
-					console.log('【（改）网盘直链下载助手】Fetch\n请求地址：' + url + ' (GreasyFork)\n返回结果：', data);
-					return data;
-				})
-				.catch(error => {
-					console.error('【（改）网盘直链下载助手】Fetch\n获取脚本版本时发生错误', error);
-					if (retryCount > 0) {
-						console.log("【（改）网盘直链下载助手】Fetch\n5秒后将重新尝试获取版本");
-						return new Promise(resolve => setTimeout(resolve, 5000))
-							.then(() => {
-								console.log('【（改）网盘直链下载助手】Fetch\n重新尝试获取脚本信息...');
-								return fetchScriptInfo(url, retryCount - 1);
-							});
-					} else {
-						console.error('【（改）网盘直链下载助手】Fetch\n请求出现错误，可能是网络问题\n无法获取脚本信息，达到最大尝试次数。');
-						throw error;
-					}
-				});
+		async fetchScriptInfo(url, retryCount) {
+			try {
+				const response = await fetch(url);
+				const data = await response.json();
+				console.log('【（改）网盘直链下载助手】Fetch\n请求地址：' + url + ' (GreasyFork)\n返回结果：', data);
+				return data;
+			} catch (error) {
+				console.error('【（改）网盘直链下载助手】Fetch\n获取脚本版本时发生错误', error);
+				if (retryCount > 0) {
+					console.log("【（改）网盘直链下载助手】Fetch\n5秒后将重新尝试获取版本");
+					return new Promise(resolve => setTimeout(resolve, 5000))
+						.then(() => {
+							console.log('【（改）网盘直链下载助手】Fetch\n重新尝试获取脚本信息...');
+							return fetchScriptInfo(url, retryCount - 1);
+						});
+				} else {
+					console.error('【（改）网盘直链下载助手】Fetch\n请求出现错误，可能是网络问题\n无法获取脚本信息，达到最大尝试次数。');
+					throw error;
+				}
+			}
 		},
 
 		// RPC测试
@@ -480,6 +490,7 @@
 			});
 		},
 
+		// 将对象转换为 URL 加密
 		stringify(obj) {
 			let str = '';
 			for (var key in obj) {
@@ -497,21 +508,157 @@
 			return str.slice(0, -1); // 去掉末尾的 "&"
 		},
 
-		addStyle(id, tag, css) {
+		// 动态添加样式
+		addStyle(id, tag, css, element) {
 			tag = tag || 'style';
+			element = element || 'body';
 			let doc = document, styleDom = doc.getElementById(id);
 			if (styleDom) styleDom.remove();
 			let style = doc.createElement(tag);
 			style.rel = 'stylesheet';
 			style.id = id;
 			tag === 'style' ? style.innerHTML = css : style.href = css;
-			doc.getElementsByTagName('body')[0].appendChild(style);
+			doc.getElementsByTagName(element)[0].appendChild(style);
 		},
 
+		hexToRgba(hex) {
+			// 去掉 # 号
+			hex = hex.replace(/^#/, '');
+
+			// 如果是四位十六进制颜色值，转换为八位
+			if (hex.length === 4) {
+				hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2] + hex[3] + hex[3];
+			}
+
+			// 解析 RGB 分量
+			var r = parseInt(hex.substring(0, 2), 16);
+			var g = parseInt(hex.substring(2, 4), 16);
+			var b = parseInt(hex.substring(4, 6), 16);
+			var a = '';
+
+			// 如果是八位十六进制颜色值，解析 alpha 通道
+			if (hex.length === 8) {
+				var a = 1;
+				a = parseInt(hex.substring(6, 8), 16) / 255; // 将 alpha 值转换为 0 到 1 之间的小数
+				a = ',' + a
+			}
+
+			// 返回 rgba 格式字符串
+			return r + ', ' + g + ', ' + b + a;
+		},
+
+
+		replaceColors(cssText, baseURI, type, colorMap) {
+			if (!cssText) return '';
+			var colorList = ['#09AAFF', '#cc3235', '#518c17', '#ed944b', '#f969a5', '#bca280', '#574AB8', '#b673ab', '#1d2327', '#18a497', '#637dff', '#0d53ff', '#3181f9', '#f8d800', '#0396ff', '#32ccbc', '#f6416c', '#2271b1', '#59524c', '#ff679a', '#f44236', '#fec107', '#8bc24a', '#2594ed', '#9c28b1']
+			colorList.forEach(function (oldColor) {
+				cssText = cssText.replace(new RegExp(base.hexToRgba(oldColor), 'ig'), base.hexToRgba(color));
+				cssText = cssText.replace(new RegExp(oldColor, 'ig'), color);
+			});
+			if (type === 'other') {
+				// 遍历颜色映射数组，将旧颜色替换为新颜色，并添加过渡效果
+				colorMap.forEach(function (colorPair) {
+					var oldColor = colorPair[0];
+					var newColor = colorPair[1];
+					// 判断新颜色是否为 color
+					cssText = cssText.replace(new RegExp(oldColor, 'ig'), newColor);
+				});
+				return cssText;
+			}
+			if (colorMap) {
+				// 遍历颜色映射数组，将旧颜色替换为新颜色，并添加过渡效果
+				colorMap.forEach(function (colorPair) {
+					var oldColor = colorPair[0];
+					var newColor = colorPair[1];
+					// 判断新颜色是否为 color
+					if (oldColor.includes("#")) {
+						cssText = cssText.replace(new RegExp(oldColor + '(.*?)}', 'ig'), newColor + '$1; ' + 'transition: all 0.1s ease;}');
+					} else {
+						cssText = cssText.replace(new RegExp(oldColor, 'ig'), newColor);
+					}
+				});
+			};
+			if (baseURI) {
+				// 替换相对路径资源为绝对路径
+				cssText = cssText.replace(/url\((?!['"]?(?:data|https?):)['"]?([^'"\)]*)['"]?\)/ig, function (match, p1) {
+					// 如果URL是相对路径，则将其转换为绝对路径
+					var absoluteURL = new URL(p1, baseURI).href;
+					return 'url(' + absoluteURL + ')';
+				});
+			};
+			return cssText;
+		},
+
+		setColors(colorMap, type) {
+			let cssText
+			document.querySelectorAll('link[rel="stylesheet"]').forEach(function (tag) {
+				if (!tag.parentElement) return;
+				// 对于link标签，异步获取其CSS内容
+				fetch(tag.href)
+					.then(response => response.text())
+					.then(responseText => {
+						let id = 'Panlinker-ColorUI-' + tag.href
+						// 替换颜色并添加样式
+						cssText = base.replaceColors(responseText, tag.href, type, colorMap);
+						if (responseText === base.replaceColors(responseText, '', type, colorMap)) return;
+						let newStyle = document.createElement('style');
+						newStyle.id = id;
+						newStyle.textContent = responseText;
+						base.addStyle(id, 'style', cssText, tag.parentElement.tagName || 'head');
+						console.log(`【（改）网盘直链下载助手】UI\n修改 <link> 元素 转 <style> 元素 样式\n元素：`, tag, `\n样式：`, newStyle);
+						tag.remove();
+					});
+			})
+			document.querySelectorAll('[id^="Panlinker-ColorUI-"]').forEach(function (tag) {
+				if (!tag.parentElement) return;
+				let id = tag.id;
+				let parent = tag.parentElement;
+				let element = parent.tagName || 'head';
+				// 替换颜色并添加样式
+				if (
+					tag.innerText === base.replaceColors(tag.innerText, '', type, colorMap)
+				) return;
+				cssText = base.replaceColors(tag.innerText, '', type, colorMap);
+				let newStyle = document.createElement('style');
+				newStyle.id = id;
+				newStyle.textContent = cssText;
+				base.addStyle(id, 'style', cssText, element);
+				console.log(`【（改）网盘直链下载助手】UI\n修改 Panlinker-ColorUI <style> 元素 样式\n元素：`, tag, `\n样式：`, newStyle);
+			});
+			let count = 0;
+			if (!colored) {
+				document.querySelectorAll('style').forEach(function (tag) {
+					if (!tag.parentElement) return;
+					let id = tag.id;
+					let parent = tag.parentElement;
+					let element = parent.tagName || 'head';
+					// 替换颜色并添加样式
+					if (
+						id.includes('Panlinker-UI') ||
+						id.includes('Panlinker-ColorUI') ||
+						id.includes('Panlinker-SweetAlert2') ||
+						id.includes('swal-pub') ||
+						tag.innerText === base.replaceColors(tag.innerText, '', type, colorMap)
+					) return;
+					id = id ? id : `Panlinker-ColorUI-${count++}`
+					cssText = base.replaceColors(tag.innerText, '', type, colorMap);
+					let newStyle = document.createElement('style');
+					newStyle.id = id;
+					newStyle.textContent = cssText;
+					base.addStyle(id, 'style', cssText, element);
+					console.log(`【（改）网盘直链下载助手】UI\n修改 <style> 元素 样式\n元素：`, tag, `\n样式：`, newStyle);
+					tag.remove();
+				});
+				colored = true;
+			}
+		},
+
+		// 延迟
 		sleep(time) {
 			return new Promise(resolve => setTimeout(resolve, time));
 		},
 
+		// 查找 React 组件实例
 		findReact(dom, traverseUp = 0) {
 			const key = Object.keys(dom).find(key => {
 				return key.startsWith("__reactFiber$")
@@ -542,7 +689,7 @@
 			return compFiber.stateNode || compFiber;
 		},
 
-		//注册默认设置
+		// 初始化设置项目
 		initDefaultConfig() {
 			let value = [
 				// RPC 设置
@@ -583,11 +730,23 @@
 				}, {
 					name: 'setting_baidu_theme',
 					value: 'no'
+				}, {
+					name: 'setting_ali_theme',
+					value: 'no'
+				}, {
+					name: 'setting_xunlei_theme',
+					value: 'no'
+				}, {
+					name: 'setting_quark_theme',
+					value: 'no'
+				}, {
+					name: 'setting_yidong_theme',
+					value: 'no'
 				}];
 
 			value.forEach((v) => {
 				// 没有对应的项目就添加上项目
-				base.getValue(v.name) === undefined && base.setValue(v.name, v.value);
+				if (!base.getValue(v.name)) base.setValue(v.name, v.value);
 			});
 		},
 
@@ -595,14 +754,16 @@
 		showSetting() {
 			let dom = '',
 				btn = '',
-				colorList = ['#09AAFF', '#cc3235', '#637df8', '#518c17', '#ed944b', '#f969a5', '#bca280', '#574AB8', '#0d53ff', '#637dff', '#3181f9', '#f8d800', '#0396ff', '#32ccbc', '#f6416c', '#2271b1', '#59524c', '#10171d', '#1d2327', '#18a497'],
-				colorNameList = ['度盘<br>经典蓝', '度盘<br>平安红', '度盘<br>霞光紫', '度盘<br>盎然绿', '度盘<br>周年橙', '度盘<br>幸会粉', '度盘<br>午后棕', '度盘<br>星空紫', '夸克<br>明亮蓝', '阿里<br>云盘紫', '移动<br>彩云蓝', '果核<br>柠檬黄', '果核<br>默认蓝', '果核<br>碧波绿', '果核<br>玫瑰红', '文派<br>默认蓝', '文派<br>咖啡灰', '文派<br>默认黑', 'OpenAI<br>默认黑', 'OpenAI<br>默认青'];
+				colorList = ['#09AAFF', '#cc3235', '#518c17', '#ed944b', '#f969a5', '#bca280', '#b673ab', '#574AB8', '#1d2327', '#18a497', '#637dff', '#0d53ff', '#3181f9', '#f8d800', '#0396ff', '#32ccbc', '#f6416c', '#2271b1', '#59524c', '#ff679a', '#f44236', '#fec107', '#8bc24a', '#2594ed', '#9c28b1'],
+				colorNameList = ['度盘<br/>经典蓝', '度盘<br/>平安红', '度盘<br/>盎然绿', '度盘<br/>周年橙', '度盘<br/>幸会粉', '度盘<br/>午后棕', '度盘<br/>物语紫', '度盘<br/>星空紫', 'OpenAI<br/>默认黑', 'OpenAI<br/>默认青', '度里<br/>霞光紫', '夸克<br/>极简蓝', '移动<br/>彩云蓝', '果核<br/>柠檬黄', '果核<br/>默认蓝', '果核<br/>碧波绿', '果核<br/>玫瑰红', '文派<br/>默认蓝', '文派<br/>咖啡灰', '哔哩<br/>少女粉', '哔哩<br/>高能红', '哔哩<br/>咸蛋黄', '哔哩<br/>早苗绿', '哔哩<br/>宝石蓝', '哔哩<br/>罗兰紫'];
+			dom += `<div style="text-align: center;">带星号的设置项目将在网页刷新后生效</div>`
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://，但不需要写端口与路径" class="swal2-input pl-input listener-rpc-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix下载器为16800" class="swal2-input pl-input listener-rpc-port" value="${base.getValue('setting_rpc_port')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC路径</div><input type="text" placeholder="路径，默认为/jsonrpc" class="swal2-input pl-input listener-rpc-path" value="${base.getValue('setting_rpc_path')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC密钥</div><input type="text" placeholder="无密钥无需填写" class="swal2-input pl-input listener-rpc-token" value="${base.getValue('setting_rpc_token')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC保存</div><input type="text" placeholder="文件下载后保存路径，例如：D:\\Downloads\\" class="swal2-input pl-input listener-rpc-dir" value="${base.getValue('setting_rpc_dir')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">当前RPC</div><div><span id="pl-rpcDomain">${base.getValue('setting_rpc_domain')}</span>:<span id="pl-rpcPort">${base.getValue('setting_rpc_port')}</span><span id="pl-rpcPath">${base.getValue('setting_rpc_path')}</span><button type="button" class="pl-button-mini swal2-confirm swal2-styled listener-rpc-test">测试</button></div></label>`;
+			dom += `<label class="pl-setting-label" style="padding-top:0"><div class="pl-label"></div><span><a href="https://www.youxiaohou.com/zh-cn/motrix.html#使用指南" target="_blank" class="pl-a" data-no-instant="1">RPC配置说明</a>，适用于RPC下载👆</span></label>`;
 
 			colorList.forEach((v, i) => {
 				btn += `<div style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'listener-color' : 'listener-color'}">
@@ -616,18 +777,37 @@
 				dom += `<option value="${k}" ${base.getValue('setting_terminal_type') === k ? 'selected' : ''}>${terminalType[k]}</option>`;
 			});
 			dom += `</select></label>`;
+			dom += `<label class="pl-setting-label" style="padding-top:0"><div class="pl-label"></div><span><a href="https://www.youxiaohou.com/zh-cn/curl.html" target="_blank" class="pl-a" data-no-instant="1">cURL使用教程</a>，适用于cURL下载👆</span></label>`;
 
-			dom += `<label class="pl-setting-label"><div class="pl-label">修改百度网盘界面为助手主题色</div><select class="swal2-select pl-input baidu_theme">`;
-			Object.keys(baidutheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${baidutheme[value]}</option>`; });
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[百度网盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-baidu-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+			dom += `<label class="pl-setting-label" style="padding-top:0"><div class="pl-label"></div><span>旧版页面会美化，新版页面则是更换主题色👆</span></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[阿里云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-ali-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_ali_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
 			dom += `</select></label>`;
 
-			dom += `<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器</div><select class="swal2-select pl-input youxiaohou_server">`;
-			Object.keys(youserver).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_youxiaohou_server') === value ? 'selected' : ''}>${youserver[value]}</option>`; });
+			dom += `<label class="pl-setting-label"><div class="pl-label">[迅雷云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-xunlei-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_xunlei_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[夸克网盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-quark-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_quark_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[移动云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-yidong-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_yidong_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器*</div><select class="swal2-select pl-input listener-youxiaohou-server">`;
+			Object.keys(monkeyServer).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_youxiaohou_server') === value ? 'selected' : ''}>${monkeyServer[value]}</option>`; });
 			dom += `</select></label>`;
 
 			dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
 
-			dom += `<button type="button" style="margin-top: 30px;" class="pl-button-mini swal2-deny swal2-styled listener-register">熄灭已经点亮的按钮</button>`
+			dom += `<button type="button" style="margin-top: 30px;" class="pl-button-mini swal2-deny swal2-styled listener-register">熄灭已经点亮的按钮*</button>`
 
 			dom = '<div>' + dom + '</div>';
 
@@ -642,27 +822,7 @@
 				heightAuto: false,
 				scrollbarPadding: false,
 				footer: pan.footer,
-			}).then((result) => {
-				Swal.fire({
-					title: "设置已保存",
-					icon: 'success',
-					allowOutsideClick: false,
-					showCloseButton: true,
-					showDenyButton: true,
-					confirmButtonText: '刷新',
-					heightAuto: false,
-					scrollbarPadding: false,
-					html: `已经保存设置了哦~ 刷新就生效啦!`,
-					denyButtonText: '取消'
-				}).then((result) => {
-					if (result.isConfirmed) {
-						message.success('刷新中');
-						location.reload();
-					}
-				});
 			});
-
-
 			doc.on('click', '.listener-register', async (e) => {
 				base.unRegisterInit(111111);
 			});
@@ -672,7 +832,9 @@
 					port = base.getValue('setting_rpc_port'),
 					path = base.getValue('setting_rpc_path'),
 					token = base.getValue('setting_rpc_token');
+				if (e.target.innerHTML !== "测试") return;
 				e.target.innerHTML = "等待";
+				e.target.style.backgroundColor = base.getValue('setting_theme_color') + 'D0';
 				let result = await base.rpcTest(domain, port, path, token);
 				if (result === "success") {
 					e.target.innerHTML = "成功";
@@ -684,7 +846,7 @@
 				setTimeout(function () {
 					e.target.innerHTML = "测试";
 					e.target.style.backgroundColor = base.getValue('setting_theme_color');
-				}, 5000)
+				}, 3000)
 			});
 			doc.on('click', '.listener-color', async (e) => {
 				if (e.target.dataset.color) {
@@ -717,50 +879,64 @@
 			doc.on('change', '.listener-terminal', async (e) => {
 				base.setValue('setting_terminal_type', e.target.value);
 			});
-			doc.on('change', '.baidu_theme', async (e) => {
+			doc.on('change', '.listener-baidu-theme', async (e) => {
 				base.setValue('setting_baidu_theme', e.target.value);
 			});
-			doc.on('change', '.youxiaohou_server', async (e) => {
+			doc.on('change', '.listener-ali-theme', async (e) => {
+				base.setValue('setting_ali_theme', e.target.value);
+			});
+			doc.on('change', '.listener-xunlei-theme', async (e) => {
+				base.setValue('setting_xunlei_theme', e.target.value);
+			});
+			doc.on('change', '.listener-quark-theme', async (e) => {
+				base.setValue('setting_quark_theme', e.target.value);
+			});
+			doc.on('change', '.listener-yidong-theme', async (e) => {
+				base.setValue('setting_yidong_theme', e.target.value);
+			});
+			doc.on('change', '.listener-youxiaohou-server', async (e) => {
 				base.setValue('setting_youxiaohou_server', e.target.value);
 			});
 		},
 
-		showInfo() {
-			let hideinfo = '';
+		// 调试信息界面
+		showDebug() {
+			let debugInfo = '';
 			let server = '';
 			if (base.getValue('setting_youxiaohou_server') === 'v1') {
 				server = `https://api.youxiaohou.com/config/?ver=${version}&a=${author}`;
 			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
 				server = `https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`;
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`;
+				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`;
 			} else {
-				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`;
+				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`;
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
-			hideinfo += `<span>以下内容均为脚本自检信息<br>本页面仅作为调试使用<span>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>信息服务器</div>[${base.getValue('setting_youxiaohou_server')}]${server ? server : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本版本</div>${realversion ? realversion : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本作者</div>${realauthor ? realauthor : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[上报]<br/>脚本版本</div>${version ? version : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[上报]<br/>脚本作者</div>${author ? author : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化暗号</div>${pan.num ? pan.num : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化协议</div>${pan.license ? pan.license : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>UA代理</div>${pan.ua ? pan.ua : "此网站暂无"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>公众号码</div>${pan.img ? pan.img : "无法获取"}<img src="${pan.img}"></img></label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>万能助手</div>${pan.assistant ? pan.assistant : "此网站暂无"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘CDN</div>${pan.mirror ? pan.mirror : "此网站暂无"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>RPC管理</div>${pan.d ? pan.d : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>IDM介绍</div>${pan.idm ? pan.idm : "此网盘暂无"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>提示文本</div>${JSON.stringify(pan.init) ? JSON.stringify(pan.init) : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘接口</div>${JSON.stringify(pan.pcs) ? JSON.stringify(pan.pcs) : "无法获取"}</label>`;
-			hideinfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>Toast页脚</div>${pan.footer ? pan.footer : "此网站暂无"}</label>`;
-			hideinfo = '<div>' + hideinfo + '</div>';
+			debugInfo += `<span>以下内容均为脚本自检信息<br/>本页面仅作为调试使用<span>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>信息服务器</div>[${base.getValue('setting_youxiaohou_server')}]${server ? server : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本名称</div>${realname ? realname : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本版本</div>${realversion ? realversion : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本作者</div>${realauthor ? realauthor : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[上报]<br/>脚本版本</div>${version ? version : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[上报]<br/>脚本作者</div>${author ? author : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化暗号</div>${pan.num ? pan.num : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化协议</div>${pan.license ? pan.license : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>UA代理</div>${pan.ua ? pan.ua : "此网站暂无"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>公众号码</div>${pan.img ? `${pan.img}<img src="${pan.img}"></img>` : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>万能助手</div>${pan.assistant ? pan.assistant : "此网站暂无"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘CDN</div>${pan.mirror ? pan.mirror : "此网站暂无"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>RPC管理</div>${pan.d ? pan.d : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>IDM介绍</div>${pan.idm ? pan.idm : "此网盘暂无"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>提示文本</div>${JSON.stringify(pan.init) ? JSON.stringify(pan.init) : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘接口</div>${JSON.stringify(pan.pcs) ? JSON.stringify(pan.pcs) : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>Toast页脚</div>${pan.footer ? pan.footer : "此网站暂无"}</label>`;
+			debugInfo = '<div>' + debugInfo + '</div>';
 
 			Swal.fire({
 				icon: 'info',
 				title: '调试信息',
-				html: hideinfo,
+				html: debugInfo,
 				allowOutsideClick: false,
 				showCloseButton: true,
 				heightAuto: false,
@@ -769,50 +945,51 @@
 			});
 		},
 
-		// 展示更新日志
+		// 更新日志界面
 		showUpdateLog() {
 			Swal.fire({
 				icon: 'info',
 				title: '更新日志',
 				html: `<div>
-				V1.0.8.6<br>1、新增移动云盘会员中心页面，可在网盘中点击“会员中心”按钮查看(但无法使用第三方支付)。<br><br>
-				V1.0.8.5<br>1、跟进官方V6.1.6，修复迅雷网盘分享页面无法选中文件，修复移动云盘无法判断页面。<br><br>
-				V1.0.8.4<br>1、修复因重复绑定按钮而导致命令重复执行的Bug；<br>2、优化调试信息界面排版；<br>3、移除对百度网盘手机网页版的支持。<br><br>
-				V1.0.8.3<br>1、适配阿里云盘新域名alipan.com。<br><br>
-				V1.0.8.2<br>1、更换新图标。<br><br>
-				V1.0.8.1<br>1、修复因重复绑定按钮而导致RPC下载会发送多条下载请求的Bug；<br>2、选择不使用油小猴服务器时，“用ghproxy连接Github仓库”更换为“用jsdelivr连接Github仓库”；<br>3、跟进官方V6.1.4版本，修复移动网盘无法获取链接，支持阿里云盘新域名alipan.com。<br><br>
-				V1.0.8<br>1、修复迅雷网盘无法勾选文件。<br><br>
-				V1.0.7.9<br>1、更新精简网盘元素匹配规则，防止因通知横条而导致不能点到“API下载”以下的按钮。<br><br>
-				V1.0.7.8<br>1、跟进官方V6.1.2，加入V2接口。<br>2、修复百度网盘下载时因为获取不到accessToken而一直转圈。<br><br>
-				V1.0.7.7<br>1、修复百度网盘的按钮会因为主题不同而被改变颜色的Bug；<br>2、更新夸克网盘按钮与界面。<br><br>
-				V1.0.7.6<br>1、修复“注入”功能；<br>2、黑暗模式支持随设置热切换。<br><br>
-				V1.0.7.5<br>1、修复阿里云盘下载逻辑；<br>2、精简代码；<br>3、支持深色模式；<br>4、修改部分提示文本；<br>5、修改部分CSS；<br>6、设置可测试RPC连接。<br><br>
-				V1.0.7.4<br>1、优化下载逻辑；<br>2、修复阿里云盘无法使用API下载。<br><br>
-				V1.0.7.3<br>1、如果出现网络请求错误时支持自动重新请求；<br>2、可选择是否使用油小猴服务器。<br><br>
-				V1.0.7.2<br>1、修复使用RPC下载时会重复发送链接的Bug。<br><br>
-				V1.0.7.1<br>1、[实验功能，不影响正常使用]支持百度网盘手机网页版，勾选文件后可在顶栏找到“下载助手”按钮。<br><br>
-				V1.0.7<br>1、重构夸克网盘、阿里云盘按钮。<br><br>
-				V1.0.6.9<br>1、下载窗口加入关闭按钮。<br><br>
-				V1.0.6.8<br>1、修复夸克网盘按钮错位。<br><br>
-				V1.0.6.7<br>1、将百度网盘界面修改为主题色，可在设置选择是否修改；<br>2、增加主题色名称，更改部分内容颜色；<br>3、移动云盘API下载支持批量复制；<br>4、优化控制台输出结果；<br>5、百度网盘API下载不使用IDM时可以显示剩余时间；<br>6、“取消点亮按钮”按钮的位置现已移动到设置页面。<br>7、homo特有的彩蛋又回来力(喜)。<br><br>
-				V1.0.6.6<br>1、修复暗号错误。<br><br>
-				V1.0.6.5<br>1、修复即使输入正确暗号也不能成功点亮按钮的服务器错误。<br><br>
-				V1.0.6.4<br>1、跟进官方V6.1.1版本，修复阿里云盘获取下载链接时的问题。<br><br>
-				V1.0.6.3<br>1、照顾小屏幕用户，将始终显示复制全部链接的按钮；<br>2、增加取消下载时的动画。<br><br>
-				V1.0.6.2<br>1、修复部分界面错位，实现CSS内置；<br>2、百度网盘界面将变得更加简洁。<br><br>
-				V1.0.6.1<br>1、新增百度云盘API下载支持复制链接；<br>2、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；<br>3、修改CSS，界面会出现更多的主题色；<br>4、支持在游小猴官网查看暗号；<br>5、修复部分语法错误。<br><br>
-				V1.0.6<br>1、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；<br>2、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。<br><br>
-				V1.0.5.5<br>1、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br>2、修改一些文本以及提供给服务器的信息。<br><br>
-				V1.0.5.4<br>1、小修小改css，让主题色出现在更多地方；<br>2、修改下载链接获取失败的提示；<br>3、增加更多的主题色，可在助手设置查看；<br>4、homo彩蛋被删去力（悲）。<br><br>
-				V1.0.5.3<br>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br><br>
-				V1.0.5.2<br>1、增加脚本信息菜单（没有用）；<br>2、优化阿里云盘显示svg图片；<br>3、修改弹窗按钮颜色。<br><br>
-				V1.0.5.1<br>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br><br>
-				V1.0.5<br>1、跟进官方V5.0.4版本；<br>2、小改动，照着官方版本更正文件名称检测；<br>3、保留彩蛋，但必须舍弃官方暗号。<br><br>
-				V1.0.4<br>大改！<br>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br>4、增加“取消点亮按钮”油猴菜单；<br>5、修改部分css，使其与选择的主题更贴切。<br><br>
-				V1.0.3<br>1、增加一个小彩蛋； 提示：<br>homo（需在未点亮按钮状态触发）<br>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br>2、修改/增加默认主题色。<br><br>
-				V1.0.2<br>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br>2、修改部分提示文字，使文字更容易复制。 <br><br>
-				V1.0.1<br>1、去除更新提示；<br>2、更新Sweetalert2至11版本；<br>3、部分CDN节点更换为jsdelivr。<br><br>
-				V1.0.0<br>1、增加“注入”功能（bushi）；<br>2、去除广告。
+				V1.0.8.7<br/>1、修复在阿里云盘分享页面下点击“未点亮”按钮时没有任何反应的Bug；<br/>2、更新并优化网盘界面精简规则；<br/>3、支持更换 百度网盘、阿里云盘、迅雷云盘、夸克网盘、移动云盘 界面的主题颜色。<br/><br/>
+				V1.0.8.6<br/>1、新增移动云盘会员中心页面，可在网盘中点击“会员中心”按钮查看(但无法使用第三方支付)。<br/><br/>
+				V1.0.8.5<br/>1、跟进官方V6.1.6，修复迅雷网盘分享页面无法选中文件，修复移动云盘无法判断页面。<br/><br/>
+				V1.0.8.4<br/>1、修复因重复绑定按钮而导致命令重复执行的Bug；<br/>2、优化调试信息界面排版；<br/>3、移除对百度网盘手机网页版的支持。<br/><br/>
+				V1.0.8.3<br/>1、适配阿里云盘新域名alipan.com。<br/><br/>
+				V1.0.8.2<br/>1、更换新图标。<br/><br/>
+				V1.0.8.1<br/>1、修复因重复绑定按钮而导致RPC下载会发送多条下载请求的Bug；<br/>2、选择不使用油小猴服务器时，“用ghproxy连接Github仓库”更换为“用jsdelivr连接Github仓库”；<br/>3、跟进官方V6.1.4版本，修复移动网盘无法获取链接，支持阿里云盘新域名alipan.com。<br/><br/>
+				V1.0.8<br/>1、修复迅雷网盘无法勾选文件。<br/><br/>
+				V1.0.7.9<br/>1、更新精简网盘元素匹配规则，防止因通知横条而导致不能点到“API下载”以下的按钮。<br/><br/>
+				V1.0.7.8<br/>1、跟进官方V6.1.2，加入V2接口。<br/>2、修复百度网盘下载时因为获取不到accessToken而一直转圈。<br/><br/>
+				V1.0.7.7<br/>1、修复百度网盘的按钮会因为主题不同而被改变颜色的Bug；<br/>2、更新夸克网盘按钮与界面。<br/><br/>
+				V1.0.7.6<br/>1、修复“注入”功能；<br/>2、黑暗模式支持随设置热切换。<br/><br/>
+				V1.0.7.5<br/>1、修复阿里云盘下载逻辑；<br/>2、精简代码；<br/>3、支持深色模式；<br/>4、修改部分提示文本；<br/>5、修改部分CSS；<br/>6、设置可测试RPC连接。<br/><br/>
+				V1.0.7.4<br/>1、优化下载逻辑；<br/>2、修复阿里云盘无法使用API下载。<br/><br/>
+				V1.0.7.3<br/>1、如果出现网络请求错误时支持自动重新请求；<br/>2、可选择是否使用油小猴服务器。<br/><br/>
+				V1.0.7.2<br/>1、修复使用RPC下载时会重复发送链接的Bug。<br/><br/>
+				V1.0.7.1<br/>1、[实验功能，不影响正常使用]支持百度网盘手机网页版，勾选文件后可在顶栏找到“下载助手”按钮。<br/><br/>
+				V1.0.7<br/>1、重构夸克网盘、阿里云盘按钮。<br/><br/>
+				V1.0.6.9<br/>1、下载窗口加入关闭按钮。<br/><br/>
+				V1.0.6.8<br/>1、修复夸克网盘按钮错位。<br/><br/>
+				V1.0.6.7<br/>1、将百度网盘界面修改为主题色，可在设置选择是否修改；<br/>2、增加主题色名称，更改部分内容颜色；<br/>3、移动云盘API下载支持批量复制；<br/>4、优化控制台输出结果；<br/>5、百度网盘API下载不使用IDM时可以显示剩余时间；<br/>6、“取消点亮按钮”按钮的位置现已移动到设置页面。<br/>7、homo特有的彩蛋又回来力(喜)。<br/><br/>
+				V1.0.6.6<br/>1、修复暗号错误。<br/><br/>
+				V1.0.6.5<br/>1、修复即使输入正确暗号也不能成功点亮按钮的服务器错误。<br/><br/>
+				V1.0.6.4<br/>1、跟进官方V6.1.1版本，修复阿里云盘获取下载链接时的问题。<br/><br/>
+				V1.0.6.3<br/>1、照顾小屏幕用户，将始终显示复制全部链接的按钮；<br/>2、增加取消下载时的动画。<br/><br/>
+				V1.0.6.2<br/>1、修复部分界面错位，实现CSS内置；<br/>2、百度网盘界面将变得更加简洁。<br/><br/>
+				V1.0.6.1<br/>1、新增百度云盘API下载支持复制链接；<br/>2、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；<br/>3、修改CSS，界面会出现更多的主题色；<br/>4、支持在游小猴官网查看暗号；<br/>5、修复部分语法错误。<br/><br/>
+				V1.0.6<br/>1、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；<br/>2、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘。<br/><br/>
+				V1.0.5.5<br/>1、感谢<a href="https://github.com/Night-stars-1">Night-stars-1</a>的帮助，修复因为原作者服务器导致的初始化暗号识别错误；<br/>2、修改一些文本以及提供给服务器的信息。<br/><br/>
+				V1.0.5.4<br/>1、小修小改css，让主题色出现在更多地方；<br/>2、修改下载链接获取失败的提示；<br/>3、增加更多的主题色，可在助手设置查看；<br/>4、homo彩蛋被删去力（悲）。<br/><br/>
+				V1.0.5.3<br/>1、修啦修啦，阿里云盘可以摸到下载菜单了。<br/><br/>
+				V1.0.5.2<br/>1、增加脚本信息菜单（没有用）；<br/>2、优化阿里云盘显示svg图片；<br/>3、修改弹窗按钮颜色。<br/><br/>
+				V1.0.5.1<br/>1、修复在切换按钮主题后夸克网盘不能正常显示按钮。<br/><br/>
+				V1.0.5<br/>1、跟进官方V5.0.4版本；<br/>2、小改动，照着官方版本更正文件名称检测；<br/>3、保留彩蛋，但必须舍弃官方暗号。<br/><br/>
+				V1.0.4<br/>大改！<br/>1、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；<br/>2、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；<br/>【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】<br/>3、修改阿里云盘和夸克网盘下载助手按钮样式；<br/>4、增加“取消点亮按钮”油猴菜单；<br/>5、修改部分css，使其与选择的主题更贴切。<br/><br/>
+				V1.0.3<br/>1、增加一个小彩蛋； 提示：<br/>homo（需在未点亮按钮状态触发）<br/>【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】<br/>2、修改/增加默认主题色。<br/><br/>
+				V1.0.2<br/>1、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；<br/>2、修改部分提示文字，使文字更容易复制。 <br/><br/>
+				V1.0.1<br/>1、去除更新提示；<br/>2、更新Sweetalert2至11版本；<br/>3、部分CDN节点更换为jsdelivr。<br/><br/>
+				V1.0.0<br/>1、增加“注入”功能（bushi）；<br/>2、去除广告。
 				</div>`,
 				allowOutsideClick: false,
 				showCloseButton: false,
@@ -822,7 +999,7 @@
 			});
 		},
 
-		// 创建标签
+		// 创建浮动标签
 		createTip() {
 			$('body').append('<div class="pl-tooltip"></div>');
 
@@ -848,6 +1025,7 @@
 			return $('<div class="pl-loading"><div class="pl-loading-box"><div><div></div><div></div></div></div></div>');
 		},
 
+		// 创建下载用的隐藏 iframe
 		createDownloadIframe() {
 			let $div = $('<div style="padding:0;margin:0;display:block"></div>');
 			let $iframe = $('<iframe src="javascript:;" id="downloadIframe" style="display:none"></iframe>');
@@ -855,6 +1033,7 @@
 			$('body').append($div);
 		},
 
+		// 获取镜像列表
 		getMirrorList(link, mirror, thread = 2) {
 			let host = new URL(link).host;
 			let mirrors = [];
@@ -867,6 +1046,7 @@
 			return mirrors.join('\n');
 		},
 
+		// 监听元素出现并执行回调
 		listenElement(element, callback) {
 			let checkInterval = 1000; // 检查元素的间隔时间（毫秒）
 			let wasElementFound = false; // 用于跟踪元素是否之前已经找到
@@ -884,21 +1064,26 @@
 			checkElement();
 		},
 
+		// 创建基础样式
 		addPanLinkerStyle() {
 			color = base.getValue('setting_theme_color');
 
 			let swalcss = `
-			.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:${color} transparent ${color} transparent }
+			.swal2-styled{transition: all 0.2s ease;}
+			.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:${color} transparent }
 			.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:${color};color:#fff;font-size:1em}
+			.swal2-styled.swal2-confirm:hover{background-color:${color}90;}
 			.swal2-styled.swal2-confirm:focus{box-shadow:0 0 0 3px ${color}80 }
+			.swal2-styled.swal2-deny:hover{background-color:#dc374190;}
 			.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
 			.swal2-timer-progress-bar{width:100%;height:.25em;background:${color}33 }
 			.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:${color};color:#fff;line-height:2em;text-align:center}
 			.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:${color} }
 			.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:${color}}
 			.swal2-popup {padding:0 0 1.25em;flex-direction:column}
-			.swal2-close {position:absolute;top:0;right:0}
+			.swal2-close {position:absolute;top:1px;right:1px;transition: all 0.2s ease;}
 			div:where(.swal2-container) .swal2-html-container{margin: 1em 1.3em 0.3em;}
+			div:where(.swal2-container) button:where(.swal2-close):hover {color:${color};font-size:60px!important}
 			`;
 
 			// 先监听颜色方案变化 Panlinker-SweetAlert2-Default
@@ -924,15 +1109,18 @@
 
 
 			let uicss = `
-			body::-webkit-scrollbar { display: none }
-			::-webkit-scrollbar { width: 6px; height: 10px }
-			::-webkit-scrollbar-track { border-radius: 0; background: none }
-			::-webkit-scrollbar-thumb { background-color: rgba(85,85,85,.4) }
-			::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb:hover { border-radius: 5px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2) }
-			::-webkit-scrollbar-thumb:hover { background-color: rgba(85,85,85,.3) }
+			::-webkit-scrollbar { width: 8px; height: 8px; transition: all 0.2s ease;}
+			::-webkit-scrollbar-track { border-radius: 10px; background: #fff; }
+			::-webkit-scrollbar-thumb,
+			::-webkit-scrollbar-thumb:hover { border-radius: 10px; }
+			::-webkit-scrollbar-thumb { background-color: ${color}90 }
+			::-webkit-scrollbar-thumb:hover { background-color: ${color}D0 }
 			.swal2-popup { font-size: 16px }
+			.pl-a { color: ${color}; }
+			.pl-a:hover { color: ${color}90; }
 			.pl-popup { font-size: 12px; width: 90%;}
 			.pl-popup a { color: ${color}; }
+			.pl-popup a:hover { color: ${color}90; }
 			.pl-header { padding: 0;align-items: flex-start; border-bottom: 1px solid #eee; margin: 0 0 10px; padding: 0 0 5px; }
 			.pl-title { font-size: 16px; line-height: 1;white-space: nowrap; text-overflow: ellipsis;}
 			.pl-content { padding: 0; font-size: 12px; }
@@ -963,12 +1151,12 @@
 			.pl-btn-warning { background: #da9328; }
 			.pl-btn-warning { background: #da9328; }
 			.pl-btn-danger { background: #cc3235; }
-			.pl-button-mini {padding: 5px 10px; }
-			.pl-dropdown-menu-item {height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: ${color}; transition: all 0.3s ease;}
+			.pl-button-mini { padding: 5px 10px; }
+			.pl-dropdown-menu-item {height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: ${color}; transition: all 0.2s ease;}
 			.pl-dropdown-menu-item:hover { background-color: ${color}15;}
-			.pl-button-mode {padding: 0px; padding-left: 0px !important; color: ${color} !important; font-size: 70%; transition: all 0.3s ease;}
+			.pl-button-mode {padding: 0px; padding-left: 0px !important; color: ${color} !important; font-size: 70%; transition: all 0.2s ease;}
 			.pl-button-mode:hover {background-color: ${color}33 !important;}
-			.pl-button, .pl-dropdown-menu { transition: all 0.3s ease;}
+			.pl-button, .pl-dropdown-menu { transition: all 0.2s ease;}
 			.pl-button .pl-dropdown-menu { display: none;}
 			.pl-button:hover .pl-dropdown-menu { display: block; }
 			.pl-button-init { opacity: 0.5; animation: easeInitOpacity 1.2s 3; animation-fill-mode:forwards }
@@ -983,8 +1171,10 @@
 				left: 65%;
 				z-index: 99999;
 			}
-			.ali-button {border: 0 solid transparent;font-size: 14px;margin-left: 20px;padding: 1px 12px;position: relative;height: 32px;width: 32px;background: linear-gradient(129.12deg, ${color} 0%, rgba(99, 125, 255, 0.75) 100%);border-radius: 100px;display: flex;align-items: center;justify-content: center;color: var(--basic_white);cursor: pointer;transition: all .3s ease;}
-			.ali-button:hover {background: linear-gradient(129.12deg, #446dff 0%, ${color} 100%);}
+			/* background: linear-gradient(129.12deg, ${color} 0%, rgba(99, 125, 255, 0.75) 100%); */
+			/* background: linear-gradient(129.12deg, #446dff 0%, ${color} 100%); */
+			.ali-button {background: ${color};border: 0 solid transparent;font-size: 14px;margin-left: 20px;padding: 1px 12px;position: relative;height: 32px;border-radius: 100px;display: flex;align-items: center;justify-content: center;color: var(--basic_white);cursor: pointer;transition: all .3s ease;}
+			.ali-button:hover {background: ${color}D0}
 			.ali-btn-icon {vertical-align: -0.2em;}
 			.tianyi-button {margin-right: 20px; padding: 4px 12px; border-radius: 4px; color: #fff; font-size: 12px; border: 1px solid ${color}; background: ${color}; cursor: pointer; position: relative;}
 			.tianyi-button:hover {border-color: ${color}b0; background: ${color}b0;}
@@ -1006,7 +1196,8 @@
 			.pl-label { flex: 0 0 100px;text-align:left; }
 			.pl-input { flex: 1; padding: 8px 10px !important; border: 1px solid #c2c2c2; border-radius: 5px; font-size: 14px !important; min-width: 300px; margin: 0;darktheme}
 			.init-input {
-				width: 373px;
+				width: 400px;
+				margin: 1em 1em 3px;
 				font-size: 20px;
 				text-align: center;
 				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
@@ -1039,7 +1230,7 @@
 			.pl-loading { width: 16px;height: 16px;display: inline-block;overflow: hidden;background: none;}
 			.pl-loading-box { width: 100%;height: 100%;position: relative;transform: translateZ(0) scale(0.16);backface-visibility: hidden;transform-origin: 0 0;}
 			.pl-loading-box div { box-sizing: content-box; }
-			.pl-dropdown-menu {position: absolute;padding: 5px 0;color: ${color};background: themecolor;z-index: 999;width: 110px;border-radius: 10px;box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%); text-align: center; border: none; transition: all 0.3s ease;}
+			.pl-dropdown-menu {position: absolute;padding: 5px 0;color: ${color};background: themecolor;z-index: 999;width: 110px;border-radius: 10px;box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%); text-align: center; border: none; transition: all 0.2s ease;}
 			.swal2-container { z-index:100000; }
 			body.swal2-height-auto { height: inherit; }
 
@@ -1060,7 +1251,7 @@
 				color: white!important;
 			}
 			/* 百度网盘 */
-			:not([class*="rwl-exempt"]) ::selection {
+			:not([class^="rwl-exempt"]) ::selection {
 				background-color: ${color}!important;
 				background: ${color}!important;
 				color: white!important;
@@ -1089,66 +1280,224 @@
 			}
 
 
-			let baiducss = `
-			.wp-s-aside-nav__file-list-all.is-active.is-exact-active, .wp-s-aside-nav__sub-container.is-active, .wp-s-aside-nav__sub-item.is-active, .wp-s-aside-nav__main-item.is-active, .wp-s-agile-tool-bar__h-action-button:hover, .u-button--text, .wp-s-search .u-input__inner:focus+.u-input__suffix .wp-s-search__search-text, .wp-s-search .u-input__inner:hover+.u-input__suffix .wp-s-search__search-text, .wp-s-pan-list__file-name-title-text:hover, .aiTools-aside__item--active, .wp-s-pan-table__sort .icon.active, .g-button, .u-button--week, .nd-list-name__title-text:hover, .NHcGw .open-enable .file-name a:hover, .NHcGw .open-enable .file-name a:active, .BNfIyPb .cEefyz.open-enable .file-name a:hover, .BNfIyPb .cEefyz.open-enable .file-name a:active, .wp-s-pan-file-main__nav-item-title, .theme-primary-text, .icon.active, .wrapper .blueBtn[data-v-c74cfc74], .module-timeline-ruler .hover-day-desc .day-desc[data-v-08d8abbe], .imc-edit-keyword__breadcrumb-golist, .imc-edit-keyword__bottom-wrapper .u-button--week.is-disabled, .imc-keyword-list__table-list .action-btn {
-				color: ${color};
-			}
-			.wp-s-aside-nav__file-list-all.is-active.is-exact-active, .wp-s-agile-tool-bar__h-more-group, .wp-s-pan-table__body-row:hover, .wp-s-agile-tool-bar__h-action, .aiTools-aside__item--active, .wp-s-agile-tool-bar__h-action.is-need-left-sep+.is-need-left-sep:after, .wp-s-aside-nav__sub-item.is-active, .NHcGw .jlilR9go, .NHcGw .vzxrm4R, .u-button--week, .u-button--week:focus, .u-button--week:hover, .g-dropdown-button .menu .g-button-menu:hover, .xGLMIab .fufHyA:hover, .module-timeline-ruler .hover-day-desc .day-desc[data-v-08d8abbe], .imc-edit-keyword__bottom-wrapper .u-button--week.is-disabled, .wp-s-pan-table__body-row.selected, .nd-table__body-row.selected {
-				transition: all 0.3s ease;
-				background-color: ${color}10;
-				background: ${color}10;
-			}
-			.mzf_new_btn, .u-button--primary, .wp-s-aside-nav__quota-progress-rate, .u-checkbox__input.is-checked .u-checkbox__inner, .u-checkbox__input.is-indeterminate .u-checkbox__inner, .g-button-blue, .g-button-blue-large, .select, .m-button, .u-tabs__active-bar, .module-timeline-ruler .line-current[data-v-08d8abbe], .module-timeline-ruler .line-hover[data-v-08d8abbe], .module-timeline-ruler .line-current[data-v-08d8abbe]:after, .module-timeline-ruler .line-hover[data-v-08d8abbe]:after, .u-switch.is-checked .u-switch__core {
-				transition: all 0.3s ease;
-				background-color: ${color};
-			}
-			.wp-s-pan-table__body-row:hover, .wp-s-search .u-input--small .u-input__inner:hover, .u-checkbox__input.is-checked .u-checkbox__inner, .u-checkbox__inner:hover, .u-checkbox__input.is-indeterminate .u-checkbox__inner, .nd-table__body-row:hover .u-checkbox__inner, .NHcGw .jlilR9go, .NHcGw .vzxrm4R, .u-button--week, .u-button--primary, .g-button, .u-switch.is-checked .u-switch__core {
-				transition: all 0.3s ease;
-				border-color: ${color};
-			}
-			.wp-s-aside-nav__file-list-cate.is-active {
-				background-color: #fff
-			}
-			.g-button:hover, .wp-s-pan-file-main__nav-item-sep {
-				transition: all 0.3s ease;
-				color: ${color}d0;
-			}
-			.g-button-blue:hover, .g-button.g-button-blue-large:hover {
-				transition: all 0.3s ease;
-				color: ${color}d0;
-				background-color: ${color}b0;
-			}
-			.g-button:hover .icon {
-				color: ${color}d0;
-			}
-			.back-old-version {
-				background: #f1f3f8;
-				border-radius: 32px;
-				width: 30px;
-				height: 30px;
-				display: flex;
-				justify-content: center;
-			}
-			`
+
 			if (/(pan|yun).baidu.com/.test(location.host) && base.getValue('setting_baidu_theme') === 'yes') {
-				this.addStyle('Panlinker-BaiduUI', 'style', baiducss);
+				base.addStyle('Panlinker-UI-Baidu', 'style', `
+				#layoutMain,
+				.DxdbeCb {
+					border-radius: 10px;
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: 0;
+					background: #ffffffA0 !important
+				}
+				.KPDwCE,
+				.DxdbeCb .OFaPaO .tanwePYr,
+				.xGLMIab .fufHyA:hover,
+				.module-search-timeline .form-box {
+					background: #ffffffA0 !important;
+				}
+				.KPDwCE .JDeHdxb,
+				.NHcGw .AuPKyz,
+				.xGLMIab .tvPMvPb,
+				.xGLMIab .FcQMwt,
+				.cazEfA .yfHIsP,
+				.hscjZ4QL .bbxnZ0Bq .ehnyLxWZ span,
+				.module-topToolBar,
+				.module-timeline-view .timeline-title-curday {
+					background: transparent !important;
+					border-bottom: 0;
+				}
+				.MdLxwM {
+					background :#fff !important;
+				}
+				.aside-absolute-container .QGOvsxb .remainingSpaceUi_span {
+					background: ${color} !important;
+					border-right: #fff 1px solid;
+					border-bottom: #fff 1px solid;
+				}
+				.xtJbHcb .CDaavKb .KQcHyA {
+					background: rgb(244,207,0) !important;
+					padding: 8px 15px;
+				}
+				.xtJbHcb .web-header-nav-new-version-inner {
+					background: ${color} !important;
+					padding: 8px 15px;
+					line-height: 15px;
+					width: auto;
+					height: auto;
+				}
+				a {
+					transition: all 0.2s ease !important;
+				}
+				`, 'body');
+			}
+			if (/(pan|yun).baidu.com/.test(location.host) && location.pathname !== '/disk/home' && base.getValue('setting_baidu_theme') === 'yes') {
+
+				window.onload = base.setColors([
+					['#717fff', `${color}`],
+					['#717FFF', `${color}`],
+					['#06a8ff', `${color}`],
+					['#06A8FF', `${color}`],
+					['#06a7ff', `${color}`],
+					['#06A7FF', `${color}`],
+					['#dcdfe6', `${color}`],
+					['#DCDFE6', `${color}`],
+					['#0095ff', `${color}`],
+					['#0095FF', `${color}`],
+					['#09aaff', `${color}`],
+					['#09AAFF', `${color}`],
+					['#0ca6ff', `${color}`],
+					['#0CA6FF', `${color}`],
+					['#5040ff', `${color}`],
+					['#5040FF', `${color}`],
+					['#454d5a', `${color}`],
+					['#454D5A', `${color}`],
+					['#a2abbd', `${color}`],
+					['#A2ABBD', `${color}`],
+					['#030b1a', `${color}`],
+					['#030B1A', `${color}`],
+					['#afb3bf', `${color}`],
+					['#AFB3BF', `${color}`],
+					['#ff436a', `${color}`],
+					['#FF436A', `${color}`],
+					['#03081a', `${color}`],
+					['#03081A', `${color}`],
+					['#2974b6', `${color}`],
+					['#2974B6', `${color}`],
+					['#0596e6', `${color}`],
+					['#0596E6', `${color}`],
+
+					['#C3EAFF', `${color}`],
+					['#c0d9fe', `${color}50`],
+					['#0098EA', `${color}D0`],
+
+					['#38b9ff', `${color}D0`],
+					['#38B9FF', `${color}D0`],
+					['#42d8ff', `${color}D0`],
+					['#42D8FF', `${color}D0`],
+					['#a48dff', `${color}D0`],
+					['#A48DFF', `${color}D0`],
+					['#6b79f2', `${color}D0`],
+					['#6B79F2', `${color}D0`],
+
+					['#9c86f2', `${color}90`],
+					['#9C86F2', `${color}90`],
+
+					['#fafafc', `${color}20`],
+					['#FAFAFC', `${color}20`],
+					['#f5fbff', `${color}20`],
+					['#F5FBFF', `${color}20`],
+					['#b4e5ff', `${color}20`],
+					['#B4E5FF', `${color}20`],
+					['#f0faff', `${color}20`],
+					['#F0FAFF', `${color}20`],
+
+					['#f1f3f8', `${color}15`],
+					['#F1F3F8', `${color}15`],
+
+					['#f2faff', `${color}10`],
+					['#F2FAFF', `${color}10`],
+					['#eef9fe', `${color}10`],
+					['#EEF9FE', `${color}10`],
+					['#f7f9fc', `${color}10`],
+					['#F7F9FC', `${color}10`],
+					['#f5f6fa', `${color}10`],
+					['#F5F6FA', `${color}10`],
+					['#b4e5ff', `${color}10`],
+					['#B4E5FF', `${color}10`],
+					['#e6f6ff', `${color}10`],
+					['#E6F6FF', `${color}10`],
+
+					['6,167,255,.1', base.hexToRgba(`${color}15`)],
+					['164,141,255,.2', base.hexToRgba(`${color}30`)],
+					['196,182,255,.2', base.hexToRgba(`${color}20`)],
+					['113,127,255,.2', base.hexToRgba(`${color}40`)],
+					['3,8,26,.6', base.hexToRgba(`${color}D0`)],
+				]);
+			};
+			if (/www.(aliyundrive|alipan).com/.test(location.host) && base.getValue('setting_ali_theme') === 'yes') {
+				window.onload = base.setColors([
+					['#3763ff', `${color}`],
+					['#8664ff', `${color}D0`],
+					['99, 125, 255', base.hexToRgba(`${color}`)],
+					['132, 133, 141', base.hexToRgba(`${color}`)],
+					['112, 136, 255', base.hexToRgba(`${color}`)],
+					['97, 122, 250', base.hexToRgba(`${color}`)],
+					['68, 109, 255', base.hexToRgba(`${color}`)],
+					['82, 110, 250', base.hexToRgba(`${color}20`)],
+					['122, 144, 255', base.hexToRgba(`${color}D0`)],
+					['138, 157, 255', base.hexToRgba(`${color}D0`)],
+					['49, 49, 54', base.hexToRgba(`${color}`)],
+				]);
+			};
+			if (/pan.xunlei.com/.test(location.host) && base.getValue('setting_xunlei_theme') === 'yes') {
+				base.addStyle('Panlinker-UI-Xunlei', 'style', `
+				* {
+					transition: all 0.2s ease;
+				}
+				.web-header {
+					background: linear-gradient(0deg,${color}D0,${color})
+				}
+				`);
+				window.onload = base.setColors([
+					['#3f85ff', `${color}`],
+					['63,133,255,.1', base.hexToRgba(`${color}20`)],
+					['#2670ea', `${color}D0`],
+					['#619bff', `${color}D0`],
+					['#ecf3ff', `${color}10`],
+					['#eee', `${color}20`],
+				]);
+			};
+			if (/pan.quark.cn/.test(location.host) && base.getValue('setting_quark_theme') === 'yes') {
+				window.onload = base.setColors([
+					['#0d53ff', `${color}`],
+					['#e6f1ff', `${color}20`],
+					['17,17,17,.9', base.hexToRgba(`${color}D0`)],
+					['40,40,255,.04', base.hexToRgba(`${color}20`)],
+					['#f7f7ff', 'transparent'],
+					['238,247,255,0', base.hexToRgba(`${color}00`)],
+				]);
+				base.addStyle('Panlinker-UI-Quark', 'style', `
+				.file-list .hover-oper .hover-transparent-bg {
+					background: transparent !important;
+				}
+				/* .viewer-toolbar-cus,
+				.viewer-cus .close {
+					background-color: ${color} !important;
+				} */
+				`);
+			};
+			if (/(yun|caiyun).139.com/.test(location.host) && base.getValue('setting_yidong_theme') === 'yes') {
+				base.addStyle('Panlinker-UI-Yidong', 'style', `
+				* {
+					transition: all 0.2s ease;
+				}
+				`);
+				window.onload = base.setColors([
+					['#3181f9', `${color}`],
+					['#5a9afa', `${color}`],
+					['#98c0fc', `${color}D0`],
+					['#2d76e5', `${color}D0`],
+					['49,129,249,.08', base.hexToRgba(`${color}20`)],
+				]);
 			};
 		},
 
+		// 暗号界面
 		async initDialog() {
 			let secret = ""
 			if (base.getValue('setting_youxiaohou_server') === 'v1') {
-				secret = "当前暗号是：“" + pan.num + "”。";
+				secret = "当前暗号是‘" + pan.num + "’";
 			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
-				secret = "当前暗号是：“" + pan.num + "”，开源协议是“" + pan.license + "”。";
+				secret = "当前开源协议是‘" + pan.license + "’,暗号是‘" + pan.num + "’";
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				secret = "当前暗号是：“" + pan.num + "”。";
+				secret = "当前暗号是‘" + pan.num + "’";
 			} else {
 				base.setValue('setting_youxiaohou_server', 'v2');
-				secret = '<span style="color:red">检测到当前配置不正确，已自动修复<br>请在刷新页面后再继续输入</span>';
+				secret = '<span style="color:red">检测到当前配置不正确，已自动修复<br/>请在刷新页面后再继续输入</span>';
 			}
-			let result = await Swal.fire({
-				title: pan.init[0],
+			let dialog = await Swal.fire({
+				title: `请阅读完以下全文再继续`,
 				allowOutsideClick: false,
 				showCloseButton: true,
 				showDenyButton: true,
@@ -1157,17 +1506,20 @@
 				scrollbarPadding: false,
 				html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}">
 				<input class="swal2-input init-input" id="init" type="text" placeholder="${pan.init[1]}"></div>
-				<div><span>你可以选择"注入"立即点亮按钮</span></div>
-				<div><span>或者输入 暗号/开源协议 点亮...</span></div>
-				<div><span>${secret}</span></div>
-				<div><span>原作者开发很辛苦，所以请扫码支持一下他的的公众号</span></div>
-				<div><span>或者来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>...</span></div>
-				<div><span>点亮后可以精简部分网盘界面哦!</span></div>
+				<div><span>服务器说道: “${pan.init[0]}”；</span></div>
+				<div><span>脚本说道: “${secret}”。</span></div>
+				<div>↓</div>
+				<div><span>但史丹利不知道的是,他可以按下<i style="color:red">红色按钮</i>来点亮按钮</span></div>
+				<div><span>或者有仪式感地 输入以上暗号/开源协议 点亮</span></div>
+				<div><span>输入一些<i>恶臭的数字</i>甚至有彩蛋</span></div>
+				<div>↓</div>
+				<div><span><a target="_blank" href="https://www.youxiaohou.com">原作者</a>开发很辛苦,所以请有能力的你请支持下他的公众号</span></div>
+				<div><span>实在不行的话,那就来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>吧...</span></div>
+				<div><span>点亮后不仅能精简网盘界面 还能改变众多网盘主题颜色哦!</span></div>
 				`,
-				denyButtonText: '注入(点亮下载助手按钮)'
+				denyButtonText: '我就不输入,点我“注入”直接点亮'
 			});
-			// 用新版的 SweetAlert 重写了下检测逻辑
-			if (result.isDenied) {
+			if (dialog.isDenied) {
 				console.log("【（改）网盘直链下载助手】\n正在注入点亮按钮设置项目...");
 				message.warning("正在注入设置项目...");
 				setTimeout(() => {
@@ -1178,11 +1530,11 @@
 						message.success(pan.init[2]);
 						setTimeout(() => {
 							location.reload();
-						}, 3000);
-					}, 3000);
-				}, 5000);
+						}, 1500);
+					}, 1500);
+				}, 2500);
 			};
-			if (result.isConfirmed) {
+			if (dialog.isConfirmed) {
 				if (pan.num === $('#init').val() || pan.license === $('#init').val()) {
 					console.log("【（改）网盘直链下载助手】\n暗号或协议正确")
 					message.success(pan.init[2]);
@@ -1200,8 +1552,8 @@
 					await Swal.fire({
 						icon: 'error',
 						title: '1145141919810',
-						html: '<span>homo特有的数字当然不行啦<br>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
-						timer: 8000,
+						html: '<span>homo特有的数字当然不行啦<br/>哼哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>',
+						timer: 4000,
 						imageUrl: 'https://pic4.zhimg.com/80/v2-1b97a088e156c015108dec663bba8b04.jpg',
 						allowOutsideClick: false,
 						timerProgressBar: true,
@@ -1224,9 +1576,7 @@
 						setTimeout(() => {
 							base.setValue('setting_init_code', pan.num);
 							message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功(喜)");
-							setTimeout(() => {
-								location.reload();
-							}, 3000);
+							location.reload();
 						}, 3000)
 					}, 4000)
 				} else {
@@ -1236,7 +1586,7 @@
 						title: pan.init[3],
 						heightAuto: false,
 						scrollbarPadding: false,
-						html: `<div><span>${pan.init[4]}<br>你可以在返回后选择“注入”立即点亮按钮，<br>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
+						html: `<div><span>${pan.init[4]}<br/>你可以在返回后选择“注入”立即点亮按钮，<br/>或者在输入框键入以下暗号：“${pan.num}”。</span></div>`,
 						confirmButtonText: '重新输入',
 					});
 					await this.initDialog();
@@ -1244,7 +1594,73 @@
 				};
 			}
 		},
+		/*--- waitForKeyElements(): 一个实用函数，用于 Greasemonkey 脚本，
+		它可以检测和处理AJAX加载的内容。
+		使用示例：
+			base.waitForKeyElements (
+				"div.comments"
+				, commentCallbackFunction
+			);
+			// 页面特定的函数，用于在找到节点时执行我们想要的操作。
+			function commentCallbackFunction (jNode) {
+				jNode.text ("waitForKeyElements() 更改了这段注释。");
+			}
+		重要提示：<br/>这个函数需要你的脚本加载了jQuery。
+		*/
+		waitForKeyElements(selectorTxt, actionFunction, bWaitOnce, iframeSelector) {
+			var targetNodes, btargetsFound;
+
+			if (typeof iframeSelector == "undefined")
+				targetNodes = $(selectorTxt);
+			else
+				targetNodes = $(iframeSelector).contents()
+					.find(selectorTxt);
+
+			if (targetNodes && targetNodes.length > 0) {
+				btargetsFound = true;
+				targetNodes.each(function () {
+					var jThis = $(this);
+					var alreadyFound = jThis.data('alreadyFound') || false;
+
+					if (!alreadyFound) {
+						//--- 调用载荷函数。
+						var cancelFound = actionFunction(jThis);
+						if (cancelFound) {
+							btargetsFound = false;
+						} else {
+							jThis.data('alreadyFound', true);
+						}
+					}
+				});
+			} else {
+				btargetsFound = false;
+			}
+
+			//--- 获取这个选择器的定时器控制变量。
+			var controlObj = base.waitForKeyElements.controlObj || {};
+			var controlKey = selectorTxt.replace(/[^\w]/g, "_");
+			var timeControl = controlObj[controlKey];
+
+			//--- 现在根据情况设置或清除定时器。
+			if (btargetsFound && bWaitOnce && timeControl) {
+				//--- 唯一需要清除定时器的情况。
+				clearInterval(timeControl);
+				delete controlObj[controlKey]
+			} else {
+				//--- 如果需要的话，设置一个定时器。
+				if (!timeControl) {
+					timeControl = setInterval(function () {
+						base.waitForKeyElements(selectorTxt, actionFunction, bWaitOnce, iframeSelector);
+					}, 1000);
+					controlObj[controlKey] = timeControl;
+				}
+			}
+			base.waitForKeyElements.controlObj = controlObj;
+		},
 	};
+	// 用于油小猴服务器检测的脚本信息,防止服务器返回更新信息
+	let author = base.getValue('setting_script_author'),
+		version = base.getValue('setting_script_version')
 
 	//百度网盘
 	let baidu = {
@@ -1294,6 +1710,12 @@
 				});
 			} catch (e) {
 				console.error("【（改）网盘直链下载助手】\nsetBDUSS\n错误信息：", e)
+				try {
+					let BDUSS = document.cookie.match(/BDUSS=(.*?)(;|$)/);
+					base.setStorage("baiduyunPlugin_BDUSS", { BDUSS: BDUSS });
+				} catch (e) {
+					console.error("【（改）网盘直链下载助手】\nsetBDUSS\n错误信息：", e)
+				}
 			}
 		},
 
@@ -1385,6 +1807,7 @@
 
 			doc.on('click', '.pl-button-mode', (e) => {
 				mode = e.target.dataset.mode;
+				if (!mode) return;
 				Swal.fire({
 					heightAuto: false,
 					scrollbarPadding: false,
@@ -1614,99 +2037,128 @@
 			if (document.getElementById("pl-button-link")) {
 				document.getElementById("pl-button-link").remove()
 			}
-			waitForKeyElements(".wp-s-header__vip-btn-tip", function () {
-				let vip1 = document.getElementsByClassName("wp-s-header__vip-btn-tip")[0];
-				vip1.remove();
-			}, true);
-			waitForKeyElements(".app-user-vip-center-tip", function () {
-				let vip2 = document.getElementsByClassName("app-user-vip-center-tip")[0];
-				vip2.remove();
-			}, true);
-			waitForKeyElements(".web-header-text-s-45", function () {
-				let vip3 = document.getElementById("web-header-text-s-45");
-				vip3.remove();
-			}, true);
-			waitForKeyElements(".wp-s-header__vip-btn", function () {
-				let vip4 = document.getElementsByClassName("wp-s-header__vip-btn")[0];
-				vip4.innerText = "会员中心";
-			}, true);
-			waitForKeyElements(".KQcHyA", function () {
-				let vip5 = document.getElementsByClassName("KQcHyA")[0];
-				vip5.innerText = "会员中心";
-			}, true);
-			waitForKeyElements(".gOIbzPb", function () {
-				let vip6 = document.getElementsByClassName("gOIbzPb")[0];
-				vip6.remove();
-			}, true);
-			waitForKeyElements(".app-user-vip-center-box", function () {
-				let vip7 = document.getElementsByClassName("app-user-vip-center-box vip-center-type-2")[0];
-				vip7.remove();
-			}, true);
-			waitForKeyElements(".u-popover", function () {
-				setInterval(function () {
-					let vip8 = document.getElementsByClassName("wp-s-header-user__vip-center")[0];
-					let arrow = document.getElementsByClassName("popper__arrow")[0];
-					if (vip8) {
-						vip8.remove();
-					}
-					if (arrow) {
-						arrow.remove();
-					};
-				}, 10)
-			}, true);
-			waitForKeyElements(".wp-s-header-user__create-team-title", function () {
-				let ad1 = document.getElementsByClassName("wp-s-header-user__create-team-title")[0];
-				ad1.remove();
-			}, true);
-			waitForKeyElements(".wp-side-options g-clearfix", function () {
-				let ad2 = document.getElementsByClassName("wp-side-options g-clearfix")[0];
-				ad2.remove();
-			}, true);
-			waitForKeyElements(".web-header-ad-item", function () {
-				let ad3 = document.querySelectorAll(".web-header-ad-item")[0];
-				ad3.remove();
-			}, true);
-			waitForKeyElements(".wp-s-header__game-entry", function () {
-				let ad4 = document.getElementsByClassName("wp-s-header__game-entry")[0];
-				ad4.remove();
+			if (!pt) return;
+			base.waitForKeyElements(".__yunguanjia", function (tag) {
+				tag[0].innerHTML = `
+				<div class="yunguanjia-list __yunguanjia row g-clearfix _item sel">
+					<span type="radio" class="radio-box _radioInput __yunguanjiaRadio">
+						<span class="device-name">添加我的电脑</span>
+					</span>
+					<div class="__yunguanjiaTips radio-tips" style="display: block;">
+						用电脑下载并登录最新百度网盘客户端，即自动完成添加。
+						<a href="//pan.baidu.com/download" target="_blank">下载百度网盘客户端</a>
+						<br/>
+						由 <a>(改)网盘直连下载助手</a> 修复该选项
+					</div>
+				</div>`;
 			}, true)
-			waitForKeyElements(".operate-guide-close", function () {
-				let adwindow = document.getElementsByClassName("operate-guide-close")[0];
-				adwindow.click();
-			}, true)
-			waitForKeyElements(".nd-operate-guidance__close", function () {
-				let adwindow = document.getElementsByClassName("nd-operate-guidance__close")[0];
-				adwindow.click();
-			}, true)
-			waitForKeyElements("ctx-menu-container", function () {
-				let ctxmenus = document.querySelectorAll(".ctx-menu-container");
-				ctxmenus.forEach(ctxmenu => ctxmenu.remove());
-			}, true)
-			waitForKeyElements(".newIcon", function () {
-				let newicon1 = document.getElementsByClassName("newIcon")[0];
-				newicon1.remove();
+			base.waitForKeyElements(".wp-s-header__vip-btn-tip", function (tag) {
+				tag[0].remove();
 			}, true);
-			waitForKeyElements(".u-badge__content", function () {
-				let newicon2 = document.getElementsByClassName("u-badge__content is-dot")[0];
-				if (newicon2) {
-					newicon2.remove();
+			base.waitForKeyElements(".app-user-vip-center-tip", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements("#web-header-text-s-45", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements(".wp-s-header__vip-btn", function (tag) {
+				tag[0].innerText = "会员中心";
+			}, true);
+			base.waitForKeyElements(".KQcHyA", function (tag) {
+				tag[0].innerText = "会员中心";
+			}, true);
+			base.waitForKeyElements(".gOIbzPb", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements(".app-user-vip-center-box.vip-center-type-2", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements(".wp-s-header-user__vip-center", function (tag) {
+				tag[0].remove();
+			});
+			base.waitForKeyElements(".popper__arrow", function (tag) {
+				tag[0].remove();
+			});
+			base.waitForKeyElements(".wp-s-header-user__create-team-title", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements(".web-header-ad-item", function (tag) {
+				tag[0].remove();
+			});
+			base.waitForKeyElements(".wp-s-header__game-entry", function (tag) {
+				tag[0].remove();
+			}, true)
+			base.waitForKeyElements(".bd-aside-ad", function (tag) {
+				tag[0].remove();
+			}, true)
+			base.waitForKeyElements(".btn-img-tips", function (tag) {
+				tag[0].remove();
+			}, true)
+			base.waitForKeyElements(".nd-operate-guidance", function (tag) {
+				tag[0].remove();
+			}, true)
+			base.waitForKeyElements(".module-operation-content", function (tag) {
+				tag[0].remove()
+				document.querySelector(".module-canvas").click();
+			}, true)
+			base.waitForKeyElements(".newIcon", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements(".u-badge__content.is-dot", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements(".wp-side-options.g-clearfix", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements(".wp-s-header-user__drop-channel", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements(".app-download", function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements('.g-button[title="保存到手机"]', function (tag) {
+				tag[0].remove();
+			}, true)
+			base.waitForKeyElements("p.wp-s-aside-nav__main-item-text", function (tag) {
+				if (tag[0].innerHTML.match(/(插件|相册|笔记)/) && tag[0].closest('a') && tag[0].closest('a').getAttribute('target') !== "_blank") {
+					tag[0].closest('a').remove();
+				} else {
+					tag[0].innerHTML = tag[0].innerHTML.replace("百度", "");
 				}
 			}, true);
-			waitForKeyElements(".wp-side-options-btn", function () {
-				let qiye1 = document.getElementsByClassName("wp-side-options g-clearfix")[0];
-				qiye1.remove();
-			}, true);
-			waitForKeyElements(".app-download", function () {
-				let app1 = document.getElementsByClassName("app-download")[0];
-				app1.remove();
-			}, true);
-			if (!pt) return;
+			// 美化分享页面
+			if (pt === 'share') {
+				base.waitForKeyElements(`iframe[src^="/buy/ad"]`, function (tag) {
+					tag[0].remove();
+				}, true)
+				base.waitForKeyElements(`.theme-white.init-new`, function (tag) {
+					tag[0].style.background = '#DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center'
+				}, true)
+				base.waitForKeyElements(`#layoutApp`, function (tag) {
+					tag[0].style.background = '#DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center'
+					document.body.style.background = '#DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center'
+				}, true)
+				base.waitForKeyElements(`#bd-main .bd-left`, function (tag) {
+					tag[0].style.background = '#ffffffC0';
+					tag[0].style.borderRadius = '10px';
+				}, true)
+				base.waitForKeyElements(`.KPDwCE`, function (tag) {
+					tag[0].style.setProperty('background', 'transparent');
+				}, true)
+				base.waitForKeyElements('.share-list .KPDwCE .AuPKyz', function (tag) {
+					tag[0].style.setProperty('background', 'transparent');
+				}, true)
+			}
 			let $toolWrap;
 			let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="padding: 0px;" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="padding: 0px;" ">更新日志</div></div></div>`);
 			if (pt === 'home') $toolWrap = pan.btn.home;
 			if (pt === 'main') {
 				$toolWrap = pan.btn.main;
 				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li></ul></div>`);
+			}
+			if (pt === 'youth') {
+				$toolWrap = pan.btn.main;
+				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>网盘助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li></ul></div>`);
 			}
 			if (pt === 'share') $toolWrap = pan.btn.share;
 			base.listenElement($toolWrap, () => {
@@ -1722,13 +2174,17 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="g-dropdown-button pointer pl-button-init" id="pl-button-link" style="opacity:0.5"><div style="color:#fff;" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div></div>`);
+			let $button = $(`<div class="g-dropdown-button pointer pl-button-init" id="pl-button-link" style="opacity:0.5"><div style="color:#fff;" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">点我点亮</span></span></div></div>`);
 			if (pt === 'home') {
 				$toolWrap = pan.btn.home;
 			}
-			if (pt === 'main' || pt === 'main') {
+			if (pt === 'main') {
 				$toolWrap = pan.btn.main;
-				$button = $(`<div class="pl-button-init" id="pl-button-link" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手(未点亮)</span></button></div>`);
+				$button = $(`<div class="pl-button-init" id="pl-button-link" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>点我点亮</span></button></div>`);
+			}
+			if (pt === 'youth') {
+				$toolWrap = pan.btn.main;
+				$button = $(`<div class="pl-button-init" id="pl-button-link" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>点我点亮</span></button></div>`);
 			}
 			if (pt === 'share') $toolWrap = pan.btn.share;
 			$button.click(() => base.initDialog());
@@ -1783,10 +2239,10 @@
 
 			if (pt === 'home' || pt === 'main') {
 				if (selectList.length === 0) {
-					return message.error('提示：<br>先勾选要下载的文件捏~');
+					return message.error('提示：<br/>先勾选要下载的文件捏~');
 				}
 				if (fidList.length === 2) {
-					return message.error('提示：<br>请打开文件夹后再勾选文件~');
+					return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 				}
 				fidList = encodeURIComponent(fidList);
 				let accessToken = base.getStorage('accessToken') || await this.getToken();
@@ -1796,10 +2252,10 @@
 			if (pt === 'share') {
 				this.getShareData();
 				if (selectList.length === 0) {
-					return message.error('提示：<br>请先勾选要下载的文件捏~');
+					return message.error('提示：<br/>请先勾选要下载的文件捏~');
 				}
 				if (fidList.length === 2) {
-					return message.error('提示：<br>请打开文件夹后再勾选文件~');
+					return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 				}
 				if (!params.sign) {
 					let url = `${pan.pcs[2]}&surl=${params.surl}&logid=${params.logid}`;
@@ -1811,7 +2267,7 @@
 						let dialog = await Swal.fire({
 							toast: true,
 							icon: 'info',
-							title: `提示：<br>请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
+							title: `提示：<br/>请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
 							showConfirmButton: true,
 							confirmButtonText: '点击保存',
 							position: 'top',
@@ -1823,7 +2279,7 @@
 					}
 				}
 				if (!params.bdstoken) {
-					return message.error('提示：<br>请先登录网盘~');
+					return message.error('提示：<br/>请先登录网盘~');
 				}
 				let formData = new FormData();
 				formData.append('encrypt', params.encrypt);
@@ -1840,17 +2296,17 @@
 				let html = this.generateDom(res.list);
 				this.showMainDialog(pan[mode][0], html, pan[mode][1]);
 			} else if (res.errno === 112) {
-				return message.error('提示：<br>页面过期了，刷新重试下吧~');
+				return message.error('提示：<br/>页面过期了，刷新重试下吧~<br/>代码：' + res.errno);
 			} else if (res.errno === 9019) {
 				maxRequestTime--;
 				await this.getToken();
 				if (maxRequestTime > 0) {
 					await this.getPCSLink(maxRequestTime);
 				} else {
-					message.error('提示：<br>获取下载链接失败，刷新网页后再试试吧~');
+					message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
 				}
 			} else {
-				message.error('提示：<br>获取下载链接失败，刷新网页后不行的话再试试重新登录网盘吧~');
+				message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
 			}
 		},
 
@@ -1868,7 +2324,7 @@
 					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
+								<a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载  ${filename}</a>
 								<!--<a class="pl-item-copy" target="_blank" href="${dlink}" title="点击使用浏览器下载" data-filename="${filename}" data-link="${dlink}">传统下载</a>-->
 								<!--<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>-->
 								<div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
@@ -1892,12 +2348,12 @@
 					if (typeof (alink) === 'object') {
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 					} else {
 						alinkAllText += alink + '\r\n';
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 					}
 				}
 				if (mode === 'rpc') {
@@ -1910,12 +2366,12 @@
 					if (typeof (alink) === 'object') {
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 					} else {
 						alinkAllText += alink + '\r\n';
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 					}
 				}
 				if (mode === 'bc') {
@@ -1923,12 +2379,12 @@
 					if (typeof (alink) === 'object') {
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a" href="${decodeURIComponent(alink.link)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink.text)}<br>下载 ${filename}</a> </div>`;
+								<a class="pl-item-link pl-a" href="${decodeURIComponent(alink.link)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink.text)}<br/>下载 ${filename}</a> </div>`;
 					} else {
 						alinkAllText += alink + '\r\n';
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br>下载 ${filename}</a> </div>`;
+								<a class="pl-item-link pl-a" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a> </div>`;
 					}
 				}
 			});
@@ -2062,10 +2518,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -2130,6 +2586,7 @@
 			}
 			doc.on('click', '.pl-button-mode', (e) => {
 				mode = e.target.dataset.mode;
+				if (!mode) return;
 				Swal.fire({
 					heightAuto: false,
 					scrollbarPadding: false,
@@ -2366,35 +2823,29 @@
 			if (document.getElementById("pl-button-link")) {
 				document.getElementById("pl-button-link").remove()
 			}
-			waitForKeyElements('[class^="share-list-banner"]', function () {
-				let ad1 = document.querySelector('[class^="share-list-banner"]');
-				//ad1.style.zIndex = 0;
-				ad1.remove();
+			base.waitForKeyElements('[class^="share-list-banner"]', function (tag) {
+				tag[0].remove();
 			}, true);
-			waitForKeyElements('[class^="to-app"]', function () {
-				let ad2 = document.querySelector('[class^="to-app"]');
-				ad2.remove();
+			base.waitForKeyElements('[class^="to-app"]', function (tag) {
+				tag[0].remove();
 			}, true);
-			waitForKeyElements('[class^="btn-mobile-save"]', function () {
-				let ad3 = document.querySelector('[class^="btn-mobile-save"]');
-				ad3.remove();
+			base.waitForKeyElements('[class^="btn-mobile-save"]', function (tag) {
+				tag[0].remove();
 			}, true);
-			waitForKeyElements('[class^="text"]', function () {
-				let ad4 = document.querySelector('[class^="text"]');
-				if (ad4.innerHTML.match("SVIP") && ad4.innerHTML.match("抽") && ad4.innerHTML.match("赢"))
-					ad4.remove();
+			base.waitForKeyElements('div[class^="text"]', function (tag) {
+				if (tag[0].innerHTML.match("SVIP"))
+					tag[0].remove();
 			}, true);
-			waitForKeyElements('[class^="SplashScreenImg--close"]', function () {
-				let vip1 = document.querySelector('[class^="SplashScreenImg--close"]');
-				vip1.click();
+			base.waitForKeyElements('[class^="SplashScreenImg--close"]', function (tag) {
+				tag[0].click();
 			}, true);
-			waitForKeyElements('[class^="popup_main_close"]', function () {
-				let vip2 = document.querySelector('[class^="popup_main_close"]');
-				vip2.click();
+			base.waitForKeyElements('[class^="popup_main_close"]', function (tag) {
+				tag[0].click();
 			}, true);
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg></span><ul class="pl-dropdown-menu" style="top: 30px; right: 0;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let svg = `<svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>`
+			let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon">${svg}下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 0;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, () => {
 					$toolWrap = $(pan.btn.home);
@@ -2402,7 +2853,7 @@
 				})
 			}
 			if (pt === 'share') {
-				let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 16px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+				$button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon">${svg}下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 16px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 				$button.css({ 'margin-right': '10px', "height": "36px", "width": "auto", "padding": "1px 30px" });
 				base.listenElement(pan.btn.share, () => {
 					$toolWrap = $(pan.btn.share);
@@ -2418,7 +2869,7 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>(未点亮)</span></div>`);
+			let $button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>点我点亮</span></div>`);
 			$button.css({ "width": "auto" });
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, () => {
@@ -2427,7 +2878,7 @@
 				})
 			}
 			if (pt === 'share') {
-				let $button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>(未点亮)</span></div>`);
+				$button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>点我点亮</span></div>`);
 				$button.css({ 'margin-right': '10px', "height": "36px", "padding": "1px 30px", "width": "auto" });
 				base.listenElement(pan.btn.share, () => {
 					$toolWrap = $(pan.btn.share);
@@ -2440,30 +2891,33 @@
 		async getPCSLink() {
 			let reactDomGrid = document.querySelector(pan.dom.grid);
 			if (reactDomGrid) {
-				let res = await Swal.fire({
+				let dialog = await Swal.fire({
 					title: '提示',
-					html: '<div style="display: flex;align-items: center;justify-content: center;">请先切换到&nbsp;&nbsp;<b>列表视图</b>&nbsp;“<svg class="icon" class="icon--D3kMk " viewBox="0 0 1024 1024" width="20" height="20"><use xlink:href="#PDSDrag"></use></svg>”&nbsp;&nbsp;后获取下载链接</div>',
+					html: '<div style="display: flex;align-items: center;justify-content: center;">请先切换到&nbsp;&nbsp;<svg class="icon" class="icon--D3kMk " viewBox="0 0 1024 1024" width="20" height="20"><use xlink:href="#PDSDrag"></use></svg>&nbsp;<b>列表视图</b>&nbsp;&nbsp;后获取下载链接</div>',
 					icon: 'info',
+					showCloseButton: true,
+					showDenyButton: true,
 					heightAuto: false,
 					scrollbarPadding: false,
-					confirmButtonText: '点击切换'
+					confirmButtonText: '切换',
+					denyButtonText: '不要'
 				});
-				if (res) {
+				if (dialog.isConfirmed) {
 					document.querySelector(pan.dom.switch).click();
-					return message.success('切换为列表视图成功，请再获取一次下载链接呢~');
+					return message.success('提示：<br/>切换为列表视图成功<br/>请再获取一次下载链接吧~');
 				}
 				return false;
 			}
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：<br>请打开文件夹后再勾选文件~');
+				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			}
 			if (pt === 'share') {
 				if (selectList.length > 20) {
-					return message.error('提示：<br>一次最多只能勾选 20 个文件哦!');
+					return message.error('提示：<br/>一次最多只能勾选 20 个文件哦!');
 				}
 				try {
 					let authorization = `${base.getStorage('token').token_type} ${base.getStorage('token').access_token}`;
@@ -2484,7 +2938,7 @@
 						}
 					}
 				} catch (e) {
-					return message.error('提示：<br>请先登录网盘~');
+					return message.error('提示：<br/>请先登录网盘~');
 				}
 			}
 			let html = this.generateDom(selectList);
@@ -2506,7 +2960,7 @@
 					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}" >${filename}</div>
-								<a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-did="${did}" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-size="${v.size}" data-index="${i}">${dlink}<br>下载  ${filename}</a>
+								<a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-did="${did}" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-size="${v.size}" data-index="${i}">${dlink}<br/>下载  ${filename}</a>
 								<div class="pl-item-copy pl-btn-primary listener-link-api-btn" data-filename="${filename}">复制文件名</div>
 								<div class="pl-item-tip" style="display: none"><span><span class="pl-ext"></span></span> <span class="pl-back listener-back">返回</span></div>
 								<div class="pl-item-progress" style="display: none">
@@ -2529,25 +2983,25 @@
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a> </div>`;
 				}
 			});
 			content += '</div>';
@@ -2654,10 +3108,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/ali/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/ali.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -2701,6 +3155,7 @@
 
 			doc.on('click', '.pl-button-mode', (e) => {
 				mode = e.target.dataset.mode;
+				if (!mode) return;
 				Swal.fire({
 					heightAuto: false,
 					scrollbarPadding: false,
@@ -2767,6 +3222,9 @@
 			if (document.getElementById("pl-button-link")) {
 				document.getElementById("pl-button-link").remove()
 			}
+			base.waitForKeyElements(".advertising-mask", function (tag) {
+				tag[0].remove();
+			}, true);
 			if (!pt) return;
 			let $toolWrap;
 			let $button = $(`<div class="tianyi-button pl-button" id="pl-button-link">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
@@ -2791,7 +3249,7 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="tianyi-button pl-button-init" id="pl-button-link">下载助手(未点亮)</div>`);
+			let $button = $(`<div class="tianyi-button pl-button-init" id="pl-button-link">点我点亮</div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, () => {
 					$toolWrap = $(pan.btn.home);
@@ -2845,12 +3303,12 @@
 				} else if (res.errorCode === 'InvalidSessionKey') {
 					return {
 						index,
-						downloadUrl: '提示：<br>请先登录网盘~'
+						downloadUrl: '提示：<br/>请先登录网盘~'
 					};
 				} else if (res.res_code === 'ShareNotFoundFlatDir') {
 					return {
 						index,
-						downloadUrl: '提示：<br>请先[转存]文件，之后再👉前往[我的网盘]中下载哦~'
+						downloadUrl: '提示：<br/>请先[转存]文件，之后再👉前往[我的网盘]中下载哦~'
 					};
 				} else {
 					return {
@@ -2869,14 +3327,14 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：<br>请打开文件夹后再勾选文件~');
+				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			}
 			let token = base.getStorage('accessToken') || await this.getToken();
 			if (!token) {
-				return message.error('提示：<br>请先登录网盘~');
+				return message.error('提示：<br/>请先登录网盘~');
 			}
 			let queue = [];
 			for (const [index, item] of selectList.entries()) {
@@ -2903,7 +3361,7 @@
 				if (mode === 'api') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-api" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}</a>
+								<a class="pl-item-link listener-link-api" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载 ${filename}</a>
 								</div>`;
 				}
 				if (mode === 'aria') {
@@ -2911,25 +3369,25 @@
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a> </div>`;
 				}
 			});
 			content += '</div>';
@@ -3021,10 +3479,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/tianyi/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/tianyi.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3069,6 +3527,7 @@
 
 			doc.on('click', '.pl-button-mode', (e) => {
 				mode = e.target.dataset.mode;
+				if (!mode) return;
 				Swal.fire({
 					heightAuto: false,
 					scrollbarPadding: false,
@@ -3179,7 +3638,7 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="xunlei-button pl-button-init" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手(未点亮)</span></div>`);
+			let $button = $(`<div class="xunlei-button pl-button-init" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">点我点亮</span></div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, () => {
 					$toolWrap = $(pan.btn.home);
@@ -3240,17 +3699,17 @@
 					};
 				}
 			} catch (e) {
-				return message.error('提示：<br>请先登录网盘后再刷新页面呢~');
+				return message.error('提示：<br/>请先登录网盘后再刷新页面呢~');
 			}
 		},
 
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：<br>请打开文件夹后再勾选文件~');
+				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			}
 			if (pt === 'home') {
 				let queue = [];
@@ -3264,7 +3723,7 @@
 					selectList[val.index].downloadUrl = val.downloadUrl;
 				});
 			} else {
-				return message.error('提示：<br>请保存到自己网盘后再去网盘主页下载哦~');
+				return message.error('提示：<br/>请保存到自己网盘后再去网盘主页下载哦~');
 			}
 			let html = this.generateDom(selectList);
 			this.showMainDialog(pan[mode][0], html, pan[mode][1]);
@@ -3282,7 +3741,7 @@
 				if (mode === 'api') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-api" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}</a>
+								<a class="pl-item-link listener-link-api" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载 ${filename}</a>
 								<div class="pl-item-btn listener-link-api-btn" data-filename="${filename}">复制文件名</div>
 								</div>`;
 				}
@@ -3291,25 +3750,25 @@
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a>
+								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a>
 								<div class="pl-item-btn listener-link-bc-btn" data-dlink="${dlink}">复制镜像地址</div>
 								</div>`;
 				}
@@ -3411,10 +3870,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/xunlei/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/xunlei.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3470,6 +3929,7 @@
 			});
 			doc.on('click', '.pl-button-mode', (e) => {
 				mode = e.target.dataset.mode;
+				if (!mode) return;
 				Swal.fire({
 					heightAuto: false,
 					scrollbarPadding: false,
@@ -3485,9 +3945,9 @@
 				e.preventDefault();
 				selectList = this.getSelectedList();
 				if (selectList.length === 0) {
-					return message.error('提示：<br>请先勾选要保存到网盘的文件捏~');
+					return message.error('提示：<br/>请先勾选要保存到网盘的文件捏~');
 				}
-				message.info('提示：<br>因夸克限制，请先保存到自己网盘后再下载哦!');
+				message.info('提示：<br/>因夸克限制，请先保存到自己网盘后再下载哦!');
 				await base.sleep(500);
 				document.querySelector('.file-info_r').click();
 			});
@@ -3549,45 +4009,48 @@
 			}
 			if (!pt) return;
 
-			waitForKeyElements(".next-box", function () {
+			base.waitForKeyElements('[class^="Activity--video-toolbar-activity"]', function (tag) {
+				tag[0].remove();
+			}, true);
+
+			base.waitForKeyElements(".next-box", function () {
 				let ad1 = document.getElementsByClassName("next-box")[0];
 				ad1.remove();
 			}, true);
 
-			waitForKeyElements(".tips", function () {
+			base.waitForKeyElements(".tips", function () {
 				let vip1 = document.getElementsByClassName("tips")[0];
 				vip1.remove();
 				let vip2 = document.querySelector('.pc-member-entrance span');
 				vip2.innerHTML = "开通SVIP";
 			}, true);
 
-			waitForKeyElements(".pay-modal .close", function () {
+			base.waitForKeyElements(".pay-modal .close", function () {
 				let vip3 = document.querySelector('.pay-modal .close');
 				vip3.click();
 			});
 
-			waitForKeyElements(".red-envelope .close", function () {
+			base.waitForKeyElements(".red-envelope .close", function () {
 				let vip4 = document.querySelector('.red-envelope .close');
 				vip4.click();
 			});
 
 			let $toolWrap;
+			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon" src="` + svg + `"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon" src="` + svg + `"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
-				$button.css({ "margin-right": "10px", "display": "inline-block" });
 				base.listenElement(pan.btn.home, () => {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				});
 			}
 			if (pt === 'share') {
-				let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="` + svg + `"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0 !important;color:#fff !important;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
-				$button.css({ "margin-right": "10px", "display": "inline-block" });
+				$button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="` + svg + `"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0 !important;color:#fff !important;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 				base.listenElement(pan.btn.share, () => {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				});
 			}
+			$button.css({ "margin-right": "10px", "display": "inline-block" });
 		},
 
 		addInitButton() {
@@ -3597,7 +4060,7 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button-init"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="` + svg + `"><span>下载助手(未点亮)</span></button></div>`);
+			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button-init"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="` + svg + `"><span>点我点亮</span></button></div>`);
 			$button.css({ "margin-right": "10px", "display": "inline-block" });
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, () => {
@@ -3617,10 +4080,10 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：<br>请打开文件夹后再勾选文件~');
+				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			}
 			let fids = [];
 			for (const val of selectList) {
@@ -3631,15 +4094,15 @@
 					"fids": fids
 				}, { "content-type": "application/json;charset=utf-8", "user-agent": pan.ua });
 				if (res.code === 31001) {
-					return message.error('提示：<br>请先登录网盘~');
+					return message.error('提示：<br/>请先登录网盘~<br/>代码：' + res.code);
 				}
 				if (res.code !== 0) {
-					return message.error('提示：<br>获取链接失败了~');
+					return message.error('提示：<br/>获取链接失败了~<br/>代码：' + res.code);
 				}
 				let html = this.generateDom(res.data);
 				this.showMainDialog(pan[mode][0], html, pan[mode][1]);
 			} else {
-				message.error('提示：<br>请保存到自己网盘后再去网盘主页下载哦~');
+				message.error('提示：<br/>请保存到自己网盘后再去网盘主页下载哦~');
 				await base.sleep(1000);
 				document.querySelector('.file-info_r').click();
 				return;
@@ -3658,7 +4121,7 @@
 				if (mode === 'api') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-api" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}</a>
+								<a class="pl-item-link listener-link-api" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载 ${filename}</a>
 								</div>`;
 				}
 				if (mode === 'aria') {
@@ -3666,25 +4129,25 @@
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a> </div>`;
 				}
 			});
 			content += '</div>';
@@ -3789,10 +4252,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/quark/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/quark.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3837,6 +4300,7 @@
 
 			doc.on('click', '.pl-button-mode', (e) => {
 				mode = e.target.dataset.mode;
+				if (!mode) return;
 				Swal.fire({
 					heightAuto: false,
 					scrollbarPadding: false,
@@ -3913,29 +4377,26 @@
 			if (document.getElementById("pl-button-link")) {
 				document.getElementById("pl-button-link").remove()
 			}
-			waitForKeyElements(".adv_swiper_menu", function () {
-				let ad1 = document.getElementsByClassName("adv_swiper_menu")[0];
-				ad1.remove();
-			}, true);
-			waitForKeyElements(".client-bubble", function () {
-				let ad2 = document.getElementsByClassName("client-bubble")[0];
-				ad2.remove();
-			}, true);
-			waitForKeyElements(".avs-box", function () {
-				let ad3 = document.getElementsByClassName("avs-box")[0];
-				ad3.remove();
-			}, true);
-			waitForKeyElements(".client_download_icon", function () {
-				let ui1 = document.getElementsByClassName("client_download_icon")[0];
-				ui1.remove();
-			}, true);
-			waitForKeyElements(".document_top_memberCenter", function () {
-				let vip1 = document.getElementsByClassName("document_top_memberCenter")[0];
-				$(vip1).click(() => {
-					//window.open("https://vip.yun.139.com/vip/", "_blank");
+			base.waitForKeyElements(".adv_swiper_menu", function (tag) {
+				tag[0].remove();
+			});
+			base.waitForKeyElements(".client-bubble", function (tag) {
+				ltag[0].remove();
+			});
+			base.waitForKeyElements(".avs-box", function (tag) {
+				tag[0].remove();
+			});
+			base.waitForKeyElements(".top-adv-swiper", function (tag) {
+				tag[0].remove();
+			});
+			base.waitForKeyElements(".client_download_icon", function (tag) {
+				tag[0].remove();
+			});
+			base.waitForKeyElements(".document_top_memberCenter", function (tag) {
+				$(tag[0]).click(() => {
+					// window.open("https://vip.yun.139.com/vip/", "_blank");
 					Swal.fire({
-						html: `<iframe 
-						style="height: 700px; width: 420px; border: 0;" src="https://vip.yun.139.com/vip/"></iframe>`,
+						html: `<iframe style="height: 700px; width: 420px; border: 0;" src="https://vip.yun.139.com/vip/"></iframe>`,
 						allowOutsideClick: false,
 						showCloseButton: true,
 						showConfirmButton: false,
@@ -3969,7 +4430,7 @@
 			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="yidong-button pl-button-init btn-top" id="pl-button-link"><span class="yidong-btn">下载助手(未点亮)</span></div>`);
+			let $button = $(`<div class="yidong-button pl-button-init btn-top" id="pl-button-link"><span class="yidong-btn">点我点亮</span></div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, () => {
 					$toolWrap = $(pan.btn.home);
@@ -4099,10 +4560,10 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件捏~');
 			}
 			if (this.isOnlyFolder()) {
-				return message.error('提示：<br>请打开文件夹后再勾选文件~');
+				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			}
 
 			let queue = [];
@@ -4131,7 +4592,7 @@
 					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-api" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}</a>
+								<a class="pl-item-link listener-link-api" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载 ${filename}</a>
 								<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
 								</div>`;
 				}
@@ -4140,25 +4601,25 @@
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}</a> </div>`;
+								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a> </div>`;
 				}
 			});
 			content += '</div>';
@@ -4225,11 +4686,11 @@
 		},
 
 		detectPage() {
-            let path = location.pathname;
-            if (/^\/w/.test(path)) return 'home';
-            if (/^\/link/.test(path)) return 'share';
-            return '';
-        },
+			let path = location.pathname;
+			if (/^\/w/.test(path)) return 'home';
+			if (/^\/link/.test(path)) return 'share';
+			return '';
+		},
 
 		isOnlyFolder() {
 			for (let i = 0; i < selectList.length; i++) {
@@ -4264,10 +4725,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/yidong/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/yidong.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4281,6 +4742,11 @@
 		}
 	};
 
+	// 目前还没找到方法进行绕过（懒），可能会出一个辅助脚本？
+	// https://access.pikpakdrive.com/access_controller/v1/area_accessible
+	// {"accessible":false,"ip":"","prompt":{"title":"对不起，PikPak在当前地区不可用","body":"PikPak目前无法对中国大陆用户提供服务，您的当前IP地址()被定位于中国大陆。如果您认为位置判断有误，可以通过客户支持群向我们反馈。","redirect":[{"type":"telegram_group","title":"前往 Telegram 官方群组","url":"https://t.me/pikpak_userservice"},{"type":"whatsapp_group","title":"前往 WhatsApp 官方群组","url":"https://chat.whatsapp.com/BXvB38TYZb04yGjjfQiB18"}]}}
+	// {"accessible":true,"countryCode":"","ip":""}
+
 	// 油小猴
 	let youxiaohou = {
 		async initPanLinker() {
@@ -4293,15 +4759,21 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			Object.freeze && Object.freeze(pan);
-
+			if (pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license')) {
+				this.addButton();
+			} else {
+				this.addInitButton();
+			}
+		},
+		addButton() {
 			let $button = `
 			<div class="nav-item">
 				<div class="dropdown-wrapper">
@@ -4354,110 +4826,45 @@
 				base.showUpdateLog();
 			});
 			doc.on('click', '.listener-open-info', () => {
-				base.showInfo();
+				base.showDebug();
 			});
 
-			for (let i = 0; i < 2; i++) {
-				document.querySelectorAll(".nav-links")[i].innerHTML += $button
-			}
-		}
-	}
-
-
-	// 获取原脚本的GreasyFork信息，确保油小猴服务器信任
-	base.fetchScriptInfo('https://greasyfork.org/zh-CN/scripts/436446.json', 5).then(res => {
-		base.setValue('setting_script_version', res.version);
-		base.setValue('setting_script_author', 'GreasyFork');
-		base.setValue('setting_script_name', res.name);
-	})
-
-	// 用于油小猴服务器检测的脚本信息
-	let scriptInfo = GM_info.script;
-
-	// 用于油小猴服务器检测的脚本作者
-	let realauthor = scriptInfo.author;
-	let author = base.getValue('setting_script_author');
-
-	// 用于油小猴服务器检测的脚本名称
-	let realname = scriptInfo.name;
-	let name = base.getValue('setting_script_name');
-
-	// 用于油小猴服务器检测的脚本版本,防止服务器返回更新信息
-	let realversion = scriptInfo.version;
-	let version = base.getValue('setting_script_version');
-
-	/*--- waitForKeyElements(): 一个实用函数，用于Greasemonkey脚本，
-	它可以检测和处理AJAX加载的内容。
-	使用示例：
-		waitForKeyElements (
-			"div.comments"
-			, commentCallbackFunction
-		);
-		// 页面特定的函数，用于在找到节点时执行我们想要的操作。
-		function commentCallbackFunction (jNode) {
-			jNode.text ("waitForKeyElements() 更改了这段注释。");
-		}
-	重要提示：<br>这个函数需要你的脚本加载了jQuery。
-	*/
-	function waitForKeyElements(selectorTxt, actionFunction, bWaitOnce, iframeSelector) {
-		var targetNodes, btargetsFound;
-
-		if (typeof iframeSelector == "undefined")
-			targetNodes = $(selectorTxt);
-		else
-			targetNodes = $(iframeSelector).contents()
-				.find(selectorTxt);
-
-		if (targetNodes && targetNodes.length > 0) {
-			btargetsFound = true;
-			targetNodes.each(function () {
-				var jThis = $(this);
-				var alreadyFound = jThis.data('alreadyFound') || false;
-
-				if (!alreadyFound) {
-					//--- 调用载荷函数。
-					var cancelFound = actionFunction(jThis);
-					if (cancelFound) {
-						btargetsFound = false;
-					} else {
-						jThis.data('alreadyFound', true);
-					}
-				}
+			document.querySelectorAll(".nav-links").forEach(function (element) {
+				element.innerHTML += $button
+			})
+		},
+		addInitButton() {
+			let $button = `
+			<div class="nav-item">
+				<div class="dropdown-wrapper">
+					<a class="nav-link listener-open-init">(改)点我点亮⬇️</a>
+				</div>
+			</div>
+			`;
+			doc.on('click', '.listener-open-init', () => {
+				base.initDialog();
 			});
-		} else {
-			btargetsFound = false;
-		}
 
-		//--- 获取这个选择器的定时器控制变量。
-		var controlObj = waitForKeyElements.controlObj || {};
-		var controlKey = selectorTxt.replace(/[^\w]/g, "_");
-		var timeControl = controlObj[controlKey];
-
-		//--- 现在根据情况设置或清除定时器。
-		if (btargetsFound && bWaitOnce && timeControl) {
-			//--- 唯一需要清除定时器的情况。
-			clearInterval(timeControl);
-			delete controlObj[controlKey]
-		} else {
-			//--- 如果需要的话，设置一个定时器。
-			if (!timeControl) {
-				timeControl = setInterval(function () {
-					waitForKeyElements(selectorTxt, actionFunction, bWaitOnce, iframeSelector);
-				}, 300);
-				controlObj[controlKey] = timeControl;
-			}
+			document.querySelectorAll(".nav-links").forEach(function (element) {
+				element.innerHTML += $button
+			})
 		}
-		waitForKeyElements.controlObj = controlObj;
 	}
 
 	// 主代码
 	let main = {
-		init() {
+		async init() {
 			// 先加载默认设置
 			base.initDefaultConfig();
+			// 然后获取原脚本的 GreasyFork 信息，确保油小猴服务器信任
+			await base.fetchScriptInfo('https://greasyfork.org/zh-CN/scripts/436446.json', 5).then(res => {
+				base.setValue('setting_script_version', res.version);
+				base.setValue('setting_script_author', 'GreasyFork');
+				base.setValue('setting_script_name', res.name);
+			})
 			// 再加载网页样式
 			base.addPanLinkerStyle();
-			// 判断网盘地址并加载对应的initPanLinker
+			// 最后判断页面地址并加载对应的initPanLinker
 			if (/(pan|yun).baidu.com/.test(location.host)) {
 				baidu.initPanLinker();
 			}
@@ -4479,8 +4886,39 @@
 			if (/www.youxiaohou.com/.test(location.host)) {
 				youxiaohou.initPanLinker();
 			}
+		},
+		async downloadConfig() {
+			// 定义要下载的链接数组及对应的文件名
+			let urlsAndFilenames = [
+				{ url: `https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, filename: 'config.json' },
+				{ url: `https://api.youxiaohou.com/config/v2/ali/?ver=${version}&a=${author}`, filename: 'ali.json' },
+				{ url: `https://api.youxiaohou.com/config/v2/tianyi/?ver=${version}&a=${author}`, filename: 'tianyi.json' },
+				{ url: `https://api.youxiaohou.com/config/v2/xunlei/?ver=${version}&a=${author}`, filename: 'xunlei.json' },
+				{ url: `https://api.youxiaohou.com/config/v2/quark/?ver=${version}&a=${author}`, filename: 'quark.json' },
+				{ url: `https://api.youxiaohou.com/config/v2/yidong/?ver=${version}&a=${author}`, filename: 'yidong.json' },
+			];
+
+			// 发送多个 POST 请求并等待所有请求完成
+			let responses = await Promise.all(urlsAndFilenames.map(obj => base.post(obj.url, {}, {}, 'text')));
+
+			// 遍历所有响应并进行处理
+			responses.forEach((res, index) => {
+				let url = urlsAndFilenames[index].url;
+				let filename = urlsAndFilenames[index].filename;
+
+				// 解析响应内容（假设响应内容是 JSON 格式）
+				let panData = JSON.parse(base.decode(res));
+
+				// 创建 Blob 对象
+				let blob = new Blob([JSON.stringify(panData)], { type: 'application/json' });
+
+				// 下载 Blob 对象
+				base.blobDownload(blob, filename);
+			});
 		}
 	};
+	// 将函数暴露到全局作用域以便在控制台中调用
+	unsafeWindow.Panlinker = main;
 	main.init();
 })();
-// 沉默也许不会是金。
+// 好好学习，天天向上
