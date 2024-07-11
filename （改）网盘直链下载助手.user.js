@@ -2815,7 +2815,7 @@
 				"content-type": "application/json;charset=utf-8",
 			});
 			if (res.url) {
-				return res.url;
+				return res.url.replace(' ', '%20');
 			}
 			return '';
 		},
