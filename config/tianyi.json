@@ -11,7 +11,7 @@
 		"home": ".nav-opea",
 		"share": ".nav-opea"
 	},
-	"d": "http://d.youxiaohou.com",
+	"d": "https://d.youxiaohou.com",
 	"name": "网盘直链下载助手",
 	"init": {
 		"0": "请输入初始化暗号",
@@ -43,7 +43,6 @@
 	},
 	"num": "865746",
 	"license": "AGPL3",
-	"version": "6.1.5",
-	"new": "<li class=\"pl-dropdown-menu-item\"><a class=\"pl-a\" data-no-instant=\"1\" style=\"color:#F24C43\" href=\"https://greasyfork.org/script/449291/\" target=\"_blank\"><span style=\"margin-right: 5px;\">发现新版</span><svg style=\"animation: load 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\"><path d=\"M171.31 549.028c-24.558-153.572 59.801-308.76 210.442-367.477 111.637-43.53 232.005-22.71 317.236 39.47l-72.527 117.48 325.245-1.254L835.459 0l-59.547 96.426C650.34 15.104 479.156-11.493 329.258 46.95 121.578 127.91 2.038 337.29 25.64 549.03h145.67z\" fill=\"#F24C43\"/><path d=\"M852.688 464.966c24.536 153.572-59.78 308.78-210.422 367.477-102.693 40.024-215.86 24.94-302.874-29.019 16.57-26.895 65.537-106.198 65.537-106.198L55.17 676.704 203.176 1024l62.053-100.484c125.552 81.322 279.592 101.992 429.489 43.55 207.638-80.982 327.22-290.34 303.618-502.058H852.688z\" fill=\"#F24C43\"/></svg></a></li>",
-	"footer": "<div style=\"text-align: center;\">点击查看 <a href=\"https://www.youxiaohou.com/zh-cn/motrix.html\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">RPC配置说明</a>，配置修改后自动生效</div>"
+	"version": "6.2.3",
+	"footer": "<div style=\"text-align: center;\">感谢您使用本脚本，给我们一个<a href=\"https://github.com/hmjz100/Online-disk-direct-link-download-assistant\" target=\"_blank\" class=\"pl-a\" data-no-instant=\"1\">Star</a>吧~</div>"
 }
