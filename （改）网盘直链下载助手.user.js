@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.8.8
+// @version           1.0.8.9
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
-// @description       一个基于 JavaScript 的网盘文件下载地址获取工具，支持 百度/阿里/天翼/迅雷/夸克/移动 六大网盘 | 基于【网盘直链下载助手】修改自6.1.6版本 | 开源 - 自用 - 去广 | 改界面 - 添功能 - 修Bug | 不仅能够精简网盘界面 还支持修改网盘界面主题颜色!
+// @description       一个基于 JavaScript 的网盘文件下载地址获取工具，支持 百度网盘/阿里云盘/天翼云盘/迅雷云盘/夸克网盘/移动网盘 六大网盘 | 基于【网盘直链下载助手】修改自6.2.3版本 | 开源 - 自用 - 去广 | 改界面 - 添功能 - 修Bug | 不仅能够精简网盘界面 还支持修改网盘界面主题颜色!
 // @license           AGPL-3.0-or-later
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
@@ -67,7 +67,6 @@
 // @grant             GM_info
 // @grant             GM_registerMenuCommand
 // @grant             GM_cookie
-// @grant             GM_addStyle
 // @grant             GM_getResourceText
 // ==/UserScript==
 
@@ -86,15 +85,13 @@
 	网盘直链下载助手
 	以下代码均改自 网盘直链下载助手，作者油小猴
 	*/
-
 	/* 全局参数 */
 	let pt = '', selectList = [], params = {}, mode = '', width = '', pan = {}, color = '',
 		doc = $(document), progress = {}, request = {}, ins = {}, idm = {}, colored = false,
 		scriptInfo = GM_info.script,
 		realauthor = scriptInfo.author,
 		realname = scriptInfo.name,
-		realversion = scriptInfo.version
-		;
+		realversion = scriptInfo.version;
 
 
 	/* 设置选项 */
@@ -140,7 +137,7 @@
 		timer: 3500,
 		timerProgressBar: true,
 		showCloseButton: true,
-		didOpen: (toast) => {
+		didOpen: function (toast) {
 			toast.addEventListener('mouseenter', Swal.stopTimer);
 			toast.addEventListener('mouseleave', Swal.resumeTimer);
 		}
@@ -148,19 +145,19 @@
 
 	// Toast 简易调用
 	let message = {
-		success: (text) => {
+		success: function (text) {
 			toast.fire({ title: text, icon: 'success' });
 		},
-		error: (text) => {
+		error: function (text) {
 			toast.fire({ title: text, icon: 'error' });
 		},
-		warning: (text) => {
+		warning: function (text) {
 			toast.fire({ title: text, icon: 'warning' });
 		},
-		info: (text) => {
+		info: function (text) {
 			toast.fire({ title: text, icon: 'info' });
 		},
-		question: (text) => {
+		question: function (text) {
 			toast.fire({ title: text, icon: 'question' });
 		}
 	};
@@ -169,13 +166,13 @@
 	let base = {
 		// 创建 GreaseMonkey 菜单
 		registerMenuCommand() {
-			GM_registerMenuCommand('⚙️ 设置', () => {
+			GM_registerMenuCommand('⚙️ 设置', function () {
 				base.showSetting();
 			});
-			GM_registerMenuCommand('📃 更新', () => {
+			GM_registerMenuCommand('📃 更新', function () {
 				base.showUpdateLog();
 			});
-			GM_registerMenuCommand('🛠️ 调试', () => {
+			GM_registerMenuCommand('🛠️ 调试', function () {
 				base.showDebug();
 			});
 		},
@@ -187,17 +184,6 @@
 			base.setValue('setting_init_code', value);
 			base.setValue('license', value);
 			history.go(0)
-		},
-
-		// 传递 Document Cookie
-		getCookie(name) {
-			let cname = name + "=";
-			let ca = document.cookie.split(';');
-			for (let i = 0; i < ca.length; i++) {
-				let c = ca[i].trim();
-				if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
-			}
-			return "";
 		},
 
 		/*-- 对象类型判断
@@ -291,7 +277,7 @@
 
 		// 根据数组中的每个文件名进行排序，使用 localeCompare 方法来比较中文字符串的顺序。
 		sortByName(arr) {
-			const handle = () => {
+			const handle = function () {
 				return (a, b) => {
 					const p1 = a.filename ? a.filename : a.server_filename;
 					const p2 = b.filename ? b.filename : b.server_filename;
@@ -305,6 +291,17 @@
 		fixFilename(name) {
 			let replace = /[!?&|`"'*\/:<>\\]/g
 			return name.replace(replace, '_');
+		},
+
+		// 传递 Document Cookie
+		getCookie(name) {
+			let cname = name + "=";
+			let ca = document.cookie.split(';');
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i].trim();
+				if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
+			}
+			return "";
 		},
 
 		// 接受Blob对象和文件名，然后创建临时链接指向blob对象，之后创建a标签指向临时链接和设置文件名，最后模拟点击a标签实现下载和释放临时链接
@@ -326,11 +323,11 @@
 				data = JSON.stringify(data);
 			}
 			return new Promise((resolve, reject) => {
-				const sendRequest = () => {
+				const sendRequest = function () {
 					GM_xmlhttpRequest({
 						method: "POST", url, headers, data,
 						responseType: type || 'json',
-						onload: (res) => {
+						onload: function (res) {
 							if (/^[A-Za-z0-9+/=\s]+$/.test(res.response) && /^[A-Za-z0-9+/=\s]+$/.test(res.responseText)) {
 								if (res.response) {
 									res.decodedResponse = JSON.parse(base.decode(res.response));
@@ -342,7 +339,7 @@
 							console.log('【（改）网盘直链下载助手】Post\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求数据：' + JSON.stringify(data) + '\n请求结果：', res);
 							type === 'blob' ? resolve(res) : resolve(res.response || res.responseText);
 						},
-						onerror: (err) => {
+						onerror: function (err) {
 							if (currentRetry < maxRetries) {
 								currentRetry++;
 								console.error(`【（改）网盘直链下载助手】Post\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`, err);
@@ -363,11 +360,11 @@
 		// 使用 Get 发送请求
 		get(url, headers, type, extra, maxRetries = 10, currentRetry = 0) {
 			return new Promise((resolve, reject) => {
-				const sendRequest = () => {
+				const sendRequest = function () {
 					let requestObj = GM_xmlhttpRequest({
 						method: "GET", url, headers,
 						responseType: type || 'json',
-						onload: (res) => {
+						onload: function (res) {
 							console.log('【（改）网盘直链下载助手】Get Onload\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
 							if (res.status === 204) {
 								requestObj.abort();
@@ -380,7 +377,7 @@
 								resolve(res.response || res.responseText);
 							}
 						},
-						onprogress: (res) => {
+						onprogress: function (res) {
 							if (extra && extra.filename && extra.index) {
 								res.total > 0 ? progress[extra.index] = (res.loaded * 100 / res.total).toFixed(2) : progress[extra.index] = 0.00;
 							}
@@ -389,7 +386,7 @@
 							console.log('【（改）网盘直链下载助手】Get OnloadStart\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers));
 							extra && extra.filename && extra.index && (request[extra.index] = requestObj);
 						},
-						onerror: (err) => {
+						onerror: function (err) {
 							if (currentRetry < maxRetries) {
 								currentRetry++;
 								console.error(`【（改）网盘直链下载助手】Get\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`, err);
@@ -411,14 +408,14 @@
 		// 使用 Get 发送请求获取直链
 		getFinalUrl(url, headers, maxRetries = 10, currentRetry = 0) {
 			return new Promise((resolve, reject) => {
-				const sendRequest = () => {
+				const sendRequest = function () {
 					let requestObj = GM_xmlhttpRequest({
 						method: "GET", url, headers,
-						onload: (res) => {
+						onload: function (res) {
 							console.log('【（改）网盘直链下载助手】Get FinalUrl\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n返回结果：', res);
 							resolve(res.finalUrl);
 						},
-						onerror: (err) => {
+						onerror: function (err) {
 							if (currentRetry < maxRetries) {
 								currentRetry++;
 								console.error(`【（改）网盘直链下载助手】Get FinalUrl\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`);
@@ -449,7 +446,7 @@
 				if (retryCount > 0) {
 					console.log("【（改）网盘直链下载助手】Fetch\n5秒后将重新尝试获取版本");
 					return new Promise(resolve => setTimeout(resolve, 5000))
-						.then(() => {
+						.then(function () {
 							console.log('【（改）网盘直链下载助手】Fetch\n重新尝试获取脚本信息...');
 							return fetchScriptInfo(url, retryCount - 1);
 						});
@@ -474,7 +471,7 @@
 				GM_xmlhttpRequest({
 					method: "POST", url, headers: {}, data: JSON.stringify(rpcData),
 					responseType: 'json',
-					onload: (res) => {
+					onload: function (res) {
 						console.log('【（改）网盘直链下载助手】Post RPCTest\n请求地址：' + url + '\n请求结果：', res);
 						if (res.response) {
 							resolve("success");
@@ -482,7 +479,7 @@
 							resolve("fail");
 						}
 					},
-					onerror: (err) => {
+					onerror: function (err) {
 						console.error('【（改）网盘直链下载助手】Post RPCTest\n请求失败', err);
 						resolve("fail");
 					},
@@ -509,40 +506,40 @@
 		},
 
 		// 动态添加样式
-		addStyle(id, tag, css, element) {
+		addStyle(id, tag, css, element, position) {
 			tag = tag || 'style';
 			element = element || 'body';
-			let doc = document, styleDom = doc.getElementById(id);
+			let styleDom = document.getElementById(id);
 			if (styleDom) styleDom.remove();
-			let style = doc.createElement(tag);
+			let style = document.createElement(tag);
 			style.rel = 'stylesheet';
 			style.id = id;
 			tag === 'style' ? style.innerHTML = css : style.href = css;
-			doc.getElementsByTagName(element)[0].appendChild(style);
+			if (position === "before") {
+				$(element).prepend($(style));
+			} else {
+				$(element).append($(style));
+			}
 		},
 
 		hexToRgba(hex) {
 			// 去掉 # 号
 			hex = hex.replace(/^#/, '');
-
 			// 如果是四位十六进制颜色值，转换为八位
 			if (hex.length === 4) {
 				hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2] + hex[3] + hex[3];
 			}
-
 			// 解析 RGB 分量
 			var r = parseInt(hex.substring(0, 2), 16);
 			var g = parseInt(hex.substring(2, 4), 16);
 			var b = parseInt(hex.substring(4, 6), 16);
 			var a = '';
-
 			// 如果是八位十六进制颜色值，解析 alpha 通道
 			if (hex.length === 8) {
 				var a = 1;
 				a = parseInt(hex.substring(6, 8), 16) / 255; // 将 alpha 值转换为 0 到 1 之间的小数
 				a = ',' + a
 			}
-
 			// 返回 rgba 格式字符串
 			return r + ', ' + g + ', ' + b + a;
 		},
@@ -604,9 +601,13 @@
 						let newStyle = document.createElement('style');
 						newStyle.id = id;
 						newStyle.textContent = responseText;
-						base.addStyle(id, 'style', cssText, tag.parentElement.tagName || 'head');
+						if (location.pathname.includes("youth/pan")) {
+							base.addStyle(id, 'style', cssText, 'body', "before");
+							tag.remove()
+						} else {
+							base.addStyle(id, 'style', cssText, tag.parentElement.tagName || 'body');
+						}
 						console.log(`【（改）网盘直链下载助手】UI\n修改 <link> 元素 转 <style> 元素 样式\n元素：`, tag, `\n样式：`, newStyle);
-						tag.remove();
 					});
 			})
 			document.querySelectorAll('[id^="Panlinker-ColorUI-"]').forEach(function (tag) {
@@ -647,7 +648,6 @@
 					newStyle.textContent = cssText;
 					base.addStyle(id, 'style', cssText, element);
 					console.log(`【（改）网盘直链下载助手】UI\n修改 <style> 元素 样式\n元素：`, tag, `\n样式：`, newStyle);
-					tag.remove();
 				});
 				colored = true;
 			}
@@ -744,7 +744,7 @@
 					value: 'no'
 				}];
 
-			value.forEach((v) => {
+			value.forEach(function (v) {
 				// 没有对应的项目就添加上项目
 				if (!base.getValue(v.name)) base.setValue(v.name, v.value);
 			});
@@ -755,7 +755,7 @@
 			let dom = '',
 				btn = '',
 				colorList = ['#09AAFF', '#cc3235', '#518c17', '#ed944b', '#f969a5', '#bca280', '#b673ab', '#574AB8', '#1d2327', '#18a497', '#637dff', '#0d53ff', '#3181f9', '#f8d800', '#0396ff', '#32ccbc', '#f6416c', '#2271b1', '#59524c', '#ff679a', '#f44236', '#fec107', '#8bc24a', '#2594ed', '#9c28b1'],
-				colorNameList = ['度盘<br/>经典蓝', '度盘<br/>平安红', '度盘<br/>盎然绿', '度盘<br/>周年橙', '度盘<br/>幸会粉', '度盘<br/>午后棕', '度盘<br/>物语紫', '度盘<br/>星空紫', 'OpenAI<br/>默认黑', 'OpenAI<br/>默认青', '度里<br/>霞光紫', '夸克<br/>极简蓝', '移动<br/>彩云蓝', '果核<br/>柠檬黄', '果核<br/>默认蓝', '果核<br/>碧波绿', '果核<br/>玫瑰红', '文派<br/>默认蓝', '文派<br/>咖啡灰', '哔哩<br/>少女粉', '哔哩<br/>高能红', '哔哩<br/>咸蛋黄', '哔哩<br/>早苗绿', '哔哩<br/>宝石蓝', '哔哩<br/>罗兰紫'];
+				colorNameList = ['度盘<br/>经典蓝', '度盘<br/>平安红', '度盘<br/>盎然绿', '度盘<br/>周年橙', '度盘<br/>幸会粉', '度盘<br/>午后棕', '度盘<br/>物语紫', '度盘<br/>星空紫', 'OpenAI<br/>默认黑', 'OpenAI<br/>默认青', '里度<br/>霞光紫', '夸克<br/>极简蓝', '移动<br/>彩云蓝', '果核<br/>柠檬黄', '果核<br/>默认蓝', '果核<br/>碧波绿', '果核<br/>玫瑰红', '文派<br/>默认蓝', '文派<br/>咖啡灰', '哔哩<br/>少女粉', '哔哩<br/>高能红', '哔哩<br/>咸蛋黄', '哔哩<br/>早苗绿', '哔哩<br/>宝石蓝', '哔哩<br/>罗兰紫'];
 			dom += `<div style="text-align: center;">带星号的设置项目将在网页刷新后生效</div>`
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://，但不需要写端口与路径" class="swal2-input pl-input listener-rpc-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix下载器为16800" class="swal2-input pl-input listener-rpc-port" value="${base.getValue('setting_rpc_port')}"></label>`;
@@ -763,7 +763,7 @@
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC密钥</div><input type="text" placeholder="无密钥无需填写" class="swal2-input pl-input listener-rpc-token" value="${base.getValue('setting_rpc_token')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC保存</div><input type="text" placeholder="文件下载后保存路径，例如：D:\\Downloads\\" class="swal2-input pl-input listener-rpc-dir" value="${base.getValue('setting_rpc_dir')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">当前RPC</div><div><span id="pl-rpcDomain">${base.getValue('setting_rpc_domain')}</span>:<span id="pl-rpcPort">${base.getValue('setting_rpc_port')}</span><span id="pl-rpcPath">${base.getValue('setting_rpc_path')}</span><button type="button" class="pl-button-mini swal2-confirm swal2-styled listener-rpc-test">测试</button></div></label>`;
-			dom += `<label class="pl-setting-label" style="padding-top:0"><div class="pl-label"></div><span><a href="https://www.youxiaohou.com/zh-cn/motrix.html#使用指南" target="_blank" class="pl-a" data-no-instant="1">RPC配置说明</a>，适用于RPC下载👆</span></label>`;
+			dom += `<label class="pl-setting-label" style="padding-top:0;flex-direction:row-reverse;text-align:right;"><span><a href="https://www.youxiaohou.com/zh-cn/motrix.html#使用指南" target="_blank" class="pl-a" data-no-instant="1">RPC配置说明</a>，适用于RPC下载👆</span></label>`;
 
 			colorList.forEach((v, i) => {
 				btn += `<div style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'listener-color' : 'listener-color'}">
@@ -777,13 +777,13 @@
 				dom += `<option value="${k}" ${base.getValue('setting_terminal_type') === k ? 'selected' : ''}>${terminalType[k]}</option>`;
 			});
 			dom += `</select></label>`;
-			dom += `<label class="pl-setting-label" style="padding-top:0"><div class="pl-label"></div><span><a href="https://www.youxiaohou.com/zh-cn/curl.html" target="_blank" class="pl-a" data-no-instant="1">cURL使用教程</a>，适用于cURL下载👆</span></label>`;
+			dom += `<label class="pl-setting-label" style="padding-top:0;flex-direction:row-reverse;text-align:right;"><span><a href="https://www.youxiaohou.com/zh-cn/curl.html" target="_blank" class="pl-a" data-no-instant="1">cURL使用教程</a>，适用于cURL下载👆</span></label>`;
 
 
 			dom += `<label class="pl-setting-label"><div class="pl-label">[百度网盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-baidu-theme">`;
 			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
 			dom += `</select></label>`;
-			dom += `<label class="pl-setting-label" style="padding-top:0"><div class="pl-label"></div><span>旧版页面会美化，新版页面则是更换主题色👆</span></label>`;
+			dom += `<label class="pl-setting-label" style="padding-top:0;flex-direction:row-reverse;text-align:right;"><span>旧版页面会美化，新版页面则是更换主题色👆</span></label>`;
 
 			dom += `<label class="pl-setting-label"><div class="pl-label">[阿里云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-ali-theme">`;
 			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_ali_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
@@ -823,10 +823,10 @@
 				scrollbarPadding: false,
 				footer: pan.footer,
 			});
-			doc.on('click', '.listener-register', async (e) => {
+			doc.on('click', '.listener-register', async function (e) {
 				base.unRegisterInit(111111);
 			});
-			doc.on('click', '.listener-rpc-test', async (e) => {
+			doc.on('click', '.listener-rpc-test', async function (e) {
 				e.preventDefault();
 				let domain = base.getValue('setting_rpc_domain'),
 					port = base.getValue('setting_rpc_port'),
@@ -848,7 +848,7 @@
 					e.target.style.backgroundColor = base.getValue('setting_theme_color');
 				}, 3000)
 			});
-			doc.on('click', '.listener-color', async (e) => {
+			doc.on('click', '.listener-color', async function (e) {
 				if (e.target.dataset.color) {
 					if (document.getElementById("pl-thisColor")) {
 						document.getElementById("pl-thisColor").remove();
@@ -858,43 +858,43 @@
 					base.addPanLinkerStyle();
 				}
 			});
-			doc.on('input', '.listener-rpc-domain', async (e) => {
+			doc.on('input', '.listener-rpc-domain', async function (e) {
 				base.setValue('setting_rpc_domain', e.target.value);
 				document.getElementById("pl-rpcDomain").innerHTML = e.target.value;
 			});
-			doc.on('input', '.listener-rpc-port', async (e) => {
+			doc.on('input', '.listener-rpc-port', async function (e) {
 				base.setValue('setting_rpc_port', e.target.value);
 				document.getElementById("pl-rpcPort").innerHTML = e.target.value;
 			});
-			doc.on('input', '.listener-rpc-path', async (e) => {
+			doc.on('input', '.listener-rpc-path', async function (e) {
 				base.setValue('setting_rpc_path', e.target.value);
 				document.getElementById("pl-rpcPath").innerHTML = e.target.value;
 			});
-			doc.on('input', '.listener-rpc-token', async (e) => {
+			doc.on('input', '.listener-rpc-token', async function (e) {
 				base.setValue('setting_rpc_token', e.target.value);
 			});
-			doc.on('input', '.listener-rpc-dir', async (e) => {
+			doc.on('input', '.listener-rpc-dir', async function (e) {
 				base.setValue('setting_rpc_dir', e.target.value);
 			});
-			doc.on('change', '.listener-terminal', async (e) => {
+			doc.on('change', '.listener-terminal', async function (e) {
 				base.setValue('setting_terminal_type', e.target.value);
 			});
-			doc.on('change', '.listener-baidu-theme', async (e) => {
+			doc.on('change', '.listener-baidu-theme', async function (e) {
 				base.setValue('setting_baidu_theme', e.target.value);
 			});
-			doc.on('change', '.listener-ali-theme', async (e) => {
+			doc.on('change', '.listener-ali-theme', async function (e) {
 				base.setValue('setting_ali_theme', e.target.value);
 			});
-			doc.on('change', '.listener-xunlei-theme', async (e) => {
+			doc.on('change', '.listener-xunlei-theme', async function (e) {
 				base.setValue('setting_xunlei_theme', e.target.value);
 			});
-			doc.on('change', '.listener-quark-theme', async (e) => {
+			doc.on('change', '.listener-quark-theme', async function (e) {
 				base.setValue('setting_quark_theme', e.target.value);
 			});
-			doc.on('change', '.listener-yidong-theme', async (e) => {
+			doc.on('change', '.listener-yidong-theme', async function (e) {
 				base.setValue('setting_yidong_theme', e.target.value);
 			});
-			doc.on('change', '.listener-youxiaohou-server', async (e) => {
+			doc.on('change', '.listener-youxiaohou-server', async function (e) {
 				base.setValue('setting_youxiaohou_server', e.target.value);
 			});
 		},
@@ -908,9 +908,9 @@
 			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
 				server = `https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`;
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`;
+				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`;
 			} else {
-				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`;
+				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`;
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			debugInfo += `<span>以下内容均为脚本自检信息<br/>本页面仅作为调试使用<span>`;
@@ -951,6 +951,7 @@
 				icon: 'info',
 				title: '更新日志',
 				html: `<div>
+				V1.0.8.9<br/>1、跟进官方V6.2.3，优化保存到网盘提示，修复阿里云盘、移动云盘失效的问题；<br/>2、优化修改网盘主题的代码，减少对页面的破坏。<br/><br/>
 				V1.0.8.8<br/>1、修复下载菜单字体过小的Bug。<br/><br/>
 				V1.0.8.7<br/>1、修复在阿里云盘分享页面下点击“未点亮”按钮时没有任何反应的Bug；<br/>2、更新并优化网盘界面精简规则；<br/>3、支持更换 百度网盘、阿里云盘、迅雷云盘、夸克网盘、移动云盘 界面的主题颜色。<br/><br/>
 				V1.0.8.6<br/>1、新增移动云盘会员中心页面，可在网盘中点击“会员中心”按钮查看(但无法使用第三方支付)。<br/><br/>
@@ -1004,7 +1005,7 @@
 		createTip() {
 			$('body').append('<div class="pl-tooltip"></div>');
 
-			doc.on('mouseenter mouseleave', '.listener-tip', (e) => {
+			doc.on('mouseenter mouseleave', '.listener-tip', function (e) {
 				if (e.type === 'mouseenter') {
 					let filename = e.currentTarget.innerText;
 					let size = e.currentTarget.dataset.size;
@@ -1083,119 +1084,603 @@
 			.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:${color}}
 			.swal2-popup {padding:0 0 1.25em;flex-direction:column}
 			.swal2-close {position:absolute;top:1px;right:1px;transition: all 0.2s ease;}
-			div:where(.swal2-container) .swal2-html-container{margin: 1em 1.3em 0.3em;}
+			div:where(.swal2-container) .swal2-html-container{margin: 1.3em 1.3em 0.3em;}
 			div:where(.swal2-container) button:where(.swal2-close):hover {color:${color};font-size:60px!important}
 			`;
 
 			// 先监听颜色方案变化 Panlinker-SweetAlert2-Default
-			window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
+			window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+				base.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
 				if (e.matches) {
 					// 切换到暗色主题
-					this.addStyle('swal-pub-style', 'style', GM_getResourceText('SwalDark'));
+					base.addStyle('swal-pub-style', 'style', GM_getResourceText('SwalDark'));
 				} else {
 					// 切换到浅色主题
-					this.addStyle('swal-pub-style', 'style', GM_getResourceText('Swal'));
+					base.addStyle('swal-pub-style', 'style', GM_getResourceText('Swal'));
 				}
-				this.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
 			});
+			base.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
 			// 再修改主题 Panlinker-SweetAlert2-Default
 			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				// 切换到暗色主题
-				this.addStyle('swal-pub-style', 'style', GM_getResourceText('SwalDark'));
+				base.addStyle('swal-pub-style', 'style', GM_getResourceText('SwalDark'));
 			} else {
 				// 切换到浅色主题
-				this.addStyle('swal-pub-style', 'style', GM_getResourceText('Swal'));
+				base.addStyle('swal-pub-style', 'style', GM_getResourceText('Swal'));
 			}
-			this.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
-
 
 			let uicss = `
-			::-webkit-scrollbar { width: 8px; height: 8px; transition: all 0.2s ease;}
-			::-webkit-scrollbar-track { border-radius: 10px; background: #fff; }
+			::-webkit-scrollbar {
+				width: 8px;
+				height: 8px;
+				transition: all 0.2s ease;
+			}
+
+			::-webkit-scrollbar-track {
+				border-radius: 10px;
+				background: #fff;
+			}
+
 			::-webkit-scrollbar-thumb,
-			::-webkit-scrollbar-thumb:hover { border-radius: 10px; }
-			::-webkit-scrollbar-thumb { background-color: ${color}90 }
-			::-webkit-scrollbar-thumb:hover { background-color: ${color}D0 }
-			.swal2-popup { font-size: 16px }
-			.pl-a { color: ${color}; }
-			.pl-a:hover { color: ${color}90; }
-			.pl-popup { font-size: 12px; width: 90%;}
-			.pl-popup a { color: ${color}; }
-			.pl-popup a:hover { color: ${color}90; }
-			.pl-header { padding: 0;align-items: flex-start; border-bottom: 1px solid #eee; margin: 0 0 10px; padding: 0 0 5px; }
-			.pl-title { font-size: 16px; line-height: 1;white-space: nowrap; text-overflow: ellipsis;}
-			.pl-content { padding: 0; font-size: 12px; }
-			.pl-main { background-color:${color}15;overflow:auto; border-radius: 5px; max-height:calc(${document.documentElement.clientHeight}px - 250px);}
-			.pl-footer { font-size: 15px; margin-top: 10px; padding-top: 5px; color: #f56c6c; text-align: center; display: flex !important; align-items: center; justify-content: center;}
-			.pl-item { display: flex; align-items: center; line-height: 22px; height: 50px; background-color: ${color}30; border-radius: 5px; margin: 8px 6px; }
-			.pl-item-name { flex: 0 0 170px; text-align: left;margin: 6px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor:default; height: 30px;}
-			.pl-item-link { flex: 1; text-align: left; white-space: nowrap; text-overflow: ellipsis;cursor:pointer; overflow: hidden; }
-			.pl-item-btn { background: ${color}; border-radius: 3px; color: #ffffff; cursor: pointer; font-size: 12px; outline: none; display: flex; align-items: center; justify-content: center; margin: 6px 6px; padding: 0.625em 1.1em; }
-			.pl-item-tip { display: flex; justify-content: space-between;flex: 1; }
-			.pl-back { width: 70px; background: #ddd; border-radius: 3px; cursor:pointer; margin:1px 6px; color: #000; }
-			.pl-ext { display: inline-block; width: 44px; background: #999; color: #fff; height: 16px; line-height: 16px; font-size: 12px; border-radius: 3px;}
-			.pl-retry {padding: 3px 10px; background: #cc3235; color: #fff; border-radius: 3px; cursor: pointer;}
-			.pl-browserdownload { padding: 3px 10px; background: ${color}; color: #fff; border-radius: 3px; cursor: pointer;}
-			.pl-item-progress { display:flex;flex: 1;align-items:center}
-			.pl-progress { display: inline-block;vertical-align: middle;width: 100%; box-sizing: border-box;line-height: 1;position: relative;height:15px; flex: 1}
-			.pl-progress-outer { height: 15px;border-radius: 100px;background-color: #c1c1c1a1;overflow: hidden;position: relative;vertical-align: middle;}
-			.pl-progress-inner{ position: absolute;left: 0;top: 0;background-color: ${color};text-align: center;border-radius: 100px;line-height: 1;white-space: nowrap;transition: width .6s ease;height: 15px}
-			.pl-progress-inner-text { display: inline-block;vertical-align: middle;color: #ffffff;font-size: 12px;margin: 0 5px;height: 15px}
-			.pl-progress-tip{ flex:1; text-align:right}
-			.pl-progress-how{ flex: 0 0 100px; background: #ddd; border-radius: 3px; margin-left: 10px; cursor: pointer; text-align: center; color:#000;}
-			.pl-progress-stop{ flex: 0 0 80px; background: #cc3235; cursor: pointer; margin: 6px 6px 6px 10px; font-size: 12px; border: 0; border-radius: 4px; color: #ffffff; outline: none; display: flex; align-items: center; justify-content: center; padding: 0.625em 1.1em;}
-			.pl-progress-inner-text:after { display: inline-block;content: "";height: 100%;vertical-align: middle;}
-			.pl-btn-primary { background: ${color}; border: 0; border-radius: 4px; color: #ffffff; cursor: pointer; font-size: 12px; outline: none; display:flex; align-items: center; justify-content: center; margin: 6px 6px; padding: 0.625em 1.1em;transition: 0.3s opacity; }
-			.pl-btn-primary:hover { opacity: 0.9;transition: 0.3s opacity; }
-			.pl-btn-success { background: #55af28; animation: easeOpacity 1.2s 2; animation-fill-mode:forwards }
-			.pl-btn-info { background: #606266; }
-			.pl-btn-warning { background: #da9328; }
-			.pl-btn-warning { background: #da9328; }
-			.pl-btn-danger { background: #cc3235; }
-			.pl-button-mini { padding: 5px 10px; }
-			.pl-dropdown-menu-item {height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: ${color}; transition: all 0.2s ease;}
-			.pl-dropdown-menu-item:hover { background-color: ${color}15;}
-			.pl-button-mode {padding: 0px; padding-left: 0px !important; color: ${color} !important; transition: all 0.2s ease;}
-			.pl-button-mode:hover {background-color: ${color}33 !important;}
-			.pl-button, .pl-dropdown-menu { transition: all 0.2s ease;}
-			.pl-button .pl-dropdown-menu { display: none;}
-			.pl-button:hover .pl-dropdown-menu { display: block; }
-			.pl-button-init { opacity: 0.5; animation: easeInitOpacity 1.2s 3; animation-fill-mode:forwards }
-			@keyframes easeInitOpacity { from { opacity: 0.5; } 50% { opacity: 1 } to { opacity: 0.5; } }
-			@keyframes easeOpacity { from { opacity: 1; } 50% { opacity: 0.35 } to { opacity: 1; } }
-			.baidu-button {background: ${color} !important; border-color: ${color} !important; border: 1px solid ${color} !important;}
-			.baidu-button:hover { background: ${color}b0 !important; border-color: ${color} !important;}
-			header[style="display: none;"] ~ #pl-button-link {
+			::-webkit-scrollbar-thumb:hover {
+				border-radius: 10px;
+			}
+
+			::-webkit-scrollbar-thumb {
+				background-color: ${color}90
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+				background-color: ${color}D0
+			}
+
+			.swal2-popup {
+				font-size: 16px
+			}
+
+			.pl-a {
+				color: ${color};
+			}
+
+			.pl-a:hover {
+				color: ${color}90;
+			}
+
+			.pl-popup {
+				font-size: 12px;
+				width: 90%;
+			}
+
+			.pl-popup a {
+				color: ${color};
+			}
+
+			.pl-popup a:hover {
+				color: ${color}90;
+			}
+
+			.pl-header {
+				padding: 0;
+				align-items: flex-start;
+				border-bottom: 1px solid #eee;
+				margin: 0 0 10px;
+				padding: 0 0 5px;
+			}
+
+			.pl-title {
+				font-size: 16px;
+				line-height: 1;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+
+			.pl-content {
+				padding: 0;
+				font-size: 12px;
+			}
+
+			.pl-main {
+				background-color:${color}15;
+				overflow: auto;
+				border-radius: 5px;
+				max-height:calc(${document.documentElement.clientHeight}px - 250px);
+			}
+
+			.pl-footer {
+				font-size: 15px;
+				margin-top: 10px;
+				padding-top: 5px;
+				color: #f56c6c;
+				text-align: center;
+				display: flex !important;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.pl-item {
+				display: flex;
+				align-items: center;
+				line-height: 22px;
+				height: 50px;
+				background-color: ${color}30;
+				border-radius: 5px;
+				margin: 8px 6px;
+			}
+
+			.pl-item-name {
+				flex: 0 0 170px;
+				text-align: left;
+				margin: 6px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				cursor: default;
+				height: 30px;
+			}
+
+			.pl-item-link {
+				flex: 1;
+				text-align: left;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				cursor: pointer;
+				overflow: hidden;
+			}
+
+			.pl-item-btn {
+				background: ${color};
+				border-radius: 3px;
+				color: #ffffff;
+				cursor: pointer;
+				font-size: 12px;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 6px 6px;
+				padding: 0.625em 1.1em;
+			}
+
+			.pl-item-tip {
+				display: flex;
+				justify-content: space-between;
+				flex: 1;
+			}
+
+			.pl-back {
+				width: 70px;
+				background: #ddd;
+				border-radius: 3px;
+				cursor: pointer;
+				margin: 1px 6px;
+				color: #000;
+			}
+
+			.pl-ext {
+				display: inline-block;
+				width: 44px;
+				background: #999;
+				color: #fff;
+				height: 16px;
+				line-height: 16px;
+				font-size: 12px;
+				border-radius: 3px;
+			}
+
+			.pl-retry {
+				padding: 3px 10px;
+				background: #cc3235;
+				color: #fff;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+			.pl-browserdownload {
+				padding: 3px 10px;
+				background: ${color};
+				color: #fff;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+			.pl-item-progress {
+				display: flex;
+				flex: 1;
+				align-items: center
+			}
+
+			.pl-progress {
+				display: inline-block;
+				vertical-align: middle;
+				width: 100%;
+				box-sizing: border-box;
+				line-height: 1;
+				position: relative;
+				height: 15px;
+				flex: 1
+			}
+
+			.pl-progress-outer {
+				height: 15px;
+				border-radius: 100px;
+				background-color: #c1c1c1a1;
+				overflow: hidden;
+				position: relative;
+				vertical-align: middle;
+			}
+
+			.pl-progress-inner {
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-color: ${color};
+				text-align: center;
+				border-radius: 100px;
+				line-height: 1;
+				white-space: nowrap;
+				transition: width .6s ease;
+				height: 15px
+			}
+
+			.pl-progress-inner-text {
+				display: inline-block;
+				vertical-align: middle;
+				color: #ffffff;
+				font-size: 12px;
+				margin: 0 5px;
+				height: 15px
+			}
+
+			.pl-progress-tip {
+				flex: 1;
+				text-align: right
+			}
+
+			.pl-progress-how {
+				flex: 0 0 100px;
+				background: #ddd;
+				border-radius: 3px;
+				margin-left: 10px;
+				cursor: pointer;
+				text-align: center;
+				color: #000;
+			}
+
+			.pl-progress-stop {
+				flex: 0 0 80px;
+				background: #cc3235;
+				cursor: pointer;
+				margin: 6px 6px 6px 10px;
+				font-size: 12px;
+				border: 0;
+				border-radius: 4px;
+				color: #ffffff;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0.625em 1.1em;
+			}
+
+			.pl-progress-inner-text:after {
+				display: inline-block;
+				content: "";
+				height: 100%;
+				vertical-align: middle;
+			}
+
+			.pl-btn-primary {
+				background: ${color};
+				border: 0;
+				border-radius: 4px;
+				color: #ffffff;
+				cursor: pointer;
+				font-size: 12px;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 6px 6px;
+				padding: 0.625em 1.1em;
+				transition: 0.3s opacity;
+			}
+
+			.pl-btn-primary:hover {
+				opacity: 0.9;
+				transition: 0.3s opacity;
+			}
+
+			.pl-btn-success {
+				background: #55af28;
+				animation: easeOpacity 1.2s 2;
+				animation-fill-mode: forwards
+			}
+
+			.pl-btn-info {
+				background: #606266;
+			}
+
+			.pl-btn-warning {
+				background: #da9328;
+			}
+
+			.pl-btn-warning {
+				background: #da9328;
+			}
+
+			.pl-btn-danger {
+				background: #cc3235;
+			}
+
+			.pl-button-mini {
+				padding: 5px 10px;
+			}
+
+			.pl-dropdown-menu-item {
+				height: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				color: ${color};
+				transition: all 0.2s ease;
+			}
+
+			.pl-dropdown-menu-item:hover {
+				background-color: ${color}15;
+			}
+
+			.pl-button-mode {
+				padding: 0px;
+				padding-left: 0px !important;
+				color: ${color} !important;
+				transition: all 0.2s ease;
+			}
+
+			.pl-button-mode:hover {
+				background-color: ${color}33 !important;
+			}
+
+			.pl-button,
+			.pl-dropdown-menu {
+				transition: all 0.2s ease;
+			}
+
+			.pl-button .pl-dropdown-menu {
+				display: none;
+			}
+
+			.pl-button:hover .pl-dropdown-menu {
+				display: block;
+			}
+
+			.pl-button-init {
+				opacity: 0.5;
+				animation: easeInitOpacity 1.2s 3;
+				animation-fill-mode: forwards
+			}
+
+			@keyframes easeInitOpacity {
+				from {
+					opacity: 0.5;
+				}
+
+				50% {
+					opacity: 1
+				}
+
+				to {
+					opacity: 0.5;
+				}
+			}
+
+			@keyframes easeOpacity {
+				from {
+					opacity: 1;
+				}
+
+				50% {
+					opacity: 0.35
+				}
+
+				to {
+					opacity: 1;
+				}
+			}
+
+			.baidu-button {
+				background: ${color} !important;
+				border-color: ${color} !important;
+				border: 1px solid ${color} !important;
+				display: inline-flex;
+			}
+
+			.baidu-button:hover {
+				background: ${color}b0 !important;
+				border-color: ${color} !important;
+			}
+
+			header[style="display: none;"]~#pl-button-link {
 				display: inline-block;
 				position: fixed;
 				top: 0.6em;
 				left: 65%;
 				z-index: 99999;
 			}
-			/* background: linear-gradient(129.12deg, ${color} 0%, rgba(99, 125, 255, 0.75) 100%); */
-			/* background: linear-gradient(129.12deg, #446dff 0%, ${color} 100%); */
-			.ali-button {background: ${color};border: 0 solid transparent;font-size: 14px;margin-left: 20px;padding: 1px 12px;position: relative;height: 32px;border-radius: 100px;display: flex;align-items: center;justify-content: center;color: var(--basic_white);cursor: pointer;transition: all .3s ease;}
-			.ali-button:hover {background: ${color}D0}
-			.ali-btn-icon {vertical-align: -0.2em;}
-			.tianyi-button {margin-right: 20px; padding: 4px 12px; border-radius: 4px; color: #fff; font-size: 12px; border: 1px solid ${color}; background: ${color}; cursor: pointer; position: relative;}
-			.tianyi-button:hover {border-color: ${color}b0; background: ${color}b0;}
-			.yidong-button {float: left; position: relative; margin: 20px 24px 20px 0; width: 110px; height: 36px; background: ${color}; border-radius: 2px; font-size: 14px; color: #fff; line-height: 39px; text-align: center; cursor: pointer;}
-			.yidong-share-button {display: inline-block; position: relative; font-size: 14px; line-height: 36px; text-align: center; color: #fff; border: 1px solid ${color}; border-radius: 2px; padding: 0 24px; background: ${color};}
-			.yidong-share-button:hover {background: ${color}b0;}
-			.yidong-button:hover {background: ${color}b0;}
-			.yidong-btn { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAGNQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////mkUNoAAAACF0Uk5TAAbHPP9AMRtr9PwrV8zqXfmNgDODHTLD4iJxhGJJ8Z269m0aDgAAAMZJREFUeJzd0ssOgyAQBVDUK74rWq0PFP3/ryxqTMdGqJtuvGHD5CTDTGDs3nFc17kEPcC7BH3At/Tjvk5AYbBU+NcrwghL4uQDk3gtRSF1KWCCQEpghkd+3jp/ICNQoDANU0AQCJQmWAJ3h8+q3mFdvSywQdttsGvRWGAPLReoHXrbG6WWAzBoJ+3DaCnWI39NLbcvszvLeuTB2fYoqbNBNo7sGjzk31BhMsEJitxmiKk8zSQwE8gFjBGcNuCzOmdqPrib5A2JRQ7qK9g+hQAAAABJRU5ErkJggg==); height: 20px; line-height: 20px; display: inline-block; background-repeat: no-repeat; background-size: 20px 20px; text-indent: 25px;}
-			.xunlei-button {display: inline-flex;align-items: center;justify-content: center;border: 0 solid transparent;border-radius: 5px;box-shadow: 0 0 0 0 transparent;width: fit-content;white-space: nowrap;flex-shrink: 0;font-size: 14px;line-height: 1.5;outline: 0;touch-action: manipulation;transition: background .3s ease,color .3s ease,border .3s ease,box-shadow .3s ease;color: #fff;background: ${color};margin-left: 12px;padding: 0px 12px;position: relative; cursor:pointer; height: 36px;}
-			.xunlei-button:hover {background: ${color}b0;}
-			.quark-button {background: ${color} !important; background-color:${color} !important;}
-			.quark-button:hover { background: ${color}b0 !important; background-color:${color}b0 !important;}
-			.quark-btn-icon {width: 20px; height: 20px; vertical-align: -0.3em;}
-			.element-clicked { opacity: 0.5; }
-			.pl-extra { margin-top: 10px;display:flex}
-			.pl-extra button { flex: 1}
-			.pointer { cursor:pointer }
-			.pl-setting-label { display: flex;align-items: center;justify-content: space-between;padding-top: 10px; }
-			.pl-label { flex: 0 0 100px;text-align:left; }
-			.pl-input { flex: 1; padding: 8px 10px !important; border: 1px solid #c2c2c2; border-radius: 5px; font-size: 14px !important; min-width: 300px; margin: 0;darktheme}
+
+			.ali-button {
+				background: ${color};
+				border: 0 solid transparent;
+				font-size: 14px;
+				margin-left: 20px;
+				padding: 8px 16px;
+				position: relative;
+				height: 32px;
+				border-radius: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: var(--basic_white);
+				cursor: pointer;
+				transition: all .3s ease;
+			}
+
+			.ali-button:hover {
+				background: ${color}D0
+			}
+
+			.ali-btn-icon {
+				vertical-align: -0.2em;
+			}
+
+			.tianyi-button {
+				margin-right: 20px;
+				padding: 4px 12px;
+				border-radius: 4px;
+				color: #fff;
+				font-size: 12px;
+				border: 1px solid ${color};
+				background: ${color};
+				cursor: pointer;
+				position: relative;
+			}
+
+			.tianyi-button:hover {
+				border-color: ${color}b0;
+				background: ${color}b0;
+			}
+
+			.yidong-button {
+				float: left;
+				position: relative;
+				margin: 20px 24px 20px 0;
+				width: 110px;
+				height: 36px;
+				background: ${color};
+				border-radius: 2px;
+				font-size: 14px;
+				color: #fff;
+				line-height: 39px;
+				text-align: center;
+				cursor: pointer;
+			}
+
+			.yidong-share-button {
+				display: inline-block;
+				position: relative;
+				font-size: 14px;
+				line-height: 36px;
+				height: 36px;
+				text-align: center;
+				color: #fff;
+				border: 1px solid ${color};
+				border-radius: 2px;
+				padding: 0 24px;
+				background: ${color};
+			}
+
+			.yidong-share-button:hover {
+				background: ${color}b0;
+			}
+
+			.yidong-button:hover {
+				background: ${color}b0;
+			}
+
+			.yidong-btn {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAGNQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////mkUNoAAAACF0Uk5TAAbHPP9AMRtr9PwrV8zqXfmNgDODHTLD4iJxhGJJ8Z269m0aDgAAAMZJREFUeJzd0ssOgyAQBVDUK74rWq0PFP3/ryxqTMdGqJtuvGHD5CTDTGDs3nFc17kEPcC7BH3At/Tjvk5AYbBU+NcrwghL4uQDk3gtRSF1KWCCQEpghkd+3jp/ICNQoDANU0AQCJQmWAJ3h8+q3mFdvSywQdttsGvRWGAPLReoHXrbG6WWAzBoJ+3DaCnWI39NLbcvszvLeuTB2fYoqbNBNo7sGjzk31BhMsEJitxmiKk8zSQwE8gFjBGcNuCzOmdqPrib5A2JRQ7qK9g+hQAAAABJRU5ErkJggg==);
+				height: 20px;
+				line-height: 20px;
+				display: inline-block;
+				background-repeat: no-repeat;
+				background-size: 20px 20px;
+				text-indent: 25px;
+			}
+
+			.xunlei-button {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				border: 0 solid transparent;
+				border-radius: 5px;
+				box-shadow: 0 0 0 0 transparent;
+				width: fit-content;
+				white-space: nowrap;
+				flex-shrink: 0;
+				font-size: 14px;
+				line-height: 1.5;
+				outline: 0;
+				touch-action: manipulation;
+				transition: background .3s ease, color .3s ease, border .3s ease, box-shadow .3s ease;
+				color: #fff;
+				background: ${color};
+				margin-left: 12px;
+				padding: 0px 12px;
+				position: relative;
+				cursor: pointer;
+				height: 36px;
+			}
+
+			.xunlei-button:hover {
+				background: ${color}b0;
+			}
+
+			.quark-button {
+				background: ${color} !important;
+				background-color:${color} !important;
+			}
+
+			.quark-button:hover {
+				background: ${color}b0 !important;
+				background-color:${color}b0 !important;
+			}
+
+			.quark-btn-icon {
+				width: 20px;
+				height: 20px;
+				vertical-align: -0.3em;
+			}
+
+			.element-clicked {
+				opacity: 0.5;
+			}
+
+			.pl-extra {
+				margin-top: 10px;
+				display: flex
+			}
+
+			.pl-extra button {
+				flex: 1
+			}
+
+			.pointer {
+				cursor: pointer
+			}
+
+			.pl-setting-label {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-top: 10px;
+			}
+
+			.pl-label {
+				flex: 0 0 100px;
+				text-align: left;
+			}
+
+			.pl-input {
+				flex: 1;
+				padding: 8px 10px !important;
+				border: 1px solid #c2c2c2;
+				border-radius: 5px;
+				font-size: 14px !important;
+				min-width: 300px;
+				margin: 0;
+				darktheme
+			}
+
 			.init-input {
 				width: 400px;
 				margin: 1em 1em 3px;
@@ -1204,8 +1689,22 @@
 				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 				font-weight: 300;
 			}
-			.pl-color {flex: 1; display: flex; flex-wrap: wrap}
-			.pl-color-box {width: 55px; height: 55px; margin:10px 10px 0 0; box-sizing: border-box; border:1px solid #fff; cursor:pointer }
+
+			.pl-color {
+				flex: 1;
+				display: flex;
+				flex-wrap: wrap
+			}
+
+			.pl-color-box {
+				width: 55px;
+				height: 55px;
+				margin: 10px 10px 0 0;
+				box-sizing: border-box;
+				border: 1px solid #fff;
+				cursor: pointer
+			}
+
 			.pl-mask {
 				width: 53px;
 				height: 53px;
@@ -1218,22 +1717,111 @@
 				justify-content: center;
 				flex-direction: column;
 			}
+
 			.pl-color-box:hover .pl-mask {
 				opacity: 1;
 			}
-			.pl-close:focus { outline: 0; box-shadow: none; }
-			.tag-danger {color:#cc3235;margin: 0 5px;}
-			.pl-tooltip { position: absolute; color: #ffffff; max-width: 600px; font-size: 12px; padding: 5px 10px; background: #333; border-radius: 5px; z-index: 110000; line-height: 1.3; display:none; word-break: break-all;}
-			 @keyframes load { 0% { transform: rotate(0deg) } 100% { transform: rotate(360deg) } }
-			.pl-loading-box > div > div { position: absolute;border-radius: 50%;}
-			.pl-loading-box > div > div:nth-child(1) { top: 9px;left: 9px;width: 82px;height: 82px;background: #ffffff;}
-			.pl-loading-box > div > div:nth-child(2) { top: 14px;left: 38px;width: 25px;height: 25px;background: #666666;animation: load 1s linear infinite;transform-origin: 12px 36px;}
-			.pl-loading { width: 16px;height: 16px;display: inline-block;overflow: hidden;background: none;}
-			.pl-loading-box { width: 100%;height: 100%;position: relative;transform: translateZ(0) scale(0.16);backface-visibility: hidden;transform-origin: 0 0;}
-			.pl-loading-box div { box-sizing: content-box; }
-			.pl-dropdown-menu {position: absolute;padding: 5px 0;color: ${color};background: themecolor;z-index: 999;width: 110px;border-radius: 10px;box-shadow: 0 0 1px 1px rgb(28 28 32 / 5%), 0 8px 24px rgb(28 28 32 / 12%); text-align: center; border: none; transition: all 0.2s ease;}
-			.swal2-container { z-index:100000; }
-			body.swal2-height-auto { height: inherit; }
+
+			.pl-close:focus {
+				outline: 0;
+				box-shadow: none;
+			}
+
+			.tag-danger {
+				color: #cc3235;
+				margin: 0 5px;
+			}
+
+			.pl-tooltip {
+				position: absolute;
+				color: #ffffff;
+				max-width: 600px;
+				font-size: 12px;
+				padding: 5px 10px;
+				background: #333;
+				border-radius: 5px;
+				z-index: 110000;
+				line-height: 1.3;
+				display: none;
+				word-break: break-all;
+			}
+
+			@keyframes load {
+				0% {
+					transform: rotate(0deg)
+				}
+
+				100% {
+					transform: rotate(360deg)
+				}
+			}
+
+			.pl-loading-box>div>div {
+				position: absolute;
+				border-radius: 50%;
+			}
+
+			.pl-loading-box>div>div:nth-child(1) {
+				top: 9px;
+				left: 9px;
+				width: 82px;
+				height: 82px;
+				background: #ffffff;
+			}
+
+			.pl-loading-box>div>div:nth-child(2) {
+				top: 14px;
+				left: 38px;
+				width: 25px;
+				height: 25px;
+				background: #666666;
+				animation: load 1s linear infinite;
+				transform-origin: 12px 36px;
+			}
+
+			.pl-loading {
+				width: 16px;
+				height: 16px;
+				display: inline-block;
+				overflow: hidden;
+				background: none;
+			}
+
+			.pl-loading-box {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				transform: translateZ(0) scale(0.16);
+				backface-visibility: hidden;
+				transform-origin: 0 0;
+			}
+
+			.pl-loading-box div {
+				box-sizing: content-box;
+			}
+
+			.pl-dropdown-menu {
+				position: absolute;
+				padding: 5px 0;
+				color: ${color};
+				background: themecolor;
+				z-index: 999;
+				width: 110px;
+				border-radius: 5px;
+				box-shadow: 0 1px 6px ${color}33;
+				-webkit-box-shadow: 0 1px 6px ${color}33;
+				text-align: center;
+				border: none;
+				transition: all 0.2s ease;
+			}
+
+			.swal2-container {
+				z-index: 100000;
+			}
+
+			body.swal2-height-auto {
+				height: inherit;
+			}
 
 			@media (prefers-color-scheme: dark) [data-theme=system] * {
 				color-scheme: dark;
@@ -1241,43 +1829,45 @@
 
 			/* Webkit, Opera, IE9, Chrome*/
 			::selection {
-				background-color: ${color}!important;
-				background: ${color}!important;
-				color: white!important;
+				background-color: ${color} !important;
+				background: ${color} !important;
+				color: white !important;
 			}
+
 			/* Mozilla Firefox */
 			::-moz-selection {
-				background-color: ${color}!important;
-				background: ${color}!important;
-				color: white!important;
+				background-color: ${color} !important;
+				background: ${color} !important;
+				color: white !important;
 			}
+
 			/* 百度网盘 */
-			:not([class^="rwl-exempt"]) ::selection {
-				background-color: ${color}!important;
-				background: ${color}!important;
-				color: white!important;
+			:not([class*="rwl-exempt"]) ::selection {
+				background-color: ${color} !important;
+				background: ${color} !important;
+				color: white !important;
 			}
 			`;
 			// 先监听颜色方案变化
-			window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
+			window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
 				if (e.matches) {
 					// 切换到暗色主题
 					let dark = uicss.replace("themecolor", "#19191a").replace("darktheme", "color-scheme: dark;");
-					this.addStyle('Panlinker-UI', 'style', dark);
+					base.addStyle('Panlinker-UI', 'style', dark);
 				} else {
 					// 切换到浅色主题
 					let light = uicss.replace("themecolor", "#fff").replace("darktheme", "");
-					this.addStyle('Panlinker-UI', 'style', light);
+					base.addStyle('Panlinker-UI', 'style', light);
 				}
 			});
 			// 再修改主题
 			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				let dark = uicss.replace("themecolor", "#19191a").replace("darktheme", "color-scheme: dark;");
-				this.addStyle('Panlinker-UI', 'style', dark);
+				base.addStyle('Panlinker-UI', 'style', dark);
 			} else {
 				// 切换到浅色主题
 				let light = uicss.replace("themecolor", "#fff").replace("darktheme", "");
-				this.addStyle('Panlinker-UI', 'style', light);
+				base.addStyle('Panlinker-UI', 'style', light);
 			}
 
 
@@ -1312,7 +1902,9 @@
 					background :#fff !important;
 				}
 				.aside-absolute-container .QGOvsxb .remainingSpaceUi_span {
-					background: ${color} !important;
+					/*background: ${color} !important;*/
+					background: #8af248 !important;
+					border-radius: 10px 0 0 10px;
 					border-right: #fff 1px solid;
 					border-bottom: #fff 1px solid;
 				}
@@ -1330,10 +1922,17 @@
 				a {
 					transition: all 0.2s ease !important;
 				}
+				.module-share-header .slide-show-header .slide-show-center {
+				    float: inline-end;
+					margin: 10px 8px;
+					text-align: right;
+				}
+				.module-share-header .slide-show-header .slide-show-center .subscribe-btn {
+				    background:${color}
+				}
 				`, 'body');
 			}
 			if (/(pan|yun).baidu.com/.test(location.host) && location.pathname !== '/disk/home' && base.getValue('setting_baidu_theme') === 'yes') {
-
 				window.onload = base.setColors([
 					['#717fff', `${color}`],
 					['#717FFF', `${color}`],
@@ -1414,6 +2013,7 @@
 					['196,182,255,.2', base.hexToRgba(`${color}20`)],
 					['113,127,255,.2', base.hexToRgba(`${color}40`)],
 					['3,8,26,.6', base.hexToRgba(`${color}D0`)],
+					['255,32,102,.4', base.hexToRgba(`${color}66`)],
 				]);
 			};
 			if (/www.(aliyundrive|alipan).com/.test(location.host) && base.getValue('setting_ali_theme') === 'yes') {
@@ -1482,6 +2082,11 @@
 					['49,129,249,.08', base.hexToRgba(`${color}20`)],
 				]);
 			};
+			base.addStyle('Panlinker-UI-Super', 'style', `
+				*:last-child {
+					transition: all 0.2s ease;
+				}
+			`);
 		},
 
 		// 暗号界面
@@ -1510,26 +2115,26 @@
 				<div><span>服务器说道: “${pan.init[0]}”；</span></div>
 				<div><span>脚本说道: “${secret}”。</span></div>
 				<div>↓</div>
-				<div><span>但史丹利不知道的是,他可以按下<i style="color:red">红色按钮</i>来点亮按钮</span></div>
+				<div><span>但史丹利不知道的是,他可以按下<span style="color:red;font-style:italic;vertical-align:unset;">红色按钮</span>来点亮按钮</span></div>
 				<div><span>或者有仪式感地 输入以上暗号/开源协议 点亮</span></div>
-				<div><span>输入一些<i>恶臭的数字</i>甚至有彩蛋</span></div>
+				<div><span>输入一些<span style="font-style:italic;vertical-align:unset;">恶臭的数字</span>甚至有彩蛋</span></div>
 				<div>↓</div>
-				<div><span><a target="_blank" href="https://www.youxiaohou.com">原作者</a>开发很辛苦,所以请有能力的你请支持下他的公众号</span></div>
-				<div><span>实在不行的话,那就来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/">Star</a>吧...</span></div>
-				<div><span>点亮后不仅能精简网盘界面 还能改变众多网盘主题颜色哦!</span></div>
+				<div><span><a target="_blank" href="https://www.youxiaohou.com" style="vertical-align:unset;">原作者</a>开发很辛苦,所以请有能力的你请支持下他的公众号</span></div>
+				<div><span>实在不行的话,那就来给这个改版点个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant/" style="vertical-align:unset;">Star</a>吧...</span></div>
+				<div><span>点亮后不仅能精简网盘界面 还能改变众多网盘主题色哦!</span></div>
 				`,
 				denyButtonText: '我就不输入,点我“注入”直接点亮'
 			});
 			if (dialog.isDenied) {
 				console.log("【（改）网盘直链下载助手】\n正在注入点亮按钮设置项目...");
 				message.warning("正在注入设置项目...");
-				setTimeout(() => {
+				setTimeout(function () {
 					base.setValue('setting_init_code', pan.num);
 					base.setValue('license', pan.license);
 					message.success("注入成功了!");
-					setTimeout(() => {
+					setTimeout(function () {
 						message.success(pan.init[2]);
-						setTimeout(() => {
+						setTimeout(function () {
 							location.reload();
 						}, 1500);
 					}, 1500);
@@ -1539,7 +2144,7 @@
 				if (pan.num === $('#init').val() || pan.license === $('#init').val()) {
 					console.log("【（改）网盘直链下载助手】\n暗号或协议正确")
 					message.success(pan.init[2]);
-					setTimeout(() => {
+					setTimeout(function () {
 						base.setValue('setting_init_code', pan.num);
 						base.setValue('license', pan.license);
 						location.reload();
@@ -1565,7 +2170,7 @@
 						denyButtonText: '哼哼哼啊啊啊啊啊啊啊啊啊啊',
 					});
 					message.info("成就：你触发了一个homo特有的彩蛋！");
-					setTimeout(() => {
+					setTimeout(function () {
 						Swal.fire({
 							title: '1145141919810',
 							text: 'homo特有的数字当然不行啦...吗？',
@@ -1574,7 +2179,7 @@
 							showConfirmButton: false,
 							allowOutsideClick: false,
 						});
-						setTimeout(() => {
+						setTimeout(function () {
 							base.setValue('setting_init_code', pan.num);
 							message.success("成就：哼哼哼啊啊啊啊啊啊啊啊地注入成功(喜)");
 							location.reload();
@@ -1691,10 +2296,10 @@
 
 		_resetData() {
 			progress = {};
-			$.each(request, (key) => {
+			$.each(request, function (key) {
 				(request[key]).abort();
 			});
-			$.each(ins, (key) => {
+			$.each(ins, function (key) {
 				clearInterval(ins[key]);
 			});
 			idm = {};
@@ -1794,7 +2399,7 @@
 				idm[i] = false;
 			}
 
-			doc.on('mouseenter mouseleave click', '.pl-button.g-dropdown-button', (e) => {
+			doc.on('mouseenter mouseleave click', '.pl-button.g-dropdown-button', function (e) {
 				if (e.type === 'mouseleave') {
 					$(e.currentTarget).removeClass('button-open');
 				} else {
@@ -1802,11 +2407,11 @@
 					$(e.currentTarget).find('.pl-dropdown-menu').show();
 				}
 			});
-			doc.on('mouseleave', '.pl-button.g-dropdown-button .pl-dropdown-menu', (e) => {
+			doc.on('mouseleave', '.pl-button.g-dropdown-button .pl-dropdown-menu', function (e) {
 				$(e.currentTarget).hide();
 			});
 
-			doc.on('click', '.pl-button-mode', (e) => {
+			doc.on('click', '.pl-button-mode', function (e) {
 				mode = e.target.dataset.mode;
 				if (!mode) return;
 				Swal.fire({
@@ -1818,9 +2423,9 @@
 						Swal.showLoading();
 					}
 				});
-				this.getPCSLink();
+				baidu.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async (e) => {
+			doc.on('click', '.listener-link-api', async function (e) {
 				e.preventDefault();
 				let o = _factory(e);
 				let $width = o.item.find('.pl-progress-inner');
@@ -1833,7 +2438,7 @@
 				let prevLoaded = 0; // 上一次的已下载数据量
 				let prevTime = startTime; // 上一次的时间
 				let size = Number(o.link[0].dataset.size);
-				ins[index] = setInterval(() => {
+				ins[index] = setInterval(function () {
 					let prog = +progress[index] || 0;
 					let isIDM = idm[index] || false;
 
@@ -1925,12 +2530,12 @@
 					}
 				}, 500);
 			});
-			doc.on('click', '.listener-retry', async (e) => {
+			doc.on('click', '.listener-retry', async function (e) {
 				let o = _factory(e);
 				o.tip.hide();
 				o.link.show();
 			});
-			doc.on('click', '.listener-how', async (e) => {
+			doc.on('click', '.listener-how', async function (e) {
 				let o = _factory(e);
 				let index = o.link[0].dataset.index;
 				if (request[index]) {
@@ -1941,7 +2546,7 @@
 				}
 
 			});
-			doc.on('click', '.listener-stop', async (e) => {
+			doc.on('click', '.listener-stop', async function (e) {
 				let o = _factory(e);
 				let index = o.link[0].dataset.index;
 				if (request[index]) {
@@ -1959,7 +2564,7 @@
 					}, 1050)
 				}
 			});
-			doc.on('click', '.listener-back', async (e) => {
+			doc.on('click', '.listener-back', async function (e) {
 				let o = _factory(e);
 				o.progress.hide();
 				o.tip.hide();
@@ -1968,7 +2573,7 @@
 				o.stop.hide();
 				o.back.hide();
 			});
-			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
+			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				if (!e.target.dataset.link) {
 					$(e.target).removeClass('listener-copy-all').addClass('pl-btn-danger').html(`${pan.init[5]}👉<a href="${pan.assistant}" target="_blank" class="pl-a">点击此处安装</a>👈`);
@@ -1982,7 +2587,7 @@
 					)
 				}
 			});
-			doc.on('click', '.listener-download-all', (e) => {
+			doc.on('click', '.listener-download-all', function (e) {
 				$('.pl-item-link').click();
 				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
 				setTimeout(
@@ -1991,7 +2596,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
@@ -1999,7 +2604,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+				let res = await baidu.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
 					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({ opacity: '0.5' }, "slow");
@@ -2009,17 +2614,17 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({ opacity: '0.5' }, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-send-rpc', function (e) {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
 			});
-			doc.on('click', '.listener-open-setting', () => {
+			doc.on('click', '.listener-open-setting', function () {
 				base.showSetting();
 			});
-			doc.on('click', '.listener-open-updatelog', () => {
+			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
-			doc.on('click', '.listener-rpc-task', (e) => {
+			doc.on('click', '.listener-rpc-task', function (e) {
 				e.preventDefault();
 				let rpc = JSON.stringify({
 					domain: base.getValue('setting_rpc_domain'),
@@ -2027,18 +2632,14 @@
 				}), url = `${pan.d}/?rpc=${base.encode(rpc)}#${base.getValue('setting_rpc_token')}`;
 				GM_openInTab(url, { active: true });
 			});
-			document.documentElement.addEventListener('mouseup', (e) => {
+			document.documentElement.addEventListener('mouseup', function (e) {
 				if (e.target.nodeName === 'A' && ~e.target.className.indexOf('pl-a')) {
 					e.stopPropagation();
 				}
 			}, true);
 		},
 
-		addButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
-			if (!pt) return;
+		removeAD() {
 			base.waitForKeyElements(".__yunguanjia", function (tag) {
 				tag[0].innerHTML = `
 				<div class="yunguanjia-list __yunguanjia row g-clearfix _item sel">
@@ -2127,42 +2728,69 @@
 					tag[0].innerHTML = tag[0].innerHTML.replace("百度", "");
 				}
 			}, true);
-			// 美化分享页面
-			if (pt === 'share') {
-				base.waitForKeyElements(`iframe[src^="/buy/ad"]`, function (tag) {
-					tag[0].remove();
-				}, true)
-				base.waitForKeyElements(`.theme-white.init-new`, function (tag) {
-					tag[0].style.background = '#DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center'
-				}, true)
-				base.waitForKeyElements(`#layoutApp`, function (tag) {
-					tag[0].style.background = '#DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center'
-					document.body.style.background = '#DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center'
-				}, true)
-				base.waitForKeyElements(`#bd-main .bd-left`, function (tag) {
-					tag[0].style.background = '#ffffffC0';
-					tag[0].style.borderRadius = '10px';
-				}, true)
-				base.waitForKeyElements(`.KPDwCE`, function (tag) {
-					tag[0].style.setProperty('background', 'transparent');
-				}, true)
-				base.waitForKeyElements('.share-list .KPDwCE .AuPKyz', function (tag) {
-					tag[0].style.setProperty('background', 'transparent');
-				}, true)
+			base.waitForKeyElements('dd[node-type="header-link"]', function (tag) {
+				tag.children().each(function () {
+					let tag = $(this);
+					if (!tag.attr("node-type")) return;
+					let type = tag.attr("node-type");
+					if (
+						type !== "disk-home" &&
+						type !== "mbox-homepage" &&
+						type !== "find-apps"
+					) {
+						tag.remove();
+					}
+				});
+			}, true);
+		},
+
+		addButton() {
+			if (document.getElementById("pl-button-link")) {
+				document.getElementById("pl-button-link").remove()
 			}
+			if (!pt) return;
 			let $toolWrap;
 			let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="padding: 0px;" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="padding: 0px;" ">更新日志</div></div></div>`);
 			if (pt === 'home') $toolWrap = pan.btn.home;
 			if (pt === 'main') {
 				$toolWrap = pan.btn.main;
-				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>下载助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li><li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li><li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li><li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li><li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li></ul></div>`);
+				$button = $(`
+				<div class="wp-s-agile-tool-bar__h-group pl-button" id="pl-button-link">
+					<div class="wp-s-agile-tool-bar__h-action is-need-left-sep is-main">
+						<button type="button" class="u-button nd-file-list-toolbar-action-item u-button--primary u-button--small is-round is-has-icon pl-button baidu-button">
+							<i class="u-icon u-icon-download"></i>
+							<span>下载助手</span>
+						</button>
+						<ul class="dropdown-list nd-common-float-menu pl-dropdown-menu">
+							<li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li>
+							<li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li>
+							<li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li>
+							<li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li>
+							<li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li>
+							<li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li>
+							<li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li>
+						</ul>
+					</div>
+				</div>`);
 			}
 			if (pt === 'youth') {
 				$toolWrap = pan.btn.main;
-				$button = $(`</div><div class="pl-button" id="pl-button-link" style="position: relative; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>网盘助手</span></button><ul class="dropdown-list nd-common-float-menu pl-dropdown-menu"><li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li><li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li></ul></div>`);
+				$button = $(`
+				<div class="wp-s-agile-tool-bar__h-group pl-button" id="pl-button-link">
+					<div class="wp-s-agile-tool-bar__h-action is-need-left-sep is-main">
+						<button type="button" class="u-button nd-file-list-toolbar-action-item u-button--primary u-button--small is-round is-has-icon pl-button baidu-button" style="font-size:14px;font-weight:700">
+							<i class="u-icon u-icon-more"></i>
+							<span>网盘助手</span>
+						</button>
+						<ul class="dropdown-list nd-common-float-menu pl-dropdown-menu">
+							<li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li>
+							<li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li>
+						</ul>
+					</div>
+				</div>`);
 			}
 			if (pt === 'share') $toolWrap = pan.btn.share;
-			base.listenElement($toolWrap, () => {
+			base.listenElement($toolWrap, function () {
 				$toolWrap = $($toolWrap);
 				$('.pl-button').length === 0 && $toolWrap.prepend($button);
 			})
@@ -2179,17 +2807,21 @@
 			if (pt === 'home') {
 				$toolWrap = pan.btn.home;
 			}
-			if (pt === 'main') {
+			if (pt === 'main' || pt === 'youth') {
 				$toolWrap = pan.btn.main;
-				$button = $(`<div class="pl-button-init" id="pl-button-link" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>点我点亮</span></button></div>`);
-			}
-			if (pt === 'youth') {
-				$toolWrap = pan.btn.main;
-				$button = $(`<div class="pl-button-init" id="pl-button-link" style="opacity:.5; display: inline-block; margin-right: 8px;"><button class="baidu-button u-button u-button--primary u-button--small is-round is-has-icon" style="font-size: 14px; padding: 8px 16px; height: 32px; border: none;"><i class="u-icon u-icon-download"></i><span>点我点亮</span></button></div>`);
+				$button = $(`
+				<div class="wp-s-agile-tool-bar__h-group pl-button-init" id="pl-button-link">
+					<div class="wp-s-agile-tool-bar__h-action is-need-left-sep is-main">
+						<button type="button" class="u-button nd-file-list-toolbar-action-item u-button--primary u-button--small is-round is-has-icon pl-button baidu-button" style="font-size:14px;font-weight:700">
+							<i class="u-icon u-icon-download"></i>
+							<span>点我点亮</span>
+						</button>
+					</div>
+				</div>`);
 			}
 			if (pt === 'share') $toolWrap = pan.btn.share;
 			$button.click(() => base.initDialog());
-			base.listenElement($toolWrap, () => {
+			base.listenElement($toolWrap, function () {
 				$toolWrap = $($toolWrap);
 				$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 			})
@@ -2234,13 +2866,13 @@
 			return accessToken;
 		},
 
-		async getPCSLink(maxRequestTime = 2) {
+		async getPCSLink(maxRequestTime = 1) {
 			selectList = this.getSelectedList();
 			let fidList = this._getFidList(), url, res;
 
 			if (pt === 'home' || pt === 'main') {
 				if (selectList.length === 0) {
-					return message.error('提示：<br/>先勾选要下载的文件捏~');
+					return message.error('提示：<br/>先勾选要下载的文件哦~');
 				}
 				if (fidList.length === 2) {
 					return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -2252,46 +2884,27 @@
 			}
 			if (pt === 'share') {
 				this.getShareData();
+				if (!params.bdstoken) {
+					return message.error('提示：<br/>请先登录网盘~');
+				}
 				if (selectList.length === 0) {
-					return message.error('提示：<br/>请先勾选要下载的文件捏~');
+					return message.error('提示：<br/>请先勾选要下载的文件哦~');
 				}
 				if (fidList.length === 2) {
 					return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 				}
-				if (!params.sign) {
-					let url = `${pan.pcs[2]}&surl=${params.surl}&logid=${params.logid}`;
-					let r = await base.get(url);
-					if (r.errno === 0) {
-						params.sign = r.data.sign;
-						params.timestamp = r.data.timestamp;
-					} else {
-						let dialog = await Swal.fire({
-							toast: true,
-							icon: 'info',
-							title: `提示：<br/>请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
-							showConfirmButton: true,
-							confirmButtonText: '点击保存',
-							position: 'top',
-						});
-						if (dialog.isConfirmed) {
-							$('.tools-share-save-hb')[0].click();
-						}
-						return;
-					}
+				let dialog = await Swal.fire({
+					toast: true,
+					icon: 'info',
+					title: `提示：<br/>请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
+					showConfirmButton: true,
+					confirmButtonText: '点击保存',
+					position: 'top',
+				});
+				if (dialog.isConfirmed) {
+					$('.tools-share-save-hb')[0].click();
 				}
-				if (!params.bdstoken) {
-					return message.error('提示：<br/>请先登录网盘~');
-				}
-				let formData = new FormData();
-				formData.append('encrypt', params.encrypt);
-				formData.append('product', params.product);
-				formData.append('uk', params.uk);
-				formData.append('primaryid', params.primaryid);
-				formData.append('fid_list', fidList);
-				formData.append('logid', params.logid);
-				params.shareType === 'secret' ? formData.append('extra', params.extra) : '';
-				url = `${pan.pcs[1]}&sign=${params.sign}&timestamp=${params.timestamp}`;
-				res = await base.post(url, formData, { "User-Agent": pan.ua });
+				return;
 			}
 			if (res.errno === 0) {
 				let html = this.generateDom(res.list);
@@ -2503,7 +3116,7 @@
 				padding: '15px 20px 5px',
 				customClass,
 				confirmButtonText: '关闭',
-			}).then(() => {
+			}).then(function () {
 				this._resetData();
 			});
 		},
@@ -2519,10 +3132,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -2585,7 +3198,7 @@
 				progress[i] = 0;
 				idm[i] = false;
 			}
-			doc.on('click', '.pl-button-mode', (e) => {
+			doc.on('click', '.pl-button-mode', function (e) {
 				mode = e.target.dataset.mode;
 				if (!mode) return;
 				Swal.fire({
@@ -2597,9 +3210,9 @@
 						Swal.showLoading();
 					}
 				});
-				this.getPCSLink();
+				ali.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async (e) => {
+			doc.on('click', '.listener-link-api', async function (e) {
 				e.preventDefault();
 				let o = _factory(e);
 				let $width = o.item.find('.pl-progress-inner');
@@ -2609,14 +3222,14 @@
 				_reset(index);
 				let dataset = e.currentTarget.dataset;
 				let href = dataset.link;
-				let url = await this.getRealLink(dataset.did, dataset.fid);
-				if (url) href = url;
+				//let url = await this.getRealLink(dataset.did, dataset.fid);
+				//if (url) href = url;
 				base.get(href, { "User-Agent": pan.ua, "Referer": `https://${location.host}/` }, 'blob', { filename, index });
 				let startTime = Date.now(); // 记录下载开始时间
 				let prevLoaded = 0; // 上一次的已下载数据量
 				let prevTime = startTime; // 上一次的时间
 				let size = Number(o.link[0].dataset.size);
-				ins[index] = setInterval(() => {
+				ins[index] = setInterval(function () {
 					let prog = +progress[index] || 0;
 					// 处理普通下载的情况...
 					let currentTime = Date.now();
@@ -2692,12 +3305,12 @@
 					}
 				}, 500);
 			});
-			doc.on('click', '.listener-retry', async (e) => {
+			doc.on('click', '.listener-retry', async function (e) {
 				let o = _factory(e);
 				o.tip.hide();
 				o.link.show();
 			});
-			doc.on('click', '.listener-how', async (e) => {
+			doc.on('click', '.listener-how', async function (e) {
 				let o = _factory(e);
 				let index = o.link[0].dataset.index;
 				if (request[index]) {
@@ -2708,7 +3321,7 @@
 				}
 
 			});
-			doc.on('click', '.listener-stop', async (e) => {
+			doc.on('click', '.listener-stop', async function (e) {
 				let o = _factory(e);
 				let index = o.link[0].dataset.index;
 				if (request[index]) {
@@ -2726,7 +3339,7 @@
 					}, 1050)
 				}
 			});
-			doc.on('click', '.listener-back', async (e) => {
+			doc.on('click', '.listener-back', async function (e) {
 				let o = _factory(e);
 				o.progress.hide();
 				o.tip.hide();
@@ -2735,7 +3348,7 @@
 				o.stop.hide();
 				o.back.hide();
 			});
-			doc.on('click', '.listener-link-api-btn', async (e) => {
+			doc.on('click', '.listener-link-api-btn', async function (e) {
 				base.setClipboard(e.target.dataset.filename);
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
 				setTimeout(
@@ -2744,7 +3357,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
+			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
@@ -2754,7 +3367,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
@@ -2762,7 +3375,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+				let res = await ali.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
 					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({ opacity: '0.5' }, "slow");
@@ -2772,11 +3385,11 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({ opacity: '0.5' }, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-send-rpc', function (e) {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
 			});
-			doc.on('click', '.listener-download-all', (e) => {
+			doc.on('click', '.listener-download-all', function (e) {
 				$('.pl-item-link').click();
 				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
 				setTimeout(
@@ -2785,20 +3398,20 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-open-setting', () => {
+			doc.on('click', '.listener-open-setting', function () {
 				base.showSetting();
 			});
-			doc.on('click', '.listener-open-updatelog', () => {
+			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
-			doc.on('click', '.listener-rpc-task', () => {
+			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
 					domain: base.getValue('setting_rpc_domain'),
 					port: base.getValue('setting_rpc_port'),
 				}), url = `${pan.d}/?rpc=${base.encode(rpc)}#${base.getValue('setting_rpc_token')}`;
 				GM_openInTab(url, { active: true });
 			});
-			document.documentElement.addEventListener('mouseup', (e) => {
+			document.documentElement.addEventListener('mouseup', function (e) {
 				if (e.target.nodeName === 'A' && ~e.target.className.indexOf('pl-a')) {
 					e.stopPropagation();
 				}
@@ -2813,42 +3426,53 @@
 			}, {
 				authorization,
 				"content-type": "application/json;charset=utf-8",
+				"referer": "https://www.aliyundrive.com/",
+				"x-canary": "client=windows,app=adrive,version=v6.0.0"
 			});
+			if (res.code === 'AccessTokenInvalid') {
+				return message.error('提示：<br/>Token过期了，请刷新网页后再试');
+			}
 			if (res.url) {
 				return res.url;
 			}
 			return '';
 		},
 
+		removeAD() {
+			base.waitForKeyElements('[class*="share-list-banner"]', function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements('[class*="to-app"]', function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements('[class*="btn-mobile-save"]', function (tag) {
+				tag[0].remove();
+			}, true);
+			base.waitForKeyElements('div[class*="text"]', function (tag) {
+				if (tag[0].innerHTML.match("SVIP"))
+					tag[0].remove();
+			}, true);
+			base.waitForKeyElements('[class*="SplashScreenImg--close"]', function (tag) {
+				tag[0].click();
+			}, true);
+			base.waitForKeyElements('[class*="container"]', function (tag) {
+				tag.find('[class^="icon-close"]').click();
+			}, true);
+			base.waitForKeyElements('[class*="popup_main_close"]', function (tag) {
+				tag[0].click();
+			}, true);
+		},
+
 		addButton() {
 			if (document.getElementById("pl-button-link")) {
 				document.getElementById("pl-button-link").remove()
 			}
-			base.waitForKeyElements('[class^="share-list-banner"]', function (tag) {
-				tag[0].remove();
-			}, true);
-			base.waitForKeyElements('[class^="to-app"]', function (tag) {
-				tag[0].remove();
-			}, true);
-			base.waitForKeyElements('[class^="btn-mobile-save"]', function (tag) {
-				tag[0].remove();
-			}, true);
-			base.waitForKeyElements('div[class^="text"]', function (tag) {
-				if (tag[0].innerHTML.match("SVIP"))
-					tag[0].remove();
-			}, true);
-			base.waitForKeyElements('[class^="SplashScreenImg--close"]', function (tag) {
-				tag[0].click();
-			}, true);
-			base.waitForKeyElements('[class^="popup_main_close"]', function (tag) {
-				tag[0].click();
-			}, true);
 			if (!pt) return;
 			let $toolWrap;
 			let svg = `<svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>`
 			let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon">${svg}下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 0;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button').length === 0 && $toolWrap.append($button);
 				})
@@ -2856,7 +3480,7 @@
 			if (pt === 'share') {
 				$button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon">${svg}下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 16px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 				$button.css({ 'margin-right': '10px', "height": "36px", "width": "auto", "padding": "1px 30px" });
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				})
@@ -2873,7 +3497,7 @@
 			let $button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>点我点亮</span></div>`);
 			$button.css({ "width": "auto" });
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button-init').length === 0 && $toolWrap.append($button);
 				})
@@ -2881,7 +3505,7 @@
 			if (pt === 'share') {
 				$button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>点我点亮</span></div>`);
 				$button.css({ 'margin-right': '10px', "height": "36px", "padding": "1px 30px", "width": "auto" });
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
@@ -2911,7 +3535,7 @@
 			}
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -2941,6 +3565,21 @@
 				} catch (e) {
 					return message.error('提示：<br/>请先登录网盘~');
 				}
+			} else {
+				if (selectList.length > 20) {
+					return message.error('提示：<br/>每次最多只能选 20 个文件哦~');
+				}
+				let noUrlSelectList = selectList.filter(v => !Boolean(v.url))
+				let queue = [];
+				noUrlSelectList.forEach((item, index) => {
+					queue.push(this.getRealLink(item.driveId, item.fileId));
+				});
+
+				const res = await Promise.all(queue);
+				res.forEach((val, index) => {
+					noUrlSelectList[index].url = val;
+				});
+
 			}
 			let html = this.generateDom(selectList);
 			this.showMainDialog(pan[mode][0], html, pan[mode][1]);
@@ -2949,7 +3588,6 @@
 		generateDom(list) {
 			let content = '<div class="pl-main">';
 			let alinkAllText = '';
-			console.log(list)
 			list.forEach((v, i) => {
 				if (v.type === 'folder') return;
 				let filename = v.name;
@@ -2989,7 +3627,7 @@
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink.replace(' ', '%20')}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
@@ -3057,7 +3695,7 @@
 				if (props) {
 					let fileList = props.dataSource || [];
 					let selectedKeys = props.selectedKeys.split(',');
-					fileList.forEach((val) => {
+					fileList.forEach(function (val) {
 						if (selectedKeys.includes(val.fileId)) {
 							selectedList.push(val);
 						}
@@ -3109,10 +3747,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/ali/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/ali.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3154,7 +3792,7 @@
 			if (window[key]) return;
 			window[key] = true;
 
-			doc.on('click', '.pl-button-mode', (e) => {
+			doc.on('click', '.pl-button-mode', function (e) {
 				mode = e.target.dataset.mode;
 				if (!mode) return;
 				Swal.fire({
@@ -3166,13 +3804,13 @@
 						Swal.showLoading();
 					}
 				});
-				this.getPCSLink();
+				tianyi.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async (e) => {
+			doc.on('click', '.listener-link-api', async function (e) {
 				e.preventDefault();
 				$('#downloadIframe').attr('src', e.currentTarget.dataset.link);
 			});
-			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
+			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
@@ -3182,7 +3820,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
@@ -3190,7 +3828,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+				let res = await tianyi.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
 					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({ opacity: '0.5' }, "slow");
@@ -3200,17 +3838,17 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({ opacity: '0.5' }, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-send-rpc', function (e) {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
 			});
-			doc.on('click', '.listener-open-setting', () => {
+			doc.on('click', '.listener-open-setting', function () {
 				base.showSetting();
 			});
-			doc.on('click', '.listener-open-updatelog', () => {
+			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
-			doc.on('click', '.listener-rpc-task', () => {
+			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
 					domain: base.getValue('setting_rpc_domain'),
 					port: base.getValue('setting_rpc_port'),
@@ -3219,24 +3857,27 @@
 			});
 		},
 
+		removeAD() {
+			base.waitForKeyElements(".advertising-mask", function (tag) {
+				tag[0].remove();
+			}, true);
+		},
+
 		addButton() {
 			if (document.getElementById("pl-button-link")) {
 				document.getElementById("pl-button-link").remove()
 			}
-			base.waitForKeyElements(".advertising-mask", function (tag) {
-				tag[0].remove();
-			}, true);
 			if (!pt) return;
 			let $toolWrap;
 			let $button = $(`<div class="tianyi-button pl-button" id="pl-button-link">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				})
 			}
 			if (pt === 'share') {
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				})
@@ -3252,14 +3893,14 @@
 			let $toolWrap;
 			let $button = $(`<div class="tianyi-button pl-button-init" id="pl-button-link">点我点亮</div>`);
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
 			}
 			if (pt === 'share') {
 				$button.css({ 'margin-right': '10px' });
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
@@ -3314,7 +3955,7 @@
 				} else {
 					return {
 						index,
-						downloadUrl: '获取下载地址失败，刷新后再试试吧~'
+						downloadUrl: '获取下载地址失败，刷新后再试试吧~' + (res.res_code ? res.res_code : "")
 					};
 				}
 			} catch (e) {
@@ -3328,7 +3969,7 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -3480,10 +4121,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/tianyi/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/tianyi.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3526,7 +4167,7 @@
 			if (window[key]) return;
 			window[key] = true;
 
-			doc.on('click', '.pl-button-mode', (e) => {
+			doc.on('click', '.pl-button-mode', function (e) {
 				mode = e.target.dataset.mode;
 				if (!mode) return;
 				Swal.fire({
@@ -3538,13 +4179,13 @@
 						Swal.showLoading();
 					}
 				});
-				this.getPCSLink();
+				xunlei.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async (e) => {
+			doc.on('click', '.listener-link-api', async function (e) {
 				e.preventDefault();
 				$('#downloadIframe').attr('src', e.currentTarget.dataset.link);
 			});
-			doc.on('click', '.listener-link-api-btn', async (e) => {
+			doc.on('click', '.listener-link-api-btn', async function (e) {
 				base.setClipboard(e.target.dataset.filename);
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
 				setTimeout(
@@ -3553,7 +4194,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-link-bc-btn', async (e) => {
+			doc.on('click', '.listener-link-bc-btn', async function (e) {
 				let mirror = base.getMirrorList(e.target.dataset.dlink, pan.mirror);
 				base.setClipboard(mirror);
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
@@ -3563,7 +4204,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
+			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
@@ -3573,7 +4214,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
@@ -3581,7 +4222,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+				let res = await xunlei.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
 					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({ opacity: '0.5' }, "slow");
@@ -3591,17 +4232,17 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({ opacity: '0.5' }, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-send-rpc', function (e) {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
 			});
-			doc.on('click', '.listener-open-setting', () => {
+			doc.on('click', '.listener-open-setting', function () {
 				base.showSetting();
 			});
-			doc.on('click', '.listener-open-updatelog', () => {
+			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
-			doc.on('click', '.listener-rpc-task', () => {
+			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
 					domain: base.getValue('setting_rpc_domain'),
 					port: base.getValue('setting_rpc_port'),
@@ -3618,14 +4259,14 @@
 			let $toolWrap;
 			let $button = $(`<div class="xunlei-button pl-button" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span><ul class="pl-dropdown-menu" style="top: 34px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				})
 			}
 			if (pt === 'share') {
 				$button.css({ 'margin-right': '10px' });
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				})
@@ -3641,14 +4282,14 @@
 			let $toolWrap;
 			let $button = $(`<div class="xunlei-button pl-button-init" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">点我点亮</span></div>`);
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
 			}
 			if (pt === 'share') {
 				$button.css({ 'margin-right': '10px' });
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
@@ -3707,7 +4348,7 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -3724,7 +4365,18 @@
 					selectList[val.index].downloadUrl = val.downloadUrl;
 				});
 			} else {
-				return message.error('提示：<br/>请保存到自己网盘后再去网盘主页下载哦~');
+				let dialog = await Swal.fire({
+					toast: true,
+					icon: 'info',
+					title: `提示：<br/>请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
+					showConfirmButton: true,
+					confirmButtonText: '点击保存',
+					position: 'top',
+				});
+				if (dialog.isConfirmed) {
+					$('.saveToCloud')[0].click();
+					return;
+				}
 			}
 			let html = this.generateDom(selectList);
 			this.showMainDialog(pan[mode][0], html, pan[mode][1]);
@@ -3871,10 +4523,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/xunlei/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/xunlei.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3916,7 +4568,7 @@
 			if (window[key]) return;
 			window[key] = true;
 
-			window.addEventListener('hashchange', async (e) => {
+			window.addEventListener('hashchange', async function (e) {
 				let home = 'https://pan.quark.cn/list#/', all = 'https://pan.quark.cn/list#/list/all';
 				if (e.oldURL === home && e.newURL === all) return;
 				await base.sleep(150);
@@ -3928,7 +4580,7 @@
 					this.addInitButton();
 				}
 			});
-			doc.on('click', '.pl-button-mode', (e) => {
+			doc.on('click', '.pl-button-mode', function (e) {
 				mode = e.target.dataset.mode;
 				if (!mode) return;
 				Swal.fire({
@@ -3940,23 +4592,23 @@
 						Swal.showLoading();
 					}
 				});
-				this.getPCSLink();
+				quark.getPCSLink();
 			});
-			doc.on('click', '.listener-link-save', async (e) => {
+			doc.on('click', '.listener-link-save', async function (e) {
 				e.preventDefault();
 				selectList = this.getSelectedList();
 				if (selectList.length === 0) {
-					return message.error('提示：<br/>请先勾选要保存到网盘的文件捏~');
+					return message.error('提示：<br/>请先勾选要保存到网盘的文件哦~');
 				}
 				message.info('提示：<br/>因夸克限制，请先保存到自己网盘后再下载哦!');
 				await base.sleep(500);
 				document.querySelector('.file-info_r').click();
 			});
-			doc.on('click', '.listener-link-api', async (e) => {
+			doc.on('click', '.listener-link-api', async function (e) {
 				e.preventDefault();
 				$('#downloadIframe').attr('src', e.currentTarget.dataset.link);
 			});
-			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
+			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
@@ -3966,7 +4618,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
@@ -3974,7 +4626,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+				let res = await quark.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
 					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({ opacity: '0.5' }, "slow");
@@ -3984,17 +4636,17 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({ opacity: '0.5' }, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-send-rpc', function (e) {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
 			});
-			doc.on('click', '.listener-open-setting', () => {
+			doc.on('click', '.listener-open-setting', function () {
 				base.showSetting();
 			});
-			doc.on('click', '.listener-open-updatelog', () => {
+			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
-			doc.on('click', '.listener-rpc-task', () => {
+			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
 					domain: base.getValue('setting_rpc_domain'),
 					port: base.getValue('setting_rpc_port'),
@@ -4003,14 +4655,8 @@
 			});
 		},
 
-		addButton() {
-			let svg = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSAxMmwyIDIgMi0yeiIvPjxwYXRoIGQ9Ik0xNCA4aDEuNTUzYy44NSAwIDEuMTYuMDkzIDEuNDcuMjY3LjMxMS4xNzQuNTU2LjQzLjcyMi43NTYuMTY2LjMyNi4yNTUuNjUuMjU1IDEuNTR2NC44NzNjMCAuODkyLS4wODkgMS4yMTUtLjI1NSAxLjU0LS4xNjYuMzI3LS40MS41ODMtLjcyMi43NTctLjMxLjE3NC0uNjIuMjY3LTEuNDcuMjY3SDYuNDQ3Yy0uODUgMC0xLjE2LS4wOTMtMS40Ny0uMjY3YTEuNzc4IDEuNzc4IDAgMDEtLjcyMi0uNzU2Yy0uMTY2LS4zMjYtLjI1NS0uNjUtLjI1NS0xLjU0di00Ljg3M2MwLS44OTIuMDg5LTEuMjE1LjI1NS0xLjU0LjE2Ni0uMzI3LjQxLS41ODMuNzIyLS43NTcuMzEtLjE3NC42Mi0uMjY3IDEuNDctLjI2N0gxMSIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTExIDN2MTAiLz48L2c+PC9zdmc+';
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
-			if (!pt) return;
-
-			base.waitForKeyElements('[class^="Activity--video-toolbar-activity"]', function (tag) {
+		removeAD() {
+			base.waitForKeyElements('[class*="Activity--video-toolbar-activity"]', function (tag) {
 				tag[0].remove();
 			}, true);
 
@@ -4035,18 +4681,25 @@
 				let vip4 = document.querySelector('.red-envelope .close');
 				vip4.click();
 			});
+		},
 
+		addButton() {
+			let svg = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSAxMmwyIDIgMi0yeiIvPjxwYXRoIGQ9Ik0xNCA4aDEuNTUzYy44NSAwIDEuMTYuMDkzIDEuNDcuMjY3LjMxMS4xNzQuNTU2LjQzLjcyMi43NTYuMTY2LjMyNi4yNTUuNjUuMjU1IDEuNTR2NC44NzNjMCAuODkyLS4wODkgMS4yMTUtLjI1NSAxLjU0LS4xNjYuMzI3LS40MS41ODMtLjcyMi43NTctLjMxLjE3NC0uNjIuMjY3LTEuNDcuMjY3SDYuNDQ3Yy0uODUgMC0xLjE2LS4wOTMtMS40Ny0uMjY3YTEuNzc4IDEuNzc4IDAgMDEtLjcyMi0uNzU2Yy0uMTY2LS4zMjYtLjI1NS0uNjUtLjI1NS0xLjU0di00Ljg3M2MwLS44OTIuMDg5LTEuMjE1LjI1NS0xLjU0LjE2Ni0uMzI3LjQxLS41ODMuNzIyLS43NTcuMzEtLjE3NC42Mi0uMjY3IDEuNDctLjI2N0gxMSIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTExIDN2MTAiLz48L2c+PC9zdmc+';
+			if (document.getElementById("pl-button-link")) {
+				document.getElementById("pl-button-link").remove()
+			}
+			if (!pt) return;
 			let $toolWrap;
 			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon" src="` + svg + `"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				});
 			}
 			if (pt === 'share') {
 				$button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="` + svg + `"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0 !important;color:#fff !important;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				});
@@ -4064,13 +4717,13 @@
 			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button-init"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="` + svg + `"><span>点我点亮</span></button></div>`);
 			$button.css({ "margin-right": "10px", "display": "inline-block" });
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
 			}
 			if (pt === 'share') {
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
@@ -4081,7 +4734,7 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -4103,10 +4756,18 @@
 				let html = this.generateDom(res.data);
 				this.showMainDialog(pan[mode][0], html, pan[mode][1]);
 			} else {
-				message.error('提示：<br/>请保存到自己网盘后再去网盘主页下载哦~');
-				await base.sleep(1000);
-				document.querySelector('.file-info_r').click();
-				return;
+				let dialog = await Swal.fire({
+					toast: true,
+					icon: 'info',
+					title: `提示：<br/>请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
+					showConfirmButton: true,
+					confirmButtonText: '点击保存',
+					position: 'top',
+				});
+				if (dialog.isConfirmed) {
+					$('.file-info_r')[0].click();
+					return;
+				}
 			}
 		},
 
@@ -4201,7 +4862,7 @@
 				if (props) {
 					let fileList = props.list || [];
 					let selectedKeys = props.selectedRowKeys || [];
-					fileList.forEach((val) => {
+					fileList.forEach(function (val) {
 						if (selectedKeys.includes(val.fid)) {
 							selectedList.push(val);
 						}
@@ -4253,10 +4914,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/quark/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/quark.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4299,7 +4960,7 @@
 			if (window[key]) return;
 			window[key] = true;
 
-			doc.on('click', '.pl-button-mode', (e) => {
+			doc.on('click', '.pl-button-mode', function (e) {
 				mode = e.target.dataset.mode;
 				if (!mode) return;
 				Swal.fire({
@@ -4311,13 +4972,13 @@
 						Swal.showLoading();
 					}
 				});
-				this.getPCSLink();
+				yidong.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async (e) => {
+			doc.on('click', '.listener-link-api', async function (e) {
 				e.preventDefault();
 				$('#downloadIframe').attr('src', e.currentTarget.dataset.link);
 			});
-			doc.on('click', '.listener-link-aria, .listener-copy-all', (e) => {
+			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
@@ -4327,7 +4988,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-copy-all-api', (e) => {
+			doc.on('click', '.listener-copy-all-api', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
@@ -4337,7 +4998,7 @@
 					}, 2000
 				)
 			});
-			doc.on('click', '.listener-link-rpc', async (e) => {
+			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
@@ -4345,7 +5006,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await this.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
+				let res = await yidong.sendLinkToRPC(e.currentTarget.dataset.filename, e.currentTarget.dataset.link);
 				if (res === 'success') {
 					$('.listener-rpc-task').show();
 					target.removeClass('pl-btn-danger').html('发送成功了!快去看看吧~').animate({ opacity: '0.5' }, "slow");
@@ -4355,17 +5016,17 @@
 					target.addClass('pl-btn-danger').text('发送失败，检查一下您的RPC配置信息哦!').animate({ opacity: '0.5' }, "slow");
 				}
 			});
-			doc.on('click', '.listener-send-rpc', (e) => {
+			doc.on('click', '.listener-send-rpc', function (e) {
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
 			});
-			doc.on('click', '.listener-open-setting', () => {
+			doc.on('click', '.listener-open-setting', function () {
 				base.showSetting();
 			});
-			doc.on('click', '.listener-open-updatelog', () => {
+			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
-			doc.on('click', '.listener-rpc-task', () => {
+			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
 					domain: base.getValue('setting_rpc_domain'),
 					port: base.getValue('setting_rpc_port'),
@@ -4374,10 +5035,7 @@
 			});
 		},
 
-		addButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
+		removeAD() {
 			base.waitForKeyElements(".adv_swiper_menu", function (tag) {
 				tag[0].remove();
 			});
@@ -4394,8 +5052,7 @@
 				tag[0].remove();
 			});
 			base.waitForKeyElements(".document_top_memberCenter", function (tag) {
-				$(tag[0]).click(() => {
-					// window.open("https://vip.yun.139.com/vip/", "_blank");
+				$(tag[0]).click(function () {
 					Swal.fire({
 						html: `<iframe style="height: 700px; width: 420px; border: 0;" src="https://vip.yun.139.com/vip/"></iframe>`,
 						allowOutsideClick: false,
@@ -4406,18 +5063,24 @@
 					});
 				});
 			}, true);
+		},
+
+		addButton() {
+			if (document.getElementById("pl-button-link")) {
+				document.getElementById("pl-button-link").remove()
+			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="yidong-button pl-button btn-top" id="pl-button-link"><span class="yidong-btn">下载助手</span><ul class="pl-dropdown-menu" style="top: 36px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let $button = $(`<div class="yidong-button pl-button btn-top" id="pl-button-link"><span class="yidong-btn">下载助手</span><ul class="pl-dropdown-menu" style="top: 36px; letter-spacing: normal;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				})
 			}
 			if (pt === 'share') {
 				$button.removeClass('yidong-button').addClass('yidong-share-button');
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
 				})
@@ -4433,14 +5096,14 @@
 			let $toolWrap;
 			let $button = $(`<div class="yidong-button pl-button-init btn-top" id="pl-button-link"><span class="yidong-btn">点我点亮</span></div>`);
 			if (pt === 'home') {
-				base.listenElement(pan.btn.home, () => {
+				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
 			}
 			if (pt === 'share') {
 				$button.removeClass('yidong-button').addClass('yidong-share-button');
-				base.listenElement(pan.btn.share, () => {
+				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
@@ -4461,7 +5124,7 @@
 
 		utob(str) {
 			const u = String.fromCharCode;
-			return str.replace(/[\uD800-\uDBFF][\uDC00-\uDFFFF]|[^\x00-\x7F]/g, (t) => {
+			return str.replace(/[\uD800-\uDBFF][\uDC00-\uDFFFF]|[^\x00-\x7F]/g, function (t) {
 				if (t.length < 2) {
 					let e = t.charCodeAt(0);
 					return e < 128 ? t : e < 2048 ? u(192 | e >>> 6) + u(128 | 63 & e) : u(224 | e >>> 12 & 15) + u(128 | e >>> 6 & 63) + u(128 | 63 & e);
@@ -4533,9 +5196,9 @@
 					}
 				}
 				if (this.detectPage() === 'share') {
-					let vueDom = document.querySelector(".home-page").__vue__;
+					let vueDom = document.querySelector(".main_file_list").__vue__;
 
-					let res = await base.post(pan.pcs[1], `linkId=${vueDom.linkID}&contentIds=${encodeURIComponent(vueDom.currentPath.id + '/' + item.coID)}&catalogIds=`, {
+					let res = await base.post(pan.pcs[1], `linkId=${vueDom.linkID}&contentIds=${item.path}&catalogIds=`, {
 						'Content-Type': 'application/x-www-form-urlencoded',
 					});
 					if (res.code === 0) {
@@ -4561,7 +5224,7 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件捏~');
+				return message.error('提示：<br/>请先勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -4689,7 +5352,7 @@
 		detectPage() {
 			let path = location.pathname;
 			if (/^\/w/.test(path)) return 'home';
-			if (/^\/link/.test(path)) return 'share';
+			if (/^\/link|shareweb/.test(path)) return 'share';
 			return '';
 		},
 
@@ -4726,10 +5389,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/yidong/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/yidong.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4743,11 +5406,6 @@
 		}
 	};
 
-	// 目前还没找到方法进行绕过（懒），可能会出一个辅助脚本？
-	// https://access.pikpakdrive.com/access_controller/v1/area_accessible
-	// {"accessible":false,"ip":"","prompt":{"title":"对不起，PikPak在当前地区不可用","body":"PikPak目前无法对中国大陆用户提供服务，您的当前IP地址()被定位于中国大陆。如果您认为位置判断有误，可以通过客户支持群向我们反馈。","redirect":[{"type":"telegram_group","title":"前往 Telegram 官方群组","url":"https://t.me/pikpak_userservice"},{"type":"whatsapp_group","title":"前往 WhatsApp 官方群组","url":"https://chat.whatsapp.com/BXvB38TYZb04yGjjfQiB18"}]}}
-	// {"accessible":true,"countryCode":"","ip":""}
-
 	// 油小猴
 	let youxiaohou = {
 		async initPanLinker() {
@@ -4760,10 +5418,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@latest/config/config.json`, {}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4820,13 +5478,13 @@
 				</div>
 			</div>
 			`;
-			doc.on('click', '.listener-open-setting', () => {
+			doc.on('click', '.listener-open-setting', function () {
 				base.showSetting();
 			});
-			doc.on('click', '.listener-open-updatelog', () => {
+			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
-			doc.on('click', '.listener-open-info', () => {
+			doc.on('click', '.listener-open-info', function () {
 				base.showDebug();
 			});
 
@@ -4842,7 +5500,7 @@
 				</div>
 			</div>
 			`;
-			doc.on('click', '.listener-open-init', () => {
+			doc.on('click', '.listener-open-init', function () {
 				base.initDialog();
 			});
 
@@ -4860,7 +5518,7 @@
 			// 然后获取原脚本的 GreasyFork 信息，确保油小猴服务器信任
 			await base.fetchScriptInfo('https://greasyfork.org/zh-CN/scripts/436446.json', 5).then(res => {
 				base.setValue('setting_script_version', res.version);
-				base.setValue('setting_script_author', 'GreasyFork');
+				base.setValue('setting_script_author', 'YouXiaoHou');
 				base.setValue('setting_script_name', res.name);
 			})
 			// 再加载网页样式
@@ -4868,21 +5526,26 @@
 			// 最后判断页面地址并加载对应的initPanLinker
 			if (/(pan|yun).baidu.com/.test(location.host)) {
 				baidu.initPanLinker();
+				baidu.removeAD();
 			}
 			if (/www.(aliyundrive|alipan).com/.test(location.host)) {
 				ali.initPanLinker();
+				ali.removeAD();
 			}
 			if (/cloud.189.cn/.test(location.host)) {
 				tianyi.initPanLinker();
+				tianyi.removeAD();
 			}
 			if (/pan.xunlei.com/.test(location.host)) {
 				xunlei.initPanLinker();
 			}
 			if (/pan.quark.cn/.test(location.host)) {
 				quark.initPanLinker();
+				quark.removeAD();
 			}
 			if (/(yun|caiyun).139.com/.test(location.host)) {
 				yidong.initPanLinker();
+				yidong.removeAD();
 			}
 			if (/www.youxiaohou.com/.test(location.host)) {
 				youxiaohou.initPanLinker();
@@ -4922,4 +5585,3 @@
 	unsafeWindow.Panlinker = main;
 	main.init();
 })();
-// 好好学习，天天向上
