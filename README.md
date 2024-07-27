@@ -11,7 +11,7 @@
    <img alt="Github Licence" src="https://img.shields.io/github/license/hmjz100/Online-disk-direct-link-download-assistant?label=%e8%ae%b8%e5%8f%af&logo=github&logoColor=white&labelColor=black&color=grey&style=for-the-badge&cacheSeconds=10">
    <img alt="GreasyFork Licence" src="https://img.shields.io/greasyfork/l/449291?label=%e8%ae%b8%e5%8f%af&logo=greasyfork&logoColor=white&labelColor=%23670000&color=grey&style=for-the-badge&cacheSeconds=10">
    <br/>
-   <img alt="Today Poem" src="https://v1.jinrishici.com/all.svg">
+   <img alt="Starchart" src="https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg?variant=adaptive&line=%23574ab8">
 </p>
 <p align="center">
    不仅能够精简网盘界面，还支持美化网盘界面主题色
