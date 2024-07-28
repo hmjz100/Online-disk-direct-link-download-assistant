@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.8.9
+// @version           1.0.9
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
-// @description       一个基于 JavaScript 的网盘文件下载地址获取工具，支持 百度网盘/阿里云盘/天翼云盘/迅雷云盘/夸克网盘/移动网盘 六大网盘 | 基于【网盘直链下载助手】修改自6.2.3版本 | 开源 - 自用 - 去广 | 改界面 - 添功能 - 修Bug | 不仅能够精简网盘界面 还支持修改网盘界面主题颜色!
+// @description       一个基于 JavaScript 的网盘文件下载地址获取工具，支持 百度网盘/阿里云盘/天翼云盘/迅雷云盘/夸克网盘/移动网盘 六大网盘 | 基于【网盘直链下载助手】修改自6.2.7版本 | 开源 - 自用 - 去广 | 改界面 - 添功能 - 修Bug | 不仅能够精简网盘界面 还支持修改网盘界面主题颜色!
 // @license           AGPL-3.0-or-later
 // @homepage          https://github.com/hmjz100/Online-disk-direct-link-download-assistant/
 // @supportURL        https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues
@@ -34,6 +34,7 @@
 // @match             *://yun.baidu.com/aipan/*
 // @match             *://pan.baidu.com/share/*
 // @match             *://yun.baidu.com/share/*
+// @match             *://openapi.baidu.com/*
 // @match             *://www.aliyundrive.com/s/*
 // @match             *://www.aliyundrive.com/drive*
 // @match             *://www.alipan.com/s/*
@@ -59,10 +60,12 @@
 // @connect           *
 // @run-at            document-idle
 // @grant             unsafeWindow
+// @grant             window.close
 // @grant             GM_xmlhttpRequest
 // @grant             GM_setClipboard
 // @grant             GM_setValue
 // @grant             GM_getValue
+// @grant             GM_deleteValue
 // @grant             GM_openInTab
 // @grant             GM_info
 // @grant             GM_registerMenuCommand
@@ -81,6 +84,8 @@
 	if (window[key]) return;
 	window[key] = true;
 
+	unsafeWindow.GM = GM_info
+
 	/*
 	网盘直链下载助手
 	以下代码均改自 网盘直链下载助手，作者油小猴
@@ -91,7 +96,9 @@
 		scriptInfo = GM_info.script,
 		realauthor = scriptInfo.author,
 		realname = scriptInfo.name,
-		realversion = scriptInfo.version;
+		realversion = scriptInfo.version,
+		manageHandler = GM_info.scriptHandler,
+		manageVersion = GM_info.version;
 
 
 	/* 设置选项 */
@@ -208,6 +215,11 @@
 			GM_setValue(name, value);
 		},
 
+		// 删除本地保存的数值（仅用于 Greasemonkey）
+		deleteValue(name) {
+			GM_deleteValue(name);
+		},
+
 		// 获取本地保存的数值
 		getStorage(key) {
 			try {
@@ -318,7 +330,7 @@
 
 		/* 请求 */
 		// 使用 Post 发送请求
-		post(url, data, headers, type, maxRetries = 10, currentRetry = 0) {
+		post(url, data, headers, type, maxRetries = 3, currentRetry = 0) {
 			if (this.isType(data) === 'object') {
 				data = JSON.stringify(data);
 			}
@@ -328,13 +340,16 @@
 						method: "POST", url, headers, data,
 						responseType: type || 'json',
 						onload: function (res) {
-							if (/^[A-Za-z0-9+/=\s]+$/.test(res.response) && /^[A-Za-z0-9+/=\s]+$/.test(res.responseText)) {
-								if (res.response) {
-									res.decodedResponse = JSON.parse(base.decode(res.response));
-								}
-								if (res.responseText) {
-									res.decodedResponseText = base.decode(res.responseText);
-								}
+							// 尝试格式化请求结果以方便调试
+							if (res.response) {
+								try {
+									res.decodedResponse = JSON.parse(res.response);
+								} catch (e) { }
+							}
+							if (res.responseText) {
+								try {
+									res.decodedResponseText = JSON.parse(res.responseText);
+								} catch (e) { }
 							}
 							console.log('【（改）网盘直链下载助手】Post\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求数据：' + JSON.stringify(data) + '\n请求结果：', res);
 							type === 'blob' ? resolve(res) : resolve(res.response || res.responseText);
@@ -358,22 +373,35 @@
 		},
 
 		// 使用 Get 发送请求
-		get(url, headers, type, extra, maxRetries = 10, currentRetry = 0) {
+		get(url, headers, type, extra, maxRetries = 3, currentRetry = 0) {
 			return new Promise((resolve, reject) => {
 				const sendRequest = function () {
 					let requestObj = GM_xmlhttpRequest({
 						method: "GET", url, headers,
 						responseType: type || 'json',
 						onload: function (res) {
-							console.log('【（改）网盘直链下载助手】Get Onload\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
 							if (res.status === 204) {
+								console.log('【（改）网盘直链下载助手】Get\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res + '\n请求已被IDM捕获。');
 								requestObj.abort();
 								idm[extra.index] = true;
 							}
 							if (type === 'blob') {
+								console.log('【（改）网盘直链下载助手】Get Blob\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
 								res.status === 200 && base.blobDownload(res.response, extra.filename);
 								resolve(res);
 							} else {
+								// 尝试格式化请求结果以方便调试
+								if (res.response) {
+									try {
+										res.decodedResponse = JSON.parse(res.response);
+									} catch (e) { }
+								}
+								if (res.responseText) {
+									try {
+										res.decodedResponseText = JSON.parse(res.responseText);
+									} catch (e) { }
+								}
+								console.log('【（改）网盘直链下载助手】Get\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
 								resolve(res.response || res.responseText);
 							}
 						},
@@ -383,7 +411,7 @@
 							}
 						},
 						onloadstart() {
-							console.log('【（改）网盘直链下载助手】Get OnloadStart\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers));
+							console.log('【（改）网盘直链下载助手】Get\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers));
 							extra && extra.filename && extra.index && (request[extra.index] = requestObj);
 						},
 						onerror: function (err) {
@@ -405,15 +433,15 @@
 			});
 		},
 
-		// 使用 Get 发送请求获取直链
-		getFinalUrl(url, headers, maxRetries = 10, currentRetry = 0) {
+		// 使用 Get 发送请求获取跳转后的链接
+		getFinalUrl(url, headers, maxRetries = 3, currentRetry = 0) {
 			return new Promise((resolve, reject) => {
 				const sendRequest = function () {
 					let requestObj = GM_xmlhttpRequest({
 						method: "GET", url, headers,
 						onload: function (res) {
 							console.log('【（改）网盘直链下载助手】Get FinalUrl\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n返回结果：', res);
-							resolve(res.finalUrl);
+							resolve(res.finalUrl)
 						},
 						onerror: function (err) {
 							if (currentRetry < maxRetries) {
@@ -432,29 +460,6 @@
 
 				sendRequest(); // 初始请求
 			});
-		},
-
-		// 获取脚本信息
-		async fetchScriptInfo(url, retryCount) {
-			try {
-				const response = await fetch(url);
-				const data = await response.json();
-				console.log('【（改）网盘直链下载助手】Fetch\n请求地址：' + url + ' (GreasyFork)\n返回结果：', data);
-				return data;
-			} catch (error) {
-				console.error('【（改）网盘直链下载助手】Fetch\n获取脚本版本时发生错误', error);
-				if (retryCount > 0) {
-					console.log("【（改）网盘直链下载助手】Fetch\n5秒后将重新尝试获取版本");
-					return new Promise(resolve => setTimeout(resolve, 5000))
-						.then(function () {
-							console.log('【（改）网盘直链下载助手】Fetch\n重新尝试获取脚本信息...');
-							return fetchScriptInfo(url, retryCount - 1);
-						});
-				} else {
-					console.error('【（改）网盘直链下载助手】Fetch\n请求出现错误，可能是网络问题\n无法获取脚本信息，达到最大尝试次数。');
-					throw error;
-				}
-			}
 		},
 
 		// RPC测试
@@ -543,7 +548,6 @@
 			// 返回 rgba 格式字符串
 			return r + ', ' + g + ', ' + b + a;
 		},
-
 
 		replaceColors(cssText, baseURI, type, colorMap) {
 			if (!cssText) return '';
@@ -656,6 +660,12 @@
 		// 延迟
 		sleep(time) {
 			return new Promise(resolve => setTimeout(resolve, time));
+		},
+
+		// 获取大版本
+		getMajorVersion(version) {
+			const [major] = (version || '').split('.');
+			return /^\d+$/.test(major) ? major : null;
 		},
 
 		// 查找 React 组件实例
@@ -914,6 +924,8 @@
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			debugInfo += `<span>以下内容均为脚本自检信息<br/>本页面仅作为调试使用<span>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[外置]<br/>管理器名称</div>${manageHandler ? manageHandler : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[外置]<br/>管理器版本</div>${manageVersion ? manageVersion : "无法获取"}</label>`;
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>信息服务器</div>[${base.getValue('setting_youxiaohou_server')}]${server ? server : "无法获取"}</label>`;
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本名称</div>${realname ? realname : "无法获取"}</label>`;
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本版本</div>${realversion ? realversion : "无法获取"}</label>`;
@@ -928,8 +940,8 @@
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘CDN</div>${pan.mirror ? pan.mirror : "此网站暂无"}</label>`;
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>RPC管理</div>${pan.d ? pan.d : "无法获取"}</label>`;
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>IDM介绍</div>${pan.idm ? pan.idm : "此网盘暂无"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>提示文本</div>${JSON.stringify(pan.init) ? JSON.stringify(pan.init) : "无法获取"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘接口</div>${JSON.stringify(pan.pcs) ? JSON.stringify(pan.pcs) : "无法获取"}</label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>提示文本</div><code>${JSON.stringify(pan.init) ? JSON.stringify(pan.init) : "无法获取"}</code></label>`;
+			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘接口</div><code>${JSON.stringify(pan.pcs) ? JSON.stringify(pan.pcs) : "无法获取"}</code></label>`;
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>Toast页脚</div>${pan.footer ? pan.footer : "此网站暂无"}</label>`;
 			debugInfo = '<div>' + debugInfo + '</div>';
 
@@ -951,6 +963,7 @@
 				icon: 'info',
 				title: '更新日志',
 				html: `<div>
+				V1.0.9<br/>1、跟进官方V6.2.7，修复因无法进行百度授权而导致获取直链报错 9019 的 Bug。
 				V1.0.8.9<br/>1、跟进官方V6.2.3，优化保存到网盘提示，修复阿里云盘、移动云盘失效的问题；<br/>2、优化修改网盘主题的代码，减少对页面的破坏。<br/><br/>
 				V1.0.8.8<br/>1、修复下载菜单字体过小的Bug。<br/><br/>
 				V1.0.8.7<br/>1、修复在阿里云盘分享页面下点击“未点亮”按钮时没有任何反应的Bug；<br/>2、更新并优化网盘界面精简规则；<br/>3、支持更换 百度网盘、阿里云盘、迅雷云盘、夸克网盘、移动云盘 界面的主题颜色。<br/><br/>
@@ -1127,11 +1140,11 @@
 			}
 
 			::-webkit-scrollbar-thumb {
-				background-color: ${color}90
+				background-color: ${color}90 !important
 			}
 
 			::-webkit-scrollbar-thumb:hover {
-				background-color: ${color}D0
+				background-color: ${color}D0 !important
 			}
 
 			.swal2-popup {
@@ -1930,6 +1943,16 @@
 				.module-share-header .slide-show-header .slide-show-center .subscribe-btn {
 				    background:${color}
 				}
+				#bd-main .bd-left {
+					margin: auto !important;
+				}
+				.verify-input input {
+					padding-left: 0 !important;
+					text-align: center !important;
+				}
+				.verify-input input:focus {
+					border: 2px solid ${color} !important;
+				}
 				`, 'body');
 			}
 			if (/(pan|yun).baidu.com/.test(location.host) && location.pathname !== '/disk/home' && base.getValue('setting_baidu_theme') === 'yes') {
@@ -1982,6 +2005,8 @@
 
 					['#9c86f2', `${color}90`],
 					['#9C86F2', `${color}90`],
+					['#83d3ff', `${color}90`],
+					['#83D3FF', `${color}90`],
 
 					['#fafafc', `${color}20`],
 					['#FAFAFC', `${color}20`],
@@ -2009,6 +2034,7 @@
 					['#E6F6FF', `${color}10`],
 
 					['6,167,255,.1', base.hexToRgba(`${color}15`)],
+					['6,167,255,.23', base.hexToRgba(`${color}3b`)],
 					['164,141,255,.2', base.hexToRgba(`${color}30`)],
 					['196,182,255,.2', base.hexToRgba(`${color}20`)],
 					['113,127,255,.2', base.hexToRgba(`${color}40`)],
@@ -2053,6 +2079,9 @@
 				window.onload = base.setColors([
 					['#0d53ff', `${color}`],
 					['#e6f1ff', `${color}20`],
+					['#f0faff', `${color}20`],
+					['#7da3ff', `${color}D0`],
+					['#ddd', `${color}D0`],
 					['17,17,17,.9', base.hexToRgba(`${color}D0`)],
 					['40,40,255,.04', base.hexToRgba(`${color}20`)],
 					['#f7f7ff', 'transparent'],
@@ -2082,11 +2111,11 @@
 					['49,129,249,.08', base.hexToRgba(`${color}20`)],
 				]);
 			};
-			base.addStyle('Panlinker-UI-Super', 'style', `
+			/*base.addStyle('Panlinker-UI-Super', 'style', `
 				*:last-child {
 					transition: all 0.2s ease;
 				}
-			`);
+			`);*/
 		},
 
 		// 暗号界面
@@ -2311,7 +2340,10 @@
 			try {
 				GM_cookie && GM_cookie('list', { name: 'BDUSS' }, (cookies, error) => {
 					if (!error) {
-						base.setStorage("baiduyunPlugin_BDUSS", { BDUSS: cookies[0].value });
+						let BDUSS = cookies?.[0]?.value;
+						if (BDUSS) {
+							base.setStorage("baiduyunPlugin_BDUSS", { BDUSS });
+						}
 					}
 				});
 			} catch (e) {
@@ -2650,18 +2682,18 @@
 						用电脑下载并登录最新百度网盘客户端，即自动完成添加。
 						<a href="//pan.baidu.com/download" target="_blank">下载百度网盘客户端</a>
 						<br/>
-						由 <a>(改)网盘直连下载助手</a> 修复该选项
+						由 <a>(改)网盘直链下载助手</a> 修复该选项
 					</div>
 				</div>`;
 			}, true)
 			base.waitForKeyElements(".wp-s-header__vip-btn-tip", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements(".app-user-vip-center-tip", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements("#web-header-text-s-45", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements(".wp-s-header__vip-btn", function (tag) {
 				tag[0].innerText = "会员中心";
@@ -2670,60 +2702,63 @@
 				tag[0].innerText = "会员中心";
 			}, true);
 			base.waitForKeyElements(".gOIbzPb", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements(".app-user-vip-center-box.vip-center-type-2", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements(".wp-s-header-user__vip-center", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			});
 			base.waitForKeyElements(".popper__arrow", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			});
 			base.waitForKeyElements(".wp-s-header-user__create-team-title", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements(".web-header-ad-item", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			});
 			base.waitForKeyElements(".wp-s-header__game-entry", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true)
 			base.waitForKeyElements(".bd-aside-ad", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true)
 			base.waitForKeyElements(".btn-img-tips", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true)
 			base.waitForKeyElements(".nd-operate-guidance", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true)
 			base.waitForKeyElements(".module-operation-content", function (tag) {
 				tag[0].remove()
 				document.querySelector(".module-canvas").click();
 			}, true)
 			base.waitForKeyElements(".newIcon", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements(".u-badge__content.is-dot", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements(".wp-side-options.g-clearfix", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements(".wp-s-header-user__drop-channel", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements(".app-download", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements('.g-button[title="保存到手机"]', function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true)
+			base.waitForKeyElements('.yike-entrance', function (tag) {
+				tag.remove();
+			})
 			base.waitForKeyElements("p.wp-s-aside-nav__main-item-text", function (tag) {
 				if (tag[0].innerHTML.match(/(插件|相册|笔记)/) && tag[0].closest('a') && tag[0].closest('a').getAttribute('target') !== "_blank") {
-					tag[0].closest('a').remove();
+					$(tag[0].closest('a')).fadeToggle();
 				} else {
 					tag[0].innerHTML = tag[0].innerHTML.replace("百度", "");
 				}
@@ -2738,10 +2773,34 @@
 						type !== "mbox-homepage" &&
 						type !== "find-apps"
 					) {
-						tag.remove();
+						tag.fadeToggle();
 					}
 				});
 			}, true);
+			// 美化分享页面
+			if (pt === 'share') {
+				base.waitForKeyElements(`iframe[src^="/buy/ad"]`, function (tag) {
+					tag.fadeToggle();
+				}, true)
+				base.waitForKeyElements(`.theme-white.init-new`, function (tag) {
+					tag[0].style.background = '#DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center'
+				}, true)
+				base.waitForKeyElements(`#layoutApp`, function (tag) {
+					tag[0].style.background = '#DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center'
+					document.body.style.background = '#DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center'
+				}, true)
+				base.waitForKeyElements(`#bd-main .bd-left`, function (tag) {
+					tag[0].style.background = '#ffffffC0';
+					tag[0].style.borderRadius = '10px';
+
+				}, true)
+				base.waitForKeyElements(`.KPDwCE`, function (tag) {
+					tag[0].style.setProperty('background', 'transparent');
+				}, true)
+				base.waitForKeyElements('.share-list .KPDwCE .AuPKyz', function (tag) {
+					tag[0].style.setProperty('background', 'transparent');
+				}, true)
+			}
 		},
 
 		addButton() {
@@ -2820,7 +2879,7 @@
 				</div>`);
 			}
 			if (pt === 'share') $toolWrap = pan.btn.share;
-			$button.click(() => base.initDialog());
+			$button.click(function () { base.initDialog() });
 			base.listenElement($toolWrap, function () {
 				$toolWrap = $($toolWrap);
 				$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
@@ -2828,10 +2887,42 @@
 		},
 
 		async getToken() {
-			let res = await base.getFinalUrl(pan.pcs[3]);
-			// 如果返回结果中没有包含'access_token'字符串
-			if (res.indexOf('access_token') === -1) {
+			function openTab() {
+				GM_openInTab(pan.pcs[3], { active: true, insert: true, setParent: true });
+				base.deleteValue('baidu_access_token');
+			};
 
+			const waitForToken = function () {
+				new Promise((resolve) => {
+					let attempts = 0;
+					const interval = setInterval(function () {
+						const token = base.getValue('baidu_access_token');
+						if (token) {
+							clearInterval(interval);
+							resolve(token);
+						}
+						attempts++;
+						if (attempts > 60) {
+							clearInterval(interval);
+							resolve('');
+						}
+					}, 1000);
+				})
+			};
+
+			if (manageHandler === 'Tampermonkey' && base.getMajorVersion(manageVersion) >= 5) {
+				openTab();
+				return waitForToken();
+			}
+
+			let res = await base.getFinalUrl(pan.pcs[3]);
+
+			if (!res.includes('authorize') && !res.includes('access_token=')) {
+				openTab();
+				return waitForToken();
+			}
+
+			if (res.includes('authorize')) {
 				// 使用await关键字等待base.get函数的返回结果，获取网页内容
 				let html = await base.get(pan.pcs[3], {}, 'text');
 
@@ -2847,22 +2938,22 @@
 					response_type: "token",
 					display: "page",
 					grant_permissions: "basic,netdisk"
-				}
+				};
 
 				// 向服务器发送POST请求，实现自动授权
 				await base.post(pan.pcs[3], base.stringify(data), {
 					'Content-Type': 'application/x-www-form-urlencoded',
-				})
+				});
 
 				// 授权完后再次获取'access_token'
 				let res2 = await base.getFinalUrl(pan.pcs[3]);
 				let accessToken = res2.match(/access_token=([^&]+)/)?.[1];
-				accessToken && base.setStorage('accessToken', accessToken);
+				accessToken && base.setValue('baidu_access_token', accessToken);
 				return accessToken;
-			}
+			};
 			// 如果已有'access_token'，则获取新的'access_token'
 			let accessToken = res.match(/access_token=([^&]+)/)?.[1];
-			accessToken && base.setStorage('accessToken', accessToken);
+			accessToken && base.setValue('baidu_access_token', accessToken);
 			return accessToken;
 		},
 
@@ -2878,7 +2969,13 @@
 					return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 				}
 				fidList = encodeURIComponent(fidList);
-				let accessToken = base.getStorage('accessToken') || await this.getToken();
+				let accessToken = base.getValue('baidu_access_token')
+				if (!accessToken || accessToken === undefined) {
+					message.error('提示：<br/>稍后请在新标签页中授权助手获取信息~');
+					return setTimeout(async function () {
+						await baidu.getToken();
+					}, 1500)
+				}
 				url = `${pan.pcs[0]}&fsids=${fidList}&access_token=${accessToken}`;
 				res = await base.get(url, { "User-Agent": pan.ua });
 			}
@@ -2920,7 +3017,12 @@
 					message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
 				}
 			} else {
-				message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
+				base.deleteValue('baidu_access_token');
+				if (res.errno) {
+					message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
+				} else {
+					message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~');
+				}
 			}
 		},
 
@@ -2933,7 +3035,7 @@
 				let filename = v.server_filename || v.filename;
 				let ext = base.getExtension(filename);
 				let size = base.sizeFormat(v.size);
-				let dlink = v.dlink;
+				let dlink = v.dlink + '&access_token=' + base.getValue('baidu_access_token');
 				if (mode === 'api') {
 					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
@@ -3121,6 +3223,130 @@
 			});
 		},
 
+		async initAuthorize() {
+			base.registerMenuCommand();
+			Swal.fire({
+				heightAuto: false,
+				scrollbarPadding: false,
+				showConfirmButton: false,
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				allowEnterKey: false,
+				html: `请稍后`,
+				willOpen: function () {
+					Swal.showLoading();
+				},
+			});
+			if (base.getValue('setting_youxiaohou_server') === 'v1') {
+				let res = await base.post(`https://api.youxiaohou.com/config/?ver=${version}&a=${author}`, {}, {}, 'text');
+				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
+				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
+				pan = JSON.parse(base.decode(res));
+			} else if (base.getValue('setting_youxiaohou_server') === "no") {
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				pan = JSON.parse(res);
+			} else {
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				pan = JSON.parse(res);
+				base.setValue('setting_youxiaohou_server', 'v2');
+			}
+			Object.freeze && Object.freeze(pan);
+			if (pan.num === base.getValue('setting_init_code') || pan.license === base.getValue('license')) {
+				let url = new URL(location.href)
+				let auth = new URL(pan.pcs[3])
+				if (
+					/openapi.baidu.com\/oauth\/2.0\/authorize/.test(location.href) &&
+					(location.href.includes('basic+netdisk') || location.href.includes('basic,netdisk')) &&
+					(
+						url.searchParams.get("client_id") === auth.searchParams.get("client_id")/* ||
+						url.searchParams.get("client_id") === 'L6g70tBRRIXLsY0Z3HwKqlRE' || // pcstest_oauth
+						url.searchParams.get("client_id") === 'fSds3K4w43rw37tOqlQmTa2kDwaczK4U' || // 小度智能词典笔专业版
+						url.searchParams.get("client_id") === 'TFwtw8uwHxpdkvVqVKdIlx1XqXUnr1zG' || // 印象笔记
+						url.searchParams.get("client_id") === '9dgBV9yesuBVOXaxls7aVHbLBLqU8yyg' || // WPS文档
+						url.searchParams.get("client_id") === 'IlLqBbU3GjQ0t46TRwFateTprHWl39zF' // 百度手机助手 */
+					)
+				) {
+					let dialog = await Swal.fire({
+						icon: 'info',
+						title: `提示`,
+						html: '你好呀，为了获取百度网盘文件的下载直链<br/>我们需要您的授权来使 “下载助手” 读取您的网盘数据<br/><br/>由于使用了别的应用ID，所以授权的应用名称会有不同<br/>获取到的数据仅用于生成直链，请放心授权ヾ(≧▽≦*)o',
+						showConfirmButton: true,
+						showDenyButton: true,
+						allowOutsideClick: false,
+						allowEscapeKey: false,
+						allowEnterKey: false,
+						confirmButtonText: '授权',
+						denyButtonText: '再想想',
+						position: 'center'
+					});
+					if (dialog.isConfirmed) {
+						base.waitForKeyElements("button#auth-allow", function (element) {
+							element[0].click();
+						})
+						return;
+					}
+					if (dialog.isDenied) {
+						let dialog = await Swal.fire({
+							icon: 'question',
+							title: `好吧(*￣3￣)╭`,
+							html: '那就再想一想<br/>想好了就按下 “授权” 按钮吧~',
+							timer: 180000,
+							toast: true,
+							timerProgressBar: true,
+							showConfirmButton: false,
+							showDenyButton: false,
+							position: 'bottom-end',
+						})
+						return;
+					}
+				} else if (/openapi.baidu.com\/oauth\/2.0\/login_success/.test(location.href)) {
+					let int = setInterval(async function () {
+						if (location.href.includes('access_token') && (location.href.includes('basic+netdisk') || location.href.includes('basic,netdisk'))) {
+							clearInterval(int)
+							let token = location.href.match(/access_token=(.*?)&/)[1];
+							base.setValue('baidu_access_token', token);
+							let dialog = await Swal.fire({
+								icon: 'success',
+								title: `成功啦`,
+								html: '你已 成功授权/授权过 脚本读取您的网盘数据<br/>等待 <span id="second">3</span> 秒之后将关闭此页面',
+								timer: 3000,
+								timerProgressBar: true,
+								showConfirmButton: true,
+								showDenyButton: false,
+								allowOutsideClick: false,
+								allowEscapeKey: false,
+								allowEnterKey: false,
+								confirmButtonText: '关闭页面',
+								position: 'center',
+								willOpen: function () {
+									let sec = 3.1;
+									setInterval(() => {
+										sec -= 0.1;
+										document.getElementById("second").innerText = sec.toFixed(1);
+									}, 100);
+									setTimeout(() => {
+										window.close()
+									}, 3100);
+								},
+							});
+							if (dialog.isConfirmed) {
+								window.close()
+								return;
+							}
+						} else {
+							clearInterval(int)
+							Swal.close()
+						}
+					}, 1)
+				} else {
+					Swal.close()
+				}
+			} else {
+				Swal.close()
+			}
+		},
+
 		async initPanLinker() {
 			pt = this.detectPage();
 			base.createTip();
@@ -3132,10 +3358,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3146,7 +3372,7 @@
 			} else {
 				this.addInitButton();
 			}
-		}
+		},
 	};
 
 	//阿里云盘
@@ -3440,17 +3666,17 @@
 
 		removeAD() {
 			base.waitForKeyElements('[class*="share-list-banner"]', function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements('[class*="to-app"]', function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements('[class*="btn-mobile-save"]', function (tag) {
-				tag[0].remove();
-			}, true);
+				tag.fadeToggle();
+			});
 			base.waitForKeyElements('div[class*="text"]', function (tag) {
 				if (tag[0].innerHTML.match("SVIP"))
-					tag[0].remove();
+					tag.fadeToggle();
 			}, true);
 			base.waitForKeyElements('[class*="SplashScreenImg--close"]', function (tag) {
 				tag[0].click();
@@ -3510,7 +3736,7 @@
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
 			}
-			$button.click(() => base.initDialog());
+			$button.click(function () { base.initDialog() });
 		},
 
 		async getPCSLink() {
@@ -3747,10 +3973,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/ali/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3859,7 +4085,7 @@
 
 		removeAD() {
 			base.waitForKeyElements(".advertising-mask", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 		},
 
@@ -3905,7 +4131,7 @@
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
 			}
-			$button.click(() => base.initDialog());
+			$button.click(function () { base.initDialog() });
 		},
 
 		async getToken() {
@@ -4121,10 +4347,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/tianyi/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4294,7 +4520,7 @@
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
 			}
-			$button.click(() => base.initDialog());
+			$button.click(function () { base.initDialog() });
 		},
 
 		getToken() {
@@ -4523,10 +4749,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/xunlei/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4656,30 +4882,49 @@
 		},
 
 		removeAD() {
+
 			base.waitForKeyElements('[class*="Activity--video-toolbar-activity"]', function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			}, true);
 
-			base.waitForKeyElements(".next-box", function () {
-				let ad1 = document.getElementsByClassName("next-box")[0];
-				ad1.remove();
+			base.waitForKeyElements('span[class*="SectionHeaderController--icon-download"]', function (tag) {
+				tag.fadeToggle();
 			}, true);
 
-			base.waitForKeyElements(".tips", function () {
-				let vip1 = document.getElementsByClassName("tips")[0];
-				vip1.remove();
-				let vip2 = document.querySelector('.pc-member-entrance span');
-				vip2.innerHTML = "开通SVIP";
-			}, true);
-
-			base.waitForKeyElements(".pay-modal .close", function () {
-				let vip3 = document.querySelector('.pay-modal .close');
-				vip3.click();
+			base.waitForKeyElements('div[class*="SectionHeaderController--download-popover"]', function (tag) {
+				tag.find(".ant-popover-arrow").css({ "left": "75%" });
 			});
 
-			base.waitForKeyElements(".red-envelope .close", function () {
-				let vip4 = document.querySelector('.red-envelope .close');
-				vip4.click();
+			base.waitForKeyElements('div[class*="DetailLayout--client-download"]', function (tag) {
+				tag.fadeToggle();
+			}, true);
+
+			base.waitForKeyElements(".next-box.share-right-side-content", function (tag) {
+				tag.fadeToggle();
+			}, true);
+
+			base.waitForKeyElements('[class*="DetailLayout--container"] .feature-screen', function (tag) {
+				tag.fadeToggle();
+			});
+
+			/*base.waitForKeyElements('.ant-modal-content .ant-modal-body .right-wrap', function (tag) {
+				if (tag.find(".hint").text().includes("客户端")) tag.fadeToggle();
+			});*/
+
+			base.waitForKeyElements(".pc-member-entrance span", function (tag) {
+				tag.text("会员中心");
+			});
+
+			base.waitForKeyElements(".pc-member-entrance .tips", function (tag) {
+				tag.fadeToggle();
+			});
+
+			base.waitForKeyElements(".modal .modal-content .halo-animated-background .halo-content .pay-modal .close", function (tag) {
+				tag[0].click();
+			});
+
+			base.waitForKeyElements(".modal .modal-content .halo-animated-background .halo-content .red-envelope .close", function (tag) {
+				tag[0].click();
 			});
 		},
 
@@ -4728,7 +4973,7 @@
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
 			}
-			$button.click(() => base.initDialog());
+			$button.click(function () { base.initDialog() });
 		},
 
 		async getPCSLink() {
@@ -4914,10 +5159,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/quark/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -5037,19 +5282,19 @@
 
 		removeAD() {
 			base.waitForKeyElements(".adv_swiper_menu", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			});
 			base.waitForKeyElements(".client-bubble", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			});
 			base.waitForKeyElements(".avs-box", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			});
 			base.waitForKeyElements(".top-adv-swiper", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			});
 			base.waitForKeyElements(".client_download_icon", function (tag) {
-				tag[0].remove();
+				tag.fadeToggle();
 			});
 			base.waitForKeyElements(".document_top_memberCenter", function (tag) {
 				$(tag[0]).click(function () {
@@ -5108,7 +5353,7 @@
 					$('.pl-button-init').length === 0 && $toolWrap.prepend($button);
 				})
 			}
-			$button.click(() => base.initDialog());
+			$button.click(function () { base.initDialog() });
 		},
 
 		getRandomString(len) {
@@ -5389,10 +5634,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/yidong/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -5418,10 +5663,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, {'Cache-Control': 'no-cache'}, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -5516,7 +5761,7 @@
 			// 先加载默认设置
 			base.initDefaultConfig();
 			// 然后获取原脚本的 GreasyFork 信息，确保油小猴服务器信任
-			await base.fetchScriptInfo('https://greasyfork.org/zh-CN/scripts/436446.json', 5).then(res => {
+			await base.get('https://greasyfork.org/zh-CN/scripts/436446.json', { "referer": "https://greasyfork.org/" }, 'json', '').then(res => {
 				base.setValue('setting_script_version', res.version);
 				base.setValue('setting_script_author', 'YouXiaoHou');
 				base.setValue('setting_script_name', res.name);
@@ -5527,6 +5772,9 @@
 			if (/(pan|yun).baidu.com/.test(location.host)) {
 				baidu.initPanLinker();
 				baidu.removeAD();
+			}
+			if (/openapi.baidu.com\/oauth/.test(location.href)) {
+				baidu.initAuthorize()
 			}
 			if (/www.(aliyundrive|alipan).com/.test(location.host)) {
 				ali.initPanLinker();
