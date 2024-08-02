@@ -102,6 +102,7 @@ V. 1.0.9。1（改自 6.2.7 版本）
 ---
 
 <p align="center">这是给认真阅读完README文件的人的赞美</p>
+<p align="center">个人博客: <a target="_blank" href="https://addbeflashlite.epizy.com">https://addbeflashlite.epizy.com</a></p>
 <!--1、增加“**注入**”功能（bushi）；  
 2、**去除广告**；  
 3、更新**Sweetalert2**至11版本；  
