@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.9.1
+// @version           1.0.9.2
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
 // @description       一个基于 JavaScript 的网盘文件下载地址获取工具，支持 百度网盘/阿里云盘/天翼云盘/迅雷云盘/夸克网盘/移动网盘 六大网盘 | 基于【网盘直链下载助手】修改自6.2.7版本 | 开源 - 自用 - 去广 | 改界面 - 添功能 - 修Bug | 不仅能够精简网盘界面 还支持修改网盘界面主题颜色!
@@ -55,6 +55,7 @@
 // @connect           xunlei.com
 // @connect           quark.cn
 // @connect           youxiaohou.com
+// @connect           greasyfork.org
 // @connect           gcore.jsdelivr.net
 // @connect           localhost
 // @connect           *
@@ -83,8 +84,6 @@
 	const key = encodeURIComponent('（改）网盘直链下载助手:主代码');
 	if (window[key]) return;
 	window[key] = true;
-
-	unsafeWindow.GM = GM_info
 
 	/*
 	网盘直链下载助手
@@ -345,10 +344,16 @@
 								try {
 									res.decodedResponse = JSON.parse(res.response);
 								} catch (e) { }
+								try {
+									res.decodedResponse = JSON.parse(base.decode(res.response));
+								} catch (e) { }
 							}
 							if (res.responseText) {
 								try {
 									res.decodedResponseText = JSON.parse(res.responseText);
+								} catch (e) { }
+								try {
+									res.decodedResponseText = JSON.parse(base.decode(res.responseText));
 								} catch (e) { }
 							}
 							console.log('【（改）网盘直链下载助手】Post\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求数据：' + JSON.stringify(data) + '\n请求结果：', res);
@@ -381,7 +386,7 @@
 						responseType: type || 'json',
 						onload: function (res) {
 							if (res.status === 204) {
-								console.log('【（改）网盘直链下载助手】Get\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res + '\n请求已被IDM捕获。');
+								console.log('【（改）网盘直链下载助手】Get\n\x1B[31m该请求已被某个下载工具捕获。\x1B[0m\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
 								requestObj.abort();
 								idm[extra.index] = true;
 							}
@@ -395,10 +400,16 @@
 									try {
 										res.decodedResponse = JSON.parse(res.response);
 									} catch (e) { }
+									try {
+										res.decodedResponse = JSON.parse(base.decode(res.response));
+									} catch (e) { }
 								}
 								if (res.responseText) {
 									try {
 										res.decodedResponseText = JSON.parse(res.responseText);
+									} catch (e) { }
+									try {
+										res.decodedResponseText = JSON.parse(base.decode(res.responseText));
 									} catch (e) { }
 								}
 								console.log('【（改）网盘直链下载助手】Get\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
@@ -918,9 +929,9 @@
 			} else if (base.getValue('setting_youxiaohou_server') === 'v2') {
 				server = `https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`;
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`;
+				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=${realversion}`;
 			} else {
-				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`;
+				server = `https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=${realversion}`;
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
 			debugInfo += `<span>以下内容均为脚本自检信息<br/>本页面仅作为调试使用<span>`;
@@ -963,6 +974,7 @@
 				icon: 'info',
 				title: '更新日志',
 				html: `<div>
+				V1.0.9.2<br/>1、修复使用API下载时有可能会导致IDM无限弹窗的Bug。<br/><br/>
 				V1.0.9.1<br/>1、修复在百度网盘旧版下脚本无法删除元素的Bug。<br/><br/>
 				V1.0.9<br/>1、跟进官方V6.2.7，修复因无法进行百度授权而导致获取直链报错 9019 的 Bug。<br/><br/>
 				V1.0.8.9<br/>1、跟进官方V6.2.3，优化保存到网盘提示，修复阿里云盘、移动云盘失效的问题；<br/>2、优化修改网盘主题的代码，减少对页面的破坏。<br/><br/>
@@ -1100,11 +1112,11 @@
 			.swal2-close {position:absolute;top:1px;right:1px;transition: all 0.2s ease;}
 			div:where(.swal2-container) .swal2-html-container{margin: 1.3em 1.3em 0.3em;}
 			div:where(.swal2-container) button:where(.swal2-close):hover {color:${color};font-size:60px!important}
+			[class^="swal-"] {transition: all 0.2s ease;}
 			`;
 
 			// 先监听颜色方案变化 Panlinker-SweetAlert2-Default
 			window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-				base.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
 				if (e.matches) {
 					// 切换到暗色主题
 					base.addStyle('swal-pub-style', 'style', GM_getResourceText('SwalDark'));
@@ -1112,8 +1124,8 @@
 					// 切换到浅色主题
 					base.addStyle('swal-pub-style', 'style', GM_getResourceText('Swal'));
 				}
+				base.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
 			});
-			base.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
 			// 再修改主题 Panlinker-SweetAlert2-Default
 			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				// 切换到暗色主题
@@ -1122,6 +1134,7 @@
 				// 切换到浅色主题
 				base.addStyle('swal-pub-style', 'style', GM_getResourceText('Swal'));
 			}
+			base.addStyle('Panlinker-SweetAlert2-User', 'style', swalcss);
 
 			let uicss = `
 			::-webkit-scrollbar {
@@ -2112,11 +2125,6 @@
 					['49,129,249,.08', base.hexToRgba(`${color}20`)],
 				]);
 			};
-			/*base.addStyle('Panlinker-UI-Super', 'style', `
-				*:last-child {
-					transition: all 0.2s ease;
-				}
-			`);*/
 		},
 
 		// 暗号界面
@@ -3248,10 +3256,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3362,10 +3370,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -3977,10 +3985,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/ali/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/ali.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4351,10 +4359,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/tianyi/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/tianyi.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -4753,10 +4761,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/xunlei/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/xunlei.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -5163,10 +5171,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/quark/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/quark.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -5638,10 +5646,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/yidong/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/yidong.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
@@ -5667,10 +5675,10 @@
 				let res = await base.post(`https://api.youxiaohou.com/config/v2/?ver=${version}&a=${author}`, {}, {}, 'text');
 				pan = JSON.parse(base.decode(res));
 			} else if (base.getValue('setting_youxiaohou_server') === "no") {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 			} else {
-				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=1.0.8.9`, { 'Cache-Control': 'no-cache' }, "text", {});
+				let res = await base.get(`https://gcore.jsdelivr.net/gh/hmjz100/Online-disk-direct-link-download-assistant@main/config/config.json?version=${realversion}`, { 'Cache-Control': 'no-cache' }, "text", {});
 				pan = JSON.parse(res);
 				base.setValue('setting_youxiaohou_server', 'v2');
 			}
