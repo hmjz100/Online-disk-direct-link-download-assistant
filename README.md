@@ -32,9 +32,8 @@
 ## 简介
 
 现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎  
-![TamperMonkeyBeta 篡改猴测试版](https://img.shields.io/badge/TamperMonkeyBeta_篡改猴测试版-v5.1.6194-red.svg)
-![TamperMonkey 篡改猴](https://img.shields.io/badge/TamperMonkey_篡改猴-v4.19.0-brightgreen.svg)
-![Violentmonkey 暴力猴](https://img.shields.io/badge/Violentmonkey_暴力猴-v2.15.0-brown.svg)  
+![Tampermonkey BETA 篡改猴测试版](https://img.shields.io/chrome-web-store/v/gcalenpjmijncebpfijmoaglllgpjagf.svg?label=Tampermonkey%20BETA%20篡改猴测试版&logo=tampermonkey&logoColor=red&color=red)
+![TamperMonkey 篡改猴](https://img.shields.io/chrome-web-store/v/dhdgffkkebhmkfjojejmpbldmpobfkfo.svg?label=Tampermonkey%20篡改猴&logo=tampermonkey&logoColor=white&color=brightgreen)  
 ![Google Chrome-≥76.0](https://img.shields.io/badge/Google_Chrome-≥76.0-yellow.svg)
 ![Microsoft Edge-≥88.0](https://img.shields.io/badge/Microsoft_Edge-≥88.0-blue.svg)
 ![支持平台](https://img.shields.io/badge/支持平台-Windows_|_Mac_|_Linux_|_Android-blueviolet.svg)
