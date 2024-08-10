@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.9.2
+// @version           1.0.9.3
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
 // @description       一个基于 JavaScript 的网盘文件下载地址获取工具，支持 百度网盘/阿里云盘/天翼云盘/迅雷云盘/夸克网盘/移动网盘 六大网盘 | 基于【网盘直链下载助手】修改自6.2.7版本 | 开源 - 自用 - 去广 | 改界面 - 添功能 - 修Bug | 不仅能够精简网盘界面 还支持修改网盘界面主题颜色!
@@ -17,7 +17,7 @@
 // @require           https://unpkg.com/sweetalert2@11/dist/sweetalert2.min.js
 // @require           https://unpkg.com/js-md5@0.7.3/build/md5.min.js
 // @resource Swal     https://unpkg.com/sweetalert2@11/dist/sweetalert2.min.css
-// @resource SwalDark https://unpkg.com/@sweetalert2/theme-dark@5.0.15/dark.min.css
+// @resource SwalDark https://unpkg.com/@sweetalert2/theme-dark@5/dark.min.css
 // @match             *://pan.baidu.com/disk/home*
 // @match             *://yun.baidu.com/disk/home*
 // @match             *://pan.baidu.com/disk/timeline*
@@ -175,6 +175,9 @@
 			GM_registerMenuCommand('⚙️ 设置', function () {
 				base.showSetting();
 			});
+			GM_registerMenuCommand('🍃️ 美化', function () {
+				base.showBeautify();
+			});
 			GM_registerMenuCommand('📃 更新', function () {
 				base.showUpdateLog();
 			});
@@ -185,7 +188,6 @@
 
 		// 取消注册
 		unRegisterInit(value) {
-			console.log("【（改）网盘直链下载助手】\n正在注入设置项目...");
 			message.warning("正在注入设置项目...");
 			base.setValue('setting_init_code', value);
 			base.setValue('license', value);
@@ -338,6 +340,9 @@
 					GM_xmlhttpRequest({
 						method: "POST", url, headers, data,
 						responseType: type || 'json',
+						onloadstart() {
+							console.log('【（改）网盘直链下载助手】Post(start)\n请求地址：' + url + '\n请求头部：', headers);
+						},
 						onload: function (res) {
 							// 尝试格式化请求结果以方便调试
 							if (res.response) {
@@ -356,19 +361,19 @@
 									res.decodedResponseText = JSON.parse(base.decode(res.responseText));
 								} catch (e) { }
 							}
-							console.log('【（改）网盘直链下载助手】Post\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求数据：' + JSON.stringify(data) + '\n请求结果：', res);
+							console.log('【（改）网盘直链下载助手】Post(load)\n请求地址：' + url + '\n请求头部：', headers, '\n请求数据：' + JSON.stringify(data) + '\n请求结果：', res);
 							type === 'blob' ? resolve(res) : resolve(res.response || res.responseText);
 						},
 						onerror: function (err) {
 							if (currentRetry < maxRetries) {
 								currentRetry++;
-								console.error(`【（改）网盘直链下载助手】Post\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`, err);
+								console.error(`【（改）网盘直链下载助手】Post(error)\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`, err);
 								setTimeout(function () {
-									console.log(`【（改）网盘直链下载助手】Post\n重新尝试请求...`);
+									console.log(`【（改）网盘直链下载助手】Post(error)\n重新尝试请求...`);
 									sendRequest(); // 重新发送请求
 								}, 5000)
 							} else {
-								reject('【（改）网盘直链下载助手】Post\n请求出现错误，可能是网络问题\n无法继续请求，达到最大错误次数。', err); // 达到最大重试次数，拒绝 Promise
+								reject('【（改）网盘直链下载助手】Post(error)\n请求出现错误，可能是网络问题\n无法继续请求，达到最大错误次数。', err); // 达到最大重试次数，拒绝 Promise
 							}
 						},
 					});
@@ -386,12 +391,13 @@
 						responseType: type || 'json',
 						onload: function (res) {
 							if (res.status === 204) {
-								console.log('【（改）网盘直链下载助手】Get\n\x1B[31m该请求已被某个下载工具捕获。\x1B[0m\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
+								console.log('【（改）网盘直链下载助手】Get(load)\n\x1B[31m该请求已被某个下载工具捕获。' + (res.statusText ? ("\n\x1B[0m工具提示：\x1B[31m" + res.statusText) : "") + '\x1B[0m\n请求地址：' + url + '\n请求头部：', headers, '\n请求结果：', res);
 								requestObj.abort();
 								idm[extra.index] = true;
+								return;
 							}
 							if (type === 'blob') {
-								console.log('【（改）网盘直链下载助手】Get Blob\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
+								console.log('【（改）网盘直链下载助手】Get(load) Blob\n请求地址：' + url + '\n请求头部：', headers, '\n请求结果：', res);
 								res.status === 200 && base.blobDownload(res.response, extra.filename);
 								resolve(res);
 							} else {
@@ -412,29 +418,30 @@
 										res.decodedResponseText = JSON.parse(base.decode(res.responseText));
 									} catch (e) { }
 								}
-								console.log('【（改）网盘直链下载助手】Get\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n请求结果：', res);
+								console.log('【（改）网盘直链下载助手】Get(load)\n请求地址：' + url + '\n请求头部：', headers, '\n请求结果：', res);
 								resolve(res.response || res.responseText);
 							}
 						},
 						onprogress: function (res) {
 							if (extra && extra.filename && extra.index) {
 								res.total > 0 ? progress[extra.index] = (res.loaded * 100 / res.total).toFixed(2) : progress[extra.index] = 0.00;
+								console.log('【（改）网盘直链下载助手】Get(progress)\n\x1B[31m该请求正在进行中。' + (progress[extra.index] ? ("\n\x1B[0m下载进度：\x1B[31m" + progress[extra.index]) : "") + '\x1B[0m');
 							}
 						},
 						onloadstart() {
-							console.log('【（改）网盘直链下载助手】Get\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers));
+							console.log('【（改）网盘直链下载助手】Get(start)\n请求地址：' + url + '\n请求头部：', headers);
 							extra && extra.filename && extra.index && (request[extra.index] = requestObj);
 						},
 						onerror: function (err) {
 							if (currentRetry < maxRetries) {
 								currentRetry++;
-								console.error(`【（改）网盘直链下载助手】Get\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`, err);
+								console.error(`【（改）网盘直链下载助手】Get(error)\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`, err);
 								setTimeout(function () {
-									console.log(`【（改）网盘直链下载助手】Get\n重新尝试请求...`);
+									console.log(`【（改）网盘直链下载助手】Get(error)\n重新尝试请求...`);
 									sendRequest(); // 重新发送请求
 								}, 5000)
 							} else {
-								reject('【（改）网盘直链下载助手】Get\n请求出现错误，可能是网络问题\n无法继续请求，达到最大错误次数。', err); // 达到最大重试次数，拒绝 Promise
+								reject('【（改）网盘直链下载助手】Get(error)\n请求出现错误，可能是网络问题\n无法继续请求，达到最大错误次数。', err); // 达到最大重试次数，拒绝 Promise
 							}
 						},
 					});
@@ -450,25 +457,27 @@
 				const sendRequest = function () {
 					let requestObj = GM_xmlhttpRequest({
 						method: "GET", url, headers,
+						onloadstart() {
+							console.log('【（改）网盘直链下载助手】Get(start) FinalUrl\n请求地址：' + url + '\n请求头部：', headers);
+						},
 						onload: function (res) {
-							console.log('【（改）网盘直链下载助手】Get FinalUrl\n请求地址：' + url + '\n请求头部：' + JSON.stringify(headers) + '\n返回结果：', res);
+							console.log('【（改）网盘直链下载助手】Get(load) FinalUrl\n请求地址：' + url + '\n请求头部：', headers, '\n返回结果：', res);
 							resolve(res.finalUrl)
 						},
 						onerror: function (err) {
 							if (currentRetry < maxRetries) {
 								currentRetry++;
-								console.error(`【（改）网盘直链下载助手】Get FinalUrl\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`);
+								console.error(`【（改）网盘直链下载助手】Get(error) FinalUrl\n请求出现错误，可能是网络问题\n5秒后将重试 (错误次数：${currentRetry}/${maxRetries})...`);
 								setTimeout(function () {
-									console.log(`【（改）网盘直链下载助手】Get FinalUrl\n重新尝试请求...`);
+									console.log(`【（改）网盘直链下载助手】Get(error) FinalUrl\n重新尝试请求...`);
 									sendRequest(); // 重新发送请求
 								}, 5000)
 							} else {
-								reject('【（改）网盘直链下载助手】Get FinalUrl\n请求出现错误，可能是网络问题\n无法继续请求，达到最大错误次数。', err); // 达到最大重试次数，拒绝 Promise
+								reject('【（改）网盘直链下载助手】Get(error) FinalUrl\n请求出现错误，可能是网络问题\n无法继续请求，达到最大错误次数。', err); // 达到最大重试次数，拒绝 Promise
 							}
 						},
 					});
 				};
-
 				sendRequest(); // 初始请求
 			});
 		},
@@ -487,8 +496,11 @@
 				GM_xmlhttpRequest({
 					method: "POST", url, headers: {}, data: JSON.stringify(rpcData),
 					responseType: 'json',
+					onloadstart() {
+						console.log('【（改）网盘直链下载助手】Post(start) RPCTest\n请求地址：' + url + '\n请求内容：', rpcData);
+					},
 					onload: function (res) {
-						console.log('【（改）网盘直链下载助手】Post RPCTest\n请求地址：' + url + '\n请求结果：', res);
+						console.log('【（改）网盘直链下载助手】Post(load) RPCTest\n请求地址：' + url + '\n请求结果：', res);
 						if (res.response) {
 							resolve("success");
 						} else {
@@ -496,7 +508,7 @@
 						}
 					},
 					onerror: function (err) {
-						console.error('【（改）网盘直链下载助手】Post RPCTest\n请求失败', err);
+						console.error('【（改）网盘直链下载助手】Post(error) RPCTest\n请求失败', err);
 						resolve("fail");
 					},
 				});
@@ -627,43 +639,29 @@
 			})
 			document.querySelectorAll('[id^="Panlinker-ColorUI-"]').forEach(function (tag) {
 				if (!tag.parentElement) return;
-				let id = tag.id;
-				let parent = tag.parentElement;
-				let element = parent.tagName || 'head';
 				// 替换颜色并添加样式
 				if (
 					tag.innerText === base.replaceColors(tag.innerText, '', type, colorMap)
 				) return;
 				cssText = base.replaceColors(tag.innerText, '', type, colorMap);
-				let newStyle = document.createElement('style');
-				newStyle.id = id;
-				newStyle.textContent = cssText;
-				base.addStyle(id, 'style', cssText, element);
-				console.log(`【（改）网盘直链下载助手】UI\n修改 Panlinker-ColorUI <style> 元素 样式\n元素：`, tag, `\n样式：`, newStyle);
+				tag.innerText = cssText;
+				console.log(`【（改）网盘直链下载助手】UI\n修改 Panlinker-ColorUI <style> 元素 样式\n元素：`, tag);
 			});
 			let count = 0;
 			if (!colored) {
-				document.querySelectorAll('style').forEach(function (tag) {
-					if (!tag.parentElement) return;
-					let id = tag.id;
-					let parent = tag.parentElement;
-					let element = parent.tagName || 'head';
+				base.waitForKeyElements('style:not([id^="Panlinker-"],[id^="swal-pub"],[class^="darkreader"])', function (tag) {
+					if (!tag.parent()) return;
+					let id = tag[0].id;
 					// 替换颜色并添加样式
 					if (
-						id.includes('Panlinker-UI') ||
-						id.includes('Panlinker-ColorUI') ||
-						id.includes('Panlinker-SweetAlert2') ||
-						id.includes('swal-pub') ||
 						tag.innerText === base.replaceColors(tag.innerText, '', type, colorMap)
 					) return;
 					id = id ? id : `Panlinker-ColorUI-${count++}`
-					cssText = base.replaceColors(tag.innerText, '', type, colorMap);
-					let newStyle = document.createElement('style');
-					newStyle.id = id;
-					newStyle.textContent = cssText;
-					base.addStyle(id, 'style', cssText, element);
-					console.log(`【（改）网盘直链下载助手】UI\n修改 <style> 元素 样式\n元素：`, tag, `\n样式：`, newStyle);
-				});
+					cssText = base.replaceColors(tag.text(), '', type, colorMap);
+					tag.attr("id", id)
+					tag.text(cssText)
+					console.log(`【（改）网盘直链下载助手】UI\n修改 <style> 元素 样式\n元素：`, tag[0]);
+				})
 				colored = true;
 			}
 		},
@@ -755,6 +753,9 @@
 					name: 'setting_ali_theme',
 					value: 'no'
 				}, {
+					name: 'setting_tianyi_theme',
+					value: 'no'
+				}, {
 					name: 'setting_xunlei_theme',
 					value: 'no'
 				}, {
@@ -773,10 +774,7 @@
 
 		// 设置界面
 		showSetting() {
-			let dom = '',
-				btn = '',
-				colorList = ['#09AAFF', '#cc3235', '#518c17', '#ed944b', '#f969a5', '#bca280', '#b673ab', '#574AB8', '#1d2327', '#18a497', '#637dff', '#0d53ff', '#3181f9', '#f8d800', '#0396ff', '#32ccbc', '#f6416c', '#2271b1', '#59524c', '#ff679a', '#f44236', '#fec107', '#8bc24a', '#2594ed', '#9c28b1'],
-				colorNameList = ['度盘<br/>经典蓝', '度盘<br/>平安红', '度盘<br/>盎然绿', '度盘<br/>周年橙', '度盘<br/>幸会粉', '度盘<br/>午后棕', '度盘<br/>物语紫', '度盘<br/>星空紫', 'OpenAI<br/>默认黑', 'OpenAI<br/>默认青', '里度<br/>霞光紫', '夸克<br/>极简蓝', '移动<br/>彩云蓝', '果核<br/>柠檬黄', '果核<br/>默认蓝', '果核<br/>碧波绿', '果核<br/>玫瑰红', '文派<br/>默认蓝', '文派<br/>咖啡灰', '哔哩<br/>少女粉', '哔哩<br/>高能红', '哔哩<br/>咸蛋黄', '哔哩<br/>早苗绿', '哔哩<br/>宝石蓝', '哔哩<br/>罗兰紫'];
+			let dom = ''
 			dom += `<div style="text-align: center;">带星号的设置项目将在网页刷新后生效</div>`
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC主机</div><input type="text"  placeholder="主机地址，需带上http(s)://，但不需要写端口与路径" class="swal2-input pl-input listener-rpc-domain" value="${base.getValue('setting_rpc_domain')}"></label>`;
 			dom += `<label class="pl-setting-label"><div class="pl-label">RPC端口</div><input type="text" placeholder="端口号，例如：Motrix下载器为16800" class="swal2-input pl-input listener-rpc-port" value="${base.getValue('setting_rpc_port')}"></label>`;
@@ -786,13 +784,6 @@
 			dom += `<label class="pl-setting-label"><div class="pl-label">当前RPC</div><div><span id="pl-rpcDomain">${base.getValue('setting_rpc_domain')}</span>:<span id="pl-rpcPort">${base.getValue('setting_rpc_port')}</span><span id="pl-rpcPath">${base.getValue('setting_rpc_path')}</span><button type="button" class="pl-button-mini swal2-confirm swal2-styled listener-rpc-test">测试</button></div></label>`;
 			dom += `<label class="pl-setting-label" style="padding-top:0;flex-direction:row-reverse;text-align:right;"><span><a href="https://www.youxiaohou.com/zh-cn/motrix.html#使用指南" target="_blank" class="pl-a" data-no-instant="1">RPC配置说明</a>，适用于RPC下载👆</span></label>`;
 
-			colorList.forEach((v, i) => {
-				btn += `<div style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'listener-color' : 'listener-color'}">
-				<div data-color="${v}" class="pl-mask">${colorNameList[i]} ${v === base.getValue('setting_theme_color') ? '<span id="pl-thisColor">(当前)</span>' : ''}</div>
-			</div>`;
-			});
-
-
 			dom += `<label class="pl-setting-label"><div class="pl-label">终端类型</div><select class="swal2-select pl-input listener-terminal">`;
 			Object.keys(terminalType).forEach(k => {
 				dom += `<option value="${k}" ${base.getValue('setting_terminal_type') === k ? 'selected' : ''}>${terminalType[k]}</option>`;
@@ -800,33 +791,9 @@
 			dom += `</select></label>`;
 			dom += `<label class="pl-setting-label" style="padding-top:0;flex-direction:row-reverse;text-align:right;"><span><a href="https://www.youxiaohou.com/zh-cn/curl.html" target="_blank" class="pl-a" data-no-instant="1">cURL使用教程</a>，适用于cURL下载👆</span></label>`;
 
-
-			dom += `<label class="pl-setting-label"><div class="pl-label">[百度网盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-baidu-theme">`;
-			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
-			dom += `</select></label>`;
-			dom += `<label class="pl-setting-label" style="padding-top:0;flex-direction:row-reverse;text-align:right;"><span>旧版页面会美化，新版页面则是更换主题色👆</span></label>`;
-
-			dom += `<label class="pl-setting-label"><div class="pl-label">[阿里云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-ali-theme">`;
-			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_ali_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
-			dom += `</select></label>`;
-
-			dom += `<label class="pl-setting-label"><div class="pl-label">[迅雷云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-xunlei-theme">`;
-			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_xunlei_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
-			dom += `</select></label>`;
-
-			dom += `<label class="pl-setting-label"><div class="pl-label">[夸克网盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-quark-theme">`;
-			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_quark_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
-			dom += `</select></label>`;
-
-			dom += `<label class="pl-setting-label"><div class="pl-label">[移动云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-yidong-theme">`;
-			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_yidong_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
-			dom += `</select></label>`;
-
 			dom += `<label class="pl-setting-label"><div class="pl-label">使用油小猴服务器*</div><select class="swal2-select pl-input listener-youxiaohou-server">`;
 			Object.keys(monkeyServer).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_youxiaohou_server') === value ? 'selected' : ''}>${monkeyServer[value]}</option>`; });
 			dom += `</select></label>`;
-
-			dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
 
 			dom += `<button type="button" style="margin-top: 30px;" class="pl-button-mini swal2-deny swal2-styled listener-register">熄灭已经点亮的按钮*</button>`
 
@@ -836,7 +803,7 @@
 				title: '助手设置',
 				html: dom,
 				icon: 'info',
-				iconHtml: '⚙',
+				iconHtml: '⚙︎',
 				allowOutsideClick: false,
 				showCloseButton: true,
 				showConfirmButton: false,
@@ -855,7 +822,7 @@
 					token = base.getValue('setting_rpc_token');
 				if (e.target.innerHTML !== "测试") return;
 				e.target.innerHTML = "等待";
-				e.target.style.backgroundColor = base.getValue('setting_theme_color') + 'D0';
+				e.target.style.opacity = 0.9;
 				let result = await base.rpcTest(domain, port, path, token);
 				if (result === "success") {
 					e.target.innerHTML = "成功";
@@ -864,20 +831,11 @@
 					e.target.innerHTML = "失败";
 					e.target.style.backgroundColor = "#cb1616";
 				}
+				e.target.style.opacity = "";
 				setTimeout(function () {
 					e.target.innerHTML = "测试";
-					e.target.style.backgroundColor = base.getValue('setting_theme_color');
+					e.target.style.backgroundColor = "";
 				}, 3000)
-			});
-			doc.on('click', '.listener-color', async function (e) {
-				if (e.target.dataset.color) {
-					if (document.getElementById("pl-thisColor")) {
-						document.getElementById("pl-thisColor").remove();
-					}
-					e.target.innerHTML += '<span id="pl-thisColor">(当前)</span>';
-					base.setValue('setting_theme_color', e.target.dataset.color);
-					base.addPanLinkerStyle();
-				}
 			});
 			doc.on('input', '.listener-rpc-domain', async function (e) {
 				base.setValue('setting_rpc_domain', e.target.value);
@@ -900,11 +858,84 @@
 			doc.on('change', '.listener-terminal', async function (e) {
 				base.setValue('setting_terminal_type', e.target.value);
 			});
+			doc.on('change', '.listener-youxiaohou-server', async function (e) {
+				base.setValue('setting_youxiaohou_server', e.target.value);
+			});
+		},
+
+		// 美化界面
+		showBeautify() {
+			let dom = '',
+				btn = '',
+				colorList = ['#09AAFF', '#cc3235', '#518c17', '#ed944b', '#f969a5', '#bca280', '#b673ab', '#574AB8', '#1d2327', '#18a497', '#637dff', '#0d53ff', '#3181f9', '#f8d800', '#0396ff', '#32ccbc', '#f6416c', '#2271b1', '#59524c', '#ff679a', '#f44236', '#fec107', '#8bc24a', '#2594ed', '#9c28b1'],
+				colorNameList = ['度盘<br/>经典蓝', '度盘<br/>平安红', '度盘<br/>盎然绿', '度盘<br/>周年橙', '度盘<br/>幸会粉', '度盘<br/>午后棕', '度盘<br/>物语紫', '度盘<br/>星空紫', 'OpenAI<br/>默认黑', 'OpenAI<br/>默认青', '里度<br/>霞光紫', '夸克<br/>极简蓝', '移动<br/>彩云蓝', '果核<br/>柠檬黄', '果核<br/>默认蓝', '果核<br/>碧波绿', '果核<br/>玫瑰红', '文派<br/>默认蓝', '文派<br/>咖啡灰', '哔哩<br/>少女粉', '哔哩<br/>高能红', '哔哩<br/>咸蛋黄', '哔哩<br/>早苗绿', '哔哩<br/>宝石蓝', '哔哩<br/>罗兰紫'];
+			dom += `<div style="text-align: center;">带星号的美化项目将在网页刷新后生效</div>`
+
+			colorList.forEach((v, i) => {
+				btn += `<div style="background: ${v};border: 1px solid ${v}" class="pl-color-box ${v === base.getValue('setting_theme_color') ? 'listener-color' : 'listener-color'}">
+				<div data-color="${v}" class="pl-mask">${colorNameList[i]} ${v === base.getValue('setting_theme_color') ? '<span id="pl-thisColor">(当前)</span>' : ''}</div>
+			</div>`;
+			});
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">主题颜色</div> <div class="pl-color">${btn}</div></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[百度网盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-baidu-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_baidu_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+			dom += `<label class="pl-setting-label" style="padding-top:0;flex-direction:row-reverse;text-align:right;"><span>旧版页面会美化,新版页面则是更换主题色👆</span></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[阿里云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-ali-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_ali_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[天翼云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-tianyi-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_tianyi_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[迅雷云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-xunlei-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_xunlei_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[夸克网盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-quark-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_quark_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+
+			dom += `<label class="pl-setting-label"><div class="pl-label">[移动云盘]<br/>更换界面为主题颜色*</div><select class="swal2-select pl-input listener-yidong-theme">`;
+			Object.keys(assistantTheme).forEach(value => { dom += `<option value="${value}" ${base.getValue('setting_yidong_theme') === value ? 'selected' : ''}>${assistantTheme[value]}</option>`; });
+			dom += `</select></label>`;
+
+			dom = '<div>' + dom + '</div>';
+
+			Swal.fire({
+				title: '助手美化',
+				html: dom,
+				icon: 'success',
+				iconHtml: '🍃︎',
+				allowOutsideClick: false,
+				showCloseButton: true,
+				showConfirmButton: false,
+				heightAuto: false,
+				scrollbarPadding: false,
+				footer: '<div style="text-align: center;">感谢您使用本脚本，给我们一个<a href="https://github.com/hmjz100/Online-disk-direct-link-download-assistant" target="_blank" class="pl-a" data-no-instant="1">Star</a>吧~</div>',
+			});
+			doc.on('click', '.listener-color', async function (e) {
+				if (e.target.dataset.color) {
+					if (document.getElementById("pl-thisColor")) {
+						document.getElementById("pl-thisColor").remove();
+					}
+					e.target.innerHTML += '<span id="pl-thisColor">(当前)</span>';
+					base.setValue('setting_theme_color', e.target.dataset.color);
+					base.addPanLinkerStyle();
+				}
+			});
 			doc.on('change', '.listener-baidu-theme', async function (e) {
 				base.setValue('setting_baidu_theme', e.target.value);
 			});
 			doc.on('change', '.listener-ali-theme', async function (e) {
 				base.setValue('setting_ali_theme', e.target.value);
+			});
+			doc.on('change', '.listener-tianyi-theme', async function (e) {
+				base.setValue('setting_tianyi_theme', e.target.value);
 			});
 			doc.on('change', '.listener-xunlei-theme', async function (e) {
 				base.setValue('setting_xunlei_theme', e.target.value);
@@ -914,9 +945,6 @@
 			});
 			doc.on('change', '.listener-yidong-theme', async function (e) {
 				base.setValue('setting_yidong_theme', e.target.value);
-			});
-			doc.on('change', '.listener-youxiaohou-server', async function (e) {
-				base.setValue('setting_youxiaohou_server', e.target.value);
 			});
 		},
 
@@ -943,17 +971,24 @@
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[内置]<br/>脚本作者</div>${realauthor ? realauthor : "无法获取"}</label>`;
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[上报]<br/>脚本版本</div>${version ? version : "无法获取"}</label>`;
 			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[上报]<br/>脚本作者</div>${author ? author : "无法获取"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化暗号</div>${pan.num ? pan.num : "无法获取"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化协议</div>${pan.license ? pan.license : "无法获取"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>UA代理</div>${pan.ua ? pan.ua : "此网站暂无"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>公众号码</div>${pan.img ? `${pan.img}<img src="${pan.img}"></img>` : "无法获取"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>万能助手</div>${pan.assistant ? pan.assistant : "此网站暂无"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘CDN</div>${pan.mirror ? pan.mirror : "此网站暂无"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>RPC管理</div>${pan.d ? pan.d : "无法获取"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>IDM介绍</div>${pan.idm ? pan.idm : "此网盘暂无"}</label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>提示文本</div><code>${JSON.stringify(pan.init) ? JSON.stringify(pan.init) : "无法获取"}</code></label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘接口</div><code>${JSON.stringify(pan.pcs) ? JSON.stringify(pan.pcs) : "无法获取"}</code></label>`;
-			debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>Toast页脚</div>${pan.footer ? pan.footer : "此网站暂无"}</label>`;
+
+			if (pan.num) {
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化暗号</div>${pan.num ? pan.num : "无法获取"}</label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>初始化协议</div>${pan.license ? pan.license : "无法获取"}</label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>UA代理</div><code>${pan.ua ? pan.ua : "此网站暂无"}</code></label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>公众号码</div>${pan.img ? `${pan.img}<img src="${pan.img}"></img>` : "无法获取"}</label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>万能助手</div>${pan.assistant ? pan.assistant : "此网站暂无"}</label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘CDN</div>${pan.mirror ? pan.mirror : "此网站暂无"}</label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>RPC管理</div>${pan.d ? pan.d : "无法获取"}</label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>IDM介绍</div>${pan.idm ? pan.idm : "此网盘暂无"}</label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>提示文本</div><code>${JSON.stringify(pan.init) ? JSON.stringify(pan.init) : "无法获取"}</code></label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>网盘接口</div><code>${JSON.stringify(pan.pcs) ? JSON.stringify(pan.pcs) : "无法获取"}</code></label>`;
+				debugInfo += `<label class="pl-setting-label"><div class="pl-label">[下发]<br/>Toast页脚</div>${pan.footer ? pan.footer : "此网站暂无"}</label>`;
+			} else {
+				debugInfo += `<label>上报的服务器请求未完成，部分信息未能显示</label>`;
+			}
+
+
 			debugInfo = '<div>' + debugInfo + '</div>';
 
 			Swal.fire({
@@ -973,7 +1008,8 @@
 			Swal.fire({
 				icon: 'info',
 				title: '更新日志',
-				html: `<div>
+				html: `<div style="text-align: left;">
+				V1.0.9.3<br/>1、若网盘不支持在分享中下载，将仅显示保存网盘按钮；<br/>2、优化下载界面，支持选择 Iframe 或 Blob 的方式来下载文件，增加按钮的提示文本；<br/>3、优化 CSS 样式，统一了 SweetAlert2 按钮样式，同时适配了 Dark Reader 插件，界面更协调；<br/>4、支持修改油小猴网站主题色；<br/>5、原有主题相关设置现已移动至助手美化页面中。<br/><br/>
 				V1.0.9.2<br/>1、修复使用API下载时有可能会导致IDM无限弹窗的Bug。<br/><br/>
 				V1.0.9.1<br/>1、修复在百度网盘旧版下脚本无法删除元素的Bug。<br/><br/>
 				V1.0.9<br/>1、跟进官方V6.2.7，修复因无法进行百度授权而导致获取直链报错 9019 的 Bug。<br/><br/>
@@ -1029,24 +1065,26 @@
 
 		// 创建浮动标签
 		createTip() {
+			// 添加提示框到 body
 			$('body').append('<div class="pl-tooltip"></div>');
 
-			doc.on('mouseenter mouseleave', '.listener-tip', function (e) {
-				if (e.type === 'mouseenter') {
-					let filename = e.currentTarget.innerText;
-					let size = e.currentTarget.dataset.size;
-					let tip = `${filename}<span style="margin-left: 10px;color: ${color}">${size}</span>`;
-					$(e.currentTarget).css({ opacity: '0.5' });
-					$('.pl-tooltip').html(tip).css({
-						'left': e.pageX + 10 + 'px',
-						'top': e.pageY - e.currentTarget.offsetTop > 14 ? e.pageY + 'px' : e.pageY + 20 + 'px'
-					}).show();
-				} else {
-					$(e.currentTarget).css({ opacity: '1' });
-					$('.pl-tooltip').hide(0);
-				}
+			// 监听所有带有 .listener-tip 类的元素的鼠标移动事件
+			$(document).on('mousemove', '.listener-tip', function (e) {
+				// 获取提示文字
+				let tip = e.currentTarget.dataset.title || `${e.currentTarget.innerText} <span style="margin-left: 10px;color: ${color}">${e.currentTarget.dataset.size}</span>`;
+
+				// 设置提示框的位置并使用 fadeIn() 渐变显示
+				$('.pl-tooltip').html(tip).css({
+					'left': e.pageX + 10 + 'px',
+					'top': e.pageY + 20 + 'px' // 增加一些间距
+				}).show();
+			});
+
+			$(document).on('mouseleave', '.listener-tip, pl-tooltip', function (e) {
+				$('.pl-tooltip').hide();
 			});
 		},
+
 
 		// 创建加载弹窗
 		createLoading() {
@@ -1100,19 +1138,18 @@
 			.swal2-styled{transition: all 0.2s ease;}
 			.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:${color} transparent }
 			.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:${color};color:#fff;font-size:1em}
-			.swal2-styled.swal2-confirm:hover{background-color:${color}90;}
-			.swal2-styled.swal2-confirm:focus{box-shadow:0 0 0 3px ${color}80 }
-			.swal2-styled.swal2-deny:hover{background-color:#dc374190;}
+			.swal2-styled.swal2-confirm:hover,.swal2-styled.swal2-deny:hover{opacity:0.8;background-image:none!important}
+			.swal2-styled.swal2-confirm:focus{box-shadow:0 0 0 3px ${color}80}
+			.swal2-styled.swal2-deny:focus{box-shadow:0 0 0 3px #dc374180}
 			.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
 			.swal2-timer-progress-bar{width:100%;height:.25em;background:${color}33 }
 			.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:${color};color:#fff;line-height:2em;text-align:center}
 			.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:${color} }
 			.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:${color}}
-			.swal2-popup {padding:0 0 1.25em;flex-direction:column}
+			.swal2-popup {padding:1.25em 0 1.25em;flex-direction:column}
 			.swal2-close {position:absolute;top:1px;right:1px;transition: all 0.2s ease;}
-			div:where(.swal2-container) .swal2-html-container{margin: 1.3em 1.3em 0.3em;}
-			div:where(.swal2-container) button:where(.swal2-close):hover {color:${color};font-size:60px!important}
-			[class^="swal-"] {transition: all 0.2s ease;}
+			div:where(.swal2-container) .swal2-html-container{padding: 1.3em 1.3em 0.3em;}
+			div:where(.swal2-container) button:where(.swal2-close):hover {color:${color}!important;font-size:60px!important}
 			`;
 
 			// 先监听颜色方案变化 Panlinker-SweetAlert2-Default
@@ -1178,11 +1215,11 @@
 				width: 90%;
 			}
 
-			.pl-popup a {
+			.pl-popup a:not(.pl-btn-primary) {
 				color: ${color};
 			}
 
-			.pl-popup a:hover {
+			.pl-popup a:hover:not(.pl-btn-primary) {
 				color: ${color}90;
 			}
 
@@ -1209,7 +1246,7 @@
 			.pl-main {
 				background-color:${color}15;
 				overflow: auto;
-				border-radius: 5px;
+				border-radius: 10px;
 				max-height:calc(${document.documentElement.clientHeight}px - 250px);
 			}
 
@@ -1254,33 +1291,10 @@
 				overflow: hidden;
 			}
 
-			.pl-item-btn {
-				background: ${color};
-				border-radius: 3px;
-				color: #ffffff;
-				cursor: pointer;
-				font-size: 12px;
-				outline: none;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin: 6px 6px;
-				padding: 0.625em 1.1em;
-			}
-
 			.pl-item-tip {
 				display: flex;
 				justify-content: space-between;
 				flex: 1;
-			}
-
-			.pl-back {
-				width: 70px;
-				background: #ddd;
-				border-radius: 3px;
-				cursor: pointer;
-				margin: 1px 6px;
-				color: #000;
 			}
 
 			.pl-ext {
@@ -1323,12 +1337,12 @@
 				box-sizing: border-box;
 				line-height: 1;
 				position: relative;
-				height: 15px;
+				height: 20px;
 				flex: 1
 			}
 
 			.pl-progress-outer {
-				height: 15px;
+				height: 20px;
 				border-radius: 100px;
 				background-color: #c1c1c1a1;
 				overflow: hidden;
@@ -1341,21 +1355,25 @@
 				left: 0;
 				top: 0;
 				background-color: ${color};
-				text-align: center;
 				border-radius: 100px;
 				line-height: 1;
 				white-space: nowrap;
 				transition: width .6s ease;
-				height: 15px
+				height: 20px;
+				display: inline-flex;
+				text-align: center;
+				align-items: center
 			}
 
 			.pl-progress-inner-text {
 				display: inline-block;
 				vertical-align: middle;
+				cursor: default;
 				color: #ffffff;
 				font-size: 12px;
 				margin: 0 5px;
-				height: 15px
+				height: 20px;
+				width: 100%;
 			}
 
 			.pl-progress-tip {
@@ -1373,11 +1391,25 @@
 				color: #000;
 			}
 
+			.pl-progress-back {
+				background: #717171;
+				cursor: pointer;
+				margin: 6px 6px;
+				font-size: 12px;
+				border: 0;
+				border-radius: 4px;
+				color: #ffffff;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0.625em 1.1em;
+			}
+
 			.pl-progress-stop {
-				flex: 0 0 80px;
 				background: #cc3235;
 				cursor: pointer;
-				margin: 6px 6px 6px 10px;
+				margin: 6px 6px;
 				font-size: 12px;
 				border: 0;
 				border-radius: 4px;
@@ -1413,30 +1445,49 @@
 			}
 
 			.pl-btn-primary:hover {
-				opacity: 0.9;
+				opacity: 0.8;
 				transition: 0.3s opacity;
+			}
+
+			.pl-btn-primary:focus{
+				box-shadow:0 0 0 3px ${color}80;
 			}
 
 			.pl-btn-success {
 				background: #55af28;
-				animation: easeOpacity 1.2s 2;
-				animation-fill-mode: forwards
+			}
+
+			.pl-btn-success:focus{
+				box-shadow:0 0 0 3px #55af2880;
 			}
 
 			.pl-btn-info {
 				background: #606266;
 			}
 
-			.pl-btn-warning {
-				background: #da9328;
+			.pl-btn-info:focus{
+				box-shadow:0 0 0 3px #60626680;
 			}
 
 			.pl-btn-warning {
 				background: #da9328;
+			}
+
+			.pl-btn-warning:focus{
+				box-shadow:0 0 0 3px #da932880;
 			}
 
 			.pl-btn-danger {
 				background: #cc3235;
+			}
+
+			.pl-btn-danger:focus{
+				box-shadow:0 0 0 3px #cc323580;
+			}
+
+			.pl-btn-opacity {
+				animation: easeOpacity 1.2s 2;
+				animation-fill-mode: forwards
 			}
 
 			.pl-button-mini {
@@ -1466,6 +1517,10 @@
 
 			.pl-button-mode:hover {
 				background-color: ${color}33 !important;
+			}
+
+			.g-button-menu.pl-button-mode {
+				padding: 0px !important;
 			}
 
 			.pl-button,
@@ -1527,7 +1582,7 @@
 				border-color: ${color} !important;
 			}
 
-			header[style="display: none;"]~#pl-button-link {
+			header[style="display: none;"]~.pl-button {
 				display: inline-block;
 				position: fixed;
 				top: 0.6em;
@@ -1674,6 +1729,8 @@
 
 			.pl-extra {
 				margin-top: 10px;
+				background-color:${color}15;
+				border-radius: 10px;
 				display: flex
 			}
 
@@ -1842,6 +1899,16 @@
 				transition: all 0.2s ease;
 			}
 
+			.pl-button-save {
+				background-color: ${color} !important;
+				color:#fff !important;
+			}
+
+			.pl-button-save:hover {
+				background-color: ${color}D0 !important;
+				color:#fff !important;
+			}
+
 			.swal2-container {
 				z-index: 100000;
 			}
@@ -1850,8 +1917,28 @@
 				height: inherit;
 			}
 
+			svg.icon-rpc-devices {
+				width: 13px;
+				height: 13px;
+			}
+
+			[class^="swal2-"], [class*="pl-btn"] {
+				transition:all 0.3s ease;
+			}
+
 			@media (prefers-color-scheme: dark) [data-theme=system] * {
 				color-scheme: dark;
+			}
+
+			/* RGB! */
+			@keyframes hue-rotate {
+				0% {
+					filter: hue-rotate()
+				}
+
+				to {
+					filter: hue-rotate(-360deg)
+				}
 			}
 
 			/* Webkit, Opera, IE9, Chrome*/
@@ -1970,7 +2057,7 @@
 				`, 'body');
 			}
 			if (/(pan|yun).baidu.com/.test(location.host) && location.pathname !== '/disk/home' && base.getValue('setting_baidu_theme') === 'yes') {
-				window.onload = base.setColors([
+				base.setColors([
 					['#717fff', `${color}`],
 					['#717FFF', `${color}`],
 					['#06a8ff', `${color}`],
@@ -2021,6 +2108,7 @@
 					['#9C86F2', `${color}90`],
 					['#83d3ff', `${color}90`],
 					['#83D3FF', `${color}90`],
+					['#C4D8F4', `${color}90`],
 
 					['#fafafc', `${color}20`],
 					['#FAFAFC', `${color}20`],
@@ -2030,6 +2118,7 @@
 					['#B4E5FF', `${color}20`],
 					['#f0faff', `${color}20`],
 					['#F0FAFF', `${color}20`],
+					['#c4d8f4', `${color}20`],
 
 					['#f1f3f8', `${color}15`],
 					['#F1F3F8', `${color}15`],
@@ -2057,7 +2146,7 @@
 				]);
 			};
 			if (/www.(aliyundrive|alipan).com/.test(location.host) && base.getValue('setting_ali_theme') === 'yes') {
-				window.onload = base.setColors([
+				base.setColors([
 					['#3763ff', `${color}`],
 					['#8664ff', `${color}D0`],
 					['99, 125, 255', base.hexToRgba(`${color}`)],
@@ -2071,26 +2160,40 @@
 					['49, 49, 54', base.hexToRgba(`${color}`)],
 				]);
 			};
+			if (/cloud.189.cn/.test(location.host) && base.getValue('setting_tianyi_theme') === 'yes') {
+				base.setColors([
+					['#2b89ea', `${color}`],
+					['#1874d3', `${color}F0`],
+					['#1890ff', `${color}`],
+					['#388fc9', `${color}`],
+					['#0087ff', `${color}`],
+					['#255697', `${color}`],
+					['#3ea6ff', `${color}80`],
+					['#1d52f2', `${color}`],
+					['#3699ff', `${color}D0`],
+					['#f4f9fe', `${color}10`],
+					['#eaf5ff', `${color}20`],
+				], "other");
+			}
 			if (/pan.xunlei.com/.test(location.host) && base.getValue('setting_xunlei_theme') === 'yes') {
-				base.addStyle('Panlinker-UI-Xunlei', 'style', `
-				* {
-					transition: all 0.2s ease;
-				}
-				.web-header {
-					background: linear-gradient(0deg,${color}D0,${color})
-				}
-				`);
-				window.onload = base.setColors([
+				base.setColors([
 					['#3f85ff', `${color}`],
 					['63,133,255,.1', base.hexToRgba(`${color}20`)],
 					['#2670ea', `${color}D0`],
 					['#619bff', `${color}D0`],
 					['#ecf3ff', `${color}10`],
+					['#f6faff', `${color}10`],
+					['#1a2845', `${color}20`],
 					['#eee', `${color}20`],
 				], "other");
+				base.addStyle('Panlinker-UI-Xunlei', 'style', `
+					.web-header {
+						background: linear-gradient(0deg,${color}D0,${color})
+					}
+				`);
 			};
 			if (/pan.quark.cn/.test(location.host) && base.getValue('setting_quark_theme') === 'yes') {
-				window.onload = base.setColors([
+				base.setColors([
 					['#0d53ff', `${color}`],
 					['#e6f1ff', `${color}20`],
 					['#f0faff', `${color}20`],
@@ -2112,18 +2215,22 @@
 				`);
 			};
 			if (/(yun|caiyun).139.com/.test(location.host) && base.getValue('setting_yidong_theme') === 'yes') {
-				base.addStyle('Panlinker-UI-Yidong', 'style', `
-				* {
-					transition: all 0.2s ease;
-				}
-				`);
-				window.onload = base.setColors([
+				base.setColors([
 					['#3181f9', `${color}`],
 					['#5a9afa', `${color}`],
 					['#98c0fc', `${color}D0`],
 					['#2d76e5', `${color}D0`],
 					['49,129,249,.08', base.hexToRgba(`${color}20`)],
 				]);
+			};
+			if (/.*.youxiaohou.com/.test(location.host)) {
+				base.setColors([
+					['#00aefe', `${color}`],
+					['#4e6e8e', `${color}`],
+					['#009fe8', `${color}`],
+					['#008fd1', `${color}`],
+					['#05b0ff', `${color}D0`],
+				], "other");
 			};
 		},
 
@@ -2421,7 +2528,8 @@
 			function _factory(e) {
 				let target = $(e.target);
 				let item = target.parents('.pl-item');
-				let link = item.find('.pl-item-link');
+				let link = item.find('.pl-item-link.blob');
+				let directLink = item.find('.pl-item-link.browser');
 				let progress = item.find('.pl-item-progress');
 				let tip = item.find('.pl-item-tip');
 				let copy = item.find('.pl-item-copy');
@@ -2429,7 +2537,7 @@
 				let back = item.find('.pl-progress-back');
 				let stop = item.find('.pl-progress-stop');
 				return {
-					item, link, progress, tip, copy, howidm, back, stop, target,
+					item, link, directLink, progress, tip, copy, howidm, back, stop, target,
 				};
 			}
 
@@ -2466,7 +2574,23 @@
 				});
 				baidu.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async function (e) {
+			doc.on('click', '.pl-button-save', async function (e) {
+				e.preventDefault();
+				selectList = baidu.getSelectedList();
+				if (selectList.length === 0) {
+					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
+				}
+				message.info('提示：<br/>因网盘限制，请保存到自己网盘后再去下载哦~');
+				await base.sleep(500);
+				document.querySelector('.tools-share-save-hb').click();
+			});
+			doc.on('click', '.listener-link-api.browser', async function (e) {
+				e.preventDefault();
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				$('#downloadIframe').attr('src', href);
+			});
+			doc.on('click', '.listener-link-api.blob', async function (e) {
 				e.preventDefault();
 				let o = _factory(e);
 				let $width = o.item.find('.pl-progress-inner');
@@ -2488,13 +2612,12 @@
 						o.tip.hide();
 						o.progress.hide();
 						o.copy.show();
+						o.directLink.show()
 						o.link.text('链接已被IDM捕获~请查看IDM下载窗口哦!').animate({ opacity: '0.5' }, "slow").show();
 						clearInterval(ins[index]);
-						setTimeout(
-							function () {
-								o.link.text('重新下载').animate({ opacity: '1' }, "slow");
-							}, 2000
-						)
+						setTimeout(function () {
+							o.link.text('增强下载(基于浏览器文件流)').animate({ opacity: '1' }, "slow");
+						}, 2000)
 						idm[index] = false;
 					} else {
 						// 处理普通下载的情况...
@@ -2527,6 +2650,7 @@
 
 						// 更改界面
 						o.link.hide();
+						o.directLink.hide();
 						o.tip.hide();
 						o.stop.show();
 						o.copy.hide();
@@ -2564,7 +2688,7 @@
 								$text.text('下载完成了!浏览器下载框应该弹出来了哦~');
 								o.back.show()
 								setTimeout(function () {
-									o.link.text('重新下载').animate({ opacity: '1' }, "slow");
+									o.link.text('增强下载(基于浏览器文件流)').animate({ opacity: '1' }, "slow");
 								}, 3000)
 							}, 3000)
 						}
@@ -2575,6 +2699,7 @@
 				let o = _factory(e);
 				o.tip.hide();
 				o.link.show();
+				o.directLink.show();
 			});
 			doc.on('click', '.listener-how', async function (e) {
 				let o = _factory(e);
@@ -2598,7 +2723,8 @@
 					setTimeout(function () {
 						o.tip.hide();
 						o.back.hide();
-						o.link.show(0);
+						o.link.show();
+						o.directLink.show();
 						o.copy.show();
 						o.progress.hide();
 						o.stop.hide();
@@ -2610,9 +2736,21 @@
 				o.progress.hide();
 				o.tip.hide();
 				o.link.show();
+				o.directLink.show();
 				o.copy.show();
 				o.stop.hide();
 				o.back.hide();
+			});
+			doc.on('click', '.listener-download-all', function (e) {
+				$('.pl-item-link.blob').each(function () {
+					if ($(this).css('display') !== 'none') {
+						$(this).click();
+					}
+				});
+				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
+				setTimeout(function () {
+					$(e.target).text('全部增强下载').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
@@ -2628,20 +2766,11 @@
 					)
 				}
 			});
-			doc.on('click', '.listener-download-all', function (e) {
-				$('.pl-item-link').click();
-				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('下载全部链接').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
-			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
-				target.find('.icon').remove();
+				target.find('.icon-rpc-devices').remove();
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
@@ -2664,6 +2793,9 @@
 			});
 			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
+			});
+			doc.on('click', '.listener-open-beautify', function () {
+				base.showBeautify();
 			});
 			doc.on('click', '.listener-rpc-task', function (e) {
 				e.preventDefault();
@@ -2708,9 +2840,6 @@
 			base.waitForKeyElements(".gOIbzPb", function (tag) {
 				tag.fadeToggle();
 			}, true);
-			base.waitForKeyElements(".popper__arrow", function (tag) {
-				tag.fadeToggle();
-			});
 			base.waitForKeyElements(".wp-s-header-user__create-team-title", function (tag) {
 				tag.fadeToggle();
 			}, true);
@@ -2816,30 +2945,42 @@
 		},
 
 		addButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="g-dropdown-button pointer pl-button" id="pl-button-link"><div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div><div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;"><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="api" ">API下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="aria" ">Aria下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="rpc" ">RPC下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="curl" ">cURL下载</div><div class="g-button-menu pl-button-mode" style="padding: 0px;" data-mode="bc" ">BC下载</div><div class="g-button-menu pl-button-mode listener-open-setting" style="padding: 0px;" ">助手设置</div><div class="g-button-menu pl-button-mode listener-open-updatelog" style="padding: 0px;" ">更新日志</div></div></div>`);
+			let $button = $(`
+				<div class="g-dropdown-button pointer pl-button">
+					<div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div>
+					<div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;">
+						<div class="g-button-menu pl-button-mode" data-mode="api">API下载</div>
+						<div class="g-button-menu pl-button-mode" data-mode="aria">Aria下载</div>
+						<div class="g-button-menu pl-button-mode" data-mode="rpc">RPC下载</div>
+						<div class="g-button-menu pl-button-mode" data-mode="curl">cURL下载</div>
+						<div class="g-button-menu pl-button-mode" data-mode="bc">BC下载</div>
+						<div class="g-button-menu pl-button-mode listener-open-setting">助手设置</div>
+						<div class="g-button-menu pl-button-mode listener-open-beautify">助手美化</div>
+						<div class="g-button-menu pl-button-mode listener-open-updatelog">更新日志</div>
+					</div>
+				</div>
+			`);
 			if (pt === 'home') $toolWrap = pan.btn.home;
 			if (pt === 'main') {
 				$toolWrap = pan.btn.main;
 				$button = $(`
-				<div class="wp-s-agile-tool-bar__h-group pl-button" id="pl-button-link">
+				<div class="wp-s-agile-tool-bar__h-group pl-button">
 					<div class="wp-s-agile-tool-bar__h-action is-need-left-sep is-main">
 						<button type="button" class="u-button nd-file-list-toolbar-action-item u-button--primary u-button--small is-round is-has-icon pl-button baidu-button">
 							<i class="u-icon u-icon-download"></i>
 							<span>下载助手</span>
 						</button>
 						<ul class="dropdown-list nd-common-float-menu pl-dropdown-menu">
-							<li class="pl-button-mode sub cursor-p" data-mode="api">API下载</li>
-							<li class="pl-button-mode sub cursor-p" data-mode="aria">Aria下载</li>
-							<li class="pl-button-mode sub cursor-p" data-mode="rpc">RPC下载</li>
-							<li class="pl-button-mode sub cursor-p" data-mode="curl">cURL下载</li>
-							<li class="pl-button-mode sub cursor-p" data-mode="bc">BC下载</li>
-							<li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li>
-							<li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li>
+							<li class="sub cursor-p pl-button-mode" data-mode="api">API下载</li>
+							<li class="sub cursor-p pl-button-mode" data-mode="aria">Aria下载</li>
+							<li class="sub cursor-p pl-button-mode" data-mode="rpc">RPC下载</li>
+							<li class="sub cursor-p pl-button-mode" data-mode="curl">cURL下载</li>
+							<li class="sub cursor-p pl-button-mode" data-mode="bc">BC下载</li>
+							<li class="sub cursor-p pl-button-mode listener-open-setting">助手设置</li>
+							<li class="sub cursor-p pl-button-mode listener-open-beautify">助手美化</li>
+							<li class="sub cursor-p pl-button-mode listener-open-updatelog">更新日志</li>
 						</ul>
 					</div>
 				</div>`);
@@ -2847,41 +2988,53 @@
 			if (pt === 'youth') {
 				$toolWrap = pan.btn.main;
 				$button = $(`
-				<div class="wp-s-agile-tool-bar__h-group pl-button" id="pl-button-link">
+				<div class="wp-s-agile-tool-bar__h-group pl-button">
 					<div class="wp-s-agile-tool-bar__h-action is-need-left-sep is-main">
 						<button type="button" class="u-button nd-file-list-toolbar-action-item u-button--primary u-button--small is-round is-has-icon pl-button baidu-button" style="font-size:14px;font-weight:700">
 							<i class="u-icon u-icon-more"></i>
 							<span>网盘助手</span>
 						</button>
 						<ul class="dropdown-list nd-common-float-menu pl-dropdown-menu">
-							<li class="pl-button-mode sub cursor-p listener-open-setting"">助手设置</li>
-							<li class="pl-button-mode sub cursor-p listener-open-updatelog">更新日志</li>
+							<li class="sub cursor-p pl-button-mode listener-open-setting">助手设置</li>
+							<li class="sub cursor-p pl-button-mode listener-open-beautify">助手美化</li>
+							<li class="sub cursor-p pl-button-mode listener-open-updatelog">更新日志</li>
 						</ul>
 					</div>
 				</div>`);
 			}
-			if (pt === 'share') $toolWrap = pan.btn.share;
+			if (pt === 'share') {
+				$toolWrap = pan.btn.share;
+				$button = $(`
+					<div class="g-dropdown-button pointer pl-button">
+						<div class="baidu-button g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">下载助手</span></span></div>
+						<div class="menu" style="color: ${color};border-color: ${color};width:auto;z-index:41;">
+							<div class="g-button-menu pl-button-mode pl-button-save"><em class="icon icon-save-disk" title="保存到网盘"></em><span style="margin-left: 3px;">保存后下载</span></div>
+							<div class="g-button-menu pl-button-mode listener-open-setting">助手设置</div>
+							<div class="g-button-menu pl-button-mode listener-open-beautify">助手美化</div>
+							<div class="g-button-menu pl-button-mode listener-open-updatelog">更新日志</div>
+						</div>
+					</div>
+				`);
+			}
 			base.listenElement($toolWrap, function () {
 				$toolWrap = $($toolWrap);
 				$('.pl-button').length === 0 && $toolWrap.prepend($button);
 			})
 			this.setBDUSS();
+			base.createDownloadIframe();
 		},
 
 		addInitButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="g-dropdown-button pointer pl-button-init" id="pl-button-link" style="opacity:0.5"><div style="color:#fff;" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">点我点亮</span></span></div></div>`);
+			let $button = $(`<div class="g-dropdown-button pointer pl-button-init" style="opacity:0.5"><div style="color:#fff;" class="g-button g-button-blue"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width: 60px;">点我点亮</span></span></div></div>`);
 			if (pt === 'home') {
 				$toolWrap = pan.btn.home;
 			}
 			if (pt === 'main' || pt === 'youth') {
 				$toolWrap = pan.btn.main;
 				$button = $(`
-				<div class="wp-s-agile-tool-bar__h-group pl-button-init" id="pl-button-link">
+				<div class="wp-s-agile-tool-bar__h-group pl-button-init">
 					<div class="wp-s-agile-tool-bar__h-action is-need-left-sep is-main">
 						<button type="button" class="u-button nd-file-list-toolbar-action-item u-button--primary u-button--small is-round is-has-icon pl-button baidu-button" style="font-size:14px;font-weight:700">
 							<i class="u-icon u-icon-download"></i>
@@ -2969,7 +3122,7 @@
 			return accessToken;
 		},
 
-		async getPCSLink(maxRequestTime = 1) {
+		async getPCSLink() {
 			selectList = this.getSelectedList();
 			let fidList = this._getFidList(), url, res;
 
@@ -2990,50 +3143,32 @@
 				}
 				url = `${pan.pcs[0]}&fsids=${fidList}&access_token=${accessToken}`;
 				res = await base.get(url, { "User-Agent": pan.ua });
-			}
-			if (pt === 'share') {
+			} else {
+				return message.error('提示：<br/>页面错误~');
 				this.getShareData();
 				if (!params.bdstoken) {
 					return message.error('提示：<br/>请先登录网盘~');
 				}
 				if (selectList.length === 0) {
-					return message.error('提示：<br/>请先勾选要下载的文件哦~');
+					return message.error('提示：<br/>请勾选要下载的文件哦~');
 				}
 				if (fidList.length === 2) {
 					return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 				}
-				let dialog = await Swal.fire({
-					toast: true,
-					icon: 'info',
-					title: `提示：<br/>请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
-					showConfirmButton: true,
-					confirmButtonText: '点击保存',
-					position: 'top',
-				});
-				if (dialog.isConfirmed) {
-					$('.tools-share-save-hb')[0].click();
-				}
-				return;
 			}
-			if (res.errno === 0) {
+			if (res.list[0] && (res.errno === 0 || res.errmsg === "succ")) {
 				let html = this.generateDom(res.list);
 				this.showMainDialog(pan[mode][0], html, pan[mode][1]);
 			} else if (res.errno === 112) {
 				return message.error('提示：<br/>页面过期了，刷新重试下吧~<br/>代码：' + res.errno);
 			} else if (res.errno === 9019) {
-				maxRequestTime--;
-				await this.getToken();
-				if (maxRequestTime > 0) {
-					await this.getPCSLink(maxRequestTime);
-				} else {
-					message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
-				}
+				return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
 			} else {
 				base.deleteValue('baidu_access_token');
 				if (res.errno) {
-					message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
+					return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
 				} else {
-					message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~');
+					return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~');
 				}
 			}
 		},
@@ -3052,10 +3187,10 @@
 					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载  ${filename}</a>
-								<!--<a class="pl-item-copy" target="_blank" href="${dlink}" title="点击使用浏览器下载" data-filename="${filename}" data-link="${dlink}">传统下载</a>-->
-								<!--<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>-->
-								<div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="pl-back listener-back">返回</span></div>
+								<button class="pl-item-link listener-tip pl-btn-primary listener-link-api blob" data-title="推荐使用本功能，基于浏览器的 Blob 文件流下载文件，适用于较新的浏览器，可以在此窗口中显示下载剩余时间和下载速度，此方式下载有可能会被 IDM 捕获下载链接" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-index="${i}">增强下载(基于浏览器文件流)</button>
+								<button class="pl-item-link listener-tip pl-btn-primary pl-btn-info listener-link-api browser" data-title="不建议使用本功能，若使用后长时间没有弹出下载提示则代表请求失败，请换用“增强下载”，基于浏览器直接打开链接来下载文件，适用于较为古老但支持 iframe 的浏览器，点击“直接下载”后需等待下载提示弹出才能点击下个“直接下载”，否则只会下载后者，此方式下载有可能会被 IDM 捕获下载链接" data-filename="${filename}" data-link="${dlink}">直接下载(基于浏览器链接)</button>
+								<button class="pl-item-copy listener-tip pl-btn-primary listener-copy-all" href="${dlink}" data-title="不建议使用本功能，在本网盘单独复制链接并粘贴下载可能会导致服务器回报 403 错误" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+								<div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="listener-back">返回</span></div>
 								<div class="pl-item-progress" style="display: none">
 									<div class="pl-progress">
 										<div class="pl-progress-outer"></div>
@@ -3066,7 +3201,7 @@
 									<span class="pl-progress-stop listener-stop">取消下载</span>
 								`;
 					content += `<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
-								<span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
+								<span class="pl-progress-back listener-back" style="display: none">返回</span>
 								<span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
 								`;
 					content += `</div></div>`
@@ -3076,35 +3211,36 @@
 					if (typeof (alink) === 'object') {
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制 aria2c 命令行" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 					} else {
 						alinkAllText += alink + '\r\n';
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制 aria2c 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 					}
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><svg class="icon-rpc-devices" viewBox="-10 0 1034 1024"><g transform="matrix(1 0 0 -1 0 960)"><path fill="currentColor" d="M832 -64h-640q-53 0 -90.5 37.5t-37.5 90.5v768q0 53 37.5 90.5t90.5 37.5h640q53 0 90.5 -37.5t37.5 -90.5v-768q0 -53 -37.5 -90.5t-90.5 -37.5zM832 768q0 27 -18.5 45.5t-45.5 18.5h-512q-27 0 -45.5 -18.5t-18.5 -45.5v-320h640v320v0zM832 320h-640v-192q0 -27 18.5 -45.5t45.5 -18.5h512q27 0 45.5 18.5t18.5 45.5v192v0zM512 128q-27 0 -45.5 18.5t-18.5 45.5t18.5 45.5t45.5 18.5t45.5 -18.5t18.5 -45.5t-18.5 -45.5t-45.5 -18.5z" /></g></svg><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, pan.ua);
 					if (typeof (alink) === 'object') {
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link pl-a" target="_blank" href="${alink.link}" title="点击复制 curl 命令行" data-filename="${filename}" data-link="${alink.link}">${decodeURIComponent(alink.text)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 					} else {
 						alinkAllText += alink + '\r\n';
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link pl-a listener-link-aria" href="${alink}" title="点击复制 curl 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 					}
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, pan.ua);
 					if (typeof (alink) === 'object') {
+						alinkAllText += decodeURIComponent(alink.text) + '\r\n';
 						content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
 								<a class="pl-item-link pl-a" href="${decodeURIComponent(alink.link)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink.text)}<br/>下载 ${filename}</a> </div>`;
@@ -3120,15 +3256,18 @@
 			content += '</div>';
 
 			if (mode === 'api')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">下载全部链接</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">全部增强下载</button><button class="pl-btn-primary listener-tip listener-copy-all" data-link="${alinkAllText}" data-title="不建议使用本功能，在本网盘单独复制链接并粘贴下载可能会导致服务器回报 403 错误">复制全部链接</button></div>`;
 			if (mode === 'aria')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">修改 RPC 参数（${rpc}）</button><button class="pl-btn-primary pl-btn-success pl-btn-opacity listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
 			if (mode === 'curl') {
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">修改终端类型（${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			}
+			if (mode === 'bc') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
 			}
 			return content;
 		},
@@ -3165,22 +3304,29 @@
 		},
 
 		getSelectedList() {
+			var List, selectList
 			try {
-				var List = require("system-core:context/context.js").instanceForSystem.list;
-				var selectList = List.getSelected();
-				if (!selectList.length) {
+				List = require("system-core:context/context.js").instanceForSystem.list;
+				selectList = List.getSelected();
+				/*if (!selectList.length) {
 					selectList = List.getCurrentList();
-				}
+				}*/
 				return selectList;
-			} catch (e) {
-				var list1 = unsafeWindow.document.querySelector('.wp-s-core-pan');
-				if (list1 && list1.__vue__) {
-					return list1.__vue__.selectedList;
-				} else {
-					var list2 = unsafeWindow.document.querySelector('.file-list');
-					return list2.__vue__.allFileList.filter(function (item) { return !!item.selected; });
+			} catch (e) { }
+			try {
+				List = unsafeWindow.document.querySelector('.wp-s-core-pan');
+				if (List && List.__vue__.selectedList) {
+					selectList = List.__vue__.selectedList;
+					return selectList;
 				}
-			}
+			} catch (e) { }
+			try {
+				List = unsafeWindow.document.querySelector('.file-list');
+				if (List && List.__vue__.allFileList) {
+					selectList = List.__vue__.allFileList.filter(function (item) { return !!item.selected; });
+					return selectList;
+				}
+			} catch (e) { }
 		},
 
 		getLogid() {
@@ -3418,7 +3564,8 @@
 			function _factory(e) {
 				let target = $(e.target);
 				let item = target.parents('.pl-item');
-				let link = item.find('.pl-item-link');
+				let link = item.find('.pl-item-link.blob');
+				let directLink = item.find('.pl-item-link.browser');
 				let progress = item.find('.pl-item-progress');
 				let tip = item.find('.pl-item-tip');
 				let copy = item.find('.pl-item-copy');
@@ -3426,7 +3573,7 @@
 				let back = item.find('.pl-progress-back');
 				let stop = item.find('.pl-progress-stop');
 				return {
-					item, link, progress, tip, copy, howidm, back, stop, target,
+					item, link, directLink, progress, tip, copy, howidm, back, stop, target,
 				};
 			}
 
@@ -3450,7 +3597,13 @@
 				});
 				ali.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async function (e) {
+			doc.on('click', '.listener-link-api.browser', async function (e) {
+				e.preventDefault();
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				$('#downloadIframe').attr('src', href);
+			});
+			doc.on('click', '.listener-link-api.blob', async function (e) {
 				e.preventDefault();
 				let o = _factory(e);
 				let $width = o.item.find('.pl-progress-inner');
@@ -3462,7 +3615,7 @@
 				let href = dataset.link;
 				//let url = await this.getRealLink(dataset.did, dataset.fid);
 				//if (url) href = url;
-				base.get(href, { "User-Agent": pan.ua, "Referer": `https://${location.host}/` }, 'blob', { filename, index });
+				base.get(href, { "Referer": `https://${location.host}/` }, 'blob', { filename, index });
 				let startTime = Date.now(); // 记录下载开始时间
 				let prevLoaded = 0; // 上一次的已下载数据量
 				let prevTime = startTime; // 上一次的时间
@@ -3499,6 +3652,7 @@
 
 					// 更改界面
 					o.link.hide();
+					o.directLink.hide();
 					o.tip.hide();
 					o.stop.show();
 					o.copy.hide();
@@ -3537,7 +3691,7 @@
 							$text.text('下载完成了!浏览器下载框应该弹出来了哦~');
 							o.back.show()
 							setTimeout(function () {
-								o.link.text('重新下载').animate({ opacity: '1' }, "slow");
+								o.link.text('增强下载(基于浏览器文件流)').animate({ opacity: '1' }, "slow");
 							}, 3000)
 						}, 3000)
 					}
@@ -3547,6 +3701,7 @@
 				let o = _factory(e);
 				o.tip.hide();
 				o.link.show();
+				o.directLink.show();
 			});
 			doc.on('click', '.listener-how', async function (e) {
 				let o = _factory(e);
@@ -3570,7 +3725,8 @@
 					setTimeout(function () {
 						o.tip.hide();
 						o.back.hide();
-						o.link.show(0);
+						o.link.show();
+						o.directLink.show();
 						o.copy.show();
 						o.progress.hide();
 						o.stop.hide();
@@ -3582,34 +3738,31 @@
 				o.progress.hide();
 				o.tip.hide();
 				o.link.show();
+				o.directLink.show();
 				o.copy.show();
 				o.stop.hide();
 				o.back.hide();
 			});
-			doc.on('click', '.listener-link-api-btn', async function (e) {
+			doc.on('click', '.listener-copy-filename', async function (e) {
 				base.setClipboard(e.target.dataset.filename);
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
+				setTimeout(function () {
+					$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
+				setTimeout(function () {
+					$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
-				target.find('.icon').remove();
+				target.find('.icon-rpc-devices').remove();
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
@@ -3627,20 +3780,25 @@
 				$('.listener-link-rpc').click();
 				$(e.target).text('发送完成，发送结果见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
 			});
-			doc.on('click', '.listener-download-all', function (e) {
-				$('.pl-item-link').click();
+			doc.on('click', '.listener-download-all.blob', function (e) {
+				$('.pl-item-link.blob').each(function () {
+					if ($(this).css('display') !== 'none') {
+						$(this).click();
+					}
+				});
 				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('下载全部链接').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
+				setTimeout(function () {
+					$(e.target).text('全部增强下载').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-open-setting', function () {
 				base.showSetting();
 			});
 			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
+			});
+			doc.on('click', '.listener-open-beautify', function () {
+				base.showBeautify();
 			});
 			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
@@ -3702,13 +3860,10 @@
 		},
 
 		addButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
 			let svg = `<svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>`
-			let $button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon">${svg}下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 0;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let $button = $(`<div class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon">${svg}下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 0;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-beautify">助手美化</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
@@ -3716,7 +3871,7 @@
 				})
 			}
 			if (pt === 'share') {
-				$button = $(`<div id="pl-button-link" class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon">${svg}下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 16px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+				$button = $(`<div class="ali-button pl-button"><span data-role="icon" data-render-as="svg" class="icon">${svg}下载助手</span><ul class="pl-dropdown-menu" style="top: 30px; right: 16px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-beautify">助手美化</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 				$button.css({ 'margin-right': '10px', "height": "36px", "width": "auto", "padding": "1px 30px" });
 				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
@@ -3727,12 +3882,9 @@
 		},
 
 		addInitButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>点我点亮</span></div>`);
+			let $button = $(`<div class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>点我点亮</span></div>`);
 			$button.css({ "width": "auto" });
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
@@ -3741,7 +3893,7 @@
 				})
 			}
 			if (pt === 'share') {
-				$button = $(`<div id="pl-button-link" class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>点我点亮</span></div>`);
+				$button = $(`<div class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon"><svg class="ali-btn-icon" style="margin-right: 3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>点我点亮</span></div>`);
 				$button.css({ 'margin-right': '10px', "height": "36px", "padding": "1px 30px", "width": "auto" });
 				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
@@ -3756,7 +3908,7 @@
 			if (reactDomGrid) {
 				let dialog = await Swal.fire({
 					title: '提示',
-					html: '<div style="display: flex;align-items: center;justify-content: center;">请先切换到&nbsp;&nbsp;<svg class="icon" class="icon--D3kMk " viewBox="0 0 1024 1024" width="20" height="20"><use xlink:href="#PDSDrag"></use></svg>&nbsp;<b>列表视图</b>&nbsp;&nbsp;后获取下载链接</div>',
+					html: '<div style="display: flex;align-items: center;justify-content: center;">请切换到&nbsp;&nbsp;<svg class="icon" class="icon--D3kMk " viewBox="0 0 1024 1024" width="20" height="20"><use xlink:href="#PDSDrag"></use></svg>&nbsp;<b>列表视图</b>&nbsp;&nbsp;后获取下载链接</div>',
 					icon: 'info',
 					showCloseButton: true,
 					showDenyButton: true,
@@ -3773,7 +3925,7 @@
 			}
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件哦~');
+				return message.error('提示：<br/>请勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -3837,9 +3989,11 @@
 					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}" >${filename}</div>
-								<a class="pl-item-link pl-a listener-link-api" href="${dlink}" data-did="${did}" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-size="${v.size}" data-index="${i}">${dlink}<br/>下载  ${filename}</a>
-								<div class="pl-item-copy pl-btn-primary listener-link-api-btn" data-filename="${filename}">复制文件名</div>
-								<div class="pl-item-tip" style="display: none"><span><span class="pl-ext"></span></span> <span class="pl-back listener-back">返回</span></div>
+								<button class="pl-item-link listener-tip pl-btn-primary listener-link-api blob" data-title="推荐使用本功能，基于浏览器的 Blob 文件流下载文件，适用于较新的浏览器，可以在此窗口中显示下载剩余时间和下载速度，此方式下载不会被 IDM 捕获下载链接" data-did="${did}" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-size="${v.size}" data-index="${i}">增强下载(基于浏览器文件流)</button>
+								<button class="pl-item-link listener-tip pl-btn-primary pl-btn-info listener-link-api browser" data-title="基于浏览器直接打开链接来下载文件，适用于较为古老但支持 iframe 的浏览器，点击“直接下载”后需等待下载提示弹出才能点击下个“直接下载”，否则只会下载后者，此方式下载有可能会被 IDM 捕获下载链接" data-did="${did}" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">直接下载(基于浏览器链接)</button>
+								<button class="pl-item-copy listener-tip pl-btn-primary pl-btn-success listener-copy-filename" data-title="本网盘于下载高峰期时可能不会显示文件名称，这时需要手动复制文件名称到下载工具中" data-filename="${filename}">复制名称</button>
+								<button class="pl-item-copy listener-tip pl-btn-primary listener-copy-all" href="${dlink}" data-title="不建议使用本功能，在本网盘单独复制链接并粘贴下载可能会导致服务器回报 403 错误" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+								<div class="pl-item-tip" style="display: none"><span><span class="pl-ext"></span></span> <span class="listener-back">返回</span></div>
 								<div class="pl-item-progress" style="display: none">
 									<div class="pl-progress">
 										<div class="pl-progress-outer"></div>
@@ -3849,8 +4003,7 @@
 									</div>
 									<span class="pl-progress-stop listener-stop">取消下载</span>
 					`;
-					content += `<span class="pl-progress-tip" style="display: none" >使用自带浏览器下载</span>
-								<span class="pl-progress-back pl-back listener-back" style="display: none">返回</span>
+					content += `<span class="pl-progress-back listener-back" style="display: none">返回</span>
 								<span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
 					`;
 					content += `</div></div>`;
@@ -3860,22 +4013,23 @@
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 aria2c 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink.replace(' ', '%20')}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink.replace(' ', '%20')}"><svg class="icon-rpc-devices" viewBox="-10 0 1034 1024"><g transform="matrix(1 0 0 -1 0 960)"><path fill="currentColor" d="M832 -64h-640q-53 0 -90.5 37.5t-37.5 90.5v768q0 53 37.5 90.5t90.5 37.5h640q53 0 90.5 -37.5t37.5 -90.5v-768q0 -53 -37.5 -90.5t-90.5 -37.5zM832 768q0 27 -18.5 45.5t-45.5 18.5h-512q-27 0 -45.5 -18.5t-18.5 -45.5v-320h640v320v0zM832 320h-640v-192q0 -27 18.5 -45.5t45.5 -18.5h512q27 0 45.5 18.5t18.5 45.5v192v0zM512 128q-27 0 -45.5 18.5t-18.5 45.5t18.5 45.5t45.5 18.5t45.5 -18.5t18.5 -45.5t-18.5 -45.5t-45.5 -18.5z" /></g></svg><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 curl 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
+					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
 								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a> </div>`;
@@ -3883,15 +4037,19 @@
 			});
 			content += '</div>';
 			if (mode === 'api')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">下载全部链接</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all blob">全部增强下载</button><button class="pl-btn-primary listener-tip listener-copy-all" data-link="${alinkAllText}" data-title="不建议使用本功能，在本网盘单独复制链接并粘贴下载可能会导致服务器回报 403 错误">复制全部链接</button></div>`;
 			if (mode === 'aria')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">修改 RPC 参数（${rpc}）</button><button class="pl-btn-primary pl-btn-success pl-btn-opacity listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
-			if (mode === 'curl')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">前往助手设置修改当前终端类型（${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			if (mode === 'curl') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">修改终端类型（${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			}
+			if (mode === 'bc') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+			}
 			return content;
 		},
 
@@ -4030,6 +4188,29 @@
 			if (window[key]) return;
 			window[key] = true;
 
+			function _factory(e) {
+				let target = $(e.target);
+				let item = target.parents('.pl-item');
+				let link = item.find('.pl-item-link.blob');
+				let directLink = item.find('.pl-item-link.browser');
+				let progress = item.find('.pl-item-progress');
+				let tip = item.find('.pl-item-tip');
+				let copy = item.find('.pl-item-copy');
+				let howidm = item.find('.pl-progress-how');
+				let back = item.find('.pl-progress-back');
+				let stop = item.find('.pl-progress-stop');
+				return {
+					item, link, directLink, progress, tip, copy, howidm, back, stop, target,
+				};
+			}
+
+			function _reset(i) {
+				ins[i] && clearInterval(ins[i]);
+				request[i] && request[i].abort();
+				progress[i] = 0;
+				idm[i] = false;
+			}
+
 			doc.on('click', '.pl-button-mode', function (e) {
 				mode = e.target.dataset.mode;
 				if (!mode) return;
@@ -4044,25 +4225,173 @@
 				});
 				tianyi.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async function (e) {
+			doc.on('click', '.listener-link-api.browser', async function (e) {
 				e.preventDefault();
-				$('#downloadIframe').attr('src', e.currentTarget.dataset.link);
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				$('#downloadIframe').attr('src', href);
+			});
+			doc.on('click', '.listener-link-api.blob', async function (e) {
+				e.preventDefault();
+				let o = _factory(e);
+				let $width = o.item.find('.pl-progress-inner');
+				let $text = o.item.find('.pl-progress-inner-text');
+				let filename = o.link[0].dataset.filename;
+				let index = o.link[0].dataset.index;
+				_reset(index);
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				base.get(href, { "Referer": `https://${location.host}/` }, 'blob', { filename, index });
+				let startTime = Date.now(); // 记录下载开始时间
+				let prevLoaded = 0; // 上一次的已下载数据量
+				let prevTime = startTime; // 上一次的时间
+				let size = Number(o.link[0].dataset.size);
+				ins[index] = setInterval(function () {
+					let prog = +progress[index] || 0;
+					// 处理普通下载的情况...
+					let currentTime = Date.now();
+					let elapsedTime = currentTime - startTime;
+					let totalProgress = prog / 100;
+					let totalElapsedSeconds = elapsedTime / 1000;
+					let estimatedTotalTimeSeconds = totalElapsedSeconds / totalProgress;
+					let remainingTimeSeconds = estimatedTotalTimeSeconds - totalElapsedSeconds;
+
+					// 将剩余时间转换为天、时、分、秒
+					let remainingDays = Math.floor(remainingTimeSeconds / (60 * 60 * 24));
+					remainingTimeSeconds %= (60 * 60 * 24);
+
+					let remainingHours = Math.floor(remainingTimeSeconds / (60 * 60));
+					remainingTimeSeconds %= (60 * 60);
+
+					let remainingMinutes = Math.floor(remainingTimeSeconds / 60);
+					let remainingSeconds = Math.floor(remainingTimeSeconds % 60);
+
+					// 计算下载速度
+					let loaded = prog * size / 100; // 已下载数据量
+					let currentTimeDiff = currentTime - prevTime; // 当前时间与上一次时间的差值
+					let loadedDiff = loaded - prevLoaded; // 当前已下载数据量与上一次的差值
+					let downloadSpeed = (currentTimeDiff !== 0) ? loadedDiff / (currentTimeDiff / 1000) : 0; // 下载速度（单位：字节/秒）
+
+					// 更新上一次的数据
+					prevLoaded = loaded;
+					prevTime = currentTime;
+
+					// 更改界面
+					o.link.hide();
+					o.directLink.hide();
+					o.tip.hide();
+					o.stop.show();
+					o.copy.hide();
+					o.progress.show();
+
+					// 更新进度条
+					$width.css('width', prog + '%');
+
+					// 更新进度条文本
+					let timeText = '';
+					if (Number.isFinite(remainingDays) && remainingDays > 0) {
+						timeText = remainingDays + '天 ' + base.repairTimer(remainingHours) + '时:' + base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingHours) && remainingHours > 0) {
+						timeText = base.repairTimer(remainingHours) + '时:' + base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingMinutes) && remainingMinutes > 0) {
+						timeText = base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingSeconds) && remainingSeconds > 0) {
+						timeText = remainingSeconds + '秒';
+					} else if (Number.isFinite(remainingSeconds) && remainingSeconds === 0) {
+						timeText = '即将完成';
+					} else {
+						timeText = '计算中...';
+					}
+
+					let speedText = '';
+					speedText = base.sizeFormat(downloadSpeed)
+					$text.text(prog + '% | 剩余时间：' + timeText + ' | 速度：' + speedText + '/秒');
+
+					if (prog === 100) {
+						setTimeout(function () {
+							clearInterval(ins[index]);
+							progress[index] = 0;
+							o.item.find('.pl-progress-stop').hide();
+							o.howidm.hide();
+							$text.text('下载完成了!浏览器下载框应该弹出来了哦~');
+							o.back.show()
+							setTimeout(function () {
+								o.link.text('增强下载(基于浏览器文件流)').animate({ opacity: '1' }, "slow");
+							}, 3000)
+						}, 3000)
+					}
+				}, 500);
+			});
+			doc.on('click', '.listener-retry', async function (e) {
+				let o = _factory(e);
+				o.tip.hide();
+				o.link.show();
+				o.directLink.show();
+			});
+			doc.on('click', '.listener-how', async function (e) {
+				let o = _factory(e);
+				let index = o.link[0].dataset.index;
+				if (request[index]) {
+					request[index].abort();
+					clearInterval(ins[index]);
+					o.progress.hide();
+					o.tip.show();
+				}
+
+			});
+			doc.on('click', '.listener-stop', async function (e) {
+				let o = _factory(e);
+				let index = o.link[0].dataset.index;
+				if (request[index]) {
+					request[index].abort();
+					clearInterval(ins[index]);
+					o.item.find('.pl-progress-inner-text').text('正在取消...');
+					o.item.find('.pl-progress-inner').css('width', 100 + '%');
+					setTimeout(function () {
+						o.tip.hide();
+						o.back.hide();
+						o.link.show();
+						o.directLink.show();
+						o.copy.show();
+						o.progress.hide();
+						o.stop.hide();
+					}, 1050)
+				}
+			});
+			doc.on('click', '.listener-back', async function (e) {
+				let o = _factory(e);
+				o.progress.hide();
+				o.tip.hide();
+				o.link.show();
+				o.directLink.show();
+				o.copy.show();
+				o.stop.hide();
+				o.back.hide();
+			});
+			doc.on('click', '.listener-download-all', function (e) {
+				$('.pl-item-link.blob').each(function () {
+					if ($(this).css('display') !== 'none') {
+						$(this).click();
+					}
+				});
+				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
+				setTimeout(function () {
+					$(e.target).text('全部增强下载').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
+				setTimeout(function () {
+					$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
-				target.find('.icon').remove();
+				target.find('.icon-rpc-devices').remove();
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
@@ -4086,6 +4415,9 @@
 			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
+			doc.on('click', '.listener-open-beautify', function () {
+				base.showBeautify();
+			});
 			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
 					domain: base.getValue('setting_rpc_domain'),
@@ -4099,15 +4431,15 @@
 			base.waitForKeyElements(".advertising-mask", function (tag) {
 				tag.fadeToggle();
 			}, true);
+			base.waitForKeyElements("a.client-download.nav-block", function (tag) {
+				tag.fadeToggle();
+			}, true);
 		},
 
 		addButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="tianyi-button pl-button" id="pl-button-link">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let $button = $(`<div class="tianyi-button pl-button">下载助手<ul class="pl-dropdown-menu" style="top: 26px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-beautify">助手美化</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
@@ -4124,12 +4456,9 @@
 		},
 
 		addInitButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="tianyi-button pl-button-init" id="pl-button-link">点我点亮</div>`);
+			let $button = $(`<div class="tianyi-button pl-button-init">点我点亮</div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
@@ -4188,7 +4517,7 @@
 				} else if (res.res_code === 'ShareNotFoundFlatDir') {
 					return {
 						index,
-						downloadUrl: '提示：<br/>请先[转存]文件，之后再👉前往[我的网盘]中下载哦~'
+						downloadUrl: '提示：<br/>请[转存]文件，之后再👉前往[我的网盘]中下载哦~'
 					};
 				} else {
 					return {
@@ -4207,7 +4536,7 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件哦~');
+				return message.error('提示：<br/>请勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -4236,49 +4565,74 @@
 			list.forEach((v, i) => {
 				if (v.isFolder) return;
 				let filename = v.fileName;
+				let ext = base.getExtension(filename);
 				let size = base.sizeFormat(v.size);
 				let dlink = v.downloadUrl;
 				if (mode === 'api') {
+					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-api" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载 ${filename}</a>
-								</div>`;
+								<button class="pl-item-link listener-tip pl-btn-primary listener-link-api blob" data-title="推荐使用本功能，基于浏览器的 Blob 文件流下载文件，适用于较新的浏览器，可以在此窗口中显示下载剩余时间和下载速度，此方式下载不会被 IDM 捕获下载链接" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-index="${i}">增强下载(基于浏览器文件流)</button>
+								<button class="pl-item-link listener-tip pl-btn-primary pl-btn-info listener-link-api browser" data-title="基于浏览器直接打开链接来下载文件，适用于较为古老但支持 iframe 的浏览器，点击“直接下载”后需等待下载提示弹出才能点击下个“直接下载”，否则只会下载后者，此方式下载有可能会被 IDM 捕获下载链接" data-filename="${filename}" data-link="${dlink}">直接下载(基于浏览器链接)</button>
+								<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+								<div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="listener-back">返回</span></div>
+								<div class="pl-item-progress" style="display: none">
+									<div class="pl-progress">
+										<div class="pl-progress-outer"></div>
+										<div class="pl-progress-inner" style="width:5%">
+										<div class="pl-progress-inner-text">正在加载进度...0%</div>
+										</div>
+									</div>
+									<span class="pl-progress-stop listener-stop">取消下载</span>
+								`;
+					content += `<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
+								<span class="pl-progress-back listener-back" style="display: none">返回</span>
+								<span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
+								`;
+					content += `</div></div>`
 				}
 				if (mode === 'aria') {
 					let alink = this.convertLinkToAria(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 aria2c 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><svg class="icon-rpc-devices" viewBox="-10 0 1034 1024"><g transform="matrix(1 0 0 -1 0 960)"><path fill="currentColor" d="M832 -64h-640q-53 0 -90.5 37.5t-37.5 90.5v768q0 53 37.5 90.5t90.5 37.5h640q53 0 90.5 -37.5t37.5 -90.5v-768q0 -53 -37.5 -90.5t-90.5 -37.5zM832 768q0 27 -18.5 45.5t-45.5 18.5h-512q-27 0 -45.5 -18.5t-18.5 -45.5v-320h640v320v0zM832 320h-640v-192q0 -27 18.5 -45.5t45.5 -18.5h512q27 0 45.5 18.5t18.5 45.5v192v0zM512 128q-27 0 -45.5 18.5t-18.5 45.5t18.5 45.5t45.5 18.5t45.5 -18.5t18.5 -45.5t-18.5 -45.5t-45.5 -18.5z" /></g></svg><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 curl 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
+					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
 								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a> </div>`;
 				}
 			});
 			content += '</div>';
+			if (mode === 'api')
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">全部增强下载</button><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
 			if (mode === 'aria')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">修改 RPC 参数（${rpc}）</button><button class="pl-btn-primary pl-btn-success pl-btn-opacity listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
-			if (mode === 'curl')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			if (mode === 'curl') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">修改终端类型（${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			}
+			if (mode === 'bc') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+			}
 			return content;
 		},
 
@@ -4405,6 +4759,29 @@
 			if (window[key]) return;
 			window[key] = true;
 
+			function _factory(e) {
+				let target = $(e.target);
+				let item = target.parents('.pl-item');
+				let link = item.find('.pl-item-link.blob');
+				let directLink = item.find('.pl-item-link.browser');
+				let progress = item.find('.pl-item-progress');
+				let tip = item.find('.pl-item-tip');
+				let copy = item.find('.pl-item-copy');
+				let howidm = item.find('.pl-progress-how');
+				let back = item.find('.pl-progress-back');
+				let stop = item.find('.pl-progress-stop');
+				return {
+					item, link, directLink, progress, tip, copy, howidm, back, stop, target,
+				};
+			}
+
+			function _reset(i) {
+				ins[i] && clearInterval(ins[i]);
+				request[i] && request[i].abort();
+				progress[i] = 0;
+				idm[i] = false;
+			}
+
 			doc.on('click', '.pl-button-mode', function (e) {
 				mode = e.target.dataset.mode;
 				if (!mode) return;
@@ -4419,44 +4796,201 @@
 				});
 				xunlei.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async function (e) {
+			doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				$('#downloadIframe').attr('src', e.currentTarget.dataset.link);
+				selectList = xunlei.getSelectedList();
+				if (selectList.length === 0) {
+					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
+				}
+				message.info('提示：<br/>因网盘限制，请保存到自己网盘后再去下载哦~');
+				await base.sleep(500);
+				document.querySelector('.saveToCloud').click();
 			});
-			doc.on('click', '.listener-link-api-btn', async function (e) {
+			doc.on('click', '.listener-link-api.browser', async function (e) {
+				e.preventDefault();
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				$('#downloadIframe').attr('src', href);
+			});
+			doc.on('click', '.listener-link-api.blob', async function (e) {
+				e.preventDefault();
+				let o = _factory(e);
+				let $width = o.item.find('.pl-progress-inner');
+				let $text = o.item.find('.pl-progress-inner-text');
+				let filename = o.link[0].dataset.filename;
+				let index = o.link[0].dataset.index;
+				_reset(index);
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				base.get(href, { "Referer": `https://${location.host}/` }, 'blob', { filename, index });
+				let startTime = Date.now(); // 记录下载开始时间
+				let prevLoaded = 0; // 上一次的已下载数据量
+				let prevTime = startTime; // 上一次的时间
+				let size = Number(o.link[0].dataset.size);
+				ins[index] = setInterval(function () {
+					let prog = +progress[index] || 0;
+					let isIDM = idm[index] || false;
+
+					// 处理普通下载的情况...
+					let currentTime = Date.now();
+					let elapsedTime = currentTime - startTime;
+					let totalProgress = prog / 100;
+					let totalElapsedSeconds = elapsedTime / 1000;
+					let estimatedTotalTimeSeconds = totalElapsedSeconds / totalProgress;
+					let remainingTimeSeconds = estimatedTotalTimeSeconds - totalElapsedSeconds;
+
+					// 将剩余时间转换为天、时、分、秒
+					let remainingDays = Math.floor(remainingTimeSeconds / (60 * 60 * 24));
+					remainingTimeSeconds %= (60 * 60 * 24);
+
+					let remainingHours = Math.floor(remainingTimeSeconds / (60 * 60));
+					remainingTimeSeconds %= (60 * 60);
+
+					let remainingMinutes = Math.floor(remainingTimeSeconds / 60);
+					let remainingSeconds = Math.floor(remainingTimeSeconds % 60);
+
+					// 计算下载速度
+					let loaded = prog * size / 100; // 已下载数据量
+					let currentTimeDiff = currentTime - prevTime; // 当前时间与上一次时间的差值
+					let loadedDiff = loaded - prevLoaded; // 当前已下载数据量与上一次的差值
+					let downloadSpeed = (currentTimeDiff !== 0) ? loadedDiff / (currentTimeDiff / 1000) : 0; // 下载速度（单位：字节/秒）
+
+					// 更新上一次的数据
+					prevLoaded = loaded;
+					prevTime = currentTime;
+
+					// 更改界面
+					o.link.hide();
+					o.directLink.hide();
+					o.tip.hide();
+					o.stop.show();
+					o.copy.hide();
+					o.progress.show();
+
+					// 更新进度条
+					$width.css('width', prog + '%');
+
+					// 更新进度条文本
+					let timeText = '';
+					if (Number.isFinite(remainingDays) && remainingDays > 0) {
+						timeText = remainingDays + '天 ' + base.repairTimer(remainingHours) + '时:' + base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingHours) && remainingHours > 0) {
+						timeText = base.repairTimer(remainingHours) + '时:' + base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingMinutes) && remainingMinutes > 0) {
+						timeText = base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingSeconds) && remainingSeconds > 0) {
+						timeText = remainingSeconds + '秒';
+					} else if (Number.isFinite(remainingSeconds) && remainingSeconds === 0) {
+						timeText = '即将完成';
+					} else {
+						timeText = '计算中...';
+					}
+
+					let speedText = '';
+					speedText = base.sizeFormat(downloadSpeed)
+					$text.text(prog + '% | 剩余时间：' + timeText + ' | 速度：' + speedText + '/秒');
+
+					if (prog === 100) {
+						setTimeout(function () {
+							clearInterval(ins[index]);
+							progress[index] = 0;
+							o.item.find('.pl-progress-stop').hide();
+							o.howidm.hide();
+							$text.text('下载完成了!浏览器下载框应该弹出来了哦~');
+							o.back.show()
+							setTimeout(function () {
+								o.link.text('增强下载(基于浏览器文件流)').animate({ opacity: '1' }, "slow");
+							}, 3000)
+						}, 3000)
+					}
+				}, 500);
+			});
+			doc.on('click', '.listener-retry', async function (e) {
+				let o = _factory(e);
+				o.tip.hide();
+				o.link.show();
+				o.directLink.show();
+			});
+			doc.on('click', '.listener-how', async function (e) {
+				let o = _factory(e);
+				let index = o.link[0].dataset.index;
+				if (request[index]) {
+					request[index].abort();
+					clearInterval(ins[index]);
+					o.progress.hide();
+					o.tip.show();
+				}
+
+			});
+			doc.on('click', '.listener-stop', async function (e) {
+				let o = _factory(e);
+				let index = o.link[0].dataset.index;
+				if (request[index]) {
+					request[index].abort();
+					clearInterval(ins[index]);
+					o.item.find('.pl-progress-inner-text').text('正在取消...');
+					o.item.find('.pl-progress-inner').css('width', 100 + '%');
+					setTimeout(function () {
+						o.tip.hide();
+						o.back.hide();
+						o.link.show();
+						o.directLink.show();
+						o.copy.show();
+						o.progress.hide();
+						o.stop.hide();
+					}, 1050)
+				}
+			});
+			doc.on('click', '.listener-back', async function (e) {
+				let o = _factory(e);
+				o.progress.hide();
+				o.tip.hide();
+				o.link.show();
+				o.directLink.show();
+				o.copy.show();
+				o.stop.hide();
+				o.back.hide();
+			});
+			doc.on('click', '.listener-download-all', function (e) {
+				$('.pl-item-link.blob').each(function () {
+					if ($(this).css('display') !== 'none') {
+						$(this).click();
+					}
+				});
+				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
+				setTimeout(function () {
+					$(e.target).text('全部增强下载').animate({ opacity: '1' }, "slow");
+				}, 2000)
+			});
+
+			doc.on('click', '.listener-copy-filename', async function (e) {
 				base.setClipboard(e.target.dataset.filename);
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
+				setTimeout(function () {
+					$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-bc-btn', async function (e) {
 				let mirror = base.getMirrorList(e.target.dataset.dlink, pan.mirror);
 				base.setClipboard(mirror);
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
+				setTimeout(function () {
+					$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
+				setTimeout(function () {
+					$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
-				target.find('.icon').remove();
+				target.find('.icon-rpc-devices').remove();
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
@@ -4480,6 +5014,9 @@
 			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
+			doc.on('click', '.listener-open-beautify', function () {
+				base.showBeautify();
+			});
 			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
 					domain: base.getValue('setting_rpc_domain'),
@@ -4490,12 +5027,22 @@
 		},
 
 		addButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="xunlei-button pl-button" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span><ul class="pl-dropdown-menu" style="top: 34px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let $button = $(`
+				<div class="xunlei-button pl-button"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span>
+					<ul class="pl-dropdown-menu" style="top: 34px;">
+						<li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li>
+						<li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li>
+						<li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li>
+						<li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li>
+						<li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li>
+						<li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li>
+						<li class="pl-dropdown-menu-item pl-button-mode listener-open-beautify">助手美化</li>
+						<li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>
+					</ul>
+				</div>
+			`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
@@ -4503,6 +5050,17 @@
 				})
 			}
 			if (pt === 'share') {
+				$button = $(`
+					<div class="xunlei-button pl-button">
+						<i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">下载助手</span>
+						<ul class="pl-dropdown-menu" style="top: 34px;">
+							<li class="pl-dropdown-menu-item pl-button-mode pl-button-save"><i class="xlpfont xlp-file-upload"></i><span style="margin-left: 3px;">转存后下载</span></li>
+							<li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li>
+							<li class="pl-dropdown-menu-item pl-button-mode listener-open-beautify">助手美化</li>
+							<li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>
+						</ul>
+					</div>
+				`);
 				$button.css({ 'margin-right': '10px' });
 				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
@@ -4513,12 +5071,9 @@
 		},
 
 		addInitButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="xunlei-button pl-button-init" id="pl-button-link"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">点我点亮</span></div>`);
+			let $button = $(`<div class="xunlei-button pl-button-init"><i class="xlpfont xlp-download"></i><span style="font-size: 13px;margin-left: 6px;">点我点亮</span></div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
@@ -4586,7 +5141,7 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件哦~');
+				return message.error('提示：<br/>请勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -4603,18 +5158,7 @@
 					selectList[val.index].downloadUrl = val.downloadUrl;
 				});
 			} else {
-				let dialog = await Swal.fire({
-					toast: true,
-					icon: 'info',
-					title: `提示：<br/>请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
-					showConfirmButton: true,
-					confirmButtonText: '点击保存',
-					position: 'top',
-				});
-				if (dialog.isConfirmed) {
-					$('.saveToCloud')[0].click();
-					return;
-				}
+				return message.error('提示：<br/>页面错误~');
 			}
 			let html = this.generateDom(selectList);
 			this.showMainDialog(pan[mode][0], html, pan[mode][1]);
@@ -4627,52 +5171,77 @@
 			list.forEach((v, i) => {
 				if (v.kind === 'drive#folder') return;
 				let filename = v.name;
+				let ext = base.getExtension(filename);
 				let size = base.sizeFormat(+v.size);
 				let dlink = v.downloadUrl;
 				if (mode === 'api') {
+					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-api" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载 ${filename}</a>
-								<div class="pl-item-btn listener-link-api-btn" data-filename="${filename}">复制文件名</div>
-								</div>`;
+								<button class="pl-item-link listener-tip pl-btn-primary listener-link-api blob" data-title="推荐使用本功能，下载完成可自动命名，基于浏览器的 Blob 文件流下载文件，适用于较新的浏览器，可以在此窗口中显示下载剩余时间和下载速度，此方式下载不会被 IDM 捕获下载链接" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-index="${i}">增强下载(基于浏览器文件流)</button>
+								<a class="pl-item-link listener-tip pl-btn-primary pl-btn-info listener-link-api browser" data-title="基于浏览器直接打开链接来下载文件，适用于较为古老但支持 iframe 的浏览器，点击“直接下载”后需等待下载提示弹出才能点击下个“直接下载”，否则只会下载后者，若服务器未回报文件名，此方式下载不会被 IDM 捕获下载链接，此时建议右键此按钮，选择 “使用 IDM 下载”" data-filename="${filename}" data-link="${dlink}" href="${dlink}">直接下载(基于浏览器链接)</a>
+								<button class="pl-item-copy listener-tip pl-btn-primary pl-btn-success listener-copy-filename" data-title="本网盘下载时可能不会显示文件名称，这时需要手动复制文件名称到下载工具中" data-filename="${filename}">复制名称</button>
+								<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+								<div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="listener-back">返回</span></div>
+								<div class="pl-item-progress" style="display: none">
+									<div class="pl-progress">
+										<div class="pl-progress-outer"></div>
+										<div class="pl-progress-inner" style="width:5%">
+										<div class="pl-progress-inner-text">正在加载进度...0%</div>
+										</div>
+									</div>
+									<span class="pl-progress-stop listener-stop">取消下载</span>
+								`;
+					content += `<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
+								<span class="pl-progress-back listener-back" style="display: none">返回</span>
+								<span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
+								`;
+					content += `</div></div>`
 				}
 				if (mode === 'aria') {
 					let alink = this.convertLinkToAria(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 aria2c 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><svg class="icon-rpc-devices" viewBox="-10 0 1034 1024"><g transform="matrix(1 0 0 -1 0 960)"><path fill="currentColor" d="M832 -64h-640q-53 0 -90.5 37.5t-37.5 90.5v768q0 53 37.5 90.5t90.5 37.5h640q53 0 90.5 -37.5t37.5 -90.5v-768q0 -53 -37.5 -90.5t-90.5 -37.5zM832 768q0 27 -18.5 45.5t-45.5 18.5h-512q-27 0 -45.5 -18.5t-18.5 -45.5v-320h640v320v0zM832 320h-640v-192q0 -27 18.5 -45.5t45.5 -18.5h512q27 0 45.5 18.5t18.5 45.5v192v0zM512 128q-27 0 -45.5 18.5t-18.5 45.5t18.5 45.5t45.5 18.5t45.5 -18.5t18.5 -45.5t-18.5 -45.5t-45.5 -18.5z" /></g></svg><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 curl 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
+					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
 								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a>
-								<div class="pl-item-btn listener-link-bc-btn" data-dlink="${dlink}">复制镜像地址</div>
+								<button class="pl-btn-primary listener-link-bc-btn" data-dlink="${dlink}">复制镜像地址</div>
 								</div>`;
 				}
 			});
 			content += '</div>';
+			if (mode === 'api')
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">全部增强下载</button><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
 			if (mode === 'aria')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">修改 RPC 参数（${rpc}）</button><button class="pl-btn-primary pl-btn-success pl-btn-opacity listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
-			if (mode === 'curl')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			if (mode === 'curl') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">修改终端类型（${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			}
+			if (mode === 'bc') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+			}
 			return content;
 		},
 
@@ -4806,6 +5375,29 @@
 			if (window[key]) return;
 			window[key] = true;
 
+			function _factory(e) {
+				let target = $(e.target);
+				let item = target.parents('.pl-item');
+				let link = item.find('.pl-item-link.blob');
+				let directLink = item.find('.pl-item-link.browser');
+				let progress = item.find('.pl-item-progress');
+				let tip = item.find('.pl-item-tip');
+				let copy = item.find('.pl-item-copy');
+				let howidm = item.find('.pl-progress-how');
+				let back = item.find('.pl-progress-back');
+				let stop = item.find('.pl-progress-stop');
+				return {
+					item, link, directLink, progress, tip, copy, howidm, back, stop, target,
+				};
+			}
+
+			function _reset(i) {
+				ins[i] && clearInterval(ins[i]);
+				request[i] && request[i].abort();
+				progress[i] = 0;
+				idm[i] = false;
+			}
+
 			window.addEventListener('hashchange', async function (e) {
 				let home = 'https://pan.quark.cn/list#/', all = 'https://pan.quark.cn/list#/list/all';
 				if (e.oldURL === home && e.newURL === all) return;
@@ -4832,35 +5424,183 @@
 				});
 				quark.getPCSLink();
 			});
-			doc.on('click', '.listener-link-save', async function (e) {
+			doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				selectList = this.getSelectedList();
+				selectList = quark.getSelectedList();
 				if (selectList.length === 0) {
-					return message.error('提示：<br/>请先勾选要保存到网盘的文件哦~');
+					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
-				message.info('提示：<br/>因夸克限制，请先保存到自己网盘后再下载哦!');
+				message.info('提示：<br/>因网盘限制，请保存到自己网盘后再去下载哦~');
 				await base.sleep(500);
 				document.querySelector('.file-info_r').click();
 			});
-			doc.on('click', '.listener-link-api', async function (e) {
+			doc.on('click', '.listener-link-api.browser', async function (e) {
 				e.preventDefault();
-				$('#downloadIframe').attr('src', e.currentTarget.dataset.link);
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				$('#downloadIframe').attr('src', href);
+			});
+			doc.on('click', '.listener-link-api.blob', async function (e) {
+				e.preventDefault();
+				let o = _factory(e);
+				let $width = o.item.find('.pl-progress-inner');
+				let $text = o.item.find('.pl-progress-inner-text');
+				let filename = o.link[0].dataset.filename;
+				let index = o.link[0].dataset.index;
+				_reset(index);
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				base.get(href, { "Referer": `https://${location.host}/` }, 'blob', { filename, index });
+				let startTime = Date.now(); // 记录下载开始时间
+				let prevLoaded = 0; // 上一次的已下载数据量
+				let prevTime = startTime; // 上一次的时间
+				let size = Number(o.link[0].dataset.size);
+				ins[index] = setInterval(function () {
+					let prog = +progress[index] || 0;
+					// 处理普通下载的情况...
+					let currentTime = Date.now();
+					let elapsedTime = currentTime - startTime;
+					let totalProgress = prog / 100;
+					let totalElapsedSeconds = elapsedTime / 1000;
+					let estimatedTotalTimeSeconds = totalElapsedSeconds / totalProgress;
+					let remainingTimeSeconds = estimatedTotalTimeSeconds - totalElapsedSeconds;
+
+					// 将剩余时间转换为天、时、分、秒
+					let remainingDays = Math.floor(remainingTimeSeconds / (60 * 60 * 24));
+					remainingTimeSeconds %= (60 * 60 * 24);
+
+					let remainingHours = Math.floor(remainingTimeSeconds / (60 * 60));
+					remainingTimeSeconds %= (60 * 60);
+
+					let remainingMinutes = Math.floor(remainingTimeSeconds / 60);
+					let remainingSeconds = Math.floor(remainingTimeSeconds % 60);
+
+					// 计算下载速度
+					let loaded = prog * size / 100; // 已下载数据量
+					let currentTimeDiff = currentTime - prevTime; // 当前时间与上一次时间的差值
+					let loadedDiff = loaded - prevLoaded; // 当前已下载数据量与上一次的差值
+					let downloadSpeed = (currentTimeDiff !== 0) ? loadedDiff / (currentTimeDiff / 1000) : 0; // 下载速度（单位：字节/秒）
+
+					// 更新上一次的数据
+					prevLoaded = loaded;
+					prevTime = currentTime;
+
+					// 更改界面
+					o.link.hide();
+					o.directLink.hide();
+					o.tip.hide();
+					o.stop.show();
+					o.copy.hide();
+					o.progress.show();
+
+					// 更新进度条
+					$width.css('width', prog + '%');
+
+					// 更新进度条文本
+					let timeText = '';
+					if (Number.isFinite(remainingDays) && remainingDays > 0) {
+						timeText = remainingDays + '天 ' + base.repairTimer(remainingHours) + '时:' + base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingHours) && remainingHours > 0) {
+						timeText = base.repairTimer(remainingHours) + '时:' + base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingMinutes) && remainingMinutes > 0) {
+						timeText = base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingSeconds) && remainingSeconds > 0) {
+						timeText = remainingSeconds + '秒';
+					} else if (Number.isFinite(remainingSeconds) && remainingSeconds === 0) {
+						timeText = '即将完成';
+					} else {
+						timeText = '计算中...';
+					}
+
+					let speedText = '';
+					speedText = base.sizeFormat(downloadSpeed)
+					$text.text(prog + '% | 剩余时间：' + timeText + ' | 速度：' + speedText + '/秒');
+
+					if (prog === 100) {
+						setTimeout(function () {
+							clearInterval(ins[index]);
+							progress[index] = 0;
+							o.item.find('.pl-progress-stop').hide();
+							o.howidm.hide();
+							$text.text('下载完成了!浏览器下载框应该弹出来了哦~');
+							o.back.show()
+							setTimeout(function () {
+								o.link.text('增强下载(基于浏览器文件流)').animate({ opacity: '1' }, "slow");
+							}, 3000)
+						}, 3000)
+					}
+				}, 500);
+			});
+			doc.on('click', '.listener-retry', async function (e) {
+				let o = _factory(e);
+				o.tip.hide();
+				o.link.show();
+				o.directLink.show();
+			});
+			doc.on('click', '.listener-how', async function (e) {
+				let o = _factory(e);
+				let index = o.link[0].dataset.index;
+				if (request[index]) {
+					request[index].abort();
+					clearInterval(ins[index]);
+					o.progress.hide();
+					o.tip.show();
+				}
+
+			});
+			doc.on('click', '.listener-stop', async function (e) {
+				let o = _factory(e);
+				let index = o.link[0].dataset.index;
+				if (request[index]) {
+					request[index].abort();
+					clearInterval(ins[index]);
+					o.item.find('.pl-progress-inner-text').text('正在取消...');
+					o.item.find('.pl-progress-inner').css('width', 100 + '%');
+					setTimeout(function () {
+						o.tip.hide();
+						o.back.hide();
+						o.link.show();
+						o.directLink.show();
+						o.copy.show();
+						o.progress.hide();
+						o.stop.hide();
+					}, 1050)
+				}
+			});
+			doc.on('click', '.listener-back', async function (e) {
+				let o = _factory(e);
+				o.progress.hide();
+				o.tip.hide();
+				o.link.show();
+				o.directLink.show();
+				o.copy.show();
+				o.stop.hide();
+				o.back.hide();
+			});
+			doc.on('click', '.listener-download-all', function (e) {
+				$('.pl-item-link.blob').each(function () {
+					if ($(this).css('display') !== 'none') {
+						$(this).click();
+					}
+				});
+				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
+				setTimeout(function () {
+					$(e.target).text('全部增强下载').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
+				setTimeout(function () {
+					$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
-				target.find('.icon').remove();
+				target.find('.icon-rpc-devices').remove();
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
@@ -4884,6 +5624,9 @@
 			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
 			});
+			doc.on('click', '.listener-open-beautify', function () {
+				base.showBeautify();
+			});
 			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
 					domain: base.getValue('setting_rpc_domain'),
@@ -4894,47 +5637,44 @@
 		},
 
 		removeAD() {
-
 			base.waitForKeyElements('[class*="Activity--video-toolbar-activity"]', function (tag) {
 				tag.fadeToggle();
 			}, true);
-
 			base.waitForKeyElements('span[class*="SectionHeaderController--icon-download"]', function (tag) {
 				tag.fadeToggle();
 			}, true);
-
 			base.waitForKeyElements('div[class*="SectionHeaderController--download-popover"]', function (tag) {
 				tag.find(".ant-popover-arrow").css({ "left": "75%" });
 			});
-
 			base.waitForKeyElements('div[class*="DetailLayout--client-download"]', function (tag) {
 				tag.fadeToggle();
 			}, true);
-
 			base.waitForKeyElements(".next-box.share-right-side-content", function (tag) {
 				tag.fadeToggle();
 			}, true);
-
 			base.waitForKeyElements('[class*="DetailLayout--container"] .feature-screen', function (tag) {
 				tag.fadeToggle();
 			});
-
-			/*base.waitForKeyElements('.ant-modal-content .ant-modal-body .right-wrap', function (tag) {
+			base.waitForKeyElements('.ant-modal-content .ant-modal-body .right-wrap', function (tag) {
 				if (tag.find(".hint").text().includes("客户端")) tag.fadeToggle();
-			});*/
-
-			base.waitForKeyElements(".pc-member-entrance span", function (tag) {
-				tag.text("会员中心");
 			});
-
+			base.waitForKeyElements(".pc-member-entrance span.button-text", function (tag) {
+				tag.text("会员中心");
+				var observer = new MutationObserver(function (mutations) {
+					mutations.forEach(function (mutation) {
+						if (tag.text() === "会员中心") return
+						tag.text("会员中心");
+					});
+				});
+				var config = { subtree: true, characterData: true, childList: true };
+				observer.observe(tag[0], config);
+			});
 			base.waitForKeyElements(".pc-member-entrance .tips", function (tag) {
 				tag.fadeToggle();
 			});
-
 			base.waitForKeyElements(".modal .modal-content .halo-animated-background .halo-content .pay-modal .close", function (tag) {
 				tag[0].click();
 			});
-
 			base.waitForKeyElements(".modal .modal-content .halo-animated-background .halo-content .red-envelope .close", function (tag) {
 				tag[0].click();
 			});
@@ -4942,12 +5682,24 @@
 
 		addButton() {
 			let svg = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSAxMmwyIDIgMi0yeiIvPjxwYXRoIGQ9Ik0xNCA4aDEuNTUzYy44NSAwIDEuMTYuMDkzIDEuNDcuMjY3LjMxMS4xNzQuNTU2LjQzLjcyMi43NTYuMTY2LjMyNi4yNTUuNjUuMjU1IDEuNTR2NC44NzNjMCAuODkyLS4wODkgMS4yMTUtLjI1NSAxLjU0LS4xNjYuMzI3LS40MS41ODMtLjcyMi43NTctLjMxLjE3NC0uNjIuMjY3LTEuNDcuMjY3SDYuNDQ3Yy0uODUgMC0xLjE2LS4wOTMtMS40Ny0uMjY3YTEuNzc4IDEuNzc4IDAgMDEtLjcyMi0uNzU2Yy0uMTY2LS4zMjYtLjI1NS0uNjUtLjI1NS0xLjU0di00Ljg3M2MwLS44OTIuMDg5LTEuMjE1LjI1NS0xLjU0LjE2Ni0uMzI3LjQxLS41ODMuNzIyLS43NTcuMzEtLjE3NC42Mi0uMjY3IDEuNDctLjI2N0gxMSIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTExIDN2MTAiLz48L2c+PC9zdmc+';
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon" src="` + svg + `"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 55px;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let $button = $(`
+			<div class="ant-dropdown-trigger pl-button">
+				<button type="button" class="quark-button ant-btn btn-file ant-btn-primary">
+					<img class="quark-btn-icon" src="${svg}"><span>下载助手</span>
+				</button>
+				<ul class="pl-dropdown-menu" style="top: 55px;">
+					<li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li>
+					<li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria">Aria下载</li>
+					<li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li>
+					<li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li>
+					<li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc">BC下载</li>
+					<li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li>
+					<li class="pl-dropdown-menu-item pl-button-mode listener-open-beautify">助手美化</li>
+					<li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li>
+				</ul>
+			</div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
@@ -4955,7 +5707,7 @@
 				});
 			}
 			if (pt === 'share') {
-				$button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="` + svg + `"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode listener-link-save" style="background-color: ${color}b0 !important;color:#fff !important;" data-mode="save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+				$button = $(`<div class="ant-dropdown-trigger pl-button"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="${svg}"><span>下载助手</span></button><ul class="pl-dropdown-menu" style="top: 100px;"><li class="pl-dropdown-menu-item pl-button-mode pl-button-save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-beautify">助手美化</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 				base.listenElement(pan.btn.share, function () {
 					$toolWrap = $(pan.btn.share);
 					$('.pl-button').length === 0 && $toolWrap.prepend($button);
@@ -4966,12 +5718,9 @@
 
 		addInitButton() {
 			let svg = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSAxMmwyIDIgMi0yeiIvPjxwYXRoIGQ9Ik0xNCA4aDEuNTUzYy44NSAwIDEuMTYuMDkzIDEuNDcuMjY3LjMxMS4xNzQuNTU2LjQzLjcyMi43NTYuMTY2LjMyNi4yNTUuNjUuMjU1IDEuNTR2NC44NzNjMCAuODkyLS4wODkgMS4yMTUtLjI1NSAxLjU0LS4xNjYuMzI3LS40MS41ODMtLjcyMi43NTctLjMxLjE3NC0uNjIuMjY3LTEuNDcuMjY3SDYuNDQ3Yy0uODUgMC0xLjE2LS4wOTMtMS40Ny0uMjY3YTEuNzc4IDEuNzc4IDAgMDEtLjcyMi0uNzU2Yy0uMTY2LS4zMjYtLjI1NS0uNjUtLjI1NS0xLjU0di00Ljg3M2MwLS44OTIuMDg5LTEuMjE1LjI1NS0xLjU0LjE2Ni0uMzI3LjQxLS41ODMuNzIyLS43NTcuMzEtLjE3NC42Mi0uMjY3IDEuNDctLjI2N0gxMSIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTExIDN2MTAiLz48L2c+PC9zdmc+';
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div id="pl-button-link" class="ant-dropdown-trigger pl-button-init"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="` + svg + `"><span>点我点亮</span></button></div>`);
+			let $button = $(`<div class="ant-dropdown-trigger pl-button-init"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary" style="height: 40px;"><img class="quark-btn-icon" src="${svg}"><span>点我点亮</span></button></div>`);
 			$button.css({ "margin-right": "10px", "display": "inline-block" });
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
@@ -4991,7 +5740,7 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件哦~');
+				return message.error('提示：<br/>请勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -5013,18 +5762,7 @@
 				let html = this.generateDom(res.data);
 				this.showMainDialog(pan[mode][0], html, pan[mode][1]);
 			} else {
-				let dialog = await Swal.fire({
-					toast: true,
-					icon: 'info',
-					title: `提示：<br/>请将文件<span class="tag-danger">[保存到网盘]</span>后再👉前往<span class="tag-danger">[我的网盘]</span>中下载哦!`,
-					showConfirmButton: true,
-					confirmButtonText: '点击保存',
-					position: 'top',
-				});
-				if (dialog.isConfirmed) {
-					$('.file-info_r')[0].click();
-					return;
-				}
+				return message.error('提示：<br/>页面错误~');
 			}
 		},
 
@@ -5034,50 +5772,75 @@
 			list.forEach((v, i) => {
 				if (v.file === false) return;
 				let filename = v.file_name;
+				let ext = base.getExtension(filename);
 				let fid = v.fid;
 				let size = base.sizeFormat(v.size);
 				let dlink = v.download_url;
 				if (mode === 'api') {
+					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-api" data-fid="${fid}" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载 ${filename}</a>
-								</div>`;
+								<button class="pl-item-link listener-tip pl-btn-primary pl-btn-default listener-link-api blob" data-title="推荐使用本功能，基于浏览器的 Blob 文件流下载文件，适用于较新的浏览器，可以在此窗口中显示下载剩余时间和下载速度，此方式下载不会被 IDM 捕获下载链接" data-filename="${filename}" data-size="${v.size}" data-link="${dlink}" data-fid="${fid}" data-index="${i}">增强下载(基于浏览器文件流)</button>
+								<button class="pl-item-link listener-tip pl-btn-primary pl-btn-info listener-link-api browser" data-title="基于浏览器直接打开链接来下载文件，适用于较为古老但支持 iframe 的浏览器，点击“直接下载”后需等待下载提示弹出才能点击下个“直接下载”，否则只会下载后者，此方式下载有可能会被 IDM 捕获下载链接" data-filename="${filename}" data-link="${dlink}" data-fid="${fid}">直接下载(基于浏览器链接)</button>
+								<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+								<div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="listener-back">返回</span></div>
+								<div class="pl-item-progress" style="display: none">
+									<div class="pl-progress">
+										<div class="pl-progress-outer"></div>
+										<div class="pl-progress-inner" style="width:5%">
+										<div class="pl-progress-inner-text">正在加载进度...0%</div>
+										</div>
+									</div>
+									<span class="pl-progress-stop listener-stop">取消下载</span>
+								`;
+					content += `<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
+								<span class="pl-progress-back listener-back" style="display: none">返回</span>
+								<span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
+								`;
+					content += `</div></div>`
 				}
 				if (mode === 'aria') {
 					let alink = this.convertLinkToAria(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 aria2c 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><svg class="icon-rpc-devices" viewBox="-10 0 1034 1024"><g transform="matrix(1 0 0 -1 0 960)"><path fill="currentColor" d="M832 -64h-640q-53 0 -90.5 37.5t-37.5 90.5v768q0 53 37.5 90.5t90.5 37.5h640q53 0 90.5 -37.5t37.5 -90.5v-768q0 -53 -37.5 -90.5t-90.5 -37.5zM832 768q0 27 -18.5 45.5t-45.5 18.5h-512q-27 0 -45.5 -18.5t-18.5 -45.5v-320h640v320v0zM832 320h-640v-192q0 -27 18.5 -45.5t45.5 -18.5h512q27 0 45.5 18.5t18.5 45.5v192v0zM512 128q-27 0 -45.5 18.5t-18.5 45.5t18.5 45.5t45.5 18.5t45.5 -18.5t18.5 -45.5t-18.5 -45.5t-45.5 -18.5z" /></g></svg><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 curl 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
+					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
 								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a> </div>`;
 				}
 			});
 			content += '</div>';
+			if (mode === 'api')
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">全部增强下载</button><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
 			if (mode === 'aria')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">修改 RPC 参数（${rpc}）</button><button class="pl-btn-primary pl-btn-success pl-btn-opacity listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
-			if (mode === 'curl')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			if (mode === 'curl') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">修改终端类型（${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			}
+			if (mode === 'bc') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+			}
 			return content;
 		},
 
@@ -5217,6 +5980,29 @@
 			if (window[key]) return;
 			window[key] = true;
 
+			function _factory(e) {
+				let target = $(e.target);
+				let item = target.parents('.pl-item');
+				let link = item.find('.pl-item-link.blob');
+				let directLink = item.find('.pl-item-link.browser');
+				let progress = item.find('.pl-item-progress');
+				let tip = item.find('.pl-item-tip');
+				let copy = item.find('.pl-item-copy');
+				let howidm = item.find('.pl-progress-how');
+				let back = item.find('.pl-progress-back');
+				let stop = item.find('.pl-progress-stop');
+				return {
+					item, link, directLink, progress, tip, copy, howidm, back, stop, target,
+				};
+			}
+
+			function _reset(i) {
+				ins[i] && clearInterval(ins[i]);
+				request[i] && request[i].abort();
+				progress[i] = 0;
+				idm[i] = false;
+			}
+
 			doc.on('click', '.pl-button-mode', function (e) {
 				mode = e.target.dataset.mode;
 				if (!mode) return;
@@ -5231,35 +6017,175 @@
 				});
 				yidong.getPCSLink();
 			});
-			doc.on('click', '.listener-link-api', async function (e) {
+			doc.on('click', '.listener-link-api.browser', async function (e) {
 				e.preventDefault();
-				$('#downloadIframe').attr('src', e.currentTarget.dataset.link);
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				$('#downloadIframe').attr('src', href);
+			});
+			doc.on('click', '.listener-link-api.blob', async function (e) {
+				e.preventDefault();
+				let o = _factory(e);
+				let $width = o.item.find('.pl-progress-inner');
+				let $text = o.item.find('.pl-progress-inner-text');
+				let filename = o.link[0].dataset.filename;
+				let index = o.link[0].dataset.index;
+				_reset(index);
+				let dataset = e.currentTarget.dataset;
+				let href = dataset.link;
+				base.get(href, { "Referer": `https://${location.host}/` }, 'blob', { filename, index });
+				let startTime = Date.now(); // 记录下载开始时间
+				let prevLoaded = 0; // 上一次的已下载数据量
+				let prevTime = startTime; // 上一次的时间
+				let size = Number(o.link[0].dataset.size);
+				ins[index] = setInterval(function () {
+					let prog = +progress[index] || 0;
+					let isIDM = idm[index] || false;
+					// 处理普通下载的情况...
+					let currentTime = Date.now();
+					let elapsedTime = currentTime - startTime;
+					let totalProgress = prog / 100;
+					let totalElapsedSeconds = elapsedTime / 1000;
+					let estimatedTotalTimeSeconds = totalElapsedSeconds / totalProgress;
+					let remainingTimeSeconds = estimatedTotalTimeSeconds - totalElapsedSeconds;
+
+					// 将剩余时间转换为天、时、分、秒
+					let remainingDays = Math.floor(remainingTimeSeconds / (60 * 60 * 24));
+					remainingTimeSeconds %= (60 * 60 * 24);
+
+					let remainingHours = Math.floor(remainingTimeSeconds / (60 * 60));
+					remainingTimeSeconds %= (60 * 60);
+
+					let remainingMinutes = Math.floor(remainingTimeSeconds / 60);
+					let remainingSeconds = Math.floor(remainingTimeSeconds % 60);
+
+					// 计算下载速度
+					let loaded = prog * size / 100; // 已下载数据量
+					let currentTimeDiff = currentTime - prevTime; // 当前时间与上一次时间的差值
+					let loadedDiff = loaded - prevLoaded; // 当前已下载数据量与上一次的差值
+					let downloadSpeed = (currentTimeDiff !== 0) ? loadedDiff / (currentTimeDiff / 1000) : 0; // 下载速度（单位：字节/秒）
+
+					// 更新上一次的数据
+					prevLoaded = loaded;
+					prevTime = currentTime;
+
+					// 更改界面
+					o.link.hide();
+					o.directLink.hide();
+					o.tip.hide();
+					o.stop.show();
+					o.copy.hide();
+					o.progress.show();
+
+					// 更新进度条
+					$width.css('width', prog + '%');
+
+					// 更新进度条文本
+					let timeText = '';
+					if (Number.isFinite(remainingDays) && remainingDays > 0) {
+						timeText = remainingDays + '天 ' + base.repairTimer(remainingHours) + '时:' + base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingHours) && remainingHours > 0) {
+						timeText = base.repairTimer(remainingHours) + '时:' + base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingMinutes) && remainingMinutes > 0) {
+						timeText = base.repairTimer(remainingMinutes) + '分:' + base.repairTimer(remainingSeconds) + '秒';
+					} else if (Number.isFinite(remainingSeconds) && remainingSeconds > 0) {
+						timeText = remainingSeconds + '秒';
+					} else if (Number.isFinite(remainingSeconds) && remainingSeconds === 0) {
+						timeText = '即将完成';
+					} else {
+						timeText = '计算中...';
+					}
+
+					let speedText = '';
+					console.log(downloadSpeed)
+					speedText = base.sizeFormat(downloadSpeed)
+					$text.text(prog + '% | 剩余时间：' + timeText + ' | 速度：' + speedText + '/秒');
+
+					if (prog === 100) {
+						setTimeout(function () {
+							clearInterval(ins[index]);
+							progress[index] = 0;
+							o.item.find('.pl-progress-stop').hide();
+							o.howidm.hide();
+							$text.text('下载完成了!浏览器下载框应该弹出来了哦~');
+							o.back.show()
+							setTimeout(function () {
+								o.link.text('增强下载(基于浏览器文件流)').animate({ opacity: '1' }, "slow");
+							}, 3000)
+						}, 3000)
+					}
+				}, 500);
+			});
+			doc.on('click', '.listener-retry', async function (e) {
+				let o = _factory(e);
+				o.tip.hide();
+				o.link.show();
+				o.directLink.show();
+			});
+			doc.on('click', '.listener-how', async function (e) {
+				let o = _factory(e);
+				let index = o.link[0].dataset.index;
+				if (request[index]) {
+					request[index].abort();
+					clearInterval(ins[index]);
+					o.progress.hide();
+					o.tip.show();
+				}
+
+			});
+			doc.on('click', '.listener-stop', async function (e) {
+				let o = _factory(e);
+				let index = o.link[0].dataset.index;
+				if (request[index]) {
+					request[index].abort();
+					clearInterval(ins[index]);
+					o.item.find('.pl-progress-inner-text').text('正在取消...');
+					o.item.find('.pl-progress-inner').css('width', 100 + '%');
+					setTimeout(function () {
+						o.tip.hide();
+						o.back.hide();
+						o.link.show();
+						o.directLink.show();
+						o.copy.show();
+						o.progress.hide();
+						o.stop.hide();
+					}, 1050)
+				}
+			});
+			doc.on('click', '.listener-back', async function (e) {
+				let o = _factory(e);
+				o.progress.hide();
+				o.tip.hide();
+				o.link.show();
+				o.directLink.show();
+				o.copy.show();
+				o.stop.hide();
+				o.back.hide();
+			});
+			doc.on('click', '.listener-download-all', function (e) {
+				$('.pl-item-link.blob').each(function () {
+					if ($(this).css('display') !== 'none') {
+						$(this).click();
+					}
+				});
+				$(e.target).text('下载开始，下载进度见上方按钮哦~').animate({ opacity: '0.5' }, "slow");
+				setTimeout(function () {
+					$(e.target).text('全部增强下载').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-aria, .listener-copy-all', function (e) {
 				e.preventDefault();
 				base.setClipboard(decodeURIComponent(e.target.dataset.link));
 				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
-			});
-			doc.on('click', '.listener-copy-all-api', function (e) {
-				e.preventDefault();
-				base.setClipboard(decodeURIComponent(e.target.dataset.link));
-				$(e.target).text('复制成功').animate({ opacity: '0.5' }, "slow");
-				setTimeout(
-					function () {
-						$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
-					}, 2000
-				)
+				setTimeout(function () {
+					$(e.target).text('重新复制').animate({ opacity: '1' }, "slow");
+				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 
-				target.find('.icon').remove();
+				target.find('.icon-rpc-devices').remove();
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
@@ -5282,6 +6208,9 @@
 			});
 			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
+			});
+			doc.on('click', '.listener-open-beautify', function () {
+				base.showBeautify();
 			});
 			doc.on('click', '.listener-rpc-task', function () {
 				let rpc = JSON.stringify({
@@ -5323,12 +6252,9 @@
 		},
 
 		addButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="yidong-button pl-button btn-top" id="pl-button-link"><span class="yidong-btn">下载助手</span><ul class="pl-dropdown-menu" style="top: 36px; letter-spacing: normal;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
+			let $button = $(`<div class="yidong-button pl-button btn-top"><span class="yidong-btn">下载助手</span><ul class="pl-dropdown-menu" style="top: 36px; letter-spacing: normal;"><li class="pl-dropdown-menu-item pl-button-mode" data-mode="api">API下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="aria" >Aria下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="rpc">RPC下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="curl">cURL下载</li><li class="pl-dropdown-menu-item pl-button-mode" data-mode="bc" >BC下载</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-setting">助手设置</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-beautify">助手美化</li><li class="pl-dropdown-menu-item pl-button-mode listener-open-updatelog">更新日志</li></ul></div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
@@ -5346,12 +6272,9 @@
 		},
 
 		addInitButton() {
-			if (document.getElementById("pl-button-link")) {
-				document.getElementById("pl-button-link").remove()
-			}
 			if (!pt) return;
 			let $toolWrap;
-			let $button = $(`<div class="yidong-button pl-button-init btn-top" id="pl-button-link"><span class="yidong-btn">点我点亮</span></div>`);
+			let $button = $(`<div class="yidong-button pl-button-init btn-top"><span class="yidong-btn">点我点亮</span></div>`);
 			if (pt === 'home') {
 				base.listenElement(pan.btn.home, function () {
 					$toolWrap = $(pan.btn.home);
@@ -5481,7 +6404,7 @@
 		async getPCSLink() {
 			selectList = this.getSelectedList();
 			if (selectList.length === 0) {
-				return message.error('提示：<br/>请先勾选要下载的文件哦~');
+				return message.error('提示：<br/>请勾选要下载的文件哦~');
 			}
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
@@ -5507,37 +6430,54 @@
 			list.forEach((v, i) => {
 				if (v.dirEtag || v.caName) return;
 				let filename = v.contentName || v.coName;
+				let ext = base.getExtension(filename);
 				let size = base.sizeFormat(v.contentSize || v.coSize);
 				let dlink = v.downloadUrl;
 				if (mode === 'api') {
 					alinkAllText += dlink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-api" data-filename="${filename}" data-link="${dlink}" data-index="${i}">${dlink}<br/>下载 ${filename}</a>
-								<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" title="点击复制链接" data-filename="${filename}" data-link="${dlink}">复制链接</button>
-								</div>`;
+								<button class="pl-item-link listener-tip pl-btn-primary pl-btn-default listener-link-api blob" data-title="推荐使用本功能，基于浏览器的 Blob 文件流下载文件，适用于较新的浏览器，可以在此窗口中显示下载剩余时间和下载速度，此方式下载不会被 IDM 捕获下载链接" data-filename="${filename}" data-size="${v.contentSize || v.coSize}" data-link="${dlink}" data-index="${i}">增强下载(基于浏览器文件流)</button>
+								<button class="pl-item-link listener-tip pl-btn-primary pl-btn-info listener-link-api browser" data-title="基于浏览器直接打开链接来下载文件，适用于较为古老但支持 iframe 的浏览器，点击“直接下载”后需等待下载提示弹出才能点击下个“直接下载”，否则只会下载后者，此方式下载有可能会被 IDM 捕获下载链接" data-filename="${filename}" data-link="${dlink}">直接下载(基于浏览器链接)</button>
+								<button class="pl-item-copy pl-btn-primary listener-copy-all" href="${dlink}" data-filename="${filename}" data-link="${dlink}">复制链接</button>
+								<div class="pl-item-tip" style="display: none"><span>若没有弹出IDM下载框，找到IDM <b>选项</b> -> <b>文件类型</b> -> <b>第一个框</b> 中添加后缀 <span class="pl-ext">${ext}</span>，<a href="${pan.idm}" target="_blank" class="pl-a">详见此处</a></span> <span class="listener-back">返回</span></div>
+								<div class="pl-item-progress" style="display: none">
+									<div class="pl-progress">
+										<div class="pl-progress-outer"></div>
+										<div class="pl-progress-inner" style="width:5%">
+										<div class="pl-progress-inner-text">正在加载进度...0%</div>
+										</div>
+									</div>
+									<span class="pl-progress-stop listener-stop">取消下载</span>
+								`;
+					content += `<span class="pl-progress-tip" style="display: none" >未发现IDM，使用自带浏览器下载</span>
+								<span class="pl-progress-back listener-back" style="display: none">返回</span>
+								<span class="pl-progress-how listener-how" style="display: none">如何唤起IDM？</span>
+								`;
+					content += `</div></div>`
 				}
 				if (mode === 'aria') {
 					let alink = this.convertLinkToAria(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制aria2c链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 aria2c 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'rpc') {
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><em class="icon icon-device"></em><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
+								<button class="pl-item-link listener-link-rpc pl-btn-primary pl-btn-info" data-filename="${filename}" data-link="${dlink}"><svg class="icon-rpc-devices" viewBox="-10 0 1034 1024"><g transform="matrix(1 0 0 -1 0 960)"><path fill="currentColor" d="M832 -64h-640q-53 0 -90.5 37.5t-37.5 90.5v768q0 53 37.5 90.5t90.5 37.5h640q53 0 90.5 -37.5t37.5 -90.5v-768q0 -53 -37.5 -90.5t-90.5 -37.5zM832 768q0 27 -18.5 45.5t-45.5 18.5h-512q-27 0 -45.5 -18.5t-18.5 -45.5v-320h640v320v0zM832 320h-640v-192q0 -27 18.5 -45.5t45.5 -18.5h512q27 0 45.5 18.5t18.5 45.5v192v0zM512 128q-27 0 -45.5 18.5t-18.5 45.5t18.5 45.5t45.5 18.5t45.5 -18.5t18.5 -45.5t-18.5 -45.5t-45.5 -18.5z" /></g></svg><span style="margin-left: 5px;">将 ${filename} 推送到 RPC 下载器</span></button></div>`;
 				}
 				if (mode === 'curl') {
 					let alink = this.convertLinkToCurl(dlink, filename, navigator.userAgent);
 					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
-								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制curl链接" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
+								<a class="pl-item-link listener-link-aria" href="${alink}" title="点击复制 curl 命令行" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>复制 ${filename} 下载命令行</a> </div>`;
 				}
 				if (mode === 'bc') {
 					let alink = this.convertLinkToBC(dlink, filename, navigator.userAgent);
+					alinkAllText += alink + '\r\n';
 					content += `<div class="pl-item">
 								<div class="pl-item-name listener-tip" data-size="${size}">${filename}</div>
 								<a class="pl-item-link" href="${decodeURIComponent(alink)}" title="点击用比特彗星下载" data-filename="${filename}" data-link="${alink}">${decodeURIComponent(alink)}<br/>下载 ${filename}</a> </div>`;
@@ -5545,16 +6485,20 @@
 			});
 			content += '</div>';
 			if (mode === 'api') {
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all-api" data-link="${alinkAllText}">复制全部链接</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-download-all">全部增强下载</button><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
 			}
 			if (mode === 'aria')
 				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button></div>`;
 			if (mode === 'rpc') {
 				let rpc = base.getValue('setting_rpc_domain') + ':' + base.getValue('setting_rpc_port') + base.getValue('setting_rpc_path');
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">设置 RPC 参数（当前为：${rpc}）</button><button class="pl-btn-primary pl-btn-success listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-send-rpc">发送全部链接</button><button title="${rpc}" class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px">修改 RPC 参数（${rpc}）</button><button class="pl-btn-primary pl-btn-success pl-btn-opacity listener-rpc-task" style="margin-left: 10px;display: none">查看下载任务</button></div>`;
 			}
-			if (mode === 'curl')
-				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">设置终端类型（当前为：${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			if (mode === 'curl') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部命令行</button><button class="pl-btn-primary pl-btn-warning listener-open-setting" style="margin-left: 10px;">修改终端类型（${terminalType[base.getValue('setting_terminal_type')]}）</button></div>`;
+			}
+			if (mode === 'bc') {
+				content += `<div class="pl-extra"><button class="pl-btn-primary listener-copy-all" data-link="${alinkAllText}">复制全部链接</button></div>`;
+			}
 			return content;
 		},
 
@@ -5725,8 +6669,13 @@
 									</a>
 								</li>
 								<li class="dropdown-subitem">
+									<a href="javascript:void(0)" class="listener-open-beautify nav-link">
+										🍃️ 助手美化
+									</a>
+								</li>
+								<li class="dropdown-subitem">
 									<a href="javascript:void(0)" class="listener-open-updatelog nav-link">
-										📃 更新日志
+										📃️ 更新日志
 									</a>
 								</li>
 							</ul>
@@ -5740,6 +6689,9 @@
 			});
 			doc.on('click', '.listener-open-updatelog', function () {
 				base.showUpdateLog();
+			});
+			doc.on('click', '.listener-open-beautify', function () {
+				base.showBeautify();
 			});
 			doc.on('click', '.listener-open-info', function () {
 				base.showDebug();
