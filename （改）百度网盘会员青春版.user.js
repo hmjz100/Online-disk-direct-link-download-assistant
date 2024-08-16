@@ -7,7 +7,7 @@
 // @grant       GM_addStyle
 // @grant       unsafeWindow
 // @run-at      document-start
-// @version     1.2.1
+// @version     1.2.2
 // @license     MIT
 // @author      Hmjz100、Gwen
 // @description 显示身份信息为会员身份，支持修改视频倍速、字幕等功能，需要修改代码来配置显示内容。
@@ -303,15 +303,19 @@
     //禁止毒盘分析网页信息
     unsafeWindow.Image = function () {
         const img = new Image();
-        Object.defineProperty(img, 'src', {
-            set(value) {
-                (value.includes('analytics') || value.includes('ztbox')) ? "console.warn('new Image\n禁止分析网页信息:', value)" : (img.src = value);
+        return new Proxy(img, {
+            set(target, prop, value) {
+                if (prop === 'src' && (value.includes('analytics') || value.includes('ztbox'))) {
+                    console.warn('new Image\n禁止分析网页信息:', value);
+                    return true; // 阻止设置
+                }
+                target[prop] = value; // 设置其他属性
+                return true;
             },
-            get() {
-                return img.src;
+            get(target, prop) {
+                return target[prop]; // 获取属性值
             }
         });
-        return img;
     };
     const originalCreateElement = document.createElement;
     unsafeWindow.document.createElement = function (tagName) {
