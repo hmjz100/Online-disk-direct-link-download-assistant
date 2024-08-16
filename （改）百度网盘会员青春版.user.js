@@ -7,10 +7,10 @@
 // @grant       GM_addStyle
 // @grant       unsafeWindow
 // @run-at      document-start
-// @version     1.2.2
+// @version     1.2.3
 // @license     MIT
 // @author      Hmjz100、Gwen
-// @description 显示身份信息为会员身份，支持修改视频倍速、字幕等功能，需要修改代码来配置显示内容。
+// @description 显示身份信息为会员身份，支持修改视频倍速、字幕、头像、用户名等功能，自定义程度超高！需要修改头部代码来配置显示内容（非常简单！）
 // @require     https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
 // ==/UserScript==
 
@@ -18,9 +18,21 @@
     'use strict';
 
     var user = {
-        vip: 1, // 开启修改（总开关）
-        svip: 1, // 显示为超级会员，默认1
-        previous: 0, // 显示为会员过期，默认0，变为仅修改历史最高的会员类型、等级
+        // 以下设置项中，常规项目（就是以//开头注释的项目）除非特殊说明，否则一般 0 为关闭，1 为开启
+        vip: 1, // 开启会员修改（总开关）
+        svip: 1, // 显示为超级会员，建议 1
+        previous: 0, // 显示为会员过期，建议 0，变为仅修改历史最高的会员类型、等级
+
+        // 以下的常规项目（就是以//开头注释的项目）均为独立功能，不受总开关控制
+        aiChat: 0, // 显示云一朵 AI 聊天的相关功能，建议 0，相关功能大多数都是在右上角的 AI 聊天的右侧边栏入口中
+        aiCollect: 0, // 显示百度网盘 AI 看的相关入口，建议 0，作用于左侧边栏
+        versionSwitchButton: 1, // 显示百度网盘的新旧版界面切换按钮，建议 0
+        feedbackButton: 0, // 显示百度网盘的反馈录屏工具的相关入口，建议 0
+        pfileView: 1, // 在线打开文档时，使用新版在线文档查看器，而不是旧版的在线 WPS 文档查看器，建议 1
+        analytics: 0, // 允许百度网盘网页分析浏览信息，建议 0，分析原理是以 new Image 或 document.createElement("img") 的形式让浏览器访问特殊的图片来给服务器传递信息
+        debug: 0, // 显示本脚本的调试信息到 JavaScript 控制台中，建议 0，另外，1 显示所有，2 仅显示 Hook 修改参数，3 仅显示禁用网页分析
+
+        // 以下是自定义项目（以/*开头注释的项目），修改也非常简单
         /*
         自定义用户名与头像，留空则使用已登录账号数据
         */
@@ -51,22 +63,6 @@
         adToken: null,
     }
 
-    GM_addStyle(`
-		/* 帮助百度网盘修正错误的会员色 */
-		dt.level-1 {
-			background: #fd6d65 !important;
-		}
-		dt.level-2 {
-			background: #f3a723 !important;
-		}
-		dt.level-1 i.desc-arrow {
-			border-bottom: 10px solid #dd6966 !important;
-		}
-		dt.level-2 i.desc-arrow {
-			border-bottom: 10px solid #d29633 !important;
-		}
-	`)
-
     var originalOpen = XMLHttpRequest.prototype.open;
     unsafeWindow.XMLHttpRequest.prototype.open = function (method, url) {
         url = new URL(url, window.location.origin).toString()
@@ -85,7 +81,7 @@
                     user.vip === 1 && user.previous === 0 ? res.login_info.vip_point = user.point : ""
                     user.photo ? res.login_info["photo_url"] = user.photo : ""
                     user.name ? res.login_info.username = user.name : ""
-                    console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
                     Object.defineProperty(this, "responseText", {
                         writable: true,
                     });
@@ -112,7 +108,7 @@
                     user.photo ? res.user_info.photo = user.photo : "";
                     user.vip_id ? res.user_info.vipsid = user.vip_id : "";
                     user.endtime ? res.user_info.phone = user.endtime.toString() : "";
-                    console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
                     Object.defineProperty(this, "responseText", {
                         writable: true,
                     });
@@ -207,7 +203,7 @@
                         "expired_time": 946656000
                     } : ""
 
-                    console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
 
                     Object.defineProperty(this, "response", {
                         writable: true,
@@ -226,7 +222,7 @@
                 pureURL += ('&adToken=' + encodeURIComponent(user.adToken))
                 this.adToken = user.adToken
                 user.adToken = null
-                console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n修改地址:", pureURL)
+                if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n修改地址:", pureURL)
                 originalOpen.call(this, method, pureURL, false);
             } else {
                 this.addEventListener('readystatechange', function () {
@@ -254,7 +250,7 @@
                             res.adTime = 100
                         }
 
-                        console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", log || res)
+                        if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", log || res)
 
                         Object.defineProperty(this, "responseText", {
                             writable: true,
@@ -275,10 +271,112 @@
                     }
                     res.ltime = 0.00001
                     res.adTime = 0.00001
-                    console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
                     Object.defineProperty(this, 'responseText', {
                         writable: true,
                     })
+                    this.responseText = JSON.stringify(res)
+                }
+            })
+            originalOpen.apply(this, arguments);
+        } else if (url.includes('/api/getsyscfg') && url.includes('huge_upgrade')) {
+            this.addEventListener('readystatechange', function () {
+                if (this.readyState == 4) {
+                    let res, oriRes
+                    try {
+                        res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
+                    } catch (e) {
+                        res = this.response, oriRes = this.response
+                    }
+                    res.huge_upgrade.cfg_list[1].show_features = (user.feedbackButton === 0 ? "0" : "1")
+                    res.huge_upgrade.cfg_list[0].new_nav_show = (user.versionSwitchButton === 0 ? "0" : "1")
+                    res.huge_upgrade.cfg_list[0].new_nav_href = "https://pan.baidu.com/disk/main"
+                    res.huge_upgrade.cfg_list[0].old_nav_show = (user.versionSwitchButton === 0 ? "0" : "1")
+                    res.huge_upgrade.cfg_list[0].old_nav_href = "https://pan.baidu.com/disk/home?stayAtHome=true"
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    Object.defineProperty(this, "response", {
+                        writable: true,
+                    });
+                    Object.defineProperty(this, "responseText", {
+                        writable: true,
+                    });
+                    this.response = JSON.stringify(res)
+                    this.responseText = JSON.stringify(res)
+                }
+            })
+            originalOpen.apply(this, arguments);
+        } else if (url.includes('/api/getsyscfg') && url.includes('netdisk_docchat_config')) {
+            user.aiChat === 0 ? this.addEventListener('readystatechange', function () {
+                if (this.readyState == 4) {
+                    let res, oriRes
+                    try {
+                        res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
+                    } catch (e) {
+                        res = this.response, oriRes = this.response
+                    }
+                    res.netdisk_docchat_config.cfg_list[0].is_chat_show = "0"
+                    res.netdisk_docchat_config.cfg_list[0].is_docview_chat_auto_show = "0"
+                    res.netdisk_docchat_config.cfg_list[0].is_docview_chat_show = "0"
+                    res.netdisk_docchat_config.cfg_list[0].is_home_need_out_sug = "0"
+                    res.netdisk_docchat_config.cfg_list[0].is_main_chat_show = "0"
+                    res.netdisk_docchat_config.cfg_list[0].is_videoview_chat_auto_show = "0"
+                    res.netdisk_docchat_config.cfg_list[0].is_videoview_chat_show = "0"
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    Object.defineProperty(this, "response", {
+                        writable: true,
+                    });
+                    Object.defineProperty(this, "responseText", {
+                        writable: true,
+                    });
+                    this.response = JSON.stringify(res)
+                    this.responseText = JSON.stringify(res)
+                }
+            }) : ""
+            originalOpen.apply(this, arguments);
+        } else if (url.includes('/api/getsyscfg') && url.includes('ai_collect')) {
+            user.aiCollect === 0 ? this.addEventListener('readystatechange', function () {
+                if (this.readyState == 4) {
+                    let res, oriRes
+                    try {
+                        res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
+                    } catch (e) {
+                        res = this.response, oriRes = this.response
+                    }
+                    res.ai_collect.cfg_list[0].is_ai_collect_show = "0"
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    Object.defineProperty(this, "response", {
+                        writable: true,
+                    });
+                    Object.defineProperty(this, "responseText", {
+                        writable: true,
+                    });
+                    this.response = JSON.stringify(res)
+                    this.responseText = JSON.stringify(res)
+                }
+            }) : ""
+            originalOpen.apply(this, arguments);
+        } else if (url.includes('/api/getsyscfg') && url.includes('netdisk_docview_config')) {
+            this.addEventListener('readystatechange', function () {
+                if (this.readyState == 4) {
+                    let res, oriRes
+                    try {
+                        res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
+                    } catch (e) {
+                        res = this.response, oriRes = this.response
+                    }
+                    res.netdisk_docview_config.cfg_list[0].auto_search_to_ai = (user.aiChat === 0 ? "0" : "1")
+                    res.netdisk_docview_config.cfg_list[0].use_pfile_for_doc = (user.pfileView === 0 ? "0" : "1")
+                    res.netdisk_docview_config.cfg_list[0].use_pfile_for_ppt = (user.pfileView === 0 ? "0" : "1")
+                    res.netdisk_docview_config.cfg_list[0].use_pfile_reader = (user.pfileView === 0 ? "0" : "1")
+                    res.netdisk_docview_config.cfg_list[0].use_wps_reader = (user.pfileView === 0 ? "1" : "0")
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    Object.defineProperty(this, "response", {
+                        writable: true,
+                    });
+                    Object.defineProperty(this, "responseText", {
+                        writable: true,
+                    });
+                    this.response = JSON.stringify(res)
                     this.responseText = JSON.stringify(res)
                 }
             })
@@ -289,24 +387,30 @@
     }
     var hookedOpen = unsafeWindow.XMLHttpRequest.prototype.open
 
-    waitForKeyElements(`.vp-video__control-bar--playback-rates button`, function (element) {
-        element.on('click', function () {
-            XMLHttpRequest.prototype.open = originalOpen;
-            setTimeout(function () {
-                XMLHttpRequest.prototype.open = hookedOpen;
-            }, 10)
-        })
-    })
+    GM_addStyle(`
+		/* 帮助百度网盘修正错误的会员色 */
+		dt.level-1 {
+			background: #fd6d65 !important;
+		}
+		dt.level-2 {
+			background: #f3a723 !important;
+		}
+		dt.level-1 i.desc-arrow {
+			border-bottom: 10px solid #dd6966 !important;
+		}
+		dt.level-2 i.desc-arrow {
+			border-bottom: 10px solid #d29633 !important;
+		}
+	`)
 
-
-
-    //禁止毒盘分析网页信息
+    // 禁止分析网页信息
     unsafeWindow.Image = function () {
         const img = new Image();
         return new Proxy(img, {
             set(target, prop, value) {
                 if (prop === 'src' && (value.includes('analytics') || value.includes('ztbox'))) {
-                    console.warn('new Image\n禁止分析网页信息:', value);
+                    let url = new URL(value, location.origin);
+                    if (user.debug === 1 || user.debug === 3) console.warn("【百度网盘会员青春版】unAnalytics", '\n类型：new Image\n禁止网页分析信息:', url.toString());
                     return true; // 阻止设置
                 }
                 target[prop] = value; // 设置其他属性
@@ -323,7 +427,13 @@
         if (tagName.toLowerCase() === 'img') {
             Object.defineProperty(element, 'src', {
                 set(value) {
-                    (value.includes('analytics') || value.includes('ztbox')) ? "console.warn('doc.createElement\n禁止分析网页信息:', value)" : (element.setAttribute('src', value));
+                    if (value.includes('analytics') || value.includes('ztbox')) {
+                        let url = new URL(value, location.origin);
+                        if (user.debug === 1 || user.debug === 3) console.warn("【百度网盘会员青春版】unAnalytics", '\n类型：document.createElement("img")\n禁止网页分析信息:', url.toString())
+                        return true;
+                    } else {
+                        element.setAttribute('src', value)
+                    }
                 },
                 get() {
                     return element.getAttribute('src');
@@ -332,6 +442,15 @@
         }
         return element;
     };
+
+    waitForKeyElements(`.vp-video__control-bar--playback-rates button`, function (element) {
+        element.on('click', function () {
+            XMLHttpRequest.prototype.open = originalOpen;
+            setTimeout(function () {
+                XMLHttpRequest.prototype.open = hookedOpen;
+            }, 10)
+        })
+    })
 
     let localsTimer = setInterval(() => {
         if (!unsafeWindow.locals) return
@@ -355,7 +474,7 @@
                     user.photo ? args[1] = user.photo : "";
                 }
                 if (oriarg !== args[1]) {
-                    console.log("【百度网盘会员青春版】Hook Locals", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook Locals", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
                 }
             }
             originalSet.apply(this, args);
@@ -379,7 +498,7 @@
             'vip_level': user.level ? user.level : "",
             'show_vip_ad': 0
         })
-        console.log("【百度网盘会员青春版】Hook", "\nLocals:", locals)
+        if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook", "\nLocals:", locals)
     }, 1)
 
     let yunDataTimer = setInterval(() => {
@@ -411,7 +530,7 @@
                     user.name ? newargs.username = user.name : "";
                 }
                 if (JSON.stringify(oriargs) !== JSON.stringify(newargs)) {
-                    console.log("【百度网盘会员青春版】Hook yunData", "\n原始数据:", oriargs, "\n修改数据:", newargs);
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook yunData", "\n原始数据:", oriargs, "\n修改数据:", newargs);
                 }
             } else {
                 let oriarg = args[1]
@@ -429,7 +548,7 @@
                     user.photo ? args[1] = user.photo : "";
                 }
                 if (oriarg !== args[1]) {
-                    console.log("【百度网盘会员青春版】Hook yunData", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
+                    if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook yunData", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
                 }
             }
             originalSet.apply(this, args);
@@ -447,7 +566,7 @@
         yunData.is_vip_v2 = user.vip === 1 && user.previous === 0 ? 1 : 0
         yunData.is_svip_v2_new = user.svip === 1 ? 1 : 0
         user.vip ? yunData.show_vip_ad = 0 : ""
-        console.log("【百度网盘会员青春版】Hook", "\nyunData:", yunData)
+        if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook", "\nyunData:", yunData)
     }, 1)
 
     let yunDataRequireTimer = setInterval(() => {
@@ -484,7 +603,7 @@
                         user.name ? newargs.username = user.name : "";
                     }
                     if (JSON.stringify(oriargs) !== JSON.stringify(newargs)) {
-                        console.log("【百度网盘会员青春版】Hook yunDataModule", "\n原始数据:", oriargs, "\n修改数据:", newargs);
+                        if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook yunDataModule", "\n原始数据:", oriargs, "\n修改数据:", newargs);
                     }
                 } else {
                     let oriarg = args[1]
@@ -502,12 +621,12 @@
                         user.photo ? args[1] = user.photo : "";
                     }
                     if (oriarg !== args[1]) {
-                        console.log("【百度网盘会员青春版】Hook yunDataModule", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
+                        if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook yunDataModule", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
                     }
                 }
                 originalSet.apply(this, args);
             }
-            console.log("【百度网盘会员青春版】Hook", "\nyunDataModule:", yunData)
+            if (user.debug === 1 || user.debug === 2) console.log("【百度网盘会员青春版】Hook", "\nyunDataModule:", yunData)
 
         })
     }, 1)
