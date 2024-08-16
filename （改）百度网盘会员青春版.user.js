@@ -7,51 +7,52 @@
 // @grant       GM_addStyle
 // @grant       unsafeWindow
 // @run-at      document-start
-// @version     1.2
+// @version     1.2.1
 // @license     MIT
 // @author      Hmjz100、Gwen
-// @description 修改身份信息为会员身份，支持修改视频倍速、字幕等功能，需要修改代码来配置显示内容。
+// @description 显示身份信息为会员身份，支持修改视频倍速、字幕等功能，需要修改代码来配置显示内容。
+// @require     https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
 // ==/UserScript==
 
 (function () {
-	'use strict';
+    'use strict';
 
-	var user = {
-		vip: 1, // 开启修改（总开关）
-		svip: 1, // 显示为超级会员，默认1
-		previous: 0, // 显示为会员过期，默认0，变为仅修改历史最高的会员类型、等级
-		/*
-		自定义用户名与头像，留空则使用已登录账号数据
-		*/
-		name: "百湿不得其解",
-		photo: "https://bkimg.cdn.bcebos.com/pic/cdbf6c81800a19d8bc3e5cfd95ab958ba61ea9d3e8b3",
-		/*
-		会员等级与成长值，可留空为""
-		普通会员等级最高为 10 (以前是 8)
-		超级会员等级最高为 10
-		超级会员 1~10 的成长值分别为 0 1000 3000 7000 15000 27000 43000 56000 88000 152000，后两个值为猜测
-		*/
-		level: 10,
-		point: 152000,
-		/*
-		自定义会员ID，留空则使用已登录账号数据
-		据网上观察应为六位数，没找到显示的地方，改不改无所谓
-		*/
-		vip_id: "000001 - What's your problem?",
-		/* 
-		会员过期时间 格式为Unix时间戳，可留空为""
-		1562118175 - 2019-07-03 09:42:55 (宏彦获水时)
-		2147483648 - 2038-01-19 11:14:08 (2038问题时)
-		253402185600 - 9999-12-31 00:00:00 (终极时)
-		*/
-		endtime: 253402185600,
+    var user = {
+        vip: 1, // 开启修改（总开关）
+        svip: 1, // 显示为超级会员，默认1
+        previous: 0, // 显示为会员过期，默认0，变为仅修改历史最高的会员类型、等级
+        /*
+        自定义用户名与头像，留空则使用已登录账号数据
+        */
+        name: "百湿不得其解",
+        photo: "https://bkimg.cdn.bcebos.com/pic/cdbf6c81800a19d8bc3e5cfd95ab958ba61ea9d3e8b3",
+        /*
+        会员等级与成长值，可留空为""
+        普通会员等级最高为 10 (以前是 8)
+        超级会员等级最高为 10
+        超级会员 1~10 的成长值分别为 0 1000 3000 7000 15000 27000 43000 56000 88000 152000，后两个值为猜测
+        */
+        level: 10,
+        point: 152000,
+        /*
+        自定义会员ID，留空则使用已登录账号数据
+        据网上观察应为六位数，没找到显示的地方，改不改无所谓
+        */
+        vip_id: "000001 - What's your problem?",
+        /*
+        会员过期时间 格式为Unix时间戳，可留空为""
+        1562118175 - 2019-07-03 09:42:55 (宏彦获水时)
+        2147483648 - 2038-01-19 11:14:08 (2038问题时)
+        253402185600 - 9999-12-31 00:00:00 (终极时)
+        */
+        endtime: 253402185600,
 
-		// 以下是关键参数，不能修改
-		adToken: null,
-	}
+        // 以下是关键参数，不能修改
+        adToken: null,
+    }
 
-	GM_addStyle(`
-		/* 修正错误的会员色 */
+    GM_addStyle(`
+		/* 帮助百度网盘修正错误的会员色 */
 		dt.level-1 {
 			background: #fd6d65 !important;
 		}
@@ -66,382 +67,493 @@
 		}
 	`)
 
-	var originOpen = XMLHttpRequest.prototype.open;
-	XMLHttpRequest.prototype.open = function (method, url) {
-		url = new URL(url, window.location.origin).toString()
-		if (url.includes('/api/loginStatus')) {
-			this.addEventListener('readystatechange', function () {
-				if (this.readyState == 4) {
-					let res, oriRes
-					try {
-						res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
-					} catch (e) {
-						res = this.response, oriRes = this.response
-					}
-					user.vip === 1 && user.previous === 0 ? res.login_info.vip_type = `${user.svip === 1 ? 2 : 1}1` : ""
-					user.vip === 1 && user.previous === 0 ? res.login_info.vip_identity = `${user.svip === 1 ? 2 : 1}1` : ""
-					user.vip === 1 && user.previous === 0 ? res.login_info.vip_level = user.level : ""
-					user.vip === 1 && user.previous === 0 ? res.login_info.vip_point = user.point : ""
-					user.photo ? res.login_info["photo_url"] = user.photo : ""
-					user.name ? res.login_info.username = user.name : ""
-					console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
-					Object.defineProperty(this, "responseText", {
-						writable: true,
-					});
-					this.responseText = JSON.stringify(res)
-				}
-			})
-			originOpen.apply(this, arguments);
-		} else if (url.includes('/user/info')) {
-			user.vip === 1 && user.previous === 0 ? this.addEventListener('readystatechange', function () {
-				if (this.readyState == 4) {
-					let res, oriRes
-					try {
-						res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
-					} catch (e) {
-						res = this.response, oriRes = this.response
-					}
-					res.user_info.is_vip = user.vip
-					res.user_info.is_svip = user.svip
-					res.user_info.is_plus_buy = user.vip
-					user.name ? res.user_info.username = user.name : "";
-					user.photo ? res.user_info.photo = user.photo : "";
-					user.vip_id ? res.user_info.vipsid = user.vip_id : "";
-					user.endtime ? res.user_info.phone = user.endtime.toString() : "";
-					console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
-					Object.defineProperty(this, "responseText", {
-						writable: true,
-					});
-					Object.defineProperty(this, "response", {
-						writable: true,
-					});
-					Object.defineProperty(this, "responseText", {
-						writable: true,
-					});
-					this.response = JSON.stringify(res)
-					this.responseText = JSON.stringify(res)
-				}
-			}) : ""
-			originOpen.apply(this, arguments);
-		} else if (url.includes('/membership/user') && !url.includes('method=rights')) {
-			this.addEventListener('readystatechange', function () {
-				if (this.readyState == 4) {
-					let res, oriRes
-					try {
-						res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
-					} catch (e) {
-						res = this.response, oriRes = this.response
-					}
-					// 决定网页显示会员标识
-					user.vip === 1 && user.previous === 0 ? res.current_product = {
-						"cluster": "vip",
-						"detail_cluster": user.svip === 1 ? "svip" : "vip", // 决定修改会员标签
-						"product_type": user.svip === 1 ? `vip2_1m_auto` : `vip_1m_auto`,
-						"product_id": "12187135090581539740"
-					} : ""
-					user.vip === 1 && user.previous === 0 ? res.current_product_v2 = {
-						"cluster": "vip",
-						"detail_cluster": user.svip === 1 ? "svip" : "vip", // 决定修改会员标签
-						"product_type": user.svip === 1 ? `vip2_1m_auto` : `vip_1m_auto`,
-						"product_id": "12187135090581539740"
-					} : ""
+    var originalOpen = XMLHttpRequest.prototype.open;
+    unsafeWindow.XMLHttpRequest.prototype.open = function (method, url) {
+        url = new URL(url, window.location.origin).toString()
+        if (url.includes('/api/loginStatus')) {
+            this.addEventListener('readystatechange', function () {
+                if (this.readyState == 4) {
+                    let res, oriRes
+                    try {
+                        res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
+                    } catch (e) {
+                        res = this.response, oriRes = this.response
+                    }
+                    user.vip === 1 && user.previous === 0 ? res.login_info.vip_type = `${user.svip === 1 ? 2 : 1}1` : ""
+                    user.vip === 1 && user.previous === 0 ? res.login_info.vip_identity = `${user.svip === 1 ? 2 : 1}1` : ""
+                    user.vip === 1 && user.previous === 0 ? res.login_info.vip_level = user.level : ""
+                    user.vip === 1 && user.previous === 0 ? res.login_info.vip_point = user.point : ""
+                    user.photo ? res.login_info["photo_url"] = user.photo : ""
+                    user.name ? res.login_info.username = user.name : ""
+                    console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    Object.defineProperty(this, "responseText", {
+                        writable: true,
+                    });
+                    this.responseText = JSON.stringify(res)
+                    Object.defineProperty(this, "responseText", {
+                        writable: false,
+                    });
+                }
+            })
+            originalOpen.apply(this, arguments);
+        } else if (url.includes('/user/info')) {
+            user.vip === 1 && user.previous === 0 ? this.addEventListener('readystatechange', function () {
+                if (this.readyState == 4) {
+                    let res, oriRes
+                    try {
+                        res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
+                    } catch (e) {
+                        res = this.response, oriRes = this.response
+                    }
+                    res.user_info.is_vip = user.vip
+                    res.user_info.is_svip = user.svip
+                    res.user_info.is_plus_buy = user.vip
+                    user.name ? res.user_info.username = user.name : "";
+                    user.photo ? res.user_info.photo = user.photo : "";
+                    user.vip_id ? res.user_info.vipsid = user.vip_id : "";
+                    user.endtime ? res.user_info.phone = user.endtime.toString() : "";
+                    console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    Object.defineProperty(this, "responseText", {
+                        writable: true,
+                    });
+                    Object.defineProperty(this, "response", {
+                        writable: true,
+                    });
+                    this.response = JSON.stringify(res)
+                    this.responseText = JSON.stringify(res)
+                }
+            }) : ""
+            originalOpen.apply(this, arguments);
+        } else if (url.includes('/membership/user') && !url.includes('method=rights')) {
+            this.addEventListener('readystatechange', function () {
+                if (this.readyState == 4) {
+                    let res, oriRes
+                    try {
+                        res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
+                    } catch (e) {
+                        res = this.response, oriRes = this.response
+                    }
+                    // 决定网页显示会员标识
+                    user.vip === 1 && user.previous === 0 ? res.current_product = {
+                        "cluster": "vip",
+                        "detail_cluster": user.svip === 1 ? "svip" : "vip", // 决定修改会员标签
+                        "product_type": user.svip === 1 ? `vip2_1m_auto` : `vip_1m_auto`,
+                        "product_id": "12187135090581539740"
+                    } : ""
+                    user.vip === 1 && user.previous === 0 ? res.current_product_v2 = {
+                        "cluster": "vip",
+                        "detail_cluster": user.svip === 1 ? "svip" : "vip", // 决定修改会员标签
+                        "product_type": user.svip === 1 ? `vip2_1m_auto` : `vip_1m_auto`,
+                        "product_id": "12187135090581539740"
+                    } : ""
 
-					// 决定网页显示会员等级
-					user.vip === 1 ? res.level_info = {
-						...res.level_info,
-						"current_value": user.point, // 决定所有会员标签
-						"current_level": user.level, // 决定所有会员标签
-						"history_value": user.point,
-						"history_level": user.level,
-						"v10_id": user.vip_id ? user.vip_id : "",
-						"last_manual_collection_time": 0
-					} : ""
+                    // 决定网页显示会员等级
+                    user.vip === 1 ? res.level_info = {
+                        ...res.level_info,
+                        "current_value": user.point, // 决定所有会员标签
+                        "current_level": user.level, // 决定所有会员标签
+                        "history_value": user.point,
+                        "history_level": user.level,
+                        "v10_id": user.vip_id ? user.vip_id : "",
+                        "last_manual_collection_time": 0
+                    } : ""
 
-					// 决定网页展示会员剩余时间
-					user.vip === 1 && user.previous === 0 && user.svip === 0 ? res.reminder = {
-						...res.reminder,
-						"vip": {
-							"leftseconds": ((user.endtime ? user.endtime : 2147483648) * 1000 - Date.now()) / 1000,
-							"nextState": "normal"
-						}
-					} : user.svip === 1 && user.previous === 0 ? res.reminder = {
-						...res.reminder,
-						"svip": {
-							"leftseconds": ((user.endtime ? user.endtime : 2147483648) * 1000 - Date.now()) / 1000,
-							"nextState": "normal"
-						}
-					} : ""
+                    if (user.vip === 1 && res.privilege_list) {
+                        [...res.privilege_list].forEach(item => {
+                            item.free_count = 100
+                        })
+                    }
 
-					// 其它（已有套餐、之前套餐）
-					user.vip === 1 && user.previous === 0 ? res.product_infos = [{
-						"product_id": "12187135090581539740",
-						"buy_time": "946656000",
-						"start_time": 946656000,
-						"end_time": user.endtime ? user.endtime : 2147483648,
-						"cluster": "vip",
-						"detail_cluster": user.svip === 1 ? "svip" : "vip",
-						"product_name": user.svip === 1 ? "svip2_nd" : "vip1_nd",
-						"cur_svip_type": "year",
-						"function_num": 8,
-						"status": 0,
-						"buy_description": "超级SVIP套餐(永久)",
-						"product_description": "自打百度一诞生我就买了！"
-					}, ...res.product_infos] : ""
-					user.vip === 1 ? res.previous_product = {
-						"cluster": "vip",
-						"detail_cluster": user.svip === 1 ? "svip" : "vip", // 决定之前会员标签
-						"product_type": user.svip === 1 ? `vip2_1m_auto` : `vip_1m_auto`,
-						"expired_time": 946656000
-					} : ""
-					user.vip === 1 ? res.previous_product_v2 = {
-						"cluster": "vip",
-						"detail_cluster": user.svip === 1 ? "svip" : "vip", // 决定之前会员标签
-						"product_type": user.svip === 1 ? `vip2_1m_auto` : `vip_1m_auto`,
-						"expired_time": 946656000
-					} : ""
+                    // 决定网页展示会员剩余时间
+                    user.vip === 1 && user.previous === 0 && user.svip === 0 ? res.reminder = {
+                        ...res.reminder,
+                        "vip": {
+                            "leftseconds": ((user.endtime ? user.endtime : 2147483648) * 1000 - Date.now()) / 1000,
+                            "nextState": "normal"
+                        }
+                    } : user.svip === 1 && user.previous === 0 ? res.reminder = {
+                        ...res.reminder,
+                        "svip": {
+                            "leftseconds": ((user.endtime ? user.endtime : 2147483648) * 1000 - Date.now()) / 1000,
+                            "nextState": "normal"
+                        }
+                    } : ""
 
-					console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    // 其它（已有套餐、之前套餐）
+                    user.vip === 1 && user.previous === 0 && res.product_infos ? res.product_infos = [{
+                        "product_id": "12187135090581539740",
+                        "buy_time": "946656000",
+                        "start_time": 946656000,
+                        "end_time": user.endtime ? user.endtime : 2147483648,
+                        "cluster": "vip",
+                        "detail_cluster": user.svip === 1 ? "svip" : "vip",
+                        "product_name": user.svip === 1 ? "svip2_nd" : "vip1_nd",
+                        "cur_svip_type": "year",
+                        "function_num": 8,
+                        "status": 0,
+                        "buy_description": "超级SVIP套餐(永久)",
+                        "product_description": "自打百度一诞生我就买了！"
+                    }, ...res.product_infos] : ""
+                    user.vip === 1 ? res.previous_product = {
+                        "cluster": "vip",
+                        "detail_cluster": user.svip === 1 ? "svip" : "vip", // 决定之前会员标签
+                        "product_type": user.svip === 1 ? `vip2_1m_auto` : `vip_1m_auto`,
+                        "expired_time": 946656000
+                    } : ""
+                    user.vip === 1 ? res.previous_product_v2 = {
+                        "cluster": "vip",
+                        "detail_cluster": user.svip === 1 ? "svip" : "vip", // 决定之前会员标签
+                        "product_type": user.svip === 1 ? `vip2_1m_auto` : `vip_1m_auto`,
+                        "expired_time": 946656000
+                    } : ""
 
-					Object.defineProperty(this, "response", {
-						writable: true,
-					});
-					Object.defineProperty(this, "responseText", {
-						writable: true,
-					});
-					this.response = JSON.stringify(res)
-					this.responseText = JSON.stringify(res)
-				}
-			})
-			originOpen.apply(this, arguments);
-		} else if (url.includes('/api/streaming') && !url.includes('M3U8_SUBTITLE_SRT')) { //获取视频m3u8接口
-			let pureURL = url.replace(/vip=2/, 'vip=0').replace(/_1080&/, '_720&')
-			if (user.adToken) {
-				pureURL += ('&adToken=' + encodeURIComponent(user.adToken))
-				this.adToken = user.adToken
-				user.adToken = null
-				console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n修改地址:", pureURL)
-				originOpen.call(this, method, pureURL, false);
-			} else {
-				this.addEventListener('readystatechange', function () {
-					if (this.readyState == 4 && this.responseText[0] == '{') {
-						let res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText), log
-						user.adToken = res.adToken
+                    console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
 
-						let m3uRequest = new XMLHttpRequest();
-						m3uRequest.open(method, pureURL, false);
-						m3uRequest.send();
-						let m3uText = m3uRequest.responseText
+                    Object.defineProperty(this, "response", {
+                        writable: true,
+                    });
+                    Object.defineProperty(this, "responseText", {
+                        writable: true,
+                    });
+                    this.response = JSON.stringify(res)
+                    this.responseText = JSON.stringify(res)
+                }
+            })
+            originalOpen.apply(this, arguments);
+        } else if (url.includes('/api/streaming') && !url.includes('M3U8_SUBTITLE_SRT')) { //获取视频m3u8接口
+            let pureURL = url.replace(/vip=2/, 'vip=0').replace(/_1080&/, '_720&')
+            if (user.adToken) {
+                pureURL += ('&adToken=' + encodeURIComponent(user.adToken))
+                this.adToken = user.adToken
+                user.adToken = null
+                console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n修改地址:", pureURL)
+                originalOpen.call(this, method, pureURL, false);
+            } else {
+                this.addEventListener('readystatechange', function () {
+                    if (this.readyState == 4 && this.responseText[0] == '{') {
+                        let res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText), log
+                        user.adToken = res.adToken
 
-						Object.defineProperty(this, "status", {
-							writable: true,
-						});
-						this.status = m3uRequest.status;
+                        let m3uRequest = new XMLHttpRequest();
+                        m3uRequest.open(method, pureURL, false);
+                        m3uRequest.send();
+                        let m3uText = m3uRequest.responseText
 
-						if (m3uText.startsWith('#EXTM3U')) {
-							log = "M3U8预览\n" + m3uText.split('\n').slice(0, 5).join('\n')
-							res = m3uText
-						} else {
-							res = JSON.parse(m3uText)
-							res.errno = 133
-							res.ltime = 100
-							res.adTime = 100
-						}
+                        Object.defineProperty(this, "status", {
+                            writable: true,
+                        });
+                        this.status = m3uRequest.status;
 
-						console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", log || res)
+                        if (m3uText.startsWith('#EXTM3U')) {
+                            log = "M3U8预览\n" + m3uText.split('\n').slice(0, 5).join('\n')
+                            res = m3uText
+                        } else {
+                            res = JSON.parse(m3uText)
+                            res.errno = 133
+                            res.ltime = 100
+                            res.adTime = 100
+                        }
 
-						Object.defineProperty(this, "responseText", {
-							writable: true,
-						});
-						this.responseText = res;
-					}
-				})
-				originOpen.call(this, method, pureURL);
-			}
+                        console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", log || res)
 
-		} else if (url.includes('/msg/streaming') || url.includes('/share/streaming')) {
-			this.addEventListener('readystatechange', function () {
-				if (this.readyState == 4 && this.responseText[0] == '{') {
-					let res, oriRes
-					try {
-						res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
-					} catch (e) {
-						res = this.response, oriRes = this.response
-					}
-					res.ltime = 0.00001
-					res.adTime = 0.00001
-					console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
-					Object.defineProperty(this, 'responseText', {
-						writable: true,
-					})
-					this.responseText = JSON.stringify(res)
-				}
-			})
-			originOpen.apply(this, arguments);
-		} else {
-			originOpen.apply(this, arguments);
-		}
-	}
+                        Object.defineProperty(this, "responseText", {
+                            writable: true,
+                        });
+                        this.responseText = res;
+                    }
+                })
+                originalOpen.call(this, method, pureURL);
+            }
+        } else if (url.includes('/msg/streaming') || url.includes('/share/streaming')) {
+            this.addEventListener('readystatechange', function () {
+                if (this.readyState == 4 && this.responseText[0] == '{') {
+                    let res, oriRes
+                    try {
+                        res = JSON.parse(this.responseText), oriRes = JSON.parse(this.responseText)
+                    } catch (e) {
+                        res = this.response, oriRes = this.response
+                    }
+                    res.ltime = 0.00001
+                    res.adTime = 0.00001
+                    console.log("【百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
+                    Object.defineProperty(this, 'responseText', {
+                        writable: true,
+                    })
+                    this.responseText = JSON.stringify(res)
+                }
+            })
+            originalOpen.apply(this, arguments);
+        } else {
+            originalOpen.apply(this, arguments);
+        }
+    }
+    var hookedOpen = unsafeWindow.XMLHttpRequest.prototype.open
 
-	let localsTimer = setInterval(() => {
-		if (!unsafeWindow.locals) return
-		clearInterval(localsTimer)
-		let locals = unsafeWindow.locals
-		let originalSet = locals.set
-		locals.set = function (...args) {
-			if (typeof args[1] == 'number' || typeof args[1] == 'string') {
-				let oriarg = args[1]
-				if (args[0].includes('is_vip')) {
-					args[1] = user.vip === 1 && user.previous === 0 ? 1 : 0
-				} else if (args[0].includes('is_svip')) {
-					args[1] = user.svip === 1 && user.previous === 0 ? 1 : 0;
-				} else if (args[0] === 'vip_level') {
-					user.level ? args[1] = user.level : "";
-				} else if (args[0] === 'v10_id') {
-					user.vip_id ? args[1] = user.vip_id : "";
-				} else if (args[0] === 'username') {
-					user.name ? args[1] = user.name : "";
-				} else if (args[0] === 'photo') {
-					user.photo ? args[1] = user.photo : "";
-				}
-				if (oriarg !== args[1]) console.log("【百度网盘会员青春版】Hook Locals", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
-			}
-			originalSet.apply(this, args);
-		}
-		user.level ? locals.vip_level = user.level : ""
-		locals.is_vip = user.vip === 1 && user.previous === 0 ? 1 : 0
-		locals.is_svip = user.svip === 1 && user.previous === 0 ? 1 : 0
-		user.vip === 1 && user.previous === 0 ? locals.show_vip_ad = 0 : ""
-		user.photo ? locals.photo = user.photo : ""
-		user.name ? locals.username = user.name : ""
-		if (/\/s\/.*?\?fid=.*?/.test(location.href)) unsafeWindow.locals.self = 1
-		if (locals.userInfo) {
-			user.level ? locals.userInfo.vip_level = user.level : ""
-			user.vip === 1 && user.previous === 0 ? locals.userInfo.vip_identity = `${user.svip === 1 ? 2 : 1}1` : ""
-			user.photo ? locals.userInfo["photo_url"] = user.photo : ""
-			user.name ? locals.userInfo.username = user.name : ""
-		}
-		if (locals.mset && user.vip === 1 && user.previous === 0) locals.mset({
-			'is_vip': user.vip === 1 && user.previous === 0 ? 1 : 0,
-			'is_svip': user.svip === 1 && user.previous === 0 ? 1 : 0,
-			'vip_level': user.level ? user.level : "",
-			'show_vip_ad': 0
-		})
-		console.log("【百度网盘会员青春版】Hook", "\nLocals:", locals)
-	}, 1)
+    waitForKeyElements(`.vp-video__control-bar--playback-rates button`, function (element) {
+        element.on('click', function () {
+            XMLHttpRequest.prototype.open = originalOpen;
+            setTimeout(function () {
+                XMLHttpRequest.prototype.open = hookedOpen;
+            }, 10)
+        })
+    })
 
-	let yunDataTimer = setInterval(() => {
-		if (!unsafeWindow.yunData) return;
-		clearInterval(yunDataTimer)
-		let yunData = unsafeWindow.yunData
 
-		let originalSet = yunData.setData;
-		yunData.setData = function (...args) {
-			if (typeof args[0] === 'object') {
-				let oriargs = { ...args[0] }
-				let newargs = args[0]
-				if (oriargs.hasOwnProperty('is_vip')) {
-					newargs.is_vip = user.vip === 1 && user.previous === 0 ? 1 : 0;
-				}
-				if (oriargs.hasOwnProperty('is_svip')) {
-					newargs.is_svip = user.svip === 1 && user.previous === 0 ? 1 : 0;
-				}
-				if (oriargs.hasOwnProperty('vip_level')) {
-					user.level ? newargs.vip_level = user.level : "";
-				}
-				if (oriargs.hasOwnProperty('v10_id')) {
-					user.vip_id ? newargs.v10_id = user.vip_id : "";
-				}
-				if (oriargs.hasOwnProperty('photo')) {
-					user.photo ? newargs.photo = user.photo : "";
-				}
-				if (oriargs.hasOwnProperty('username')) {
-					user.name ? newargs.username = user.name : "";
-				}
-				if (JSON.stringify(oriargs) !== JSON.stringify(newargs)) console.log("【百度网盘会员青春版】Hook yunData", "\n原始数据:", oriargs, "\n修改数据:", newargs);
-			} else {
-				let oriarg = args[1]
-				if (args[0].includes('is_vip')) {
-					args[1] = user.vip === 1 && user.previous === 0 ? 1 : 0
-				} else if (args[0].includes('is_svip')) {
-					args[1] = user.svip === 1 && user.previous === 0 ? 1 : 0;
-				} else if (args[0] === 'vip_level') {
-					user.level ? args[1] = user.level : "";
-				} else if (args[0] === 'v10_id') {
-					user.vip_id ? args[1] = user.vip_id : "";
-				} else if (args[0] === 'username') {
-					user.name ? args[1] = user.name : "";
-				} else if (args[0] === 'photo') {
-					user.photo ? args[1] = user.photo : "";
-				}
-				if (oriarg !== args[1]) console.log("【百度网盘会员青春版】Hook yunData", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
-			}
-			originalSet.apply(this, args);
-		}
-		user.name ? yunData.username = user.name : ""
-		user.name ? yunData.MYNAME = user.name : ""
-		user.photo ? yunData.MYAVATAR = user.photo : ""
-		user.photo ? yunData.photo = user.photo : ""
-		user.level ? yunData.vip_level = user.level : ""
-		yunData.ISVIP = user.vip === 1 && user.previous === 0 ? 1 : 0
-		yunData.ISSVIP = user.svip === 1 ? 1 : 0
-		user.vip ? yunData.ISYEARVIP = 1 : ""
-		yunData.is_vip = user.vip === 1 && user.previous === 0 ? 1 : 0
-		yunData.is_svip = user.svip === 1 ? 1 : 0
-		yunData.is_vip_v2 = user.vip === 1 && user.previous === 0 ? 1 : 0
-		yunData.is_svip_v2_new = user.svip === 1 ? 1 : 0
-		user.vip ? yunData.show_vip_ad = 0 : ""
-		console.log("【百度网盘会员青春版】Hook", "\nyunData:", yunData)
-	}, 1)
 
-	let yunDataRequireTimer = setInterval(() => {
-		if (!unsafeWindow.require) return;
-		clearInterval(yunDataRequireTimer)
-		require.async('pan-center:widget/data/yunData', function (yunData) {
-			let originalSet = yunData.setData;
-			yunData.setData = function (...args) {
-				if (typeof args[0] === 'object') {
-					let oriargs = { ...args[0] }
-					let newargs = args[0]
-					if (oriargs.hasOwnProperty('is_vip')) {
-						user.vip === 1 && user.previous === 0 ? newargs.is_vip = 1 : newargs.is_vip = 0;
-					}
-					if (oriargs.hasOwnProperty('is_svip')) {
-						user.svip === 1 && user.previous === 0 ? newargs.is_svip = 1 : newargs.is_svip = 0;
-					}
-					if (oriargs.hasOwnProperty('vip_level')) {
-						user.level ? newargs.vip_level = user.level : "";
-					}
-					if (oriargs.hasOwnProperty('v10_id')) {
-						user.vip_id ? newargs.v10_id = user.vip_id : "";
-					}
-					if (oriargs.hasOwnProperty('photo')) {
-						user.photo ? newargs.photo = user.photo : "";
-					}
-					if (oriargs.hasOwnProperty('username')) {
-						user.name ? newargs.username = user.name : "";
-					}
-					if (JSON.stringify(oriargs) !== JSON.stringify(newargs)) console.log("【百度网盘会员青春版】Hook yunDataModule", "\n原始数据:", oriargs, "\n修改数据:", newargs);
-				} else {
-					let oriarg = args[1]
-					if (args[0].includes('is_vip')) {
-						args[1] = user.vip === 1 && user.previous === 0 ? 1 : 0
-					} else if (args[0].includes('is_svip')) {
-						args[1] = user.svip === 1 && user.previous === 0 ? 1 : 0;
-					} else if (args[0] === 'vip_level') {
-						user.level ? args[1] = user.level : "";
-					} else if (args[0] === 'v10_id') {
-						user.vip_id ? args[1] = user.vip_id : "";
-					} else if (args[0] === 'username') {
-						user.name ? args[1] = user.name : "";
-					} else if (args[0] === 'photo') {
-						user.photo ? args[1] = user.photo : "";
-					}
-					if (oriarg !== args[1]) console.log("【百度网盘会员青春版】Hook yunDataModule", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
-				}
-				originalSet.apply(this, args);
-			}
-			console.log("【百度网盘会员青春版】Hook", "\nyunDataModule:", yunData)
+    //禁止毒盘分析网页信息
+    unsafeWindow.Image = function () {
+        const img = new Image();
+        Object.defineProperty(img, 'src', {
+            set(value) {
+                (value.includes('analytics') || value.includes('ztbox')) ? "console.warn('new Image\n禁止分析网页信息:', value)" : (img.src = value);
+            },
+            get() {
+                return img.src;
+            }
+        });
+        return img;
+    };
+    const originalCreateElement = document.createElement;
+    unsafeWindow.document.createElement = function (tagName) {
+        const element = originalCreateElement.call(unsafeWindow.document, tagName);
+        if (tagName.toLowerCase() === 'img') {
+            Object.defineProperty(element, 'src', {
+                set(value) {
+                    (value.includes('analytics') || value.includes('ztbox')) ? "console.warn('doc.createElement\n禁止分析网页信息:', value)" : (element.setAttribute('src', value));
+                },
+                get() {
+                    return element.getAttribute('src');
+                }
+            });
+        }
+        return element;
+    };
 
-		})
-	}, 1)
+    let localsTimer = setInterval(() => {
+        if (!unsafeWindow.locals) return
+        clearInterval(localsTimer)
+        let locals = unsafeWindow.locals
+        let originalSet = locals.set
+        locals.set = function (...args) {
+            if (typeof args[1] == 'number' || typeof args[1] == 'string') {
+                let oriarg = args[1]
+                if (args[0].includes('is_vip')) {
+                    args[1] = user.vip === 1 && user.previous === 0 ? 1 : 0
+                } else if (args[0].includes('is_svip')) {
+                    args[1] = user.svip === 1 && user.previous === 0 ? 1 : 0;
+                } else if (args[0] === 'vip_level') {
+                    user.level ? args[1] = user.level : "";
+                } else if (args[0] === 'v10_id') {
+                    user.vip_id ? args[1] = user.vip_id : "";
+                } else if (args[0] === 'username') {
+                    user.name ? args[1] = user.name : "";
+                } else if (args[0] === 'photo') {
+                    user.photo ? args[1] = user.photo : "";
+                }
+                if (oriarg !== args[1]) {
+                    console.log("【百度网盘会员青春版】Hook Locals", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
+                }
+            }
+            originalSet.apply(this, args);
+        }
+        user.level ? locals.vip_level = user.level : ""
+        locals.is_vip = user.vip === 1 && user.previous === 0 ? 1 : 0
+        locals.is_svip = user.svip === 1 && user.previous === 0 ? 1 : 0
+        user.vip === 1 && user.previous === 0 ? locals.show_vip_ad = 0 : ""
+        user.photo ? locals.photo = user.photo : ""
+        user.name ? locals.username = user.name : ""
+        if (/\/s\/.*?\?fid=.*?/.test(location.href)) unsafeWindow.locals.self = 1
+        if (locals.userInfo) {
+            user.level ? locals.userInfo.vip_level = user.level : ""
+            user.vip === 1 && user.previous === 0 ? locals.userInfo.vip_identity = `${user.svip === 1 ? 2 : 1}1` : ""
+            user.photo ? locals.userInfo["photo_url"] = user.photo : ""
+            user.name ? locals.userInfo.username = user.name : ""
+        }
+        if (locals.mset && user.vip === 1 && user.previous === 0) locals.mset({
+            'is_vip': user.vip === 1 && user.previous === 0 ? 1 : 0,
+            'is_svip': user.svip === 1 && user.previous === 0 ? 1 : 0,
+            'vip_level': user.level ? user.level : "",
+            'show_vip_ad': 0
+        })
+        console.log("【百度网盘会员青春版】Hook", "\nLocals:", locals)
+    }, 1)
+
+    let yunDataTimer = setInterval(() => {
+        if (!unsafeWindow.yunData) return;
+        clearInterval(yunDataTimer)
+        let yunData = unsafeWindow.yunData
+
+        let originalSet = yunData.setData;
+        yunData.setData = function (...args) {
+            if (typeof args[0] === 'object') {
+                let oriargs = { ...args[0] }
+                let newargs = args[0]
+                if (oriargs.hasOwnProperty('is_vip')) {
+                    newargs.is_vip = user.vip === 1 && user.previous === 0 ? 1 : 0;
+                }
+                if (oriargs.hasOwnProperty('is_svip')) {
+                    newargs.is_svip = user.svip === 1 && user.previous === 0 ? 1 : 0;
+                }
+                if (oriargs.hasOwnProperty('vip_level')) {
+                    user.level ? newargs.vip_level = user.level : "";
+                }
+                if (oriargs.hasOwnProperty('v10_id')) {
+                    user.vip_id ? newargs.v10_id = user.vip_id : "";
+                }
+                if (oriargs.hasOwnProperty('photo')) {
+                    user.photo ? newargs.photo = user.photo : "";
+                }
+                if (oriargs.hasOwnProperty('username')) {
+                    user.name ? newargs.username = user.name : "";
+                }
+                if (JSON.stringify(oriargs) !== JSON.stringify(newargs)) {
+                    console.log("【百度网盘会员青春版】Hook yunData", "\n原始数据:", oriargs, "\n修改数据:", newargs);
+                }
+            } else {
+                let oriarg = args[1]
+                if (args[0].includes('is_vip')) {
+                    args[1] = user.vip === 1 && user.previous === 0 ? 1 : 0
+                } else if (args[0].includes('is_svip')) {
+                    args[1] = user.svip === 1 && user.previous === 0 ? 1 : 0;
+                } else if (args[0] === 'vip_level') {
+                    user.level ? args[1] = user.level : "";
+                } else if (args[0] === 'v10_id') {
+                    user.vip_id ? args[1] = user.vip_id : "";
+                } else if (args[0] === 'username') {
+                    user.name ? args[1] = user.name : "";
+                } else if (args[0] === 'photo') {
+                    user.photo ? args[1] = user.photo : "";
+                }
+                if (oriarg !== args[1]) {
+                    console.log("【百度网盘会员青春版】Hook yunData", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
+                }
+            }
+            originalSet.apply(this, args);
+        }
+        user.name ? yunData.username = user.name : ""
+        user.name ? yunData.MYNAME = user.name : ""
+        user.photo ? yunData.MYAVATAR = user.photo : ""
+        user.photo ? yunData.photo = user.photo : ""
+        user.level ? yunData.vip_level = user.level : ""
+        yunData.ISVIP = user.vip === 1 && user.previous === 0 ? 1 : 0
+        yunData.ISSVIP = user.svip === 1 ? 1 : 0
+        user.vip ? yunData.ISYEARVIP = 1 : ""
+        yunData.is_vip = user.vip === 1 && user.previous === 0 ? 1 : 0
+        yunData.is_svip = user.svip === 1 ? 1 : 0
+        yunData.is_vip_v2 = user.vip === 1 && user.previous === 0 ? 1 : 0
+        yunData.is_svip_v2_new = user.svip === 1 ? 1 : 0
+        user.vip ? yunData.show_vip_ad = 0 : ""
+        console.log("【百度网盘会员青春版】Hook", "\nyunData:", yunData)
+    }, 1)
+
+    let yunDataRequireTimer = setInterval(() => {
+        if (!unsafeWindow.require) return;
+        clearInterval(yunDataRequireTimer)
+        require.async('pan-center:widget/data/yunData', function (yunData) {
+            let originalSet = yunData.setData;
+            yunData.setData = function (...args) {
+                if (typeof args[0] === 'object') {
+                    let oriargs = { ...args[0] }
+                    let newargs = args[0]
+                    if (oriargs.hasOwnProperty('is_vip')) {
+                        user.vip === 1 && user.previous === 0 ? newargs.is_vip = 1 : newargs.is_vip = 0;
+                    }
+                    if (oriargs.hasOwnProperty('is_svip')) {
+                        user.svip === 1 && user.previous === 0 ? newargs.is_svip = 1 : newargs.is_svip = 0;
+                    }
+                    if (oriargs.hasOwnProperty('is_evip')) {
+                        user.svip === 1 && user.previous === 0 ? newargs.is_evip = 1 : newargs.is_evip = 0;
+                    }
+                    if (oriargs.hasOwnProperty('vip_level')) {
+                        user.level ? newargs.vip_level = user.level : "";
+                    }
+                    if (oriargs.hasOwnProperty('v10_id')) {
+                        user.vip_id ? newargs.v10_id = user.vip_id : "";
+                    }
+                    if (oriargs.hasOwnProperty('has_3V1_coupon')) {
+                        user.svip === 1 && user.previous === 0 ? newargs.has_3V1_coupon = 1 : newargs.has_3V1_coupon = 0;
+                    }
+                    if (oriargs.hasOwnProperty('photo')) {
+                        user.photo ? newargs.photo = user.photo : "";
+                    }
+                    if (oriargs.hasOwnProperty('username')) {
+                        user.name ? newargs.username = user.name : "";
+                    }
+                    if (JSON.stringify(oriargs) !== JSON.stringify(newargs)) {
+                        console.log("【百度网盘会员青春版】Hook yunDataModule", "\n原始数据:", oriargs, "\n修改数据:", newargs);
+                    }
+                } else {
+                    let oriarg = args[1]
+                    if (args[0].includes('is_vip')) {
+                        args[1] = user.vip === 1 && user.previous === 0 ? 1 : 0
+                    } else if (args[0].includes('is_svip')) {
+                        args[1] = user.svip === 1 && user.previous === 0 ? 1 : 0;
+                    } else if (args[0] === 'vip_level') {
+                        user.level ? args[1] = user.level : "";
+                    } else if (args[0] === 'v10_id') {
+                        user.vip_id ? args[1] = user.vip_id : "";
+                    } else if (args[0] === 'username') {
+                        user.name ? args[1] = user.name : "";
+                    } else if (args[0] === 'photo') {
+                        user.photo ? args[1] = user.photo : "";
+                    }
+                    if (oriarg !== args[1]) {
+                        console.log("【百度网盘会员青春版】Hook yunDataModule", "\n原始数据:", args[0], "-", oriarg, "\n修改数据:", args[0], "-", args[1]);
+                    }
+                }
+                originalSet.apply(this, args);
+            }
+            console.log("【百度网盘会员青春版】Hook", "\nyunDataModule:", yunData)
+
+        })
+    }, 1)
+
+    function waitForKeyElements(selectorTxt, actionFunction, bWaitOnce, iframeSelector) {
+        function findInShadowRoots(root, selector) {
+            let elements = $(root).find(selector).toArray();
+            $(root).find('*').each(function () {
+                const shadowRoot = this.shadowRoot;
+                if (shadowRoot) {
+                    elements = elements.concat(findInShadowRoots(shadowRoot, selector));
+                }
+            });
+            return elements;
+        }
+        var targetElements;
+        if (iframeSelector) {
+            targetElements = $(iframeSelector).contents();
+        } else {
+            targetElements = $(document);
+        }
+        let allElements = findInShadowRoots(targetElements, selectorTxt);
+        if (allElements.length > 0) {
+            allElements.forEach(function (element) {
+                var jThis = $(element);
+                var alreadyFound = jThis.data('alreadyFound') || false;
+                if (!alreadyFound) {
+                    var cancelFound = actionFunction(jThis);
+                    if (cancelFound) {
+                        return false;
+                    } else {
+                        jThis.data('alreadyFound', true);
+                    }
+                }
+            });
+        }
+        var controlObj = waitForKeyElements.controlObj || {};
+        var controlKey = selectorTxt.replace(/[^\w]/g, "_");
+        var timeControl = controlObj[controlKey];
+        if (allElements.length > 0 && bWaitOnce && timeControl) {
+            clearInterval(timeControl);
+            delete controlObj[controlKey];
+        } else {
+            if (!timeControl) {
+                timeControl = setInterval(function () {
+                    waitForKeyElements(selectorTxt, actionFunction, bWaitOnce, iframeSelector);
+                }, 1000);
+                controlObj[controlKey] = timeControl;
+            }
+        }
+        waitForKeyElements.controlObj = controlObj;
+    }
 })()
