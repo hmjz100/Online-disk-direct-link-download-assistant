@@ -29,10 +29,10 @@
 		aiCollect: 0, // 显示百度网盘 AI 看的相关入口，建议 0，作用于左侧边栏
 		versionSwitchButton: 1, // 显示百度网盘的新旧版界面切换按钮，建议 0
 		feedbackButton: 0, // 显示百度网盘的反馈录屏工具的相关入口，建议 0
-		pfileView: 0, // 在线打开文档时，使用新版在线文档查看器，而不是旧版的在线 WPS 文档查看器，建议 1
+		pfileView: 1, // 在线打开文档时，使用新版在线文档查看器，而不是旧版的在线 WPS 文档查看器，建议 1
 		analytics: 0, // 允许百度网盘网页分析浏览信息，建议 0，分析原理是以 new Image 或 document.createElement("img") 的形式让浏览器访问特殊的图片来给服务器传递信息
-		adTime: 100, // 视频播放时的广告（等待）时间，建议 0.0001
-		debug: 2, // 显示本脚本的调试信息到 JavaScript 控制台中，建议 0，另外，1 显示所有，2 仅显示 Hook 修改参数，3 仅显示禁用网页分析
+		adTime: 0.0001, // 视频播放时的广告（等待）时间，建议 0.0001
+		debug: 0, // 显示本脚本的调试信息到 JavaScript 控制台中，建议 0，另外，1 显示所有，2 仅显示 Hook 修改参数，3 仅显示禁用网页分析
 
 		// 以下是自定义项目（以/*开头注释的项目），修改也非常简单
 		/*
@@ -557,7 +557,7 @@
 			XMLHttpRequest.prototype.open = originalOpen;
 			setTimeout(function () {
 				XMLHttpRequest.prototype.open = hookedOpen;
-			}, 10)
+			}, 20)
 		})
 	})
 
