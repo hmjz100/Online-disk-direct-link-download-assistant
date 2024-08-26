@@ -11,7 +11,7 @@
 // @version     1.2.4
 // @license     MIT
 // @author      Hmjz100、Gwen
-// @description 显示身份信息为会员身份，支持修改视频倍速、生成字幕、关闭AI聊天、修改头像、修改用户名等功能，自定义程度超高！需要修改头部代码来配置显示内容（非常简单！）
+// @description 显示身份信息为会员身份，支持修改视频倍速、生成字幕、下载AI字幕、关闭AI聊天、修改头像、修改用户名等功能，自定义程度超高！需要修改头部代码来配置显示内容（非常简单！）
 // @require     https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
 // ==/UserScript==
 
