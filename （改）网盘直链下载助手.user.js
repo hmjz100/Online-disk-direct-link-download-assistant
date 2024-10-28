@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              （改）网盘直链下载助手
 // @namespace         https://github.com/syhyz1990/baiduyun
-// @version           1.0.9.5
+// @version           1.0.9.6
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
 // @description       一个基于 JavaScript 的网盘文件下载地址获取工具，支持 百度网盘/阿里云盘/天翼云盘/迅雷云盘/夸克网盘/移动网盘 六大网盘 | 基于【网盘直链下载助手】修改自6.2.7版本 | 开源 - 自用 - 去广 | 改界面 - 添功能 - 修Bug | 不仅能够精简网盘界面 还支持修改网盘界面主题颜色!
@@ -195,6 +195,8 @@
 			message.warning("正在注入设置项目...");
 			base.setValue('setting_init_code', value);
 			base.setValue('setting_init_license', value);
+			base.setValue('baidu_access_token', "");
+			if (location.host.includes("baidu")) base.setStorage('baiduyunPlugin_BDUSS', "")
 			history.go(0)
 		},
 
@@ -368,7 +370,7 @@
 							}
 							if (res.responseText) {
 								try {
-									res.decodedResponseText = JSON.stringify(res.responseText);
+									res.decodedResponseText = JSON.stringify(JSON.parse(res.responseText));
 								} catch (e) { }
 								try {
 									res.decodedResponseText = JSON.stringify(base.decode(res.responseText));
@@ -425,7 +427,7 @@
 								}
 								if (res.responseText) {
 									try {
-										res.decodedResponseText = JSON.stringify(res.responseText);
+										res.decodedResponseText = JSON.stringify(JSON.parse(res.responseText));
 									} catch (e) { }
 									try {
 										res.decodedResponseText = JSON.stringify(base.decode(res.responseText));
@@ -444,7 +446,7 @@
 							}
 							if (extra && extra.filename && extra.index) {
 								res.total > 0 ? progress[extra.index] = (res.loaded * 100 / res.total).toFixed(2) : progress[extra.index] = 0.00;
-								console.log('【（改）网盘直链下载助手】Get(progress)\n\x1B[31m该请求正在进行中。' + (progress[extra.index] ? ("\n\x1B[0m下载进度：\x1B[31m" + progress[extra.index]) : "") + '\x1B[0m');
+								// console.log('【（改）网盘直链下载助手】Get(progress)\n\x1B[31m该请求正在进行中。' + (progress[extra.index] ? ("\n\x1B[0m下载进度：\x1B[31m" + progress[extra.index]) : "") + '\x1B[0m');
 							}
 						},
 						onloadstart(res) {
@@ -606,12 +608,34 @@
 			let a = '';
 			// 如果是八位十六进制颜色值，解析 alpha 通道
 			if (hex.length === 8) {
-				let a = 1;
 				a = parseInt(hex.substring(6, 8), 16) / 255; // 将 alpha 值转换为 0 到 1 之间的小数
 				a = ',' + a
 			}
 			// 返回 rgba 格式字符串
 			return r + ', ' + g + ', ' + b + a;
+		},
+
+		rgbaToHex(rgba) {
+			// 去掉前缀 "rgba" 或 "rgb" 并移除空格
+			rgba = rgba.replace(/^(rgba?|RGBA?)\(/, '').replace(/\s+/g, '').replace(')', '');
+
+			// 将颜色值分割为数组
+			let [r, g, b, a] = rgba.split(',');
+
+			// 将 RGB 转换为十六进制
+			r = parseInt(r).toString(16).padStart(2, '0');
+			g = parseInt(g).toString(16).padStart(2, '0');
+			b = parseInt(b).toString(16).padStart(2, '0');
+
+			// 如果存在 alpha 通道，处理透明度值
+			if (a !== undefined) {
+				// 将 alpha 转换为 0 到 255 的十六进制
+				a = Math.round(parseFloat(a) * 255).toString(16).padStart(2, '0');
+				return `#${r}${g}${b}${a}`;
+			}
+
+			// 如果没有 alpha 通道，返回标准六位的十六进制颜色
+			return `#${r}${g}${b}`;
 		},
 
 		replaceColors(cssText, baseURI, type, colorMap) {
@@ -646,17 +670,17 @@
 			};
 			if (baseURI) {
 				// 替换相对路径资源为绝对路径
-				cssText = cssText.replace(/url\(\s*(['"]?)([^'"]*?)\1\s*\)/ig, function (match, quote, url) {
+				cssText = cssText.replace(/url\(\s*(['"]?)([^'"]*?)\1\s*\)/ig, (match, quote, url) => {
 					// 如果 URL 是相对路径，则将其转换为绝对路径
 					if (url && !/^(data:|https?:|\/\/)/i.test(url)) {
 						try {
 							let absoluteURL = new URL(url, baseURI).href;
-							return 'url(' + absoluteURL + ')';
+							return `url(${absoluteURL})`;
 						} catch (e) {
-							return match; // 如果URL无效，保留原始的匹配
+							return match;
 						}
 					}
-					return match; // 保留已经是绝对路径的情况
+					return match;
 				});
 			}
 			return cssText;
@@ -678,19 +702,33 @@
 			if (!colored) {
 				base.waitForKeyElements('link[rel="stylesheet"]', function (tag) {
 					if (!tag.parent() || !tag.attr('href')) return;
-					let href = tag.attr('href')
+
+					let href = tag.attr('href');
+
+					// 确保 href 是绝对路径，如果是相对路径，则将其转换为绝对路径
+					try {
+						href = new URL(href, location.href).href;
+					} catch (e) {
+						return; // 如果 href 无效，退出
+					}
+
 					fetch(href)
 						.then(response => response.text())
 						.then(responseText => {
-							let id = 'Panlinker-ColorUI-' + href
+							let id = 'Panlinker-ColorUI-' + href;
+
 							// 替换颜色并添加样式
-							cssText = base.replaceColors(responseText, href, type, colorMap);
+							let cssText = base.replaceColors(responseText, href, type, colorMap);
+
+							// 如果样式没有变化，直接返回
 							if (responseText === base.replaceColors(responseText, '', type, colorMap)) return;
+
 							base.addStyle(id, 'style', cssText, tag[0], "after");
-							let newStyle = document.querySelector(`[id="${id}"]`)
+							let newStyle = document.querySelector(`[id="${id}"]`);
+
 							console.log(`【（改）网盘直链下载助手】UI\n<link> 元素 转 <style> 元素 样式\n元素：`, tag[0], `\n样式：`, newStyle);
-						});
-				})
+						})
+				});
 				base.waitForKeyElements('style:not([id^="Panlinker-"],[id^="swal-pub"],[class^="darkreader"])', function (tag) {
 					if (!tag.parent()) return;
 					let id = tag[0].id;
@@ -1070,6 +1108,7 @@
 				icon: 'info',
 				title: '更新日志',
 				html: `<div style="text-align: left;">
+				V1.0.9.6<br/>1、支持在百度网盘中选择文件夹下载；<br/>2、优化部分提示。<br/><br/>
 				V1.0.9.5<br/>1、修复因代码逻辑错误而无法获取链接的 Bug。<br/><br/>
 				V1.0.9.4<br/>1、修复因百度网盘 AccessToken 过期导致无法获取链接的 Bug。<br/><br/>
 				V1.0.9.3<br/>1、若网盘不支持在分享中下载，将仅显示保存网盘按钮；<br/>2、优化下载界面，支持选择 Iframe 或 Blob 的方式来下载文件，增加按钮的提示文本；<br/>3、优化 CSS 样式，统一了 SweetAlert2 按钮样式，同时适配了 Dark Reader 插件，界面更协调；<br/>4、支持修改油小猴网站主题色；<br/>5、原有主题相关设置现已移动至助手美化页面中。<br/><br/>
@@ -1267,6 +1306,7 @@
 			}
 
 			.pl-a {
+				vertical-align: baseline;
 				color: ${color};
 			}
 
@@ -1564,11 +1604,15 @@
 			}
 
 			.pl-button .pl-dropdown-menu {
-				display: none;
+				/*display: none;*/
+				opacity: 0;
+				pointer-events: none;
 			}
 
 			.pl-button:hover .pl-dropdown-menu {
-				display: block;
+				/*display: block;*/
+				opacity: 1;
+				pointer-events: auto;
 			}
 
 			.pl-button-init {
@@ -2115,7 +2159,8 @@
 
 					['0,149,255', base.hexToRgba(color)],
 					['30, 175, 255', base.hexToRgba(color)],
-					['6,167,255,.1', base.hexToRgba(`${color}15`)],
+					['6, 167, 255, 0.1', base.hexToRgba(`${color}1a`)],
+					['6,167,255,.1', base.hexToRgba(`${color}1a`)],
 					['6,167,255,.23', base.hexToRgba(`${color}3b`)],
 					['164,141,255,.2', base.hexToRgba(`${color}30`)],
 					['196,182,255,.2', base.hexToRgba(`${color}20`)],
@@ -2155,7 +2200,6 @@
 					background :#fff !important;
 				}
 				.aside-absolute-container .QGOvsxb .remainingSpaceUi_span {
-					/*background: ${color} !important;*/
 					background: #8af248 !important;
 					border-radius: 10px 0 0 10px;
 					border-right: #fff 1px solid;
@@ -2187,6 +2231,18 @@
 				}
 				[data-theme=light] .vp-video-page-card .vp-video-page-card__video-detail {
 					color: #030b1a;
+				}
+				dt.level-1 {
+					background: #fd6d65 !important;
+				}
+				dt.level-2 {
+					background: #f3a723 !important;
+				}
+				dt.level-1 i.desc-arrow {
+					border-bottom: 10px solid #dd6966 !important;
+				}
+				dt.level-2 i.desc-arrow {
+					border-bottom: 10px solid #d29633 !important;
 				}
 				`, 'body');
 				base.setColors([
@@ -2270,7 +2326,8 @@
 
 					['0,149,255', base.hexToRgba(color)],
 					['30, 175, 255', base.hexToRgba(color)],
-					['6,167,255,.1', base.hexToRgba(`${color}15`)],
+					['6, 167, 255, 0.1', base.hexToRgba(`${color}1a`)],
+					['6,167,255,.1', base.hexToRgba(`${color}1a`)],
 					['6,167,255,.23', base.hexToRgba(`${color}3b`)],
 					['164,141,255,.2', base.hexToRgba(`${color}30`)],
 					['196,182,255,.2', base.hexToRgba(`${color}20`)],
@@ -2588,16 +2645,6 @@
 			return '';
 		},
 
-		_getFidList() {
-			let fidlist = [];
-			for (const v of selectList) {
-				if (+v.isdir !== 1) {
-					fidlist.push(v.fs_id);
-				}
-			}
-			return '[' + fidlist + ']';
-		},
-
 		setBDUSS() {
 			try {
 				GM_cookie('list', { name: 'BDUSS' }, (cookies, error) => {
@@ -2620,8 +2667,71 @@
 		},
 
 		getBDUSS() {
-			let baiduyunPlugin_BDUSS = base.getStorage('baiduyunPlugin_BDUSS') ? base.getStorage('baiduyunPlugin_BDUSS') : '{"baiduyunPlugin_BDUSS":""}';
+			doc.find('#loadingText').html(`<div>ID 获取中</div><div>正在获取当前账号的 ID~</div>`);
+			let baiduyunPlugin_BDUSS = base.getStorage('baiduyunPlugin_BDUSS') ? base.getStorage('baiduyunPlugin_BDUSS') : { BDUSS: '' };
 			return baiduyunPlugin_BDUSS.BDUSS || '';
+		},
+
+		async getToken() {
+			try {
+				doc.find('#loadingText').html(`<div>Token 获取中</div><div>正在获取授权状态~</div>`);
+
+				// 获取授权状态
+				let authorize = await base.getFinalUrl(pan.pcs[3]);
+
+				// 判断授权情况
+				if (authorize.includes('authorize')) {
+					// 没授权，先获取授权的页面
+					doc.find('#loadingText').html(`<div>授权获取中</div><div>正在获取授权页面~</div>`);
+
+					let html = await base.get(pan.pcs[3], {}, 'text');
+
+					// 提取页面的发送确认授权的参数
+					let bdstoken = html.match(/name="bdstoken"\s+value="([^"]+)"/)?.[1];
+					let client_id = html.match(/name="client_id"\s+value="([^"]+)"/)?.[1];
+					let data = {
+						grant_permissions_arr: 'netdisk',
+						bdstoken: bdstoken,
+						client_id: client_id,
+						response_type: "token",
+						display: "page",
+						grant_permissions: "basic,netdisk"
+					};
+
+					doc.find('#loadingText').html(`<div>授权获取中</div><div>正在自动确认授权~</div>`);
+
+					// 发送请求达到自动进行授权
+					await base.post(pan.pcs[3], base.stringify(data), {
+						'Content-Type': 'application/x-www-form-urlencoded',
+					});
+
+					// 再次获取授权状态
+					let res2 = await base.getFinalUrl(pan.pcs[3]);
+					let accessToken = res2.match(/access_token=([^&]+)/)?.[1];
+					if (!!accessToken) {
+						doc.find('#loadingText').html(`<div>Token 获取中</div><div>授权成功，Token 已保存~</div>`);
+						base.setValue('baidu_access_token', accessToken);
+						return accessToken;
+					} else {
+						doc.find('#loadingText').html(`<div>Token 获取中</div><div>授权失败，等待下一步操作~</div>`);
+						return '';
+					}
+				} else if (authorize.includes('access_token=')) {
+					let accessToken = authorize.match(/access_token=([^&]+)/)?.[1];
+					if (!!accessToken) {
+						doc.find('#loadingText').html(`<div>Token 获取中</div><div>获取成功，Token 已保存~</div>`);
+						base.setValue('baidu_access_token', accessToken);
+						return accessToken;
+					} else {
+						doc.find('#loadingText').html(`<div>Token 获取中</div><div>获取失败，等待下一步操作~</div>`);
+						return '';
+					}
+				} else {
+					return '';
+				}
+			} catch (error) {
+				return '';
+			}
 		},
 
 		convertLinkToAria(link, filename, ua) {
@@ -2713,7 +2823,10 @@
 					heightAuto: false,
 					scrollbarPadding: false,
 					showConfirmButton: false,
-					html: `链接获取中`,
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					allowEnterKey: false,
+					html: `<div id="loadingText">链接获取中</div>`,
 					willOpen: function () {
 						Swal.showLoading();
 					}
@@ -2913,7 +3026,6 @@
 				}
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
-				e.preventDefault();
 				let target = $(e.currentTarget);
 
 				target.find('.icon-rpc-devices').remove();
@@ -3063,8 +3175,7 @@
 					<div class="__yunguanjiaTips radio-tips" style="display: block;">
 						用电脑下载并登录最新百度网盘客户端，即自动完成添加。
 						<a href="//pan.baidu.com/download" target="_blank">下载百度网盘客户端</a>
-						<br/>
-						由 <a>(改)网盘直链下载助手</a> 修复该选项
+						<br/>由 <a>(改)网盘直链下载助手</a> 修复该选项
 					</div>
 				</div>`;
 			}, true)
@@ -3090,6 +3201,12 @@
 				}, true)
 				base.waitForKeyElements('.share-list .KPDwCE .AuPKyz', function (tag) {
 					tag[0].style.setProperty('background', 'transparent');
+				}, true)
+				base.waitForKeyElements(`#layoutMain`, function (tag) {
+					tag.css({ "border-radius": "24px" });
+				}, true)
+				base.waitForKeyElements(".frame-content", function (tag) {
+					tag.css({ "margin": "auto" });
 				}, true)
 			}
 		},
@@ -3206,114 +3323,143 @@
 			})
 		},
 
-		async getToken() {
-			function openTab() {
-				message.info('提示：<br/>稍后请在新标签页中授权助手~');
+		async getPCSLink() {
+			// 获取选择的文件列表
+			selectList = this.getSelectedList();
+			let BDUSS = this.getBDUSS(), accessToken = (base.getValue('baidu_access_token') || await baidu.getToken());
+
+			if (!accessToken) {
+				message.info('提示：<br/>稍后请在新标签页中授权助手哦~');
 				base.deleteValue('baidu_access_token');
 				setTimeout(() => {
 					GM_openInTab(pan.pcs[3], { active: true, insert: true, setParent: true })
-				}, 3500);
+					let attempts = 0;
+					let interval = setInterval(function () {
+						if (!!base.getValue('baidu_access_token')) {
+							clearInterval(interval);
+							accessToken = base.getValue('baidu_access_token')
+						}
+						attempts++;
+						if (attempts > 120) {
+							clearInterval(interval);
+							return message.error('提示：<br/>时间太长，我先撤下啦~');
+						}
+					}, 1000);
+				}, 3300);
+				return;
 			}
 
-			const waitForToken = new Promise((resolve) => {  // 确保 return Promise
-				let attempts = 0;
-				const interval = setInterval(function () {
-					const token = base.getValue('baidu_access_token');
-					if (!!token) {
-						clearInterval(interval);
-						resolve(token);  // 成功获取 token 后 resolve
-					}
-					attempts++;
-					if (attempts > 120) {  // 超时后清除 interval，并 resolve 空值
-						clearInterval(interval);
-						resolve('');  // 超时处理
-					}
-				}, 1000);  // 每秒检查一次
-			});
-
-			// 否则进行 URL 请求
-			let res = await base.getFinalUrl(pan.pcs[3]);
-
-			if (!res.includes('authorize') && !res.includes('access_token=')) {
-				openTab();
-				return waitForToken;
-			}
-
-			// 如果是 Tampermonkey 环境，打开新标签并等待获取 token
-			if (manageHandler === 'Tampermonkey' && base.getMajorVersion(manageVersion) >= 5) {
-				openTab();
-				return waitForToken;
-			}
-
-			if (res.includes('authorize')) {
-				let html = await base.get(pan.pcs[3], {}, 'text');
-
-				// 使用正则表达式提取所需字段
-				let bdstoken = html.match(/name="bdstoken"\s+value="([^"]+)"/)?.[1];
-				let client_id = html.match(/name="client_id"\s+value="([^"]+)"/)?.[1];
-
-				let data = {
-					grant_permissions_arr: 'netdisk',
-					bdstoken: bdstoken,
-					client_id: client_id,
-					response_type: "token",
-					display: "page",
-					grant_permissions: "basic,netdisk"
-				};
-
-				// 发送 POST 请求进行授权
-				await base.post(pan.pcs[3], base.stringify(data), {
-					'Content-Type': 'application/x-www-form-urlencoded',
+			if (!BDUSS) {
+				let dialog = await Swal.fire({
+					icon: 'info',
+					title: `提示`,
+					html: '你好呀，为了获取百度网盘文件的下载直链<br/>我们需要您安装原作者的辅助扩展<br/>来让 “下载助手” 读取您的网盘账号 ID<br/>获取到的 ID 仅用于生成直链，请放心安装ヾ(≧▽≦*)o<br/><br/>不知道如何安装第三方扩展？<a class="pl-a" target="_blank" href="https://www.youxiaohou.com/zh-cn/crx.html">点此查看详情</a><br/>如果给浏览器开启了“开发者模式”后频繁提示<br/>“关闭开发者模式”，请使用<a class="pl-a" target="_blank" href="https://wws.lanzoub.com/b00vgnrha">此补丁</a>隐藏提示。<a class="pl-a" target="_blank" href="https://ooo.0x0.ooo/2022/05/04/zrNGX.png">界面汉化</a><br/>扩展安装后请刷新本页，以应用最新更改',
+					showConfirmButton: true,
+					showDenyButton: true,
+					showCloseButton: true,
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					allowEnterKey: false,
+					heightAuto: false,
+					scrollbarPadding: false,
+					confirmButtonText: '前往 Chrome（Crx搜搜）',
+					denyButtonText: '前往 Firefox（Crx搜搜）',
+					position: 'center'
 				});
-
-				// 再次获取授权后的 URL
-				let res2 = await base.getFinalUrl(pan.pcs[3]);
-				let accessToken = res2.match(/access_token=([^&]+)/)?.[1];
-				accessToken && base.setValue('baidu_access_token', accessToken);
-				return accessToken;
+				if (dialog.isConfirmed) {
+					GM_openInTab('https://www.crxsoso.com/addon/detail/mphijdmblaalbakceeadippfkbgfgaaa', { active: true });
+				}
+				if (dialog.isDenied) {
+					GM_openInTab('https://www.crxsoso.com/firefox/detail/baidunetdiskisasb', { active: true });
+				}
+				return;
 			}
-
-			// 如果已有 access_token，则直接返回
-			let accessToken = res.match(/access_token=([^&]+)/)?.[1];
-			accessToken && base.setValue('baidu_access_token', accessToken);
-			return accessToken;
-		},
-
-		async getPCSLink() {
-			selectList = this.getSelectedList();
-			let url, res, accessToken, BDUSS = this.getBDUSS(), fidList = this._getFidList();
 
 			if (pt === 'home' || pt === 'main') {
-				if (selectList.length === 0) {
+				if (!selectList.length) {
 					return message.error('提示：<br/>先勾选要下载的文件哦~');
 				}
-				if (fidList.length === 2) {
-					return message.error('提示：<br/>请打开文件夹后再勾选文件~');
+
+				let cnt = 0;
+				let processed = selectList.filter(f => !f.isdir).length;
+
+				async function fetchFiles(dirs) {
+					let files = [];
+
+					for (let dir of dirs) {
+						let url = `http://pan.baidu.com/rest/2.0/xpan/file?method=list&dir=${encodeURIComponent(dir.path)}&access_token=${accessToken}&showempty=1`;
+						let res = await base.get(url, { "User-Agent": pan.ua });
+						cnt++;
+
+						if (res?.list?.length && (res.errno === 0 || res.errmsg === "succ")) {
+							let subFiles = res.list.filter(f => !f.isdir);
+
+							processed += subFiles.length;
+							doc.find('#loadingText').html(`<div>文件获取中</div><div>已获取 ${processed} 个文件，请耐心等待哦~</div><div>${dir.path}</div>`);
+
+							files = files.concat(subFiles);
+							if (res.list.some(f => f.isdir)) {
+								files = files.concat(await fetchFiles(res.list.filter(f => f.isdir)));
+							}
+						}
+						if (cnt >= 50) {
+							doc.find('#loadingText').html(`<div>文件获取中</div><div>已获取 ${processed} 个文件，请耐心等待哦~</div><div>休息 3 秒...</div>`);
+							await base.sleep(3000);
+							cnt = 0;
+						}
+					}
+					return files;
 				}
-				fidList = encodeURIComponent(fidList);
-				accessToken = base.getValue('baidu_access_token') || await baidu.getToken();
-				if (!!BDUSS && !!accessToken) {
-					url = `${pan.pcs[0]}&fsids=${fidList}&access_token=${accessToken}`;
-					res = await base.get(url, { "User-Agent": pan.ua, "cookie": `BDUSS=${BDUSS}` });
+
+				let files = selectList.filter(f => !f.isdir);
+
+				if (selectList.some(f => f.isdir)) {
+					files = files.concat(await fetchFiles(selectList.filter(f => f.isdir)));
 				}
-			} else {
-				return message.error('提示：<br/>页面错误~');
-			}
-			if (res?.list?.[0] && (res?.errno === 0 || res?.errmsg === "succ")) {
-				let html = this.generateDom(res.list);
-				this.showMainDialog(pan[mode][0], html, pan[mode][1]);
-			} else if (res?.errno === 112) {
-				return message.error('提示：<br/>页面过期了，刷新重试下吧~<br/>代码：' + res.errno);
-			} else if (res?.errno === 9019) {
-				base.deleteValue('baidu_access_token');
-				return message.error('提示：<br/>AccessToken 已过期，刷新网页后再获取一次吧~<br/>代码：' + res.errno);
-			} else {
-				base.deleteValue('baidu_access_token');
-				if (res?.errno) {
-					return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
+				if (!files.length) {
+					return message.error('提示：<br/>文件夹是空的哦~');
+				}
+
+				doc.find('#loadingText').html(`<div>链接获取中</div><div>正在获取文件对应的下载链接~</div>`);
+
+				let fidList = files.map(f => f.fs_id);
+				let batchSize = 100;
+				let linkList = [];
+				for (let i = 0; i < fidList.length; i += batchSize) {
+					let url = `${pan.pcs[0]}&fsids=${encodeURIComponent(JSON.stringify(fidList.slice(i, i + batchSize)))}&access_token=${accessToken}`;
+					let res = await base.get(url, { "User-Agent": pan.ua });
+
+					if (res?.list?.length && (res.errno === 0 || res.errmsg === "succ")) {
+						linkList = linkList.concat(res.list);
+						doc.find('#loadingText').html(`<div>链接获取中</div><div>已获取 ${linkList.length} / ${fidList.length} 个链接，请耐心等待哦~</div><div>正在获取文件对应的下载链接~</div>`);
+
+					} else {
+						if (res?.errno) {
+							if (res.errno === 112) {
+								return message.error('提示：<br/>页面过期了，刷新重试下吧~<br/>代码：' + res.errno);
+							}
+							if (res.errno === 9019) {
+								base.deleteValue('baidu_access_token');
+								return message.error('提示：<br/>AccessToken 已过期，刷新网页后再获取一次吧~<br/>代码：' + res.errno);
+							}
+
+							base.deleteValue('baidu_access_token');
+							return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~<br/>代码：' + res.errno);
+
+						} else {
+							return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~');
+						}
+					}
+					await base.sleep(1000);
+				}
+
+				if (linkList.length) {
+					this.showMainDialog(pan[mode][0], this.generateDom(linkList), pan[mode][1]);
 				} else {
 					return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~');
 				}
+			} else {
+				return message.error('提示：<br/>页面错误~');
 			}
 		},
 
@@ -3511,15 +3657,17 @@
 				title,
 				html,
 				footer,
-				allowOutsideClick: false,
+				width,
+				customClass,
+				position: 'center',
+				padding: '15px 20px 5px',
+				confirmButtonText: '关闭',
 				showCloseButton: true,
 				heightAuto: false,
 				scrollbarPadding: false,
-				position: 'center',
-				width,  // 确认 width 已正确定义
-				padding: '15px 20px 5px',
-				customClass,  // 确认 customClass 已正确定义
-				confirmButtonText: '关闭',
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				allowEnterKey: false,
 				willClose: function () {
 					base._resetData();
 				}
@@ -3577,7 +3725,7 @@
 					let dialog = await Swal.fire({
 						icon: 'info',
 						title: `提示`,
-						html: '你好呀，为了获取百度网盘文件的下载直链<br/>我们需要您的授权来使 “下载助手” 读取您的网盘数据<br/><br/>由于使用了别的应用ID，所以授权的应用名称会有不同<br/>获取到的数据仅用于生成直链，请放心授权ヾ(≧▽≦*)o',
+						html: '你好呀，为了获取百度网盘文件的下载直链<br/>我们需要您的授权来使 “下载助手” 读取您的网盘文件信息<br/><br/>由于使用了别的应用ID，所以授权的应用名称会有不同<br/>获取到的数据仅用于生成直链，请放心授权ヾ(≧▽≦*)o',
 						showConfirmButton: true,
 						showDenyButton: true,
 						allowOutsideClick: false,
@@ -3615,7 +3763,7 @@
 							let dialog = await Swal.fire({
 								icon: 'success',
 								title: `成功啦`,
-								html: '你已 成功授权/授权过 脚本读取您的网盘数据~<br/>等待 <span id="second">3</span> 秒之后将关闭此页面',
+								html: '你已 成功授权/授权过 脚本读取您的网盘文件信息~<br/>等待 <span id="second">3</span> 秒之后将关闭此页面',
 								timer: 3000,
 								timerProgressBar: true,
 								showConfirmButton: true,
@@ -3738,7 +3886,10 @@
 					heightAuto: false,
 					scrollbarPadding: false,
 					showConfirmButton: false,
-					html: `链接获取中`,
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					allowEnterKey: false,
+					html: `<div id="loadingText">链接获取中</div>`,
 					willOpen: function () {
 						Swal.showLoading();
 					}
@@ -3907,7 +4058,6 @@
 				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
-				e.preventDefault();
 				let target = $(e.currentTarget);
 
 				target.find('.icon-rpc-devices').remove();
@@ -4110,7 +4260,7 @@
 							}
 						}
 
-						// 每次处理完一个批次后，等待 3 秒
+						// 每次处理完一个批次后，等待 2 秒
 						if (i + batchSize < selectList.length) await base.sleep(2000);
 					}
 				} catch (e) {
@@ -4296,13 +4446,17 @@
 				title,
 				html,
 				footer,
-				allowOutsideClick: false,
-				showCloseButton: true,
-				position: 'center',
 				width,
-				padding: '15px 20px 5px',
 				customClass,
+				position: 'center',
+				padding: '15px 20px 5px',
 				confirmButtonText: '关闭',
+				showCloseButton: true,
+				heightAuto: false,
+				scrollbarPadding: false,
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				allowEnterKey: false,
 				willClose: function () {
 					base._resetData();
 				}
@@ -4397,7 +4551,10 @@
 					heightAuto: false,
 					scrollbarPadding: false,
 					showConfirmButton: false,
-					html: `链接获取中`,
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					allowEnterKey: false,
+					html: `<div id="loadingText">链接获取中</div>`,
 					willOpen: function () {
 						Swal.showLoading();
 					}
@@ -4567,7 +4724,6 @@
 				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
-				e.preventDefault();
 				let target = $(e.currentTarget);
 
 				target.find('.icon-rpc-devices').remove();
@@ -4871,13 +5027,17 @@
 				title,
 				html,
 				footer,
-				allowOutsideClick: false,
-				showCloseButton: true,
-				position: 'center',
 				width,
-				padding: '15px 20px 5px',
 				customClass,
+				position: 'center',
+				padding: '15px 20px 5px',
 				confirmButtonText: '关闭',
+				showCloseButton: true,
+				heightAuto: false,
+				scrollbarPadding: false,
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				allowEnterKey: false,
 				willClose: function () {
 					base._resetData();
 				}
@@ -4973,7 +5133,10 @@
 					heightAuto: false,
 					scrollbarPadding: false,
 					showConfirmButton: false,
-					html: `链接获取中`,
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					allowEnterKey: false,
+					html: `<div id="loadingText">链接获取中</div>`,
 					willOpen: function () {
 						Swal.showLoading();
 					}
@@ -5171,7 +5334,6 @@
 				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
-				e.preventDefault();
 				let target = $(e.currentTarget);
 
 				target.find('.icon-rpc-devices').remove();
@@ -5493,13 +5655,17 @@
 				title,
 				html,
 				footer,
-				allowOutsideClick: false,
-				showCloseButton: true,
-				position: 'center',
 				width,
-				padding: '15px 20px 5px',
 				customClass,
+				position: 'center',
+				padding: '15px 20px 5px',
 				confirmButtonText: '关闭',
+				showCloseButton: true,
+				heightAuto: false,
+				scrollbarPadding: false,
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				allowEnterKey: false,
 				willClose: function () {
 					base._resetData();
 				}
@@ -5606,7 +5772,10 @@
 					heightAuto: false,
 					scrollbarPadding: false,
 					showConfirmButton: false,
-					html: `链接获取中`,
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					allowEnterKey: false,
+					html: `<div id="loadingText">链接获取中</div>`,
 					willOpen: function () {
 						Swal.showLoading();
 					}
@@ -5786,7 +5955,6 @@
 				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
-				e.preventDefault();
 				let target = $(e.currentTarget);
 
 				target.find('.icon-rpc-devices').remove();
@@ -6102,13 +6270,17 @@
 				title,
 				html,
 				footer,
-				allowOutsideClick: false,
-				showCloseButton: true,
-				position: 'center',
 				width,
-				padding: '15px 20px 5px',
 				customClass,
+				position: 'center',
+				padding: '15px 20px 5px',
 				confirmButtonText: '关闭',
+				showCloseButton: true,
+				heightAuto: false,
+				scrollbarPadding: false,
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				allowEnterKey: false,
 				willClose: function () {
 					base._resetData();
 				}
@@ -6204,7 +6376,10 @@
 					heightAuto: false,
 					scrollbarPadding: false,
 					showConfirmButton: false,
-					html: `链接获取中`,
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					allowEnterKey: false,
+					html: `<div id="loadingText">链接获取中</div>`,
 					willOpen: function () {
 						Swal.showLoading();
 					}
@@ -6375,7 +6550,6 @@
 				}, 2000)
 			});
 			doc.on('click', '.listener-link-rpc', async function (e) {
-				e.preventDefault();
 				let target = $(e.currentTarget);
 
 				target.find('.icon-rpc-devices').remove();
@@ -6602,7 +6776,7 @@
 			if (this.isOnlyFolder()) {
 				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			}
-
+			selectList = selectList.filter(item => item.contentID && item.contentName && item.contentSuffix);
 			let queue = [];
 			for (const [index, item] of selectList.entries()) {
 				queue.push(this.getFileUrlByOnce(item, index));
@@ -6752,7 +6926,7 @@
 
 		isOnlyFolder() {
 			for (let i = 0; i < selectList.length; i++) {
-				if (selectList[i].fileEtag || selectList[i].coName) return false;
+				if (selectList[i].contentID || selectList[i].contentName) return false;
 			}
 			return true;
 		},
@@ -6762,13 +6936,17 @@
 				title,
 				html,
 				footer,
-				allowOutsideClick: false,
-				showCloseButton: true,
-				position: 'center',
 				width,
-				padding: '15px 20px 5px',
 				customClass,
+				position: 'center',
+				padding: '15px 20px 5px',
 				confirmButtonText: '关闭',
+				showCloseButton: true,
+				heightAuto: false,
+				scrollbarPadding: false,
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				allowEnterKey: false,
 				willClose: function () {
 					base._resetData();
 				}
