@@ -7100,12 +7100,24 @@
 		async init() {
 			// 先加载默认设置
 			base.initDefaultConfig();
-			// 然后获取原脚本的 GreasyFork 信息，确保油小猴服务器信任
-			await base.get('https://greasyfork.org/zh-CN/scripts/436446.json', { "referer": "https://greasyfork.org/" }, 'json', '').then(res => {
-				base.setValue('setting_script_version', res.version);
-				base.setValue('setting_script_author', 'YouXiaoHou');
-				base.setValue('setting_script_name', res.name);
-			})
+
+			// Fix: 针对2025/02/06发生的greasyfork被墙问题进行临时修复
+			// by @TuanZiGit
+			base.setValue('setting_script_version',"6.2.7")
+			base.setValue('setting_script_author',"YouXiaoHou")
+			base.setValue('setting_script_name',"网盘直链下载助手")
+
+			// ↓ 下方此处代码已注释，因为脚本请求greasyfork失败会中断
+			
+			// // 然后获取原脚本的 GreasyFork 信息，确保油小猴服务器信任
+			// await base.get('https://greasyfork.org/zh-CN/scripts/436446.json', { "referer": "https://greasyfork.org/" }, 'json', '').then(res => {
+			// 	base.setValue('setting_script_version', res.version);
+			// 	base.setValue('setting_script_author', 'YouXiaoHou');
+			// 	base.setValue('setting_script_name', res.name);
+			// })
+
+			// END FIX
+			
 			// 再加载网页样式
 			base.addPanLinkerStyle();
 			// 最后判断页面地址并加载对应的initPanLinker
