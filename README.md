@@ -17,21 +17,17 @@
    不仅能够精简网盘界面，还支持美化网盘界面主题色
 </p>
 
-> 狠活是杀不死的，~~补档~~见证含金量
-
 ## 说明
 
 基于[【网盘直链下载助手】](https://www.baiduyun.wiki/install.html)修改
 - 原作者：[油小猴](https://www.youxiaohou.com/)  
-- 原脚本：[https://greasyfork.org/scripts/436446](https://greasyfork.org/scripts/436446)
-- 原脚本仓库：[https://github.com/syhyz1990/baiduyun](https://github.com/syhyz1990/baiduyun)
+- 原仓库：[https://github.com/syhyz1990/baiduyun](https://github.com/syhyz1990/baiduyun)
 - 本脚本发布至 GreasyFork：[https://greasyfork.org/scripts/449291](https://greasyfork.org/scripts/449291)
-   
-因网络环境，发布新脚本时 GreasyFork 是最快更新的，所以请在 GreasyFork [【直接安装本脚本】](https://greasyfork.org/scripts/449291/code/%EF%BC%88%E6%94%B9%EF%BC%89%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.user.js)。  
+  - 还有脚本猫：[https://scriptcat.org/script-show-page/1604](https://scriptcat.org/script-show-page/1604)
 
 ## 简介
 
-现已支持百度阿里天翼迅雷夸克移动六大网盘，可使用IDM等工具下载，完美适配Chrome，Edge等18种浏览器，可在无法安装客户端的环境下使用，助手免费开源。😎  
+支持百度阿里天翼迅雷夸克移动六大网盘，相比较原脚本，增加了更多功能~  
 ![Tampermonkey BETA 篡改猴测试版](https://img.shields.io/chrome-web-store/v/gcalenpjmijncebpfijmoaglllgpjagf.svg?label=Tampermonkey%20BETA%20篡改猴测试版&logo=tampermonkey&logoColor=red&color=red)
 ![TamperMonkey 篡改猴](https://img.shields.io/chrome-web-store/v/dhdgffkkebhmkfjojejmpbldmpobfkfo.svg?label=Tampermonkey%20篡改猴&logo=tampermonkey&logoColor=white&color=brightgreen)  
 ![Google Chrome-≥76.0](https://img.shields.io/badge/Google_Chrome-≥76.0-yellow.svg)
@@ -41,19 +37,18 @@
 
 #### 卑微的小标题
 
-这个脚本只有一个人在修改\~如果喜欢的话还请留个[好评](https://greasyfork.org/scripts/449291/feedback)和Star哦\~   
-- 如有bug等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)  
-- 或者在[GreasyFork反馈](https://greasyfork.org/scripts/449291/feedback)，如果看到的话我会尽量修改。
+这个脚本只有一个人在修改\~如果喜欢的话还请留个 Star 哦\~   
+- 如有bug等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)
 
 ## 版本号
-V. 1.0.9.6（改自 6.2.7 版本）  
-- 如果 此处公布的脚本版本号 与 您获取到本脚本的网站 上公布的脚本版本号不一致，请不要安装，因为那可能是盗脚本的网站   
-例如 MonkeyFork 就是盗用本脚本的网站之一，本脚本目前仅在 Github 与 Greasy(或者Sleazy?)Fork 还有 ScriptCat 发布，如果您是在其他渠道获取到本脚本的，请不要安装。
+V. 1.0.9.7（改自 6.2.7 版本）  
+本脚本目前仅在 Github 与 GreasyFork 还有 脚本猫 发布，如果您是在其他渠道获取到本脚本的，请不要安装。
 
 ## 更新日志
 
 | 版本号 | 创建日期 | 更新日志 |
 | -------- | -------- | -------- |
+| 1.0.9.7 | 2025年02月13日 | 1、修复移动云盘下载错误；<br/>2、优化代码，更好的错误识别；<br/>3、去除了游小猴云服务。 |
 | 1.0.9.6 | 2024年10月28日 | 1、支持在百度网盘中选择文件夹下载；<br/>2、优化部分提示。 |
 | 1.0.9.5 | 2024年10月14日 | 1、修复因代码逻辑错误而无法获取链接的 Bug。 |
 | 1.0.9.4 | 2024年10月09日 | 1、修复因百度网盘 AccessToken 过期导致无法获取链接的 Bug。 |
